@@ -4,14 +4,14 @@
   "status": "ok",
   "symbol": "$OLIVIA2.0",
   "name": "Olivia AI 2.0",
-  "scanned_at": "2026-07-11T21:16:57.095Z",
+  "scanned_at": "2026-07-11T21:25:52.058Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "UR",
-    "overall": 52.6,
+    "letter": "C",
+    "overall": 55.9,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -83,16 +83,9 @@
       ]
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 96.2% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +94,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.age-6mo",
       "letter": "B+",
@@ -128,14 +116,14 @@
     "privileged": [
       "burnFrom(address,uint256)"
     ],
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": 62,
-    "liquidityUsd": 4671093.640000001,
+    "liquidityUsd": 4671003.17,
     "pools": [
       {
         "pair": "0x3E117EB37d0dB3016F4f0CC79F6cE7c648d64E00",
         "dex": "uniswap",
-        "liquidityUsd": 4449314.44,
+        "liquidityUsd": 4449223.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -149,13 +137,9 @@
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 96.19,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

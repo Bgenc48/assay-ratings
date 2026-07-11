@@ -4,14 +4,14 @@
   "status": "ok",
   "symbol": "PLAY",
   "name": "Play",
-  "scanned_at": "2026-07-11T21:18:05.198Z",
+  "scanned_at": "2026-07-11T21:27:24.298Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "D",
     "overall": 55,
-    "provisional": false,
+    "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -76,7 +76,7 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -105,11 +105,6 @@
       "reason": "More than 50% of primary liquidity is withdrawable by one key."
     },
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -125,13 +120,13 @@
     "proxyImplementation": null,
     "privileged": [],
     "verifiedSource": true,
-    "ageDays": 409,
-    "liquidityUsd": 645501.5399999999,
+    "ageDays": null,
+    "liquidityUsd": 645092.21,
     "pools": [
       {
         "pair": "0xf1CaCd7E005B9337C58aAE77BC88d93C635CDF4D",
         "dex": "pancakeswap",
-        "liquidityUsd": 435036.74,
+        "liquidityUsd": 434637.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -155,7 +150,7 @@
       {
         "pair": "0x42781EC558F9fb95f5E080572bCD0A37523B55e2",
         "dex": "aerodrome",
-        "liquidityUsd": 31689.34,
+        "liquidityUsd": 31678.78,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true

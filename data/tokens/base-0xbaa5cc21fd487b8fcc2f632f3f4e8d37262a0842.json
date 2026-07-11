@@ -4,14 +4,14 @@
   "status": "ok",
   "symbol": "MORPHO",
   "name": "Morpho Token",
-  "scanned_at": "2026-07-11T21:19:01.849Z",
+  "scanned_at": "2026-07-11T21:29:34.205Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "D",
     "overall": 49.7,
     "provisional": false,
     "badge": "Custodial",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -76,7 +76,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -111,12 +111,12 @@
     ],
     "verifiedSource": true,
     "ageDays": 608,
-    "liquidityUsd": 927488.82,
+    "liquidityUsd": 877242.3400000001,
     "pools": [
       {
         "pair": "0xB5F0b4aE66C14F7EFaA9aA1468E8FC536A3E288c",
         "dex": "aerodrome",
-        "liquidityUsd": 372386.18,
+        "liquidityUsd": 323903.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -124,7 +124,7 @@
       {
         "pair": "0x2F42Df4aF5312B492E9d7F7b2110D9c7bf2D9e4F",
         "dex": "uniswap",
-        "liquidityUsd": 116111.74,
+        "liquidityUsd": 115897.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -132,7 +132,7 @@
       {
         "pair": "0x2043B296fFC6b2d3bf4A3F3167d2Afb3B0FBdbEE",
         "dex": "uniswap",
-        "liquidityUsd": 321689.97,
+        "liquidityUsd": 320232.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -140,15 +140,7 @@
       {
         "pair": "0x0b5801d76420450270ae80476bb57091a23969ef4c05f4f9441547d09e96c83b",
         "dex": "uniswap",
-        "liquidityUsd": 35091.61,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x3444bF60B93BD30f701601356Ac136aD6a9b7A79",
-        "dex": "uniswap",
-        "liquidityUsd": 25837.74,
+        "liquidityUsd": 35051.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -156,15 +148,23 @@
       {
         "pair": "0xd433B339c5C801228E1343C678Dc26213A7B8Aac",
         "dex": "aerodrome",
-        "liquidityUsd": 23703.81,
+        "liquidityUsd": 23688.55,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       },
       {
+        "pair": "0x3444bF60B93BD30f701601356Ac136aD6a9b7A79",
+        "dex": "uniswap",
+        "liquidityUsd": 25823.08,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
         "pair": "0xf76b2BA2dac24244B9cd3C05Da75cFd834f08259",
         "dex": "quickswap",
-        "liquidityUsd": 18016.4,
+        "liquidityUsd": 17994.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -178,7 +178,7 @@
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 25.98,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://morpho.org/"

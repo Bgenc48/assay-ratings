@@ -4,14 +4,14 @@
   "status": "ok",
   "symbol": "BRETT",
   "name": "Brett",
-  "scanned_at": "2026-07-11T21:15:20.017Z",
+  "scanned_at": "2026-07-11T21:23:56.159Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "B",
-    "overall": 78.5,
-    "provisional": false,
+    "overall": 75.7,
+    "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -76,7 +76,7 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -108,13 +108,13 @@
     "proxyImplementation": null,
     "privileged": [],
     "verifiedSource": true,
-    "ageDays": 869,
-    "liquidityUsd": 2212721.99,
+    "ageDays": null,
+    "liquidityUsd": 2134967.8400000003,
     "pools": [
       {
         "pair": "0x4e829F8A5213c42535AB84AA40BD4aDCCE9cBa02",
         "dex": "aerodrome",
-        "liquidityUsd": 851418.1,
+        "liquidityUsd": 775166.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -154,7 +154,7 @@
       {
         "pair": "0x76Bf0abD20f1e0155Ce40A62615a90A709a6C3D8",
         "dex": "uniswap",
-        "liquidityUsd": 100691.1,
+        "liquidityUsd": 99190.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -170,7 +170,7 @@
       {
         "pair": "0xFfa80952B3800240F11AD25E45e8d3E5C1593E70",
         "dex": "aerodrome",
-        "liquidityUsd": 3947.92,
+        "liquidityUsd": 3945.83,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true

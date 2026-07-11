@@ -4,14 +4,14 @@
   "status": "ok",
   "symbol": "DEGEN",
   "name": "Degen",
-  "scanned_at": "2026-07-11T21:14:55.103Z",
+  "scanned_at": "2026-07-11T21:23:18.284Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "UR",
     "overall": 55,
-    "provisional": false,
+    "provisional": true,
     "badge": "Custodial",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -71,7 +71,7 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -112,13 +112,13 @@
       "burnFrom(address,uint256)"
     ],
     "verifiedSource": true,
-    "ageDays": 916,
-    "liquidityUsd": 1477384.9,
+    "ageDays": null,
+    "liquidityUsd": 1477648.5299999998,
     "pools": [
       {
         "pair": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA",
         "dex": "uniswap",
-        "liquidityUsd": 1380298.84,
+        "liquidityUsd": 1380563.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -158,15 +158,7 @@
       {
         "pair": "0x54D281c7cc029a9Dd71F9ACb7487dd95B1EecF5a",
         "dex": "pancakeswap",
-        "liquidityUsd": 2145.52,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xd2Dd277feEEc88405DB3741239b0A9a96d01692D",
-        "dex": "hydrex",
-        "liquidityUsd": 864.41,
+        "liquidityUsd": 2144,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -178,6 +170,14 @@
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
+      },
+      {
+        "pair": "0xd2Dd277feEEc88405DB3741239b0A9a96d01692D",
+        "dex": "hydrex",
+        "liquidityUsd": 864.41,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
       }
     ],
     "top10Pct": 24.57,
