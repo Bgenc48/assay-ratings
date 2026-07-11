@@ -1,0 +1,8 @@
+{
+  "_comment": "Address labels used to exclude non-circulating balances from holder-concentration math: pools, lockers, bridges, vesting contracts, burn addresses, known CEX custody. Wrong labels are the biggest source of concentration false positives, so additions require a human-reviewed PR with evidence. The scanner also auto-labels: any address that is a contract AND is the token's own pool (from DexScreener) is excluded automatically.",
+  "base": {
+    "0x000000000000000000000000000000000000dead": { "label": "burn", "kind": "burn" },
+    "0x0000000000000000000000000000000000000000": { "label": "zero", "kind": "burn" },
+    "0x4200000000000000000000000000000000000016": { "label": "base-l2-predeploy", "kind": "system" }
+  }
+}

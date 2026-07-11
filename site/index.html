@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Assay — independent trust ratings for tokens</title>
+<meta name="description" content="One letter grade for the gap between what a token project promises and what its blockchain proves — with the receipts, over time. Open methodology, no issuer-pays, evidence on every finding.">
+<link rel="canonical" href="https://assayratings.com/">
+<meta property="og:title" content="Assay — independent trust ratings for tokens">
+<meta property="og:description" content="One letter grade for the gap between what a project promises and what its blockchain proves. Open methodology. Scores cannot be bought.">
+<meta property="og:url" content="https://assayratings.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#173a63">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <span class="brand">Assay<span class="tld">ratings</span></span>
+    <nav class="main">
+      <a href="methodology.html">Methodology</a>
+      <a href="policies.html">Policies</a>
+      <a href="https://github.com/Bgenc48/assay-ratings" rel="noopener">Source &amp; data</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>One letter grade for the gap between what a token promises and what its blockchain proves.</h1>
+    <p class="dek">Assay reads a project's own claims — “liquidity locked”, “ownership renounced”, “supply is fixed” — and checks each one against live chain state. The grade measures whether a token can betray you in ways it hasn't disclosed. It is not investment advice, and it does not predict price.</p>
+    <p class="fine">Scores are computed by the <a href="methodology.html">published methodology</a> from on-chain evidence. No issuer ever pays for a score. Every grade change is on the public record.</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Ratings</h2>
+    <p class="muted" id="index-meta">Loading…</p>
+    <table class="grades" id="grades">
+      <thead>
+        <tr><th>Grade</th><th>Token</th><th>Trust model</th><th>Coverage</th><th class="right">Liquidity</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p class="muted">A grade marked <strong>Provisional</strong> belongs to a token younger than 12 months — trust needs time, and no token can earn an A on day one. <span class="cov">●</span> full / <span class="cov">◐</span> partial / <span class="cov">○</span> thin marks how much of the methodology could run against available data. Missing data lowers coverage, never the score.</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">How to read an Assay grade</h2>
+    <div class="card">
+      <p><strong>B means “you will not be robbed by mechanism.”</strong> It does not mean “number go up.” A memecoin that promises nothing and hides nothing can outscore a serious-looking project that lies — that is deliberate. Every grade carries a Trust Model badge (<em>Code-Enforced / Governance-Gated / Custodial / Discretionary</em>) telling you what <em>kind</em> of trust you are extending, and hard caps make the fatal defects non-negotiable: a token with an EOA-callable mint function grades F no matter how beautiful its documentation is.</p>
+      <p class="muted">Dimension weights, anchors, the full cap table, and the changelog are public: <a href="methodology.html">the methodology</a>. Disagree with a factual finding? Use the <a href="policies.html#disputes">dispute process</a> — corrections are published.</p>
+    </div>
+  </section>
+</div>
+
+<footer class="bottom">
+  <div class="wrap">
+    <p><strong>Not investment advice.</strong> Assay publishes opinions derived by a published, versioned methodology from disclosed, verifiable facts — primarily live blockchain state. Ratings are identical for every viewer, are not personalized recommendations, and say nothing about future prices. Data can be delayed, incomplete, or wrong; grades change without notice as chain state changes. Yatırım tavsiyesi değildir.</p>
+    <p>Operator affiliation is disclosed on the <a href="policies.html#coi">conflict-of-interest page</a>. Code, methodology, and every scan result are public in the <a href="https://github.com/Bgenc48/assay-ratings" rel="noopener">repository</a> — every published score is git-timestamped and reproducible.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

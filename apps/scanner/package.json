@@ -1,0 +1,13 @@
+{
+  "name": "@assay/scanner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Batch scanner: reads registry/tokens.json, runs every check per token, scores with @assay/core, and writes evidence-bearing JSON reports to data/. Runs in GitHub Actions on a schedule; --offline replays recorded fixtures for tests and airgapped development.",
+  "dependencies": {
+    "@assay/core": "0.1.0",
+    "@assay/chain": "0.1.0",
+    "@assay/claims": "0.1.0"
+  },
+  "license": "MIT"
+}

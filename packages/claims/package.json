@@ -1,0 +1,11 @@
+{
+  "name": "@assay/claims",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The docs-vs-chain claims layer: typed claim schema, deterministic verifiers, and an optional LLM extraction script. LLM output NEVER publishes directly — every verdict requires a deterministic on-chain check or explicit human review (the integrity and defamation firewall).",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "license": "MIT"
+}

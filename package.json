@@ -1,0 +1,23 @@
+{
+  "name": "assay-ratings",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Assay — independent trust ratings for tokens. One letter grade for the gap between what a project promises and what its blockchain proves.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "workspaces": [
+    "packages/core",
+    "packages/chain",
+    "packages/claims",
+    "apps/scanner"
+  ],
+  "scripts": {
+    "test": "node --test packages/core/test/*.test.js packages/chain/test/*.test.js packages/claims/test/*.test.js apps/scanner/test/*.test.js",
+    "scan": "node apps/scanner/src/run.js",
+    "scan:offline": "node apps/scanner/src/run.js --offline",
+    "extract-claims": "node packages/claims/src/extract.js",
+    "lint:site": "node scripts/site-lint.mjs",
+    "build:site": "node scripts/build-site.mjs"
+  },
+  "license": "MIT"
+}

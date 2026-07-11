@@ -1,0 +1,10 @@
+{
+  "_comment": "Allowlist of audited liquidity-locker contracts, per chain. An LP position held by an address NOT on this list gets no lock credit — an unknown 'locker' is unverified by definition. Additions require a human-reviewed PR citing the locker's audit and official docs (see CONTRIBUTING.md). Populated during the first curation pass in CI; entries here are placeholders until then.",
+  "base": {
+    "burn": [
+      "0x000000000000000000000000000000000000dead",
+      "0x0000000000000000000000000000000000000000"
+    ],
+    "lockers": []
+  }
+}

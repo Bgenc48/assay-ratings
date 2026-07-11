@@ -1,0 +1,11 @@
+{
+  "name": "@assay/chain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Chain access: batched JSON-RPC with endpoint fallback + chainId verification, selector registry, proxy detection, Safe/timelock reads, liquidity and holder checks. Zero dependencies; public endpoints only (no Etherscan API — its terms prohibit commercial/AI use).",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "license": "MIT"
+}

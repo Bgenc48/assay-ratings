@@ -1,0 +1,15 @@
+# Posture: the scanning/scoring path has zero runtime dependencies, so npm
+# version churn buys nothing and risks the pipeline — security updates only.
+# Actions are SHA-pinned; weekly checks keep the pins patched.
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0 # security updates still open PRs
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
