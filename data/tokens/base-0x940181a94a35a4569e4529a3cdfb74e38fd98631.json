@@ -1,0 +1,201 @@
+{
+  "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "AERO",
+  "name": "Aerodrome",
+  "scanned_at": "2026-07-11T20:27:10.926Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "F",
+    "overall": 40,
+    "provisional": false,
+    "badge": "Discretionary",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.eoa-mint",
+          "severity": "crit",
+          "text": "A mint path exists and is callable by an externally-owned account. Supply can be inflated unilaterally.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": 85,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "gov.real",
+          "severity": "info",
+          "text": "Claimed governance verifiably executes on-chain.",
+          "evidence": null
+        }
+      ]
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.eoa-mint",
+      "letter": "F",
+      "reason": "Mint or issuance is callable by an EOA or undisclosed party."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1935742341656641506166705344",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "privileged": [
+      "mint(address,uint256)"
+    ],
+    "verifiedSource": true,
+    "ageDays": 1049,
+    "liquidityUsd": 37061410.24,
+    "pools": [
+      {
+        "pair": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
+        "dex": "aerodrome",
+        "liquidityUsd": 31142317.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x20CB8f872ae894F7c9e32e621C186e5AFCe82Fd0",
+        "dex": "pancakeswap",
+        "liquidityUsd": 183188.98,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xa4FDd479eda160671636e2eCF8f993Cbf86258a8",
+        "dex": "aerodrome",
+        "liquidityUsd": 598588.29,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xE5B5f522E98B5a2baAe212d4dA66b865B781DB97",
+        "dex": "uniswap",
+        "liquidityUsd": 215885.39,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x82321f3BEB69f503380D6B233857d5C43562e2D0",
+        "dex": "aerodrome",
+        "liquidityUsd": 635176.26,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xdFe5F275020def30993f042174Fc2D335678b626",
+        "dex": "aerodrome",
+        "liquidityUsd": 921780.29,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x4e506648d493C8870f55e870480f92f2F33ecE51",
+        "dex": "aerodrome",
+        "liquidityUsd": 2203199.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xCDBe19a6EF1B633BE744920C93eE40521d5cf2A6",
+        "dex": "aerodrome",
+        "liquidityUsd": 1161273.58,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      }
+    ],
+    "top10Pct": 17.99,
+    "projectLinks": {
+      "websites": [
+        "https://aerodrome.finance/docs",
+        "https://aerodrome.finance/docs"
+      ],
+      "socials": [
+        "https://x.com/aerodromefi",
+        "https://discord.gg/aerodrome"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

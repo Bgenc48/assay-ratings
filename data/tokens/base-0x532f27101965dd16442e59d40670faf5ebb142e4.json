@@ -1,0 +1,191 @@
+{
+  "address": "0x532f27101965dd16442E59d40670FaF5eBB142E4",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "BRETT",
+  "name": "Brett",
+  "scanned_at": "2026-07-11T20:27:22.227Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "B",
+    "overall": 78.5,
+    "provisional": false,
+    "badge": "Code-Enforced",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0x532f27101965dd16442E59d40670FaF5eBB142E4",
+            "data": "0x8da5cb5b",
+            "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xBA3F945812a83471d709BCe9C3CA699A19FB46f7"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "9999997544723143783218048495",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "privileged": [],
+    "verifiedSource": true,
+    "ageDays": 869,
+    "liquidityUsd": 2108794.87,
+    "pools": [
+      {
+        "pair": "0x4e829F8A5213c42535AB84AA40BD4aDCCE9cBa02",
+        "dex": "aerodrome",
+        "liquidityUsd": 746103.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xBA3F945812a83471d709BCe9C3CA699A19FB46f7",
+        "dex": "uniswap",
+        "liquidityUsd": 1015432.25,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x75CC10fdcEa4b7D13c115ABB08240ac9c9Be6f2f",
+        "dex": "pancakeswap",
+        "liquidityUsd": 189757.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x43BBb129b56A998732767725A183b7a566843dBA",
+        "dex": "aerodrome",
+        "liquidityUsd": 26771.78,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x27402edf3c6a6d6b5a279dfc7a2c8cbacebbfdfc3559f7c03d6971b09126a9f3",
+        "dex": "uniswap",
+        "liquidityUsd": 20765.66,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x76Bf0abD20f1e0155Ce40A62615a90A709a6C3D8",
+        "dex": "uniswap",
+        "liquidityUsd": 102139.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x404E927b203375779a6aBD52A2049cE0ADf6609B",
+        "dex": "sushiswap",
+        "liquidityUsd": 3873.92,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xFfa80952B3800240F11AD25E45e8d3E5C1593E70",
+        "dex": "aerodrome",
+        "liquidityUsd": 3950.74,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      }
+    ],
+    "top10Pct": 26.52,
+    "projectLinks": {
+      "websites": [
+        "https://www.basedbrett.com/"
+      ],
+      "socials": [
+        "https://twitter.com/BasedBrett",
+        "https://t.me/basedbrett"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}
