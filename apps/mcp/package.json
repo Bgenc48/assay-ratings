@@ -1,0 +1,13 @@
+{
+  "name": "@assay/mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only MCP server exposing Assay trust ratings to AI agents. Holds no keys, answers only from the published data/ tree — the same bytes assayratings.com serves.",
+  "bin": { "assay-mcp": "src/server.js" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "zod": "3.25.76"
+  },
+  "license": "MIT"
+}

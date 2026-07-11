@@ -149,6 +149,42 @@
     root.appendChild(fSec);
   }
 
+  // ---- Grade history ------------------------------------------------------
+  try {
+    const hres = await fetch(`data/history/${slug.toLowerCase()}.jsonl`, { cache: "no-store" });
+    if (hres.ok) {
+      const lines = (await hres.text()).trim().split("\n").filter(Boolean).map((l) => JSON.parse(l));
+      if (lines.length > 0) {
+        const hSec = el("section", "block");
+        hSec.appendChild(el("h2", "sec", "Grade history"));
+        const card = el("div", "card");
+        // Newest first, deduplicate consecutive identical letters so the
+        // list reads as a change log, with the current state on top.
+        const seen = [];
+        for (const entry of lines.reverse()) {
+          if (seen.length === 0 || seen[seen.length - 1].letter !== entry.letter) seen.push(entry);
+        }
+        for (const entry of seen) {
+          const p = el("p");
+          const chip = el("span", "grade", entry.letter);
+          chip.style.marginRight = "10px";
+          p.appendChild(chip);
+          p.appendChild(document.createTextNode(
+            `since ${new Date(entry.at).toUTCString()} · methodology v${entry.methodology_version}` +
+            (entry.caps?.length ? ` · ${entry.caps.length} cap(s)` : ""),
+          ));
+          card.appendChild(p);
+        }
+        card.appendChild(el("p", "muted",
+          `${lines.length} scan(s) on record. The full series is public: data/history/${slug.toLowerCase()}.jsonl`));
+        hSec.appendChild(card);
+        root.appendChild(hSec);
+      }
+    }
+  } catch {
+    /* no history yet */
+  }
+
   // ---- Facts ------------------------------------------------------------
   const facts = r.facts ?? {};
   const factSec = el("section", "block");

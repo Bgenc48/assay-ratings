@@ -135,6 +135,7 @@ export async function scanToken(entry, { rootDir = process.cwd(), transport, fet
       owner: token.admin.ownerAddress,
       controlType,
       proxy: token.admin.proxy.type,
+      proxyImplementation: token.admin.proxy.implementation ?? null,
       privileged: token.admin.privilegedSelectors.map((s) => s.sig),
       verifiedSource,
       ageDays: age.ageDays === null ? null : Math.round(age.ageDays),

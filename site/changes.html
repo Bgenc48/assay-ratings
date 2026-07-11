@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Changes — Assay</title>
+<meta name="description" content="Every grade change, cap trigger, controller change, and claim-verdict flip Assay has recorded — the public trust time series.">
+<link rel="canonical" href="https://assayratings.com/changes.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Assay<span class="tld">ratings</span></a>
+    <nav class="main">
+      <a href="changes.html">Changes</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="api.html">API</a>
+      <a href="policies.html">Policies</a>
+      <a href="https://github.com/Bgenc48/assay-ratings" rel="noopener">Source &amp; data</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>Changes</h1>
+    <p class="dek">Every grade movement, hard-cap trigger, controller change, contract upgrade, and claim-verdict flip, as the daily scans record them. This feed is the behavioral time series — it cannot be rewritten, because every entry is derived from two git-committed scan snapshots anyone can diff.</p>
+  </section>
+  <section class="block">
+    <p class="muted" id="feed-meta">Loading…</p>
+    <div id="feed"></div>
+  </section>
+</div>
+
+<footer class="bottom">
+  <div class="wrap">
+    <p><strong>Not investment advice.</strong> Alerts state what changed on-chain between two scans, with the evidence on each token's report page. Yatırım tavsiyesi değildir.</p>
+  </div>
+</footer>
+<script src="js/changes.js"></script>
+</body>
+</html>

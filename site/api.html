@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>API — Assay</title>
+<meta name="description" content="Assay's free JSON API: grades, full evidence reports, grade history, the changes feed, live SVG badges, and an MCP server for AI agents. Attribution required.">
+<link rel="canonical" href="https://assayratings.com/api.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Assay<span class="tld">ratings</span></a>
+    <nav class="main">
+      <a href="changes.html">Changes</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="api.html">API</a>
+      <a href="policies.html">Policies</a>
+      <a href="https://github.com/Bgenc48/assay-ratings" rel="noopener">Source &amp; data</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>The free API</h1>
+    <p class="dek">Every grade, report, and history file on this site is a static JSON document you can fetch directly — no key, no signup. The only condition is attribution: <strong>“Ratings by Assay — assayratings.com”</strong>, visible wherever the data is shown.</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Endpoints</h2>
+    <table class="grades">
+      <thead><tr><th>URL</th><th>Contents</th></tr></thead>
+      <tbody>
+        <tr><td><code>/data/index.json</code></td><td>All tokens: letter, trust-model badge, coverage, provisional flag, liquidity, scan timestamp</td></tr>
+        <tr><td><code>/data/tokens/{chain}-{address}.json</code></td><td>Full report: dimensions with findings and evidence, triggered caps, claim verdicts, raw facts (address lowercase)</td></tr>
+        <tr><td><code>/data/history/{chain}-{address}.jsonl</code></td><td>Append-only grade time series, one JSON line per scan</td></tr>
+        <tr><td><code>/data/alerts.json</code></td><td>The changes feed: grade moves, cap triggers, controller changes, claim flips (rolling 300)</td></tr>
+        <tr><td><code>/badge/{chain}-{address}.svg</code></td><td>Live grade badge for embedding — always shows the current grade</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">Data refreshes with each scheduled scan (daily). Everything is also in the <a href="https://github.com/Bgenc48/assay-ratings" rel="noopener">git repository</a>, where each value is timestamped by commit — the API cannot say anything the history doesn't back.</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Badges</h2>
+    <p>Embed a live grade badge:</p>
+    <pre><code>&lt;a href="https://assayratings.com/token.html?t={chain}-{address}"&gt;
+  &lt;img src="https://assayratings.com/badge/{chain}-{address}.svg" alt="Assay grade"&gt;
+&lt;/a&gt;</code></pre>
+    <p class="muted">Badge license: the badge must load live from this domain (never a cached/stale copy), must link to the token's report page, and may not be presented as an endorsement. Selective or stale display is a trademark violation — see <a href="policies.html#terms">terms</a>.</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">For AI agents: the MCP server</h2>
+    <p>Agents can consume grades natively via the Model Context Protocol. From a checkout of the repository:</p>
+    <pre><code>{
+  "mcpServers": {
+    "assay": { "command": "node", "args": ["apps/mcp/src/server.js"], "cwd": "/path/to/assay-ratings" }
+  }
+}</code></pre>
+    <p class="muted">Read-only tools: <code>list_ratings</code>, <code>get_rating</code>, <code>get_claims</code>, <code>get_changes</code>, <code>about_assay</code>. The server holds no keys and answers only from the published data — the same bytes this site serves.</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Rules</h2>
+    <ul class="clean">
+      <li>Attribution required on any surface displaying Assay data.</li>
+      <li>No bulk resale/redistribution of scores, and no using the data to train a competing rating model, without written permission.</li>
+      <li>Grades are opinions on verifiable properties — not investment advice, not price predictions. If you build on this API, carry that disclaimer through to your users.</li>
+    </ul>
+  </section>
+</div>
+
+<footer class="bottom">
+  <div class="wrap">
+    <p>Questions or higher-volume needs: open an issue in the <a href="https://github.com/Bgenc48/assay-ratings" rel="noopener">repository</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

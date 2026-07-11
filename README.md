@@ -62,7 +62,20 @@ registry/claims/*.json ───────┘          claims verified against
 - **`site/`** — the static site. No frameworks, no cookies, no analytics,
   no external scripts; strict CSP on every page; all dynamic content
   rendered via `textContent` (claim quotes originate on third-party sites
-  and are never interpreted as HTML).
+  and are never interpreted as HTML). Includes the Changes feed, grade
+  histories, live SVG badges (`/badge/<chain>-<address>.svg`), and the
+  free-API docs page.
+- **`apps/mcp`** — a read-only MCP server so AI agents consume grades
+  natively (`npm run mcp`): list_ratings, get_rating, get_claims,
+  get_changes, get_history, about_assay.
+- **Alerts** — every scan diffs against the previous one and records grade
+  moves, cap triggers, controller changes, contract upgrades, and
+  claim-verdict flips to `data/alerts.json` (the public Changes feed);
+  CRITICAL/WARN alerts go to Telegram when the `TELEGRAM_BOT_TOKEN` /
+  `TELEGRAM_CHAT_ID` secrets are set (silently skipped otherwise).
+- **Discovery** — `npm run discover` grows coverage from the top-traded
+  Base pools (min $100k liquidity, capped via `DISCOVER_MAX_TOTAL`); runs
+  before every scheduled scan.
 
 ## Safety gates (what keeps a rating site honest)
 
@@ -85,10 +98,12 @@ registry/claims/*.json ───────┘          claims verified against
 
 ```bash
 npm install --ignore-scripts
-npm test              # 38 tests: scoring golden tests, chain mocks, claims, e2e fixtures
+npm test              # ~45 tests: scoring golden tests, chain mocks, claims, e2e fixtures
 npm run scan:offline  # full pipeline against the recorded fixture universe
 npm run scan          # live scan (network required) — this is what CI runs
-npm run build:site    # assemble _site/ (site shell + data)
+npm run discover      # grow registry/discovered.json from top Base pools
+npm run mcp           # read-only MCP server over stdio
+npm run build:site    # assemble _site/ (site shell + data + badges + sitemap)
 npm run lint:site     # honesty lint: no hype language, CSP present, no external origins
 ```
 

@@ -12,6 +12,7 @@ import { readFile, writeFile, mkdir, appendFile } from "node:fs/promises";
 import path from "node:path";
 import { scanToken } from "./scan.js";
 import { makeFixtureTransport, makeFixtureFetcher } from "./offline.js";
+import { computeAlerts, mergeFeed } from "./alerts.js";
 import { METHODOLOGY_VERSION } from "@assay/core";
 
 const argv = process.argv.slice(2);
@@ -55,11 +56,19 @@ async function main() {
   await mkdir(path.join(DATA_DIR, "history"), { recursive: true });
 
   const index = [];
+  const newAlerts = [];
   let failures = 0;
 
   for (const entry of entries) {
     const slug = `${entry.chain}-${entry.address.toLowerCase()}`;
     process.stdout.write(`scanning ${entry.expectSymbol ?? entry.address} ... `);
+    // Previous report, for the alert diff. Missing = first listing.
+    let prevReport = null;
+    try {
+      prevReport = JSON.parse(await readFile(path.join(DATA_DIR, "tokens", `${slug}.json`), "utf8"));
+    } catch {
+      /* first scan of this token */
+    }
     try {
       let report;
       try {
@@ -104,6 +113,8 @@ async function main() {
       }
 
       await writeFile(path.join(DATA_DIR, "tokens", `${slug}.json`), JSON.stringify(report, null, 2) + "\n");
+
+      if (!entry.coi) newAlerts.push(...computeAlerts(prevReport, report, { now: now ?? new Date() }));
 
       if (report.status === "ok") {
         await appendFile(
@@ -192,7 +203,25 @@ async function main() {
     ) + "\n",
   );
 
-  console.log(`\n${index.length} token(s) in index, ${failures} scan failure(s).`);
+  // Alert feed: rolling public record (data/alerts.json) + this run's
+  // alerts alone (data/alerts-latest.json, consumed by the notifier).
+  const generatedAt = (now ?? new Date()).toISOString();
+  let existingFeed = null;
+  try {
+    existingFeed = JSON.parse(await readFile(path.join(DATA_DIR, "alerts.json"), "utf8"));
+  } catch {
+    /* first run */
+  }
+  await writeFile(
+    path.join(DATA_DIR, "alerts.json"),
+    JSON.stringify(mergeFeed(existingFeed, newAlerts, { generatedAt }), null, 2) + "\n",
+  );
+  await writeFile(
+    path.join(DATA_DIR, "alerts-latest.json"),
+    JSON.stringify({ generated_at: generatedAt, alerts: newAlerts }, null, 2) + "\n",
+  );
+
+  console.log(`\n${index.length} token(s) in index, ${failures} scan failure(s), ${newAlerts.length} alert(s).`);
   // Failures are non-fatal for the batch (stale data is kept and labeled),
   // but a fully-failed live scan should fail CI loudly.
   if (failures > 0 && failures === entries.length) process.exit(1);
