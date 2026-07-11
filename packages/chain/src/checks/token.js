@@ -17,6 +17,10 @@ import {
 const SLOT_IMPLEMENTATION = "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc";
 const SLOT_ADMIN = "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103";
 const SLOT_BEACON = "0xa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d50";
+// Legacy ZeppelinOS proxy slots (pre-EIP-1967; USDC's FiatTokenProxy uses
+// these): keccak256("org.zeppelinos.proxy.implementation") / ".admin".
+const SLOT_ZOS_IMPLEMENTATION = "0x7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c3";
+const SLOT_ZOS_ADMIN = "0x10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b";
 
 const ZERO32 = "0x" + "0".repeat(64);
 
@@ -29,7 +33,7 @@ export async function inspectToken(network, address, opts = {}) {
   const to = address;
 
   // Batch 1: metadata, owner, code, proxy slots.
-  const [nameHex, symbolHex, decimalsHex, totalSupplyHex, ownerHex, code, implSlot, adminSlot, beaconSlot] =
+  const [nameHex, symbolHex, decimalsHex, totalSupplyHex, ownerHex, code, implSlot1967, adminSlot1967, beaconSlot, implSlotZos, adminSlotZos] =
     await rpcBatch(
       network,
       [
@@ -42,6 +46,8 @@ export async function inspectToken(network, address, opts = {}) {
         { method: "eth_getStorageAt", params: [to, SLOT_IMPLEMENTATION, "latest"] },
         { method: "eth_getStorageAt", params: [to, SLOT_ADMIN, "latest"] },
         { method: "eth_getStorageAt", params: [to, SLOT_BEACON, "latest"] },
+        { method: "eth_getStorageAt", params: [to, SLOT_ZOS_IMPLEMENTATION, "latest"] },
+        { method: "eth_getStorageAt", params: [to, SLOT_ZOS_ADMIN, "latest"] },
       ],
       { ...opts, soft: true },
     );
@@ -53,14 +59,20 @@ export async function inspectToken(network, address, opts = {}) {
     throw new Error("totalSupply read returned zero/empty — refusing to scan");
   }
 
-  const proxyImpl = slotAddress(implSlot);
-  const proxyAdmin = slotAddress(adminSlot);
+  const proxyImpl = slotAddress(implSlot1967) ?? slotAddress(implSlotZos);
+  const proxyAdmin = slotAddress(adminSlot1967) ?? slotAddress(adminSlotZos);
   const proxyBeacon = slotAddress(beaconSlot);
-  const proxyType = proxyImpl ? "eip1967" : proxyBeacon ? "beacon" : null;
+  const proxyType = slotAddress(implSlot1967)
+    ? "eip1967"
+    : slotAddress(implSlotZos)
+      ? "zos-legacy"
+      : proxyBeacon
+        ? "beacon"
+        : null;
 
   // If proxied, the risk selectors live in the implementation bytecode.
   let scanCode = code;
-  if (proxyType === "eip1967" && proxyImpl) {
+  if ((proxyType === "eip1967" || proxyType === "zos-legacy") && proxyImpl) {
     const [implCode] = await rpcBatch(network, [{ method: "eth_getCode", params: [proxyImpl, "latest"] }], opts);
     scanCode = (code ?? "") + (implCode ?? "");
   }
@@ -97,7 +109,12 @@ export async function inspectToken(network, address, opts = {}) {
     },
     evidence: {
       owner: { type: "eth_call", to, data: SELECTORS.owner, result: ownerHex ?? null },
-      proxySlots: { implementation: implSlot ?? ZERO32, admin: adminSlot ?? ZERO32 },
+      proxySlots: {
+        implementation: implSlot1967 ?? ZERO32,
+        admin: adminSlot1967 ?? ZERO32,
+        zosImplementation: implSlotZos ?? ZERO32,
+        zosAdmin: adminSlotZos ?? ZERO32,
+      },
       bytecodeBytes: ((code?.length ?? 2) - 2) / 2,
     },
   };

@@ -66,9 +66,12 @@ export async function rpcBatch(network, requests, { transport = httpTransport, s
       return requests.map((_, i) => {
         const reply = byId.get(i + 1);
         if (!reply || reply.error) {
-          // In soft mode a per-call error (e.g. owner() reverting on an
-          // ownerless token) is data, not an endpoint failure.
-          if (soft) return null;
+          // In soft mode a REVERT is data (e.g. owner() on an ownerless
+          // token). Anything else — rate limits, server errors, missing
+          // replies — is an endpoint failure and must fail over to the
+          // next endpoint, or a throttled endpoint would silently turn
+          // real chain state into nulls.
+          if (soft && isRevert(reply?.error)) return null;
           const err = new Error(reply?.error?.message ?? "Missing reply");
           err.rpcError = true;
           throw err;
@@ -81,6 +84,19 @@ export async function rpcBatch(network, requests, { transport = httpTransport, s
     }
   }
   throw lastError ?? new Error("All RPC endpoints failed");
+}
+
+function isRevert(error) {
+  if (!error) return false;
+  const msg = (error.message ?? "").toLowerCase();
+  if (/rate|limit|too many|capacity|timeout|busy|unavailable/.test(msg)) return false;
+  // EVM execution errors: revert text, or the JSON-RPC execution-error
+  // code 3 / provider -32000-family with revert-shaped messages.
+  return (
+    /revert|execution|invalid opcode|out of gas|vm exception/.test(msg) ||
+    error.code === 3 ||
+    (typeof error.code === "number" && error.code === -32000 && !/header|block|state/.test(msg))
+  );
 }
 
 /** Convenience: batch of eth_call { to, data } against latest block. */

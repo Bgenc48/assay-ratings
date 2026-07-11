@@ -35,7 +35,7 @@
 
   const isCoi = r.coi && r.grade?.letter === "COI";
   const letter = r.grade?.letter ?? "N/R";
-  const band = isCoi || letter === "N/R" ? "gNR" : letter.startsWith("A") ? "gA" : letter.startsWith("B") ? "gB" : letter.startsWith("C") ? "gC" : letter.startsWith("D") ? "gD" : "gF";
+  const band = isCoi || letter === "N/R" || letter === "UR" ? "gNR" : letter.startsWith("A") ? "gA" : letter.startsWith("B") ? "gB" : letter.startsWith("C") ? "gC" : letter.startsWith("D") ? "gD" : "gF";
   pills.appendChild(el("span", `grade big ${band}`, isCoi ? "COI" : letter));
 
   const title = el("h1", null, `${r.name ?? ""} (${r.symbol ?? "?"})`);
@@ -57,6 +57,7 @@
     n.appendChild(document.createTextNode(r.coiNote.replace(/^Not Rated — Founder Conflict of Interest\.\s*/, "")));
     root.appendChild(n);
   }
+  if (r.reviewNote) root.appendChild(el("div", "notice coi", r.reviewNote));
   if (r.notes) root.appendChild(el("div", "notice", r.notes));
   if (r.status === "registry_mismatch") {
     root.appendChild(el("div", "notice coi", r.note));

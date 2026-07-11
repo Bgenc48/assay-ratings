@@ -67,7 +67,8 @@
       <thead><tr><th>Trigger</th><th>Overall cap</th></tr></thead>
       <tbody>
         <tr><td>Unverified source code</td><td>C</td></tr>
-        <tr><td>Mint/issuance callable by an EOA or undisclosed party</td><td><strong>F</strong></td></tr>
+        <tr><td>Mint/issuance whose classified controller is an EOA</td><td><strong>F</strong></td></tr>
+        <tr><td>Mint path present, controller unclassifiable (insufficient data)</td><td>C</td></tr>
         <tr><td>Upgradeable with EOA admin, no timelock</td><td>D</td></tr>
         <tr><td>Materially false safety claim (verified FALSE)</td><td>D</td></tr>
         <tr><td>&gt;50% of primary liquidity withdrawable by one key</td><td>D</td></tr>
@@ -95,7 +96,7 @@
       <li>v0.1 analyzes classic (v2-style) pools' LP distribution on-chain; concentrated-liquidity (v3/v4) positions show as “insufficient data”, never as “safe”. Locker credit requires the locker to be on the public, human-reviewed allowlist.</li>
       <li>Insider float and vesting compliance are only automatable when vesting is on-chain; custodial “locks” are UNVERIFIABLE by design.</li>
       <li>Audit claims are scored link-resolves-only. Assay does not judge auditor quality.</li>
-      <li>Low grades (D/F) on tokens above $1M liquidity are human-reviewed before publication.</li>
+      <li>Low grades (D/F) on tokens above $1M liquidity are human-reviewed before publication — enforced in code: such reports publish as “UR — Under Review” (facts visible, letter withheld) until confirmed.</li>
     </ul>
   </section>
 

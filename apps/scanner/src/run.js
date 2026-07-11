@@ -52,9 +52,33 @@ async function main() {
     const slug = `${entry.chain}-${entry.address.toLowerCase()}`;
     process.stdout.write(`scanning ${entry.expectSymbol ?? entry.address} ... `);
     try {
-      const report = await scanToken(entry, { rootDir: ROOT, transport, fetcher, now });
+      let report;
+      try {
+        report = await scanToken(entry, { rootDir: ROOT, transport, fetcher, now });
+      } catch (firstError) {
+        if (OFFLINE) throw firstError;
+        // One retry after a pause — public endpoints rate-limit in bursts.
+        await new Promise((resolve) => setTimeout(resolve, 4000));
+        report = await scanToken(entry, { rootDir: ROOT, transport, fetcher, now });
+      }
       report.notes = entry.notes ?? null;
       report.coi = entry.coi ?? false;
+
+      // Human-review gate (methodology §8): a D/F grade on a token with
+      // meaningful liquidity is never auto-published. It ships as
+      // "UR — Under Review" (facts and findings fully visible) until a
+      // human confirms the finding by setting reviewedLowGrade:true on the
+      // registry entry in a reviewed PR.
+      const lowGrade = report.status === "ok" && ["D", "F"].includes(report.grade.letter);
+      const bigToken = (report.facts?.liquidityUsd ?? 0) > 1_000_000;
+      if (lowGrade && bigToken && !entry.reviewedLowGrade) {
+        report.pendingReview = { computed: report.grade.letter };
+        report.grade = { ...report.grade, letter: "UR" };
+        report.reviewNote =
+          "Under Review — the methodology computed a low grade for this high-liquidity token. " +
+          "Per policy, D/F grades above $1M liquidity are human-verified before publication. " +
+          "The facts and findings below are published; the letter grade follows review.";
+      }
 
       // Founder conflict of interest: facts are published, the grade is not.
       if (entry.coi && report.status === "ok") {
@@ -101,6 +125,7 @@ async function main() {
         scanned_at: report.scanned_at,
       });
       console.log(report.status === "ok" ? `${report.grade.letter}` : report.status);
+      if (!OFFLINE) await new Promise((resolve) => setTimeout(resolve, 750)); // be polite to public endpoints
     } catch (error) {
       failures += 1;
       console.log(`FAILED (${error.message})`);

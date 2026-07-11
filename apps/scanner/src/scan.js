@@ -153,12 +153,13 @@ export async function scanToken(entry, { rootDir = process.cwd(), transport, fet
   };
 }
 
-// Mint gate classification from the controller of the contract. A mint
-// gated by a timelock'd governor scores far above an EOA mint.
+// Mint gate classification from the classified controller. A mint gated by
+// a timelock'd governor scores far above an EOA mint. When no controller
+// can be classified (no owner, no proxy admin — e.g. an internal minter
+// contract), the gate is UNKNOWN: insufficient data, never assumed open.
 function mintGateFor(controlType) {
   if (controlType === "governor-timelock") return "governance-timelock";
   if (controlType === "safe") return "multisig";
   if (controlType === "eoa") return "eoa";
-  if (controlType === "none") return "none";
   return "unknown";
 }

@@ -70,9 +70,10 @@ export function scoreSupplyIntegrity(r) {
 
   if (s.mintable) {
     const gate = s.mintGate ?? "unknown";
-    if (gate === "none" || gate === "eoa") {
+    if (gate === "eoa") {
+      // F requires POSITIVE evidence: the classified controller is an EOA.
       findings.push(f("supply.eoa-mint", "crit",
-        "A mint path exists and is callable by an externally-owned account. Supply can be inflated unilaterally.",
+        "A mint path exists and its controller is an externally-owned account. Supply can be inflated unilaterally.",
         s.evidence?.mint));
       return { score: 0, findings };
     }
@@ -87,8 +88,18 @@ export function scoreSupplyIntegrity(r) {
         s.evidence?.mint));
       return { score: 65, findings };
     }
-    findings.push(f("supply.multisig-mint", "warn",
-      "A mint path exists, gated by a multisig without a timelock or attestation trail.", s.evidence?.mint));
+    if (gate === "multisig") {
+      findings.push(f("supply.multisig-mint", "warn",
+        "A mint path exists, gated by a multisig without a timelock or attestation trail.", s.evidence?.mint));
+      return { score: 35, findings };
+    }
+    // Unclassified gate (e.g. an internal minter contract with no readable
+    // owner): insufficient data, NOT assumed malicious. Scored low and
+    // capped at C until claims/manual review classify the gate — never
+    // auto-F without positive evidence (the AERO lesson).
+    findings.push(f("supply.unclassified-mint", "warn",
+      "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+      s.evidence?.mint));
     return { score: 35, findings };
   }
 
@@ -351,8 +362,14 @@ export function evaluateCaps(r, dims) {
   const add = (id, letter, reason) => caps.push({ id, letter, reason });
 
   if (r.meta?.verifiedSource === false) add("cap.unverified", "C", "Source code is not verified on a public explorer.");
-  if (r.supply?.mintable && ["none", "eoa"].includes(r.supply.mintGate ?? "unknown")) {
-    add("cap.eoa-mint", "F", "Mint or issuance is callable by an EOA or undisclosed party.");
+  if (r.supply?.mintable) {
+    const gate = r.supply.mintGate ?? "unknown";
+    if (gate === "eoa") {
+      add("cap.eoa-mint", "F", "Mint or issuance is controlled by an externally-owned account.");
+    } else if (gate === "unknown" || gate === "none") {
+      add("cap.unclassified-mint", "C",
+        "A mint path exists whose controller could not be classified automatically (insufficient data).");
+    }
   }
   if (r.admin?.proxy?.type && r.admin?.controlType === "eoa" && !(r.admin.timelockDelaySeconds > 0)) {
     add("cap.eoa-upgrade", "D", "Upgradeable with an EOA admin and no timelock.");

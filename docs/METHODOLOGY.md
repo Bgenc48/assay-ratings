@@ -31,7 +31,7 @@ bump and a changelog entry here.
 
 | # | Dimension | Weight | Key anchors (0–100) |
 |---|---|---|---|
-| 1 | Supply Integrity | 20 | 100 no mint path & not upgradeable · 85 mint gated by governance+timelock · 65 custodial issuance w/ attestations · 60 latent mint via upgradeability · 35 bare multisig mint · 0 EOA mint (**cap F**) |
+| 1 | Supply Integrity | 20 | 100 no mint path & not upgradeable · 85 mint gated by governance+timelock · 65 custodial issuance w/ attestations · 60 latent mint via upgradeability · 35 bare-multisig or unclassifiable mint (unclassifiable also **caps C** as insufficient data) · 0 EOA-controlled mint (**cap F**, requires positive controller classification) |
 | 2 | Admin Surface & Upgradeability | 20 (15 if #8 applies) | 100 no owner/powers/proxy · 90 governance + ≥48h timelock · 75 ≥3-of-N Safe + delay · 55 Safe, no timelock · 25 EOA with material powers |
 | 3 | Disclosure Integrity | 15 | start 100 · material FALSE −40 (**cap D**) · minor FALSE −10 · material UNVERIFIABLE −5 (max −30) · omission −15 · claim-light floor 70 |
 | 4 | Insider Float & Vesting | 15 | 100 liquid <5% & ≥50% code-vested · 75 <10% & ≥30% vested · 50 ≤15% · 25 ≤30% · 0 >30% (**cap C**) or vesting violated |
@@ -54,7 +54,8 @@ The full cap table (published verbatim, tested):
 | Trigger | Cap |
 |---|---|
 | Unverified source code | C |
-| Mint/issuance callable by EOA or undisclosed party | **F** |
+| Mint/issuance whose classified controller is an EOA | **F** |
+| Mint path present, controller unclassifiable (insufficient data) | C |
 | Upgradeable with EOA admin, no timelock | D |
 | Materially false safety claim | D |
 | >50% of primary liquidity withdrawable by one key | D |

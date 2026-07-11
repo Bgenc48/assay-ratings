@@ -39,6 +39,18 @@ test("mint-backdoor test: perfect everything + EOA mint = F, not B+", () => {
   assert.ok(s.caps.some((c) => c.id === "cap.eoa-mint" && c.letter === "F"));
 });
 
+test("unclassifiable mint gate = insufficient data (cap C), never auto-F (the AERO lesson)", () => {
+  const r = pristine({
+    supply: { mintable: true, mintGate: "unknown", upgradeable: false },
+  });
+  const s = scoreToken(r);
+  assert.ok(!s.caps.some((c) => c.id === "cap.eoa-mint"), "no F without positive EOA evidence");
+  assert.ok(s.caps.some((c) => c.id === "cap.unclassified-mint" && c.letter === "C"));
+  assert.equal(s.letter, "C");
+  const finding = s.dimensions.supplyIntegrity.findings.find((f) => f.id === "supply.unclassified-mint");
+  assert.match(finding.text, /insufficient data/i);
+});
+
 test("materially false claim caps at D even when structure is A-grade", () => {
   const r = pristine({
     claims: [{ id: "c1", type: "lp_locked", text: "liquidity locked 2 years", material: true, verdict: "FALSE" }],
