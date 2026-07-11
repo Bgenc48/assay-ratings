@@ -1,0 +1,195 @@
+{
+  "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "ELSA",
+  "name": "Elsa",
+  "scanned_at": "2026-07-11T20:46:06.343Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "B-",
+    "overall": 74.1,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x83f3ACa29Bc79B048B99C56013475570acc97ccF"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "privileged": [],
+    "verifiedSource": true,
+    "ageDays": 185,
+    "liquidityUsd": 395806.93000000005,
+    "pools": [
+      {
+        "pair": "0x83f3ACa29Bc79B048B99C56013475570acc97ccF",
+        "dex": "pancakeswap",
+        "liquidityUsd": 373768.38,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xdc8F367884437e398FBF4a94D3333fE0b5B376Db",
+        "dex": "uniswap",
+        "liquidityUsd": 11524.2,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x5E4efb192Dfd5a267e5bEDac155FD9b79df82496",
+        "dex": "aerodrome",
+        "liquidityUsd": 5461.84,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x194797673fdf948efe25c506095054347df8308dff94845ef0738b7bc0b4016a",
+        "dex": "uniswap",
+        "liquidityUsd": 1564.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xf3240f7578172cf710879e1ef84d04e632ab81282497ec0f0d04277a877a2832",
+        "dex": "uniswap",
+        "liquidityUsd": 867.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x8ec13b2f24d27ac531fcbe1cb551e7696cb8392879e3fb473f801395589776da",
+        "dex": "uniswap",
+        "liquidityUsd": 1575.54,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x6b919216c7f383078d751e74569865480c2ba36028bda02bca6403565e3a7584",
+        "dex": "uniswap",
+        "liquidityUsd": 1003.53,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x120eE6b5DbF9507AfE3E50f10f664F718bFF0696",
+        "dex": "uniswap",
+        "liquidityUsd": 42.22,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      }
+    ],
+    "top10Pct": 16.74,
+    "projectLinks": {
+      "websites": [
+        "https://moltnbook.com"
+      ],
+      "socials": [
+        "https://x.com/christanxsx/status/2018147848647270410"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

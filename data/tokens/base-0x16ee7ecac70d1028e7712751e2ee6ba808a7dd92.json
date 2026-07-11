@@ -1,0 +1,204 @@
+{
+  "address": "0x16ee7ecac70d1028e7712751e2ee6ba808a7dd92",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "FUN",
+  "name": "Sport.fun",
+  "scanned_at": "2026-07-11T20:45:31.626Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "D",
+    "overall": 46.2,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 60,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.latent-mint",
+          "severity": "warn",
+          "text": "The contract is upgradeable: even without a mint function today, an upgrade could add one (latent mint).",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x659bE70647B0f63217D60e077F4417b1eCC65064"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 62.3% of circulating supply.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": "eip1967",
+    "privileged": [],
+    "verifiedSource": true,
+    "ageDays": 241,
+    "liquidityUsd": 456072.11000000004,
+    "pools": [
+      {
+        "pair": "0x659bE70647B0f63217D60e077F4417b1eCC65064",
+        "dex": "aerodrome",
+        "liquidityUsd": 411039.52,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x147e90e02a91c1d0eb3887a4c08f64d8da8ae70a8cefe8f8612099519962aab7",
+        "dex": "uniswap",
+        "liquidityUsd": 37513.1,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xaA94109F741b15fa39839a60Fc9a29e5Ba9E3Db8",
+        "dex": "uniswap",
+        "liquidityUsd": 7284.4,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xC2BB4fd5648856c73F8b81156C9B52fe173085eD",
+        "dex": "uniswap",
+        "liquidityUsd": 76.57,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xbcBc4c1428632a176D4CBe0B7B891bf4eE6b3E09",
+        "dex": "hydrex",
+        "liquidityUsd": 125.08,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x7995Ab86E35EE7816B52fD7A2bC4242De5313466",
+        "dex": "aerodrome",
+        "liquidityUsd": 26.55,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0xcF94b3b07D295a89c5eA88d4B002F5503b4D170F",
+        "dex": "aerodrome",
+        "liquidityUsd": 5.01,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0x83c78A2e05595691f893dcC17f1B0A6F118D0538",
+        "dex": "aerodrome",
+        "liquidityUsd": 1.88,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      }
+    ],
+    "top10Pct": 62.32,
+    "projectLinks": {
+      "websites": [
+        "https://www.sport.fun/",
+        "https://docs.sport.fun/"
+      ],
+      "socials": [
+        "https://x.com/Sportfun",
+        "https://discord.com/invite/footballdotfun"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

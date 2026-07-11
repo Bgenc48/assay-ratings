@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "DAI",
   "name": "Dai Stablecoin",
-  "scanned_at": "2026-07-11T20:36:18.100Z",
+  "scanned_at": "2026-07-11T20:43:05.347Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "D",
@@ -115,7 +115,7 @@
     ],
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 269799.82000000007,
+    "liquidityUsd": 269799.8400000001,
     "pools": [
       {
         "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb",
@@ -144,7 +144,7 @@
       {
         "pair": "0xC18F50d6A832f12F6DcAaeEe8D0c87A65B96787E",
         "dex": "uniswap",
-        "liquidityUsd": 31249.49,
+        "liquidityUsd": 31249.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -185,6 +185,6 @@
     "top10Pct": null,
     "projectLinks": null
   },
-  "notes": null,
+  "notes": "Bridged representation of DAI on Base, graded on its Base contract structure (bridge/admin-controlled), not on mainnet DAI. The wrapped/bridged (derivative-trust) profile lands in methodology v0.2.",
   "coi": false
 }

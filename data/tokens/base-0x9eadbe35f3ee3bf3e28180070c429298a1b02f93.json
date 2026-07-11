@@ -1,0 +1,185 @@
+{
+  "address": "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "LMTS",
+  "name": "Limitless Official Token",
+  "scanned_at": "2026-07-11T20:46:13.125Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "B",
+    "overall": 75.6,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xa5E0Da329eE5AA03f09228e534953496334080f5"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 9.2%.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "privileged": [],
+    "verifiedSource": true,
+    "ageDays": 263,
+    "liquidityUsd": 935748.85,
+    "pools": [
+      {
+        "pair": "0xbe4C36B9542610dF83Ca690C8b5BC53BbbC5d542",
+        "dex": "aerodrome",
+        "liquidityUsd": 295990.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xa5E0Da329eE5AA03f09228e534953496334080f5",
+        "dex": "aerodrome",
+        "liquidityUsd": 630529.49,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x6cdd1bcaf26c37a0b2de7437f4c56b0f0f2c187894d787aa9aff5b7f7c408d18",
+        "dex": "uniswap",
+        "liquidityUsd": 6772.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x23e312bcf62beb09146da9ba758942cab629bf6947e99e606a1071ad395fe4d2",
+        "dex": "uniswap",
+        "liquidityUsd": 1615.28,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x33645A0fe56fC3232EE69a48DfDE494b5f8A305C",
+        "dex": "uniswap",
+        "liquidityUsd": 778.82,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x5aaE605549a6ab9dA9712bab036eF8bc1a38b8dc",
+        "dex": "uniswap",
+        "liquidityUsd": 62.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      }
+    ],
+    "top10Pct": 9.16,
+    "projectLinks": {
+      "websites": [],
+      "socials": [
+        "https://x.com/trylimitless",
+        "https://discord.com/invite/trylimitless"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

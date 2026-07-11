@@ -1,0 +1,186 @@
+{
+  "address": "0x8b7dde054be9d180c1be7fae0874697374a49832",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "PROS",
+  "name": "Wrapped PROS",
+  "scanned_at": "2026-07-11T20:44:50.462Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "F",
+    "overall": 37.4,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 35,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.unclassified-mint",
+          "severity": "warn",
+          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x8A8e4170C09074b109352190d47e54d7c1F61e4E"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 88 days old; trust needs time (Provisional).",
+          "evidence": "0xe163c483d97097c44719ffede6c9af66f41539d872a02f6e10450acabea7b13a"
+        }
+      ]
+    },
+    "holderConcentration": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 54.0% of circulating supply.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.unclassified-mint",
+      "letter": "C",
+      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "3342089253413882667345489",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "privileged": [
+      "mint(address,uint256)",
+      "burnFrom(address,uint256)"
+    ],
+    "verifiedSource": true,
+    "ageDays": 88,
+    "liquidityUsd": 758174.71,
+    "pools": [
+      {
+        "pair": "0x8A8e4170C09074b109352190d47e54d7c1F61e4E",
+        "dex": "aerodrome",
+        "liquidityUsd": 719398.63,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xee0d536a3636ca08e8646df476b4548afe5193ddda26b61cc73de0fd154be65b",
+        "dex": "uniswap",
+        "liquidityUsd": 29871.87,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x24BDDff0577D1Ee32f92A0b92296cA9702611c6A",
+        "dex": "aerodrome",
+        "liquidityUsd": 2596.23,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x3f4E90Ff4125d9FCC4F4B7Ba5213f596e9A1115d",
+        "dex": "uniswap",
+        "liquidityUsd": 6305.66,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xA1DC70D55489784b68f8d2c045eaa51F59dd7ad5",
+        "dex": "pancakeswap",
+        "liquidityUsd": 2.32,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      }
+    ],
+    "top10Pct": 53.96,
+    "projectLinks": null
+  },
+  "notes": null,
+  "coi": false
+}

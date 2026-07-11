@@ -1,0 +1,204 @@
+{
+  "address": "0x182fa643e5f29d5eca75e7b9cf9336a3fe4620b2",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "O",
+  "name": "o1.exchange",
+  "scanned_at": "2026-07-11T20:44:24.807Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "B-",
+    "overall": 70.9,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0x182fa643e5f29d5eca75e7b9cf9336a3fe4620b2",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x8D479A4C680A76D4Ae03f10203569558405DDFFF"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 47 days old; trust needs time (Provisional).",
+          "evidence": "0x24e3481d362e1c0fee68c6aa93a0fd5e1b49e31c1c8ff1eb46cff8cd386f7ec3"
+        }
+      ]
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "privileged": [],
+    "verifiedSource": true,
+    "ageDays": 47,
+    "liquidityUsd": 2097982.4099999997,
+    "pools": [
+      {
+        "pair": "0x8D479A4C680A76D4Ae03f10203569558405DDFFF",
+        "dex": "aerodrome",
+        "liquidityUsd": 2093093.44,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x873a3db5b12f7d2d83f093470caee38a27026072024ab876e862171d097a1847",
+        "dex": "uniswap",
+        "liquidityUsd": 2533.86,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xb86bd53946842df3bc1dbf7ff45dd97a6fc464837f2a6e14d6d099bed882a793",
+        "dex": "uniswap",
+        "liquidityUsd": 1408.17,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x27b443d53ecfc8a0e4dcd12f8383077d4168e637871df992a4b9221d83301b95",
+        "dex": "uniswap",
+        "liquidityUsd": 445.64,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xdfa20b3277ee7a9bc7f274b3381e26b3651bbc69749533ae072644e863eb00a6",
+        "dex": "uniswap",
+        "liquidityUsd": 266.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x67d5582dfa75ad2aeeda2d92257745ec518c53bef60abb866d099f37632d320f",
+        "dex": "uniswap",
+        "liquidityUsd": 54.46,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x43c9a45944792cb6a21f4822cdc4433746d0bbf6cdeb19b95dcdbc157218d65e",
+        "dex": "uniswap",
+        "liquidityUsd": 0.05,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x76230d6a8c7e401b2c8eea45274cd47fad73f43984f9edf88dfe52aee1022436",
+        "dex": "uniswap",
+        "liquidityUsd": 180.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://o1.exchange/",
+        "https://docs.o1.exchange/"
+      ],
+      "socials": [
+        "https://x.com/o1_exchange",
+        "https://discord.gg/o1exchange"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

@@ -1,0 +1,192 @@
+{
+  "address": "0xbaa5cc21fd487b8fcc2f632f3f4e8d37262a0842",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "MORPHO",
+  "name": "Morpho Token",
+  "scanned_at": "2026-07-11T20:46:20.633Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "D",
+    "overall": 49.7,
+    "provisional": false,
+    "badge": "Custodial",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 35,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.multisig-mint",
+          "severity": "warn",
+          "text": "A mint path exists, gated by a multisig without a timelock or attestation trail.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 55,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.safe",
+          "severity": "warn",
+          "text": "Privileged capabilities gated by a 5-of-9 multisig with no timelock.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x2043B296fFC6b2d3bf4A3F3167d2Afb3B0FBdbEE"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "30675542060508882522486839",
+    "decimals": 18,
+    "owner": "0xcba28b38103307ec8da98377fff9816c164f9afa",
+    "controlType": "safe",
+    "proxy": "eip1967",
+    "privileged": [
+      "mint(address,uint256)"
+    ],
+    "verifiedSource": true,
+    "ageDays": 608,
+    "liquidityUsd": 851626.1499999999,
+    "pools": [
+      {
+        "pair": "0xB5F0b4aE66C14F7EFaA9aA1468E8FC536A3E288c",
+        "dex": "aerodrome",
+        "liquidityUsd": 296264.56,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x2F42Df4aF5312B492E9d7F7b2110D9c7bf2D9e4F",
+        "dex": "uniswap",
+        "liquidityUsd": 115981.53,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x2043B296fFC6b2d3bf4A3F3167d2Afb3B0FBdbEE",
+        "dex": "uniswap",
+        "liquidityUsd": 321831.48,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x0b5801d76420450270ae80476bb57091a23969ef4c05f4f9441547d09e96c83b",
+        "dex": "uniswap",
+        "liquidityUsd": 35110.57,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x3444bF60B93BD30f701601356Ac136aD6a9b7A79",
+        "dex": "uniswap",
+        "liquidityUsd": 25791.42,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xd433B339c5C801228E1343C678Dc26213A7B8Aac",
+        "dex": "aerodrome",
+        "liquidityUsd": 23891.5,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0xf76b2BA2dac24244B9cd3C05Da75cFd834f08259",
+        "dex": "quickswap",
+        "liquidityUsd": 18103.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xc1c26771c32ebbd6985d4f35798454efd3641edab9e8f47e9847dfb050ec7b12",
+        "dex": "uniswap",
+        "liquidityUsd": 14651.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      }
+    ],
+    "top10Pct": 25.98,
+    "projectLinks": {
+      "websites": [
+        "https://morpho.org/"
+      ],
+      "socials": [
+        "https://x.com/morpho"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

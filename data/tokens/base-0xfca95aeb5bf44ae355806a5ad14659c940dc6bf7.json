@@ -1,0 +1,191 @@
+{
+  "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "SHIB",
+  "name": "SHIBA INU",
+  "scanned_at": "2026-07-11T20:46:58.127Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "B+",
+    "overall": 80,
+    "provisional": false,
+    "badge": "Code-Enforced",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+            "data": "0x8da5cb5b",
+            "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000",
+    "decimals": 9,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "privileged": [],
+    "verifiedSource": true,
+    "ageDays": 748,
+    "liquidityUsd": 184158.84999999998,
+    "pools": [
+      {
+        "pair": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee",
+        "dex": "uniswap",
+        "liquidityUsd": 169895.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x4fbB43E487f128D3c94dC668ab5b60e0Ae9Ca001",
+        "dex": "uniswap",
+        "liquidityUsd": 11249.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x3c7eba8f08974e49937a844e489b2372b49d17a46d15a16ed79b02e22a27d7d3",
+        "dex": "uniswap",
+        "liquidityUsd": 1467.27,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xc466e421fa7aa5da59a7f7b4aaed3f10905a781ec0c38665e2f08e477da730a7",
+        "dex": "uniswap",
+        "liquidityUsd": 357.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x1d2367386aa7a4a08726143b209b0f1f13a15a372da65c66a0d56bbe5e079cac",
+        "dex": "uniswap",
+        "liquidityUsd": 774.05,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x4235039335a809E39C282152Ef100197a8F95E8B",
+        "dex": "uniswap",
+        "liquidityUsd": 105.88,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x381Ef53A1f112c7195d96181F6085A152C609C92",
+        "dex": "uniswap",
+        "liquidityUsd": 59.47,
+        "lpBurnedPct": 100,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0xC09E5906180a541485Ec3fdC8bd34177925dA74D",
+        "dex": "uniswap",
+        "liquidityUsd": 250.15,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      }
+    ],
+    "top10Pct": 12.9,
+    "projectLinks": {
+      "websites": [
+        "https://schismaticshiba.com/"
+      ],
+      "socials": [
+        "https://x.com/schismaticshiba",
+        "https://t.me/shiba_base"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

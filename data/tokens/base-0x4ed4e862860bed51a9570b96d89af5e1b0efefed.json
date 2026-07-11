@@ -4,14 +4,14 @@
   "status": "ok",
   "symbol": "DEGEN",
   "name": "Degen",
-  "scanned_at": "2026-07-11T20:34:50.666Z",
+  "scanned_at": "2026-07-11T20:41:26.174Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "C",
-    "overall": 67.9,
+    "letter": "UR",
+    "overall": 55,
     "provisional": false,
     "badge": "Custodial",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -76,7 +76,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -87,6 +87,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "More than 50% of primary liquidity is withdrawable by one key."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -107,7 +112,7 @@
     ],
     "verifiedSource": true,
     "ageDays": 916,
-    "liquidityUsd": 1477220.08,
+    "liquidityUsd": 1477258.72,
     "pools": [
       {
         "pair": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA",
@@ -128,7 +133,7 @@
       {
         "pair": "0xaFB62448929664Bfccb0aAe22f232520e765bA88",
         "dex": "aerodrome",
-        "liquidityUsd": 20879.05,
+        "liquidityUsd": 20917.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -174,7 +179,7 @@
         "lockAnalyzed": true
       }
     ],
-    "top10Pct": 24.57,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.degen.tips/",
@@ -187,5 +192,9 @@
     }
   },
   "notes": null,
-  "coi": false
+  "coi": false,
+  "pendingReview": {
+    "computed": "D"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

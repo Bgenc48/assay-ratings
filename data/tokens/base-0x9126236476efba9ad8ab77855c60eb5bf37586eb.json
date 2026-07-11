@@ -1,0 +1,176 @@
+{
+  "address": "0x9126236476efba9ad8ab77855c60eb5bf37586eb",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "CHECK",
+  "name": "Checkmate",
+  "scanned_at": "2026-07-11T20:47:04.311Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "C",
+    "overall": 56.5,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.eoa",
+          "severity": "warn",
+          "text": "Material admin powers are held by a single externally-owned account.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x3c4384F3664B37A3Cb5A5cB3452B4B4A3Aa1256f"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": "0x9de1abeeb6cc60ded81de4e8c11930c3793f8bdb",
+    "controlType": "eoa",
+    "proxy": null,
+    "privileged": [],
+    "verifiedSource": true,
+    "ageDays": 257,
+    "liquidityUsd": 184716.18000000002,
+    "pools": [
+      {
+        "pair": "0x3c4384F3664B37A3Cb5A5cB3452B4B4A3Aa1256f",
+        "dex": "aerodrome",
+        "liquidityUsd": 133981.82,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x5a7B4970B2610aEe4776A6944d9F2171EE6060B0",
+        "dex": "aerodrome",
+        "liquidityUsd": 48808.41,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x2d3C6d02b9A6D29b2ECCBec7B26BDA41836E1182",
+        "dex": "aerodrome",
+        "liquidityUsd": 363.46,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0x3f985184335BD9e0A4774C79668Ce57EE2AaCFe2",
+        "dex": "aerodrome",
+        "liquidityUsd": 1053.07,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x567b69f72c0a2689C9be0cfBa576Af3CAA896Cb2",
+        "dex": "hydrex",
+        "liquidityUsd": 354.75,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xD4E145Efdbbbb97CE8C23d4C0Fd59C902Bc34dFa",
+        "dex": "aerodrome",
+        "liquidityUsd": 154.67,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      }
+    ],
+    "top10Pct": 12.29,
+    "projectLinks": {
+      "websites": [
+        "https://anichess.com/",
+        "https://docs.anichess.com/anichess"
+      ],
+      "socials": [
+        "https://x.com/AnichessGame",
+        "https://discord.gg/anichess"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

@@ -1,0 +1,156 @@
+{
+  "address": "0x8c0d3adcf8ce094e1ae437557ec90a6374dc9bdd",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "OVPP",
+  "name": "OpenVPP",
+  "scanned_at": "2026-07-11T20:45:40.641Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "B-",
+    "overall": 74.1,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0x8c0d3adcf8ce094e1ae437557ec90a6374dc9bdd",
+            "data": "0x8da5cb5b",
+            "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xe2444fAa67022125A059c19d5737D8e4Dad251fA"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000",
+    "decimals": 9,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "privileged": [],
+    "verifiedSource": true,
+    "ageDays": 192,
+    "liquidityUsd": 416383.61,
+    "pools": [
+      {
+        "pair": "0xe2444fAa67022125A059c19d5737D8e4Dad251fA",
+        "dex": "aerodrome",
+        "liquidityUsd": 403009.05,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0x2c6c1492b36a7af21f3578ddb142253ac9d6e67c0d8442a11d5e039b31459c4c",
+        "dex": "uniswap",
+        "liquidityUsd": 13330.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x8857358a26254f8a1100434225495E633d496950",
+        "dex": "hydrex",
+        "liquidityUsd": 43.57,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://openvpp.energy/"
+      ],
+      "socials": [
+        "https://x.com/openvpp",
+        "https://t.me/openvpp"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}
