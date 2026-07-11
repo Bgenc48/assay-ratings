@@ -52,12 +52,20 @@ export function computeAlerts(prev, current, { now = new Date() } = {}) {
       `Owner/controller changed: ${prev.facts?.owner ?? "none"} → ${current.facts?.owner ?? "none"}.`,
       { field: "facts.owner" });
   }
-  if (
-    (prev.facts?.proxyImplementation ?? null) !== (current.facts?.proxyImplementation ?? null) &&
-    (prev.facts?.proxyImplementation || current.facts?.proxyImplementation)
-  ) {
+  // An upgrade alert requires a KNOWN previous implementation that differs.
+  // When the previous report lacks the field (older schema, or proxy
+  // detection newly added), this scan establishes the baseline — alerting
+  // there would publish a false "changed" statement (2026-07-11 corrections
+  // log entry).
+  const prevImpl = prev.facts?.proxyImplementation ?? null;
+  const curImpl = current.facts?.proxyImplementation ?? null;
+  if (prevImpl !== null && curImpl !== null && prevImpl !== curImpl) {
     add("CRITICAL", "upgraded",
-      `Contract implementation changed: ${prev.facts?.proxyImplementation ?? "none"} → ${current.facts?.proxyImplementation ?? "none"}.`,
+      `Contract implementation changed: ${prevImpl} → ${curImpl}.`,
+      { field: "facts.proxyImplementation" });
+  } else if (prevImpl !== null && curImpl === null) {
+    add("WARN", "proxy-slot-cleared",
+      `Previously detected implementation slot now reads empty (was ${prevImpl}).`,
       { field: "facts.proxyImplementation" });
   }
   if (prev.facts?.verifiedSource === true && current.facts?.verifiedSource === false) {

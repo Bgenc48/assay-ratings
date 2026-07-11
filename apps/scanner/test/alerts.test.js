@@ -31,6 +31,15 @@ test("downgrade to D/F is CRITICAL; ordinary downgrade WARN; upgrade INFO", () =
   assert.equal(info[0].kind, "upgrade");
 });
 
+test("field appearing in a newer schema is a baseline, never an 'upgraded' alert", () => {
+  // prev has no proxyImplementation field at all (older report schema).
+  const prev = report();
+  delete prev.facts.proxyImplementation;
+  const cur = report({ facts: { owner: null, proxyImplementation: "0xabc", pools: [] } });
+  const out = computeAlerts(prev, cur);
+  assert.ok(!out.some((a) => a.kind === "upgraded"), "no upgrade alert on baseline establishment");
+});
+
 test("controller change and implementation change are CRITICAL", () => {
   const owner = computeAlerts(report(), report({ facts: { owner: "0xbeef", proxyImplementation: null, pools: [] } }));
   assert.ok(owner.some((a) => a.kind === "controller-changed" && a.severity === "CRITICAL"));
