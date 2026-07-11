@@ -27,13 +27,15 @@ jobs:
         with:
           node-version: 22
       - run: npm ci --ignore-scripts
+      - name: Discover new tokens
+        run: npm run discover
       - name: Live scan
         run: npm run scan
       - name: Commit refreshed data
         run: |
           git config user.name "assay-scanner"
           git config user.email "scanner@assayratings.com"
-          git add data/
+          git add data/ registry/discovered.json
           if git diff --cached --quiet; then
             echo "No data changes."
           else

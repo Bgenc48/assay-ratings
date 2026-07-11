@@ -39,6 +39,15 @@ async function main() {
     registry = { tokens: fixtures.tokens };
   } else {
     registry = JSON.parse(await readFile(path.join(ROOT, "registry", "tokens.json"), "utf8"));
+    // Auto-discovered tokens (registry/discovered.json, written by
+    // discover.js) join the scan after the hand-curated set.
+    try {
+      const discovered = JSON.parse(await readFile(path.join(ROOT, "registry", "discovered.json"), "utf8"));
+      const known = new Set(registry.tokens.map((t) => t.address.toLowerCase()));
+      registry.tokens.push(...discovered.tokens.filter((t) => !known.has(t.address.toLowerCase())));
+    } catch {
+      /* no discovered file yet */
+    }
   }
   const entries = registry.tokens.filter((t) => !t.excluded && (!only || t.address.toLowerCase() === only));
 
