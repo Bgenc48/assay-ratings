@@ -4,24 +4,24 @@
   "status": "ok",
   "symbol": "USDC",
   "name": "USD Coin",
-  "scanned_at": "2026-07-11T20:26:35.827Z",
+  "scanned_at": "2026-07-11T20:34:13.794Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "C",
-    "overall": 61.6,
+    "letter": "UR",
+    "overall": 36.6,
     "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 100,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.fixed",
-          "severity": "info",
-          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "id": "supply.eoa-mint",
+          "severity": "crit",
+          "text": "A mint path exists and its controller is an externally-owned account. Supply can be inflated unilaterally.",
           "evidence": null
         }
       ]
@@ -32,8 +32,8 @@
       "findings": [
         {
           "id": "admin.eoa",
-          "severity": "warn",
-          "text": "Material admin powers are held by a single externally-owned account.",
+          "severity": "crit",
+          "text": "The contract is upgradeable and the upgrade key is a single externally-owned account with no timelock.",
           "evidence": null
         }
       ]
@@ -88,6 +88,16 @@
   },
   "caps": [
     {
+      "id": "cap.eoa-mint",
+      "letter": "F",
+      "reason": "Mint or issuance is controlled by an externally-owned account."
+    },
+    {
+      "id": "cap.eoa-upgrade",
+      "letter": "D",
+      "reason": "Upgradeable with an EOA admin and no timelock."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -95,20 +105,25 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4264732871453580",
+    "totalSupply": "4264523060889205",
     "decimals": 6,
     "owner": "0x3abd6f64a422225e61e435bae41db12096106df7",
     "controlType": "eoa",
-    "proxy": null,
-    "privileged": [],
+    "proxy": "zos-legacy",
+    "privileged": [
+      "mint(address,uint256)",
+      "pause()",
+      "unpause()",
+      "blacklist(address)"
+    ],
     "verifiedSource": true,
     "ageDays": 1058,
-    "liquidityUsd": 1538829.27,
+    "liquidityUsd": 1535634.61,
     "pools": [
       {
         "pair": "0x5D0bC342178C8Fe2c2f9A9fcC9D52555C99936db",
         "dex": "quickswap",
-        "liquidityUsd": 151493.2,
+        "liquidityUsd": 148298.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -141,9 +156,9 @@
         "pair": "0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD",
         "dex": "aerodrome",
         "liquidityUsd": 42317.94,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
       },
       {
         "pair": "0x867dbb1b6417abcb3696d5a5d9cc38cbf9f0f6d17355515fe1c8303e791832c4",
@@ -174,5 +189,9 @@
     "projectLinks": null
   },
   "notes": "Fiat stablecoin — pausable/blacklistable/upgradeable by design and disclosed. Category profile for stablecoins (redeemability) is a methodology v0.2 item; until then the raw structure scores under the standard profile with this note shown.",
-  "coi": false
+  "coi": false,
+  "pendingReview": {
+    "computed": "F"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

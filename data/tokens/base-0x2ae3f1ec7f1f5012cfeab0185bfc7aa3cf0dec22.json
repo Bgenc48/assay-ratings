@@ -1,27 +1,27 @@
 {
-  "address": "0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed",
+  "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
   "chain": "base",
   "status": "ok",
-  "symbol": "DEGEN",
-  "name": "Degen",
-  "scanned_at": "2026-07-11T20:34:50.666Z",
+  "symbol": "cbETH",
+  "name": "Coinbase Wrapped Staked ETH",
+  "scanned_at": "2026-07-11T20:36:00.961Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "C",
-    "overall": 67.9,
-    "provisional": false,
+    "letter": "UR",
+    "overall": 46.1,
+    "provisional": true,
     "badge": "Custodial",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 100,
+      "score": 35,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.fixed",
-          "severity": "info",
-          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "id": "supply.multisig-mint",
+          "severity": "warn",
+          "text": "A mint path exists, gated by a multisig without a timelock or attestation trail.",
           "evidence": null
         }
       ]
@@ -33,7 +33,7 @@
         {
           "id": "admin.safe",
           "severity": "warn",
-          "text": "Privileged capabilities gated by a 2-of-3 multisig with no timelock.",
+          "text": "Privileged capabilities gated by a 3-of-6 multisig with no timelock.",
           "evidence": null
         }
       ]
@@ -65,18 +65,18 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA"
+            "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -95,97 +95,90 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "36495313053155999924120200702",
+    "totalSupply": "60265060961643809004977",
     "decimals": 18,
-    "owner": "0x704ec5c12ca20a293c2c0b72b22619a4231f3c0d",
+    "owner": null,
     "controlType": "safe",
-    "proxy": null,
+    "proxy": "eip1967",
     "privileged": [
-      "pause()",
-      "unpause()",
-      "burnFrom(address,uint256)"
+      "mint(address,uint256)"
     ],
     "verifiedSource": true,
-    "ageDays": 916,
-    "liquidityUsd": 1477220.08,
+    "ageDays": null,
+    "liquidityUsd": 6355877.68,
     "pools": [
       {
-        "pair": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA",
-        "dex": "uniswap",
-        "liquidityUsd": 1380220.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x2C4909355b0C036840819484c3A882A95659aBf3",
+        "pair": "0x47cA96Ea59C13F72745928887f84C9F52C3D7348",
         "dex": "aerodrome",
-        "liquidityUsd": 53737.47,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true
-      },
-      {
-        "pair": "0xaFB62448929664Bfccb0aAe22f232520e765bA88",
-        "dex": "aerodrome",
-        "liquidityUsd": 20879.05,
+        "liquidityUsd": 2391721.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xee381526b93d418077a9d1b9c9b495a3d135410af9a58bc2a5f512fb7b61cbf7",
-        "dex": "uniswap",
-        "liquidityUsd": 10161.07,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xc01162ED99a018D02b8a12f4712B0b9b87a9852F",
-        "dex": "aerodrome",
-        "liquidityUsd": 6393.75,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true
-      },
-      {
-        "pair": "0x54D281c7cc029a9Dd71F9ACb7487dd95B1EecF5a",
-        "dex": "pancakeswap",
-        "liquidityUsd": 2139.97,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xd2Dd277feEEc88405DB3741239b0A9a96d01692D",
+        "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97",
         "dex": "hydrex",
-        "liquidityUsd": 863.07,
+        "liquidityUsd": 2454624.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x637ad8d2611d3efE2ef41fdBb40b9F21AbAF9585",
+        "pair": "0x8BB9eAF3C5A906D20c4CC10eA2F73A3Ac2D5d41A",
         "dex": "aerodrome",
-        "liquidityUsd": 2825.42,
+        "liquidityUsd": 547090.58,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x257FCbAE4Ac6B26A02E4FC5e1a11e4174B5ce395",
+        "dex": "pancakeswap",
+        "liquidityUsd": 139906.16,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xc715096EeCC3f4A0FDBfF055a3db2926adC83244",
+        "dex": "alien-base",
+        "liquidityUsd": 289157.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x74A4bF2cad1b172cDc82a5Da7130C7A59EB5460b",
+        "dex": "quickswap",
+        "liquidityUsd": 157470.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
+        "dex": "alien-base",
+        "liquidityUsd": 265068.77,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91",
+        "dex": "aerodrome",
+        "liquidityUsd": 110837.57,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       }
     ],
-    "top10Pct": 24.57,
-    "projectLinks": {
-      "websites": [
-        "https://www.degen.tips/",
-        "https://farcaster.xyz/~/channel/degen"
-      ],
-      "socials": [
-        "https://twitter.com/degentokenbase",
-        "https://t.me/degentokenbase"
-      ]
-    }
+    "top10Pct": null,
+    "projectLinks": null
   },
   "notes": null,
-  "coi": false
+  "coi": false,
+  "pendingReview": {
+    "computed": "D"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

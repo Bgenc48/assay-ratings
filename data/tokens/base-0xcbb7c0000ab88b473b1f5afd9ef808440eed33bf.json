@@ -1,45 +1,40 @@
 {
-  "address": "0x4200000000000000000000000000000000000006",
+  "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
   "chain": "base",
   "status": "ok",
-  "symbol": "WETH",
-  "name": "Wrapped Ether",
-  "scanned_at": "2026-07-11T20:34:32.633Z",
+  "symbol": "cbBTC",
+  "name": "Coinbase Wrapped BTC",
+  "scanned_at": "2026-07-11T20:36:31.156Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "B",
-    "overall": 77.5,
+    "letter": "UR",
+    "overall": 27.5,
     "provisional": true,
-    "badge": "Code-Enforced",
+    "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 100,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.fixed",
-          "severity": "info",
-          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "id": "supply.eoa-mint",
+          "severity": "crit",
+          "text": "A mint path exists and its controller is an externally-owned account. Supply can be inflated unilaterally.",
           "evidence": null
         }
       ]
     },
     "adminSurface": {
-      "score": 100,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.none",
-          "severity": "info",
-          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
-          "evidence": {
-            "type": "eth_call",
-            "to": "0x4200000000000000000000000000000000000006",
-            "data": "0x8da5cb5b",
-            "result": "0x"
-          }
+          "id": "admin.eoa",
+          "severity": "crit",
+          "text": "The contract is upgradeable and the upgrade key is a single externally-owned account with no timelock.",
+          "evidence": null
         }
       ]
     },
@@ -70,7 +65,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x6c561B446416E1A00E8E93E221854d6eA4171372"
+            "pair": "0x4e962BB3889Bf030368F56810A9c96B83CB3E778"
           }
         }
       ]
@@ -93,6 +88,16 @@
   },
   "caps": [
     {
+      "id": "cap.eoa-mint",
+      "letter": "F",
+      "reason": "Mint or issuance is controlled by an externally-owned account."
+    },
+    {
+      "id": "cap.eoa-upgrade",
+      "letter": "D",
+      "reason": "Upgradeable with an EOA admin and no timelock."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -100,76 +105,81 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "264424966024305196383649",
-    "decimals": 18,
-    "owner": null,
-    "controlType": "none",
-    "proxy": null,
-    "privileged": [],
+    "totalSupply": "4273544251140",
+    "decimals": 8,
+    "owner": "0xce56d20689d836ec7a728ceb94a15746696c16e6",
+    "controlType": "eoa",
+    "proxy": "zos-legacy",
+    "privileged": [
+      "mint(address,uint256)",
+      "pause()",
+      "unpause()",
+      "blacklist(address)"
+    ],
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 133069494.11999999,
+    "liquidityUsd": 23934264.17,
     "pools": [
       {
-        "pair": "0xb4CB800910B228ED3d0834cF79D697127BBB00e5",
-        "dex": "uniswap",
-        "liquidityUsd": 211958.27,
+        "pair": "0x4e962BB3889Bf030368F56810A9c96B83CB3E778",
+        "dex": "aerodrome",
+        "liquidityUsd": 9100839.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x72AB388E2E2F6FaceF59E3C3FA2C4E29011c2D38",
+        "pair": "0x42d4a22CaD0F5a49681a5715cE994Af73A43B76b",
+        "dex": "aerodrome",
+        "liquidityUsd": 3465215.62,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
         "dex": "pancakeswap",
-        "liquidityUsd": 3901707.19,
+        "liquidityUsd": 4109736.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x3FE04A59Ebd38cF06080a6F60a98D124eb59392A",
+        "pair": "0x160D7E9d948B16c163332a277b393c288408eb12",
         "dex": "aerodrome",
-        "liquidityUsd": 3690918.92,
+        "liquidityUsd": 4397615.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xb2cc224c1c9feE385f8ad6a55b4d94E92359DC59",
+        "pair": "0x7C7420DD105E2779316423Ba3E973f434315EFA9",
         "dex": "aerodrome",
-        "liquidityUsd": 9080316,
+        "liquidityUsd": 271540.36,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xd0b53D9277642d899DF5C87A3966A349A798F224",
-        "dex": "uniswap",
-        "liquidityUsd": 9895419.32,
+        "pair": "0xb94b22332ABf5f89877A14Cc88f2aBC48c34B3Df",
+        "dex": "pancakeswap",
+        "liquidityUsd": 1725188.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x4e392fBfE4D0557C82D2F97F02ec39daA31516dd",
+        "pair": "0x9D14ff91AE2c6e3D1A760542248B6c7F206894b0",
         "dex": "aerodrome",
-        "liquidityUsd": 118169.04,
+        "liquidityUsd": 712719.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xdbc6998296caA1652A810dc8D3BaF4A8294330f1",
+        "pair": "0x22AEe3699b6A0fEd71490C103Bd4E5f3309891D5",
         "dex": "aerodrome",
-        "liquidityUsd": 158506.89,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x6c561B446416E1A00E8E93E221854d6eA4171372",
-        "dex": "uniswap",
-        "liquidityUsd": 106012498.49,
+        "liquidityUsd": 151408.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -181,6 +191,10 @@
       "socials": []
     }
   },
-  "notes": "Canonical Base predeploy. Wrapped-asset profile (derivative trust) is a v0.2 item.",
-  "coi": false
+  "notes": null,
+  "coi": false,
+  "pendingReview": {
+    "computed": "F"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

@@ -1,39 +1,39 @@
 {
-  "address": "0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed",
+  "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
   "chain": "base",
   "status": "ok",
-  "symbol": "DEGEN",
-  "name": "Degen",
-  "scanned_at": "2026-07-11T20:34:50.666Z",
+  "symbol": "DAI",
+  "name": "Dai Stablecoin",
+  "scanned_at": "2026-07-11T20:36:18.100Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "C",
-    "overall": 67.9,
-    "provisional": false,
-    "badge": "Custodial",
-    "coverage": "full"
+    "letter": "D",
+    "overall": 41.8,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 100,
+      "score": 35,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.fixed",
-          "severity": "info",
-          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "id": "supply.unclassified-mint",
+          "severity": "warn",
+          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
           "evidence": null
         }
       ]
     },
     "adminSurface": {
-      "score": 55,
+      "score": 40,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.safe",
+          "id": "admin.unknown-gate",
           "severity": "warn",
-          "text": "Privileged capabilities gated by a 2-of-3 multisig with no timelock.",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
           "evidence": null
         }
       ]
@@ -65,18 +65,18 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA"
+            "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +88,16 @@
   },
   "caps": [
     {
+      "id": "cap.unclassified-mint",
+      "letter": "C",
+      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "More than 50% of primary liquidity is withdrawable by one key."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -95,96 +105,85 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "36495313053155999924120200702",
+    "totalSupply": "2077307196650097295178986",
     "decimals": 18,
-    "owner": "0x704ec5c12ca20a293c2c0b72b22619a4231f3c0d",
-    "controlType": "safe",
+    "owner": null,
+    "controlType": "none",
     "proxy": null,
     "privileged": [
-      "pause()",
-      "unpause()",
-      "burnFrom(address,uint256)"
+      "mint(address,uint256)"
     ],
     "verifiedSource": true,
-    "ageDays": 916,
-    "liquidityUsd": 1477220.08,
+    "ageDays": null,
+    "liquidityUsd": 269799.82000000007,
     "pools": [
       {
-        "pair": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA",
+        "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb",
         "dex": "uniswap",
-        "liquidityUsd": 1380220.28,
+        "liquidityUsd": 53770.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x2C4909355b0C036840819484c3A882A95659aBf3",
-        "dex": "aerodrome",
-        "liquidityUsd": 53737.47,
+        "pair": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823",
+        "dex": "shark-swap",
+        "liquidityUsd": 53478.87,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       },
       {
-        "pair": "0xaFB62448929664Bfccb0aAe22f232520e765bA88",
-        "dex": "aerodrome",
-        "liquidityUsd": 20879.05,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xee381526b93d418077a9d1b9c9b495a3d135410af9a58bc2a5f512fb7b61cbf7",
-        "dex": "uniswap",
-        "liquidityUsd": 10161.07,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xc01162ED99a018D02b8a12f4712B0b9b87a9852F",
-        "dex": "aerodrome",
-        "liquidityUsd": 6393.75,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true
-      },
-      {
-        "pair": "0x54D281c7cc029a9Dd71F9ACb7487dd95B1EecF5a",
+        "pair": "0x345825A980BD94e1480bC4f20FE4e3DAE2F23Dd3",
         "dex": "pancakeswap",
-        "liquidityUsd": 2139.97,
+        "liquidityUsd": 47813.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xd2Dd277feEEc88405DB3741239b0A9a96d01692D",
+        "pair": "0xC18F50d6A832f12F6DcAaeEe8D0c87A65B96787E",
+        "dex": "uniswap",
+        "liquidityUsd": 31249.49,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xd604cf300A4aE4345426dF42FFb296aa35b4bef2",
         "dex": "hydrex",
-        "liquidityUsd": 863.07,
+        "liquidityUsd": 23646.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x637ad8d2611d3efE2ef41fdBb40b9F21AbAF9585",
-        "dex": "aerodrome",
-        "liquidityUsd": 2825.42,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "pair": "0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
+        "dex": "uniswap",
+        "liquidityUsd": 23610.79,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x3BD740dc10864f35001AAB7771C56a85C48c901B",
+        "dex": "sushiswap",
+        "liquidityUsd": 20390.98,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x22F9623817F152148B4E080E98Af66FBE9C5AdF8",
+        "dex": "uniswap",
+        "liquidityUsd": 15839,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
       }
     ],
-    "top10Pct": 24.57,
-    "projectLinks": {
-      "websites": [
-        "https://www.degen.tips/",
-        "https://farcaster.xyz/~/channel/degen"
-      ],
-      "socials": [
-        "https://twitter.com/degentokenbase",
-        "https://t.me/degentokenbase"
-      ]
-    }
+    "top10Pct": null,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false
