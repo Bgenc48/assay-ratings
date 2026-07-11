@@ -4,14 +4,14 @@
   "status": "ok",
   "symbol": "AMETA",
   "name": "Alpha City",
-  "scanned_at": "2026-07-11T20:47:33.838Z",
+  "scanned_at": "2026-07-11T21:20:15.092Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
-    "overall": 61.5,
+    "overall": 62.2,
     "provisional": false,
     "badge": "Discretionary",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -76,7 +76,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -105,17 +105,18 @@
     "owner": null,
     "controlType": "none",
     "proxy": null,
+    "proxyImplementation": null,
     "privileged": [
       "blacklist(address)"
     ],
     "verifiedSource": true,
     "ageDays": 526,
-    "liquidityUsd": 84184.06,
+    "liquidityUsd": 84118.93,
     "pools": [
       {
         "pair": "0x9aa4826fd33557a7d882296e3df5101b36ba09260f1757248af0e3957ed21674",
         "dex": "uniswap",
-        "liquidityUsd": 81443.23,
+        "liquidityUsd": 81379.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -123,7 +124,7 @@
       {
         "pair": "0xFb559D225343A61884D46eeE91C1a805759F758b",
         "dex": "uniswap",
-        "liquidityUsd": 2724.27,
+        "liquidityUsd": 2723.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -131,13 +132,13 @@
       {
         "pair": "0x27f0a66f8291898d27fd6625bd008d9728255801f74e00c78e520b8ac0aa1c0d",
         "dex": "uniswap",
-        "liquidityUsd": 16.56,
+        "liquidityUsd": 16.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 23.03,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://alphacitymeta.com",

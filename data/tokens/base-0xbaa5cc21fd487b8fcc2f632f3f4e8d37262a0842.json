@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "MORPHO",
   "name": "Morpho Token",
-  "scanned_at": "2026-07-11T20:46:20.633Z",
+  "scanned_at": "2026-07-11T21:19:01.849Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "D",
@@ -65,7 +65,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x2043B296fFC6b2d3bf4A3F3167d2Afb3B0FBdbEE"
+            "pair": "0xB5F0b4aE66C14F7EFaA9aA1468E8FC536A3E288c"
           }
         }
       ]
@@ -105,17 +105,18 @@
     "owner": "0xcba28b38103307ec8da98377fff9816c164f9afa",
     "controlType": "safe",
     "proxy": "eip1967",
+    "proxyImplementation": "0xa860498f8a299526174b539fcc49f13cc082fb18",
     "privileged": [
       "mint(address,uint256)"
     ],
     "verifiedSource": true,
     "ageDays": 608,
-    "liquidityUsd": 851626.1499999999,
+    "liquidityUsd": 927488.82,
     "pools": [
       {
         "pair": "0xB5F0b4aE66C14F7EFaA9aA1468E8FC536A3E288c",
         "dex": "aerodrome",
-        "liquidityUsd": 296264.56,
+        "liquidityUsd": 372386.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -123,7 +124,7 @@
       {
         "pair": "0x2F42Df4aF5312B492E9d7F7b2110D9c7bf2D9e4F",
         "dex": "uniswap",
-        "liquidityUsd": 115981.53,
+        "liquidityUsd": 116111.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -131,7 +132,7 @@
       {
         "pair": "0x2043B296fFC6b2d3bf4A3F3167d2Afb3B0FBdbEE",
         "dex": "uniswap",
-        "liquidityUsd": 321831.48,
+        "liquidityUsd": 321689.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -139,7 +140,7 @@
       {
         "pair": "0x0b5801d76420450270ae80476bb57091a23969ef4c05f4f9441547d09e96c83b",
         "dex": "uniswap",
-        "liquidityUsd": 35110.57,
+        "liquidityUsd": 35091.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -147,7 +148,7 @@
       {
         "pair": "0x3444bF60B93BD30f701601356Ac136aD6a9b7A79",
         "dex": "uniswap",
-        "liquidityUsd": 25791.42,
+        "liquidityUsd": 25837.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -155,7 +156,7 @@
       {
         "pair": "0xd433B339c5C801228E1343C678Dc26213A7B8Aac",
         "dex": "aerodrome",
-        "liquidityUsd": 23891.5,
+        "liquidityUsd": 23703.81,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
@@ -163,7 +164,7 @@
       {
         "pair": "0xf76b2BA2dac24244B9cd3C05Da75cFd834f08259",
         "dex": "quickswap",
-        "liquidityUsd": 18103.72,
+        "liquidityUsd": 18016.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false

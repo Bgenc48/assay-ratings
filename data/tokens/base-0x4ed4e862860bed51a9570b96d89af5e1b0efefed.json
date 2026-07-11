@@ -4,14 +4,14 @@
   "status": "ok",
   "symbol": "DEGEN",
   "name": "Degen",
-  "scanned_at": "2026-07-11T20:41:26.174Z",
+  "scanned_at": "2026-07-11T21:14:55.103Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "UR",
     "overall": 55,
     "provisional": false,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -76,7 +76,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -105,6 +105,7 @@
     "owner": "0x704ec5c12ca20a293c2c0b72b22619a4231f3c0d",
     "controlType": "safe",
     "proxy": null,
+    "proxyImplementation": null,
     "privileged": [
       "pause()",
       "unpause()",
@@ -112,12 +113,12 @@
     ],
     "verifiedSource": true,
     "ageDays": 916,
-    "liquidityUsd": 1477258.72,
+    "liquidityUsd": 1477384.9,
     "pools": [
       {
         "pair": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA",
         "dex": "uniswap",
-        "liquidityUsd": 1380220.28,
+        "liquidityUsd": 1380298.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -133,7 +134,7 @@
       {
         "pair": "0xaFB62448929664Bfccb0aAe22f232520e765bA88",
         "dex": "aerodrome",
-        "liquidityUsd": 20917.69,
+        "liquidityUsd": 20949.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -141,7 +142,7 @@
       {
         "pair": "0xee381526b93d418077a9d1b9c9b495a3d135410af9a58bc2a5f512fb7b61cbf7",
         "dex": "uniswap",
-        "liquidityUsd": 10161.07,
+        "liquidityUsd": 10167.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -157,7 +158,7 @@
       {
         "pair": "0x54D281c7cc029a9Dd71F9ACb7487dd95B1EecF5a",
         "dex": "pancakeswap",
-        "liquidityUsd": 2139.97,
+        "liquidityUsd": 2145.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -165,7 +166,7 @@
       {
         "pair": "0xd2Dd277feEEc88405DB3741239b0A9a96d01692D",
         "dex": "hydrex",
-        "liquidityUsd": 863.07,
+        "liquidityUsd": 864.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -173,13 +174,13 @@
       {
         "pair": "0x637ad8d2611d3efE2ef41fdBb40b9F21AbAF9585",
         "dex": "aerodrome",
-        "liquidityUsd": 2825.42,
+        "liquidityUsd": 2827.69,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 24.57,
     "projectLinks": {
       "websites": [
         "https://www.degen.tips/",
