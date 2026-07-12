@@ -1,27 +1,33 @@
 {
-  "address": "0x55365c9e68e70122020184f4441b498e8bf06ac6",
+  "address": "0x18cd0ef93be7f3bb052885bc2d66947ac7799b07",
   "chain": "base",
   "status": "ok",
-  "symbol": "QWLA",
-  "name": "Qawalla Token",
-  "scanned_at": "2026-07-12T07:43:52.154Z",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-07-12T07:44:38.648Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "F",
-    "overall": 39,
+    "letter": "C",
+    "overall": 60.4,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unclassified-mint",
+          "id": "supply.unverified",
           "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
           "evidence": null
         }
       ]
@@ -65,7 +71,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x551d9C1bFdd3f9De16A355fB44577bDa59eBfeF1"
+            "pair": "0x1e9b0d0304be7bd0a75154fef396f3a3f99915286e291a02ef252109a71b5a98"
           }
         }
       ]
@@ -76,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 70.3% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,14 +94,9 @@
   },
   "caps": [
     {
-      "id": "cap.unclassified-mint",
+      "id": "cap.unverified",
       "letter": "C",
-      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
+      "reason": "Source code is not verified on a public explorer."
     },
     {
       "id": "cap.claim-light",
@@ -112,29 +106,37 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "22004991186364464821605845",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [
-      "mint(address,uint256)"
+      "burnFrom(address,uint256)"
     ],
-    "verifiedSource": true,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 151339.67,
+    "liquidityUsd": 643993.28,
     "pools": [
       {
-        "pair": "0x551d9C1bFdd3f9De16A355fB44577bDa59eBfeF1",
+        "pair": "0x2a4a321f315f9414c9452dc3b57aa6b5654298534326f861c1b278848f418fce",
         "dex": "uniswap",
-        "liquidityUsd": 151339.67,
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x1e9b0d0304be7bd0a75154fef396f3a3f99915286e291a02ef252109a71b5a98",
+        "dex": "uniswap",
+        "liquidityUsd": 643993.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 70.33,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "cbETH",
   "name": "Coinbase Wrapped Staked ETH",
-  "scanned_at": "2026-07-11T21:24:30.667Z",
+  "scanned_at": "2026-07-12T07:40:03.653Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "UR",
-    "overall": 46.1,
+    "overall": 49.7,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -65,7 +65,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97"
+            "pair": "0x47cA96Ea59C13F72745928887f84C9F52C3D7348"
           }
         }
       ]
@@ -76,9 +76,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 5.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -95,7 +102,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "60265060961643809004977",
+    "totalSupply": "60534935479147742512988",
     "decimals": 18,
     "owner": null,
     "controlType": "safe",
@@ -106,12 +113,20 @@
     ],
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 6388815.91,
+    "liquidityUsd": 6258885.359999999,
     "pools": [
+      {
+        "pair": "0x8BB9eAF3C5A906D20c4CC10eA2F73A3Ac2D5d41A",
+        "dex": "aerodrome",
+        "liquidityUsd": 541334.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
       {
         "pair": "0x47cA96Ea59C13F72745928887f84C9F52C3D7348",
         "dex": "aerodrome",
-        "liquidityUsd": 2420366.01,
+        "liquidityUsd": 2460297.36,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -119,15 +134,7 @@
       {
         "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97",
         "dex": "hydrex",
-        "liquidityUsd": 2451604.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x8BB9eAF3C5A906D20c4CC10eA2F73A3Ac2D5d41A",
-        "dex": "aerodrome",
-        "liquidityUsd": 554106.86,
+        "liquidityUsd": 2302004.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -135,7 +142,7 @@
       {
         "pair": "0x257FCbAE4Ac6B26A02E4FC5e1a11e4174B5ce395",
         "dex": "pancakeswap",
-        "liquidityUsd": 140002.68,
+        "liquidityUsd": 137684.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -143,7 +150,7 @@
       {
         "pair": "0xc715096EeCC3f4A0FDBfF055a3db2926adC83244",
         "dex": "alien-base",
-        "liquidityUsd": 289358.94,
+        "liquidityUsd": 285443.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -151,29 +158,29 @@
       {
         "pair": "0x74A4bF2cad1b172cDc82a5Da7130C7A59EB5460b",
         "dex": "quickswap",
-        "liquidityUsd": 157470.8,
+        "liquidityUsd": 155143.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
-        "dex": "alien-base",
-        "liquidityUsd": 265068.77,
+        "pair": "0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91",
+        "dex": "aerodrome",
+        "liquidityUsd": 111906.85,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       },
       {
-        "pair": "0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91",
-        "dex": "aerodrome",
-        "liquidityUsd": 110837.57,
+        "pair": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
+        "dex": "alien-base",
+        "liquidityUsd": 265070.23,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 5.01,
     "projectLinks": null
   },
   "notes": "Custodial liquid-staking wrapper (Coinbase). Same v0.2 custodial-profile note as cbBTC.",

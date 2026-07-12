@@ -4,14 +4,14 @@
   "status": "ok",
   "symbol": "OFC",
   "name": "OFC",
-  "scanned_at": "2026-07-11T21:29:55.512Z",
+  "scanned_at": "2026-07-12T07:43:22.911Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "D",
-    "overall": 52.2,
+    "overall": 52.1,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -83,7 +83,7 @@
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -119,14 +119,14 @@
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [],
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": 108,
-    "liquidityUsd": 278720.12,
+    "liquidityUsd": 266982.61,
     "pools": [
       {
         "pair": "0x44b5D0d8ce8C643c7e217E92492621C4c0Ae3121",
         "dex": "aerodrome",
-        "liquidityUsd": 249489.92,
+        "liquidityUsd": 238956.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -134,7 +134,7 @@
       {
         "pair": "0x66E1031dB440890a824F0dB80489Be979BD16a86",
         "dex": "aerodrome",
-        "liquidityUsd": 28367.04,
+        "liquidityUsd": 27537.93,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
@@ -142,15 +142,7 @@
       {
         "pair": "0xf57dbade9f581b2631576fdbfcc08ebac1e9706927414194484df60ce2fce569",
         "dex": "uniswap",
-        "liquidityUsd": 480.18,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x93da2a9e6812d01694f6d611244de3a5bf3b3555bdcc0d6ef042e288615bd9f8",
-        "dex": "uniswap",
-        "liquidityUsd": 373.88,
+        "liquidityUsd": 478.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -158,13 +150,13 @@
       {
         "pair": "0xa4aa254f455aa856eb8767ee49ea8b437cc9cac1e7697d8d2516a947859caf14",
         "dex": "uniswap",
-        "liquidityUsd": 9.1,
+        "liquidityUsd": 9.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 22.68,
     "projectLinks": {
       "websites": [
         "https://club.onefootball.com/",

@@ -1,44 +1,84 @@
 {
-  "generated_at": "2026-07-11T21:31:38.804Z",
+  "generated_at": "2026-07-12T07:44:52.828Z",
   "alerts": [
     {
-      "at": "2026-07-11T21:26:12.333Z",
+      "at": "2026-07-12T07:41:20.887Z",
       "chain": "base",
       "address": "0x8185eaf46136a3f095c60facd97eca1bfc2f38f6",
       "symbol": "$OLIVIA2.0",
       "severity": "WARN",
       "kind": "grade-state",
-      "text": "Grade state UR → C.",
+      "text": "Grade state C → UR.",
       "evidence": null
     },
     {
-      "at": "2026-07-11T21:26:12.333Z",
+      "at": "2026-07-12T07:41:20.887Z",
       "chain": "base",
       "address": "0x8185eaf46136a3f095c60facd97eca1bfc2f38f6",
       "symbol": "$OLIVIA2.0",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
       "evidence": null
     },
     {
-      "at": "2026-07-11T21:27:13.176Z",
+      "at": "2026-07-12T07:42:08.372Z",
       "chain": "base",
       "address": "0xb3b32f9f8827d4634fe7d973fa1034ec9fddb3b3",
       "symbol": "B3",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: More than 50% of primary liquidity is withdrawable by one key.",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: More than 50% of primary liquidity is withdrawable by one key. (≤ D).",
       "evidence": null
     },
     {
-      "at": "2026-07-11T21:27:42.642Z",
+      "at": "2026-07-12T07:42:26.917Z",
       "chain": "base",
       "address": "0x853a7c99227499dba9db8c3a02aa691afdebf841",
       "symbol": "PLAY",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-12T07:44:37.897Z",
+      "chain": "base",
+      "address": "0xf43eb8de897fbc7f2502483b2bef7bb9ea179229",
+      "symbol": "ZEN",
       "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "kind": "listed",
+      "text": "ZEN is now rated: UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-12T07:44:39.919Z",
+      "chain": "base",
+      "address": "0x18cd0ef93be7f3bb052885bc2d66947ac7799b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "OpenAI is now rated: C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-12T07:44:46.131Z",
+      "chain": "base",
+      "address": "0x1aa8fd5bcce2231c6100d55bf8b377cff33acfc3",
+      "symbol": "RAVE",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "RAVE is now rated: C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-12T07:44:52.077Z",
+      "chain": "base",
+      "address": "0x9cb41fd9dc6891bae8187029461bfaadf6cc0c69",
+      "symbol": "noice",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "noice is now rated: C.",
       "evidence": null
     }
   ]

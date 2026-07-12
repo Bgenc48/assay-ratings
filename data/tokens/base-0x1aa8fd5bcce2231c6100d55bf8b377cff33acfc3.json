@@ -1,10 +1,10 @@
 {
-  "address": "0x11030f79109269d796fd0fb956d6244e502757f7",
+  "address": "0x1aa8fd5bcce2231c6100d55bf8b377cff33acfc3",
   "chain": "base",
   "status": "ok",
-  "symbol": "CTR",
-  "name": "CTR",
-  "scanned_at": "2026-07-12T07:42:09.123Z",
+  "symbol": "RAVE",
+  "name": "RaveDAO",
+  "scanned_at": "2026-07-12T07:44:40.671Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
@@ -65,27 +65,27 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x0ab02e160f0df68dc049B012c514857306960Eae"
+            "pair": "0x51663B8A28E7Ea197c5CcF983AfC084Da0a8023D"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 25,
-      "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 110 days old; trust needs time (Provisional).",
-          "evidence": "0x878a413f286203463f32a1d0de06649b37e334baa552f1c184205883d9c1ad19"
-        }
-      ]
-    },
-    "holderConcentration": {
       "score": 50,
       "notApplicable": false,
       "findings": []
+    },
+    "holderConcentration": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 57.1% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -95,9 +95,14 @@
   },
   "caps": [
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -107,92 +112,52 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "749875939958936000000000000",
+    "totalSupply": "24558694601538000000000000",
     "decimals": 18,
-    "owner": "0x8a99057cec644e91ca9ffc8ee5fddabafb929b66",
+    "owner": "0x9831156f1a6e506fca41503590b42f07c2e80f54",
     "controlType": "safe",
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [],
     "verifiedSource": true,
-    "ageDays": 110,
-    "liquidityUsd": 758435.8999999999,
+    "ageDays": 269,
+    "liquidityUsd": 305662.06,
     "pools": [
       {
-        "pair": "0x0ab02e160f0df68dc049B012c514857306960Eae",
+        "pair": "0x51663B8A28E7Ea197c5CcF983AfC084Da0a8023D",
         "dex": "aerodrome",
-        "liquidityUsd": 467116.05,
+        "liquidityUsd": 290187.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xf023Ea2DA2321dAb1fB640DBc9AbCdD1b0933A8c",
+        "pair": "0x1d3a89d06b3b673ce35059867e3749fc82ca38b9089889eba9da2f058c695da4",
+        "dex": "uniswap",
+        "liquidityUsd": 15474.54,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x781Cc496494Ae9A79DdB443F8DF825d22f7F0456",
         "dex": "aerodrome",
-        "liquidityUsd": 271166.56,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "liquidityUsd": 0.39,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
       },
       {
-        "pair": "0x2b0219c334bf754fb94ce6bf9ca0e680d79b165f5ea77b14f569931178057a1d",
-        "dex": "uniswap",
-        "liquidityUsd": 11054.47,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xD9D7Ab0fC077C6989df0C01649ba18d5025cAAd5",
-        "dex": "uniswap",
-        "liquidityUsd": 7505.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x4345e201455c27Ae3BEEDe5eb3d0884ec34cF57d",
-        "dex": "pancakeswap",
-        "liquidityUsd": 1496.67,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x51d71724a13ea1fa20ad05aed859d3f2500b00901797561756577a98cf972196",
-        "dex": "uniswap",
-        "liquidityUsd": 81.32,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x5487df8e34be7a9acb0e8ab44aae543f52f4b37d22cf2d5ddd9d7d70dc0968d1",
-        "dex": "uniswap",
-        "liquidityUsd": 12.26,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xc917798b3865f9eecACa99Ecc59BC41aD2375F6E",
-        "dex": "pancakeswap",
-        "liquidityUsd": 3.2,
+        "pair": "0x062E6e13B26C1C1e5aFa76D1d70DB55e81f61b07",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 27.99,
-    "projectLinks": {
-      "websites": [
-        "https://citrea.xyz/"
-      ],
-      "socials": [
-        "https://x.com/citrea_xyz",
-        "https://discord.com/invite/citrea"
-      ]
-    }
+    "top10Pct": 57.15,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

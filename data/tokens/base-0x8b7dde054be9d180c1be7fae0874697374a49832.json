@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "PROS",
   "name": "Wrapped PROS",
-  "scanned_at": "2026-07-11T21:26:42.306Z",
+  "scanned_at": "2026-07-12T07:41:54.344Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "F",
@@ -89,7 +89,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 55.5% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 54.7% of circulating supply.",
           "evidence": null
         }
       ]
@@ -124,7 +124,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "3342089253413882667345489",
+    "totalSupply": "3385750440074137030129446",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -134,14 +134,14 @@
       "mint(address,uint256)",
       "burnFrom(address,uint256)"
     ],
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": 88,
-    "liquidityUsd": 760750.77,
+    "liquidityUsd": 740975.61,
     "pools": [
       {
         "pair": "0x8A8e4170C09074b109352190d47e54d7c1F61e4E",
         "dex": "aerodrome",
-        "liquidityUsd": 721944.16,
+        "liquidityUsd": 701951.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -157,7 +157,7 @@
       {
         "pair": "0x24BDDff0577D1Ee32f92A0b92296cA9702611c6A",
         "dex": "aerodrome",
-        "liquidityUsd": 2614.75,
+        "liquidityUsd": 2920.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -165,7 +165,7 @@
       {
         "pair": "0x3f4E90Ff4125d9FCC4F4B7Ba5213f596e9A1115d",
         "dex": "uniswap",
-        "liquidityUsd": 6317.67,
+        "liquidityUsd": 6228.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -179,7 +179,7 @@
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 55.5,
+    "top10Pct": 54.71,
     "projectLinks": null
   },
   "notes": null,

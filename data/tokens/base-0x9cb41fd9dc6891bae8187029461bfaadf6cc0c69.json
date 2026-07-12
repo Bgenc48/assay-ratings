@@ -1,27 +1,27 @@
 {
-  "address": "0xb3b32f9f8827d4634fe7d973fa1034ec9fddb3b3",
+  "address": "0x9cb41fd9dc6891bae8187029461bfaadf6cc0c69",
   "chain": "base",
   "status": "ok",
-  "symbol": "B3",
-  "name": "B3",
-  "scanned_at": "2026-07-12T07:42:02.407Z",
+  "symbol": "noice",
+  "name": "noice",
+  "scanned_at": "2026-07-12T07:44:46.880Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "D",
-    "overall": 44,
+    "letter": "C",
+    "overall": 56.3,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unclassified-mint",
-          "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
           "evidence": null
         }
       ]
@@ -65,7 +65,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xB099C658e784b41EE435d48a8eb67e8f27285C93"
+            "pair": "0xeFF7f8Fe083d7a446717B992bf84391253e54789"
           }
         }
       ]
@@ -76,9 +76,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 56.7% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -88,14 +95,9 @@
   },
   "caps": [
     {
-      "id": "cap.unclassified-mint",
+      "id": "cap.concentration",
       "letter": "C",
-      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.rug-ready",
-      "letter": "D",
-      "reason": "More than 50% of primary liquidity is withdrawable by one key."
+      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -112,87 +114,78 @@
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [
-      "mint(address,uint256)",
       "burnFrom(address,uint256)"
     ],
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 517231.7299999999,
+    "liquidityUsd": 238806.69999999998,
     "pools": [
       {
-        "pair": "0xB099C658e784b41EE435d48a8eb67e8f27285C93",
+        "pair": "0xeFF7f8Fe083d7a446717B992bf84391253e54789",
+        "dex": "uniswap",
+        "liquidityUsd": 198611.88,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x663c709a765297e8dc71ef8cd112aad38705c3fe3cf4316b04fb5a849c46fae4",
+        "dex": "uniswap",
+        "liquidityUsd": 14816.86,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x9Ea86AA9f7203da077371bb2F82ec555E6E22f81",
         "dex": "aerodrome",
-        "liquidityUsd": 505055.88,
+        "liquidityUsd": 4389.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x4C1453376952F899365d295c716aaA1010B8FEaa",
-        "dex": "alien-base",
-        "liquidityUsd": 9849.72,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true
-      },
-      {
-        "pair": "0x9CE351A521d4238AFE545F83efBFd98C440257fA",
-        "dex": "alien-base",
-        "liquidityUsd": 1027.56,
+        "pair": "0x5984BC5CA90388Aac221147Ca9DA419A2a458A9F",
+        "dex": "hydrex",
+        "liquidityUsd": 2316.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xCcB6eDFe5f6ea9C0FA7e9176D6883F943B455b9C",
+        "pair": "0x9728C6640603C18631754E1f46379Ae392b9B777",
         "dex": "aerodrome",
-        "liquidityUsd": null,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true
-      },
-      {
-        "pair": "0xc59aac3e3718891819910e247442c6129c01e9a93589ffb0a18cc0f19554073d",
-        "dex": "uniswap",
-        "liquidityUsd": 1024.35,
+        "liquidityUsd": 2494.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xb1e1001127c4dca8fc52ced8d84cd6304b71a77ba06b01284075906a6eaffa98",
+        "pair": "0x5a645b2107a9918ab9caff8bafb0f0a1d8d1c1d5535d883d32df07449f199e0f",
         "dex": "uniswap",
-        "liquidityUsd": 87.61,
+        "liquidityUsd": 114.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xa74eF758e0fEE9777Ca8723b249C24A84B3F3D82",
+        "pair": "0x72b2d3678cfc7aabea3703faca0abda2fa35a25651501f961ff8b396a34f5c61",
         "dex": "uniswap",
-        "liquidityUsd": 60.94,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x716d308ee8b3467d6d6d433fab0c1b33de9c89067e63e0e600ea13fa2f839ab2",
-        "dex": "uniswap",
-        "liquidityUsd": 125.67,
+        "liquidityUsd": 16063.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 19.95,
+    "top10Pct": 56.7,
     "projectLinks": {
       "websites": [
-        "https://b3.fun",
-        "https://docs.b3.fun"
+        "https://noice.so/noice",
+        "https://docs.noice.so",
+        "https://warpcast.com/~/channel/noice"
       ],
       "socials": [
-        "https://x.com/b3dotfun",
-        "https://discord.com/invite/b3dotfun"
+        "https://x.com/noicedotso"
       ]
     }
   },
