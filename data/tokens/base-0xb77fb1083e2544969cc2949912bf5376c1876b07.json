@@ -1,15 +1,15 @@
 {
-  "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
+  "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
   "chain": "base",
   "status": "ok",
-  "symbol": "AMETA",
-  "name": "Alpha City",
-  "scanned_at": "2026-07-13T08:34:38.070Z",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-07-13T08:35:19.265Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
-    "overall": 62.2,
-    "provisional": false,
+    "overall": 63,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -18,6 +18,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -65,20 +71,27 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x9aa4826fd33557a7d882296e3df5101b36ba09260f1757248af0e3957ed21674"
+            "pair": "0x8d93f94b597cdbab64faad1cd09762ee7e01978dabfdfa2fd8c19c91f8c87285"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -88,9 +101,9 @@
   },
   "caps": [
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
     },
     {
       "id": "cap.claim-light",
@@ -100,55 +113,38 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "10000000000000000000000000000",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [
-      "blacklist(address)"
+      "burnFrom(address,uint256)"
     ],
-    "verifiedSource": true,
-    "ageDays": 527,
-    "liquidityUsd": 81740.93,
+    "verifiedSource": false,
+    "ageDays": null,
+    "liquidityUsd": 1095304.72,
     "pools": [
       {
-        "pair": "0x9aa4826fd33557a7d882296e3df5101b36ba09260f1757248af0e3957ed21674",
+        "pair": "0x332dab5978766934f0c0640d73fb05535ed0655296b26e3eae3884126c62a3e9",
         "dex": "uniswap",
-        "liquidityUsd": 79109.84,
+        "liquidityUsd": 0.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xFb559D225343A61884D46eeE91C1a805759F758b",
+        "pair": "0x8d93f94b597cdbab64faad1cd09762ee7e01978dabfdfa2fd8c19c91f8c87285",
         "dex": "uniswap",
-        "liquidityUsd": 2614.69,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x27f0a66f8291898d27fd6625bd008d9728255801f74e00c78e520b8ac0aa1c0d",
-        "dex": "uniswap",
-        "liquidityUsd": 16.4,
+        "liquidityUsd": 1095304.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": null,
-    "projectLinks": {
-      "websites": [
-        "https://alphacitymeta.com",
-        "https://docs.alphacitymeta.com"
-      ],
-      "socials": [
-        "https://x.com/alphametaeco",
-        "https://t.me/alphacityai"
-      ]
-    }
+    "top10Pct": 0,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

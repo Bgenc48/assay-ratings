@@ -1,15 +1,15 @@
 {
-  "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
+  "address": "0x3fa0587de2df913ad4f0b5726a1434a4955ffb07",
   "chain": "base",
   "status": "ok",
-  "symbol": "AMETA",
-  "name": "Alpha City",
-  "scanned_at": "2026-07-13T08:34:38.070Z",
+  "symbol": "Base",
+  "name": "Base",
+  "scanned_at": "2026-07-13T08:35:24.296Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
-    "overall": 62.2,
-    "provisional": false,
+    "overall": 63,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -18,6 +18,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -65,20 +71,27 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x9aa4826fd33557a7d882296e3df5101b36ba09260f1757248af0e3957ed21674"
+            "pair": "0x91639b86b2762eb2f9481cd30a9efb4e9e4d1e35c8815d2dd83407d1860ad9ae"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.9%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -88,9 +101,9 @@
   },
   "caps": [
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
     },
     {
       "id": "cap.claim-light",
@@ -100,55 +113,86 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "10000000000000000000000000000",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [
-      "blacklist(address)"
+      "burnFrom(address,uint256)"
     ],
-    "verifiedSource": true,
-    "ageDays": 527,
-    "liquidityUsd": 81740.93,
+    "verifiedSource": false,
+    "ageDays": null,
+    "liquidityUsd": 75.89000000000001,
     "pools": [
       {
-        "pair": "0x9aa4826fd33557a7d882296e3df5101b36ba09260f1757248af0e3957ed21674",
+        "pair": "0x91639b86b2762eb2f9481cd30a9efb4e9e4d1e35c8815d2dd83407d1860ad9ae",
         "dex": "uniswap",
-        "liquidityUsd": 79109.84,
+        "liquidityUsd": 68.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xFb559D225343A61884D46eeE91C1a805759F758b",
+        "pair": "0x255674f88a19df2688e23e562523abcf5656d637be7771a40cc3e3cfff3583c3",
         "dex": "uniswap",
-        "liquidityUsd": 2614.69,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x27f0a66f8291898d27fd6625bd008d9728255801f74e00c78e520b8ac0aa1c0d",
+        "pair": "0x621bc7fce2a8e96d3f520bf4899f4303e0bd40a5f6ef51691b80d3fe8ded543f",
         "dex": "uniswap",
-        "liquidityUsd": 16.4,
+        "liquidityUsd": 6.45,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xf64b46ca95fedab58adf7738ad27eb963a082410f6bfa058091ee3756fd3917e",
+        "dex": "uniswap",
+        "liquidityUsd": 0.45,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xdec58d1e1d4aace489911b3cacf7549827aaa67141150a4792dacd22204640f1",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x968e6c59ec0e2a9b82af640ccd1294c6ccafe63f13b05162861ea5f0e482fd33",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x44d3218209d7a2e877d81d7ac7f1f9aeca7bfceb208b9216fc43765dfdab662f",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xbfa24f8c36dd6948389b583886d82864c5b96b99c6bafe5c625986d8409254bc",
+        "dex": "uniswap",
+        "liquidityUsd": 0.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": null,
-    "projectLinks": {
-      "websites": [
-        "https://alphacitymeta.com",
-        "https://docs.alphacitymeta.com"
-      ],
-      "socials": [
-        "https://x.com/alphametaeco",
-        "https://t.me/alphacityai"
-      ]
-    }
+    "top10Pct": 0.88,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

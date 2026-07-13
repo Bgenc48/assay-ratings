@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-12T07:44:38.648Z",
+  "scanned_at": "2026-07-13T08:35:01.843Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
-    "overall": 60.4,
+    "overall": 63,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -82,9 +82,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -117,10 +124,50 @@
     ],
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 643993.28,
+    "liquidityUsd": 600032.9999999999,
     "pools": [
       {
+        "pair": "0x1e9b0d0304be7bd0a75154fef396f3a3f99915286e291a02ef252109a71b5a98",
+        "dex": "uniswap",
+        "liquidityUsd": 599430.1,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x4732893496dd02029a0263b2b961c565c9d802fa1ba6a0a129db627b85e731cd",
+        "dex": "uniswap",
+        "liquidityUsd": 90.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x99b0d403e62c140fab070c7bfab37bfa645cafb395026e725e4846f262994981",
+        "dex": "uniswap",
+        "liquidityUsd": 77.47,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
         "pair": "0x2a4a321f315f9414c9452dc3b57aa6b5654298534326f861c1b278848f418fce",
+        "dex": "uniswap",
+        "liquidityUsd": 0.58,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x1b3f0e728d43e236c0642b703f278b08e7bb770ba30776cd444fff017b383061",
+        "dex": "uniswap",
+        "liquidityUsd": 21.47,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xe5e792dd8d4b659ee1008eda1253dcf36505618fbd9be527a9ef2cd6f8ec0c72",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -128,15 +175,23 @@
         "lockAnalyzed": false
       },
       {
-        "pair": "0x1e9b0d0304be7bd0a75154fef396f3a3f99915286e291a02ef252109a71b5a98",
+        "pair": "0xa37e786d469156846b5f766df892c14e24bae7987bf9cc52ec647c395d65e940",
         "dex": "uniswap",
-        "liquidityUsd": 643993.28,
+        "liquidityUsd": 239.84,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x075e88e27e8861977937d7cd33edb059de1581e00b342f6e293d770502a12261",
+        "dex": "uniswap",
+        "liquidityUsd": 173.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,

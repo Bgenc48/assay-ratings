@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "cbETH",
   "name": "Coinbase Wrapped Staked ETH",
-  "scanned_at": "2026-07-12T07:40:03.653Z",
+  "scanned_at": "2026-07-13T08:30:16.537Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "UR",
@@ -82,7 +82,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 5.0%.",
+          "text": "Top-10 unlabeled holders control 4.9%.",
           "evidence": null
         }
       ]
@@ -102,7 +102,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "60534935479147742512988",
+    "totalSupply": "61448401535476993392531",
     "decimals": 18,
     "owner": null,
     "controlType": "safe",
@@ -113,20 +113,12 @@
     ],
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 6258885.359999999,
+    "liquidityUsd": 6137305.21,
     "pools": [
-      {
-        "pair": "0x8BB9eAF3C5A906D20c4CC10eA2F73A3Ac2D5d41A",
-        "dex": "aerodrome",
-        "liquidityUsd": 541334.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
       {
         "pair": "0x47cA96Ea59C13F72745928887f84C9F52C3D7348",
         "dex": "aerodrome",
-        "liquidityUsd": 2460297.36,
+        "liquidityUsd": 2446578.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -134,7 +126,15 @@
       {
         "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97",
         "dex": "hydrex",
-        "liquidityUsd": 2302004.57,
+        "liquidityUsd": 2243371.48,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x8BB9eAF3C5A906D20c4CC10eA2F73A3Ac2D5d41A",
+        "dex": "aerodrome",
+        "liquidityUsd": 539517.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -142,7 +142,7 @@
       {
         "pair": "0x257FCbAE4Ac6B26A02E4FC5e1a11e4174B5ce395",
         "dex": "pancakeswap",
-        "liquidityUsd": 137684.52,
+        "liquidityUsd": 100902.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -150,7 +150,7 @@
       {
         "pair": "0xc715096EeCC3f4A0FDBfF055a3db2926adC83244",
         "dex": "alien-base",
-        "liquidityUsd": 285443.97,
+        "liquidityUsd": 282635.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -158,7 +158,7 @@
       {
         "pair": "0x74A4bF2cad1b172cDc82a5Da7130C7A59EB5460b",
         "dex": "quickswap",
-        "liquidityUsd": 155143.49,
+        "liquidityUsd": 154430.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -166,7 +166,7 @@
       {
         "pair": "0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91",
         "dex": "aerodrome",
-        "liquidityUsd": 111906.85,
+        "liquidityUsd": 110015.28,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
@@ -174,13 +174,13 @@
       {
         "pair": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
         "dex": "alien-base",
-        "liquidityUsd": 265070.23,
+        "liquidityUsd": 259853.88,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       }
     ],
-    "top10Pct": 5.01,
+    "top10Pct": 4.9,
     "projectLinks": null
   },
   "notes": "Custodial liquid-staking wrapper (Coinbase). Same v0.2 custodial-profile note as cbBTC.",
