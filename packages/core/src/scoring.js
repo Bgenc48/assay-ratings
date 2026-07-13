@@ -269,6 +269,17 @@ export function scoreLiquidityPermanence(r) {
       "The dominant liquidity position is withdrawable by a single externally-owned account.", main.evidence));
     return { score: 0, findings };
   }
+
+  // An unanalyzed dominant pool (e.g. a v3-style position pool, or an LP
+  // distribution the scanner could not read) is insufficient data: it
+  // lowers coverage, never the score. It must never read as "unlocked".
+  const noLockData = (main.lpBurnedPct ?? null) === null && (main.lpLockedPct ?? null) === null;
+  if (main.lockAnalyzed === false || noLockData) {
+    findings.push(f("liq.unanalyzed", "info",
+      "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+      main.evidence));
+    return { score: null, findings };
+  }
   if (secured >= 90 && (main.lpBurnedPct >= 90 || lockMonths >= 12)) {
     findings.push(f("liq.permanent", "info",
       `${secured.toFixed(0)}% of the dominant pool's LP is burned or locked ${main.lpBurnedPct >= 90 ? "permanently" : `for ${lockMonths} more months`}.`,

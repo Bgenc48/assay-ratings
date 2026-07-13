@@ -163,3 +163,33 @@ test("every result is stamped with the methodology version", () => {
   const s = scoreToken(pristine());
   assert.equal(s.methodology_version, METHODOLOGY_VERSION);
 });
+
+test("an unanalyzed dominant pool is insufficient data, never 'mostly unlocked'", () => {
+  // v3-style position pools (and unreadable LP distributions) come back
+  // lockAnalyzed:false with null burn/lock percentages. That must lower
+  // coverage, not the score — publishing "mostly unlocked" for a pool we
+  // never read is a negative fact fabricated from missing data.
+  const r = pristine({
+    liquidity: {
+      pools: [{
+        liquidityUsd: 2_000_000,
+        lpBurnedPct: null,
+        lpLockedPct: null,
+        lockAnalyzed: false,
+        singleEoaWithdrawable: false,
+      }],
+    },
+  });
+  const s = scoreToken(r);
+  assert.equal(s.dimensions.liquidityPermanence.score, null);
+  const finding = s.dimensions.liquidityPermanence.findings.find((x) => x.id === "liq.unanalyzed");
+  assert.ok(finding, "expected liq.unanalyzed finding");
+  assert.match(finding.text, /insufficient data/i);
+  assert.ok(!s.dimensions.liquidityPermanence.findings.some((x) => x.id === "liq.unlocked"),
+    "must not assert 'mostly unlocked' without lock data");
+  // The rug-ready assertion still wins when it carries positive evidence.
+  const rug = pristine({
+    liquidity: { pools: [{ liquidityUsd: 100_000, lockAnalyzed: true, lpBurnedPct: 0, lpLockedPct: 0, singleEoaWithdrawable: true }] },
+  });
+  assert.equal(scoreToken(rug).dimensions.liquidityPermanence.score, 0);
+});
