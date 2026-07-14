@@ -1,39 +1,39 @@
 {
-  "address": "0x9cb41fd9dc6891bae8187029461bfaadf6cc0c69",
+  "address": "0xcb111e6a2a3bde90856d299d61341ac302167d23",
   "chain": "base",
   "status": "ok",
-  "symbol": "noice",
-  "name": "noice",
-  "scanned_at": "2026-07-14T07:28:14.713Z",
+  "symbol": "cbMEGA",
+  "name": "Coinbase Wrapped MEGA",
+  "scanned_at": "2026-07-14T07:28:40.265Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "C",
-    "overall": 56.3,
+    "letter": "F",
+    "overall": 27.3,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 100,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.fixed",
-          "severity": "info",
-          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "id": "supply.eoa-mint",
+          "severity": "crit",
+          "text": "A mint path exists and its controller is an externally-owned account. Supply can be inflated unilaterally.",
           "evidence": null
         }
       ]
     },
     "adminSurface": {
-      "score": 40,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.unknown-gate",
-          "severity": "warn",
-          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "id": "admin.eoa",
+          "severity": "crit",
+          "text": "The contract is upgradeable and the upgrade key is a single externally-owned account with no timelock.",
           "evidence": null
         }
       ]
@@ -65,7 +65,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xeFF7f8Fe083d7a446717B992bf84391253e54789"
+            "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83"
           }
         }
       ]
@@ -76,13 +76,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 54.9% of circulating supply.",
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 38.2%.",
           "evidence": null
         }
       ]
@@ -95,9 +95,14 @@
   },
   "caps": [
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
+      "id": "cap.eoa-mint",
+      "letter": "F",
+      "reason": "Mint or issuance is controlled by an externally-owned account."
+    },
+    {
+      "id": "cap.eoa-upgrade",
+      "letter": "D",
+      "reason": "Upgradeable with an EOA admin and no timelock."
     },
     {
       "id": "cap.claim-light",
@@ -107,86 +112,91 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "100000000000000000000000000000",
+    "totalSupply": "31918313836476169767874708",
     "decimals": 18,
-    "owner": null,
-    "controlType": "none",
-    "proxy": null,
-    "proxyImplementation": null,
+    "owner": "0x6b879d28cfbe39ffacd6c4ed1c9dbaba109d997c",
+    "controlType": "eoa",
+    "proxy": "zos-legacy",
+    "proxyImplementation": "0x2d1a8c858f441959e16291b79fce522d5909496e",
     "privileged": [
-      "burnFrom(address,uint256)"
+      "mint(address,uint256)",
+      "pause()",
+      "unpause()",
+      "blacklist(address)"
     ],
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 212923.39,
+    "liquidityUsd": 203619.73999999996,
     "pools": [
       {
-        "pair": "0xeFF7f8Fe083d7a446717B992bf84391253e54789",
-        "dex": "uniswap",
-        "liquidityUsd": 190156.04,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x663c709a765297e8dc71ef8cd112aad38705c3fe3cf4316b04fb5a849c46fae4",
-        "dex": "uniswap",
-        "liquidityUsd": 14550.12,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x9Ea86AA9f7203da077371bb2F82ec555E6E22f81",
+        "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83",
         "dex": "aerodrome",
-        "liquidityUsd": 3590.74,
+        "liquidityUsd": 203499.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x9728C6640603C18631754E1f46379Ae392b9B777",
-        "dex": "aerodrome",
-        "liquidityUsd": 2364.72,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x5984BC5CA90388Aac221147Ca9DA419A2a458A9F",
-        "dex": "hydrex",
-        "liquidityUsd": 2246.16,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x6d294B5B01c806c515F31F9B0F41818d0744A4E0",
+        "pair": "0xc47687d4615ce111e72573ebcb8ead9216a9f115c020bece73e31092caef835c",
         "dex": "uniswap",
-        "liquidityUsd": 15.35,
+        "liquidityUsd": 83.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x4bdae49792E1B8D6378C1A83828940977998Fded",
+        "pair": "0x954f12b846FE5e18121Fce77679207d5F145c5bE",
+        "dex": "pancakeswap",
+        "liquidityUsd": 4.18,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xcB07475D9b1378342E06a9DB222837f0f01A76C8",
+        "dex": "pancakeswap",
+        "liquidityUsd": 5.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xF5512F16707e6Cf75ACc39335FFfC6D11AC19747",
         "dex": "aerodrome",
-        "liquidityUsd": 0.26,
+        "liquidityUsd": 0.08,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0xf4eE91aE0b68FF67854D66039Cd827c8f3338533",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xa1d9c4c417f57d52d3745cbd2d4e32fce2a3585fc854212647383a59db451c24",
+        "dex": "uniswap",
+        "liquidityUsd": 27,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x35A7E7543e94820aF20DbBFd89139eD2f52903Fd",
+        "dex": "pancakeswap",
+        "liquidityUsd": 0,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       }
     ],
-    "top10Pct": 54.85,
+    "top10Pct": 38.17,
     "projectLinks": {
-      "websites": [
-        "https://noice.so/noice",
-        "https://docs.noice.so",
-        "https://warpcast.com/~/channel/noice"
-      ],
-      "socials": [
-        "https://x.com/noicedotso"
-      ]
+      "websites": [],
+      "socials": []
     }
   },
   "notes": null,

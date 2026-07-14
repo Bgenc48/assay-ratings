@@ -1,27 +1,33 @@
 {
-  "address": "0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf",
+  "address": "0x97be14dd8f994a5364573bc035d85309e7cb34de",
   "chain": "base",
   "status": "ok",
-  "symbol": "VVV",
-  "name": "Venice Token",
-  "scanned_at": "2026-07-14T07:24:11.419Z",
+  "symbol": "JitoSOL",
+  "name": "Jito Staked SOL",
+  "scanned_at": "2026-07-14T07:28:32.294Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "UR",
-    "overall": 49.1,
-    "provisional": false,
+    "overall": 52.3,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 60,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unclassified-mint",
+          "id": "supply.unverified",
           "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
+        {
+          "id": "supply.latent-mint",
+          "severity": "warn",
+          "text": "The contract is upgradeable: even without a mint function today, an upgrade could add one (latent mint).",
           "evidence": null
         }
       ]
@@ -65,13 +71,13 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x01784ef301D79e4B2DF3a21ad9a536d4cF09A5Ce"
+            "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -82,7 +88,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 4.7%.",
+          "text": "Top-10 unlabeled holders control 5.1%.",
           "evidence": null
         }
       ]
@@ -95,14 +101,9 @@
   },
   "caps": [
     {
-      "id": "cap.unclassified-mint",
+      "id": "cap.unverified",
       "letter": "C",
-      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
+      "reason": "Source code is not verified on a public explorer."
     },
     {
       "id": "cap.claim-light",
@@ -112,96 +113,52 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "114356295393515392438927939",
-    "decimals": 18,
-    "owner": "0x321b7ff75154472b18edb199033ff4d116f340ff",
-    "controlType": "unknown",
-    "proxy": null,
+    "totalSupply": "77110377995751",
+    "decimals": 9,
+    "owner": null,
+    "controlType": "none",
+    "proxy": "beacon",
     "proxyImplementation": null,
-    "privileged": [
-      "mint(address,uint256)"
-    ],
-    "verifiedSource": true,
-    "ageDays": 537,
-    "liquidityUsd": 14186007.959999999,
+    "privileged": [],
+    "verifiedSource": false,
+    "ageDays": null,
+    "liquidityUsd": 11009454.85,
     "pools": [
       {
-        "pair": "0x7eC6C9D993D9832Aa654593f2Dbc21303650Bc6c",
-        "dex": "aerodrome",
-        "liquidityUsd": 2059025.36,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x01784ef301D79e4B2DF3a21ad9a536d4cF09A5Ce",
-        "dex": "aerodrome",
-        "liquidityUsd": 8634530.71,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true
-      },
-      {
-        "pair": "0xA135B59Fe221C0c8D441294f97f96Fbc37Bc9fbE",
-        "dex": "aerodrome",
-        "liquidityUsd": 1803688.5,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x67A11022B7B6ed66f81233F6C8Ed6e48F7826530",
+        "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871",
         "dex": "uniswap",
-        "liquidityUsd": 575727.64,
+        "liquidityUsd": 10569562.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x363fe74e05aa32b2cf6fe11e632cae4eabc9238c09d3ca626ef3afd414e2944e",
-        "dex": "uniswap",
-        "liquidityUsd": 252995.02,
+        "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
+        "dex": "pancakeswap",
+        "liquidityUsd": 439878.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x1D2bdB7117a5A7D7fE4c1d95681a92e4Df13bB69",
-        "dex": "uniswap",
-        "liquidityUsd": 399126.93,
+        "pair": "0xC5a10dAD3B73410F34ec29B50952C377AfAF64d9",
+        "dex": "pancakeswap",
+        "liquidityUsd": 8.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x46D398A5b33709877f50c8918A7eE96F1Be1d7dd",
-        "dex": "aerodrome",
-        "liquidityUsd": 362318.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x4a9e36dee2b8151a2b87e79b0214be596ba7d2d9bdfd7650f2cbce403297678e",
-        "dex": "uniswap",
-        "liquidityUsd": 98595.52,
+        "pair": "0x08f070822591F7175E3add0bADE85C087d991b27",
+        "dex": "pancakeswap",
+        "liquidityUsd": 5.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 4.73,
-    "projectLinks": {
-      "websites": [
-        "https://venice.ai/home",
-        "https://venice.ai/token",
-        "https://venice.ai/chat"
-      ],
-      "socials": [
-        "https://x.com/AskVenice",
-        "https://discord.gg/askvenice"
-      ]
-    }
+    "top10Pct": 5.11,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false,

@@ -1,27 +1,27 @@
 {
-  "address": "0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf",
+  "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
   "chain": "base",
   "status": "ok",
-  "symbol": "VVV",
-  "name": "Venice Token",
-  "scanned_at": "2026-07-14T07:24:11.419Z",
+  "symbol": "DRV",
+  "name": "Derive",
+  "scanned_at": "2026-07-14T07:28:47.403Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "UR",
-    "overall": 49.1,
+    "overall": 52.1,
     "provisional": false,
     "badge": "Discretionary",
     "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 60,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unclassified-mint",
+          "id": "supply.latent-mint",
           "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "text": "The contract is upgradeable: even without a mint function today, an upgrade could add one (latent mint).",
           "evidence": null
         }
       ]
@@ -65,7 +65,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x01784ef301D79e4B2DF3a21ad9a536d4cF09A5Ce"
+            "pair": "0xEF7E596AEF9e4c6301b4D1F1e88F8fFE8C306222"
           }
         }
       ]
@@ -76,16 +76,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": 50,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 4.7%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,9 +88,9 @@
   },
   "caps": [
     {
-      "id": "cap.unclassified-mint",
-      "letter": "C",
-      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "More than 50% of primary liquidity is withdrawable by one key."
     },
     {
       "id": "cap.age-24mo",
@@ -112,94 +105,91 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "114356295393515392438927939",
+    "totalSupply": "118645708400117000000000000",
     "decimals": 18,
-    "owner": "0x321b7ff75154472b18edb199033ff4d116f340ff",
+    "owner": "0x169a99b9958386a5d91e732ed08b344946a92391",
     "controlType": "unknown",
-    "proxy": null,
-    "proxyImplementation": null,
-    "privileged": [
-      "mint(address,uint256)"
-    ],
+    "proxy": "eip1967",
+    "proxyImplementation": "0x01259207a40925b794c8ac320456f7f6c8fe2636",
+    "privileged": [],
     "verifiedSource": true,
-    "ageDays": 537,
-    "liquidityUsd": 14186007.959999999,
+    "ageDays": 548,
+    "liquidityUsd": 1581765.88,
     "pools": [
       {
-        "pair": "0x7eC6C9D993D9832Aa654593f2Dbc21303650Bc6c",
+        "pair": "0xEF7E596AEF9e4c6301b4D1F1e88F8fFE8C306222",
         "dex": "aerodrome",
-        "liquidityUsd": 2059025.36,
+        "liquidityUsd": 899848.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x01784ef301D79e4B2DF3a21ad9a536d4cF09A5Ce",
+        "pair": "0xaC4e562d7C6108f971321F14238E24AE2cC398ac",
         "dex": "aerodrome",
-        "liquidityUsd": 8634530.71,
+        "liquidityUsd": 319455.49,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       },
       {
-        "pair": "0xA135B59Fe221C0c8D441294f97f96Fbc37Bc9fbE",
+        "pair": "0xe2654cc01616e962fbfcc4277c23062e59e70e39f87221d77b6d438705a5f286",
+        "dex": "uniswap",
+        "liquidityUsd": 221466.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xA0e2bac96aB51c92d3284781AeE1EEc817F6F9C2",
         "dex": "aerodrome",
-        "liquidityUsd": 1803688.5,
+        "liquidityUsd": 63484.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x67A11022B7B6ed66f81233F6C8Ed6e48F7826530",
+        "pair": "0x4a2fd463f8049f84a3102b2708b4671986e0dd8bfb26fcfb6b12ef994c66e84a",
         "dex": "uniswap",
-        "liquidityUsd": 575727.64,
+        "liquidityUsd": 36449.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x363fe74e05aa32b2cf6fe11e632cae4eabc9238c09d3ca626ef3afd414e2944e",
+        "pair": "0xb4c2251499e0be2c5dcd5d39ec9ac57fae54f54b6ef182e9e8c83c93beb95d9e",
         "dex": "uniswap",
-        "liquidityUsd": 252995.02,
+        "liquidityUsd": 36087.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x1D2bdB7117a5A7D7fE4c1d95681a92e4Df13bB69",
+        "pair": "0xbf3e0e22226727ec105a122e00da8e79e84f32c08bc758a78429b927a65b26ff",
         "dex": "uniswap",
-        "liquidityUsd": 399126.93,
+        "liquidityUsd": 3517.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x46D398A5b33709877f50c8918A7eE96F1Be1d7dd",
+        "pair": "0x467A29E0Ba9A655254900d45939CdA6AF2B10c5E",
         "dex": "aerodrome",
-        "liquidityUsd": 362318.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x4a9e36dee2b8151a2b87e79b0214be596ba7d2d9bdfd7650f2cbce403297678e",
-        "dex": "uniswap",
-        "liquidityUsd": 98595.52,
+        "liquidityUsd": 1456.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 4.73,
+    "top10Pct": 29.05,
     "projectLinks": {
       "websites": [
-        "https://venice.ai/home",
-        "https://venice.ai/token",
-        "https://venice.ai/chat"
+        "https://derive.xyz",
+        "https://docs.derive.xyz/"
       ],
       "socials": [
-        "https://x.com/AskVenice",
-        "https://discord.gg/askvenice"
+        "https://x.com/derivexyz",
+        "https://discord.gg/Derive"
       ]
     }
   },

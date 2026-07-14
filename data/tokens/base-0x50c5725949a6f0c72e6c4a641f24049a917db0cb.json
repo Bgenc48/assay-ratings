@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "DAI",
   "name": "Dai Stablecoin",
-  "scanned_at": "2026-07-13T08:30:31.970Z",
+  "scanned_at": "2026-07-14T07:23:34.473Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "F",
-    "overall": 34,
+    "letter": "D",
+    "overall": 41.8,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -56,16 +56,16 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 0,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.rug-ready",
-          "severity": "crit",
-          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823"
+            "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb"
           }
         }
       ]
@@ -76,16 +76,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 88.1% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -105,11 +98,6 @@
       "reason": "More than 50% of primary liquidity is withdrawable by one key."
     },
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -117,7 +105,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "2077320304303411249742716",
+    "totalSupply": "2077330028103290439362889",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -128,36 +116,28 @@
     ],
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 226902.49000000002,
+    "liquidityUsd": 246932.79000000004,
     "pools": [
       {
         "pair": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823",
         "dex": "shark-swap",
-        "liquidityUsd": 52859.48,
+        "liquidityUsd": 52935.8,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       },
       {
+        "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb",
+        "dex": "uniswap",
+        "liquidityUsd": 53850.49,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
         "pair": "0x345825A980BD94e1480bC4f20FE4e3DAE2F23Dd3",
         "dex": "pancakeswap",
-        "liquidityUsd": 47813.98,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xC18F50d6A832f12F6DcAaeEe8D0c87A65B96787E",
-        "dex": "uniswap",
-        "liquidityUsd": 31251.09,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xd604cf300A4aE4345426dF42FFb296aa35b4bef2",
-        "dex": "hydrex",
-        "liquidityUsd": 23646.53,
+        "liquidityUsd": 47816.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -165,7 +145,15 @@
       {
         "pair": "0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
         "dex": "uniswap",
-        "liquidityUsd": 23611.96,
+        "liquidityUsd": 23612.53,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xC18F50d6A832f12F6DcAaeEe8D0c87A65B96787E",
+        "dex": "uniswap",
+        "liquidityUsd": 21065.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -173,7 +161,7 @@
       {
         "pair": "0x3BD740dc10864f35001AAB7771C56a85C48c901B",
         "dex": "sushiswap",
-        "liquidityUsd": 20390.76,
+        "liquidityUsd": 20327.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -181,7 +169,7 @@
       {
         "pair": "0x22F9623817F152148B4E080E98Af66FBE9C5AdF8",
         "dex": "uniswap",
-        "liquidityUsd": 15839.84,
+        "liquidityUsd": 15840.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -189,13 +177,13 @@
       {
         "pair": "0xd64e7bF24eE5CC10B5Ab92525D256300Ad3FB81E",
         "dex": "uniswap",
-        "liquidityUsd": 11488.85,
+        "liquidityUsd": 11485.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 88.1,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": "Bridged representation of DAI on Base, graded on its Base contract structure (bridge/admin-controlled), not on mainnet DAI. The wrapped/bridged (derivative-trust) profile lands in methodology v0.2.",
