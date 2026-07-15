@@ -175,6 +175,8 @@ export async function scanToken(entry, { rootDir = process.cwd(), transport, fet
         lpBurnedPct: p.lpBurnedPct,
         lpLockedPct: p.lpLockedPct,
         lockAnalyzed: p.lockAnalyzed,
+        singleEoaWithdrawable: p.singleEoaWithdrawable ?? false,
+        ...(p.evidence?.lpDominantHolder ? { lpDominantHolder: p.evidence.lpDominantHolder } : {}),
       })),
       top10Pct: holders.top10Pct,
       projectLinks: liquidity.projectLinks,

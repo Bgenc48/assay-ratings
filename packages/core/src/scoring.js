@@ -557,9 +557,17 @@ export function evaluateCaps(r, dims) {
   // Under custodial/bridged profiles the liquidity-permanence dimension is
   // replaced or N/A (redeemable/canonical assets make no LP-lock promise),
   // so LP-derived caps measure nothing and do not apply.
-  if (!custodial && profile !== "bridged" &&
-      r.liquidity?.pools?.some((p) => p.singleEoaWithdrawable && (p.liquidityUsd ?? 0) > 0)) {
-    add("cap.rug-ready", "D", "More than 50% of primary liquidity is withdrawable by one key.");
+  const rugPool = custodial || profile === "bridged"
+    ? null
+    : (r.liquidity?.pools ?? []).find((p) => p.singleEoaWithdrawable && (p.liquidityUsd ?? 0) > 0);
+  if (rugPool) {
+    // Name the specific pool and (when recorded) the holder, so the cap is
+    // reviewable from the report even when it fires on a non-dominant pool.
+    const pair = rugPool.pairAddress ?? rugPool.evidence?.pair ?? null;
+    const h = rugPool.evidence?.lpDominantHolder;
+    add("cap.rug-ready", "D",
+      `More than 50% of the LP in pool ${pair ?? "(unknown)"} is held by a single externally-owned account` +
+      (h ? ` (${h.address}, ${h.sharePct}% of LP)` : "") + ", which can withdraw it.");
   }
   if ((r.track?.violations ?? []).length > 0) {
     const monthsClean = r.track?.monthsSinceLastViolation ?? 0;
