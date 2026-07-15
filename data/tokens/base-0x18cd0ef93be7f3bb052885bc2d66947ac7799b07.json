@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-14T07:28:05.215Z",
+  "scanned_at": "2026-07-15T07:31:48.434Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
@@ -71,7 +71,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x075e88e27e8861977937d7cd33edb059de1581e00b342f6e293d770502a12261"
+            "pair": "0x1b3f0e728d43e236c0642b703f278b08e7bb770ba30776cd444fff017b383061"
           }
         }
       ]
@@ -88,7 +88,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
+          "text": "Top-10 unlabeled holders control 0.2%.",
           "evidence": null
         }
       ]
@@ -124,60 +124,20 @@
     ],
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 213.90999999999997,
+    "liquidityUsd": 20.58,
     "pools": [
       {
         "pair": "0x1b3f0e728d43e236c0642b703f278b08e7bb770ba30776cd444fff017b383061",
         "dex": "uniswap",
-        "liquidityUsd": 19.31,
+        "liquidityUsd": 14.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xe5e792dd8d4b659ee1008eda1253dcf36505618fbd9be527a9ef2cd6f8ec0c72",
+        "pair": "0xfd5d749217f68ff7f026fc78eba776c22a5201c475b3b902016dfeaf0052f081",
         "dex": "uniswap",
-        "liquidityUsd": 0.08,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x075e88e27e8861977937d7cd33edb059de1581e00b342f6e293d770502a12261",
-        "dex": "uniswap",
-        "liquidityUsd": 158.86,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x599e109ec056c1b88c6ad018eef05237a20c405364b5fef74db64e3ccbd1c9a9",
-        "dex": "uniswap",
-        "liquidityUsd": 7.45,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xf34fa9fc3e65ed8afd435e9aa3e6877fd62c26695d8065428f66d597ec75873e",
-        "dex": "uniswap",
-        "liquidityUsd": 11.85,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x8a4807bddc2d800623d39d842aba9453e747bf0ca17b1fc8c941322495e3f23b",
-        "dex": "uniswap",
-        "liquidityUsd": 13.7,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x2a4a321f315f9414c9452dc3b57aa6b5654298534326f861c1b278848f418fce",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -185,13 +145,13 @@
       {
         "pair": "0x0c1050de049ddb8531a1d31e66a67114176bcccb06fb7febd7ce7a00c76d0336",
         "dex": "uniswap",
-        "liquidityUsd": 2.66,
+        "liquidityUsd": 5.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": 0.2,
     "projectLinks": null
   },
   "notes": null,

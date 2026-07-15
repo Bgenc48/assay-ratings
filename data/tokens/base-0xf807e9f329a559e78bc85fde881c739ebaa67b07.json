@@ -1,21 +1,21 @@
 {
-  "address": "0x97be14dd8f994a5364573bc035d85309e7cb34de",
+  "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
   "chain": "base",
   "status": "ok",
-  "symbol": "JitoSOL",
-  "name": "Jito Staked SOL",
-  "scanned_at": "2026-07-15T07:32:23.871Z",
+  "symbol": "CZ",
+  "name": "The Final Form Bull",
+  "scanned_at": "2026-07-15T07:33:09.110Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "UR",
-    "overall": 52.3,
+    "letter": "C",
+    "overall": 60.4,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 60,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
@@ -25,9 +25,9 @@
           "evidence": null
         },
         {
-          "id": "supply.latent-mint",
-          "severity": "warn",
-          "text": "The contract is upgradeable: even without a mint function today, an upgrade could add one (latent mint).",
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
           "evidence": null
         }
       ]
@@ -71,7 +71,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871"
+            "pair": "0x1b4ef4db38fa5668114299a063232b39fa01143502791664b86e0806bc387e17"
           }
         }
       ]
@@ -82,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 5.4%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -113,57 +106,87 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "79031639662016",
-    "decimals": 9,
+    "totalSupply": "100000000000000000000000000000",
+    "decimals": 18,
     "owner": null,
     "controlType": "none",
-    "proxy": "beacon",
+    "proxy": null,
     "proxyImplementation": null,
-    "privileged": [],
+    "privileged": [
+      "burnFrom(address,uint256)"
+    ],
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 11376404.17,
+    "liquidityUsd": 9.72,
     "pools": [
       {
-        "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871",
+        "pair": "0xa851431b8de9940d9d105d63c3baa89a9ec8dbd1b9eca0011f6674b727e81de9",
         "dex": "uniswap",
-        "liquidityUsd": 10886057.92,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
-        "dex": "pancakeswap",
-        "liquidityUsd": 490332.01,
+        "pair": "0x40d09547dfa599f2e4b4492d417108f2a453a4ea598350a482d216b7090de21a",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xC5a10dAD3B73410F34ec29B50952C377AfAF64d9",
-        "dex": "pancakeswap",
-        "liquidityUsd": 8.14,
+        "pair": "0x318b08c9e27aadb47931717889bd8816c5e38a98cf582931e75328e0ea33e233",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x08f070822591F7175E3add0bADE85C087d991b27",
-        "dex": "pancakeswap",
-        "liquidityUsd": 6.1,
+        "pair": "0xbd5f09167d55cc1da8fd315916bafb902a93c6814b7d2d04b285c2839805284d",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xe09461b12a4610f1815ecad9266e53a217fa57b08e4c2986cc2209a9e4aed495",
+        "dex": "uniswap",
+        "liquidityUsd": 0.11,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x1b4ef4db38fa5668114299a063232b39fa01143502791664b86e0806bc387e17",
+        "dex": "uniswap",
+        "liquidityUsd": 9.48,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x067f49c3f3e9314ffb3aff566d7ac755f7470aa6c841979168dafa0862c590e5",
+        "dex": "uniswap",
+        "liquidityUsd": 0,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x6419eb047d1f32fb66fed5c0e81a12a5814f348611f27f002ecf605a3cdf6e4d",
+        "dex": "uniswap",
+        "liquidityUsd": 0.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 5.38,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

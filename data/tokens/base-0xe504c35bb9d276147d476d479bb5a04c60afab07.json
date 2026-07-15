@@ -4,14 +4,14 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-14T07:24:56.953Z",
+  "scanned_at": "2026-07-15T07:28:10.829Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
-    "overall": 70,
+    "overall": 60.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -62,14 +62,17 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
+          "id": "liq.unlocked",
           "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x2825dc6cb61df3498edead5445b7440b08f1b0cbe989b5405493ef2ab4f2866c"
+          }
         }
       ]
     },
@@ -114,8 +117,25 @@
     ],
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 12.27,
+    "pools": [
+      {
+        "pair": "0xe284824ba3f93c406bbed374f5a933efde55ead9f794a37ec62579f21ce01986",
+        "dex": "uniswap",
+        "liquidityUsd": 4.28,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x2825dc6cb61df3498edead5445b7440b08f1b0cbe989b5405493ef2ab4f2866c",
+        "dex": "uniswap",
+        "liquidityUsd": 7.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      }
+    ],
     "top10Pct": null,
     "projectLinks": null
   },

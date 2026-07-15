@@ -1,33 +1,27 @@
 {
-  "address": "0x97be14dd8f994a5364573bc035d85309e7cb34de",
+  "address": "0x00000000a22c618fd6b4d7e9a335c4b96b189a38",
   "chain": "base",
   "status": "ok",
-  "symbol": "JitoSOL",
-  "name": "Jito Staked SOL",
-  "scanned_at": "2026-07-15T07:32:23.871Z",
+  "symbol": "TOWNS",
+  "name": "Towns",
+  "scanned_at": "2026-07-15T07:33:05.020Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "UR",
-    "overall": 52.3,
+    "letter": "F",
+    "overall": 39,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 60,
+      "score": 35,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unverified",
+          "id": "supply.unclassified-mint",
           "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
-        {
-          "id": "supply.latent-mint",
-          "severity": "warn",
-          "text": "The contract is upgradeable: even without a mint function today, an upgrade could add one (latent mint).",
+          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
           "evidence": null
         }
       ]
@@ -71,7 +65,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871"
+            "pair": "0x48Be08d21FCcF3F793783c23C33555F5E0C2B7cd"
           }
         }
       ]
@@ -82,13 +76,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 5.4%.",
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 50.5% of circulating supply.",
           "evidence": null
         }
       ]
@@ -101,9 +95,14 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
+      "id": "cap.unclassified-mint",
       "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
+      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -113,57 +112,63 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "79031639662016",
-    "decimals": 9,
-    "owner": null,
-    "controlType": "none",
-    "proxy": "beacon",
-    "proxyImplementation": null,
-    "privileged": [],
-    "verifiedSource": false,
+    "totalSupply": "1838928356813513848986327607",
+    "decimals": 18,
+    "owner": "0x63217d4c321cc02ed306cb3843309184d347667b",
+    "controlType": "unknown",
+    "proxy": "eip1967",
+    "proxyImplementation": "0x18ddf8bf26b35c8d70c7514105930ae766c7c172",
+    "privileged": [
+      "mint(address,uint256)"
+    ],
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 11376404.17,
+    "liquidityUsd": 175763.87000000002,
     "pools": [
       {
-        "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871",
+        "pair": "0x48Be08d21FCcF3F793783c23C33555F5E0C2B7cd",
+        "dex": "aerodrome",
+        "liquidityUsd": 175411.04,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xF099ceFE04717710dd2EC40f2e0c9C06134F5Eb5",
+        "dex": "aerodrome",
+        "liquidityUsd": 340.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xB4095C89746b824A5d54B8877dD23Ea66E757548",
         "dex": "uniswap",
-        "liquidityUsd": 10886057.92,
+        "liquidityUsd": 12.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
-        "dex": "pancakeswap",
-        "liquidityUsd": 490332.01,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xC5a10dAD3B73410F34ec29B50952C377AfAF64d9",
-        "dex": "pancakeswap",
-        "liquidityUsd": 8.14,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x08f070822591F7175E3add0bADE85C087d991b27",
-        "dex": "pancakeswap",
-        "liquidityUsd": 6.1,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "pair": "0x3C651488ae2767E138ba4c3CBF264bEcb59eeAD1",
+        "dex": "aerodrome",
+        "liquidityUsd": null,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
       }
     ],
-    "top10Pct": 5.38,
-    "projectLinks": null
+    "top10Pct": 50.53,
+    "projectLinks": {
+      "websites": [
+        "https://www.towns.com/",
+        "https://docs.towns.com/introduction"
+      ],
+      "socials": [
+        "https://x.com/TownsProtocol"
+      ]
+    }
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

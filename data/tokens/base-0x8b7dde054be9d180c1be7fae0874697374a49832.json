@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "PROS",
   "name": "Wrapped PROS",
-  "scanned_at": "2026-07-14T07:25:08.826Z",
+  "scanned_at": "2026-07-15T07:28:24.474Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "F",
@@ -77,7 +77,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 90 days old; trust needs time (Provisional).",
+          "text": "Token is 91 days old; trust needs time (Provisional).",
           "evidence": "0xe163c483d97097c44719ffede6c9af66f41539d872a02f6e10450acabea7b13a"
         }
       ]
@@ -89,7 +89,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 56.9% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 56.5% of circulating supply.",
           "evidence": null
         }
       ]
@@ -124,7 +124,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "3683434986198311161328934",
+    "totalSupply": "3709691104962050971172014",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -135,13 +135,13 @@
       "burnFrom(address,uint256)"
     ],
     "verifiedSource": true,
-    "ageDays": 90,
-    "liquidityUsd": 675707.1399999999,
+    "ageDays": 91,
+    "liquidityUsd": 674479.21,
     "pools": [
       {
         "pair": "0x8A8e4170C09074b109352190d47e54d7c1F61e4E",
         "dex": "aerodrome",
-        "liquidityUsd": 667509.98,
+        "liquidityUsd": 665965.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -149,7 +149,7 @@
       {
         "pair": "0x24BDDff0577D1Ee32f92A0b92296cA9702611c6A",
         "dex": "aerodrome",
-        "liquidityUsd": 2152.44,
+        "liquidityUsd": 2581.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -157,7 +157,7 @@
       {
         "pair": "0x3f4E90Ff4125d9FCC4F4B7Ba5213f596e9A1115d",
         "dex": "uniswap",
-        "liquidityUsd": 6042.4,
+        "liquidityUsd": 5930.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -165,13 +165,13 @@
       {
         "pair": "0xA1DC70D55489784b68f8d2c045eaa51F59dd7ad5",
         "dex": "pancakeswap",
-        "liquidityUsd": 2.32,
+        "liquidityUsd": 2.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 56.91,
+    "top10Pct": 56.5,
     "projectLinks": null
   },
   "notes": null,

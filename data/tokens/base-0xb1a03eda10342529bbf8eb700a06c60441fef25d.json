@@ -1,17 +1,17 @@
 {
-  "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+  "address": "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
   "chain": "base",
   "status": "ok",
-  "symbol": "ELSA",
-  "name": "Elsa",
-  "scanned_at": "2026-07-15T07:29:39.112Z",
+  "symbol": "MIGGLES",
+  "name": "Mister Miggles",
+  "scanned_at": "2026-07-15T07:32:58.469Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "B-",
-    "overall": 74.1,
+    "letter": "D",
+    "overall": 55,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -36,9 +36,9 @@
           "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
           "evidence": {
             "type": "eth_call",
-            "to": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+            "to": "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
             "data": "0x8da5cb5b",
-            "result": null
+            "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
           }
         }
       ]
@@ -61,22 +61,22 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.permanent",
+          "severity": "info",
+          "text": "100% of the dominant pool's LP is burned or locked permanently.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x83f3ACa29Bc79B048B99C56013475570acc97ccF"
+            "pair": "0x17A3Ad8c74c4947005aFEDa9965305ae2EB2518a"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -93,9 +93,9 @@
   },
   "caps": [
     {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "More than 50% of primary liquidity is withdrawable by one key."
     },
     {
       "id": "cap.claim-light",
@@ -113,81 +113,83 @@
     "proxyImplementation": null,
     "privileged": [],
     "verifiedSource": true,
-    "ageDays": 188,
-    "liquidityUsd": 419446.15,
+    "ageDays": null,
+    "liquidityUsd": 544828.8200000001,
     "pools": [
       {
-        "pair": "0x83f3ACa29Bc79B048B99C56013475570acc97ccF",
-        "dex": "pancakeswap",
-        "liquidityUsd": 398984.33,
+        "pair": "0x17A3Ad8c74c4947005aFEDa9965305ae2EB2518a",
+        "dex": "uniswap",
+        "liquidityUsd": 509811.12,
+        "lpBurnedPct": 99.97,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0xadAd4ce0C68F50A19CF5063E0B91d701Daab1df1",
+        "dex": "uniswap",
+        "liquidityUsd": 20473.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xdc8F367884437e398FBF4a94D3333fE0b5B376Db",
-        "dex": "uniswap",
-        "liquidityUsd": 12271.53,
+        "pair": "0x326841EFD63340767e02ec88E583f18a82AF4A48",
+        "dex": "aerodrome",
+        "liquidityUsd": 6775.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x9f073f766e3ee1eccd1d525ec8753ace09c94902e09acf328231389ef12df805",
+        "pair": "0x0710409c47e133656dfd0e14d016416ae56175f768532ccce4dfa10e0b68d1c2",
         "dex": "uniswap",
-        "liquidityUsd": 3799.66,
+        "liquidityUsd": 5116.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x8ec13b2f24d27ac531fcbe1cb551e7696cb8392879e3fb473f801395589776da",
+        "pair": "0xC16F5d5C0a2C0784EfaFEDf28B934a9F0bA21CD7",
         "dex": "uniswap",
-        "liquidityUsd": 1604.59,
+        "liquidityUsd": 351.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x194797673fdf948efe25c506095054347df8308dff94845ef0738b7bc0b4016a",
-        "dex": "uniswap",
-        "liquidityUsd": 1585.85,
+        "pair": "0x1AD9e6154A45aACBF98f96F386E4C477A5C8D490",
+        "dex": "hydrex",
+        "liquidityUsd": 1240.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xf3240f7578172cf710879e1ef84d04e632ab81282497ec0f0d04277a877a2832",
-        "dex": "uniswap",
-        "liquidityUsd": 1135.38,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x120eE6b5DbF9507AfE3E50f10f664F718bFF0696",
-        "dex": "uniswap",
-        "liquidityUsd": 45.02,
+        "pair": "0x5C892D75021F54Bd562631ba3B69EDb81ad47269",
+        "dex": "0xba34aA640b8Be02A439221BCbea1f48c1035EEF9",
+        "liquidityUsd": 727.47,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       },
       {
-        "pair": "0x6Ff9b1Efa79106A9BbBBe6c5b9D044aC465b789c",
-        "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
-        "liquidityUsd": 19.79,
+        "pair": "0x27e13dfA957231A606ab7F535b34275865a66f44",
+        "dex": "aerodrome",
+        "liquidityUsd": 333.12,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       }
     ],
-    "top10Pct": 17.16,
+    "top10Pct": 13.65,
     "projectLinks": {
       "websites": [
-        "https://moltnbook.com"
+        "https://miggles.io"
       ],
       "socials": [
-        "https://x.com/christanxsx/status/2018147848647270410"
+        "https://x.com/MrMigglesOnBase",
+        "https://t.me/Mister_Miggles",
+        "https://discord.gg/FquZySjN4M"
       ]
     }
   },
