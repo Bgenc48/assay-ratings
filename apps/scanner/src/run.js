@@ -98,6 +98,25 @@ async function main() {
           "The facts and findings below are published; the letter grade follows review.";
       }
 
+      // Native-asset representations (methodology v0.2, §6): the wrapper's
+      // facts publish in full, but no letter — grading a bridged form of an
+      // L1 coin would grade the wrapper as if it were the asset. Placed
+      // before the UR gate on purpose ("NS" is not D/F, so the two gates
+      // never interact).
+      if (entry.profile === "native-representation" && report.status === "ok") {
+        report.grade = {
+          letter: "NS",
+          overall: null,
+          provisional: false,
+          badge: report.grade.badge,
+          coverage: report.grade.coverage,
+        };
+        report.profileNote =
+          "Not Scored — native-asset representation. This contract is a bridged representation of another chain's native coin. " +
+          "Assay's automated methodology grades token contracts, not the underlying chain's consensus or its bridge operators; " +
+          "the wrapper's on-chain facts are published below without a letter grade.";
+      }
+
       // Founder conflict of interest: facts are published, the grade is not.
       if (entry.coi && report.status === "ok") {
         report.grade = {

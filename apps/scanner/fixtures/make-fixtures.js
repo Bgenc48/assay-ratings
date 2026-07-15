@@ -1,13 +1,16 @@
 #!/usr/bin/env node
 // Regenerates recorded.json — a deterministic fictional universe used by
-// tests and offline scans. Three tokens exercise the pipeline's three big
-// paths: a pristine fixed-supply token, a rug-shaped token (EOA owner,
-// mint selector, unlocked LP, false claim), and a registry mismatch.
+// tests and offline scans. Four tokens exercise the pipeline's big paths:
+// a pristine fixed-supply token, a rug-shaped token (EOA owner, mint
+// selector, unlocked LP, false claim), a registry mismatch, and a custodial
+// fiat-stablecoin (methodology v0.2 profile: EOA mint + EOA proxy admin,
+// rescued from F/D only by a verified issuer disclosure).
 // Run: node apps/scanner/fixtures/make-fixtures.js
 
 import { writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { loadLockers } from "@assay/chain";
 
 const S = {
   name: "0x06fdde03",
@@ -38,6 +41,10 @@ const MISM = "0x" + "ab".repeat(20);
 const GOOD_LP = "0x" + "cc".repeat(20);
 const BAD_LP = "0x" + "dd".repeat(20);
 const BAD_OWNER = "0x" + "ee".repeat(20);
+const STAB = "0x" + "5a".repeat(20);
+const STAB_IMPL = "0x" + "51".repeat(20);
+const STAB_ADMIN = "0x" + "52".repeat(20);
+const STAB_OWNER = "0x" + "53".repeat(20);
 const DEAD = "0x000000000000000000000000000000000000dead";
 const ZERO = "0x0000000000000000000000000000000000000000";
 const HOLDER = (n) => "0x" + String(n).padStart(2, "0").repeat(20);
@@ -45,7 +52,13 @@ const HOLDER = (n) => "0x" + String(n).padStart(2, "0").repeat(20);
 const E18 = 10n ** 18n;
 const GOOD_SUPPLY = 1_000_000_000n * E18;
 const BAD_SUPPLY = 1_000_000n * E18;
+const STAB_SUPPLY = 500_000_000n * E18;
 const LP_SUPPLY = 1000n * E18;
+
+// EIP-1967 storage slots (mirror packages/chain/src/checks/token.js).
+const SLOT_IMPL = "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc";
+const SLOT_PROXY_ADMIN = "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103";
+const slotAddr = (a) => "0x" + padAddr(a);
 
 const call = (to, data) => `eth_call:${to.toLowerCase()}:${data}`;
 const bal = (lp, holder) => call(lp, S.balanceOf + padAddr(holder));
@@ -89,6 +102,26 @@ const rpc = {
   [call(BAD_LP, S.totalSupply)]: uint(LP_SUPPLY),
   [bal(BAD_LP, DEAD)]: uint((LP_SUPPLY * 3n) / 100n),
   [bal(BAD_LP, ZERO)]: uint(0),
+
+  // ---------- STAB: custodial fiat-stablecoin (v0.2 profile) ----------
+  // EOA mint + EOA proxy admin: F/D-capped under the standard profile, and
+  // rescued to B only by the reviewed fiat-stablecoin profile plus a
+  // VERIFIED issuer admin-disclosure claim (both re-checked every scan).
+  [call(STAB, S.name)]: str("Stablecoin USD"),
+  [call(STAB, S.symbol)]: str("STAB"),
+  [call(STAB, S.decimals)]: uint(6),
+  [call(STAB, S.totalSupply)]: uint(STAB_SUPPLY),
+  [call(STAB, S.owner)]: "0x" + padAddr(STAB_OWNER),
+  [`eth_getCode:${STAB}`]: "0x6080604052", // proxy shell; powers live in impl
+  [`eth_getStorageAt:${STAB}:${SLOT_IMPL}`]: slotAddr(STAB_IMPL),
+  [`eth_getStorageAt:${STAB}:${SLOT_PROXY_ADMIN}`]: slotAddr(STAB_ADMIN),
+  [`eth_getStorageAt:${STAB}:0xa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d50`]: ZERO32,
+  [`eth_getStorageAt:${STAB}:0x7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c3`]: ZERO32,
+  [`eth_getStorageAt:${STAB}:0x10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b`]: ZERO32,
+  // Implementation bytecode carries mint + pause (the disclosed powers).
+  [`eth_getCode:${STAB_IMPL}`]: "0x6080604052" + "40c10f19" + "8456cb59",
+  // Proxy admin is an EOA (no code) — the structural EOA-upgrade fact.
+  [`eth_getCode:${STAB_ADMIN}`]: "0x",
 
   // ---------- MISM: registry expects "WRONG", chain says "REAL" ----------
   [call(MISM, S.name)]: str("Realcoin"),
@@ -149,16 +182,39 @@ const http = {
     [BAD_OWNER, ((LP_SUPPLY * 97n) / 100n).toString(), false],
   ]),
 
-  // Ages: GOOD created 2023-01-15, BAD created 2025-01-01
+  // STAB holders: issuance-based supply; concentration is N/A under the
+  // custodial profile, but a response keeps the reader from degrading.
+  [`${BS}/tokens/${STAB}/holders`]: holdersJson([
+    [HOLDER(31), ((STAB_SUPPLY * 4n) / 100n).toString(), true],
+    [HOLDER(32), ((STAB_SUPPLY * 3n) / 100n).toString(), false],
+  ]),
+
+  // Ages: GOOD created 2023-01-15, BAD created 2025-01-01, STAB 2020-06-01
   [`${BS}/addresses/${GOOD}`]: { creation_tx_hash: "0x" + "11".repeat(32) },
   [`${BS}/transactions/0x${"11".repeat(32)}`]: { timestamp: "2023-01-15T00:00:00Z" },
   [`${BS}/addresses/${BAD}`]: { creation_tx_hash: "0x" + "22".repeat(32) },
   [`${BS}/transactions/0x${"22".repeat(32)}`]: { timestamp: "2025-01-01T00:00:00Z" },
+  [`${BS}/addresses/${STAB}`]: { creation_tx_hash: "0x" + "33".repeat(32) },
+  [`${BS}/transactions/0x${"33".repeat(32)}`]: { timestamp: "2020-06-01T00:00:00Z" },
 
-  // Verified source: GOOD yes, BAD no
+  // Verified source: GOOD yes, BAD no, STAB yes
   [`${BS}/smart-contracts/${GOOD}`]: { is_verified: true, source_code: "contract Goodcoin {}" },
   [`${BS}/smart-contracts/${BAD}`]: { is_verified: false },
+  [`${BS}/smart-contracts/${STAB}`]: { is_verified: true, source_code: "contract Stablecoin {}" },
 };
+
+// Locker-awareness: every allowlisted locker adds a balanceOf(locker) call to
+// each analyzed LP token. The offline transport must answer them (as zero
+// here — the fixtures model no locked LP) or the whole liquidity batch fails
+// over and the pool reads as unanalyzed. Importing loadLockers keeps this in
+// sync with registries/lockers.json automatically.
+const lockerCfg = (await loadLockers()).base ?? { lockers: [] };
+for (const lp of [GOOD_LP, BAD_LP]) {
+  for (const l of lockerCfg.lockers ?? []) {
+    const addr = (l.address ?? l).toLowerCase();
+    rpc[bal(lp, addr)] = uint(0);
+  }
+}
 
 const fixtures = {
   recorded_at: "2026-07-11T00:00:00Z",
@@ -197,6 +253,23 @@ const fixtures = {
           id: "ren-1", type: "renounced", text: "Ownership renounced.",
           quote: "Contract renounced.", source: "https://badcoin.example",
           tense: "present", material: true, review: "approved",
+        },
+      ],
+    },
+    {
+      chain: "base",
+      address: STAB,
+      expectSymbol: "STAB",
+      name: "Stablecoin USD",
+      profile: "fiat-stablecoin",
+      claims: [
+        {
+          id: "disc-1", type: "admin_disclosure",
+          text: "The issuer documents its mint and pause powers.",
+          quote: "The issuer can mint and pause the token.",
+          source: "https://stab.example/transparency",
+          tense: "present", material: true, review: "approved",
+          params: { disclosed: ["mint", "pause"] },
         },
       ],
     },

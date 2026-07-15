@@ -3,7 +3,7 @@
 // invents data: anything unreadable arrives as null and scores as reduced
 // coverage.
 
-import { inspectToken, inspectLiquidity, inspectHolders, inspectAge, inspectVerifiedSource } from "@assay/chain";
+import { inspectToken, inspectLiquidity, inspectHolders, inspectAge, inspectVerifiedSource, inspectBridgeMint } from "@assay/chain";
 import { verifyClaims } from "@assay/claims";
 import { scoreToken, METHODOLOGY_VERSION } from "@assay/core";
 import { readFile } from "node:fs/promises";
@@ -11,6 +11,7 @@ import path from "node:path";
 
 export async function scanToken(entry, { rootDir = process.cwd(), transport, fetcher, now = new Date() } = {}) {
   const { chain, address } = entry;
+  const profile = entry.profile ?? "standard";
   const rpcOpts = transport ? { transport } : {};
   const httpOpts = fetcher ? { fetcher } : {};
 
@@ -38,6 +39,12 @@ export async function scanToken(entry, { rootDir = process.cwd(), transport, fet
     inspectVerifiedSource(chain, address, { ...httpOpts }),
     inspectAge(chain, address, { ...httpOpts }),
   ]);
+
+  // Canonical-bridge check runs ONLY for registry entries hand-assigned the
+  // bridged profile (methodology v0.2): it is that profile's evidence
+  // condition, and skipping it elsewhere keeps the offline fixture universe
+  // free of unrecorded calls.
+  const bridge = profile === "bridged" ? await inspectBridgeMint(chain, address, rpcOpts) : null;
 
   const poolAddresses = (liquidity.pools ?? []).map((p) => p.pairAddress).filter(Boolean);
   const holders = await inspectHolders(chain, address, token.meta.totalSupply, poolAddresses, { ...httpOpts });
@@ -77,12 +84,25 @@ export async function scanToken(entry, { rootDir = process.cwd(), transport, fet
               ? "unknown"
               : "none";
 
+  // Mint-gate classification order: canonical bridge (verified on-chain,
+  // bridged profile only) > admin controller > probed dedicated minter role.
+  const mintGate = !token.supply.mintable
+    ? null
+    : bridge?.canonical
+      ? "bridge"
+      : token.admin.controller
+        ? mintGateFor(controlType)
+        : token.supply.mintController
+          ? mintGateFor(token.supply.mintController.type)
+          : mintGateFor(controlType);
+
   const checkResults = {
     address,
+    profile,
     meta: { ...token.meta, verifiedSource },
     supply: {
       ...token.supply,
-      mintGate: token.supply.mintable ? mintGateFor(controlType) : null,
+      mintGate,
       evidence: token.evidence,
     },
     admin: {
@@ -114,6 +134,7 @@ export async function scanToken(entry, { rootDir = process.cwd(), transport, fet
     name: token.meta.name,
     scanned_at: now.toISOString(),
     methodology_version: METHODOLOGY_VERSION,
+    profile: scoring.profile,
     grade: {
       letter: scoring.letter,
       overall: scoring.overall,
@@ -124,7 +145,12 @@ export async function scanToken(entry, { rootDir = process.cwd(), transport, fet
     dimensions: Object.fromEntries(
       Object.entries(scoring.dimensions).map(([k, d]) => [
         k,
-        { score: d.score, notApplicable: d.notApplicable ?? false, findings: d.findings },
+        {
+          score: d.score,
+          notApplicable: d.notApplicable ?? false,
+          ...(d.outOfAutomatedScope ? { outOfAutomatedScope: true } : {}),
+          findings: d.findings,
+        },
       ]),
     ),
     caps: scoring.caps,
@@ -137,6 +163,8 @@ export async function scanToken(entry, { rootDir = process.cwd(), transport, fet
       proxy: token.admin.proxy.type,
       proxyImplementation: token.admin.proxy.implementation ?? null,
       privileged: token.admin.privilegedSelectors.map((s) => s.sig),
+      mintController: token.supply.mintController ?? null,
+      bridge: bridge ? { address: bridge.bridgeAddress, canonical: bridge.canonical, evidence: bridge.evidence } : null,
       verifiedSource,
       ageDays: age.ageDays === null ? null : Math.round(age.ageDays),
       liquidityUsd: liquidity.totalLiquidityUsd,
@@ -154,12 +182,14 @@ export async function scanToken(entry, { rootDir = process.cwd(), transport, fet
   };
 }
 
-// Mint gate classification from the classified controller. A mint gated by
-// a timelock'd governor scores far above an EOA mint. When no controller
-// can be classified (no owner, no proxy admin — e.g. an internal minter
-// contract), the gate is UNKNOWN: insufficient data, never assumed open.
+// Mint gate classification from a classified controller (either the admin
+// controller's remapped controlType or a probed minter() role's raw
+// classification). A mint gated by a timelock'd governor scores far above
+// an EOA mint. When nothing can be classified (e.g. an internal minter
+// contract with unreadable governance), the gate is UNKNOWN: insufficient
+// data, never assumed open.
 function mintGateFor(controlType) {
-  if (controlType === "governor-timelock") return "governance-timelock";
+  if (controlType === "governor-timelock" || controlType === "timelock") return "governance-timelock";
   if (controlType === "safe") return "multisig";
   if (controlType === "eoa") return "eoa";
   return "unknown";

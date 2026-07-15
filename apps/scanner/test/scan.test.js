@@ -47,6 +47,38 @@ test("rug-shaped token grades F with the fatal caps on record", async () => {
   for (const c of report.claims) assert.doesNotMatch(c.note, /lie|scam|fraud/i);
 });
 
+test("custodial fiat-stablecoin profile threads through the pipeline to a B, F-cap waived", async () => {
+  const report = await scanToken(entries.STAB, opts());
+  assert.equal(report.status, "ok");
+  assert.equal(report.profile, "fiat-stablecoin");
+  assert.equal(report.grade.letter, "B");
+  assert.equal(report.grade.badge, "Custodial (disclosed)");
+  const eoaMint = report.caps.find((c) => c.id === "cap.eoa-mint");
+  assert.ok(eoaMint && eoaMint.waived === true, "the EOA-mint fact stays on record, waived by the profile");
+  assert.ok(report.caps.some((c) => c.id === "cap.custodial-issuer" && !c.waived), "permanent B+ ceiling");
+  assert.equal(report.dimensions.insiderFloat.notApplicable, true);
+  assert.equal(report.dimensions.liquidityPermanence.outOfAutomatedScope, true);
+});
+
+test("a profile does not rescue a lying token: the mint-backdoor invariant holds at pipeline level", async () => {
+  // Give the rug-shaped fixture a custodial profile AND a fabricated
+  // disclosure. Its FALSE marketing claims must still cap it.
+  const lying = {
+    ...entries.BAD,
+    profile: "fiat-stablecoin",
+    claims: [
+      ...entries.BAD.claims,
+      { id: "disc-x", type: "admin_disclosure", text: "powers disclosed", quote: "we disclose everything",
+        source: "https://badcoin.example", tense: "present", material: true, review: "approved",
+        params: { disclosed: ["mint", "pause", "blacklist", "fee"] } },
+    ],
+  };
+  const report = await scanToken(lying, opts());
+  const capIds = report.caps.map((c) => c.id);
+  assert.ok(capIds.includes("cap.false-claim"), "a materially false claim still caps a profiled token");
+  assert.ok(["D", "F"].includes(report.grade.letter), `a lying custodial token must not reach a passing grade, got ${report.grade.letter}`);
+});
+
 test("registry symbol mismatch publishes nothing", async () => {
   const report = await scanToken(entries.WRONG, opts());
   assert.equal(report.status, "registry_mismatch");

@@ -164,6 +164,140 @@ test("every result is stamped with the methodology version", () => {
   assert.equal(s.methodology_version, METHODOLOGY_VERSION);
 });
 
+// --- category profiles (methodology v0.2) ---------------------------------
+
+/** A USDC-shaped custodial stablecoin: EOA-classified mint, EOA proxy admin. */
+function custodialStable(overrides = {}) {
+  return {
+    profile: "fiat-stablecoin",
+    meta: { verifiedSource: true },
+    supply: { mintable: true, mintGate: "eoa", upgradeable: true },
+    admin: {
+      ownerAddress: "0x00000000000000000000000000000000000000aa",
+      ownerType: "eoa",
+      controlType: "eoa",
+      privilegedSelectors: [
+        { sig: "0x40c10f19", kind: "mint", material: true },
+        { sig: "0x8456cb59", kind: "pause", material: true },
+      ],
+      proxy: { type: "eip1967", admin: "0x00000000000000000000000000000000000000ab" },
+    },
+    claims: [
+      { id: "d1", type: "admin_disclosure", text: "issuer documents mint/pause/upgrade powers", material: true, verdict: "VERIFIED" },
+      { id: "a1", type: "audited", text: "monthly reserve attestations", material: false, verdict: "UNVERIFIABLE" },
+    ],
+    liquidity: { pools: [{ liquidityUsd: 1_500_000, lockAnalyzed: true, lpBurnedPct: 0, lpLockedPct: 0 }] },
+    track: { ageDays: 1000, violations: [] },
+    holders: { top10Pct: 80 },
+    insiders: { liquidFloatPct: null },
+    governance: { claimed: false },
+    ...overrides,
+  };
+}
+
+test("profile: disclosed fiat stablecoin lands B-range; the F cap stays visible but waived", () => {
+  const s = scoreToken(custodialStable());
+  assert.ok(["B", "B-"].includes(s.letter), `expected B/B- got ${s.letter} (${s.overall})`);
+  const eoaMint = s.caps.find((c) => c.id === "cap.eoa-mint");
+  assert.ok(eoaMint, "the structural EOA-mint fact must stay on the report");
+  assert.equal(eoaMint.waived, true);
+  assert.match(eoaMint.waivedBy, /admin_disclosure VERIFIED/);
+  const issuerCap = s.caps.find((c) => c.id === "cap.custodial-issuer");
+  assert.ok(issuerCap && issuerCap.letter === "B+" && !issuerCap.waived, "permanent custodial ceiling");
+  assert.equal(s.dimensions.insiderFloat.notApplicable, true);
+  assert.equal(s.dimensions.holderConcentration.notApplicable, true);
+  assert.equal(s.dimensions.liquidityPermanence.score, null, "redeemability is out of automated scope");
+  assert.equal(s.profile, "fiat-stablecoin");
+  assert.equal(s.badge, "Custodial (disclosed)");
+});
+
+test("profile: the same structure WITHOUT a profile still F-caps (mint-backdoor invariant)", () => {
+  const { profile, ...rest } = custodialStable();
+  void profile;
+  const s = scoreToken(rest);
+  assert.equal(s.letter, "F");
+  const eoaMint = s.caps.find((c) => c.id === "cap.eoa-mint");
+  assert.ok(eoaMint && !eoaMint.waived, "claims alone must unlock nothing without the reviewed profile");
+});
+
+test("profile: custodial without verified disclosure caps at C (insufficient data), never F or D", () => {
+  const s = scoreToken(custodialStable({ claims: [] }));
+  assert.equal(s.letter, "C");
+  assert.ok(s.caps.some((c) => c.id === "cap.custodial-undisclosed" && c.letter === "C" && !c.waived));
+  assert.ok(!s.caps.some((c) => (c.letter === "F" || c.letter === "D") && !c.waived),
+    "no active F/D cap in the undisclosed intermediate state");
+  const supply = s.dimensions.supplyIntegrity.findings.find((x) => x.id === "supply.custodial-undisclosed");
+  assert.match(supply.text, /insufficient data/i);
+});
+
+test("profile: a materially FALSE claim still caps a custodial token at D — a profile is not a pass", () => {
+  const s = scoreToken(custodialStable({
+    claims: [
+      { id: "d1", type: "admin_disclosure", text: "issuer documents powers", material: true, verdict: "VERIFIED" },
+      { id: "x1", type: "lp_locked", text: "reserves fully locked on-chain", material: true, verdict: "FALSE" },
+    ],
+  }));
+  assert.equal(s.letter, "D");
+  assert.ok(s.caps.some((c) => c.id === "cap.false-claim" && !c.waived));
+});
+
+test("profile: a custodial issuer can never exceed B+", () => {
+  // Best-case custodial: aged, disclosed, perfect claims record.
+  const s = scoreToken(custodialStable({ track: { ageDays: 3000, violations: [] } }));
+  assert.ok(["B+", "B", "B-", "C", "D", "F"].includes(s.letter));
+  assert.ok(letterFor(s.overall) !== "A" || s.letter !== "A", "letter must respect the B+ ceiling");
+  assert.ok(!["A+", "A", "A-"].includes(s.letter), `custodial must never reach A-range, got ${s.letter}`);
+});
+
+test("profile: redeemability out of scope lowers coverage, not the score", () => {
+  const s = scoreToken(custodialStable());
+  // Applicable: supply, admin, disclosure, redeemability, track — 4 of 5 scored.
+  assert.equal(s.coverage, "full");
+  const disclosedDims = Object.values(s.dimensions).filter((d) => !d.notApplicable);
+  const nullScored = disclosedDims.filter((d) => d.score === null);
+  assert.equal(nullScored.length, 1, "exactly the redeemability dimension is applicable-but-unscored");
+});
+
+test("profile: bridged token with canonical bridge gate scores 85 supply and carries no mint cap", () => {
+  const bridged = {
+    profile: "bridged",
+    meta: { verifiedSource: true },
+    supply: { mintable: true, mintGate: "bridge", upgradeable: false },
+    admin: {
+      ownerAddress: null,
+      ownerType: "none",
+      controlType: "none",
+      privilegedSelectors: [{ sig: "0x40c10f19", kind: "mint", material: true }],
+      proxy: {},
+    },
+    claims: [],
+    track: { ageDays: 900, violations: [] },
+    holders: { top10Pct: 30 },
+    insiders: { liquidFloatPct: null },
+    governance: { claimed: false },
+  };
+  const s = scoreToken(bridged);
+  assert.equal(s.dimensions.supplyIntegrity.score, 85);
+  assert.equal(s.dimensions.adminSurface.score, 90);
+  assert.ok(!s.caps.some((c) => c.id === "cap.eoa-mint" || c.id === "cap.unclassified-mint"));
+  assert.equal(s.badge, "Bridged (canonical)");
+  assert.equal(s.dimensions.insiderFloat.notApplicable, true);
+  assert.equal(s.dimensions.liquidityPermanence.notApplicable, true);
+  // Same token with an unclassifiable gate falls back to standard treatment.
+  const fallback = scoreToken({ ...bridged, supply: { mintable: true, mintGate: "unknown", upgradeable: false } });
+  assert.ok(fallback.caps.some((c) => c.id === "cap.unclassified-mint" && !c.waived));
+  assert.equal(fallback.letter, "C");
+});
+
+test("profile: unknown profile value throws instead of silently scoring", () => {
+  assert.throws(() => scoreToken(pristine({ profile: "stablecoin" })), /unknown category profile/);
+});
+
+test("profile: results are stamped; default is standard", () => {
+  assert.equal(scoreToken(pristine()).profile, "standard");
+  assert.equal(scoreToken(custodialStable()).profile, "fiat-stablecoin");
+});
+
 test("an unanalyzed dominant pool is insufficient data, never 'mostly unlocked'", () => {
   // v3-style position pools (and unreadable LP distributions) come back
   // lockAnalyzed:false with null burn/lock percentages. That must lower

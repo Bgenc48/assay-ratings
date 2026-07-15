@@ -3,6 +3,31 @@
   "base": {
     "0x000000000000000000000000000000000000dead": { "label": "burn", "kind": "burn" },
     "0x0000000000000000000000000000000000000000": { "label": "zero", "kind": "burn" },
-    "0x4200000000000000000000000000000000000016": { "label": "base-l2-predeploy", "kind": "system" }
+    "0x4200000000000000000000000000000000000016": { "label": "base-l2-predeploy", "kind": "system" },
+    "0x4200000000000000000000000000000000000010": {
+      "label": "base-l2-standard-bridge",
+      "kind": "bridge",
+      "evidence": "OP-stack predeploys specification (github.com/ethereum-optimism/specs): L2StandardBridge predeploy, identical address on every OP-stack chain"
+    },
+    "0x16613524e02ad97edfef371bc883f2f5d6c480a5": {
+      "label": "aerodrome-voter",
+      "kind": "protocol",
+      "evidence": "aerodrome-finance/contracts GitHub README deployments table: Voter"
+    },
+    "0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4": {
+      "label": "aerodrome-voting-escrow",
+      "kind": "protocol",
+      "evidence": "aerodrome-finance/contracts GitHub README deployments table: VotingEscrow (veAERO)"
+    },
+    "0xeb018363f0a9af8f91f06fee6613a751b2a33fe5": {
+      "label": "aerodrome-minter",
+      "kind": "protocol",
+      "evidence": "aerodrome-finance/contracts GitHub README deployments table: Minter (weekly emissions)"
+    },
+    "0xc4e637d37113192f4f1f060daebd7758de7f4131": {
+      "label": "uncx-univ2-locker",
+      "kind": "locker",
+      "evidence": "uncx-network GitHub README deployments table: Base UniswapV2Locker (see registries/lockers.json)"
+    }
   }
 }

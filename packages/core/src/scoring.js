@@ -28,6 +28,71 @@ export const WEIGHTS = {
   governanceReality: 0, // 5 when governance is claimed; taken from adminSurface
 };
 
+// ---------------------------------------------------------------------------
+// Category profiles (methodology v0.2, §6). A profile is assigned ONLY by a
+// hand-curated `profile` field on a registry/tokens.json entry (reviewed PR);
+// auto-discovered tokens always score the standard profile. A profile alone
+// only re-weights and re-labels: every anchor upgrade and cap waiver
+// additionally requires positive, per-scan-recomputed evidence (a VERIFIED
+// admin_disclosure claim, or an on-chain canonical-bridge classification).
+// Waived caps stay visible on the report, marked waived — never deleted.
+// ---------------------------------------------------------------------------
+
+export const PROFILES = ["standard", "fiat-stablecoin", "custodial-wrapped", "bridged", "native-representation"];
+
+const CUSTODIAL_WEIGHTS = {
+  supplyIntegrity: 25, // published as "Issuance Integrity"
+  adminSurface: 20, // becomes 15 when governanceReality applies
+  disclosureIntegrity: 25,
+  insiderFloat: 0, // N/A: no insiders exist for issuance-based supply
+  liquidityPermanence: 10, // published as "Redeemability"; out of automated scope in v0.2
+  trackRecord: 20,
+  holderConcentration: 0, // N/A: holders are redeemable balances, not float
+  governanceReality: 0,
+};
+
+export const PROFILE_WEIGHTS = {
+  standard: WEIGHTS,
+  "fiat-stablecoin": CUSTODIAL_WEIGHTS,
+  "custodial-wrapped": CUSTODIAL_WEIGHTS,
+  bridged: {
+    supplyIntegrity: 25,
+    adminSurface: 25, // becomes 20 when governanceReality applies
+    disclosureIntegrity: 20,
+    insiderFloat: 0, // N/A
+    liquidityPermanence: 0, // N/A: a canonical wrapper makes no liquidity promise
+    trackRecord: 20,
+    holderConcentration: 10,
+    governanceReality: 0,
+  },
+  // Native representations are never letter-graded: the scanner's NS
+  // publication gate strips the letter. Scoring falls back to standard so
+  // dimension facts still publish.
+  "native-representation": WEIGHTS,
+};
+
+const CUSTODIAL_PROFILES = new Set(["fiat-stablecoin", "custodial-wrapped"]);
+
+function profileOf(r) {
+  const profile = r.profile ?? "standard";
+  if (!PROFILES.includes(profile)) {
+    // A registry typo must fail the scan loudly, never silently score.
+    throw new TypeError(`unknown category profile: ${JSON.stringify(profile)}`);
+  }
+  return profile;
+}
+
+/**
+ * The evidence condition for custodial anchor upgrades and cap waivers:
+ * an approved admin_disclosure claim whose deterministic subset check
+ * (packages/claims/src/verify.js) passed on THIS scan. If the issuer's
+ * material stops covering the on-chain powers, the verdict flips and every
+ * relaxation collapses automatically on the next scan.
+ */
+export function hasVerifiedAdminDisclosure(r) {
+  return (r.claims ?? []).some((c) => c.type === "admin_disclosure" && c.verdict === "VERIFIED");
+}
+
 export const GRADE_ORDER = ["F", "D", "C", "B-", "B", "B+", "A-", "A", "A+"];
 
 /** Numeric score → letter. Notches only at the top, where quality competes. */
@@ -70,6 +135,40 @@ export function scoreSupplyIntegrity(r) {
 
   if (s.mintable) {
     const gate = s.mintGate ?? "unknown";
+    const profile = profileOf(r);
+
+    // Custodial profiles (fiat-stablecoin / custodial-wrapped): issuance is
+    // issuer-controlled by design and disclosed as such. The reviewed
+    // registry identification of a known issuer displaces the anonymous-EOA
+    // inference; the 65 anchor is operative ONLY while the issuer's own
+    // material verifiably encloses every on-chain power (re-checked each
+    // scan). Without that, the gap is insufficient disclosure — 35, capped
+    // C by cap.custodial-undisclosed — never F (invariant: F needs positive
+    // evidence of an undisclosed unilateral gate).
+    if (CUSTODIAL_PROFILES.has(profile)) {
+      if (hasVerifiedAdminDisclosure(r)) {
+        findings.push(f("supply.custodial-mint", "info",
+          "Issuance is controlled by the disclosed issuer; every privileged power found on-chain is enumerated in the issuer's own material (verified on this scan).",
+          s.evidence?.mint));
+        return { score: 65, findings };
+      }
+      findings.push(f("supply.custodial-undisclosed", "warn",
+        "Custodial issuance is asserted by the reviewed registry, but the issuer's disclosure of on-chain powers is not yet on record as a verified claim (insufficient data).",
+        s.evidence?.mint));
+      return { score: 35, findings };
+    }
+
+    // Bridged profile: minting restricted to an allowlisted canonical
+    // bridge is machine-checked on-chain each scan (mintGate "bridge" is
+    // set by the scanner only when that check passes). Any other gate
+    // falls through to the standard treatment — fail-soft.
+    if (profile === "bridged" && gate === "bridge") {
+      findings.push(f("supply.bridge-mint", "info",
+        "Minting is restricted to the canonical bridge; issuance mirrors the asset escrowed on the parent chain.",
+        s.evidence?.mint));
+      return { score: 85, findings };
+    }
+
     if (gate === "eoa") {
       // F requires POSITIVE evidence: the classified controller is an EOA.
       findings.push(f("supply.eoa-mint", "crit",
@@ -82,12 +181,6 @@ export function scoreSupplyIntegrity(r) {
         "A mint path exists but is gated by on-chain governance with a timelock.", s.evidence?.mint));
       return { score: 85, findings };
     }
-    if (gate === "multisig-attested") {
-      findings.push(f("supply.custodial-mint", "info",
-        "Issuance is controlled by a disclosed multisig with third-party attestations (custodial-issuance pattern).",
-        s.evidence?.mint));
-      return { score: 65, findings };
-    }
     if (gate === "multisig") {
       findings.push(f("supply.multisig-mint", "warn",
         "A mint path exists, gated by a multisig without a timelock or attestation trail.", s.evidence?.mint));
@@ -96,9 +189,14 @@ export function scoreSupplyIntegrity(r) {
     // Unclassified gate (e.g. an internal minter contract with no readable
     // owner): insufficient data, NOT assumed malicious. Scored low and
     // capped at C until claims/manual review classify the gate — never
-    // auto-F without positive evidence (the AERO lesson).
+    // auto-F without positive evidence (the AERO lesson). When the scanner
+    // probed a dedicated minter() role, the report names it — naming a
+    // controller is classification evidence, not evidence its gate is safe.
+    const mc = s.mintController;
     findings.push(f("supply.unclassified-mint", "warn",
-      "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+      mc
+        ? `A mint path exists, gated by a dedicated minter role at ${mc.address} (a contract). The controller's own governance could not be classified automatically — treated as insufficient data pending review, not as an open mint.`
+        : "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
       s.evidence?.mint));
     return { score: 35, findings };
   }
@@ -137,6 +235,32 @@ export function scoreAdminSurface(r) {
       "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
       a.evidence?.owner));
     return { score: 100, findings };
+  }
+
+  const profile = profileOf(r);
+
+  // Custodial profiles: issuer-controlled administration is the disclosed
+  // design. Anchor 50 is operative only under the same per-scan-verified
+  // disclosure condition as the issuance anchor; otherwise standard anchors
+  // (and the EOA-upgrade cap) apply unchanged.
+  if (CUSTODIAL_PROFILES.has(profile) && hasVerifiedAdminDisclosure(r)) {
+    findings.push(f("admin.custodial-disclosed", "info",
+      "Privileged capabilities are issuer-controlled; every power found on-chain is enumerated in the issuer's own material (verified on this scan).",
+      a.evidence?.control));
+    return { score: 50, findings };
+  }
+
+  // Bridged profile: when the canonical-bridge check passed, there is no
+  // owner or upgrade path, and the only material power is minting (which
+  // the bridge gate constrains), the admin surface is the bridge itself.
+  if (profile === "bridged" && r.supply?.mintGate === "bridge") {
+    const materialKinds = [...new Set(powers.filter((p) => p.material).map((p) => p.kind))];
+    if (ownerless && !hasProxy && materialKinds.every((k) => k === "mint")) {
+      findings.push(f("admin.bridge-only", "info",
+        "The only material privileged capability is minting, restricted on-chain to the canonical bridge; no owner or upgrade path exists.",
+        a.evidence?.control));
+      return { score: 90, findings };
+    }
   }
 
   const gate = a.controlType ?? (a.ownerType === "eoa" ? "eoa" : "unknown");
@@ -298,6 +422,21 @@ export function scoreLiquidityPermanence(r) {
   return { score: 25, findings };
 }
 
+/**
+ * Under custodial profiles, Redeemability replaces Liquidity Permanence:
+ * a redeemable custodial asset makes no LP-lock promise, and its redemption
+ * execution / reserve attestations cannot be machine-checked in v0.2.
+ * Out of automated scope = applicable but unscored: it lowers coverage,
+ * never the score, and never guesses.
+ */
+export function scoreRedeemability(r) {
+  void r;
+  const findings = [f("redeem.out-of-scope", "info",
+    "Redeemability replaces liquidity permanence under this profile. Redemption execution and reserve attestations are not machine-checkable in methodology v0.2; attestation links appear under Claims. Scored as reduced coverage, never as a guess.",
+    null)];
+  return { score: null, findings, outOfAutomatedScope: true };
+}
+
 export function scoreTrackRecord(r) {
   const findings = [];
   const t = r.track;
@@ -369,34 +508,71 @@ export function scoreGovernanceReality(r) {
 // ---------------------------------------------------------------------------
 
 export function evaluateCaps(r, dims) {
+  const profile = profileOf(r);
+  const custodial = CUSTODIAL_PROFILES.has(profile);
+  const disclosed = custodial && hasVerifiedAdminDisclosure(r);
+  // Waived caps stay on the report (transparency: the structural fact is
+  // real) but do not enter the grade ceiling. waivedBy names the evidence.
+  const waivedBy = disclosed
+    ? `profile.${profile} + claim.admin_disclosure VERIFIED`
+    : `profile.${profile} (reviewed registry); superseded by cap.custodial-undisclosed`;
+
   const caps = [];
   const add = (id, letter, reason) => caps.push({ id, letter, reason });
+  const addWaived = (id, letter, reason) => caps.push({ id, letter, reason, waived: true, waivedBy });
 
   if (r.meta?.verifiedSource === false) add("cap.unverified", "C", "Source code is not verified on a public explorer.");
   if (r.supply?.mintable) {
     const gate = r.supply.mintGate ?? "unknown";
+    const structuralMint = custodial ? addWaived : add;
     if (gate === "eoa") {
-      add("cap.eoa-mint", "F", "Mint or issuance is controlled by an externally-owned account.");
+      structuralMint("cap.eoa-mint", "F", "Mint or issuance is controlled by an externally-owned account.");
     } else if (gate === "unknown" || gate === "none") {
-      add("cap.unclassified-mint", "C",
+      structuralMint("cap.unclassified-mint", "C",
         "A mint path exists whose controller could not be classified automatically (insufficient data).");
     }
+    // gate === "bridge" (canonical-bridge verified on-chain) carries no cap.
+  }
+  if (custodial && !disclosed) {
+    // The reviewed registry identification of a known issuer displaces the
+    // anonymous-EOA inference behind the F/D structural caps; what remains
+    // is insufficient disclosure data — a C ceiling, mirroring the
+    // unclassifiable-mint treatment, until the issuer's own material
+    // verifies against the chain.
+    add("cap.custodial-undisclosed", "C",
+      "Custodial control asserted by the reviewed registry without a verified issuer disclosure on record (insufficient data).");
+  }
+  if (custodial) {
+    // Permanent ceiling: a custodial issuer can never reach A territory,
+    // no matter how complete its disclosures are.
+    add("cap.custodial-issuer", "B+",
+      "Issuance and administration are issuer-controlled; code does not constrain the issuer.");
   }
   if (r.admin?.proxy?.type && r.admin?.controlType === "eoa" && !(r.admin.timelockDelaySeconds > 0)) {
-    add("cap.eoa-upgrade", "D", "Upgradeable with an EOA admin and no timelock.");
+    (custodial ? addWaived : add)("cap.eoa-upgrade", "D", "Upgradeable with an EOA admin and no timelock.");
   }
   if ((r.claims ?? []).some((c) => c.verdict === "FALSE" && c.material)) {
     add("cap.false-claim", "D", "A materially false safety claim was verified FALSE against chain state.");
   }
-  if (r.liquidity?.pools?.some((p) => p.singleEoaWithdrawable && (p.liquidityUsd ?? 0) > 0)) {
+  // Under custodial/bridged profiles the liquidity-permanence dimension is
+  // replaced or N/A (redeemable/canonical assets make no LP-lock promise),
+  // so LP-derived caps measure nothing and do not apply.
+  if (!custodial && profile !== "bridged" &&
+      r.liquidity?.pools?.some((p) => p.singleEoaWithdrawable && (p.liquidityUsd ?? 0) > 0)) {
     add("cap.rug-ready", "D", "More than 50% of primary liquidity is withdrawable by one key.");
   }
   if ((r.track?.violations ?? []).length > 0) {
     const monthsClean = r.track?.monthsSinceLastViolation ?? 0;
     add("cap.violation", monthsClean >= 24 ? "C" : "D", "A historical commitment violation is on record.");
   }
-  if ((r.insiders?.liquidFloatPct ?? 0) > 30) add("cap.insider-float", "C", "Insider liquid float exceeds 30% of supply.");
-  if ((r.holders?.top10Pct ?? 0) > 50) add("cap.concentration", "C", "Top-10 unlabeled holders exceed 50%.");
+  // Insider float / holder concentration follow their dimensions' profile
+  // applicability (no insiders exist for issuance-based supply).
+  if (!custodial && profile !== "bridged" && (r.insiders?.liquidFloatPct ?? 0) > 30) {
+    add("cap.insider-float", "C", "Insider liquid float exceeds 30% of supply.");
+  }
+  if (!custodial && (r.holders?.top10Pct ?? 0) > 50) {
+    add("cap.concentration", "C", "Top-10 unlabeled holders exceed 50%.");
+  }
 
   const materialClaims = (r.claims ?? []).filter((c) => c.material);
   if (materialClaims.length > 0) {
@@ -427,6 +603,11 @@ export function evaluateCaps(r, dims) {
 // ---------------------------------------------------------------------------
 
 export function trustModelBadge(r) {
+  const profile = profileOf(r);
+  if (CUSTODIAL_PROFILES.has(profile)) {
+    return hasVerifiedAdminDisclosure(r) ? "Custodial (disclosed)" : "Custodial";
+  }
+  if (profile === "bridged" && r.supply?.mintGate === "bridge") return "Bridged (canonical)";
   const a = r.admin ?? {};
   const powers = a.privilegedSelectors ?? [];
   const hasProxy = Boolean(a.proxy?.type);
@@ -445,26 +626,34 @@ export function trustModelBadge(r) {
 // ---------------------------------------------------------------------------
 
 export function scoreToken(r) {
+  const profile = profileOf(r);
+  const custodial = CUSTODIAL_PROFILES.has(profile);
   const gov = scoreGovernanceReality(r);
   const govApplies = !gov.notApplicable;
 
-  const weights = { ...WEIGHTS };
+  const weights = { ...PROFILE_WEIGHTS[profile] };
   if (govApplies) {
-    weights.adminSurface = 15;
+    weights.adminSurface -= 5;
     weights.governanceReality = 5;
-  } else {
-    weights.adminSurface = 20;
-    weights.governanceReality = 0;
   }
 
+  // notApplicable dimensions (weight 0 under this profile) are excluded
+  // from the applicable count — the concept does not apply, so they cost
+  // no coverage. Redeemability is different: applicable but out of
+  // automated scope, so its null score DOES lower coverage.
+  const na = () => ({ score: null, findings: [], notApplicable: true });
   const dims = {
     supplyIntegrity: scoreSupplyIntegrity(r),
     adminSurface: scoreAdminSurface(r),
     disclosureIntegrity: scoreDisclosureIntegrity(r),
-    insiderFloat: scoreInsiderFloat(r),
-    liquidityPermanence: scoreLiquidityPermanence(r),
+    insiderFloat: custodial || profile === "bridged" ? na() : scoreInsiderFloat(r),
+    liquidityPermanence: custodial
+      ? scoreRedeemability(r)
+      : profile === "bridged"
+        ? na()
+        : scoreLiquidityPermanence(r),
     trackRecord: scoreTrackRecord(r),
-    holderConcentration: scoreHolderConcentration(r),
+    holderConcentration: custodial ? na() : scoreHolderConcentration(r),
     governanceReality: gov,
   };
 
@@ -489,6 +678,7 @@ export function scoreToken(r) {
   if (scorable < 3) {
     return {
       methodology_version: METHODOLOGY_VERSION,
+      profile,
       dimensions: dims,
       caps,
       overall: null,
@@ -504,6 +694,7 @@ export function scoreToken(r) {
   let ceiling = 100;
   let capLetter = null;
   for (const cap of caps) {
+    if (cap.waived) continue; // visible on the report, absent from the ceiling
     const c = capToScoreCeiling(cap.letter);
     if (c < ceiling) {
       ceiling = c;
@@ -518,6 +709,7 @@ export function scoreToken(r) {
 
   return {
     methodology_version: METHODOLOGY_VERSION,
+    profile,
     dimensions: dims,
     caps,
     overall: Math.round(overall * 10) / 10,

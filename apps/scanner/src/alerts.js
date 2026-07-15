@@ -86,14 +86,38 @@ export function computeAlerts(prev, current, { now = new Date() } = {}) {
       `Burned/locked share of the dominant pool fell ${prevSecured.toFixed(0)}% → ${curSecured.toFixed(0)}%.`);
   }
 
+  // --- profile (methodology v0.2) --------------------------------------------
+  // A profile assignment changes how a token is scored; it must be a public,
+  // diffable event, never a silent re-grade.
+  if ((prev.profile ?? "standard") !== (current.profile ?? "standard")) {
+    add("WARN", "profile-changed",
+      `Category profile changed: ${prev.profile ?? "standard"} → ${current.profile ?? "standard"} (assigned only in the reviewed registry; see methodology §6).`);
+  }
+
   // --- caps ------------------------------------------------------------------
-  const prevCaps = new Set((prev.caps ?? []).map((c) => c.id));
-  const curCaps = new Set((current.caps ?? []).map((c) => c.id));
+  // Keys include the waived state so an active↔waived transition alerts
+  // instead of passing silently (a waiver loosens the grade ceiling).
+  const capKey = (c) => c.id + (c.waived ? ":waived" : "");
+  const prevCaps = new Set((prev.caps ?? []).map(capKey));
+  const curCaps = new Set((current.caps ?? []).map(capKey));
+  const prevById = new Map((prev.caps ?? []).map((c) => [c.id, c]));
+  const curById = new Map((current.caps ?? []).map((c) => [c.id, c]));
   for (const cap of current.caps ?? []) {
-    if (!prevCaps.has(cap.id)) add("WARN", "cap-triggered", `New hard cap: ${cap.reason} (≤ ${cap.letter}).`);
+    if (prevCaps.has(capKey(cap))) continue;
+    const was = prevById.get(cap.id);
+    if (cap.waived) {
+      add("WARN", "cap-waived",
+        `Hard cap ${was && !was.waived ? "moved from active to waived" : "recorded as waived"} (${cap.waivedBy}): ${cap.reason}`);
+    } else if (was?.waived) {
+      add("WARN", "cap-reactivated", `Previously waived hard cap is active again (≤ ${cap.letter}): ${cap.reason}`);
+    } else {
+      add("WARN", "cap-triggered", `New hard cap: ${cap.reason} (≤ ${cap.letter}).`);
+    }
   }
   for (const cap of prev.caps ?? []) {
-    if (!curCaps.has(cap.id)) add("INFO", "cap-cleared", `Hard cap cleared: ${cap.reason}`);
+    if (curCaps.has(capKey(cap))) continue;
+    if (curById.has(cap.id)) continue; // state transition already alerted above
+    add("INFO", "cap-cleared", `Hard cap cleared: ${cap.reason}`);
   }
 
   // --- claims ----------------------------------------------------------------

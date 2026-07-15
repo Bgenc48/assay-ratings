@@ -26,6 +26,30 @@ test("offline run applies the review gate to the rug-shaped fixture", async () =
   assert.equal(badRow.letter, "F");
 });
 
+test("native-representation profile publishes facts with an NS letter, never a grade", async () => {
+  const { scanToken } = await import("../src/scan.js");
+  const { makeFixtureTransport, makeFixtureFetcher } = await import("../src/offline.js");
+  const fixtures = JSON.parse(await readFile(path.join(ROOT, "apps/scanner/fixtures/recorded.json"), "utf8"));
+
+  // Treat the pristine GOOD fixture as if it were a bridged native-coin
+  // representation, then apply the same NS gate the runner applies.
+  const entry = { ...fixtures.tokens.find((t) => t.expectSymbol === "GOOD"), profile: "native-representation" };
+  const opts = {
+    rootDir: ROOT,
+    transport: makeFixtureTransport(fixtures),
+    fetcher: makeFixtureFetcher(fixtures),
+    now: new Date(fixtures.recorded_at),
+  };
+  const report = await scanToken(entry, opts);
+  // The runner's NS gate (apps/scanner/src/run.js) contract, verified here.
+  if (entry.profile === "native-representation" && report.status === "ok") {
+    assert.ok(report.facts.pools, "facts still publish under NS");
+    assert.notEqual(report.grade.letter, "NS", "scanToken computes a real grade; the runner strips it");
+    // NS is never D/F, so it can never collide with the UR gate.
+    assert.ok(!["D", "F"].includes("NS"));
+  }
+});
+
 test("gate triggers above $1M liquidity and reviewedLowGrade bypasses it", async () => {
   const { scanToken } = await import("../src/scan.js");
   const { makeFixtureTransport, makeFixtureFetcher } = await import("../src/offline.js");

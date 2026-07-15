@@ -12,6 +12,14 @@ export const SELECTORS = {
   getThreshold: "0xe75235b8", // Gnosis Safe
   getMinDelay: "0xf27a0c92", // OZ TimelockController
   balanceOf: "0x70a08231",
+  // Bridged-token bridge accessors (legacy L2StandardERC20 exposes
+  // l2Bridge(); OptimismMintableERC20 exposes bridge()/BRIDGE()). Selectors
+  // keccak-derived and cross-validated against every selector above.
+  l2Bridge: "0xae1f6aaf",
+  bridge: "0xe78cea92",
+  BRIDGE: "0xee9a31a2",
+  // Dedicated minter role (ve(3,3) emissions minters and similar).
+  minter: "0x07546172",
 };
 
 // Privileged / risk selectors scanned for in deployed bytecode. Presence of
