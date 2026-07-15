@@ -35,7 +35,8 @@
 
   const isCoi = r.coi && r.grade?.letter === "COI";
   const letter = r.grade?.letter ?? "N/R";
-  const band = isCoi || letter === "N/R" || letter === "UR" ? "gNR" : letter.startsWith("A") ? "gA" : letter.startsWith("B") ? "gB" : letter.startsWith("C") ? "gC" : letter.startsWith("D") ? "gD" : "gF";
+  const noGrade = isCoi || letter === "N/R" || letter === "UR" || letter === "NS";
+  const band = noGrade ? "gNR" : letter.startsWith("A") ? "gA" : letter.startsWith("B") ? "gB" : letter.startsWith("C") ? "gC" : letter.startsWith("D") ? "gD" : "gF";
   pills.appendChild(el("span", `grade big ${band}`, isCoi ? "COI" : letter));
 
   const title = el("h1", null, `${r.name ?? ""} (${r.symbol ?? "?"})`);
@@ -44,6 +45,7 @@
 
   const sub = el("div", "pill-row");
   if (r.grade?.badge) sub.appendChild(el("span", "badge", r.grade.badge));
+  if (r.profile && r.profile !== "standard") sub.appendChild(el("span", "badge", `profile: ${r.profile}`));
   if (r.grade?.provisional) sub.appendChild(el("span", "prov", "Provisional — under 12 months old"));
   if (r.grade?.coverage) sub.appendChild(el("span", "cov", `coverage: ${r.grade.coverage}`));
   if (r.scanned_at) sub.appendChild(el("span", "muted", `scanned ${new Date(r.scanned_at).toUTCString()}`));
@@ -58,6 +60,7 @@
     root.appendChild(n);
   }
   if (r.reviewNote) root.appendChild(el("div", "notice coi", r.reviewNote));
+  if (r.profileNote) root.appendChild(el("div", "notice coi", r.profileNote));
   if (r.notes) root.appendChild(el("div", "notice", r.notes));
   if (r.status === "registry_mismatch") {
     root.appendChild(el("div", "notice coi", r.note));
@@ -110,29 +113,55 @@
   dimSec.appendChild(el("h2", "sec", "Dimensions"));
   for (const [key, dim] of Object.entries(r.dimensions ?? {})) {
     if (dim.notApplicable) continue;
+    // Under custodial profiles, Liquidity Permanence is published as
+    // Redeemability and is out of automated scope in v0.2.
+    const name = key === "liquidityPermanence" && dim.outOfAutomatedScope
+      ? "Redeemability"
+      : NAMES[key] ?? key;
     const row = el("div", "dim-row");
-    row.appendChild(el("div", "dim-name", NAMES[key] ?? key));
+    row.appendChild(el("div", "dim-name", name));
     const bar = el("div", "bar");
     const fill = el("i");
     fill.style.width = dim.score === null ? "0%" : `${dim.score}%`;
     bar.appendChild(fill);
     row.appendChild(bar);
-    row.appendChild(el("div", "dim-score", dim.score === null ? "no data" : String(dim.score)));
+    const scoreText = dim.score !== null ? String(dim.score) : dim.outOfAutomatedScope ? "out of scope" : "no data";
+    row.appendChild(el("div", "dim-score", scoreText));
     dimSec.appendChild(row);
   }
   root.appendChild(dimSec);
 
   // ---- Caps -------------------------------------------------------------
-  if (r.caps?.length) {
+  // Active caps set the grade ceiling. Waived caps are structural facts the
+  // token's category profile relaxes — kept visible (never deleted) so the
+  // underlying reality stays on the report, marked with the evidence that
+  // waives them.
+  const activeCaps = (r.caps ?? []).filter((c) => !c.waived);
+  const waivedCaps = (r.caps ?? []).filter((c) => c.waived);
+  if (activeCaps.length) {
     const capSec = el("section", "block");
     capSec.appendChild(el("h2", "sec", "Hard caps triggered"));
-    for (const cap of r.caps) {
+    for (const cap of activeCaps) {
       const finding = el("div", "finding crit");
       finding.appendChild(el("strong", null, `capped at ${cap.letter}: `));
       finding.appendChild(document.createTextNode(cap.reason));
       capSec.appendChild(finding);
     }
     root.appendChild(capSec);
+  }
+  if (waivedCaps.length) {
+    const wSec = el("section", "block");
+    wSec.appendChild(el("h2", "sec", "Structural caps waived by this profile"));
+    wSec.appendChild(el("p", "muted",
+      "These caps would apply under the standard profile. The token's category profile relaxes them for a disclosed, purpose-consistent reason — the underlying fact is real and stays on record here; it does not set the grade ceiling."));
+    for (const cap of waivedCaps) {
+      const finding = el("div", "finding warn");
+      finding.appendChild(el("strong", null, `would cap at ${cap.letter} (waived): `));
+      finding.appendChild(document.createTextNode(cap.reason));
+      if (cap.waivedBy) finding.appendChild(el("span", "ev", `waived by: ${cap.waivedBy}`));
+      wSec.appendChild(finding);
+    }
+    root.appendChild(wSec);
   }
 
   // ---- Findings ---------------------------------------------------------

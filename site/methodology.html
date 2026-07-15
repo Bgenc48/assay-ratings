@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
-<title>Methodology v0.1 — Assay</title>
+<title>Methodology v0.2 — Assay</title>
 <link rel="canonical" href="https://assayratings.com/methodology.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/site.css">
@@ -25,7 +25,7 @@
 
 <div class="wrap">
   <section class="hero">
-    <h1>Methodology, version 0.1</h1>
+    <h1>Methodology, version 0.2</h1>
     <p class="dek">Published in full, versioned, and applied mechanically. The grade measures whether a token can betray you in ways it hasn't disclosed — not whether it is a good investment. Changes ship with a public changelog entry; every published score is stamped with the version that produced it.</p>
   </section>
 
@@ -88,7 +88,34 @@
 
   <section class="block">
     <h2 class="sec">Trust Model badge</h2>
-    <p>A B+ from a disclosed custodial stablecoin and a B+ from a young fixed-supply token are different kinds of B+. Every grade carries a badge saying which kind of trust you are extending: <strong>Code-Enforced</strong> (no admin exists), <strong>Governance-Gated</strong> (powers behind binding on-chain governance and timelocks), <strong>Custodial</strong> (powers behind a multisig; “disclosed” when the docs enumerate them honestly), or <strong>Discretionary</strong> (someone can act unilaterally).</p>
+    <p>A B+ from a disclosed custodial stablecoin and a B+ from a young fixed-supply token are different kinds of B+. Every grade carries a badge saying which kind of trust you are extending: <strong>Code-Enforced</strong> (no admin exists), <strong>Governance-Gated</strong> (powers behind binding on-chain governance and timelocks), <strong>Custodial</strong> (powers behind an issuer or multisig; “disclosed” when the docs enumerate them honestly), <strong>Bridged (canonical)</strong> (issuance restricted on-chain to an allowlisted canonical bridge), or <strong>Discretionary</strong> (someone can act unilaterally).</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Category profiles</h2>
+    <p>The standard profile above treats disclosed, purpose-consistent centralization as if it were a hidden rug risk — the right default for a project token, the wrong lens for a fiat stablecoin or a canonical bridge wrapper. A category profile re-weights the dimensions and re-labels a few of them so a token is graded for what it actually is. Profiles are assigned only by hand, in the public reviewed registry; auto-discovered tokens always score the standard profile, and every report, index row and history line is stamped with the profile used.</p>
+    <p>A profile never grants a free pass. It only re-weights and re-labels; every anchor it raises and every cap it relaxes additionally requires positive, per-scan evidence — an approved issuer disclosure that verifies against the chain, or an on-chain canonical-bridge classification. Without that evidence a profile falls back to “insufficient data” (a C ceiling), never to a good grade. And the structural caps a profile relaxes stay printed on the report, marked <em>waived</em> with the evidence that waives them — the underlying fact is never deleted, only kept out of the grade ceiling.</p>
+    <table class="tbl">
+      <thead><tr><th>Profile</th><th>What changes</th><th>What still fails it</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Fiat stablecoin</strong><br>Custodial wrapped</td>
+          <td>Issuance and administration re-anchor to “disclosed custodial control” only while an approved admin-disclosure claim verifies, every scan, that every on-chain power is enumerated in the issuer's own material. Insider float and holder concentration are N/A (no insiders exist for issuance-based supply). Liquidity permanence is replaced by <strong>Redeemability</strong>, which is out of automated scope in v0.2 — it lowers coverage, never guesses. A permanent cap holds these at B+: a custodial issuer never reaches A.</td>
+          <td>A materially false claim still caps at D. No verified disclosure → capped at C (insufficient data). An undisclosed on-chain power flips the disclosure claim FALSE, which collapses the anchors and caps at D — automatically, on the next scan.</td>
+        </tr>
+        <tr>
+          <td><strong>Bridged</strong> (canonical)</td>
+          <td>When minting is verified on-chain to be restricted to an allowlisted canonical bridge, issuance and admin anchor high and the report carries a derivative-trust note (the grade covers the wrapper contract, not the parent-chain asset or the bridge operator). Liquidity permanence is N/A — a canonical wrapper makes no LP-lock promise.</td>
+          <td>If the bridge check does not pass, the token falls back to the standard treatment. Non-canonical bridges cannot receive this profile.</td>
+        </tr>
+        <tr>
+          <td><strong>Native representation</strong></td>
+          <td>A bridged form of another chain's native coin publishes its on-chain facts with no letter grade (state <strong>NS — Not Scored</strong>): Assay's automated methodology grades token contracts, not an L1's consensus or its bridge operators.</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">Two kinds of “no score” are kept distinct: <strong>N/A</strong> means the concept does not apply (there are no insiders in issuance-based supply), and it costs no coverage; <strong>out of automated scope</strong> means the concept applies but cannot be machine-checked yet (redeemability), and it lowers coverage rather than being guessed.</p>
   </section>
 
   <section class="block">
@@ -105,6 +132,7 @@
   <section class="block">
     <h2 class="sec">Changelog</h2>
     <div class="card">
+      <p><strong>v0.2.0</strong> — Category profiles (see above). Fiat stablecoins and custodian-wrapped assets are scored for what they claim to be: issuer-controlled issuance and administration anchor upward only while the issuer's own disclosures verify against the chain on every scan, redeemability replaces liquidity permanence (out of automated scope, shown as reduced coverage), and custodial issuers are permanently capped at B+. Canonical-bridge tokens are graded on their wrapper with the bridge verified on-chain; bridged forms of L1 native coins publish facts without a letter (NS). Profiles are assigned only in the public reviewed registry, and any cap a profile waives stays visible on the report. Also fixed in this version: a dominant pool whose lock status cannot be analyzed now reads as insufficient data (lower coverage) instead of “mostly unlocked”. Standard-profile scores are unchanged from v0.1.</p>
       <p><strong>v0.1.0</strong> — Initial public methodology: eight dimensions, hybrid aggregation with the cap table above, claims verdicts (six deterministic verifier types), Trust Model badges, coverage indicator, COI carve-out.</p>
     </div>
   </section>

@@ -93,9 +93,14 @@ is the way rating sites die.
    GitHub (pencil icon), add `"reviewedLowGrade": true` to that token's
    entry, and commit. The next scan publishes the real letter.
 4. If it's a profile problem (e.g. a stablecoin scored like a memecoin):
-   leave it UR and add a `"notes"` explanation instead. The v0.2
-   methodology (custodial/bridged profiles) is the fix — ask me to build
-   it when a few of these accumulate.
+   the v0.2 methodology now has category profiles for exactly this. Add a
+   `"profile"` field to that token's entry in `registry/tokens.json` —
+   `"fiat-stablecoin"`, `"custodial-wrapped"`, `"bridged"`, or
+   `"native-representation"` (a bridged L1 coin, which then publishes as NS,
+   Not Scored). A custodial profile only lifts the grade once its
+   issuer-disclosure claim is approved (see "Approve claims" below); until
+   then it publishes at C ("insufficient data"), which is honest and no
+   longer UR. When in doubt about which profile fits, ask me.
 
 ### When a project disputes a finding (10-business-day deadline — you promised this publicly)
 1. They must open a GitHub issue titled `Dispute: <TOKEN>` with evidence.
