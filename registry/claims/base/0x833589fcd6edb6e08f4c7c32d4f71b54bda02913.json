@@ -1,0 +1,16 @@
+{
+  "_comment": "USDC (Circle) claim records. DRAFT — review is 'pending', so verify.js ignores these and they have ZERO effect on the published grade until a human flips review to 'approved' in a reviewed PR. The quote below was read from Circle's own stablecoin-evm repository; before approving, confirm it verbatim against the source and confirm the disclosed set still covers every privileged selector Assay finds on the Base contract (currently mint, pause, blacklist). Once approved, USDC's fiat-stablecoin profile moves from the C 'insufficient-disclosure' state to its issuer-disclosed anchors (expected ~B, capped B+); see docs/METHODOLOGY.md §6.",
+  "claims": [
+    {
+      "id": "usdc-admin-disclosure-1",
+      "type": "admin_disclosure",
+      "text": "Circle documents USDC's privileged roles: minting (via masterMinter-controlled minters), pausing, blacklisting, and proxy upgradeability.",
+      "quote": "The contract can blacklist certain addresses which will prevent those addresses from transferring or receiving tokens. Access to the blacklist functionality is controlled by the `blacklister` address.",
+      "source": "https://github.com/circlefin/stablecoin-evm/blob/master/README.md",
+      "tense": "present",
+      "material": true,
+      "review": "pending",
+      "params": { "disclosed": ["mint", "pause", "blacklist"] }
+    }
+  ]
+}
