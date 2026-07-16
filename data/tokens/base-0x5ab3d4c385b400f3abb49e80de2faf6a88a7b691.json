@@ -1,0 +1,203 @@
+{
+  "address": "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "FLOCK",
+  "name": "FLock.io",
+  "scanned_at": "2026-07-16T07:41:51.547Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "D",
+    "overall": 44.7,
+    "provisional": false,
+    "badge": "Discretionary",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 35,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.unclassified-mint",
+          "severity": "warn",
+          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x7AF45dfaF2fDEA139B2295f37fFea2E16e6Fd8BA"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 49.0%.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.unclassified-mint",
+      "letter": "C",
+      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "413963134726457317347266228",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "unknown",
+    "proxy": "eip1967",
+    "proxyImplementation": "0x22754dad1b54ce707997afce9a78a3413045f784",
+    "privileged": [
+      "mint(address,uint256)"
+    ],
+    "verifiedSource": true,
+    "ageDays": 572,
+    "liquidityUsd": 397273.48,
+    "pools": [
+      {
+        "pair": "0x7AF45dfaF2fDEA139B2295f37fFea2E16e6Fd8BA",
+        "dex": "uniswap",
+        "liquidityUsd": 137363.1,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xd7338B6F338DA54b922bbBC6fBE3EFEDD5Ce35fa",
+        "dex": "aerodrome",
+        "liquidityUsd": 87476.07,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x4910C78a1C75E36548F1f2f1f4dCb71A4F69fC07",
+        "dex": "aerodrome",
+        "liquidityUsd": 100250.29,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0xd162C4444d5eFEaD433F080696D1f4Dc2BCD58Fb",
+        "dex": "aerodrome",
+        "liquidityUsd": 29546.55,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0xef724d142f283411f66bDe8De4d863e7295b9972",
+        "dex": "aerodrome",
+        "liquidityUsd": 13140.31,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0x15aEda0387EBeF5Fd8300560010De83780477147",
+        "dex": "uniswap",
+        "liquidityUsd": 13978.49,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xdAA601bc9E5B00337f11fB17CD574D3f01633Fe6",
+        "dex": "aerodrome",
+        "liquidityUsd": 8233.11,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      },
+      {
+        "pair": "0xB7E0c9CaeB559429B5b8B37c118E1d2764550416",
+        "dex": "aerodrome",
+        "liquidityUsd": 7285.56,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
+      }
+    ],
+    "top10Pct": 49.04,
+    "projectLinks": {
+      "websites": [],
+      "socials": [
+        "https://x.com/flock_io"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

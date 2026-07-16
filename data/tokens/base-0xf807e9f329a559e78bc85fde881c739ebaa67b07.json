@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "CZ",
   "name": "The Final Form Bull",
-  "scanned_at": "2026-07-15T07:33:09.110Z",
+  "scanned_at": "2026-07-16T07:41:31.950Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
-    "overall": 60.4,
+    "overall": 63,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -71,7 +71,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x1b4ef4db38fa5668114299a063232b39fa01143502791664b86e0806bc387e17"
+            "pair": "0xbd5f09167d55cc1da8fd315916bafb902a93c6814b7d2d04b285c2839805284d"
           }
         }
       ]
@@ -82,9 +82,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -117,52 +124,20 @@
     ],
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 9.72,
+    "liquidityUsd": 445790.17000000004,
     "pools": [
+      {
+        "pair": "0xbd5f09167d55cc1da8fd315916bafb902a93c6814b7d2d04b285c2839805284d",
+        "dex": "uniswap",
+        "liquidityUsd": 445775.96,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
       {
         "pair": "0xa851431b8de9940d9d105d63c3baa89a9ec8dbd1b9eca0011f6674b727e81de9",
         "dex": "uniswap",
         "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x40d09547dfa599f2e4b4492d417108f2a453a4ea598350a482d216b7090de21a",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x318b08c9e27aadb47931717889bd8816c5e38a98cf582931e75328e0ea33e233",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xbd5f09167d55cc1da8fd315916bafb902a93c6814b7d2d04b285c2839805284d",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xe09461b12a4610f1815ecad9266e53a217fa57b08e4c2986cc2209a9e4aed495",
-        "dex": "uniswap",
-        "liquidityUsd": 0.11,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x1b4ef4db38fa5668114299a063232b39fa01143502791664b86e0806bc387e17",
-        "dex": "uniswap",
-        "liquidityUsd": 9.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -176,15 +151,47 @@
         "lockAnalyzed": false
       },
       {
+        "pair": "0x1b4ef4db38fa5668114299a063232b39fa01143502791664b86e0806bc387e17",
+        "dex": "uniswap",
+        "liquidityUsd": 5.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
         "pair": "0x6419eb047d1f32fb66fed5c0e81a12a5814f348611f27f002ecf605a3cdf6e4d",
         "dex": "uniswap",
         "liquidityUsd": 0.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
+      },
+      {
+        "pair": "0xcc41797dee557d1cec160ec6c970738a7a761ce7b8eb72da39318f2e9a68a5b9",
+        "dex": "uniswap",
+        "liquidityUsd": 8.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x12221fdd1cf10e1bb7e0b81da66e612317ee8a823cdac1759e8cae4695690bd5",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xf54de213b5545646c9cf50f49f86308d8de00c3809c5546e83d8a37e3f5783f3",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,

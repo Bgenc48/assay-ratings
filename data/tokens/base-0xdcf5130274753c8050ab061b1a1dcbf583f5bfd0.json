@@ -1,0 +1,182 @@
+{
+  "address": "0xdcf5130274753c8050ab061b1a1dcbf583f5bfd0",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "VCNT",
+  "name": "ViciCoin",
+  "scanned_at": "2026-07-16T07:41:42.944Z",
+  "methodology_version": "0.1.0",
+  "grade": {
+    "letter": "C",
+    "overall": 55,
+    "provisional": false,
+    "badge": "Discretionary",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 60,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.latent-mint",
+          "severity": "warn",
+          "text": "The contract is upgradeable: even without a mint function today, an upgrade could add one (latent mint).",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xE8f16fbf4eaFEC04bcf0C06d768E7bA325F9d6DE"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "6930465090489957318427412",
+    "decimals": 18,
+    "owner": "0xfd507f2d5ef4d87a526c1731a4b7a423c11ce237",
+    "controlType": "unknown",
+    "proxy": "eip1967",
+    "proxyImplementation": "0xa0f7218896821b5d87e15dd8c554e9f01fa31296",
+    "privileged": [
+      "pause()",
+      "unpause()"
+    ],
+    "verifiedSource": true,
+    "ageDays": 989,
+    "liquidityUsd": 543254.2699999999,
+    "pools": [
+      {
+        "pair": "0xE8f16fbf4eaFEC04bcf0C06d768E7bA325F9d6DE",
+        "dex": "uniswap",
+        "liquidityUsd": 174154.12,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x5eC8FD9B09454e7E2662A2C4c0432f95E896EA79",
+        "dex": "uniswap",
+        "liquidityUsd": 58450.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xe4498baca2D45B775ce820A9B9B52A87D583867c",
+        "dex": "uniswap",
+        "liquidityUsd": 58001.96,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x15D8efc10Fe04f7E40773ab7e3adCca4Fd6A6fA9",
+        "dex": "uniswap",
+        "liquidityUsd": 54840.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xa73d8c809724826b64bF8502ab559c1f85258319",
+        "dex": "uniswap",
+        "liquidityUsd": 47581.03,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xB7402Ab20681a9d22B04451D6f29cae0136648b6",
+        "dex": "uniswap",
+        "liquidityUsd": 47643.97,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb",
+        "dex": "uniswap",
+        "liquidityUsd": 54109.31,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xAF93878073637276c63F2327A4359e279AEBffdF",
+        "dex": "uniswap",
+        "liquidityUsd": 48473.42,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      }
+    ],
+    "top10Pct": 21.57,
+    "projectLinks": null
+  },
+  "notes": null,
+  "coi": false
+}

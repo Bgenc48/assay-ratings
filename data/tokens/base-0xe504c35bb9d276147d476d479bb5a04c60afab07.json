@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-15T07:28:10.829Z",
+  "scanned_at": "2026-07-16T07:36:44.776Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
-    "overall": 60.4,
+    "overall": 63,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -71,7 +71,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x2825dc6cb61df3498edead5445b7440b08f1b0cbe989b5405493ef2ab4f2866c"
+            "pair": "0x71c42b21abc8a9464d705c968b3f3bdf1bc0307add7e8744a87a51c3bc5b5032"
           }
         }
       ]
@@ -82,9 +82,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -117,26 +124,26 @@
     ],
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 12.27,
+    "liquidityUsd": 8.16,
     "pools": [
       {
-        "pair": "0xe284824ba3f93c406bbed374f5a933efde55ead9f794a37ec62579f21ce01986",
+        "pair": "0x71c42b21abc8a9464d705c968b3f3bdf1bc0307add7e8744a87a51c3bc5b5032",
         "dex": "uniswap",
-        "liquidityUsd": 4.28,
+        "liquidityUsd": 7.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x2825dc6cb61df3498edead5445b7440b08f1b0cbe989b5405493ef2ab4f2866c",
+        "pair": "0x6c9d64d97f9e83e584341a8c117b235799f6635abfdd76dd82295633065fe4e0",
         "dex": "uniswap",
-        "liquidityUsd": 7.99,
+        "liquidityUsd": 0.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,

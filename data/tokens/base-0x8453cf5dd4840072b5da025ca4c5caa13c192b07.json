@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-15T07:32:28.734Z",
+  "scanned_at": "2026-07-16T07:40:48.407Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
-    "overall": 63,
+    "overall": 56.3,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -71,7 +71,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xe02691586db1487f4a09ecd15f7f8e1cd6744ec397dde31a4bfb22dd14edb1cd"
+            "pair": "0x572d97c969bad6fb7ed2aedf2b93e7c493bd124504a3f4125cd180c36f7431a4"
           }
         }
       ]
@@ -82,13 +82,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 77.0% of circulating supply.",
           "evidence": null
         }
       ]
@@ -104,6 +104,11 @@
       "id": "cap.unverified",
       "letter": "C",
       "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -124,28 +129,28 @@
     ],
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 3028478.32,
+    "liquidityUsd": 3641995.61,
     "pools": [
-      {
-        "pair": "0xe02691586db1487f4a09ecd15f7f8e1cd6744ec397dde31a4bfb22dd14edb1cd",
-        "dex": "uniswap",
-        "liquidityUsd": 3020447.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x3230a090bef9a3ea30c47fc732575ad8199603878225fbffadcfb91b4cadff5e",
-        "dex": "uniswap",
-        "liquidityUsd": 7936.99,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
       {
         "pair": "0x572d97c969bad6fb7ed2aedf2b93e7c493bd124504a3f4125cd180c36f7431a4",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 2124445.17,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0xe02691586db1487f4a09ecd15f7f8e1cd6744ec397dde31a4bfb22dd14edb1cd",
+        "dex": "uniswap",
+        "liquidityUsd": 1517488.69,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x93f16002986fcc24090ccbdb434441e6f35b0312ee0dec9a6c50543b7322cbed",
+        "dex": "uniswap",
+        "liquidityUsd": 11.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -153,31 +158,15 @@
       {
         "pair": "0x77b96f0a6b9288ab29d8f5e91c9dc2d9d2f6d8cf34a8530d0efd9387e60a031e",
         "dex": "uniswap",
-        "liquidityUsd": 0.03,
+        "liquidityUsd": 0.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0xca9fa1839ead03078d9ffbfadfe9b589a92dbc232e0fe5990b6374661a388e00",
+        "pair": "0x6b2a8457d7a393b80092825b9e97cc69b0a7584a9754306f0ee20f4f8877f6ab",
         "dex": "uniswap",
-        "liquidityUsd": 0.04,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xb993ff84410de109f9c503b9acfa93cdce8e7ff6289638c8de879087b2dd9986",
-        "dex": "uniswap",
-        "liquidityUsd": 1.72,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xdfce9c3fd5f464fa81af26b8642decb7ed78790be979eb15d14318f81283c577",
-        "dex": "uniswap",
-        "liquidityUsd": 55.55,
+        "liquidityUsd": 13.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -185,13 +174,13 @@
       {
         "pair": "0xcd31ec4d6618cfc1f39b0f29c5ed3f3acb240217392fab928b200f2d56d1bd32",
         "dex": "uniswap",
-        "liquidityUsd": 36.71,
+        "liquidityUsd": 36.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": 76.96,
     "projectLinks": null
   },
   "notes": null,

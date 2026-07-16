@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "DAI",
   "name": "Dai Stablecoin",
-  "scanned_at": "2026-07-15T07:26:49.537Z",
+  "scanned_at": "2026-07-16T07:35:07.764Z",
   "methodology_version": "0.1.0",
   "grade": {
-    "letter": "D",
-    "overall": 41.8,
+    "letter": "F",
+    "overall": 36.4,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -56,16 +56,16 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb"
+            "pair": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823"
           }
         }
       ]
@@ -105,7 +105,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "2077330346935287006060642",
+    "totalSupply": "2077410357710484788243713",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -116,12 +116,12 @@
     ],
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 256268.46000000002,
+    "liquidityUsd": 259722.43000000005,
     "pools": [
       {
         "pair": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823",
         "dex": "shark-swap",
-        "liquidityUsd": 53974.57,
+        "liquidityUsd": 54635.9,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
@@ -129,7 +129,7 @@
       {
         "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb",
         "dex": "uniswap",
-        "liquidityUsd": 53999.87,
+        "liquidityUsd": 54109.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -137,15 +137,7 @@
       {
         "pair": "0x345825A980BD94e1480bC4f20FE4e3DAE2F23Dd3",
         "dex": "pancakeswap",
-        "liquidityUsd": 47818.85,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xd604cf300A4aE4345426dF42FFb296aa35b4bef2",
-        "dex": "hydrex",
-        "liquidityUsd": 23421.79,
+        "liquidityUsd": 47821.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -153,15 +145,15 @@
       {
         "pair": "0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
         "dex": "uniswap",
-        "liquidityUsd": 24695.76,
+        "liquidityUsd": 28610.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       },
       {
-        "pair": "0x3BD740dc10864f35001AAB7771C56a85C48c901B",
-        "dex": "sushiswap",
-        "liquidityUsd": 19121.82,
+        "pair": "0xd604cf300A4aE4345426dF42FFb296aa35b4bef2",
+        "dex": "hydrex",
+        "liquidityUsd": 23647.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -169,7 +161,15 @@
       {
         "pair": "0xC18F50d6A832f12F6DcAaeEe8D0c87A65B96787E",
         "dex": "uniswap",
-        "liquidityUsd": 17397.22,
+        "liquidityUsd": 17399.95,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x3BD740dc10864f35001AAB7771C56a85C48c901B",
+        "dex": "sushiswap",
+        "liquidityUsd": 17656.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
@@ -177,7 +177,7 @@
       {
         "pair": "0x22F9623817F152148B4E080E98Af66FBE9C5AdF8",
         "dex": "uniswap",
-        "liquidityUsd": 15838.58,
+        "liquidityUsd": 15840.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false

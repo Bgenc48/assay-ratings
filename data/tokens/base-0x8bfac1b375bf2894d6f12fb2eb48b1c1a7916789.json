@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "MEY",
   "name": "Mey Network",
-  "scanned_at": "2026-07-15T07:31:34.939Z",
+  "scanned_at": "2026-07-16T07:40:00.401Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "D",
@@ -95,6 +95,11 @@
   },
   "caps": [
     {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "More than 50% of primary liquidity is withdrawable by one key."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -113,31 +118,39 @@
     ],
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 206613.59,
+    "liquidityUsd": 208547.01,
     "pools": [
-      {
-        "pair": "0x77310Fc8950dd83a035769018f2a05b1E989a52a",
-        "dex": "uniswap",
-        "liquidityUsd": 103433.38,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
       {
         "pair": "0xAe37030302643Ee121DFA50E76b27b90Fac9e872",
         "dex": "aerodrome",
-        "liquidityUsd": 99894.1,
+        "liquidityUsd": 100540.28,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true
       },
       {
-        "pair": "0xa3116c935b8fe346a8F42D7eFC4C6e7a52947e48",
-        "dex": "aerodrome",
-        "liquidityUsd": 3286.11,
+        "pair": "0x77310Fc8950dd83a035769018f2a05b1E989a52a",
+        "dex": "uniswap",
+        "liquidityUsd": 104387.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
+      },
+      {
+        "pair": "0xa3116c935b8fe346a8F42D7eFC4C6e7a52947e48",
+        "dex": "aerodrome",
+        "liquidityUsd": 3307.03,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false
+      },
+      {
+        "pair": "0x8cd2D9238574105eb25a1b0A00e9B33Eb15Cc165",
+        "dex": "uniswap",
+        "liquidityUsd": 312.16,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true
       }
     ],
     "top10Pct": 47.34,

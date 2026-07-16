@@ -1,6 +1,156 @@
 {
-  "generated_at": "2026-07-15T07:33:11.160Z",
+  "generated_at": "2026-07-16T07:42:06.704Z",
   "alerts": [
+    {
+      "at": "2026-07-16T07:35:19.531Z",
+      "chain": "base",
+      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+      "symbol": "DAI",
+      "severity": "CRITICAL",
+      "kind": "downgrade",
+      "text": "Grade D → F.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:38:14.994Z",
+      "chain": "base",
+      "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+      "symbol": "ELSA",
+      "severity": "CRITICAL",
+      "kind": "downgrade",
+      "text": "Grade B- → D.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:38:14.994Z",
+      "chain": "base",
+      "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+      "symbol": "ELSA",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: More than 50% of primary liquidity is withdrawable by one key. (≤ D).",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:38:20.441Z",
+      "chain": "base",
+      "address": "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93",
+      "symbol": "LMTS",
+      "severity": "CRITICAL",
+      "kind": "downgrade",
+      "text": "Grade B → D.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:38:20.441Z",
+      "chain": "base",
+      "address": "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93",
+      "symbol": "LMTS",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: More than 50% of primary liquidity is withdrawable by one key. (≤ D).",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:38:31.660Z",
+      "chain": "base",
+      "address": "0xbaa5cc21fd487b8fcc2f632f3f4e8d37262a0842",
+      "symbol": "MORPHO",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state D → UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:40:10.644Z",
+      "chain": "base",
+      "address": "0x8bfac1b375bf2894d6f12fb2eb48b1c1a7916789",
+      "symbol": "MEY",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: More than 50% of primary liquidity is withdrawable by one key. (≤ D).",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:40:51.855Z",
+      "chain": "base",
+      "address": "0x8453cf5dd4840072b5da025ca4c5caa13c192b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:41:35.949Z",
+      "chain": "base",
+      "address": "0x8a6786e0f64736771e34df56b869d4c620870b07",
+      "symbol": "Claude",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "Claude is now rated: C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:41:42.194Z",
+      "chain": "base",
+      "address": "0x50f88fe97f72cd3e75b9eb4f747f59bceba80d59",
+      "symbol": "jesse",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "jesse is now rated: UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:41:47.544Z",
+      "chain": "base",
+      "address": "0xdcf5130274753c8050ab061b1a1dcbf583f5bfd0",
+      "symbol": "VCNT",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "VCNT is now rated: C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:41:50.796Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000000ee9988edd75453501",
+      "symbol": "PAMPU",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "PAMPU is now rated: C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:41:58.399Z",
+      "chain": "base",
+      "address": "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
+      "symbol": "FLOCK",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "FLOCK is now rated: D.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:42:01.960Z",
+      "chain": "base",
+      "address": "0x2100a39f514d8fe3f26963a29b95b030a0a5d4b7",
+      "symbol": "UPONLY",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "UPONLY is now rated: C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-16T07:42:05.954Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000007bf6d5cbb0e24cb301",
+      "symbol": "BRIAN",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "BRIAN is now rated: C.",
+      "evidence": null
+    },
     {
       "at": "2026-07-15T07:32:40.271Z",
       "chain": "base",

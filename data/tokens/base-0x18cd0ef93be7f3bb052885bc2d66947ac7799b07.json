@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-15T07:31:48.434Z",
+  "scanned_at": "2026-07-16T07:40:18.542Z",
   "methodology_version": "0.1.0",
   "grade": {
     "letter": "C",
@@ -71,7 +71,7 @@
           "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x1b3f0e728d43e236c0642b703f278b08e7bb770ba30776cd444fff017b383061"
+            "pair": "0x7521222b88444a9f85d49b6b192d3134c2a647b7089258b95a6281e6f61769fc"
           }
         }
       ]
@@ -88,7 +88,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.2%.",
+          "text": "Top-10 unlabeled holders control 0.3%.",
           "evidence": null
         }
       ]
@@ -124,34 +124,18 @@
     ],
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 20.58,
+    "liquidityUsd": 2.73,
     "pools": [
       {
-        "pair": "0x1b3f0e728d43e236c0642b703f278b08e7bb770ba30776cd444fff017b383061",
+        "pair": "0x7521222b88444a9f85d49b6b192d3134c2a647b7089258b95a6281e6f61769fc",
         "dex": "uniswap",
-        "liquidityUsd": 14.99,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xfd5d749217f68ff7f026fc78eba776c22a5201c475b3b902016dfeaf0052f081",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x0c1050de049ddb8531a1d31e66a67114176bcccb06fb7febd7ce7a00c76d0336",
-        "dex": "uniswap",
-        "liquidityUsd": 5.59,
+        "liquidityUsd": 2.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false
       }
     ],
-    "top10Pct": 0.2,
+    "top10Pct": 0.28,
     "projectLinks": null
   },
   "notes": null,
