@@ -1,0 +1,10 @@
+{
+  "_comment": "Allowlist of canonical bridge contracts, per chain. The scanner sets mintGate 'bridge' (methodology v0.2, bridged profile) only when a token's declared bridge address, read on-chain on every scan, matches an entry here. A wrong entry would upgrade a non-canonical wrapper's issuance anchor, so additions require a human-reviewed PR citing the chain's own predeploy or deployment documentation.",
+  "base": [
+    {
+      "address": "0x4200000000000000000000000000000000000010",
+      "name": "Base L2StandardBridge (OP-stack predeploy)",
+      "evidence": "OP-stack predeploys specification (github.com/ethereum-optimism/specs, protocol/predeploys.md): L2StandardBridge lives at 0x4200000000000000000000000000000000000010 on every OP-stack chain, including Base."
+    }
+  ]
+}

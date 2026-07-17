@@ -85,6 +85,27 @@ export async function inspectToken(network, address, opts = {}) {
   const controller = proxyAdmin ?? ownerAddress;
   const control = controller ? await classifyController(network, controller, opts) : { type: "none" };
 
+  // When a mint path exists but no owner or proxy admin is readable, the
+  // gate often lives behind a dedicated minter() role (ve(3,3) emissions
+  // minters and similar). Probing it lets reports NAME the mint controller.
+  // A positive classification feeds the mint-gate treatment (an EOA minter
+  // is positive evidence); an unclassifiable contract stays "insufficient
+  // data" — naming a controller is not evidence its gate is safe.
+  let mintController = null;
+  const mintable = riskSelectors.some((s) => s.kind === "mint");
+  if (mintable && !controller) {
+    const [minterHex] = await batchCall(
+      network,
+      [{ to, data: SELECTORS.minter }],
+      { ...opts, soft: true },
+    ).catch(() => [null]);
+    const minterAddress = safe(() => decodeAddress(minterHex));
+    if (minterAddress) {
+      const cls = await classifyController(network, minterAddress, opts);
+      mintController = { address: minterAddress, ...cls };
+    }
+  }
+
   return {
     address: to,
     meta: {
@@ -94,9 +115,10 @@ export async function inspectToken(network, address, opts = {}) {
       totalSupply: totalSupply.toString(),
     },
     supply: {
-      mintable: riskSelectors.some((s) => s.kind === "mint"),
+      mintable,
       upgradeable: proxyType !== null,
       feeOnTransfer: null, // advisory-only in v1 (see docs/METHODOLOGY.md)
+      mintController,
     },
     admin: {
       ownerAddress,

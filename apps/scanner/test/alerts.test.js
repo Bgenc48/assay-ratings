@@ -75,6 +75,25 @@ test("no changes → no alerts; failed scans → no alerts", () => {
   assert.deepEqual(computeAlerts(report(), { status: "registry_mismatch" }), []);
 });
 
+test("profile assignment is a WARN, diffable event", () => {
+  const out = computeAlerts(report({ profile: "standard" }), report({ profile: "fiat-stablecoin" }));
+  assert.ok(out.some((a) => a.kind === "profile-changed" && a.severity === "WARN"));
+  // Absent profile defaults to standard, so a no-op does not alert.
+  assert.ok(!computeAlerts(report(), report({ profile: "standard" })).some((a) => a.kind === "profile-changed"));
+});
+
+test("a cap moving active→waived alerts instead of passing silently", () => {
+  const active = report({ caps: [{ id: "cap.eoa-mint", reason: "EOA mint", letter: "F" }] });
+  const waived = report({
+    caps: [{ id: "cap.eoa-mint", reason: "EOA mint", letter: "F", waived: true, waivedBy: "profile.fiat-stablecoin + claim.admin_disclosure VERIFIED" }],
+  });
+  const toWaived = computeAlerts(active, waived);
+  assert.ok(toWaived.some((a) => a.kind === "cap-waived" && a.severity === "WARN"));
+  assert.ok(!toWaived.some((a) => a.kind === "cap-cleared"), "a waived cap is not a cleared cap");
+  const toActive = computeAlerts(waived, active);
+  assert.ok(toActive.some((a) => a.kind === "cap-reactivated" && a.severity === "WARN"));
+});
+
 test("mergeFeed caps the rolling feed and puts new alerts first", () => {
   const old = { alerts: Array.from({ length: 299 }, (_, i) => ({ kind: `old-${i}` })) };
   const merged = mergeFeed(old, [{ kind: "fresh-1" }, { kind: "fresh-2" }], { cap: 300, generatedAt: "t" });

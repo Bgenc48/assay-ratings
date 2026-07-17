@@ -1,4 +1,4 @@
-# Assay Methodology — v0.1.0
+# Assay Methodology — v0.2.0
 
 > **The grade measures whether a token can betray you in ways it hasn't
 > disclosed — not whether it is a good investment.**
@@ -31,7 +31,7 @@ bump and a changelog entry here.
 
 | # | Dimension | Weight | Key anchors (0–100) |
 |---|---|---|---|
-| 1 | Supply Integrity | 20 | 100 no mint path & not upgradeable · 85 mint gated by governance+timelock · 65 custodial issuance w/ attestations · 60 latent mint via upgradeability · 35 bare-multisig or unclassifiable mint (unclassifiable also **caps C** as insufficient data) · 0 EOA-controlled mint (**cap F**, requires positive controller classification) |
+| 1 | Supply Integrity | 20 (25 under custodial profiles) | 100 no mint path & not upgradeable · 85 mint gated by governance+timelock, or restricted to an allowlisted canonical bridge (bridged profile) · 65 disclosed custodial issuance — **operative only under the custodial profiles (§6) with a VERIFIED admin-disclosure claim** · 60 latent mint via upgradeability · 35 bare-multisig or unclassifiable mint (unclassifiable also **caps C** as insufficient data) · 0 EOA-controlled mint (**cap F**, requires positive controller classification) |
 | 2 | Admin Surface & Upgradeability | 20 (15 if #8 applies) | 100 no owner/powers/proxy · 90 governance + ≥48h timelock · 75 ≥3-of-N Safe + delay · 55 Safe, no timelock · 25 EOA with material powers |
 | 3 | Disclosure Integrity | 15 | start 100 · material FALSE −40 (**cap D**) · minor FALSE −10 · material UNVERIFIABLE −5 (max −30) · omission −15 · claim-light floor 70 |
 | 4 | Insider Float & Vesting | 15 | 100 liquid <5% & ≥50% code-vested · 75 <10% & ≥30% vested · 50 ≤15% · 25 ≤30% · 0 >30% (**cap C**) or vesting violated |
@@ -64,9 +64,18 @@ The full cap table (published verbatim, tested):
 | Top-10 unlabeled holders >50% | C |
 | <50% of material claims verifiable | B |
 | Claim-light (no checkable disclosures) | B+ |
+| Custodial control asserted (profile) without a VERIFIED issuer disclosure | C |
+| Custodial issuer (profile), always | B+ |
 | Age <24 months | A |
 | Age <12 months | A− + Provisional |
 | Age <6 months | B+ + Provisional |
+
+Some caps are **profile-conditional** (§6): under a custodial profile with a
+VERIFIED admin-disclosure claim, the EOA-mint (F), unclassified-mint (C) and
+EOA-upgrade (D) caps are emitted **waived** — printed on the report with the
+evidence that waives them, but excluded from the grade ceiling. LP-derived
+caps do not apply where liquidity permanence is replaced or N/A. A waiver
+never removes a fact; it only removes it from the min().
 
 Letter bands: A+ ≥95 · A 89–94.9 · A− 85–88.9 · B+ 80–84.9 · B 75–79.9 ·
 B− 70–74.9 · C 55–69.9 · D 40–54.9 · F <40.
@@ -108,12 +117,69 @@ scan" — never intent. This rule is tested.
 - Single-EOA-withdrawable liquidity caps at **D**.
 - Thin data → thin coverage, not a low score; <3 scorable dimensions → N/R.
 
-## 6. Category profiles (v0.2 roadmap)
+## 6. Category profiles
 
-Fiat stablecoins (purpose-consistent issuance, redeemability instead of
-liquidity permanence), wrapped/bridged assets (derivative trust), and L1/L2
-native coins (out of automated scope) get published profile re-weightings in
-v0.2. Until then their reports carry an explanatory note.
+The standard profile (§2) treats disclosed, purpose-consistent
+centralization as latent rug risk — correct for a project token, wrong for a
+fiat stablecoin or a canonical bridge wrapper. A **category profile**
+re-weights the dimensions and re-labels a few so a token is graded for what it
+is. Profiles are assigned **only by hand, in `registry/tokens.json`, by
+reviewed PR** — auto-discovered tokens always score `standard`; an unknown
+profile string throws. Every report, index row, and history line is stamped
+with the profile used, and a profile change emits a WARN alert.
+
+**Load-bearing rule.** A profile only re-weights and re-labels. Every anchor
+it raises and every cap it waives *additionally* requires positive,
+per-scan-recomputed evidence — a VERIFIED `admin_disclosure` claim, or an
+on-chain canonical-bridge classification. Absent that evidence, the profile
+degrades to the C "insufficient data" treatment (Principle 4), never to F and
+never silently to a good score. Waived caps stay on the report, marked
+`waived` with the evidence in `waivedBy`; they are excluded from the min()
+only, never deleted.
+
+**`fiat-stablecoin` / `custodial-wrapped`** (shared semantics). Weights:
+Issuance Integrity 25, Admin 20 (15 with governance), Disclosure 25,
+Redeemability 10, Track Record 20; Insider Float and Holder Concentration are
+**N/A** (no insiders exist for issuance-based supply). Issuance anchors at 65
+and admin at 50 **only while** an approved `admin_disclosure` claim verifies
+VERIFIED (the deterministic subset check in `verify.js`: every privileged
+selector kind found on-chain is enumerated in the issuer's own material) — so
+if the issuer's disclosures stop covering the chain, the grade regresses on
+the next scan automatically. Without a VERIFIED disclosure, issuance scores 35
+and `cap.custodial-undisclosed` (C) applies. Liquidity Permanence is replaced
+by **Redeemability**, which is out of automated scope in v0.2 (redemption
+execution and reserve attestations are not machine-checkable): it scores as
+reduced coverage, never a guess; attestation links appear under Claims. A
+permanent `cap.custodial-issuer` (B+) means a custodial issuer never reaches
+A. What still fails one: a materially false claim (D), an undisclosed on-chain
+power (flips the disclosure claim FALSE → D and collapses the anchors),
+unverified source (C), a track-record violation (D), symbol mismatch
+(publishes nothing).
+
+**`bridged`.** Weights: Supply 25, Admin 25 (20 with governance), Disclosure
+20, Track Record 20, Holder Concentration 10; Insider Float and Liquidity
+Permanence are N/A (a canonical wrapper makes no LP-lock promise). When the
+token's declared bridge address, read on-chain each scan, matches an entry in
+the reviewed `packages/chain/registries/bridges.json` allowlist, issuance
+anchors at 85 and admin at 90 (`admin.bridge-only`), and the report carries a
+mandatory derivative-trust note: the grade covers the Base wrapper contract,
+not the parent-chain asset or the bridge operator. If the check does not pass,
+the token falls back to the standard treatment (fail-soft). Non-canonical
+bridges cannot receive this profile in v0.2.
+
+**`native-representation`.** A bridged representation of another chain's
+native coin publishes full facts, findings, and claims, but **no letter
+grade** — the publication gate in `apps/scanner/src/run.js` sets the state to
+**NS (Not Scored)**. Assay's automated methodology grades token contracts, not
+an L1's consensus or its bridge operators; a letter would be either
+misleadingly bad (grading Solana by a wrapper) or misleadingly generous.
+
+Two "no score" states are kept distinct: **N/A** (the concept does not apply;
+costs no coverage) and **out of automated scope** (applies but not
+machine-checkable yet, e.g. Redeemability; lowers coverage). A *scored*
+emissions-minter anchor (ve(3,3) minters and similar) is future methodology
+work; today such a mint gate is named descriptively but still scores as
+insufficient data.
 
 ## 7. Data sources & licensing constraints
 
@@ -133,6 +199,27 @@ use and AI/dataset use.
 
 ## Changelog
 
+- **0.2.0** — Category profiles become normative (§6). Profiles are
+  hand-assigned in the reviewed registry only; auto-discovered tokens always
+  score `standard`, and every report, index row, and history line is stamped
+  with the profile used. `fiat-stablecoin` / `custodial-wrapped`: issuance
+  re-anchors to 65 for disclosed custodial control, operative only while an
+  approved admin-disclosure claim verifies on every scan; without it the
+  profile caps at C (`cap.custodial-undisclosed`). Insider Float and Holder
+  Concentration are N/A; Liquidity Permanence is replaced by Redeemability
+  (out of automated scope → reduced coverage). New permanent B+ cap for
+  custodial issuers (`cap.custodial-issuer`). Relaxed caps remain visible,
+  marked waived. `bridged`: mint restricted to an allowlisted canonical
+  bridge, verified on-chain each scan, anchors issuance at 85 and admin at 90;
+  liquidity permanence N/A; derivative-trust note required.
+  `native-representation`: bridged forms of L1 native coins publish facts
+  without a letter (new **NS** state). Also fixed: a dominant pool whose LP
+  lock status cannot be analyzed now scores as insufficient data (lower
+  coverage), not "mostly unlocked" (score 25) — the previous behavior
+  published a negative fact derived from missing data, contrary to Principle
+  4; a rug-ready finding now also records the dominant LP holder and share.
+  Standard-profile scoring is byte-identical to 0.1.0; every 0.1.0 golden
+  test is unchanged.
 - **0.1.0** — Initial public methodology: eight dimensions, hybrid
   aggregation with hard caps, deterministic claim verdicts (six verifier
   types), Trust Model badges, coverage indicator, age caps at 6/12/24

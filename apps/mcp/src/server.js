@@ -36,12 +36,13 @@ server.tool(
       generated = (await readJson("index.json")).generated_at;
     } catch { /* pre-first-scan */ }
     return text({
-      what: "Assay publishes one letter grade (A+..F) for the gap between what a token project promises and what its blockchain proves, plus a Trust Model badge (Code-Enforced / Governance-Gated / Custodial / Discretionary) and per-dimension evidence.",
+      what: "Assay publishes one letter grade (A+..F) for the gap between what a token project promises and what its blockchain proves, plus a Trust Model badge (Code-Enforced / Governance-Gated / Custodial / Custodial (disclosed) / Bridged (canonical) / Discretionary) and per-dimension evidence. Each report is stamped with a category profile (standard / fiat-stablecoin / custodial-wrapped / bridged / native-representation) that determines how it is weighted; see the methodology page.",
       grade_meaning: "The grade measures whether a token can betray holders in ways it hasn't disclosed — NOT whether it is a good investment, and NOT a price prediction.",
       special_letters: {
         "N/R": "not ratable (insufficient data)",
         UR: "computed low grade on a high-liquidity token, withheld pending human review (published policy)",
         COI: "not rated — founder conflict of interest, facts published without a grade",
+        NS: "not scored — a bridged representation of another chain's native coin; facts published without a letter grade (methodology v0.2 §6)",
       },
       provisional: "Tokens under 12 months old carry a Provisional badge; no token can grade above B+ under 6 months, A- under 12, or A under 24.",
       methodology: "https://assayratings.com/methodology.html (versioned; every score is stamped with the version that produced it)",

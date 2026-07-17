@@ -92,7 +92,13 @@ export async function inspectLiquidity(network, address, opts = {}) {
           // If neither burned nor in a known locker, find whether one
           // non-contract address dominates the LP supply (rug-ready).
           if (pool.lpBurnedPct + pool.lpLockedPct < 50) {
-            pool.singleEoaWithdrawable = await dominantEoaHoldsLp(network, lp, supply, opts);
+            const dominant = await dominantEoaHoldsLp(network, lp, supply, opts);
+            pool.singleEoaWithdrawable = dominant.isDominant;
+            if (dominant.isDominant) {
+              // Record the evidence the finding rests on — a rug-ready
+              // assertion must be reviewable from the report alone.
+              pool.evidence.lpDominantHolder = { address: dominant.holder, sharePct: dominant.sharePct };
+            }
           }
         }
       } catch {
@@ -107,21 +113,24 @@ export async function inspectLiquidity(network, address, opts = {}) {
 
 /**
  * Best-effort check via Blockscout: does a single EOA hold >50% of this LP
- * token? Conservative: any failure returns false (we never *assert*
- * rug-ready without evidence; the low burned/locked % already scores 25).
+ * token? Conservative: any failure returns isDominant:false (we never
+ * *assert* rug-ready without evidence). When dominant, the holder address
+ * and share are returned so the finding is reviewable from the report.
  */
 async function dominantEoaHoldsLp(network, lpAddress, lpSupply, opts = {}) {
+  const notDominant = { isDominant: false, holder: null, sharePct: null };
   try {
     const { blockscoutHolders } = await import("./holders.js");
     const holders = await blockscoutHolders(network, lpAddress, opts);
-    if (!holders?.length) return false;
+    if (!holders?.length) return notDominant;
     const top = holders[0];
     const share = pct(BigInt(top.value), lpSupply);
-    if (share <= 50) return false;
+    if (share <= 50) return notDominant;
     const [code] = await rpcBatch(network, [{ method: "eth_getCode", params: [top.address, "latest"] }], opts);
-    return code === "0x";
+    if (code !== "0x") return notDominant;
+    return { isDominant: true, holder: top.address, sharePct: share };
   } catch {
-    return false;
+    return notDominant;
   }
 }
 

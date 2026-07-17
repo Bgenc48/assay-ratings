@@ -5,6 +5,19 @@
       "0x000000000000000000000000000000000000dead",
       "0x0000000000000000000000000000000000000000"
     ],
-    "lockers": []
+    "lockers": [
+      {
+        "address": "0xc4E637D37113192F4F1F060DaEbD7758De7F4131",
+        "name": "UNCX UniswapV2Locker (Base)",
+        "amm": "uniswap-v2",
+        "custody": "lp-erc20-held-by-locker-contract",
+        "evidence": {
+          "vendorDeployment": "uncx-network GitHub — liquidity-locker (UniV2) contracts repository, README deployments table lists this address as the Base lockerV2 deployment",
+          "audit": "PENDING OWNER CITATION — docs.uncx.network unreachable from the authoring session; owner must add the audit link and cross-check the address on base.blockscout.com (verified source, UniswapV2Locker) before merging, or delete this entry",
+          "onChainCrossCheck": "PENDING OWNER CHECK — base.blockscout.com address page: verified source, contract name UniswapV2Locker"
+        },
+        "added": "2026-07-12"
+      }
+    ]
   }
 }
