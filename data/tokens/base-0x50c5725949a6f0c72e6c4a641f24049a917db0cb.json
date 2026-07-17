@@ -4,36 +4,37 @@
   "status": "ok",
   "symbol": "DAI",
   "name": "Dai Stablecoin",
-  "scanned_at": "2026-07-16T07:35:07.764Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:32:18.734Z",
+  "methodology_version": "0.2.0",
+  "profile": "bridged",
   "grade": {
-    "letter": "F",
-    "overall": 36.4,
+    "letter": "B+",
+    "overall": 82.5,
     "provisional": true,
-    "badge": "Discretionary",
+    "badge": "Bridged (canonical)",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 85,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unclassified-mint",
-          "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "id": "supply.bridge-mint",
+          "severity": "info",
+          "text": "Minting is restricted to the canonical bridge; issuance mirrors the asset escrowed on the parent chain.",
           "evidence": null
         }
       ]
     },
     "adminSurface": {
-      "score": 40,
+      "score": 90,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.unknown-gate",
-          "severity": "warn",
-          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "id": "admin.bridge-only",
+          "severity": "info",
+          "text": "The only material privileged capability is minting, restricted on-chain to the canonical bridge; no owner or upgrade path exists.",
           "evidence": null
         }
       ]
@@ -52,23 +53,13 @@
     },
     "insiderFloat": {
       "score": null,
-      "notApplicable": false,
+      "notApplicable": true,
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 0,
-      "notApplicable": false,
-      "findings": [
-        {
-          "id": "liq.rug-ready",
-          "severity": "crit",
-          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823"
-          }
-        }
-      ]
+      "score": null,
+      "notApplicable": true,
+      "findings": []
     },
     "trackRecord": {
       "score": null,
@@ -88,16 +79,6 @@
   },
   "caps": [
     {
-      "id": "cap.unclassified-mint",
-      "letter": "C",
-      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.rug-ready",
-      "letter": "D",
-      "reason": "More than 50% of primary liquidity is withdrawable by one key."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -105,7 +86,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "2077410357710484788243713",
+    "totalSupply": "2077595842708074498079181",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -114,78 +95,101 @@
     "privileged": [
       "mint(address,uint256)"
     ],
+    "mintController": null,
+    "bridge": {
+      "address": "0x4200000000000000000000000000000000000010",
+      "canonical": true,
+      "evidence": {
+        "type": "eth_call",
+        "to": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "selector": "l2Bridge()",
+        "result": "0x4200000000000000000000000000000000000010"
+      }
+    },
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 259722.43000000005,
+    "liquidityUsd": 253651.3,
     "pools": [
       {
         "pair": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823",
         "dex": "shark-swap",
-        "liquidityUsd": 54635.9,
+        "liquidityUsd": 53607.55,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x1239660af62d515bfecd4ee09c58d2cd32504605",
+          "sharePct": 99.98
+        }
       },
       {
         "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb",
         "dex": "uniswap",
-        "liquidityUsd": 54109.31,
+        "liquidityUsd": 53724.98,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x345825A980BD94e1480bC4f20FE4e3DAE2F23Dd3",
         "dex": "pancakeswap",
-        "liquidityUsd": 47821.8,
+        "liquidityUsd": 47824.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
         "dex": "uniswap",
-        "liquidityUsd": 28610.83,
+        "liquidityUsd": 30130.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xd604cf300A4aE4345426dF42FFb296aa35b4bef2",
         "dex": "hydrex",
-        "liquidityUsd": 23647.53,
+        "liquidityUsd": 23647.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xC18F50d6A832f12F6DcAaeEe8D0c87A65B96787E",
         "dex": "uniswap",
-        "liquidityUsd": 17399.95,
+        "liquidityUsd": 17400.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x3BD740dc10864f35001AAB7771C56a85C48c901B",
-        "dex": "sushiswap",
-        "liquidityUsd": 17656.51,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x22F9623817F152148B4E080E98Af66FBE9C5AdF8",
         "dex": "uniswap",
-        "liquidityUsd": 15840.6,
+        "liquidityUsd": 15841.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd64e7bF24eE5CC10B5Ab92525D256300Ad3FB81E",
+        "dex": "uniswap",
+        "liquidityUsd": 11472.94,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": null,
     "projectLinks": null
   },
-  "notes": "Bridged representation of DAI on Base, graded on its Base contract structure (bridge/admin-controlled), not on mainnet DAI. The wrapped/bridged (derivative-trust) profile lands in methodology v0.2.",
+  "notes": "Bridged representation of DAI on Base, graded on its Base contract structure, not on mainnet DAI. Scored under the methodology v0.2 bridged profile: if minting is verified on-chain to be restricted to the allowlisted canonical bridge, issuance anchors high and the report carries a derivative-trust note; otherwise it falls back to the standard treatment. Liquidity permanence is N/A (a canonical wrapper makes no LP-lock promise).",
   "coi": false
 }

@@ -4,24 +4,25 @@
   "status": "ok",
   "symbol": "USDC",
   "name": "USD Coin",
-  "scanned_at": "2026-07-16T07:33:11.473Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:30:15.284Z",
+  "methodology_version": "0.2.0",
+  "profile": "fiat-stablecoin",
   "grade": {
-    "letter": "UR",
-    "overall": 36.6,
+    "letter": "C",
+    "overall": 56.9,
     "provisional": false,
-    "badge": "Discretionary",
-    "coverage": "partial"
+    "badge": "Custodial",
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 0,
+      "score": 35,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.eoa-mint",
-          "severity": "crit",
-          "text": "A mint path exists and its controller is an externally-owned account. Supply can be inflated unilaterally.",
+          "id": "supply.custodial-undisclosed",
+          "severity": "warn",
+          "text": "Custodial issuance is asserted by the reviewed registry, but the issuer's disclosure of on-chain powers is not yet on record as a verified claim (insufficient data).",
           "evidence": null
         }
       ]
@@ -52,21 +53,19 @@
     },
     "insiderFloat": {
       "score": null,
-      "notApplicable": false,
+      "notApplicable": true,
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
+      "outOfAutomatedScope": true,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xa0ab20a64f46b5676fe1542cb87b454e5104007689e0eef4212aa0cbe34933a1"
-          }
+          "id": "redeem.out-of-scope",
+          "severity": "info",
+          "text": "Redeemability replaces liquidity permanence under this profile. Redemption execution and reserve attestations are not machine-checkable in methodology v0.2; attestation links appear under Claims. Scored as reduced coverage, never as a guess.",
+          "evidence": null
         }
       ]
     },
@@ -77,7 +76,7 @@
     },
     "holderConcentration": {
       "score": null,
-      "notApplicable": false,
+      "notApplicable": true,
       "findings": []
     },
     "governanceReality": {
@@ -90,12 +89,26 @@
     {
       "id": "cap.eoa-mint",
       "letter": "F",
-      "reason": "Mint or issuance is controlled by an externally-owned account."
+      "reason": "Mint or issuance is controlled by an externally-owned account.",
+      "waived": true,
+      "waivedBy": "profile.fiat-stablecoin (reviewed registry); superseded by cap.custodial-undisclosed"
+    },
+    {
+      "id": "cap.custodial-undisclosed",
+      "letter": "C",
+      "reason": "Custodial control asserted by the reviewed registry without a verified issuer disclosure on record (insufficient data)."
+    },
+    {
+      "id": "cap.custodial-issuer",
+      "letter": "B+",
+      "reason": "Issuance and administration are issuer-controlled; code does not constrain the issuer."
     },
     {
       "id": "cap.eoa-upgrade",
       "letter": "D",
-      "reason": "Upgradeable with an EOA admin and no timelock."
+      "reason": "Upgradeable with an EOA admin and no timelock.",
+      "waived": true,
+      "waivedBy": "profile.fiat-stablecoin (reviewed registry); superseded by cap.custodial-undisclosed"
     },
     {
       "id": "cap.claim-light",
@@ -105,7 +118,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4273400571956358",
+    "totalSupply": "4225911360914917",
     "decimals": 6,
     "owner": "0x3abd6f64a422225e61e435bae41db12096106df7",
     "controlType": "eoa",
@@ -117,82 +130,88 @@
       "unpause()",
       "blacklist(address)"
     ],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1063,
-    "liquidityUsd": 1302663.8199999998,
+    "ageDays": 1064,
+    "liquidityUsd": 1303833.6099999996,
     "pools": [
       {
         "pair": "0x5D0bC342178C8Fe2c2f9A9fcC9D52555C99936db",
         "dex": "quickswap",
-        "liquidityUsd": 159308.32,
+        "liquidityUsd": 159309.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x0E635F8EeED4F7279d56692D552F034ECE136019",
         "dex": "alien-base",
-        "liquidityUsd": 130754.35,
+        "liquidityUsd": 130835.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xa0ab20a64f46b5676fe1542cb87b454e5104007689e0eef4212aa0cbe34933a1",
         "dex": "uniswap",
-        "liquidityUsd": 907447.37,
+        "liquidityUsd": 907487.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD",
         "dex": "aerodrome",
-        "liquidityUsd": 42317.98,
+        "liquidityUsd": 43364,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x867dbb1b6417abcb3696d5a5d9cc38cbf9f0f6d17355515fe1c8303e791832c4",
         "dex": "uniswap",
-        "liquidityUsd": 21972.67,
+        "liquidityUsd": 21973.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x06959273E9A65433De71F5A452D529544E07dDD0",
         "dex": "uniswap",
-        "liquidityUsd": 13638.76,
+        "liquidityUsd": 13639.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x29Ed55B18Af0Add137952CB3E29FB77B32fCE426",
         "dex": "pancakeswap",
-        "liquidityUsd": 15182.88,
+        "liquidityUsd": 15183.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xdac0f353d884f6e0db833036558a9f225eda392f4d1ff1a61f13c8f7875186bf",
         "dex": "uniswap",
-        "liquidityUsd": 12041.49,
+        "liquidityUsd": 12041.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": null,
     "projectLinks": null
   },
-  "notes": "Fiat stablecoin — pausable/blacklistable/upgradeable by design and disclosed. Category profile for stablecoins (redeemability) is a methodology v0.2 item; until then the raw structure scores under the standard profile with this note shown.",
-  "coi": false,
-  "pendingReview": {
-    "computed": "F"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "notes": "Fiat stablecoin (Circle) — pausable/blacklistable/upgradeable by design and disclosed. Scored under the methodology v0.2 fiat-stablecoin profile: issuer-controlled issuance and administration re-anchor upward only while an approved admin-disclosure claim verifies against the chain each scan; redeemability replaces liquidity permanence (out of automated scope); custodial issuers are capped at B+. Until the issuer-disclosure claim is approved, the profile caps at C (insufficient data).",
+  "coi": false
 }

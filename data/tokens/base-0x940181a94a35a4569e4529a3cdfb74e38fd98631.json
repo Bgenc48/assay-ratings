@@ -4,8 +4,9 @@
   "status": "ok",
   "symbol": "AERO",
   "name": "Aerodrome",
-  "scanned_at": "2026-07-16T07:34:11.333Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:30:59.128Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
     "letter": "UR",
     "overall": 53.2,
@@ -21,7 +22,7 @@
         {
           "id": "supply.unclassified-mint",
           "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "text": "A mint path exists, gated by a dedicated minter role at 0xeb018363f0a9af8f91f06fee6613a751b2a33fe5 (a contract). The controller's own governance could not be classified automatically — treated as insufficient data pending review, not as an open mint.",
           "evidence": null
         }
       ]
@@ -116,76 +117,89 @@
     "privileged": [
       "mint(address,uint256)"
     ],
+    "mintController": {
+      "address": "0xeb018363f0a9af8f91f06fee6613a751b2a33fe5",
+      "type": "contract"
+    },
+    "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1053,
-    "liquidityUsd": 35779638.330000006,
+    "ageDays": 1054,
+    "liquidityUsd": 33438875.200000003,
     "pools": [
       {
         "pair": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
         "dex": "aerodrome",
-        "liquidityUsd": 29995185.93,
+        "liquidityUsd": 29470770.47,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x20CB8f872ae894F7c9e32e621C186e5AFCe82Fd0",
         "dex": "pancakeswap",
-        "liquidityUsd": 167179.09,
+        "liquidityUsd": 167203.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xa4FDd479eda160671636e2eCF8f993Cbf86258a8",
         "dex": "aerodrome",
-        "liquidityUsd": 567120.8,
+        "liquidityUsd": 576332.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xE5B5f522E98B5a2baAe212d4dA66b865B781DB97",
         "dex": "uniswap",
-        "liquidityUsd": 202544.45,
+        "liquidityUsd": 205129.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x82321f3BEB69f503380D6B233857d5C43562e2D0",
         "dex": "aerodrome",
-        "liquidityUsd": 620934.53,
+        "liquidityUsd": 616362.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xdFe5F275020def30993f042174Fc2D335678b626",
         "dex": "aerodrome",
-        "liquidityUsd": 855039.42,
+        "liquidityUsd": 837984.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x4e506648d493C8870f55e870480f92f2F33ecE51",
         "dex": "aerodrome",
-        "liquidityUsd": 2386852.84,
+        "liquidityUsd": 940244.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x3d5D143381916280ff91407FeBEB52f2b60f33Cf",
-        "dex": "uniswap",
-        "liquidityUsd": 984781.27,
+        "pair": "0xCDBe19a6EF1B633BE744920C93eE40521d5cf2A6",
+        "dex": "aerodrome",
+        "liquidityUsd": 624846.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 17.99,
+    "top10Pct": 17.95,
     "projectLinks": {
       "websites": [
         "https://aerodrome.finance/docs",

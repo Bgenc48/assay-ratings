@@ -4,14 +4,15 @@
   "status": "ok",
   "symbol": "SHIB",
   "name": "SHIBA INU",
-  "scanned_at": "2026-07-16T07:39:16.494Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:35:35.538Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 80,
+    "overall": 85,
     "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,13 +62,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee"
@@ -107,73 +108,83 @@
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
-    "ageDays": 752,
-    "liquidityUsd": 185390.16999999998,
+    "ageDays": 753,
+    "liquidityUsd": 189646.74,
     "pools": [
       {
         "pair": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee",
         "dex": "uniswap",
-        "liquidityUsd": 171479.62,
+        "liquidityUsd": 175004.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x4fbB43E487f128D3c94dC668ab5b60e0Ae9Ca001",
         "dex": "uniswap",
-        "liquidityUsd": 10923.09,
+        "liquidityUsd": 11569.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xc466e421fa7aa5da59a7f7b4aaed3f10905a781ec0c38665e2f08e477da730a7",
         "dex": "uniswap",
-        "liquidityUsd": 361.22,
+        "liquidityUsd": 366.36,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x3c7eba8f08974e49937a844e489b2372b49d17a46d15a16ed79b02e22a27d7d3",
         "dex": "uniswap",
-        "liquidityUsd": 1482.19,
+        "liquidityUsd": 1503.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x381Ef53A1f112c7195d96181F6085A152C609C92",
-        "dex": "uniswap",
-        "liquidityUsd": 60.08,
-        "lpBurnedPct": 100,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x4235039335a809E39C282152Ef100197a8F95E8B",
         "dex": "uniswap",
-        "liquidityUsd": 105.99,
+        "liquidityUsd": 109.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x1d2367386aa7a4a08726143b209b0f1f13a15a372da65c66a0d56bbe5e079cac",
         "dex": "uniswap",
-        "liquidityUsd": 742.53,
+        "liquidityUsd": 803.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x381Ef53A1f112c7195d96181F6085A152C609C92",
+        "dex": "uniswap",
+        "liquidityUsd": 61.04,
+        "lpBurnedPct": 100,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xC09E5906180a541485Ec3fdC8bd34177925dA74D",
         "dex": "uniswap",
-        "liquidityUsd": 235.45,
+        "liquidityUsd": 229.24,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": 13.18,

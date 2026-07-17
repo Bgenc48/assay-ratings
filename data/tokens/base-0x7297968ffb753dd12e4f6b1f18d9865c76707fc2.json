@@ -4,11 +4,12 @@
   "status": "ok",
   "symbol": "ZEST",
   "name": "Zest",
-  "scanned_at": "2026-07-16T07:39:13.788Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:35:32.910Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 49.7,
+    "letter": "C",
+    "overall": 55.8,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -56,13 +57,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0x3693022BD390E147D8dD89a05403C80FF21dd64B"
@@ -102,7 +103,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "583742995632728722517380",
+    "totalSupply": "587993092073430575451959",
     "decimals": 18,
     "owner": "0x4ddae1d1bb8dacd4c8fa56792fde60f446755d0f",
     "controlType": "safe",
@@ -112,20 +113,23 @@
       "mint(address,uint256)",
       "burnFrom(address,uint256)"
     ],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 208744.84,
+    "liquidityUsd": 206261.19,
     "pools": [
       {
         "pair": "0x3693022BD390E147D8dD89a05403C80FF21dd64B",
         "dex": "aerodrome",
-        "liquidityUsd": 208744.84,
+        "liquidityUsd": 206261.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 2.49,
+    "top10Pct": 2.47,
     "projectLinks": {
       "websites": [
         "https://www.zestprotocol.com/",

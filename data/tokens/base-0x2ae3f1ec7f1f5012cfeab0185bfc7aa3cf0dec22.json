@@ -4,11 +4,12 @@
   "status": "ok",
   "symbol": "cbETH",
   "name": "Coinbase Wrapped Staked ETH",
-  "scanned_at": "2026-07-16T07:34:45.920Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:31:54.739Z",
+  "methodology_version": "0.2.0",
+  "profile": "custodial-wrapped",
   "grade": {
     "letter": "UR",
-    "overall": 46.1,
+    "overall": 53.2,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -19,9 +20,9 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.multisig-mint",
+          "id": "supply.custodial-undisclosed",
           "severity": "warn",
-          "text": "A mint path exists, gated by a multisig without a timelock or attestation trail.",
+          "text": "Custodial issuance is asserted by the reviewed registry, but the issuer's disclosure of on-chain powers is not yet on record as a verified claim (insufficient data).",
           "evidence": null
         }
       ]
@@ -52,21 +53,19 @@
     },
     "insiderFloat": {
       "score": null,
-      "notApplicable": false,
+      "notApplicable": true,
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
+      "outOfAutomatedScope": true,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97"
-          }
+          "id": "redeem.out-of-scope",
+          "severity": "info",
+          "text": "Redeemability replaces liquidity permanence under this profile. Redemption execution and reserve attestations are not machine-checkable in methodology v0.2; attestation links appear under Claims. Scored as reduced coverage, never as a guess.",
+          "evidence": null
         }
       ]
     },
@@ -77,7 +76,7 @@
     },
     "holderConcentration": {
       "score": null,
-      "notApplicable": false,
+      "notApplicable": true,
       "findings": []
     },
     "governanceReality": {
@@ -88,6 +87,16 @@
   },
   "caps": [
     {
+      "id": "cap.custodial-undisclosed",
+      "letter": "C",
+      "reason": "Custodial control asserted by the reviewed registry without a verified issuer disclosure on record (insufficient data)."
+    },
+    {
+      "id": "cap.custodial-issuer",
+      "letter": "B+",
+      "reason": "Issuance and administration are issuer-controlled; code does not constrain the issuer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -95,7 +104,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "68410621352572370722154",
+    "totalSupply": "68632385209418571422324",
     "decimals": 18,
     "owner": null,
     "controlType": "safe",
@@ -104,79 +113,89 @@
     "privileged": [
       "mint(address,uint256)"
     ],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 4281314.869999999,
+    "liquidityUsd": 6500520.24,
     "pools": [
+      {
+        "pair": "0x8BB9eAF3C5A906D20c4CC10eA2F73A3Ac2D5d41A",
+        "dex": "aerodrome",
+        "liquidityUsd": 712685.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97",
         "dex": "hydrex",
-        "liquidityUsd": 2552457.76,
+        "liquidityUsd": 2457244.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x47cA96Ea59C13F72745928887f84C9F52C3D7348",
+        "dex": "aerodrome",
+        "liquidityUsd": 2404343.31,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x257FCbAE4Ac6B26A02E4FC5e1a11e4174B5ce395",
         "dex": "pancakeswap",
-        "liquidityUsd": 102247.26,
+        "liquidityUsd": 97475.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xc715096EeCC3f4A0FDBfF055a3db2926adC83244",
         "dex": "alien-base",
-        "liquidityUsd": 303902.21,
+        "liquidityUsd": 290186.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x74A4bF2cad1b172cDc82a5Da7130C7A59EB5460b",
         "dex": "quickswap",
-        "liquidityUsd": 165332.65,
+        "liquidityUsd": 157772.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
-        "dex": "alien-base",
-        "liquidityUsd": 281445.38,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91",
         "dex": "aerodrome",
-        "liquidityUsd": 118682.11,
+        "liquidityUsd": 113285.94,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x99c7cec25ed9a7c6a9d2a2f065750e5e5bfe84c2ad06010e77a5c448ef67e0cb",
-        "dex": "uniswap",
-        "liquidityUsd": 698045.99,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x74AD64bac8df96Af2B63eA50c3d8840B79aA7A3B",
-        "dex": "solidlycom",
-        "liquidityUsd": 59201.51,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "pair": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
+        "dex": "alien-base",
+        "liquidityUsd": 267527.66,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": null,
     "projectLinks": null
   },
-  "notes": "Custodial liquid-staking wrapper (Coinbase). Same v0.2 custodial-profile note as cbBTC.",
+  "notes": "Custodial liquid-staking wrapper (Coinbase). Scored under the methodology v0.2 custodial-wrapped profile — same semantics as cbBTC. Until an approved issuer-disclosure claim verifies, the profile caps at C (insufficient data).",
   "coi": false,
   "pendingReview": {
     "computed": "D"

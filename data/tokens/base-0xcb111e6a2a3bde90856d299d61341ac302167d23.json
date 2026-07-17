@@ -4,11 +4,12 @@
   "status": "ok",
   "symbol": "cbMEGA",
   "name": "Coinbase Wrapped MEGA",
-  "scanned_at": "2026-07-16T07:40:52.605Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:36:43.014Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 27.3,
+    "letter": "F",
+    "overall": 27.9,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -56,13 +57,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83"
@@ -82,7 +83,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 39.4%.",
+          "text": "Top-10 unlabeled holders control 41.7%.",
           "evidence": null
         }
       ]
@@ -124,17 +125,20 @@
       "unpause()",
       "blacklist(address)"
     ],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 1225003.2399999998,
+    "liquidityUsd": 147736.12,
     "pools": [
       {
         "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83",
         "dex": "aerodrome",
-        "liquidityUsd": 1224914.38,
+        "liquidityUsd": 147647.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xc47687d4615ce111e72573ebcb8ead9216a9f115c020bece73e31092caef835c",
@@ -142,27 +146,25 @@
         "liquidityUsd": 84.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x954f12b846FE5e18121Fce77679207d5F145c5bE",
         "dex": "pancakeswap",
-        "liquidityUsd": 4.4,
+        "liquidityUsd": 4.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 39.41,
+    "top10Pct": 41.74,
     "projectLinks": {
       "websites": [],
       "socials": []
     }
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "F"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

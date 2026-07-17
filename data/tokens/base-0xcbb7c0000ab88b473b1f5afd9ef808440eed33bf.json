@@ -4,24 +4,25 @@
   "status": "ok",
   "symbol": "cbBTC",
   "name": "Coinbase Wrapped BTC",
-  "scanned_at": "2026-07-16T07:35:20.283Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:32:30.760Z",
+  "methodology_version": "0.2.0",
+  "profile": "custodial-wrapped",
   "grade": {
     "letter": "UR",
-    "overall": 27.5,
+    "overall": 44.6,
     "provisional": true,
-    "badge": "Discretionary",
+    "badge": "Custodial",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 0,
+      "score": 35,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.eoa-mint",
-          "severity": "crit",
-          "text": "A mint path exists and its controller is an externally-owned account. Supply can be inflated unilaterally.",
+          "id": "supply.custodial-undisclosed",
+          "severity": "warn",
+          "text": "Custodial issuance is asserted by the reviewed registry, but the issuer's disclosure of on-chain powers is not yet on record as a verified claim (insufficient data).",
           "evidence": null
         }
       ]
@@ -52,21 +53,19 @@
     },
     "insiderFloat": {
       "score": null,
-      "notApplicable": false,
+      "notApplicable": true,
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
+      "outOfAutomatedScope": true,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x4e962BB3889Bf030368F56810A9c96B83CB3E778"
-          }
+          "id": "redeem.out-of-scope",
+          "severity": "info",
+          "text": "Redeemability replaces liquidity permanence under this profile. Redemption execution and reserve attestations are not machine-checkable in methodology v0.2; attestation links appear under Claims. Scored as reduced coverage, never as a guess.",
+          "evidence": null
         }
       ]
     },
@@ -77,7 +76,7 @@
     },
     "holderConcentration": {
       "score": null,
-      "notApplicable": false,
+      "notApplicable": true,
       "findings": []
     },
     "governanceReality": {
@@ -90,12 +89,26 @@
     {
       "id": "cap.eoa-mint",
       "letter": "F",
-      "reason": "Mint or issuance is controlled by an externally-owned account."
+      "reason": "Mint or issuance is controlled by an externally-owned account.",
+      "waived": true,
+      "waivedBy": "profile.custodial-wrapped (reviewed registry); superseded by cap.custodial-undisclosed"
+    },
+    {
+      "id": "cap.custodial-undisclosed",
+      "letter": "C",
+      "reason": "Custodial control asserted by the reviewed registry without a verified issuer disclosure on record (insufficient data)."
+    },
+    {
+      "id": "cap.custodial-issuer",
+      "letter": "B+",
+      "reason": "Issuance and administration are issuer-controlled; code does not constrain the issuer."
     },
     {
       "id": "cap.eoa-upgrade",
       "letter": "D",
-      "reason": "Upgradeable with an EOA admin and no timelock."
+      "reason": "Upgradeable with an EOA admin and no timelock.",
+      "waived": true,
+      "waivedBy": "profile.custodial-wrapped (reviewed registry); superseded by cap.custodial-undisclosed"
     },
     {
       "id": "cap.claim-light",
@@ -105,7 +118,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4338210246659",
+    "totalSupply": "4337143643161",
     "decimals": 8,
     "owner": "0xce56d20689d836ec7a728ceb94a15746696c16e6",
     "controlType": "eoa",
@@ -117,73 +130,83 @@
       "unpause()",
       "blacklist(address)"
     ],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 25642058.65,
+    "liquidityUsd": 24851113.55,
     "pools": [
       {
         "pair": "0x4e962BB3889Bf030368F56810A9c96B83CB3E778",
         "dex": "aerodrome",
-        "liquidityUsd": 8945561.48,
+        "liquidityUsd": 8650873.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x42d4a22CaD0F5a49681a5715cE994Af73A43B76b",
-        "dex": "aerodrome",
-        "liquidityUsd": 5417398.22,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
         "dex": "pancakeswap",
-        "liquidityUsd": 3935825.56,
+        "liquidityUsd": 4040338.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x42d4a22CaD0F5a49681a5715cE994Af73A43B76b",
+        "dex": "aerodrome",
+        "liquidityUsd": 5276865.63,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x160D7E9d948B16c163332a277b393c288408eb12",
         "dex": "aerodrome",
-        "liquidityUsd": 4217124.35,
+        "liquidityUsd": 3838169.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x7C7420DD105E2779316423Ba3E973f434315EFA9",
         "dex": "aerodrome",
-        "liquidityUsd": 545004.97,
+        "liquidityUsd": 499674.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xb94b22332ABf5f89877A14Cc88f2aBC48c34B3Df",
         "dex": "pancakeswap",
-        "liquidityUsd": 1716752,
+        "liquidityUsd": 1703053.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x22AEe3699b6A0fEd71490C103Bd4E5f3309891D5",
         "dex": "aerodrome",
-        "liquidityUsd": 154579.47,
+        "liquidityUsd": 148832.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x9D14ff91AE2c6e3D1A760542248B6c7F206894b0",
         "dex": "aerodrome",
-        "liquidityUsd": 709812.6,
+        "liquidityUsd": 693306.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": null,
@@ -192,10 +215,10 @@
       "socials": []
     }
   },
-  "notes": "Custodial wrapped asset (Coinbase). Pausable/blacklistable by design and disclosed by the issuer; the custodial-asset profile lands in methodology v0.2 — until then the standard profile understates it and the report carries this note.",
+  "notes": "Custodial wrapped asset (Coinbase). Pausable/blacklistable by design and disclosed by the issuer. Scored under the methodology v0.2 custodial-wrapped profile: issuer control re-anchors upward only while an approved admin-disclosure claim verifies each scan; redeemability replaces liquidity permanence; capped at B+. Until the disclosure claim is approved, the profile caps at C (insufficient data).",
   "coi": false,
   "pendingReview": {
-    "computed": "F"
+    "computed": "D"
   },
   "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

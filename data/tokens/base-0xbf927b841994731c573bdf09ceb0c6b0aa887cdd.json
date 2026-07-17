@@ -4,11 +4,12 @@
   "status": "ok",
   "symbol": "VELVET",
   "name": "Velvet",
-  "scanned_at": "2026-07-16T07:36:25.079Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:33:36.065Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 52.3,
+    "letter": "C",
+    "overall": 59.2,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -56,13 +57,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0x6b0F53cbD9272D8117e9535FE25371dedF39a1bE"
@@ -109,73 +110,83 @@
     "proxy": "beacon",
     "proxyImplementation": null,
     "privileged": [],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 3549789.82,
+    "liquidityUsd": 3634416.1,
     "pools": [
       {
         "pair": "0x6b0F53cbD9272D8117e9535FE25371dedF39a1bE",
         "dex": "aerodrome",
-        "liquidityUsd": 3521674.08,
+        "liquidityUsd": 3607971.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xDc9e387d65D036f0663E9B9aC4a6267f866075eA",
         "dex": "pancakeswap",
-        "liquidityUsd": 17470.1,
+        "liquidityUsd": 18065.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xF579B16f9b1A4aCc872D34a8141fbbD36C0ce10C",
         "dex": "aerodrome",
-        "liquidityUsd": 4274.48,
+        "liquidityUsd": 2063.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x77D190B97B20161345AC718c93f530E8a7A4800b",
         "dex": "hydrex",
-        "liquidityUsd": 4111.64,
+        "liquidityUsd": 4192.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x8858a3a54e25a79079115ea0fb91ccdf2ed6d5dc7ac59effea053af2deea5f48",
         "dex": "uniswap",
-        "liquidityUsd": 1644.94,
+        "liquidityUsd": 1673.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x3cf4a34767eb568d77d6efb70b3f9ed0fe6acc58af9293331903bcb6658473ad",
         "dex": "uniswap",
-        "liquidityUsd": 342.73,
+        "liquidityUsd": 339.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x5027d7d84cde96c3ec944d854e914a557491440f61a03148caac1fd2835ec403",
         "dex": "uniswap",
-        "liquidityUsd": 93.55,
+        "liquidityUsd": 87.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x1f0ec52816374abe0280912891ab5e1d76f5335f177560e6bc35a363601a5476",
-        "dex": "uniswap",
-        "liquidityUsd": 178.3,
+        "pair": "0x037aC9012ECA27Bf284ad0108B32257A0C56362F",
+        "dex": "pancakeswap",
+        "liquidityUsd": 22.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": 8.14,
@@ -192,9 +203,5 @@
     }
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

@@ -4,14 +4,15 @@
   "status": "ok",
   "symbol": "BRETT",
   "name": "Brett",
-  "scanned_at": "2026-07-16T07:34:20.754Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:31:28.237Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
-    "letter": "B",
-    "overall": 78.5,
+    "letter": "B+",
+    "overall": 85,
     "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,13 +62,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0xBA3F945812a83471d709BCe9C3CA699A19FB46f7"
@@ -107,76 +108,86 @@
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
-    "ageDays": 873,
-    "liquidityUsd": 2137894.9899999998,
+    "ageDays": 874,
+    "liquidityUsd": 2068729.6900000002,
     "pools": [
       {
         "pair": "0x4e829F8A5213c42535AB84AA40BD4aDCCE9cBa02",
         "dex": "aerodrome",
-        "liquidityUsd": 788242.6,
+        "liquidityUsd": 773984.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xBA3F945812a83471d709BCe9C3CA699A19FB46f7",
         "dex": "uniswap",
-        "liquidityUsd": 1013205.8,
+        "liquidityUsd": 973288,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x75CC10fdcEa4b7D13c115ABB08240ac9c9Be6f2f",
         "dex": "pancakeswap",
-        "liquidityUsd": 182141.3,
+        "liquidityUsd": 178118.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x43BBb129b56A998732767725A183b7a566843dBA",
         "dex": "aerodrome",
-        "liquidityUsd": 25161.78,
+        "liquidityUsd": 24305.82,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x27402edf3c6a6d6b5a279dfc7a2c8cbacebbfdfc3559f7c03d6971b09126a9f3",
         "dex": "uniswap",
-        "liquidityUsd": 21188.13,
+        "liquidityUsd": 20198.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x76Bf0abD20f1e0155Ce40A62615a90A709a6C3D8",
         "dex": "uniswap",
-        "liquidityUsd": 98289.63,
+        "liquidityUsd": 91584.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xa745ec5e44ee4839cd6d1b76b76e800fed7cb6ceda014a6310c558213212c54e",
-        "dex": "uniswap",
-        "liquidityUsd": 5955.72,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "pair": "0x404E927b203375779a6aBD52A2049cE0ADf6609B",
+        "dex": "sushiswap",
+        "liquidityUsd": 3684.98,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xFfa80952B3800240F11AD25E45e8d3E5C1593E70",
         "dex": "aerodrome",
-        "liquidityUsd": 3710.03,
+        "liquidityUsd": 3564.32,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 26.59,
+    "top10Pct": 26.93,
     "projectLinks": {
       "websites": [
         "https://www.basedbrett.com/"

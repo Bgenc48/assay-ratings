@@ -4,8 +4,9 @@
   "status": "ok",
   "symbol": "VIRTUAL",
   "name": "Virtual Protocol",
-  "scanned_at": "2026-07-16T07:35:37.138Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:32:47.206Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
     "letter": "UR",
     "overall": 44.4,
@@ -65,7 +66,11 @@
           "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xE31c372a7Af875b3B5E0F3713B17ef51556da667"
+            "pair": "0xE31c372a7Af875b3B5E0F3713B17ef51556da667",
+            "lpDominantHolder": {
+              "address": "0xf1c429b0ce94ef9893ef110d2cc100201dce71c8",
+              "sharePct": 94.83
+            }
           }
         }
       ]
@@ -95,7 +100,7 @@
     {
       "id": "cap.rug-ready",
       "letter": "D",
-      "reason": "More than 50% of primary liquidity is withdrawable by one key."
+      "reason": "More than 50% of the LP in pool 0xE31c372a7Af875b3B5E0F3713B17ef51556da667 is held by a single externally-owned account (0xf1c429b0ce94ef9893ef110d2cc100201dce71c8, 94.83% of LP), which can withdraw it."
     },
     {
       "id": "cap.claim-light",
@@ -105,7 +110,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "496876707909789992576606199",
+    "totalSupply": "496877306931850036051626318",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -114,73 +119,87 @@
     "privileged": [
       "mint(address,uint256)"
     ],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
-    "ageDays": 854,
-    "liquidityUsd": 3267118.3800000004,
+    "ageDays": 855,
+    "liquidityUsd": 3616610.56,
     "pools": [
       {
         "pair": "0x3f0296BF652e19bca772EC3dF08b32732F93014A",
         "dex": "aerodrome",
-        "liquidityUsd": 382387.38,
+        "liquidityUsd": 392669.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x9c087Eb773291e50CF6c6a90ef0F4500e349B903",
         "dex": "uniswap",
-        "liquidityUsd": 453975.9,
+        "liquidityUsd": 419850.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x9520E1a3BFd86DA6c1E9e5Ee4B9c2F11c413358F",
         "dex": "aerodrome",
-        "liquidityUsd": 121658.43,
+        "liquidityUsd": 148970.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x7CB770D0513c30e0CB45E4899e4a2CbEEd6F9830",
         "dex": "pancakeswap",
-        "liquidityUsd": 164098.33,
+        "liquidityUsd": 159255.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xC200F21EfE67c7F41B81A854c26F9cdA80593065",
         "dex": "aerodrome",
-        "liquidityUsd": 232994.23,
+        "liquidityUsd": 213736.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xE31c372a7Af875b3B5E0F3713B17ef51556da667",
         "dex": "uniswap",
-        "liquidityUsd": 1103880.14,
+        "liquidityUsd": 1071942.06,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xf1c429b0ce94ef9893ef110d2cc100201dce71c8",
+          "sharePct": 94.83
+        }
       },
       {
         "pair": "0x529d2863a1521d0b57db028168fdE2E97120017C",
         "dex": "uniswap",
-        "liquidityUsd": 678953.43,
+        "liquidityUsd": 710560.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xaf2baac6d043d22f9ce14439228fbbf90c108a1dc809e32ad4e7e9e13fc941ac",
-        "dex": "uniswap",
-        "liquidityUsd": 129170.54,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "pair": "0xDb79CecFd1897D2F60B0Ea7Af072CA9A9e71047c",
+        "dex": "aerodrome",
+        "liquidityUsd": 499624.77,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": null,

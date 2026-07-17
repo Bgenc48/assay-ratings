@@ -4,11 +4,12 @@
   "status": "ok",
   "symbol": "JitoSOL",
   "name": "Jito Staked SOL",
-  "scanned_at": "2026-07-16T07:40:45.150Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:36:37.746Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 52.3,
+    "letter": "C",
+    "overall": 59.2,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -62,13 +63,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871"
@@ -88,7 +89,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 6.6%.",
+          "text": "Top-10 unlabeled holders control 6.3%.",
           "evidence": null
         }
       ]
@@ -113,49 +114,50 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "80700017043543",
+    "totalSupply": "81862583449928",
     "decimals": 9,
     "owner": null,
     "controlType": "none",
     "proxy": "beacon",
     "proxyImplementation": null,
     "privileged": [],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 11330659.88,
+    "liquidityUsd": 11068741.350000001,
     "pools": [
-      {
-        "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
-        "dex": "pancakeswap",
-        "liquidityUsd": 481313.96,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
       {
         "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871",
         "dex": "uniswap",
-        "liquidityUsd": 10849337.78,
+        "liquidityUsd": 10549218.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
+        "dex": "pancakeswap",
+        "liquidityUsd": 519515.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xC5a10dAD3B73410F34ec29B50952C377AfAF64d9",
         "dex": "pancakeswap",
-        "liquidityUsd": 8.14,
+        "liquidityUsd": 8.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 6.63,
+    "top10Pct": 6.25,
     "projectLinks": null
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

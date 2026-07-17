@@ -4,14 +4,15 @@
   "status": "ok",
   "symbol": "$OLIVIA2.0",
   "name": "Olivia AI 2.0",
-  "scanned_at": "2026-07-16T07:36:14.738Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:33:28.158Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 52.6,
+    "letter": "C",
+    "overall": 58.6,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -56,13 +57,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0x3E117EB37d0dB3016F4f0CC79F6cE7c648d64E00"
@@ -77,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 66 days old; trust needs time (Provisional).",
+          "text": "Token is 67 days old; trust needs time (Provisional).",
           "evidence": "0xc870d7047228d0b34991eff702b6e9d0d4edfe37b3cc688d962a417c7f1f53f4"
         }
       ]
@@ -128,34 +129,34 @@
     "privileged": [
       "burnFrom(address,uint256)"
     ],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
-    "ageDays": 66,
-    "liquidityUsd": 4299855.18,
+    "ageDays": 67,
+    "liquidityUsd": 4479874.57,
     "pools": [
       {
         "pair": "0x3E117EB37d0dB3016F4f0CC79F6cE7c648d64E00",
         "dex": "uniswap",
-        "liquidityUsd": 4201435.66,
+        "liquidityUsd": 4371424.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xfc02323e0b5f0a75fbecf3a296317951b3f8581cf031be7731f5bf76f38ddaac",
         "dex": "uniswap",
-        "liquidityUsd": 98419.52,
+        "liquidityUsd": 108449.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": 96.14,
     "projectLinks": null
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

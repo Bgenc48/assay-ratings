@@ -4,8 +4,9 @@
   "status": "ok",
   "symbol": "PAMPU",
   "name": "The Base Cat",
-  "scanned_at": "2026-07-16T07:41:48.295Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:37:22.943Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
     "letter": "C",
     "overall": 70,
@@ -67,13 +68,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0x4dc4dcca55db54a443dcea2ba72e9c35898458367f29cbd6c84f74cf94815d2f"
@@ -118,76 +119,86 @@
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 169740.69000000003,
+    "liquidityUsd": 94575.47,
     "pools": [
       {
         "pair": "0x4dc4dcca55db54a443dcea2ba72e9c35898458367f29cbd6c84f74cf94815d2f",
         "dex": "uniswap",
-        "liquidityUsd": 164449.46,
+        "liquidityUsd": 82801.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x004062c0632c4cb52bcb5931aba017fbf90d8702579bb6d5249968e84e2f602d",
+        "pair": "0x2876f788172d4c0c2e7be7ed5f8efe85aecd0e8a95c4f4762fa41c061eb644ae",
         "dex": "uniswap",
-        "liquidityUsd": 748.94,
+        "liquidityUsd": 319.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x5094fdf4c162c12437cf8e722b49d2f54650a3b897f9aefd7d9bba6659246fe0",
+        "pair": "0x48ed49a5eef6845f81868c0d53277f29d69ce01858700bb387ac4cc41419976f",
         "dex": "uniswap",
-        "liquidityUsd": 961.1,
+        "liquidityUsd": 515.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x7a29bac5e83025e10c4e0b15e65b0fa5b4421afda79be4e173866ca9a367402e",
+        "pair": "0xdde8d3970c9d2d4177de802704bd5333e7eb5bd40a83f4ace10b7de3311336be",
         "dex": "uniswap",
-        "liquidityUsd": 341.7,
+        "liquidityUsd": 212.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xb4162a4aa1949b5a702c251d65894b6889884704d4a3eefd02afb78c711fe0db",
         "dex": "uniswap",
-        "liquidityUsd": 1038.29,
+        "liquidityUsd": 6635.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x044de642cc1f267c76f7b912937afc06ee2ef8d13a349441bfe43f28442a7180",
+        "pair": "0xb5dfe2a093852bd78d2ecf2615f0ef340b7174859ad089c94fcbc9f3a1817c04",
         "dex": "uniswap",
-        "liquidityUsd": 629.57,
+        "liquidityUsd": 1038.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xabfce3f5f59288681e7148ac5dd365aa2da6970a3e765ca902a12ee33027d106",
         "dex": "uniswap",
-        "liquidityUsd": 1329.06,
+        "liquidityUsd": 2641.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x635cea7de34a2aae55c9876d22219f88fe090a9927de5921dec9a4b26d76ebed",
+        "pair": "0x044de642cc1f267c76f7b912937afc06ee2ef8d13a349441bfe43f28442a7180",
         "dex": "uniswap",
-        "liquidityUsd": 242.57,
+        "liquidityUsd": 411.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 13.38,
+    "top10Pct": 15.3,
     "projectLinks": {
       "websites": [
         "https://pampu.xyz/",

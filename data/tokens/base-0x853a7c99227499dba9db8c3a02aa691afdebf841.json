@@ -4,14 +4,15 @@
   "status": "ok",
   "symbol": "PLAY",
   "name": "Play",
-  "scanned_at": "2026-07-16T07:37:22.668Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:34:20.994Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
     "letter": "D",
     "overall": 55,
     "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,13 +62,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0xf1CaCd7E005B9337C58aAE77BC88d93C635CDF4D"
@@ -102,7 +103,7 @@
     {
       "id": "cap.rug-ready",
       "letter": "D",
-      "reason": "More than 50% of primary liquidity is withdrawable by one key."
+      "reason": "More than 50% of the LP in pool 0x42781EC558F9fb95f5E080572bCD0A37523B55e2 is held by a single externally-owned account (0x5f425284e0f8cf372b6342d3984aa2a8b1d3196d, 99.47% of LP), which can withdraw it."
     },
     {
       "id": "cap.age-24mo",
@@ -124,68 +125,81 @@
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
-    "ageDays": 413,
-    "liquidityUsd": 644578.6,
+    "ageDays": 414,
+    "liquidityUsd": 645496.59,
     "pools": [
       {
         "pair": "0xf1CaCd7E005B9337C58aAE77BC88d93C635CDF4D",
         "dex": "pancakeswap",
-        "liquidityUsd": 433348.1,
+        "liquidityUsd": 434105.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x077F7A989cD6865Aa4Eb7659d844bF4B47ECc5aa",
         "dex": "pancakeswap",
-        "liquidityUsd": 36436.67,
+        "liquidityUsd": 36585.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x42781EC558F9fb95f5E080572bCD0A37523B55e2",
         "dex": "aerodrome",
-        "liquidityUsd": 31692.94,
+        "liquidityUsd": 31675.37,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x5f425284e0f8cf372b6342d3984aa2a8b1d3196d",
+          "sharePct": 99.47
+        }
       },
       {
         "pair": "0xE6dcff8301A348eF4D25aD301DD08275e873c6ba",
         "dex": "uniswap",
-        "liquidityUsd": 8185.15,
+        "liquidityUsd": 8183.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x9D6bb282FA21d23746C964C8a71ec0449e8d98f9",
         "dex": "pancakeswap",
-        "liquidityUsd": 8258.91,
+        "liquidityUsd": 8290.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xF2c832B6999f0246eD504c69AC1bFB97de0B8d50",
-        "dex": "aerodrome",
-        "liquidityUsd": 126557.86,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x4cDe01601C64134dE101fa4d776b76C6eeE1d697",
         "dex": "hydrex",
-        "liquidityUsd": 98.97,
+        "liquidityUsd": 100.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xF2c832B6999f0246eD504c69AC1bFB97de0B8d50",
+        "dex": "aerodrome",
+        "liquidityUsd": 126556.6,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 5.04,
+    "top10Pct": 5.05,
     "projectLinks": null
   },
   "notes": null,

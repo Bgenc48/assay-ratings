@@ -4,14 +4,15 @@
   "status": "ok",
   "symbol": "WETH",
   "name": "Wrapped Ether",
-  "scanned_at": "2026-07-16T07:33:40.355Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:30:29.616Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
-    "letter": "B",
-    "overall": 77.5,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,13 +62,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0x6c561B446416E1A00E8E93E221854d6eA4171372"
@@ -100,80 +101,90 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "263048162858794156531667",
+    "totalSupply": "285192419283528017149887",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 133314115.16,
+    "liquidityUsd": 132013956.78,
     "pools": [
       {
         "pair": "0x72AB388E2E2F6FaceF59E3C3FA2C4E29011c2D38",
         "dex": "pancakeswap",
-        "liquidityUsd": 3667825.42,
+        "liquidityUsd": 3470696.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x6c561B446416E1A00E8E93E221854d6eA4171372",
         "dex": "uniswap",
-        "liquidityUsd": 106422249.76,
+        "liquidityUsd": 104989368.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xb4CB800910B228ED3d0834cF79D697127BBB00e5",
-        "dex": "uniswap",
-        "liquidityUsd": 222268.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xb2cc224c1c9feE385f8ad6a55b4d94E92359DC59",
         "dex": "aerodrome",
-        "liquidityUsd": 8812783.61,
+        "liquidityUsd": 9010660.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x3FE04A59Ebd38cF06080a6F60a98D124eb59392A",
-        "dex": "aerodrome",
-        "liquidityUsd": 3283352.85,
+        "pair": "0xb4CB800910B228ED3d0834cF79D697127BBB00e5",
+        "dex": "uniswap",
+        "liquidityUsd": 191234.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xd0b53D9277642d899DF5C87A3966A349A798F224",
         "dex": "uniswap",
-        "liquidityUsd": 10359138.92,
+        "liquidityUsd": 10065014.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4e392fBfE4D0557C82D2F97F02ec39daA31516dd",
+        "pair": "0x3FE04A59Ebd38cF06080a6F60a98D124eb59392A",
         "dex": "aerodrome",
-        "liquidityUsd": 110121.22,
+        "liquidityUsd": 3752803.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x82dbe18346a8656dBB5E76F74bf3AE279cC16B29",
         "dex": "hydrex",
-        "liquidityUsd": 436375.1,
+        "liquidityUsd": 422494.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4e392fBfE4D0557C82D2F97F02ec39daA31516dd",
+        "dex": "aerodrome",
+        "liquidityUsd": 111684.42,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": null,
@@ -182,6 +193,6 @@
       "socials": []
     }
   },
-  "notes": "Canonical Base predeploy. Wrapped-asset profile (derivative trust) is a v0.2 item.",
+  "notes": "Canonical Base WETH predeploy. Scored under the standard profile: it is code-enforced (no owner, no privileged powers, 1:1 wrap/unwrap in code), so it needs no custodial re-weighting — there is no issuer to disclose.",
   "coi": false
 }

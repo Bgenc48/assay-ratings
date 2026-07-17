@@ -1,15 +1,16 @@
 {
-  "address": "0x311935cd80b76769bf2ecc9d8ab7635b2139cf82",
+  "address": "0x311935cd80B76769bf2eCC9d8AB7635b2139cF82",
   "chain": "base",
   "status": "ok",
   "symbol": "SOL",
   "name": "Solana",
-  "scanned_at": "2026-07-16T07:37:57.904Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:33:08.194Z",
+  "methodology_version": "0.2.0",
+  "profile": "native-representation",
   "grade": {
-    "letter": "UR",
-    "overall": 50.7,
-    "provisional": true,
+    "letter": "NS",
+    "overall": null,
+    "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -62,13 +63,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0x8Df6dd38D718bD726374521c2DcFE90Eb9CB7d43"
@@ -106,83 +107,93 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "203354994790020",
+    "totalSupply": "203018141101973",
     "decimals": 9,
     "owner": null,
     "controlType": "none",
     "proxy": "beacon",
     "proxyImplementation": null,
     "privileged": [],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 1625452.5799999996,
+    "liquidityUsd": 1677068.93,
     "pools": [
       {
         "pair": "0x1131DB5977242a03eBeaD1aCD18F80A9A29e5922",
         "dex": "aerodrome",
-        "liquidityUsd": 279975.81,
+        "liquidityUsd": 303940.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xCcfA472815563ff9eB2de95C7b2bE1Ccf91f7F31",
         "dex": "aerodrome",
-        "liquidityUsd": 179053.5,
+        "liquidityUsd": 207475.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xab07dE353E15b80fa3B4224D5C8fDF3Ac9F50670",
         "dex": "pancakeswap",
-        "liquidityUsd": 259291.97,
+        "liquidityUsd": 253636.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x04d25d8f94A2018F8DdDe1E7941c625FA1a2c7cE",
         "dex": "pancakeswap",
-        "liquidityUsd": 235095.46,
+        "liquidityUsd": 247734.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x8Df6dd38D718bD726374521c2DcFE90Eb9CB7d43",
         "dex": "pancakeswap",
-        "liquidityUsd": 543070.14,
+        "liquidityUsd": 532994.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xB8fA852a85Af20284906a898595f59BdD8C66cbE",
         "dex": "aerodrome",
-        "liquidityUsd": 80617.15,
+        "liquidityUsd": 81375.27,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x415c88A05B75d1a65822d899f4A78b4C0D7CbefD",
         "dex": "pancakeswap",
-        "liquidityUsd": 14553.15,
+        "liquidityUsd": 16972.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x62046274558e152F0E318d12666A9da93ccD2cC8",
         "dex": "equalizer",
-        "liquidityUsd": 33795.4,
+        "liquidityUsd": 32939.9,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 18.06,
+    "top10Pct": 17.23,
     "projectLinks": {
       "websites": [
         "https://solana.com/"
@@ -192,10 +203,7 @@
       ]
     }
   },
-  "notes": null,
+  "notes": "Bridged representation of the Solana L1 native coin on Base (native SOL is locked on Solana and an ERC-20 minted on Base via the Base–Solana bridge; see docs.base.org/base-chain/quickstart/base-solana-bridge). Promoted from auto-discovery to the hand-curated registry to assign the native-representation profile. Published as NS (Not Scored): Assay's automated methodology grades token contracts, not an L1's consensus or its bridge operators, so the wrapper's facts publish without a letter grade. Address confirmed liquid on Base and symbol-gated as SOL; owner should confirm it is the intended canonical bridge representation.",
   "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "profileNote": "Not Scored — native-asset representation. This contract is a bridged representation of another chain's native coin. Assay's automated methodology grades token contracts, not the underlying chain's consensus or its bridge operators; the wrapper's on-chain facts are published below without a letter grade."
 }

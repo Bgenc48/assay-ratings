@@ -4,11 +4,12 @@
   "status": "ok",
   "symbol": "ZEN",
   "name": "Horizen",
-  "scanned_at": "2026-07-16T07:40:11.396Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:36:14.083Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 39,
+    "overall": 42.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -56,13 +57,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0x0392B12a1cEb0cd13af5Ea448CF5586EA609852D"
@@ -121,73 +122,83 @@
     "privileged": [
       "mint(address,uint256)"
     ],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 2952140.270000001,
+    "liquidityUsd": 3054918.81,
     "pools": [
       {
         "pair": "0x0392B12a1cEb0cd13af5Ea448CF5586EA609852D",
         "dex": "aerodrome",
-        "liquidityUsd": 1842327.41,
+        "liquidityUsd": 1842178.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x47f9e291bb766Fc307Ad7BBa4f29f3Eab6A97101",
         "dex": "aerodrome",
-        "liquidityUsd": 1075841.12,
+        "liquidityUsd": 1175310.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xbFA5184f90B071C34C85d065b8c7877617248ef7",
         "dex": "aerodrome",
-        "liquidityUsd": 21854.16,
+        "liquidityUsd": 25580,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x91a6E9dc63cab9e52f29F712D688E845dD01a5fe",
         "dex": "uniswap",
-        "liquidityUsd": 6406.39,
+        "liquidityUsd": 6315.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x415233bF9B9156d4f777d580E67C0a4e398A84C3",
         "dex": "hydrex",
-        "liquidityUsd": 2236.2,
+        "liquidityUsd": 2187.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xb003177E36ee0b8d3624DD2c5AF1CA15b175c8B9",
         "dex": "pancakeswap",
-        "liquidityUsd": 2502.56,
+        "liquidityUsd": 2387.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xD1291750B30ca46587aA533C68a470F13bE5cbC9",
         "dex": "aerodrome",
-        "liquidityUsd": 923.69,
+        "liquidityUsd": 911.05,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
-        "lockAnalyzed": true
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x699e3dFc812b1d9Cc34770CFA3C6ef9925bC1756",
         "dex": "aerodrome",
-        "liquidityUsd": 48.74,
+        "liquidityUsd": 47.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": 53.57,
@@ -204,7 +215,7 @@
   "notes": null,
   "coi": false,
   "pendingReview": {
-    "computed": "F"
+    "computed": "D"
   },
   "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

@@ -4,11 +4,12 @@
   "status": "ok",
   "symbol": "CZ",
   "name": "The Final Form Bull",
-  "scanned_at": "2026-07-16T07:41:31.950Z",
-  "methodology_version": "0.1.0",
+  "scanned_at": "2026-07-17T07:37:09.645Z",
+  "methodology_version": "0.2.0",
+  "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 63,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -62,16 +63,16 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xbd5f09167d55cc1da8fd315916bafb902a93c6814b7d2d04b285c2839805284d"
+            "pair": "0x12221fdd1cf10e1bb7e0b81da66e612317ee8a823cdac1759e8cae4695690bd5"
           }
         }
       ]
@@ -122,73 +123,29 @@
     "privileged": [
       "burnFrom(address,uint256)"
     ],
+    "mintController": null,
+    "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 445790.17000000004,
+    "liquidityUsd": 3.19,
     "pools": [
-      {
-        "pair": "0xbd5f09167d55cc1da8fd315916bafb902a93c6814b7d2d04b285c2839805284d",
-        "dex": "uniswap",
-        "liquidityUsd": 445775.96,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xa851431b8de9940d9d105d63c3baa89a9ec8dbd1b9eca0011f6674b727e81de9",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
       {
         "pair": "0x067f49c3f3e9314ffb3aff566d7ac755f7470aa6c841979168dafa0862c590e5",
         "dex": "uniswap",
         "liquidityUsd": 0,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x1b4ef4db38fa5668114299a063232b39fa01143502791664b86e0806bc387e17",
-        "dex": "uniswap",
-        "liquidityUsd": 5.99,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0x6419eb047d1f32fb66fed5c0e81a12a5814f348611f27f002ecf605a3cdf6e4d",
-        "dex": "uniswap",
-        "liquidityUsd": 0.13,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xcc41797dee557d1cec160ec6c970738a7a761ce7b8eb72da39318f2e9a68a5b9",
-        "dex": "uniswap",
-        "liquidityUsd": 8.09,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x12221fdd1cf10e1bb7e0b81da66e612317ee8a823cdac1759e8cae4695690bd5",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 3.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
-        "lockAnalyzed": false
-      },
-      {
-        "pair": "0xf54de213b5545646c9cf50f49f86308d8de00c3809c5546e83d8a37e3f5783f3",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": 0,
