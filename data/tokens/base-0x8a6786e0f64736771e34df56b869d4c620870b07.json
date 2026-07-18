@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-07-17T07:37:11.814Z",
+  "scanned_at": "2026-07-18T07:16:50.110Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 70,
+    "overall": 64.2,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -67,13 +67,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xfae5fd7ffc348449931194f2ce6796ad0e585a457f18d72af7ff32da4388c001"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -83,13 +80,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 90.0% of circulating supply.",
           "evidence": null
         }
       ]
@@ -105,6 +102,11 @@
       "id": "cap.unverified",
       "letter": "C",
       "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -127,73 +129,9 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 329609.24,
-    "pools": [
-      {
-        "pair": "0xfae5fd7ffc348449931194f2ce6796ad0e585a457f18d72af7ff32da4388c001",
-        "dex": "uniswap",
-        "liquidityUsd": 236363.98,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa3e467aa398cac33dcc1483cdb3781b49833aeda43c255641a30b0fcc8340b5d",
-        "dex": "uniswap",
-        "liquidityUsd": 92860.95,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcb54e13fbdda7ef4eae4d7ff81d028ad5d4496a4e9dd7a0ec4447d4b1f32a448",
-        "dex": "uniswap",
-        "liquidityUsd": 356.26,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xdeaae56c32aaa174769746ec5958d592ec3adfcf37889a1d4a7e75feda1d33d7",
-        "dex": "uniswap",
-        "liquidityUsd": 0.02,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9e32278730683fb6d350c1e6797bd25be588a3c82ca377ea36e29f229044c683",
-        "dex": "uniswap",
-        "liquidityUsd": 4.49,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3779d82af145ef9d9757d4ad963b66a2788cbc1bdc7e4b3fe28de7e7b4251d7e",
-        "dex": "uniswap",
-        "liquidityUsd": 3.69,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3cdfe7c2b46eee4f203c98d10e240ceab621ea857526cce1c49328dbd45c1c32",
-        "dex": "uniswap",
-        "liquidityUsd": 19.85,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": 0,
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": 90,
     "projectLinks": null
   },
   "notes": null,

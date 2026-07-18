@@ -1,28 +1,28 @@
 {
-  "address": "0xb3b32f9f8827d4634fe7d973fa1034ec9fddb3b3",
+  "address": "0x4c433f4ef87fe506a7eed2fd1d822cbed411eba3",
   "chain": "base",
   "status": "ok",
-  "symbol": "B3",
-  "name": "B3",
-  "scanned_at": "2026-07-18T07:14:14.823Z",
+  "symbol": "TSG",
+  "name": "the sleeping giant",
+  "scanned_at": "2026-07-18T07:17:35.405Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 46.7,
+    "letter": "B-",
+    "overall": 70.4,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unclassified-mint",
-          "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
           "evidence": null
         }
       ]
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xB099C658e784b41EE435d48a8eb67e8f27285C93"
+            "pair": "0x5e4c78bf666d78fa1e751abc84cf9933d17b1736d4605f400173ac63ac52b1f8"
           }
         }
       ]
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -89,16 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.unclassified-mint",
-      "letter": "C",
-      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.rug-ready",
-      "letter": "D",
-      "reason": "More than 50% of the LP in pool 0x4C1453376952F899365d295c716aaA1010B8FEaa is held by a single externally-owned account (0x77d56dceffad9befbc8ad2cd7210b15ef62d131d, 99.89% of LP), which can withdraw it."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -108,106 +98,95 @@
   "facts": {
     "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
-    "owner": null,
-    "controlType": "none",
+    "owner": "0x660eaaedebc968f8f3694354fa8ec0b4c5ba8d12",
+    "controlType": "unknown",
     "proxy": null,
     "proxyImplementation": null,
-    "privileged": [
-      "mint(address,uint256)",
-      "burnFrom(address,uint256)"
-    ],
+    "privileged": [],
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 535564.75,
+    "liquidityUsd": 258274.61,
     "pools": [
       {
-        "pair": "0xB099C658e784b41EE435d48a8eb67e8f27285C93",
-        "dex": "aerodrome",
-        "liquidityUsd": 522720.05,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4C1453376952F899365d295c716aaA1010B8FEaa",
-        "dex": "alien-base",
-        "liquidityUsd": 10073.61,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x77d56dceffad9befbc8ad2cd7210b15ef62d131d",
-          "sharePct": 99.89
-        }
-      },
-      {
-        "pair": "0x9CE351A521d4238AFE545F83efBFd98C440257fA",
-        "dex": "alien-base",
-        "liquidityUsd": 1050.49,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc59aac3e3718891819910e247442c6129c01e9a93589ffb0a18cc0f19554073d",
+        "pair": "0x5e4c78bf666d78fa1e751abc84cf9933d17b1736d4605f400173ac63ac52b1f8",
         "dex": "uniswap",
-        "liquidityUsd": 1022.31,
+        "liquidityUsd": 219973.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x5b723a8735fbd3666067504b6b40f7068829978e6316fb91648c5b55224203f9",
+        "pair": "0x5d7e5805c897486e03e0b583eceabd9e4cd59d1ad361445b79809effb2edc546",
         "dex": "uniswap",
-        "liquidityUsd": 547.35,
+        "liquidityUsd": 24625.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xCcB6eDFe5f6ea9C0FA7e9176D6883F943B455b9C",
-        "dex": "aerodrome",
-        "liquidityUsd": null,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa74eF758e0fEE9777Ca8723b249C24A84B3F3D82",
+        "pair": "0xd3019abf51316bec732317f60b8e1515568be7aea964b82635da84941584f9f9",
         "dex": "uniswap",
-        "liquidityUsd": 62.87,
+        "liquidityUsd": 7070.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb1e1001127c4dca8fc52ced8d84cd6304b71a77ba06b01284075906a6eaffa98",
+        "pair": "0xb580948b92374ee4ed78e4e30de6ac6f26dcd78940c4c7fffce14942324a9c02",
         "dex": "uniswap",
-        "liquidityUsd": 88.07,
+        "liquidityUsd": 1000.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x30ab3784c98936be93a0136cd030b918931553380a5d56b7406ed17966797bfa",
+        "dex": "uniswap",
+        "liquidityUsd": 235.63,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x2325ae874acaea8f12c1c9d3cca511a01d0b856242bdaa1fa00dbdc673bc2f32",
+        "dex": "uniswap",
+        "liquidityUsd": 3066.43,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd84e03bf0bafd9d6c86f82f31bae126cbac94243e81d485a537ba8bc8fa75dd0",
+        "dex": "uniswap",
+        "liquidityUsd": 1513.28,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x613c43e9c3f0cc1afd7ada9202b202e892e9d7f274db33cd03be8cc213995499",
+        "dex": "uniswap",
+        "liquidityUsd": 789.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 20.82,
+    "top10Pct": 11.11,
     "projectLinks": {
-      "websites": [
-        "https://b3.fun",
-        "https://docs.b3.fun"
-      ],
+      "websites": [],
       "socials": [
-        "https://x.com/b3dotfun",
-        "https://discord.com/invite/b3dotfun"
+        "https://x.com/thsleepinggiant"
       ]
     }
   },

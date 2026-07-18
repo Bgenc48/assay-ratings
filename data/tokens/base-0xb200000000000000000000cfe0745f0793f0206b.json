@@ -1,41 +1,52 @@
 {
-  "address": "0xb3b32f9f8827d4634fe7d973fa1034ec9fddb3b3",
+  "address": "0xb200000000000000000000cfe0745f0793f0206b",
   "chain": "base",
   "status": "ok",
-  "symbol": "B3",
-  "name": "B3",
-  "scanned_at": "2026-07-18T07:14:14.823Z",
+  "symbol": "COBIE",
+  "name": "Baseapp Man",
+  "scanned_at": "2026-07-18T07:17:37.865Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 46.7,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
-    "badge": "Discretionary",
-    "coverage": "partial"
+    "badge": "Code-Enforced",
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unclassified-mint",
+          "id": "supply.unverified",
           "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
           "evidence": null
         }
       ]
     },
     "adminSurface": {
-      "score": 40,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.unknown-gate",
-          "severity": "warn",
-          "text": "Privileged capabilities exist; their controller could not be classified.",
-          "evidence": null
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xb200000000000000000000cfe0745f0793f0206b",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
         }
       ]
     },
@@ -66,7 +77,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xB099C658e784b41EE435d48a8eb67e8f27285C93"
+            "pair": "0x787036e9952f444ed92b77d502d8ea69e85071591498a57716861ac1f40e427f"
           }
         }
       ]
@@ -77,7 +88,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -89,14 +100,9 @@
   },
   "caps": [
     {
-      "id": "cap.unclassified-mint",
+      "id": "cap.unverified",
       "letter": "C",
-      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.rug-ready",
-      "letter": "D",
-      "reason": "More than 50% of the LP in pool 0x4C1453376952F899365d295c716aaA1010B8FEaa is held by a single externally-owned account (0x77d56dceffad9befbc8ad2cd7210b15ef62d131d, 99.89% of LP), which can withdraw it."
+      "reason": "Source code is not verified on a public explorer."
     },
     {
       "id": "cap.claim-light",
@@ -106,108 +112,88 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "100000000000000000000000000000",
+    "totalSupply": "1000000000000000000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
-    "privileged": [
-      "mint(address,uint256)",
-      "burnFrom(address,uint256)"
-    ],
+    "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 535564.75,
+    "liquidityUsd": 114681.76,
     "pools": [
       {
-        "pair": "0xB099C658e784b41EE435d48a8eb67e8f27285C93",
-        "dex": "aerodrome",
-        "liquidityUsd": 522720.05,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4C1453376952F899365d295c716aaA1010B8FEaa",
-        "dex": "alien-base",
-        "liquidityUsd": 10073.61,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x77d56dceffad9befbc8ad2cd7210b15ef62d131d",
-          "sharePct": 99.89
-        }
-      },
-      {
-        "pair": "0x9CE351A521d4238AFE545F83efBFd98C440257fA",
-        "dex": "alien-base",
-        "liquidityUsd": 1050.49,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc59aac3e3718891819910e247442c6129c01e9a93589ffb0a18cc0f19554073d",
+        "pair": "0x787036e9952f444ed92b77d502d8ea69e85071591498a57716861ac1f40e427f",
         "dex": "uniswap",
-        "liquidityUsd": 1022.31,
+        "liquidityUsd": 114454.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x5b723a8735fbd3666067504b6b40f7068829978e6316fb91648c5b55224203f9",
+        "pair": "0x81f61a004e99224565940af14d4227a5d5f18619a6555450ce7b0a4b02e66096",
         "dex": "uniswap",
-        "liquidityUsd": 547.35,
+        "liquidityUsd": 119.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xCcB6eDFe5f6ea9C0FA7e9176D6883F943B455b9C",
-        "dex": "aerodrome",
-        "liquidityUsd": null,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa74eF758e0fEE9777Ca8723b249C24A84B3F3D82",
+        "pair": "0x2523fd0f8485cf26cee10fcf77a3e3820d5cb4afb5445fbde9898e5d50452334",
         "dex": "uniswap",
-        "liquidityUsd": 62.87,
+        "liquidityUsd": 64.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb1e1001127c4dca8fc52ced8d84cd6304b71a77ba06b01284075906a6eaffa98",
+        "pair": "0x9e3103b47dc24f099faafe4fc4200560a629613eca57f8214efbba31a7a4cb6e",
         "dex": "uniswap",
-        "liquidityUsd": 88.07,
+        "liquidityUsd": 18.21,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd49fbbcd1c7d0a05a4697eeb6bbbe94a9df0b215bbc48bd9e9a6b3d91de207ba",
+        "dex": "uniswap",
+        "liquidityUsd": 15.39,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x90b37a575d2f9ddcfb3007446d74414e01ae949a2af2cb6753b69ef8f1559971",
+        "dex": "uniswap",
+        "liquidityUsd": 2.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf4a535f43793375a3fdc1150d008857c0443f35b813fd178f67918bf596608c5",
+        "dex": "uniswap",
+        "liquidityUsd": 6.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 20.82,
+    "top10Pct": null,
     "projectLinks": {
-      "websites": [
-        "https://b3.fun",
-        "https://docs.b3.fun"
-      ],
+      "websites": [],
       "socials": [
-        "https://x.com/b3dotfun",
-        "https://discord.com/invite/b3dotfun"
+        "https://x.com/baseapp/status/2077683856119910774"
       ]
     }
   },

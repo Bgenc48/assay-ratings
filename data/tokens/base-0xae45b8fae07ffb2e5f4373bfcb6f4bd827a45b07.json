@@ -1,28 +1,34 @@
 {
-  "address": "0x8b7dde054be9d180c1be7fae0874697374a49832",
+  "address": "0xae45b8fae07ffb2e5f4373bfcb6f4bd827a45b07",
   "chain": "base",
   "status": "ok",
-  "symbol": "PROS",
-  "name": "Wrapped PROS",
-  "scanned_at": "2026-07-18T07:14:07.636Z",
+  "symbol": "Gitlawb",
+  "name": "Gitlawb",
+  "scanned_at": "2026-07-18T07:17:33.253Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 40,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unclassified-mint",
+          "id": "supply.unverified",
           "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
           "evidence": null
         }
       ]
@@ -66,31 +72,24 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x8A8e4170C09074b109352190d47e54d7c1F61e4E"
+            "pair": "0x178775191a5ae2e4098b57de31f16029c1bffe7f0f93b0379494d61124d55cab"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 94 days old; trust needs time (Provisional).",
-          "evidence": "0xe163c483d97097c44719ffede6c9af66f41539d872a02f6e10450acabea7b13a"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 57.1% of circulating supply.",
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
           "evidence": null
         }
       ]
@@ -103,19 +102,9 @@
   },
   "caps": [
     {
-      "id": "cap.unclassified-mint",
+      "id": "cap.unverified",
       "letter": "C",
-      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
+      "reason": "Source code is not verified on a public explorer."
     },
     {
       "id": "cap.claim-light",
@@ -125,52 +114,65 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4221739034371487133301398",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [
-      "mint(address,uint256)",
       "burnFrom(address,uint256)"
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 94,
-    "liquidityUsd": 670940.7200000001,
+    "verifiedSource": false,
+    "ageDays": null,
+    "liquidityUsd": 913396.1399999999,
     "pools": [
       {
-        "pair": "0x3f4E90Ff4125d9FCC4F4B7Ba5213f596e9A1115d",
+        "pair": "0xa1cd143e2e3db034c4915d399ec3b7f0bc4373bbcb3a8d46e01c4596cd9e9ba1",
         "dex": "uniswap",
-        "liquidityUsd": 5915.53,
+        "liquidityUsd": 0.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8A8e4170C09074b109352190d47e54d7c1F61e4E",
-        "dex": "aerodrome",
-        "liquidityUsd": 662754.41,
+        "pair": "0x8619202bb9de4aebb09c59f1779700ee24b9170c69bd75c1970a1bb8f397d576",
+        "dex": "uniswap",
+        "liquidityUsd": 0.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x24BDDff0577D1Ee32f92A0b92296cA9702611c6A",
-        "dex": "aerodrome",
-        "liquidityUsd": 2270.78,
+        "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716",
+        "dex": "uniswap",
+        "liquidityUsd": 0.23,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x178775191a5ae2e4098b57de31f16029c1bffe7f0f93b0379494d61124d55cab",
+        "dex": "uniswap",
+        "liquidityUsd": 913395.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 57.06,
-    "projectLinks": null
+    "top10Pct": 0,
+    "projectLinks": {
+      "websites": [
+        "https://clanker.world/clanker/0xAE45b8faE07fFB2E5f4373bFCB6f4Bd827A45b07"
+      ],
+      "socials": []
+    }
   },
   "notes": null,
   "coi": false

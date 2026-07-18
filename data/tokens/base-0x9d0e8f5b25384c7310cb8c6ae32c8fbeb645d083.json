@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "DRV",
   "name": "Derive",
-  "scanned_at": "2026-07-17T07:36:47.298Z",
+  "scanned_at": "2026-07-18T07:16:26.498Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 51.2% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 51.0% of circulating supply.",
           "evidence": null
         }
       ]
@@ -98,7 +98,7 @@
     {
       "id": "cap.rug-ready",
       "letter": "D",
-      "reason": "More than 50% of the LP in pool 0xaC4e562d7C6108f971321F14238E24AE2cC398ac is held by a single externally-owned account (0xc5785b0ce1095213465a4a4f28c19269cb4b35ec, 83.52% of LP), which can withdraw it."
+      "reason": "More than 50% of the LP in pool 0xaC4e562d7C6108f971321F14238E24AE2cC398ac is held by a single externally-owned account (0xc5785b0ce1095213465a4a4f28c19269cb4b35ec, 83.53% of LP), which can withdraw it."
     },
     {
       "id": "cap.concentration",
@@ -118,7 +118,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "118175745601346000000000000",
+    "totalSupply": "118603389223430000000000000",
     "decimals": 18,
     "owner": "0x169a99b9958386a5d91e732ed08b344946a92391",
     "controlType": "unknown",
@@ -128,13 +128,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 551,
-    "liquidityUsd": 1099562.52,
+    "ageDays": 552,
+    "liquidityUsd": 1053124.07,
     "pools": [
       {
         "pair": "0xEF7E596AEF9e4c6301b4D1F1e88F8fFE8C306222",
         "dex": "aerodrome",
-        "liquidityUsd": 508804.47,
+        "liquidityUsd": 474770.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -143,20 +143,20 @@
       {
         "pair": "0xaC4e562d7C6108f971321F14238E24AE2cC398ac",
         "dex": "aerodrome",
-        "liquidityUsd": 303180.56,
+        "liquidityUsd": 295799.48,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": true,
         "lpDominantHolder": {
           "address": "0xc5785b0ce1095213465a4a4f28c19269cb4b35ec",
-          "sharePct": 83.52
+          "sharePct": 83.53
         }
       },
       {
         "pair": "0xe2654cc01616e962fbfcc4277c23062e59e70e39f87221d77b6d438705a5f286",
         "dex": "uniswap",
-        "liquidityUsd": 217821.26,
+        "liquidityUsd": 213185.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -165,7 +165,7 @@
       {
         "pair": "0xA0e2bac96aB51c92d3284781AeE1EEc817F6F9C2",
         "dex": "aerodrome",
-        "liquidityUsd": 61610.79,
+        "liquidityUsd": 61434.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -174,7 +174,7 @@
       {
         "pair": "0xdda3762a4376d6797bbceee53a919740e2d76bff90073825fd3ae2367cd01bb6",
         "dex": "uniswap",
-        "liquidityUsd": 7473.04,
+        "liquidityUsd": 7274.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -183,7 +183,7 @@
       {
         "pair": "0x467A29E0Ba9A655254900d45939CdA6AF2B10c5E",
         "dex": "aerodrome",
-        "liquidityUsd": 448.74,
+        "liquidityUsd": 444.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -192,7 +192,7 @@
       {
         "pair": "0x0646C6C16240817161da70670ba92770c1641a43",
         "dex": "uniswap",
-        "liquidityUsd": 175.15,
+        "liquidityUsd": 167.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -201,14 +201,14 @@
       {
         "pair": "0xd6F1358AAeEa97810c135515aAFAA8E4987c912a",
         "dex": "sushiswap",
-        "liquidityUsd": 48.51,
+        "liquidityUsd": 47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 51.16,
+    "top10Pct": 51.05,
     "projectLinks": {
       "websites": [
         "https://derive.xyz",

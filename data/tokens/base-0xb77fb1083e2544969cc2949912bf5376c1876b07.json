@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-17T07:36:28.785Z",
+  "scanned_at": "2026-07-18T07:16:06.800Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x332dab5978766934f0c0640d73fb05535ed0655296b26e3eae3884126c62a3e9"
+            "pair": "0x770557c50215ca8af3ec2ca7cabcb80ab27938002326a9709284d21366b62b5e"
           }
         }
       ]
@@ -89,7 +89,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.2%.",
+          "text": "Top-10 unlabeled holders control 0.4%.",
           "evidence": null
         }
       ]
@@ -127,19 +127,37 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": null,
+    "liquidityUsd": 25,
     "pools": [
       {
-        "pair": "0x332dab5978766934f0c0640d73fb05535ed0655296b26e3eae3884126c62a3e9",
+        "pair": "0x267856ea335b8f4cca069a0b54e7c7374e4b8ae6b374e131e495d507acb59998",
         "dex": "uniswap",
-        "liquidityUsd": 0,
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x770557c50215ca8af3ec2ca7cabcb80ab27938002326a9709284d21366b62b5e",
+        "dex": "uniswap",
+        "liquidityUsd": 15.12,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3bdb66ab36effaf4552e1867d71ae277705151451ee66fa1ab8fd637329415a7",
+        "dex": "uniswap",
+        "liquidityUsd": 9.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0.22,
+    "top10Pct": 0.4,
     "projectLinks": null
   },
   "notes": null,

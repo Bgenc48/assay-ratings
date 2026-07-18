@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-07-17T07:36:55.549Z",
+  "scanned_at": "2026-07-18T07:16:34.523Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xb2ec72c4ac1bc4c52e3bb41ac4956641ae452d117634d1b8d641037bb5ebb88a"
+            "pair": "0x33cf916f99083fb181c064a6494ee3db4a6e0ec3ab14a4ed881117a4cb3e4efd"
           }
         }
       ]
@@ -89,7 +89,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
+          "text": "Top-10 unlabeled holders control 3.3%.",
           "evidence": null
         }
       ]
@@ -127,21 +127,21 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 18911448.509999998,
+    "liquidityUsd": 41.900000000000006,
     "pools": [
       {
-        "pair": "0xb2ec72c4ac1bc4c52e3bb41ac4956641ae452d117634d1b8d641037bb5ebb88a",
+        "pair": "0x33cf916f99083fb181c064a6494ee3db4a6e0ec3ab14a4ed881117a4cb3e4efd",
         "dex": "uniswap",
-        "liquidityUsd": 18654422.03,
+        "liquidityUsd": 25.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8669dd73421bfae3ba66a3cf65b35faf9d2b1ed9ac73f90e0bd7c5b9b3b7a990",
+        "pair": "0x2567fd2fed4c0ce5968b1f036573dff4194268381882b15a77221e427d7d9815",
         "dex": "uniswap",
-        "liquidityUsd": 257000.33,
+        "liquidityUsd": 15.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,23 +150,14 @@
       {
         "pair": "0xda5abe072d87b840b332bcf54d7dd73e692979b66bfb97effa70b817c7d13959",
         "dex": "uniswap",
-        "liquidityUsd": 0.36,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x33cf916f99083fb181c064a6494ee3db4a6e0ec3ab14a4ed881117a4cb3e4efd",
-        "dex": "uniswap",
-        "liquidityUsd": 25.79,
+        "liquidityUsd": 0,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0.03,
+    "top10Pct": 3.29,
     "projectLinks": null
   },
   "notes": null,
