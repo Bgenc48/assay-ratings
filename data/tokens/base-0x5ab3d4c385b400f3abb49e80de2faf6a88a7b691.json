@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "FLOCK",
   "name": "FLock.io",
-  "scanned_at": "2026-07-18T07:17:06.091Z",
+  "scanned_at": "2026-07-19T07:43:52.929Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 50.9% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 52.2% of circulating supply.",
           "evidence": null
         }
       ]
@@ -99,6 +99,11 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "More than 50% of the LP in pool 0xa70413C024C43f3E64E62e3c141064B93CCAe586 is held by a single externally-owned account (0x19d8359759b3fa2d487581b50221c4f524da2177, 99.99% of LP), which can withdraw it."
     },
     {
       "id": "cap.concentration",
@@ -118,7 +123,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "414479127396504726700254288",
+    "totalSupply": "414737123731528431376748318",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -130,13 +135,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 574,
-    "liquidityUsd": 343531.92,
+    "ageDays": 575,
+    "liquidityUsd": 337916.86,
     "pools": [
       {
         "pair": "0x7AF45dfaF2fDEA139B2295f37fFea2E16e6Fd8BA",
         "dex": "uniswap",
-        "liquidityUsd": 121729.8,
+        "liquidityUsd": 122987.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,7 +150,7 @@
       {
         "pair": "0xd7338B6F338DA54b922bbBC6fBE3EFEDD5Ce35fa",
         "dex": "aerodrome",
-        "liquidityUsd": 76775.79,
+        "liquidityUsd": 79070.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -154,7 +159,7 @@
       {
         "pair": "0x4910C78a1C75E36548F1f2f1f4dCb71A4F69fC07",
         "dex": "aerodrome",
-        "liquidityUsd": 81314.57,
+        "liquidityUsd": 82914.53,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -163,7 +168,7 @@
       {
         "pair": "0xd162C4444d5eFEaD433F080696D1f4Dc2BCD58Fb",
         "dex": "aerodrome",
-        "liquidityUsd": 26385.48,
+        "liquidityUsd": 26899.29,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -172,25 +177,16 @@
       {
         "pair": "0xef724d142f283411f66bDe8De4d863e7295b9972",
         "dex": "aerodrome",
-        "liquidityUsd": 12196.73,
+        "liquidityUsd": 12430.59,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x15aEda0387EBeF5Fd8300560010De83780477147",
-        "dex": "uniswap",
-        "liquidityUsd": 11490.82,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0xdAA601bc9E5B00337f11fB17CD574D3f01633Fe6",
         "dex": "aerodrome",
-        "liquidityUsd": 7147.8,
+        "liquidityUsd": 7092.72,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -199,14 +195,27 @@
       {
         "pair": "0xB7E0c9CaeB559429B5b8B37c118E1d2764550416",
         "dex": "aerodrome",
-        "liquidityUsd": 6490.93,
+        "liquidityUsd": 6520.16,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa70413C024C43f3E64E62e3c141064B93CCAe586",
+        "dex": "alien-base",
+        "liquidityUsd": 1.46,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x19d8359759b3fa2d487581b50221c4f524da2177",
+          "sharePct": 99.99
+        }
       }
     ],
-    "top10Pct": 50.93,
+    "top10Pct": 52.24,
     "projectLinks": {
       "websites": [],
       "socials": [

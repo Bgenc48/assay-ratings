@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ELSA",
   "name": "Elsa",
-  "scanned_at": "2026-07-18T07:14:49.104Z",
+  "scanned_at": "2026-07-19T07:40:48.881Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 55,
+    "letter": "B+",
+    "overall": 84.6,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -94,11 +94,6 @@
   },
   "caps": [
     {
-      "id": "cap.rug-ready",
-      "letter": "D",
-      "reason": "More than 50% of the LP in pool 0xa04eC5e729bCe8dEa7794a4444836eEd268E1096 is held by a single externally-owned account (0x5178d1db8dbe3498de478109577053abc8a03a49, 99.99% of LP), which can withdraw it."
-    },
-    {
       "id": "cap.age-12mo",
       "letter": "A-",
       "reason": "Token is younger than 12 months (Provisional)."
@@ -121,13 +116,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 191,
-    "liquidityUsd": 392899.41000000003,
+    "ageDays": 192,
+    "liquidityUsd": 389054.67000000004,
     "pools": [
       {
         "pair": "0x83f3ACa29Bc79B048B99C56013475570acc97ccF",
         "dex": "pancakeswap",
-        "liquidityUsd": 378879.35,
+        "liquidityUsd": 364731.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,7 +131,25 @@
       {
         "pair": "0xdc8F367884437e398FBF4a94D3333fE0b5B376Db",
         "dex": "uniswap",
-        "liquidityUsd": 11679.2,
+        "liquidityUsd": 11233.64,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5E4efb192Dfd5a267e5bEDac155FD9b79df82496",
+        "dex": "aerodrome",
+        "liquidityUsd": 5549.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9f073f766e3ee1eccd1d525ec8753ace09c94902e09acf328231389ef12df805",
+        "dex": "uniswap",
+        "liquidityUsd": 3691.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,7 +158,16 @@
       {
         "pair": "0x8ec13b2f24d27ac531fcbe1cb551e7696cb8392879e3fb473f801395589776da",
         "dex": "uniswap",
-        "liquidityUsd": 1582.02,
+        "liquidityUsd": 1567.36,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x194797673fdf948efe25c506095054347df8308dff94845ef0738b7bc0b4016a",
+        "dex": "uniswap",
+        "liquidityUsd": 1550.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -154,7 +176,7 @@
       {
         "pair": "0xf3240f7578172cf710879e1ef84d04e632ab81282497ec0f0d04277a877a2832",
         "dex": "uniswap",
-        "liquidityUsd": 693.93,
+        "liquidityUsd": 688.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -163,36 +185,14 @@
       {
         "pair": "0x120eE6b5DbF9507AfE3E50f10f664F718bFF0696",
         "dex": "uniswap",
-        "liquidityUsd": 43.28,
+        "liquidityUsd": 42.52,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x6Ff9b1Efa79106A9BbBBe6c5b9D044aC465b789c",
-        "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
-        "liquidityUsd": 19.11,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa04eC5e729bCe8dEa7794a4444836eEd268E1096",
-        "dex": "aerodrome",
-        "liquidityUsd": 2.52,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x5178d1db8dbe3498de478109577053abc8a03a49",
-          "sharePct": 99.99
-        }
       }
     ],
-    "top10Pct": 19.9,
+    "top10Pct": 19.12,
     "projectLinks": {
       "websites": [
         "https://moltnbook.com"
