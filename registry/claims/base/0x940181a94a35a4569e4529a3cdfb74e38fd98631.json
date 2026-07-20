@@ -1,5 +1,5 @@
 {
-  "_comment": "AERO (Aerodrome Finance) claim records. DRAFT — review is 'pending', so verify.js ignores these and they have ZERO effect on the published grade until a human flips review to 'approved' in a reviewed PR. Before approving: open the source URL and confirm the quote is verbatim, then confirm on-chain that the disclosed powers still cover every privileged selector Assay found. Approving the admin_disclosure claim below is expected to lift AERO's disclosure dimension and clear the claim-light cap; see docs/reviews/UR-AERO-2026-07.md for the coupled Under-Review decision.",
+  "_comment": "AERO (Aerodrome Finance) claim records. The admin_disclosure quote was verified verbatim against the raw source (raw.githubusercontent.com/aerodrome-finance/contracts/main/PERMISSIONS.md) on 2026-07-20 and flipped to review:'approved' in a reviewed PR. Verdict is still computed by verify.js each scan (VERIFIED only while every privileged selector found on-chain is in params.disclosed). Effect: clears the claim-light cap and moves disclosure to 100; AERO stays Under-Review at ≈D pending the mint-controller classification and the reviewedLowGrade decision — see docs/reviews/UR-AERO-2026-07.md.",
   "claims": [
     {
       "id": "aero-admin-disclosure-1",
@@ -9,7 +9,7 @@
       "source": "https://github.com/aerodrome-finance/contracts/blob/main/PERMISSIONS.md",
       "tense": "present",
       "material": true,
-      "review": "pending",
+      "review": "approved",
       "params": { "disclosed": ["mint"] }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "_comment": "USDC (Circle) claim records. DRAFT — review is 'pending', so verify.js ignores these and they have ZERO effect on the published grade until a human flips review to 'approved' in a reviewed PR. The quote below was read from Circle's own stablecoin-evm repository; before approving, confirm it verbatim against the source and confirm the disclosed set still covers every privileged selector Assay finds on the Base contract (currently mint, pause, blacklist). Once approved, USDC's fiat-stablecoin profile moves from the C 'insufficient-disclosure' state to its issuer-disclosed anchors (expected ~B, capped B+); see docs/METHODOLOGY.md §6.",
+  "_comment": "USDC (Circle) claim records. The admin_disclosure quote was verified verbatim (whitespace-normalized for the source's line-wrapping) against the raw source (raw.githubusercontent.com/circlefin/stablecoin-evm/master/README.md) on 2026-07-20, and the source's 'Roles' section independently confirms the minter (masterMinter), pauser, and blacklister powers that make up params.disclosed. Flipped to review:'approved' in a reviewed PR. Verdict stays computed by verify.js each scan (VERIFIED only while every privileged selector found on-chain is in params.disclosed); if Circle adds an undisclosed power the verdict flips FALSE and the profile's anchors collapse automatically. Effect: USDC's fiat-stablecoin profile moves from the C insufficient-disclosure state to its issuer-disclosed anchors (≈B, capped B+ by cap.custodial-issuer); see docs/METHODOLOGY.md §6.",
   "claims": [
     {
       "id": "usdc-admin-disclosure-1",
@@ -9,7 +9,7 @@
       "source": "https://github.com/circlefin/stablecoin-evm/blob/master/README.md",
       "tense": "present",
       "material": true,
-      "review": "pending",
+      "review": "approved",
       "params": { "disclosed": ["mint", "pause", "blacklist"] }
     }
   ]
