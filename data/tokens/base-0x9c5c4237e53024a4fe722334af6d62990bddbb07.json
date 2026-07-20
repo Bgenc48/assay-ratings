@@ -1,18 +1,18 @@
 {
-  "address": "0x8a6786e0f64736771e34df56b869d4c620870b07",
+  "address": "0x9c5c4237e53024a4fe722334af6d62990bddbb07",
   "chain": "base",
   "status": "ok",
-  "symbol": "Claude",
-  "name": "Claude",
-  "scanned_at": "2026-07-20T08:25:53.835Z",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-07-20T08:27:33.582Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 64.2,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x3cdfe7c2b46eee4f203c98d10e240ceab621ea857526cce1c49328dbd45c1c32"
+            "pair": "0x24a46996aaab1ebbd606799de2d484ab88cd5082d5168f90d38d418c77cb81b3"
           }
         }
       ]
@@ -83,16 +83,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 90.0% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -105,11 +98,6 @@
       "id": "cap.unverified",
       "letter": "C",
       "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -132,19 +120,28 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 7.07,
+    "liquidityUsd": 6543493.37,
     "pools": [
       {
-        "pair": "0x3cdfe7c2b46eee4f203c98d10e240ceab621ea857526cce1c49328dbd45c1c32",
+        "pair": "0xf93d35b13f18b7189d60c6f45d860c7c77b398487ce66b5c94a025f3adf21fb8",
         "dex": "uniswap",
-        "liquidityUsd": 7.07,
+        "liquidityUsd": 0.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x24a46996aaab1ebbd606799de2d484ab88cd5082d5168f90d38d418c77cb81b3",
+        "dex": "uniswap",
+        "liquidityUsd": 6543493.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 90.01,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

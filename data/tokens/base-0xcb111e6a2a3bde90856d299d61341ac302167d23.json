@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "cbMEGA",
   "name": "Coinbase Wrapped MEGA",
-  "scanned_at": "2026-07-19T07:42:52.756Z",
+  "scanned_at": "2026-07-20T08:25:19.390Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 40.0%.",
+          "text": "Top-10 unlabeled holders control 39.5%.",
           "evidence": null
         }
       ]
@@ -129,21 +129,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 951631.0499999999,
+    "liquidityUsd": 172093.45,
     "pools": [
       {
         "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83",
         "dex": "aerodrome",
-        "liquidityUsd": 951619.66,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x756cd524bb6eec117a6d89480dab668e3ce4c05b915af4e0d8c17e4a95cfbcfa",
-        "dex": "uniswap",
-        "liquidityUsd": 4.85,
+        "liquidityUsd": 172082.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -152,10 +143,19 @@
       {
         "pair": "0x9D2139818d9cB7dc067B6128d337AAB1AA460aF6",
         "dex": "equalizer",
-        "liquidityUsd": 5.59,
+        "liquidityUsd": 5.56,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x756cd524bb6eec117a6d89480dab668e3ce4c05b915af4e0d8c17e4a95cfbcfa",
+        "dex": "uniswap",
+        "liquidityUsd": 4.82,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
@@ -166,9 +166,18 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xF5512F16707e6Cf75ACc39335FFfC6D11AC19747",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.08,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 39.98,
+    "top10Pct": 39.46,
     "projectLinks": {
       "websites": [],
       "socials": []

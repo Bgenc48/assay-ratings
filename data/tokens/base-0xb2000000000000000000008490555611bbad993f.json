@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ARAIL",
   "name": "AssetRail",
-  "scanned_at": "2026-07-19T07:45:10.575Z",
+  "scanned_at": "2026-07-20T08:27:28.027Z",
   "methodology_version": "0.2.0",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -88,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.1%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -123,12 +130,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 126578.39000000001,
+    "liquidityUsd": 42050.200000000004,
     "pools": [
       {
         "pair": "0xa027561c7e68177f38a3c8068f386f9d0e8ecfd27149b6bdf564c55796a06aa6",
         "dex": "uniswap",
-        "liquidityUsd": 126578.32,
+        "liquidityUsd": 42049.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,21 +144,20 @@
       {
         "pair": "0x7fb870c57bb606337940d45f7940a69f60608740bc9d9c034cf73579d54fec69",
         "dex": "uniswap",
-        "liquidityUsd": 0.07,
+        "liquidityUsd": 0.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0.12,
     "projectLinks": {
       "websites": [
         "https://assetrail.top"
       ],
       "socials": [
-        "https://x.com/AssetRailBase",
-        "https://t.me/AssetRailBase"
+        "https://x.com/AssetRailBase"
       ]
     }
   },
