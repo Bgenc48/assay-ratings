@@ -557,17 +557,32 @@ export function evaluateCaps(r, dims) {
   // Under custodial/bridged profiles the liquidity-permanence dimension is
   // replaced or N/A (redeemable/canonical assets make no LP-lock promise),
   // so LP-derived caps measure nothing and do not apply.
-  const rugPool = custodial || profile === "bridged"
-    ? null
-    : (r.liquidity?.pools ?? []).find((p) => p.singleEoaWithdrawable && (p.liquidityUsd ?? 0) > 0);
-  if (rugPool) {
-    // Name the specific pool and (when recorded) the holder, so the cap is
-    // reviewable from the report even when it fires on a non-dominant pool.
-    const pair = rugPool.pairAddress ?? rugPool.evidence?.pair ?? null;
-    const h = rugPool.evidence?.lpDominantHolder;
-    add("cap.rug-ready", "D",
-      `More than 50% of the LP in pool ${pair ?? "(unknown)"} is held by a single externally-owned account` +
-      (h ? ` (${h.address}, ${h.sharePct}% of LP)` : "") + ", which can withdraw it.");
+  //
+  // The rug-ready cap is a fatal D: it fires only when a single key can pull
+  // **more than half of the token's tracked liquidity** — the "primary
+  // liquidity" the published methodology names. Scoping to total-tracked
+  // share (not "any pool with >$0") stops a tiny EOA-held side pool from
+  // capping an otherwise-C token (a dominant pool that is itself EOA-held is
+  // already scored 0 by the liquidity dimension, so this cap is the extra
+  // guard for the case where the withdrawable liquidity is spread across
+  // pools but still a majority of the whole).
+  if (!custodial && profile !== "bridged") {
+    const pools = r.liquidity?.pools ?? [];
+    const totalUsd = pools.reduce((sum, p) => sum + (p.liquidityUsd ?? 0), 0);
+    const rugPools = pools.filter((p) => p.singleEoaWithdrawable && (p.liquidityUsd ?? 0) > 0);
+    const rugUsd = rugPools.reduce((sum, p) => sum + (p.liquidityUsd ?? 0), 0);
+    if (totalUsd > 0 && rugUsd / totalUsd > 0.5) {
+      // Name the specific pool(s) and (when recorded) the holder, so the cap
+      // is reviewable from the report.
+      const dominantRug = [...rugPools].sort((a, b) => (b.liquidityUsd ?? 0) - (a.liquidityUsd ?? 0))[0];
+      const pair = dominantRug.pairAddress ?? dominantRug.evidence?.pair ?? null;
+      const h = dominantRug.evidence?.lpDominantHolder;
+      const sharePct = Math.round((rugUsd / totalUsd) * 100);
+      add("cap.rug-ready", "D",
+        `Externally-owned accounts can withdraw ${sharePct}% of tracked liquidity — a majority. ` +
+        `The largest such pool is ${pair ?? "(unknown)"}` +
+        (h ? ` (LP holder ${h.address}, ${h.sharePct}% of that pool)` : "") + ".");
+    }
   }
   if ((r.track?.violations ?? []).length > 0) {
     const monthsClean = r.track?.monthsSinceLastViolation ?? 0;

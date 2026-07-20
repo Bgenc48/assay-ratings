@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
-<title>Methodology v0.2 — Assay</title>
+<title>Methodology v0.2.1 — Assay</title>
 <link rel="canonical" href="https://assayratings.com/methodology.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/site.css">
@@ -25,7 +25,7 @@
 
 <div class="wrap">
   <section class="hero">
-    <h1>Methodology, version 0.2</h1>
+    <h1>Methodology, version 0.2.1</h1>
     <p class="dek">Published in full, versioned, and applied mechanically. The grade measures whether a token can betray you in ways it hasn't disclosed — not whether it is a good investment. Changes ship with a public changelog entry; every published score is stamped with the version that produced it.</p>
   </section>
 
@@ -132,6 +132,7 @@
   <section class="block">
     <h2 class="sec">Changelog</h2>
     <div class="card">
+      <p><strong>v0.2.1</strong> — The rug-ready cap now fires only when a single key can withdraw more than half of a token's total tracked liquidity — the “primary liquidity” the rule already names — instead of whenever any pool with non-zero liquidity is one-key-withdrawable. A dominant pool that is itself EOA-held is still scored zero on liquidity, so this only stops a small EOA-controlled side pool from imposing a fatal grade on an otherwise-sound token. The cap now reports the withdrawable share and names the largest offending pool. Standard-profile grades are otherwise unchanged.</p>
       <p><strong>v0.2.0</strong> — Category profiles (see above). Fiat stablecoins and custodian-wrapped assets are scored for what they claim to be: issuer-controlled issuance and administration anchor upward only while the issuer's own disclosures verify against the chain on every scan, redeemability replaces liquidity permanence (out of automated scope, shown as reduced coverage), and custodial issuers are permanently capped at B+. Canonical-bridge tokens are graded on their wrapper with the bridge verified on-chain; bridged forms of L1 native coins publish facts without a letter (NS). Profiles are assigned only in the public reviewed registry, and any cap a profile waives stays visible on the report. Also fixed in this version: a dominant pool whose lock status cannot be analyzed now reads as insufficient data (lower coverage) instead of “mostly unlocked”. Standard-profile scores are unchanged from v0.1.</p>
       <p><strong>v0.1.0</strong> — Initial public methodology: eight dimensions, hybrid aggregation with the cap table above, claims verdicts (six deterministic verifier types), Trust Model badges, coverage indicator, COI carve-out.</p>
     </div>
