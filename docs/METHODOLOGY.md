@@ -199,6 +199,17 @@ use and AI/dataset use.
 
 ## Changelog
 
+- **0.2.1** — The rug-ready cap (§3) now fires only when externally-owned
+  accounts can withdraw **more than half of a token's total tracked
+  liquidity** — the "primary liquidity" the cap text already names — rather
+  than whenever *any* pool with non-zero liquidity is single-key-withdrawable.
+  A dominant pool that is itself EOA-held is still scored 0 by the liquidity
+  dimension, so this only changes the extra hard-cap guard: a small
+  EOA-controlled side pool no longer imposes a fatal D on an otherwise-sound
+  token (the DEGEN case). The cap reason now reports the withdrawable share
+  and names the largest offending pool. Golden tests pin both directions
+  (sub-majority side pool → no cap; majority withdrawable → cap holds).
+  Standard-profile grades are otherwise unchanged.
 - **0.2.0** — Category profiles become normative (§6). Profiles are
   hand-assigned in the reviewed registry only; auto-discovered tokens always
   score `standard`, and every report, index row, and history line is stamped

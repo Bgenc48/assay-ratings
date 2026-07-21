@@ -1,5 +1,13 @@
 # UR review memo — DEGEN (Degen)
 
+> **Addendum 2026-07-20:** the methodology question this memo raised — should
+> the rug-ready cap be scoped so a tiny side pool can't cap the whole token —
+> was resolved in **methodology v0.2.1**: the cap now fires only when
+> externally-owned accounts can withdraw >50% of *total tracked liquidity*.
+> On the next scan DEGEN's sub-4% side-pool rug-ready cap no longer fires and
+> it recomputes to **C** on its fundamentals. No `reviewedLowGrade` action is
+> needed. The rest of this memo is the point-in-time record as written.
+
 | | |
 |---|---|
 | Token | DEGEN — Degen |

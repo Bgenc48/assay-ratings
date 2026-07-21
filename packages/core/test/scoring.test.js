@@ -101,6 +101,39 @@ test("rug-ready pool: single-EOA-withdrawable liquidity caps at D", () => {
   assert.equal(s.dimensions.liquidityPermanence.score, 0);
 });
 
+test("v0.2.1: a sub-majority EOA-held side pool does not trigger the rug-ready cap (DEGEN case)", () => {
+  // Dominant pool is unanalyzed (→ liquidity null, coverage), a tiny side
+  // pool is EOA-withdrawable. The withdrawable share of tracked liquidity is
+  // small, so the fatal cap must not fire — the token is graded on its
+  // fundamentals, not tanked by a rounding-error side pool.
+  const r = pristine({
+    claims: [],
+    liquidity: {
+      pools: [
+        { liquidityUsd: 1_380_000, lockAnalyzed: false, lpBurnedPct: null, lpLockedPct: null },
+        { liquidityUsd: 54_000, lockAnalyzed: true, lpBurnedPct: 0, lpLockedPct: 0, singleEoaWithdrawable: true },
+      ],
+    },
+  });
+  const s = scoreToken(r);
+  assert.ok(!s.caps.some((c) => c.id === "cap.rug-ready"), "a ~4% side pool must not cap the whole token");
+});
+
+test("v0.2.1: rug-ready still fires when withdrawable pools are a majority of tracked liquidity", () => {
+  const r = pristine({
+    liquidity: {
+      pools: [
+        { liquidityUsd: 600_000, lockAnalyzed: true, lpBurnedPct: 0, lpLockedPct: 0, singleEoaWithdrawable: true },
+        { liquidityUsd: 300_000, lockAnalyzed: true, lpBurnedPct: 95, lpLockedPct: 0 },
+      ],
+    },
+  });
+  const s = scoreToken(r);
+  const rug = s.caps.find((c) => c.id === "cap.rug-ready");
+  assert.ok(rug, "a majority of tracked liquidity being one-key-withdrawable must still cap");
+  assert.match(rug.reason, /majority/);
+});
+
 test("unverified source caps overall at C and is scored as missing data, not zero", () => {
   const r = pristine({ meta: { verifiedSource: false } });
   const s = scoreToken(r);
