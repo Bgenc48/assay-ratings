@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "AERO",
   "name": "Aerodrome",
-  "scanned_at": "2026-07-20T08:20:13.066Z",
-  "methodology_version": "0.2.0",
+  "scanned_at": "2026-07-21T07:44:22.414Z",
+  "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 51.9,
+    "letter": "C",
+    "overall": 55.9,
     "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -40,14 +40,18 @@
       ]
     },
     "disclosureIntegrity": {
-      "score": 70,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "disclosure.claim-light",
+          "id": "claim.verified.aero-admin-disclosure-1",
           "severity": "info",
-          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
-          "evidence": null
+          "text": "Verified: \"Aerodrome documents that AERO's only privileged capability is minting, held by the Minter contract for weekly gauge emissions and rebases.\".",
+          "evidence": {
+            "type": "bytecode-scan",
+            "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+            "detail": "mint"
+          }
         }
       ]
     },
@@ -77,21 +81,14 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "governanceReality": {
-      "score": 85,
-      "notApplicable": false,
-      "findings": [
-        {
-          "id": "gov.real",
-          "severity": "info",
-          "text": "Claimed governance verifiably executes on-chain.",
-          "evidence": null
-        }
-      ]
+      "score": null,
+      "notApplicable": true,
+      "findings": []
     }
   },
   "caps": [
@@ -99,14 +96,27 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.claim-light",
-      "letter": "B+",
-      "reason": "No machine-checkable disclosures exist (claim-light profile)."
     }
   ],
-  "claims": [],
+  "claims": [
+    {
+      "id": "aero-admin-disclosure-1",
+      "type": "admin_disclosure",
+      "text": "Aerodrome documents that AERO's only privileged capability is minting, held by the Minter contract for weekly gauge emissions and rebases.",
+      "quote": "Can mint AERO and distribute to Voter for gauge emissions and RewardsDistributor for claimable rebases",
+      "source": "https://github.com/aerodrome-finance/contracts/blob/main/PERMISSIONS.md",
+      "material": true,
+      "tense": "present",
+      "deadline": null,
+      "verdict": "VERIFIED",
+      "note": "Every privileged capability found on-chain is disclosed in the docs.",
+      "evidence": {
+        "type": "bytecode-scan",
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "detail": "mint"
+      }
+    }
+  ],
   "facts": {
     "totalSupply": "1940444000427642603278117733",
     "decimals": 18,
@@ -123,13 +133,13 @@
     },
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1057,
-    "liquidityUsd": 31688251.240000002,
+    "ageDays": 1058,
+    "liquidityUsd": 30069015.969999995,
     "pools": [
       {
         "pair": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
         "dex": "aerodrome",
-        "liquidityUsd": 25481885.72,
+        "liquidityUsd": 25228289.63,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -138,7 +148,7 @@
       {
         "pair": "0x20CB8f872ae894F7c9e32e621C186e5AFCe82Fd0",
         "dex": "pancakeswap",
-        "liquidityUsd": 166662.71,
+        "liquidityUsd": 163098.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,7 +157,7 @@
       {
         "pair": "0xa4FDd479eda160671636e2eCF8f993Cbf86258a8",
         "dex": "aerodrome",
-        "liquidityUsd": 523823.89,
+        "liquidityUsd": 511369.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -156,7 +166,7 @@
       {
         "pair": "0xE5B5f522E98B5a2baAe212d4dA66b865B781DB97",
         "dex": "uniswap",
-        "liquidityUsd": 188241.21,
+        "liquidityUsd": 186257.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -165,7 +175,7 @@
       {
         "pair": "0x82321f3BEB69f503380D6B233857d5C43562e2D0",
         "dex": "aerodrome",
-        "liquidityUsd": 571583.11,
+        "liquidityUsd": 564360.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -174,7 +184,7 @@
       {
         "pair": "0xdFe5F275020def30993f042174Fc2D335678b626",
         "dex": "aerodrome",
-        "liquidityUsd": 859683.9,
+        "liquidityUsd": 901175.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -183,23 +193,23 @@
       {
         "pair": "0x4e506648d493C8870f55e870480f92f2F33ecE51",
         "dex": "aerodrome",
-        "liquidityUsd": 2970788.28,
+        "liquidityUsd": 1990428.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x3d5D143381916280ff91407FeBEB52f2b60f33Cf",
-        "dex": "uniswap",
-        "liquidityUsd": 925582.42,
+        "pair": "0xCDBe19a6EF1B633BE744920C93eE40521d5cf2A6",
+        "dex": "aerodrome",
+        "liquidityUsd": 524037.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 17.73,
     "projectLinks": {
       "websites": [
         "https://aerodrome.finance/docs",
@@ -211,10 +221,6 @@
       ]
     }
   },
-  "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "notes": "governance.claimed was removed 2026-07-20: it was asserted without cited evidence and, with no on-chain governance verifier in v0.2, caused the report to publish 'governance verifiably executes on-chain' at score 85 — a verification nobody performed. Re-add only with a real governance check (see docs/reviews/UR-AERO-2026-07.md).",
+  "coi": false
 }

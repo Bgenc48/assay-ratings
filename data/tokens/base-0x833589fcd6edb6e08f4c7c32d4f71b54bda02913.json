@@ -4,50 +4,54 @@
   "status": "ok",
   "symbol": "USDC",
   "name": "USD Coin",
-  "scanned_at": "2026-07-20T08:19:35.199Z",
-  "methodology_version": "0.2.0",
+  "scanned_at": "2026-07-21T07:43:49.605Z",
+  "methodology_version": "0.2.1",
   "profile": "fiat-stablecoin",
   "grade": {
-    "letter": "C",
-    "overall": 56.9,
+    "letter": "B",
+    "overall": 79.2,
     "provisional": false,
-    "badge": "Custodial",
+    "badge": "Custodial (disclosed)",
     "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 65,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.custodial-undisclosed",
-          "severity": "warn",
-          "text": "Custodial issuance is asserted by the reviewed registry, but the issuer's disclosure of on-chain powers is not yet on record as a verified claim (insufficient data).",
+          "id": "supply.custodial-mint",
+          "severity": "info",
+          "text": "Issuance is controlled by the disclosed issuer; every privileged power found on-chain is enumerated in the issuer's own material (verified on this scan).",
           "evidence": null
         }
       ]
     },
     "adminSurface": {
-      "score": 25,
+      "score": 50,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.eoa",
-          "severity": "crit",
-          "text": "The contract is upgradeable and the upgrade key is a single externally-owned account with no timelock.",
+          "id": "admin.custodial-disclosed",
+          "severity": "info",
+          "text": "Privileged capabilities are issuer-controlled; every power found on-chain is enumerated in the issuer's own material (verified on this scan).",
           "evidence": null
         }
       ]
     },
     "disclosureIntegrity": {
-      "score": 70,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "disclosure.claim-light",
+          "id": "claim.verified.usdc-admin-disclosure-1",
           "severity": "info",
-          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
-          "evidence": null
+          "text": "Verified: \"Circle documents USDC's privileged roles: minting (via masterMinter-controlled minters), pausing, blacklisting, and proxy upgradeability.\".",
+          "evidence": {
+            "type": "bytecode-scan",
+            "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "detail": "mint,pause,blacklist"
+          }
         }
       ]
     },
@@ -91,12 +95,7 @@
       "letter": "F",
       "reason": "Mint or issuance is controlled by an externally-owned account.",
       "waived": true,
-      "waivedBy": "profile.fiat-stablecoin (reviewed registry); superseded by cap.custodial-undisclosed"
-    },
-    {
-      "id": "cap.custodial-undisclosed",
-      "letter": "C",
-      "reason": "Custodial control asserted by the reviewed registry without a verified issuer disclosure on record (insufficient data)."
+      "waivedBy": "profile.fiat-stablecoin + claim.admin_disclosure VERIFIED"
     },
     {
       "id": "cap.custodial-issuer",
@@ -108,17 +107,30 @@
       "letter": "D",
       "reason": "Upgradeable with an EOA admin and no timelock.",
       "waived": true,
-      "waivedBy": "profile.fiat-stablecoin (reviewed registry); superseded by cap.custodial-undisclosed"
-    },
-    {
-      "id": "cap.claim-light",
-      "letter": "B+",
-      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+      "waivedBy": "profile.fiat-stablecoin + claim.admin_disclosure VERIFIED"
     }
   ],
-  "claims": [],
+  "claims": [
+    {
+      "id": "usdc-admin-disclosure-1",
+      "type": "admin_disclosure",
+      "text": "Circle documents USDC's privileged roles: minting (via masterMinter-controlled minters), pausing, blacklisting, and proxy upgradeability.",
+      "quote": "The contract can blacklist certain addresses which will prevent those addresses from transferring or receiving tokens. Access to the blacklist functionality is controlled by the `blacklister` address.",
+      "source": "https://github.com/circlefin/stablecoin-evm/blob/master/README.md",
+      "material": true,
+      "tense": "present",
+      "deadline": null,
+      "verdict": "VERIFIED",
+      "note": "Every privileged capability found on-chain is disclosed in the docs.",
+      "evidence": {
+        "type": "bytecode-scan",
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "detail": "mint,pause,blacklist"
+      }
+    }
+  ],
   "facts": {
-    "totalSupply": "4185633229198426",
+    "totalSupply": "4224258936640766",
     "decimals": 6,
     "owner": "0x3abd6f64a422225e61e435bae41db12096106df7",
     "controlType": "eoa",
@@ -133,13 +145,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1067,
-    "liquidityUsd": 1447696.8599999999,
+    "ageDays": 1068,
+    "liquidityUsd": 1301499.34,
     "pools": [
       {
         "pair": "0x5D0bC342178C8Fe2c2f9A9fcC9D52555C99936db",
         "dex": "quickswap",
-        "liquidityUsd": 157848.81,
+        "liquidityUsd": 157849.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,16 +160,7 @@
       {
         "pair": "0x0E635F8EeED4F7279d56692D552F034ECE136019",
         "dex": "alien-base",
-        "liquidityUsd": 130839.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x98c7A2338336d2d354663246F64676009c7bDa97",
-        "dex": "aerodrome",
-        "liquidityUsd": 157407.22,
+        "liquidityUsd": 130840.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +169,7 @@
       {
         "pair": "0xa0ab20a64f46b5676fe1542cb87b454e5104007689e0eef4212aa0cbe34933a1",
         "dex": "uniswap",
-        "liquidityUsd": 907402.71,
+        "liquidityUsd": 907391.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,7 +178,7 @@
       {
         "pair": "0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD",
         "dex": "aerodrome",
-        "liquidityUsd": 43399.84,
+        "liquidityUsd": 42576.79,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -184,7 +187,7 @@
       {
         "pair": "0x867dbb1b6417abcb3696d5a5d9cc38cbf9f0f6d17355515fe1c8303e791832c4",
         "dex": "uniswap",
-        "liquidityUsd": 21974.19,
+        "liquidityUsd": 21974.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -193,7 +196,7 @@
       {
         "pair": "0x06959273E9A65433De71F5A452D529544E07dDD0",
         "dex": "uniswap",
-        "liquidityUsd": 13639.52,
+        "liquidityUsd": 13639.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -202,7 +205,16 @@
       {
         "pair": "0x29Ed55B18Af0Add137952CB3E29FB77B32fCE426",
         "dex": "pancakeswap",
-        "liquidityUsd": 15185.2,
+        "liquidityUsd": 15185.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xdac0f353d884f6e0db833036558a9f225eda392f4d1ff1a61f13c8f7875186bf",
+        "dex": "uniswap",
+        "liquidityUsd": 12040.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

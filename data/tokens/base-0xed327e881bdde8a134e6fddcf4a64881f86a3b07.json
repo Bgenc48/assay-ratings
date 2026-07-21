@@ -4,8 +4,8 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-07-20T08:25:35.926Z",
-  "methodology_version": "0.2.0",
+  "scanned_at": "2026-07-21T07:49:14.824Z",
+  "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x33cf916f99083fb181c064a6494ee3db4a6e0ec3ab14a4ed881117a4cb3e4efd"
+            "pair": "0xda5abe072d87b840b332bcf54d7dd73e692979b66bfb97effa70b817c7d13959"
           }
         }
       ]
@@ -89,7 +89,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 3.6%.",
+          "text": "Top-10 unlabeled holders control 3.4%.",
           "evidence": null
         }
       ]
@@ -127,28 +127,19 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 50.36,
+    "liquidityUsd": 0.01,
     "pools": [
       {
-        "pair": "0x33cf916f99083fb181c064a6494ee3db4a6e0ec3ab14a4ed881117a4cb3e4efd",
+        "pair": "0xda5abe072d87b840b332bcf54d7dd73e692979b66bfb97effa70b817c7d13959",
         "dex": "uniswap",
-        "liquidityUsd": 26.4,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xeba802a7c9731aa1f858b641efe47b933f85984459fe0c076f14632744df2783",
-        "dex": "uniswap",
-        "liquidityUsd": 23.96,
+        "liquidityUsd": 0.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 3.6,
+    "top10Pct": 3.36,
     "projectLinks": null
   },
   "notes": null,

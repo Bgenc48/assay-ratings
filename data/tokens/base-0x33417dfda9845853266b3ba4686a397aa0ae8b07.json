@@ -1,10 +1,10 @@
 {
-  "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
+  "address": "0x33417dfda9845853266b3ba4686a397aa0ae8b07",
   "chain": "base",
   "status": "ok",
-  "symbol": "CZ",
-  "name": "The Final Form Bull",
-  "scanned_at": "2026-07-21T07:49:29.208Z",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-07-21T07:51:08.128Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -67,10 +67,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xd3e49ecbf303f32ae2e6dbbdd68bd408ae2acaa7d1cd43be5bd0bb6b81715da7"
+          }
         }
       ]
     },
@@ -124,8 +127,36 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 3045089.39,
+    "pools": [
+      {
+        "pair": "0xf4bbdd6523618ba19023a656a21dedf22c764263ec588b2230a01978556240a6",
+        "dex": "uniswap",
+        "liquidityUsd": 0.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb081bc18ad3fddb75fb8cac67e1ae0b610ca16099951451f1475b7c837da53e9",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd3e49ecbf303f32ae2e6dbbdd68bd408ae2acaa7d1cd43be5bd0bb6b81715da7",
+        "dex": "uniswap",
+        "liquidityUsd": 3045089.33,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 0,
     "projectLinks": null
   },

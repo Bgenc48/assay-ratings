@@ -4,8 +4,8 @@
   "status": "ok",
   "symbol": "Gitlawb",
   "name": "Gitlawb",
-  "scanned_at": "2026-07-20T08:26:45.528Z",
-  "methodology_version": "0.2.0",
+  "scanned_at": "2026-07-21T07:50:19.020Z",
+  "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x178775191a5ae2e4098b57de31f16029c1bffe7f0f93b0379494d61124d55cab"
+            "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716"
           }
         }
       ]
@@ -132,39 +132,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 229695.46,
+    "liquidityUsd": 22.08,
     "pools": [
-      {
-        "pair": "0x178775191a5ae2e4098b57de31f16029c1bffe7f0f93b0379494d61124d55cab",
-        "dex": "uniswap",
-        "liquidityUsd": 229678.03,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716",
         "dex": "uniswap",
-        "liquidityUsd": 16.68,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa1cd143e2e3db034c4915d399ec3b7f0bc4373bbcb3a8d46e01c4596cd9e9ba1",
-        "dex": "uniswap",
-        "liquidityUsd": 0.03,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8619202bb9de4aebb09c59f1779700ee24b9170c69bd75c1970a1bb8f397d576",
-        "dex": "uniswap",
-        "liquidityUsd": 0.72,
+        "liquidityUsd": 21.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,7 +146,7 @@
       {
         "pair": "0x30ed30f4f572461b7202e7369fd08725c5a6ba52aa12ec85cf2f4728ac5821e3",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 0.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

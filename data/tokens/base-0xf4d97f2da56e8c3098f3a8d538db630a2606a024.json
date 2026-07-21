@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "DIEM",
   "name": "Diem",
-  "scanned_at": "2026-07-20T08:27:17.486Z",
-  "methodology_version": "0.2.0",
+  "scanned_at": "2026-07-21T07:50:49.659Z",
+  "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 46.2,
+    "overall": 44.7,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "full"
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": 75,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 9.9%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -113,7 +106,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "37722990002816210962444",
+    "totalSupply": "37155808187283601042013",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -125,13 +118,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 337,
-    "liquidityUsd": 9076994.79,
+    "ageDays": 338,
+    "liquidityUsd": 9928662.79,
     "pools": [
       {
         "pair": "0xBc3231036Ee1ECa03E5F67FEceDC640D21610823",
         "dex": "aerodrome",
-        "liquidityUsd": 287497.63,
+        "liquidityUsd": 218067.43,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x01271A205e3F37cbfC9B353170D726060E193C0D",
+        "dex": "aerodrome",
+        "liquidityUsd": 3763651.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,25 +142,16 @@
       {
         "pair": "0xbB345D35450BF9Ee76F3D2cE214E8e7AC5e1071d",
         "dex": "aerodrome",
-        "liquidityUsd": 5150508.06,
+        "liquidityUsd": 5690946.77,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x01271A205e3F37cbfC9B353170D726060E193C0D",
-        "dex": "aerodrome",
-        "liquidityUsd": 3401544.53,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x80d995189ecc593672aD4703b250a5e82672EB1D",
         "dex": "uniswap",
-        "liquidityUsd": 201010.48,
+        "liquidityUsd": 217168.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -167,7 +160,7 @@
       {
         "pair": "0x3b92f4962d799934d24d114f3d7569f836d5d9af01bd92ecee613d5ba89f17a2",
         "dex": "uniswap",
-        "liquidityUsd": 24974.98,
+        "liquidityUsd": 26890.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -176,7 +169,7 @@
       {
         "pair": "0x14b80ebc26e08a33153e1b2c6a8a97e2c8c063677a3ae01172260a5c3f5f6e87",
         "dex": "uniswap",
-        "liquidityUsd": 5348.58,
+        "liquidityUsd": 5930.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -185,23 +178,23 @@
       {
         "pair": "0x782D7C494d5DDC20c246a82aC8fe277e2728d002",
         "dex": "aerodrome",
-        "liquidityUsd": 3435.42,
+        "liquidityUsd": 3795.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x3a431b4c228f2f1d8bfa65d96ef39b4af8a50f342f9eb676750ff4920e3b8c5f",
-        "dex": "uniswap",
-        "liquidityUsd": 2675.11,
+        "pair": "0x148fe840de4aA27Fe2cad8d4EEF59a941AFE31cB",
+        "dex": "0x7Ca1dCCFB4f49564b8f13E18a67747fd428F1C40",
+        "liquidityUsd": 2212.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 9.89,
+    "top10Pct": 10.05,
     "projectLinks": {
       "websites": [
         "https://venice.ai/blog/introducing-diem-as-tokenized-intelligence-the-next-evolution-of-vvv"

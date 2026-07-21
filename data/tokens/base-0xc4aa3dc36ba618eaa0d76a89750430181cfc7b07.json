@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-20T08:25:32.377Z",
-  "methodology_version": "0.2.0",
+  "scanned_at": "2026-07-21T07:49:11.471Z",
+  "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x5156216777bb0bdcfda59ba9f8a7a0a421239f656a5584cd8b84b17c5efe8d09"
+            "pair": "0x0fd05b7062198dfa90d94db63a9910010cd18b9b172e8e4fccc47d69da536c90"
           }
         }
       ]
@@ -102,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -125,14 +114,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 10.17,
+    "liquidityUsd": 125522.64,
     "pools": [
       {
-        "pair": "0x5156216777bb0bdcfda59ba9f8a7a0a421239f656a5584cd8b84b17c5efe8d09",
+        "pair": "0x0fd05b7062198dfa90d94db63a9910010cd18b9b172e8e4fccc47d69da536c90",
         "dex": "uniswap",
-        "liquidityUsd": 10.17,
+        "liquidityUsd": 125522.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

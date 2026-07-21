@@ -4,8 +4,8 @@
   "status": "ok",
   "symbol": "ARAIL",
   "name": "AssetRail",
-  "scanned_at": "2026-07-20T08:27:28.027Z",
-  "methodology_version": "0.2.0",
+  "scanned_at": "2026-07-21T07:50:59.627Z",
+  "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
@@ -72,13 +72,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xa027561c7e68177f38a3c8068f386f9d0e8ecfd27149b6bdf564c55796a06aa6"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -88,13 +85,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.1%.",
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 55.4% of circulating supply.",
           "evidence": null
         }
       ]
@@ -110,6 +107,11 @@
       "id": "cap.unverified",
       "letter": "C",
       "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -130,36 +132,10 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 42050.200000000004,
-    "pools": [
-      {
-        "pair": "0xa027561c7e68177f38a3c8068f386f9d0e8ecfd27149b6bdf564c55796a06aa6",
-        "dex": "uniswap",
-        "liquidityUsd": 42049.79,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7fb870c57bb606337940d45f7940a69f60608740bc9d9c034cf73579d54fec69",
-        "dex": "uniswap",
-        "liquidityUsd": 0.41,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": 0.12,
-    "projectLinks": {
-      "websites": [
-        "https://assetrail.top"
-      ],
-      "socials": [
-        "https://x.com/AssetRailBase"
-      ]
-    }
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": 55.43,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

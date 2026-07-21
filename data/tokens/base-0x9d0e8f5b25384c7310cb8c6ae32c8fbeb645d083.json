@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "DRV",
   "name": "Derive",
-  "scanned_at": "2026-07-20T08:25:26.474Z",
-  "methodology_version": "0.2.0",
+  "scanned_at": "2026-07-21T07:49:07.200Z",
+  "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 54.3,
+    "letter": "C",
+    "overall": 56.1,
     "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,13 +77,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 50.8% of circulating supply.",
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 48.9%.",
           "evidence": null
         }
       ]
@@ -95,16 +95,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.rug-ready",
-      "letter": "D",
-      "reason": "More than 50% of the LP in pool 0xaC4e562d7C6108f971321F14238E24AE2cC398ac is held by a single externally-owned account (0xc5785b0ce1095213465a4a4f28c19269cb4b35ec, 83.53% of LP), which can withdraw it."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.age-24mo",
       "letter": "A",
@@ -118,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "121940761153372000000000000",
+    "totalSupply": "122549434976338000000000000",
     "decimals": 18,
     "owner": "0x169a99b9958386a5d91e732ed08b344946a92391",
     "controlType": "unknown",
@@ -128,13 +118,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 554,
-    "liquidityUsd": 1062323.88,
+    "ageDays": 555,
+    "liquidityUsd": 1412354.1600000001,
     "pools": [
       {
         "pair": "0xEF7E596AEF9e4c6301b4D1F1e88F8fFE8C306222",
         "dex": "aerodrome",
-        "liquidityUsd": 474645.79,
+        "liquidityUsd": 808987.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -143,7 +133,7 @@
       {
         "pair": "0xaC4e562d7C6108f971321F14238E24AE2cC398ac",
         "dex": "aerodrome",
-        "liquidityUsd": 294124.21,
+        "liquidityUsd": 302378.84,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -156,7 +146,7 @@
       {
         "pair": "0xe2654cc01616e962fbfcc4277c23062e59e70e39f87221d77b6d438705a5f286",
         "dex": "uniswap",
-        "liquidityUsd": 224264.51,
+        "liquidityUsd": 229228.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -165,7 +155,7 @@
       {
         "pair": "0xA0e2bac96aB51c92d3284781AeE1EEc817F6F9C2",
         "dex": "aerodrome",
-        "liquidityUsd": 61461.87,
+        "liquidityUsd": 63867.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -174,7 +164,7 @@
       {
         "pair": "0xdda3762a4376d6797bbceee53a919740e2d76bff90073825fd3ae2367cd01bb6",
         "dex": "uniswap",
-        "liquidityUsd": 7176.15,
+        "liquidityUsd": 7232.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -183,7 +173,7 @@
       {
         "pair": "0x467A29E0Ba9A655254900d45939CdA6AF2B10c5E",
         "dex": "aerodrome",
-        "liquidityUsd": 439.8,
+        "liquidityUsd": 443.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -192,7 +182,7 @@
       {
         "pair": "0x0646C6C16240817161da70670ba92770c1641a43",
         "dex": "uniswap",
-        "liquidityUsd": 164.92,
+        "liquidityUsd": 167.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -201,14 +191,14 @@
       {
         "pair": "0xd6F1358AAeEa97810c135515aAFAA8E4987c912a",
         "dex": "sushiswap",
-        "liquidityUsd": 46.63,
+        "liquidityUsd": 48.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 50.83,
+    "top10Pct": 48.87,
     "projectLinks": {
       "websites": [
         "https://derive.xyz",
@@ -221,9 +211,5 @@
     }
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

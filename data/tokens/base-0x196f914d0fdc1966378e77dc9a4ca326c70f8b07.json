@@ -4,8 +4,8 @@
   "status": "ok",
   "symbol": "TRUMP",
   "name": "TRUMP",
-  "scanned_at": "2026-07-20T08:26:31.183Z",
-  "methodology_version": "0.2.0",
+  "scanned_at": "2026-07-21T07:50:05.826Z",
+  "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xe5dded5896054ba731ad21a029a432bd4e4727527ba648095ecd1722119fa207"
+            "pair": "0x700098e8115750ab7b545160d966373e372db7de774a10736c11ce730ae8ca68"
           }
         }
       ]
@@ -127,17 +127,8 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 8331326.9799999995,
+    "liquidityUsd": 25.99,
     "pools": [
-      {
-        "pair": "0xe5dded5896054ba731ad21a029a432bd4e4727527ba648095ecd1722119fa207",
-        "dex": "uniswap",
-        "liquidityUsd": 8331302.21,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x0efde681d720404f4c58fc2113beda4eb379209e6471a7ba34dbc65501fdc922",
         "dex": "uniswap",
@@ -150,14 +141,14 @@
       {
         "pair": "0x700098e8115750ab7b545160d966373e372db7de774a10736c11ce730ae8ca68",
         "dex": "uniswap",
-        "liquidityUsd": 24.77,
+        "liquidityUsd": 25.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0.09,
+    "top10Pct": 0.1,
     "projectLinks": null
   },
   "notes": null,

@@ -1,15 +1,15 @@
 {
-  "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
+  "address": "0x4ac963e04eccd97a98bbe6bcb6d3bc2a649e0b07",
   "chain": "base",
   "status": "ok",
-  "symbol": "CZ",
-  "name": "The Final Form Bull",
-  "scanned_at": "2026-07-21T07:49:29.208Z",
+  "symbol": "Claude",
+  "name": "Claude",
+  "scanned_at": "2026-07-21T07:51:10.508Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 70,
+    "overall": 66.3,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -67,10 +67,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xbcb4e57223d23b00fd7bcaf9a729dd55f74cae7db33ca313880d613a02ddcee2"
+          }
         }
       ]
     },
@@ -80,13 +83,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 45.0%.",
           "evidence": null
         }
       ]
@@ -124,9 +127,37 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
-    "top10Pct": 0,
+    "liquidityUsd": 759713.12,
+    "pools": [
+      {
+        "pair": "0x43d7a2766118b0a0d4d9c40024e0ef46f6c275a68b9c2cc9fdcd49f9b246f471",
+        "dex": "uniswap",
+        "liquidityUsd": 0.03,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x156a21099a1019e1909ec99e14fb5fe2582feb322d42ab6103c4ea4a34714816",
+        "dex": "uniswap",
+        "liquidityUsd": 26.59,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xbcb4e57223d23b00fd7bcaf9a729dd55f74cae7db33ca313880d613a02ddcee2",
+        "dex": "uniswap",
+        "liquidityUsd": 759686.5,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 44.97,
     "projectLinks": null
   },
   "notes": null,

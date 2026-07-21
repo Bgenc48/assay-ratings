@@ -1,17 +1,17 @@
 {
-  "address": "0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed",
+  "address": "0xb200000000000000000000348a0251f62fc097e8",
   "chain": "base",
   "status": "ok",
-  "symbol": "DEGEN",
-  "name": "Degen",
-  "scanned_at": "2026-07-21T07:44:17.274Z",
+  "symbol": "GJESSE",
+  "name": "Ghibli Jesse",
+  "scanned_at": "2026-07-21T07:51:15.104Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B",
-    "overall": 77.1,
-    "provisional": false,
-    "badge": "Custodial",
+    "letter": "C",
+    "overall": 70,
+    "provisional": true,
+    "badge": "Code-Enforced",
     "coverage": "partial"
   },
   "dimensions": {
@@ -19,6 +19,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -28,14 +34,19 @@
       ]
     },
     "adminSurface": {
-      "score": 55,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.safe",
-          "severity": "warn",
-          "text": "Privileged capabilities gated by a 2-of-3 multisig with no timelock.",
-          "evidence": null
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xb200000000000000000000348a0251f62fc097e8",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
         }
       ]
     },
@@ -66,20 +77,27 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA"
+            "pair": "0xf0948708de7f0021352a5132dbc29e7a3a7152b229354cefe8bafcd97385f253"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 4.1%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -89,6 +107,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -96,110 +119,98 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "36449148709317365564287985573",
+    "totalSupply": "1000000000000000000000000000",
     "decimals": 18,
-    "owner": "0x704ec5c12ca20a293c2c0b72b22619a4231f3c0d",
-    "controlType": "safe",
+    "owner": null,
+    "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
-    "privileged": [
-      "pause()",
-      "unpause()",
-      "burnFrom(address,uint256)"
-    ],
+    "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 926,
-    "liquidityUsd": 928896.5,
+    "verifiedSource": false,
+    "ageDays": null,
+    "liquidityUsd": 147669.68999999994,
     "pools": [
       {
-        "pair": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA",
+        "pair": "0xf0948708de7f0021352a5132dbc29e7a3a7152b229354cefe8bafcd97385f253",
         "dex": "uniswap",
-        "liquidityUsd": 852568.5,
+        "liquidityUsd": 146942.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x2C4909355b0C036840819484c3A882A95659aBf3",
-        "dex": "aerodrome",
-        "liquidityUsd": 35550.64,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xaFB62448929664Bfccb0aAe22f232520e765bA88",
-        "dex": "aerodrome",
-        "liquidityUsd": 17862.57,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xee381526b93d418077a9d1b9c9b495a3d135410af9a58bc2a5f512fb7b61cbf7",
+        "pair": "0x24138b292c7bc2514680b2ce20a15157db17a19081deb21a916d8a351d29d24e",
         "dex": "uniswap",
-        "liquidityUsd": 9760.47,
+        "liquidityUsd": 61.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xc01162ED99a018D02b8a12f4712B0b9b87a9852F",
-        "dex": "aerodrome",
-        "liquidityUsd": 5676.67,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x54D281c7cc029a9Dd71F9ACb7487dd95B1EecF5a",
-        "dex": "pancakeswap",
-        "liquidityUsd": 2031.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x637ad8d2611d3efE2ef41fdBb40b9F21AbAF9585",
-        "dex": "aerodrome",
-        "liquidityUsd": 2598.14,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x59ebff2be1e53691e819b953fe215d61135dd05f",
-          "sharePct": 105.56
-        }
-      },
-      {
-        "pair": "0xd57be5f05a6b382eb6ea8867dae4c18684fa1a8e2782ebb2d494a15bf11cc32e",
+        "pair": "0x8375c823fd5676556352fe7e947ec767d2d80bd8d085fcc3b8ae768dd5667568",
         "dex": "uniswap",
-        "liquidityUsd": 2848.14,
+        "liquidityUsd": 350.15,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7bcddd66a2d1e7b7e40cf8ae53a7fa27c1791efb78c9c7184798b9b97e718301",
+        "dex": "uniswap",
+        "liquidityUsd": 64.55,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb74182e51cb3de68b29f8dc034de7855fc87756bf150ee9dd02f5b25c26e05b4",
+        "dex": "uniswap",
+        "liquidityUsd": 166.58,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa706bfc01d6ffe7e3e22455facc34cb9eca49656cc8aeaf8f6b2bc49ce5f2377",
+        "dex": "uniswap",
+        "liquidityUsd": 59.33,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xdf1d1c683a42e4f370743496ed02f05aff3196dbf6ebb63b70bbd6089655b459",
+        "dex": "uniswap",
+        "liquidityUsd": 24.57,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x04cc003be3a5a1cdd268df5c07d94fd6e644defaf18e3357f3286478bae20577",
+        "dex": "uniswap",
+        "liquidityUsd": 0.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 27.45,
+    "top10Pct": 4.08,
     "projectLinks": {
       "websites": [
-        "https://www.degen.tips/",
-        "https://farcaster.xyz/~/channel/degen"
+        "https://ghibli-jesse.xyz"
       ],
-      "socials": [
-        "https://twitter.com/degentokenbase",
-        "https://t.me/degentokenbase"
-      ]
+      "socials": []
     }
   },
   "notes": null,
