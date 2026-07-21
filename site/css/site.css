@@ -1,131 +1,311 @@
-/* Assay — assayratings.com. No frameworks, no fonts fetched, no trackers. */
+/* ============================================================================
+   Assay design system — assayratings.com
+   No frameworks, no fetched fonts, no trackers. Everything here is self-hosted
+   and CSP-safe (default-src 'none'; style-src 'self'). All colour, type,
+   spacing, and component styling flows from the tokens in :root below, so the
+   whole site is themed from one place. Aesthetic: an editorial ratings agency
+   — restrained, typographic, evidence-forward. See styleguide.html.
+
+   Accessibility: the grade palette is WCAG-AA for white text in both themes
+   (validated), grades are always labelled with their letter (colour is never
+   the sole signal), focus is always visible, and motion respects
+   prefers-reduced-motion.
+   ========================================================================== */
+
+/* ---- Design tokens ------------------------------------------------------- */
 :root {
-  --paper: #ffffff;
-  --ink: #15181c;
-  --ink-2: #4a5058;
-  --ink-3: #7d8288;
-  --rule: #e2e5e9;
-  --navy: #173a63;
-  --navy-soft: #eef2f7;
-  --a: #2f6b3a;
-  --b: #1f5f7a;
-  --c: #9a6a1a;
-  --d: #a34e1c;
-  --f: #8c2f2f;
-  --nr: #6b7178;
-  --mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  /* Surfaces & ink (light / "paper") */
+  --paper: #fbfbf9;
+  --surface: #ffffff;
+  --surface-2: #f3f3ee;
+  --ink: #1b1e23;
+  --ink-2: #4d545c;
+  --ink-3: #676d75;
+  --rule: #e6e5df;
+  --rule-strong: #d3d2c8;
+
+  /* Brand (links, accents, neutral data fills) */
+  --brand: #1b4a7a;
+  --brand-strong: #0f3760;
+  --brand-soft: #eaf0f7;
+
+  /* Grade scale — good→bad ramp, colourblind-aware (hue + lightness vary),
+     white text is AA on every one. A delimiting border (below) handles the
+     chip-vs-page boundary in dark mode. */
+  --g-a: #2c6a39;
+  --g-b: #1f5f7a;
+  --g-c: #795610;
+  --g-d: #9c4a1c;
+  --g-f: #8f2d2d;
+  --g-nr: #5f666e;
+
+  /* Semantic status (reuse the grade hues so the system reads as one) */
+  --ok: var(--g-a);
+  --warn: var(--g-c);
+  --crit: var(--g-f);
+  --info: var(--brand);
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, ui-serif, serif;
+  --font-mono: "SF Mono", ui-monospace, Menlo, Consolas, "Liberation Mono", monospace;
+  --fs-xs: 12px; --fs-sm: 13px; --fs-base: 16px; --fs-md: 18px;
+  --fs-lg: 21px; --fs-xl: 26px; --fs-2xl: 33px; --fs-3xl: 40px;
+  --lh-tight: 1.15; --lh-snug: 1.3; --lh-base: 1.55;
+
+  /* Spacing scale */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 72px;
+
+  /* Radii, shadow, focus, motion */
+  --r-sm: 4px; --r-md: 8px; --r-lg: 12px; --r-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(20, 24, 28, 0.05);
+  --shadow-md: 0 6px 22px rgba(20, 24, 28, 0.10);
+  --chip-edge: rgba(0, 0, 0, 0.16);
+  --focus-ring: 0 0 0 3px rgba(27, 74, 122, 0.45);
+  --dur: 140ms;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #101317;
-    --ink: #e8eaed;
-    --ink-2: #b3b9c0;
+    --paper: #0f1216;
+    --surface: #161a20;
+    --surface-2: #1b2027;
+    --ink: #e9ebee;
+    --ink-2: #b4bac1;
     --ink-3: #858c94;
-    --rule: #262b31;
-    --navy: #7fa6d4;
-    --navy-soft: #1a2230;
+    --rule: #272c33;
+    --rule-strong: #363d45;
+    --brand: #86aadd;
+    --brand-strong: #a9c6ef;
+    --brand-soft: #18222f;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 6px 22px rgba(0, 0, 0, 0.5);
+    --chip-edge: rgba(255, 255, 255, 0.16);
+    --focus-ring: 0 0 0 3px rgba(134, 170, 221, 0.5);
   }
 }
+/* Explicit theme override wins over the media default in both directions. */
+:root[data-theme="dark"] {
+  --paper: #0f1216; --surface: #161a20; --surface-2: #1b2027;
+  --ink: #e9ebee; --ink-2: #b4bac1; --ink-3: #858c94;
+  --rule: #272c33; --rule-strong: #363d45;
+  --brand: #86aadd; --brand-strong: #a9c6ef; --brand-soft: #18222f;
+  --chip-edge: rgba(255, 255, 255, 0.16);
+  --focus-ring: 0 0 0 3px rgba(134, 170, 221, 0.5);
+}
+:root[data-theme="light"] {
+  --paper: #fbfbf9; --surface: #ffffff; --surface-2: #f3f3ee;
+  --ink: #1b1e23; --ink-2: #4d545c; --ink-3: #676d75;
+  --rule: #e6e5df; --rule-strong: #d3d2c8;
+  --brand: #1b4a7a; --brand-strong: #0f3760; --brand-soft: #eaf0f7;
+  --chip-edge: rgba(0, 0, 0, 0.16);
+  --focus-ring: 0 0 0 3px rgba(27, 74, 122, 0.45);
+}
+
+/* ---- Reset & base -------------------------------------------------------- */
 * { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: var(--fs-base) / var(--lh-base) var(--font-sans);
+  font-feature-settings: "kern", "liga", "tnum";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
 }
-a { color: var(--navy); text-decoration: none; }
-a:hover { text-decoration: underline; }
-.wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 2px; }
+:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--r-sm); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: var(--sp-6) 0; }
+::selection { background: var(--brand-soft); }
 
-header.top {
-  border-bottom: 1px solid var(--rule);
-  padding: 14px 0;
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 var(--sp-5); }
+.skip-link {
+  position: absolute; left: -9999px; top: 0; background: var(--surface);
+  color: var(--ink); padding: var(--sp-2) var(--sp-4); border: 1px solid var(--rule);
+  border-radius: var(--r-sm); z-index: 10;
 }
-header.top .wrap { display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap; }
-.brand { font-weight: 800; font-size: 20px; letter-spacing: 0.01em; color: var(--ink); }
-.brand .tld { color: var(--navy); font-weight: 600; }
-nav.main { margin-left: auto; display: flex; gap: 16px; font-size: 14px; }
+.skip-link:focus { left: var(--sp-3); top: var(--sp-3); }
 
-.hero { padding: 42px 0 26px; }
-.hero h1 { font-size: 30px; line-height: 1.2; margin: 0 0 10px; max-width: 720px; font-weight: 750; }
-.hero p.dek { color: var(--ink-2); max-width: 680px; margin: 0 0 6px; }
-.hero p.fine { color: var(--ink-3); font-size: 13px; }
+/* ---- Header / nav -------------------------------------------------------- */
+header.top { border-bottom: 1px solid var(--rule); padding: var(--sp-3) 0; }
+header.top .wrap { display: flex; align-items: baseline; gap: var(--sp-4); flex-wrap: wrap; }
+.brand { font-family: var(--font-serif); font-weight: 700; font-size: var(--fs-lg); letter-spacing: 0.01em; color: var(--ink); }
+.brand .tld { color: var(--brand); font-weight: 600; }
+nav.main { margin-left: auto; display: flex; gap: var(--sp-4); font-size: var(--fs-sm); }
+nav.main a { color: var(--ink-2); }
+nav.main a:hover, nav.main a[aria-current="page"] { color: var(--ink); }
+nav.main a[aria-current="page"] { font-weight: 700; }
 
+/* ---- Hero & headings ----------------------------------------------------- */
+.hero { padding: var(--sp-7) 0 var(--sp-5); }
+.hero h1 {
+  font-family: var(--font-serif); font-weight: 650; font-size: var(--fs-3xl);
+  line-height: var(--lh-tight); margin: 0 0 var(--sp-3); max-width: 20ch;
+  letter-spacing: -0.01em;
+}
+.hero p.dek { color: var(--ink-2); font-size: var(--fs-md); max-width: 68ch; margin: 0 0 var(--sp-2); }
+.hero p.fine { color: var(--ink-3); font-size: var(--fs-sm); max-width: 72ch; }
+
+section.block { padding: var(--sp-2) 0 var(--sp-5); }
+h2.sec {
+  font-family: var(--font-serif); font-weight: 600; font-size: var(--fs-xl);
+  line-height: var(--lh-snug); margin: var(--sp-6) 0 var(--sp-3);
+  padding-bottom: var(--sp-2); border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: var(--fs-md); margin: var(--sp-5) 0 var(--sp-2); }
+p { margin: 0 0 var(--sp-3); }
+
+/* ---- Grade chips --------------------------------------------------------- */
 .grade {
   display: inline-flex; align-items: center; justify-content: center;
-  min-width: 44px; height: 30px; padding: 0 8px;
-  border-radius: 6px; font-weight: 800; font-size: 15px; color: #fff;
-  font-family: var(--mono);
+  min-width: 44px; height: 30px; padding: 0 var(--sp-2);
+  border-radius: var(--r-sm); font-family: var(--font-mono); font-weight: 700;
+  font-size: 15px; color: #fff; letter-spacing: 0.02em;
+  border: 1px solid var(--chip-edge); /* delimits the chip against any page bg */
 }
-.grade.gA { background: var(--a); }
-.grade.gB { background: var(--b); }
-.grade.gC { background: var(--c); }
-.grade.gD { background: var(--d); }
-.grade.gF { background: var(--f); }
-.grade.gNR { background: var(--nr); font-size: 12px; }
-.grade.big { min-width: 72px; height: 52px; font-size: 28px; border-radius: 10px; }
+.grade.gA { background: var(--g-a); }
+.grade.gB { background: var(--g-b); }
+.grade.gC { background: var(--g-c); }
+.grade.gD { background: var(--g-d); }
+.grade.gF { background: var(--g-f); }
+.grade.gNR { background: var(--g-nr); font-size: 12px; letter-spacing: 0.06em; }
+.grade.big { min-width: 76px; height: 56px; font-size: 30px; border-radius: var(--r-md); }
 
+/* ---- Badges & pills ------------------------------------------------------ */
 .badge {
-  display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: 0.04em;
-  text-transform: uppercase; color: var(--navy); background: var(--navy-soft);
-  border-radius: 4px; padding: 2px 8px;
+  display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--brand); background: var(--brand-soft);
+  border: 1px solid transparent; border-radius: var(--r-sm); padding: 2px var(--sp-2);
+  white-space: nowrap;
 }
-.prov { color: var(--c); font-size: 12px; font-weight: 700; }
-.cov { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+.prov { color: var(--warn); font-size: var(--fs-xs); font-weight: 700; }
+.cov { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--ink-3); }
+.pill-row { display: flex; gap: var(--sp-2); flex-wrap: wrap; align-items: center; margin: var(--sp-2) 0; }
 
-table.grades { width: 100%; border-collapse: collapse; margin: 8px 0 30px; }
+/* ---- Tables -------------------------------------------------------------- */
+table.grades { width: 100%; border-collapse: collapse; margin: var(--sp-2) 0 var(--sp-6); }
 table.grades th {
   text-align: left; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em;
-  color: var(--ink-3); padding: 8px 10px; border-bottom: 2px solid var(--ink);
+  color: var(--ink-3); font-weight: 700; padding: var(--sp-2) var(--sp-3);
+  border-bottom: 2px solid var(--ink);
 }
-table.grades td { padding: 11px 10px; border-bottom: 1px solid var(--rule); vertical-align: middle; }
-table.grades tr.click { cursor: pointer; }
-table.grades tr.click:hover { background: var(--navy-soft); }
-.sym { font-weight: 750; }
-.addr { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
-.muted { color: var(--ink-3); font-size: 13px; }
+table.grades td { padding: var(--sp-3); border-bottom: 1px solid var(--rule); vertical-align: middle; }
+table.grades tr.click { cursor: pointer; transition: background var(--dur) ease; }
+table.grades tr.click:hover, table.grades tr.click:focus-within { background: var(--surface-2); }
+.sym { font-weight: 700; }
+.addr { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--ink-3); }
+.muted { color: var(--ink-3); font-size: var(--fs-sm); }
+.right { text-align: right; }
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 
-section.block { padding: 8px 0 26px; }
-h2.sec { font-size: 20px; margin: 26px 0 10px; }
-h3 { font-size: 16px; margin: 20px 0 8px; }
-
+/* ---- Cards --------------------------------------------------------------- */
 .card {
-  border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; margin: 12px 0;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-lg);
+  padding: var(--sp-4) var(--sp-5); margin: var(--sp-3) 0; box-shadow: var(--shadow-sm);
 }
 .card h3 { margin-top: 0; }
 
-.dim-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--rule); }
-.dim-name { flex: 0 0 240px; font-weight: 600; font-size: 14px; }
-.dim-score { font-family: var(--mono); font-size: 13px; flex: 0 0 60px; text-align: right; }
-.bar { flex: 1; height: 8px; background: var(--rule); border-radius: 4px; overflow: hidden; }
-.bar i { display: block; height: 100%; background: var(--navy); border-radius: 4px; }
+/* ---- Dimension rows ------------------------------------------------------ */
+.dim-row { display: flex; align-items: center; gap: var(--sp-3); padding: var(--sp-2) 0; border-bottom: 1px solid var(--rule); }
+.dim-name { flex: 0 0 240px; font-weight: 600; font-size: var(--fs-sm); }
+.dim-score { font-family: var(--font-mono); font-size: var(--fs-sm); flex: 0 0 84px; text-align: right; color: var(--ink-2); }
+.bar { flex: 1; height: 8px; background: var(--rule); border-radius: var(--r-pill); overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--brand); border-radius: var(--r-pill); transition: width var(--dur) ease; }
 
-.verdict { font-family: var(--mono); font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 4px; color: #fff; }
-.vVERIFIED { background: var(--a); }
-.vFALSE { background: var(--f); }
-.vUNVERIFIABLE { background: var(--nr); }
-.vFORWARD_LOOKING { background: var(--b); }
-.vSTALE { background: var(--c); }
+/* ---- Verdict tags (claims vs chain) -------------------------------------- */
+.verdict {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.03em;
+  padding: 2px 7px; border-radius: var(--r-sm); color: #fff; border: 1px solid var(--chip-edge);
+}
+.vVERIFIED { background: var(--g-a); }
+.vFALSE { background: var(--g-f); }
+.vUNVERIFIABLE { background: var(--g-nr); }
+.vFORWARD_LOOKING { background: var(--g-b); }
+.vSTALE { background: var(--g-c); }
 
-.finding { padding: 8px 12px; border-left: 3px solid var(--rule); margin: 8px 0; font-size: 14px; }
-.finding.warn { border-color: var(--c); }
-.finding.crit { border-color: var(--f); }
-.finding .ev { display: block; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); margin-top: 3px; word-break: break-all; }
+/* ---- Findings ------------------------------------------------------------ */
+.finding {
+  padding: var(--sp-2) var(--sp-3); border-left: 3px solid var(--rule-strong);
+  background: var(--surface-2); border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  margin: var(--sp-2) 0; font-size: var(--fs-sm);
+}
+.finding.warn { border-left-color: var(--warn); }
+.finding.crit { border-left-color: var(--crit); }
+.finding .ev { display: block; font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-3); margin-top: var(--sp-1); word-break: break-all; }
 
+/* ---- Notices (COI / review / profile / NS) ------------------------------- */
 .notice {
-  border: 1px solid var(--rule); border-left: 4px solid var(--navy);
-  background: var(--navy-soft); border-radius: 0 8px 8px 0;
-  padding: 12px 16px; margin: 14px 0; font-size: 14px;
+  border: 1px solid var(--rule); border-left: 4px solid var(--brand);
+  background: var(--brand-soft); border-radius: 0 var(--r-md) var(--r-md) 0;
+  padding: var(--sp-3) var(--sp-4); margin: var(--sp-4) 0; font-size: var(--fs-sm);
 }
-.notice.coi { border-left-color: var(--c); }
+.notice.coi { border-left-color: var(--warn); }
 
+/* ---- Footer & code ------------------------------------------------------- */
 footer.bottom {
-  border-top: 1px solid var(--rule); margin-top: 40px; padding: 22px 0 40px;
-  color: var(--ink-3); font-size: 13px;
+  border-top: 1px solid var(--rule); margin-top: var(--sp-7); padding: var(--sp-5) 0 var(--sp-7);
+  color: var(--ink-3); font-size: var(--fs-sm);
 }
-footer.bottom p { max-width: 760px; }
-code { font-family: var(--mono); font-size: 0.9em; background: var(--navy-soft); padding: 1px 5px; border-radius: 4px; }
-.pill-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 6px 0 2px; }
-ul.clean { padding-left: 20px; }
-ul.clean li { margin-bottom: 6px; }
-.right { text-align: right; }
+footer.bottom p { max-width: 76ch; }
+code { font-family: var(--font-mono); font-size: 0.9em; background: var(--surface-2); border: 1px solid var(--rule); padding: 1px 5px; border-radius: var(--r-sm); }
+pre { background: var(--surface-2); border: 1px solid var(--rule); border-radius: var(--r-md); padding: var(--sp-3) var(--sp-4); overflow-x: auto; }
+pre code { background: none; border: 0; padding: 0; }
+
+/* ---- Lists & misc utilities --------------------------------------------- */
+ul.clean { padding-left: var(--sp-5); }
+ul.clean li { margin-bottom: var(--sp-2); }
+.tbl { width: 100%; border-collapse: collapse; margin: var(--sp-3) 0; font-size: var(--fs-sm); display: block; overflow-x: auto; }
+.tbl th, .tbl td { text-align: left; padding: var(--sp-2) var(--sp-3); border-bottom: 1px solid var(--rule); vertical-align: top; }
+.tbl th { color: var(--ink-3); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* ---- Styleguide-only helpers (used by styleguide.html; class-based so the
+   page needs no inline styles, which the CSP forbids) ---------------------- */
+.sg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--sp-3); margin: var(--sp-3) 0; }
+.sg-swatch { border: 1px solid var(--rule); border-radius: var(--r-md); overflow: hidden; font-size: var(--fs-xs); }
+.sg-swatch .chip { height: 56px; }
+.sg-swatch .lbl { padding: var(--sp-2); background: var(--surface); }
+.sg-swatch .lbl b { display: block; font-family: var(--font-mono); color: var(--ink); }
+.sg-swatch .lbl span { color: var(--ink-3); }
+.sw-paper { background: var(--paper); } .sw-surface { background: var(--surface); }
+.sw-surface-2 { background: var(--surface-2); } .sw-ink { background: var(--ink); }
+.sw-ink-2 { background: var(--ink-2); } .sw-ink-3 { background: var(--ink-3); }
+.sw-brand { background: var(--brand); } .sw-rule { background: var(--rule); }
+.sw-a { background: var(--g-a); } .sw-b { background: var(--g-b); } .sw-c { background: var(--g-c); }
+.sw-d { background: var(--g-d); } .sw-f { background: var(--g-f); } .sw-nr { background: var(--g-nr); }
+.sg-type-row { display: flex; align-items: baseline; gap: var(--sp-4); padding: var(--sp-2) 0; border-bottom: 1px solid var(--rule); }
+.sg-type-row .meta { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--ink-3); flex: 0 0 130px; }
+.sg-serif { font-family: var(--font-serif); }
+.sg-note { color: var(--ink-3); font-size: var(--fs-sm); margin-top: var(--sp-2); }
+/* type-scale demo sizes (styleguide only) */
+.t-3xl { font-size: var(--fs-3xl); line-height: var(--lh-tight); }
+.t-xl { font-size: var(--fs-xl); }
+.t-md { font-size: var(--fs-md); }
+.t-base { font-size: var(--fs-base); }
+.t-sm { font-size: var(--fs-sm); }
+/* dimension-bar demo fills (styleguide only; live bars are sized via the DOM) */
+.sg-w1 i { width: 65%; }
+.sg-w2 i { width: 50%; }
+
+/* ---- Responsive ---------------------------------------------------------- */
+@media (max-width: 640px) {
+  :root { --fs-3xl: 30px; --fs-2xl: 26px; --fs-xl: 22px; }
+  .wrap { padding: 0 var(--sp-4); }
+  header.top .wrap { gap: var(--sp-3); }
+  nav.main { gap: var(--sp-3); width: 100%; flex-wrap: wrap; }
+  .dim-name { flex-basis: 130px; }
+  table.grades th:nth-child(3), table.grades td:nth-child(3) { display: none; } /* hide "Trust model" col on narrow */
+}
+
+/* ---- Motion & print ------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+@media print {
+  nav.main, .skip-link { display: none; }
+  body { background: #fff; color: #000; }
+  .card, pre { box-shadow: none; }
+}
