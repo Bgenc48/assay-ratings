@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Design system — Assay</title>
+<meta name="description" content="The Assay design system: colour tokens, type scale, and the components used across the site. A reference, not a public content page.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Assay<span class="tld">ratings</span></a>
+    <nav class="main" aria-label="Primary">
+      <a href="changes.html">Changes</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="api.html">API</a>
+      <a href="policies.html">Policies</a>
+      <a href="https://github.com/Bgenc48/assay-ratings" rel="noopener">Source &amp; data</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap" id="main">
+  <section class="hero">
+    <h1>Design system</h1>
+    <p class="dek">The tokens and components the Assay site is built from. Editorial and restrained: this is a ratings agency, not a trading app. Everything here is themed from CSS custom properties in <code>css/site.css</code> and adapts to light and dark automatically.</p>
+    <p class="fine">Reference page — not linked from the site nav and excluded from the sitemap. The grade palette is WCAG-AA for white text in both themes, and grades always carry their letter so colour is never the only signal.</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Colour tokens</h2>
+    <h3>Surfaces &amp; ink</h3>
+    <div class="sg-grid">
+      <div class="sg-swatch"><div class="chip sw-paper"></div><div class="lbl"><b>--paper</b><span>page background</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-surface"></div><div class="lbl"><b>--surface</b><span>cards / raised</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-surface-2"></div><div class="lbl"><b>--surface-2</b><span>subtle fill</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-ink"></div><div class="lbl"><b>--ink</b><span>primary text</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-ink-2"></div><div class="lbl"><b>--ink-2</b><span>secondary text</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-ink-3"></div><div class="lbl"><b>--ink-3</b><span>muted (AA)</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-brand"></div><div class="lbl"><b>--brand</b><span>links / accent</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-rule"></div><div class="lbl"><b>--rule</b><span>hairlines</span></div></div>
+    </div>
+    <h3>Grade scale</h3>
+    <div class="sg-grid">
+      <div class="sg-swatch"><div class="chip sw-a"></div><div class="lbl"><b>--g-a</b><span>A band</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-b"></div><div class="lbl"><b>--g-b</b><span>B band</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-c"></div><div class="lbl"><b>--g-c</b><span>C band</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-d"></div><div class="lbl"><b>--g-d</b><span>D band</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-f"></div><div class="lbl"><b>--g-f</b><span>F band</span></div></div>
+      <div class="sg-swatch"><div class="chip sw-nr"></div><div class="lbl"><b>--g-nr</b><span>N/R · UR · NS · COI</span></div></div>
+    </div>
+    <p class="sg-note">A good→bad ramp (green → teal → amber → orange → red) chosen so it stays distinguishable for common colour-vision deficiencies — the hues also vary in lightness, and every grade is labelled.</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Type scale</h2>
+    <div class="sg-type-row"><span class="meta">serif · 3xl</span><span class="sg-serif t-3xl">Editorial display</span></div>
+    <div class="sg-type-row"><span class="meta">serif · xl / h2</span><span class="sg-serif t-xl">Section heading</span></div>
+    <div class="sg-type-row"><span class="meta">sans · md</span><span class="t-md">Lead paragraph / deck text</span></div>
+    <div class="sg-type-row"><span class="meta">sans · base</span><span class="t-base">Body copy — the default reading size.</span></div>
+    <div class="sg-type-row"><span class="meta">sans · sm</span><span class="muted t-sm">Secondary / muted metadata</span></div>
+    <div class="sg-type-row"><span class="meta">mono · sm</span><span class="addr">0x4200000000000000000000000000000000000006</span></div>
+    <p class="sg-note">Serif (system Iowan/Palatino/Georgia stack) for headings signals editorial authority; system sans for body; monospace for addresses, grades, and figures. No web fonts are fetched — CSP forbids external origins.</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Grade chips</h2>
+    <div class="pill-row">
+      <span class="grade gA">A</span><span class="grade gB">B</span><span class="grade gC">C</span>
+      <span class="grade gD">D</span><span class="grade gF">F</span>
+      <span class="grade gNR">N/R</span><span class="grade gNR">UR</span><span class="grade gNR">NS</span><span class="grade gNR">COI</span>
+    </div>
+    <div class="pill-row">
+      <span class="grade big gA">A+</span><span class="grade big gB">B</span><span class="grade big gD">D</span><span class="grade big gNR">UR</span>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Badges, pills &amp; verdict tags</h2>
+    <div class="pill-row">
+      <span class="badge">Code-Enforced</span><span class="badge">Governance-Gated</span>
+      <span class="badge">Custodial (disclosed)</span><span class="badge">Bridged (canonical)</span>
+      <span class="badge">profile: fiat-stablecoin</span>
+      <span class="prov">Provisional — under 12 months old</span>
+      <span class="cov">coverage: full</span>
+    </div>
+    <div class="pill-row">
+      <span class="verdict vVERIFIED">VERIFIED</span><span class="verdict vFALSE">FALSE</span>
+      <span class="verdict vUNVERIFIABLE">UNVERIFIABLE</span><span class="verdict vFORWARD_LOOKING">FORWARD LOOKING</span>
+      <span class="verdict vSTALE">STALE</span>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Dimensions</h2>
+    <div class="dim-row"><div class="dim-name">Supply Integrity</div><div class="bar sg-w1"><i></i></div><div class="dim-score">65</div></div>
+    <div class="dim-row"><div class="dim-name">Admin Surface</div><div class="bar sg-w2"><i></i></div><div class="dim-score">50</div></div>
+    <div class="dim-row"><div class="dim-name">Redeemability</div><div class="bar"><i></i></div><div class="dim-score">out of scope</div></div>
+    <p class="sg-note">Bars are a single neutral fill on purpose — a per-dimension colour ramp would read as eight sub-grades, which the methodology deliberately does not publish. (Widths are set by the scanner at render time via the DOM, not inline CSS.)</p>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Findings, caps &amp; claims</h2>
+    <div class="finding">A mint path exists but is gated by on-chain governance with a timelock.<span class="ev">evidence: bytecode-scan @ 0x… no-open-mint</span></div>
+    <div class="finding warn">The dominant pool's LP lock status could not be analyzed automatically — insufficient data, reflected in coverage.</div>
+    <div class="finding crit">A mint path exists and its controller is an externally-owned account.<span class="ev">evidence: eth_call @ 0x… owner()=0x…</span></div>
+    <div class="card">
+      <div class="pill-row"><span class="verdict vVERIFIED">VERIFIED</span><strong>Liquidity is burned.</strong></div>
+      <p class="muted">“LP tokens were sent to the dead address.” — project's own material</p>
+      <p class="muted">source: <span class="addr">https://example.org/docs</span></p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Notices</h2>
+    <div class="notice">Standard notice — context or a category-profile note.</div>
+    <div class="notice coi">Under Review / COI / Not-Scored notice — the letter is withheld while the facts publish.</div>
+  </section>
+
+  <section class="block">
+    <h2 class="sec">Table</h2>
+    <table class="grades">
+      <thead><tr><th>Grade</th><th>Token</th><th>Trust model</th><th>Coverage</th><th class="right">Liquidity</th></tr></thead>
+      <tbody>
+        <tr class="click"><td><span class="grade gB">B</span></td><td><span class="sym">DAI</span> <span class="addr">bridged</span></td><td><span class="badge">Bridged (canonical)</span></td><td><span class="cov">●</span></td><td class="right num">$4,200,000</td></tr>
+        <tr class="click"><td><span class="grade gNR">UR</span></td><td><span class="sym">AERO</span></td><td><span class="badge">Discretionary</span></td><td><span class="cov">◐</span></td><td class="right num">$36,700,000</td></tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+
+<footer class="bottom">
+  <div class="wrap">
+    <p>Design-system reference for <a href="index.html">assayratings.com</a>. Tokens and components live in <code>css/site.css</code>; the styleguide is generated from the same classes the live pages use, so it can't drift from what ships.</p>
+  </div>
+</footer>
+</body>
+</html>

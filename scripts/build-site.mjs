@@ -18,9 +18,10 @@ await cp(path.join(ROOT, "data"), path.join(OUT, "data"), { recursive: true });
 // every build so an embedded badge always shows the live grade (the badge
 // license requires exactly that).
 const index = JSON.parse(await readFile(path.join(ROOT, "data", "index.json"), "utf8"));
-const BAND_COLORS = { A: "#2f6b3a", B: "#1f5f7a", C: "#9a6a1a", D: "#a34e1c", F: "#8c2f2f" };
+// Kept in sync with the grade tokens in site/css/site.css (--g-a … --g-f).
+const BAND_COLORS = { A: "#2c6a39", B: "#1f5f7a", C: "#795610", D: "#9c4a1c", F: "#8f2d2d" };
 function badgeSvg(letter) {
-  const color = BAND_COLORS[(letter ?? "")[0]] ?? "#6b7178";
+  const color = BAND_COLORS[(letter ?? "")[0]] ?? "#5f666e";
   const label = letter ?? "N/R";
   const lw = 52; // "Assay" cell
   const vw = Math.max(34, 14 + label.length * 9);
