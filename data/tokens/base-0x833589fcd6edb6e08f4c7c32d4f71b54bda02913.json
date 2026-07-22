@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "USDC",
   "name": "USD Coin",
-  "scanned_at": "2026-07-21T07:43:49.605Z",
+  "scanned_at": "2026-07-22T07:44:10.386Z",
   "methodology_version": "0.2.1",
   "profile": "fiat-stablecoin",
   "grade": {
-    "letter": "B",
-    "overall": 79.2,
-    "provisional": false,
+    "letter": "B-",
+    "overall": 73.2,
+    "provisional": true,
     "badge": "Custodial (disclosed)",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -74,7 +74,7 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -130,7 +130,7 @@
     }
   ],
   "facts": {
-    "totalSupply": "4224258936640766",
+    "totalSupply": "4192122702683654",
     "decimals": 6,
     "owner": "0x3abd6f64a422225e61e435bae41db12096106df7",
     "controlType": "eoa",
@@ -145,13 +145,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1068,
-    "liquidityUsd": 1301499.34,
+    "ageDays": null,
+    "liquidityUsd": 1298758.9099999997,
     "pools": [
       {
         "pair": "0x5D0bC342178C8Fe2c2f9A9fcC9D52555C99936db",
         "dex": "quickswap",
-        "liquidityUsd": 157849.92,
+        "liquidityUsd": 157849.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +160,7 @@
       {
         "pair": "0x0E635F8EeED4F7279d56692D552F034ECE136019",
         "dex": "alien-base",
-        "liquidityUsd": 130840.75,
+        "liquidityUsd": 130921.98,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +169,7 @@
       {
         "pair": "0xa0ab20a64f46b5676fe1542cb87b454e5104007689e0eef4212aa0cbe34933a1",
         "dex": "uniswap",
-        "liquidityUsd": 907391.86,
+        "liquidityUsd": 907400.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,7 +178,7 @@
       {
         "pair": "0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD",
         "dex": "aerodrome",
-        "liquidityUsd": 42576.79,
+        "liquidityUsd": 40502.97,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -187,7 +187,7 @@
       {
         "pair": "0x867dbb1b6417abcb3696d5a5d9cc38cbf9f0f6d17355515fe1c8303e791832c4",
         "dex": "uniswap",
-        "liquidityUsd": 21974.52,
+        "liquidityUsd": 21975.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -196,7 +196,7 @@
       {
         "pair": "0x06959273E9A65433De71F5A452D529544E07dDD0",
         "dex": "uniswap",
-        "liquidityUsd": 13639.44,
+        "liquidityUsd": 12882.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -205,7 +205,7 @@
       {
         "pair": "0x29Ed55B18Af0Add137952CB3E29FB77B32fCE426",
         "dex": "pancakeswap",
-        "liquidityUsd": 15185.37,
+        "liquidityUsd": 15184.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -214,7 +214,7 @@
       {
         "pair": "0xdac0f353d884f6e0db833036558a9f225eda392f4d1ff1a61f13c8f7875186bf",
         "dex": "uniswap",
-        "liquidityUsd": 12040.69,
+        "liquidityUsd": 12040.66,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -1,300 +1,130 @@
 {
-  "generated_at": "2026-07-21T07:51:19.316Z",
+  "generated_at": "2026-07-22T07:51:50.751Z",
   "alerts": [
     {
-      "at": "2026-07-21T07:44:04.595Z",
+      "at": "2026-07-22T07:44:31.021Z",
       "chain": "base",
       "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       "symbol": "USDC",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:44:04.595Z",
-      "chain": "base",
-      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-      "symbol": "USDC",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Custodial control asserted by the reviewed registry without a verified issuer disclosure on record (insufficient data).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:44:04.595Z",
-      "chain": "base",
-      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-      "symbol": "USDC",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: No machine-checkable disclosures exist (claim-light profile).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:44:21.663Z",
-      "chain": "base",
-      "address": "0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed",
-      "symbol": "DEGEN",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade D → B.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:44:21.663Z",
-      "chain": "base",
-      "address": "0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed",
-      "symbol": "DEGEN",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: More than 50% of the LP in pool 0x637ad8d2611d3efE2ef41fdBb40b9F21AbAF9585 is held by a single externally-owned account (0x59ebff2be1e53691e819b953fe215d61135dd05f, 105.72% of LP), which can withdraw it.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:44:34.488Z",
-      "chain": "base",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "symbol": "AERO",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:44:34.488Z",
-      "chain": "base",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "symbol": "AERO",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: No machine-checkable disclosures exist (claim-light profile).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:45:07.260Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
       "severity": "WARN",
       "kind": "downgrade",
-      "text": "Grade B+ → C.",
+      "text": "Grade B → B-.",
       "evidence": null
     },
     {
-      "at": "2026-07-21T07:45:07.260Z",
+      "at": "2026-07-22T07:45:46.020Z",
       "chain": "base",
       "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
       "symbol": "DAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:45:32.342Z",
-      "chain": "base",
-      "address": "0x0b3e328455c4059EEb9e3f84b5543F74E24e7E1b",
-      "symbol": "VIRTUAL",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: More than 50% of the LP in pool 0xE31c372a7Af875b3B5E0F3713B17ef51556da667 is held by a single externally-owned account (0xf1c429b0ce94ef9893ef110d2cc100201dce71c8, 94.84% of LP), which can withdraw it.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:46:30.461Z",
-      "chain": "base",
-      "address": "0xb3b32f9f8827d4634fe7d973fa1034ec9fddb3b3",
-      "symbol": "B3",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: More than 50% of the LP in pool 0x4C1453376952F899365d295c716aaA1010B8FEaa is held by a single externally-owned account (0x77d56dceffad9befbc8ad2cd7210b15ef62d131d, 99.89% of LP), which can withdraw it.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:46:44.241Z",
-      "chain": "base",
-      "address": "0x853a7c99227499dba9db8c3a02aa691afdebf841",
-      "symbol": "PLAY",
       "severity": "INFO",
       "kind": "upgrade",
-      "text": "Grade D → B+.",
+      "text": "Grade C → B+.",
       "evidence": null
     },
     {
-      "at": "2026-07-21T07:46:44.241Z",
+      "at": "2026-07-22T07:45:46.020Z",
       "chain": "base",
-      "address": "0x853a7c99227499dba9db8c3a02aa691afdebf841",
-      "symbol": "PLAY",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: More than 50% of the LP in pool 0x42781EC558F9fb95f5E080572bCD0A37523B55e2 is held by a single externally-owned account (0x5f425284e0f8cf372b6342d3984aa2a8b1d3196d, 99.47% of LP), which can withdraw it.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:47:34.870Z",
-      "chain": "base",
-      "address": "0x752c5a95d202972e124390f30a50154409d3c858",
-      "symbol": "OFC",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade D → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:47:34.870Z",
-      "chain": "base",
-      "address": "0x752c5a95d202972e124390f30a50154409d3c858",
-      "symbol": "OFC",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: More than 50% of the LP in pool 0x66E1031dB440890a824F0dB80489Be979BD16a86 is held by a single externally-owned account (0x05a2c175ba2d4c53bf2eb463e0101fdd0ebda44b, 258.09% of LP), which can withdraw it.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:47:49.709Z",
-      "chain": "base",
-      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
-      "symbol": "SHIB",
-      "severity": "CRITICAL",
-      "kind": "liquidity-security-drop",
-      "text": "Burned/locked share of the dominant pool fell 100% → 0%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:48:27.964Z",
-      "chain": "base",
-      "address": "0x8bfac1b375bf2894d6f12fb2eb48b1c1a7916789",
-      "symbol": "MEY",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade D → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:48:27.964Z",
-      "chain": "base",
-      "address": "0x8bfac1b375bf2894d6f12fb2eb48b1c1a7916789",
-      "symbol": "MEY",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: More than 50% of the LP in pool 0x8cd2D9238574105eb25a1b0A00e9B33Eb15Cc165 is held by a single externally-owned account (0x22a3de4a53ad2e984aaf446365e0fd976d8704f3, 84150.43% of LP), which can withdraw it.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:48:52.650Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:48:52.650Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:49:10.720Z",
-      "chain": "base",
-      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
-      "symbol": "DRV",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:49:10.720Z",
-      "chain": "base",
-      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
-      "symbol": "DRV",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: More than 50% of the LP in pool 0xaC4e562d7C6108f971321F14238E24AE2cC398ac is held by a single externally-owned account (0xc5785b0ce1095213465a4a4f28c19269cb4b35ec, 83.53% of LP), which can withdraw it.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:49:10.720Z",
-      "chain": "base",
-      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
-      "symbol": "DRV",
+      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+      "symbol": "DAI",
       "severity": "INFO",
       "kind": "cap-cleared",
       "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
       "evidence": null
     },
     {
-      "at": "2026-07-21T07:49:14.073Z",
+      "at": "2026-07-22T07:49:35.285Z",
       "chain": "base",
-      "address": "0xc4aa3dc36ba618eaa0d76a89750430181cfc7b07",
-      "symbol": "OpenAI",
+      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+      "symbol": "DRV",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state C → UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-22T07:49:35.285Z",
+      "chain": "base",
+      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+      "symbol": "DRV",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-22T07:49:42.327Z",
+      "chain": "base",
+      "address": "0xed327e881bdde8a134e6fddcf4a64881f86a3b07",
+      "symbol": "Claude",
       "severity": "INFO",
       "kind": "upgrade",
       "text": "Grade C → B-.",
       "evidence": null
     },
     {
-      "at": "2026-07-21T07:49:14.073Z",
+      "at": "2026-07-22T07:49:42.327Z",
       "chain": "base",
-      "address": "0xc4aa3dc36ba618eaa0d76a89750430181cfc7b07",
-      "symbol": "OpenAI",
+      "address": "0xed327e881bdde8a134e6fddcf4a64881f86a3b07",
+      "symbol": "Claude",
       "severity": "INFO",
       "kind": "cap-cleared",
       "text": "Hard cap cleared: Source code is not verified on a public explorer.",
       "evidence": null
     },
     {
-      "at": "2026-07-21T07:49:25.022Z",
-      "chain": "base",
-      "address": "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
-      "symbol": "MIGGLES",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade D → B+.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:49:25.022Z",
-      "chain": "base",
-      "address": "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
-      "symbol": "MIGGLES",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: More than 50% of the LP in pool 0x5C892D75021F54Bd562631ba3B69EDb81ad47269 is held by a single externally-owned account (0x72ac0dac4784d1b0f6f15ceb4ee918c40aada55b, 99.99% of LP), which can withdraw it.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:49:28.457Z",
+      "at": "2026-07-22T07:49:48.918Z",
       "chain": "base",
       "address": "0x00000000a22c618fd6b4d7e9a335c4b96b189a38",
       "symbol": "TOWNS",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-21T07:51:01.126Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000008490555611bbad993f",
-      "symbol": "ARAIL",
       "severity": "WARN",
       "kind": "cap-triggered",
       "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
       "evidence": null
     },
     {
-      "at": "2026-07-21T07:51:09.757Z",
+      "at": "2026-07-22T07:49:52.210Z",
+      "chain": "base",
+      "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
+      "symbol": "CZ",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-22T07:49:52.210Z",
+      "chain": "base",
+      "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
+      "symbol": "CZ",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-22T07:50:14.230Z",
+      "chain": "base",
+      "address": "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
+      "symbol": "FLOCK",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-22T07:51:11.836Z",
       "chain": "base",
       "address": "0x33417dfda9845853266b3ba4686a397aa0ae8b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-22T07:51:23.866Z",
+      "chain": "base",
+      "address": "0xfd15909c86bcd27f195b0b9f9a791c17eb87eb07",
       "symbol": "OpenAI",
       "severity": "INFO",
       "kind": "listed",
@@ -302,23 +132,53 @@
       "evidence": null
     },
     {
-      "at": "2026-07-21T07:51:14.353Z",
+      "at": "2026-07-22T07:51:28.711Z",
       "chain": "base",
-      "address": "0x4ac963e04eccd97a98bbe6bcb6d3bc2a649e0b07",
-      "symbol": "Claude",
+      "address": "0xab6363da0c80cef3ae105bd6241e30872355d021",
+      "symbol": "ROLL",
       "severity": "INFO",
       "kind": "listed",
-      "text": "Claude is now rated: C.",
+      "text": "ROLL is now rated: B+.",
       "evidence": null
     },
     {
-      "at": "2026-07-21T07:51:18.564Z",
+      "at": "2026-07-22T07:51:35.504Z",
       "chain": "base",
-      "address": "0xb200000000000000000000348a0251f62fc097e8",
-      "symbol": "GJESSE",
+      "address": "0x9b5e262cf9bb04869ab40b19af91d2dc85761722",
+      "symbol": "NOCK",
       "severity": "INFO",
       "kind": "listed",
-      "text": "GJESSE is now rated: C.",
+      "text": "NOCK is now rated: UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-22T07:51:42.742Z",
+      "chain": "base",
+      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
+      "symbol": "cbXRP",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "cbXRP is now rated: UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-22T07:51:47.040Z",
+      "chain": "base",
+      "address": "0x226a2fa2556c48245e57cd1cba4c6c9e67077dd2",
+      "symbol": "BIO",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "BIO is now rated: D.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-22T07:51:49.999Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000152d943e9e1967c8dc",
+      "symbol": "CORE",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "CORE is now rated: C.",
       "evidence": null
     }
   ]

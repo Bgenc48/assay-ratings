@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-21T07:50:41.129Z",
+  "scanned_at": "2026-07-22T07:50:51.627Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x22afefb51a5cad48d56038c8ea041cf513547052665800f3b0b6b548a1d4b1d7"
+            "pair": "0xe22571c97fc03de60bdd1bf44c6baed14b26b543799354b5b25b76c583dce0de"
           }
         }
       ]
@@ -132,21 +132,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 5990864.539999999,
+    "liquidityUsd": 41.09,
     "pools": [
       {
-        "pair": "0x22afefb51a5cad48d56038c8ea041cf513547052665800f3b0b6b548a1d4b1d7",
+        "pair": "0xe42ffb245a7cc87f667fc616b157c489dcd79ce8788af96133779d83c4848a88",
         "dex": "uniswap",
-        "liquidityUsd": 5990825.14,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x08a0ffef7a7f2ae33c273840ae11f5980355ddbcc9b5dbd8a51e99967eb32cf2",
-        "dex": "uniswap",
-        "liquidityUsd": 2.97,
+        "liquidityUsd": 0.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,34 +146,7 @@
       {
         "pair": "0x3c0aae601246b44dbd16d15edae391d248bf014a939a8487b8d1daadc258a9d8",
         "dex": "uniswap",
-        "liquidityUsd": 9.29,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x08a70390aaaad071900d3f5aeee59376805f3d5b93545b61d3f6ec9364a3dbfa",
-        "dex": "uniswap",
-        "liquidityUsd": 0.02,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe42ffb245a7cc87f667fc616b157c489dcd79ce8788af96133779d83c4848a88",
-        "dex": "uniswap",
-        "liquidityUsd": 0.07,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcde8a2d7f5775ba7a2df52f5286400472471ea7e79599d3d7052674805cc2c30",
-        "dex": "uniswap",
-        "liquidityUsd": 11.81,
+        "liquidityUsd": 7.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -191,7 +155,16 @@
       {
         "pair": "0xf29921e42195fb1ef59bf1f837e65539fb4e60d91a5fe22cb8338f9b934a1d83",
         "dex": "uniswap",
-        "liquidityUsd": 0.21,
+        "liquidityUsd": 0.2,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcde8a2d7f5775ba7a2df52f5286400472471ea7e79599d3d7052674805cc2c30",
+        "dex": "uniswap",
+        "liquidityUsd": 11.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -200,14 +173,23 @@
       {
         "pair": "0xe22571c97fc03de60bdd1bf44c6baed14b26b543799354b5b25b76c583dce0de",
         "dex": "uniswap",
-        "liquidityUsd": 15.03,
+        "liquidityUsd": 18.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x08a0ffef7a7f2ae33c273840ae11f5980355ddbcc9b5dbd8a51e99967eb32cf2",
+        "dex": "uniswap",
+        "liquidityUsd": 3.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 93.9,
+    "top10Pct": 93.94,
     "projectLinks": null
   },
   "notes": null,

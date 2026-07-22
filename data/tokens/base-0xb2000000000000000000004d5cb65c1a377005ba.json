@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "HOODFART",
   "name": "HOODFART",
-  "scanned_at": "2026-07-21T07:51:01.877Z",
+  "scanned_at": "2026-07-22T07:51:03.656Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,13 +72,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xb68994b4c7e23919da691dfe3331062f217a24877d69c344b726fafcd23a4078"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -130,18 +127,8 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 66366.42,
-    "pools": [
-      {
-        "pair": "0xb68994b4c7e23919da691dfe3331062f217a24877d69c344b726fafcd23a4078",
-        "dex": "uniswap",
-        "liquidityUsd": 66366.42,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": 1.71,
     "projectLinks": null
   },

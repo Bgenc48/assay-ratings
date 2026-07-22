@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ARAIL",
   "name": "AssetRail",
-  "scanned_at": "2026-07-21T07:50:59.627Z",
+  "scanned_at": "2026-07-22T07:51:01.454Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,10 +72,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x7fb870c57bb606337940d45f7940a69f60608740bc9d9c034cf73579d54fec69"
+          }
         }
       ]
     },
@@ -132,10 +135,27 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 0.08,
+    "pools": [
+      {
+        "pair": "0x7fb870c57bb606337940d45f7940a69f60608740bc9d9c034cf73579d54fec69",
+        "dex": "uniswap",
+        "liquidityUsd": 0.08,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 55.43,
-    "projectLinks": null
+    "projectLinks": {
+      "websites": [
+        "https://assetrail.top"
+      ],
+      "socials": [
+        "https://x.com/AssetRailBase"
+      ]
+    }
   },
   "notes": null,
   "coi": false
