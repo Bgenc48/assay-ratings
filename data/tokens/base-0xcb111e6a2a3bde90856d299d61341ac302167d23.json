@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "cbMEGA",
   "name": "Coinbase Wrapped MEGA",
-  "scanned_at": "2026-07-22T07:49:24.688Z",
+  "scanned_at": "2026-07-23T07:50:38.838Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 42.5%.",
+          "text": "Top-10 unlabeled holders control 49.4%.",
           "evidence": null
         }
       ]
@@ -129,12 +129,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 154998.46000000002,
+    "liquidityUsd": 151880.91,
     "pools": [
       {
         "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83",
         "dex": "aerodrome",
-        "liquidityUsd": 154913.13,
+        "liquidityUsd": 151776.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -143,23 +143,50 @@
       {
         "pair": "0xc47687d4615ce111e72573ebcb8ead9216a9f115c020bece73e31092caef835c",
         "dex": "uniswap",
-        "liquidityUsd": 84.39,
+        "liquidityUsd": 83.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8ce50c3371f898fe8631d1b1aacc7353a78e73074e91fdea15431286978f23b4",
+        "pair": "0x954f12b846FE5e18121Fce77679207d5F145c5bE",
+        "dex": "pancakeswap",
+        "liquidityUsd": 4.42,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xaab1590eea4b68753056827809a821a5b3a2d4e26e62acbe962b7c098b8eacd4",
         "dex": "uniswap",
-        "liquidityUsd": 0.94,
+        "liquidityUsd": 10.42,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9D2139818d9cB7dc067B6128d337AAB1AA460aF6",
+        "dex": "equalizer",
+        "liquidityUsd": 5.56,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x22c8f90a5e1d4f0d968d0a1c44165ac159193dd0ff458d6ceb80e491eb0e889b",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 42.47,
+    "top10Pct": 49.38,
     "projectLinks": {
       "websites": [],
       "socials": []

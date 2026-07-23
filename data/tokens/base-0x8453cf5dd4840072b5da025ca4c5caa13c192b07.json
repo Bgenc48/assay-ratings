@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-22T07:49:22.117Z",
+  "scanned_at": "2026-07-23T07:50:36.442Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x77b96f0a6b9288ab29d8f5e91c9dc2d9d2f6d8cf34a8530d0efd9387e60a031e"
+            "pair": "0x572d97c969bad6fb7ed2aedf2b93e7c493bd124504a3f4125cd180c36f7431a4"
           }
         }
       ]
@@ -102,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.concentration",
       "letter": "C",
       "reason": "Top-10 unlabeled holders exceed 50%."
@@ -130,14 +119,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 0.01,
+    "liquidityUsd": 1895720.45,
     "pools": [
       {
-        "pair": "0x77b96f0a6b9288ab29d8f5e91c9dc2d9d2f6d8cf34a8530d0efd9387e60a031e",
+        "pair": "0x572d97c969bad6fb7ed2aedf2b93e7c493bd124504a3f4125cd180c36f7431a4",
         "dex": "uniswap",
-        "liquidityUsd": 0.01,
+        "liquidityUsd": 1895720.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

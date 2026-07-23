@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-07-22T07:49:52.961Z",
+  "scanned_at": "2026-07-23T07:51:04.279Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 64.2,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -67,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x9e32278730683fb6d350c1e6797bd25be588a3c82ca377ea36e29f229044c683"
+          }
         }
       ]
     },
@@ -80,13 +77,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 90.0% of circulating supply.",
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
           "evidence": null
         }
       ]
@@ -98,16 +95,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -127,11 +114,30 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
-    "top10Pct": 90.01,
+    "liquidityUsd": 4.67,
+    "pools": [
+      {
+        "pair": "0x9e32278730683fb6d350c1e6797bd25be588a3c82ca377ea36e29f229044c683",
+        "dex": "uniswap",
+        "liquidityUsd": 2.36,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3779d82af145ef9d9757d4ad963b66a2788cbc1bdc7e4b3fe28de7e7b4251d7e",
+        "dex": "uniswap",
+        "liquidityUsd": 2.31,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 0.01,
     "projectLinks": null
   },
   "notes": null,

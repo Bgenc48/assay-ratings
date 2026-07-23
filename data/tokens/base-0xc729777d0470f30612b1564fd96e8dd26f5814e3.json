@@ -1,0 +1,214 @@
+{
+  "address": "0xc729777d0470f30612b1564fd96e8dd26f5814e3",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "SAPIEN",
+  "name": "Sapien",
+  "scanned_at": "2026-07-23T07:52:56.529Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B+",
+    "overall": 81.1,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xc729777d0470f30612b1564fd96e8dd26f5814e3",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 46.3%.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 342,
+    "liquidityUsd": 1026173.86,
+    "pools": [
+      {
+        "pair": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862",
+        "dex": "aerodrome",
+        "liquidityUsd": 974464.71,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x682A02D5a32DDb09D1cf4791fB4124E0d4E17b67",
+        "dex": "uniswap",
+        "liquidityUsd": 43402.07,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfa4397a512f0621657234b1374c8d7b879472c500f6f60f015df2c6c7c3273fb",
+        "dex": "uniswap",
+        "liquidityUsd": 8206.52,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xAA03871da2C5e83e620FD44D6d08C9695E6BED91",
+        "dex": "aerodrome",
+        "liquidityUsd": 68.38,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9F12a2CB7ad24E7BeF73174677a171617C83D2EC",
+        "dex": "aerodrome",
+        "liquidityUsd": 30.65,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x225Ca8cF2CE1d643F65722a4C7c747A19442B8Ef",
+        "dex": "pancakeswap",
+        "liquidityUsd": 0.52,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1062E43FEbf02ef5e126e3fD1CecaFDB59755535",
+        "dex": "hydrex",
+        "liquidityUsd": 0.4,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa15C30AFd1bd6d75bc525c1daE2e349534dee442",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.61,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 46.26,
+    "projectLinks": {
+      "websites": [
+        "https://earn.sapien.io/"
+      ],
+      "socials": [
+        "https://x.com/JoinSapien"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

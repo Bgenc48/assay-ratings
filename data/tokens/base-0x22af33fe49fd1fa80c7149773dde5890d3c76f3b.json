@@ -1,0 +1,203 @@
+{
+  "address": "0x22af33fe49fd1fa80c7149773dde5890d3c76f3b",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "BNKR",
+  "name": "BankrCoin",
+  "scanned_at": "2026-07-23T07:53:02.679Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B+",
+    "overall": 85,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0x22af33fe49fd1fa80c7149773dde5890d3c76f3b",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xAEC085E5A5CE8d96A7bDd3eB3A62445d4f6CE703"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "100000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": null,
+    "liquidityUsd": 2332779.2800000003,
+    "pools": [
+      {
+        "pair": "0xAEC085E5A5CE8d96A7bDd3eB3A62445d4f6CE703",
+        "dex": "uniswap",
+        "liquidityUsd": 1939737.15,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xCDD442e2De893c07146B2F1072f8e077559f9aa4",
+        "dex": "aerodrome",
+        "liquidityUsd": 200212.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x680581725840958141Bb328666D8Fc185aC4FA49",
+        "dex": "hydrex",
+        "liquidityUsd": 76651.41,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x33fb6d4d1cf211e02bea728b609bae48ec1f97a827009f200d7e4c7b8ec0a716",
+        "dex": "uniswap",
+        "liquidityUsd": 70305.48,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x87a44b2ff90d59448342017e80c513fd469c9f5edc34db815436a5d984000f52",
+        "dex": "uniswap",
+        "liquidityUsd": 29173.89,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc16e685DE885EFC4A01D159db62bbB613a96ba70",
+        "dex": "uniswap",
+        "liquidityUsd": 4569.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xda753ca6c9611b25e515c3f0f0f9894ab322b64703767ee76b26ce8ff3ba1b00",
+        "dex": "uniswap",
+        "liquidityUsd": 9838.27,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x17c9A4b6CAD28F5074C81B056C32bAD334329f25",
+        "dex": "aerodrome",
+        "liquidityUsd": 2291.06,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 27.8,
+    "projectLinks": {
+      "websites": [
+        "https://bankr.bot",
+        "https://warpcast.com/bankr"
+      ],
+      "socials": [
+        "https://x.com/bankrbot"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

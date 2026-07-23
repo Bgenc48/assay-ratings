@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CORE",
   "name": "CoreBase",
-  "scanned_at": "2026-07-22T07:51:47.791Z",
+  "scanned_at": "2026-07-23T07:52:51.716Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -123,12 +123,30 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 103935.28,
+    "liquidityUsd": 104506.45,
     "pools": [
       {
         "pair": "0x8c7db12b69fa97a1a53fa7154ebbddc3c7ae45da99617ae56b6f63acdbf1d247",
         "dex": "uniswap",
-        "liquidityUsd": 103935.28,
+        "liquidityUsd": 104506.45,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xca38a8d7e7f716d7716f16354b1580f454dfd28c0d60f58a2b792b390ce9810a",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x67b6c404e646ed88339ff48fc57133b52f22496d505625c4a1ed1266a4398a6f",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

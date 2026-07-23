@@ -1,0 +1,158 @@
+{
+  "address": "0xd82e82caa2bf63b9ec72548358bb5a90651c9b07",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-07-23T07:52:54.914Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "C",
+    "overall": 70,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x0f694e945aa8d5e3e740e0c554134145d0178e6762cfb457f20655fe3c687e48"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "100000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [
+      "burnFrom(address,uint256)"
+    ],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": false,
+    "ageDays": null,
+    "liquidityUsd": 866257.68,
+    "pools": [
+      {
+        "pair": "0x0be78447ef21a9c64ecc168fd7454016a03900f8c31d60a3e06257ee10873c15",
+        "dex": "uniswap",
+        "liquidityUsd": 0.05,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x791077b1cff34deef3b6633ceacc0ba27888967d700dbc7d9bc3b8ff33e75b0f",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0f694e945aa8d5e3e740e0c554134145d0178e6762cfb457f20655fe3c687e48",
+        "dex": "uniswap",
+        "liquidityUsd": 866257.63,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": null
+  },
+  "notes": null,
+  "coi": false
+}

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Gitlawb",
   "name": "Gitlawb",
-  "scanned_at": "2026-07-22T07:50:35.542Z",
+  "scanned_at": "2026-07-23T07:51:41.438Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -132,12 +132,21 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 17.64,
+    "liquidityUsd": 14.74,
     "pools": [
       {
         "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716",
         "dex": "uniswap",
-        "liquidityUsd": 17.64,
+        "liquidityUsd": 14.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa1cd143e2e3db034c4915d399ec3b7f0bc4373bbcb3a8d46e01c4596cd9e9ba1",
+        "dex": "uniswap",
+        "liquidityUsd": 0.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CTR",
   "name": "CTR",
-  "scanned_at": "2026-07-22T07:47:07.941Z",
+  "scanned_at": "2026-07-23T07:48:25.502Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 120 days old; trust needs time (Provisional).",
+          "text": "Token is 121 days old; trust needs time (Provisional).",
           "evidence": "0x878a413f286203463f32a1d0de06649b37e334baa552f1c184205883d9c1ad19"
         }
       ]
@@ -108,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "753149257345301000000000000",
+    "totalSupply": "753246380710731000000000000",
     "decimals": 18,
     "owner": "0x8a99057cec644e91ca9ffc8ee5fddabafb929b66",
     "controlType": "safe",
@@ -118,13 +118,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 120,
-    "liquidityUsd": 741099.7999999999,
+    "ageDays": 121,
+    "liquidityUsd": 747855.51,
     "pools": [
       {
         "pair": "0x0ab02e160f0df68dc049B012c514857306960Eae",
         "dex": "aerodrome",
-        "liquidityUsd": 453525.72,
+        "liquidityUsd": 456884.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +133,7 @@
       {
         "pair": "0xf023Ea2DA2321dAb1fB640DBc9AbCdD1b0933A8c",
         "dex": "aerodrome",
-        "liquidityUsd": 265132.03,
+        "liquidityUsd": 266671.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +142,7 @@
       {
         "pair": "0x2b0219c334bf754fb94ce6bf9ca0e680d79b165f5ea77b14f569931178057a1d",
         "dex": "uniswap",
-        "liquidityUsd": 20903.72,
+        "liquidityUsd": 21087.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +151,16 @@
       {
         "pair": "0x4345e201455c27Ae3BEEDe5eb3d0884ec34cF57d",
         "dex": "pancakeswap",
-        "liquidityUsd": 1461.07,
+        "liquidityUsd": 1477.28,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x2675bc448e8fc2e35f77796f96d008a5b0549b6d0bfd0eb4c0e74b87ad7c035b",
+        "dex": "uniswap",
+        "liquidityUsd": 1657.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +169,7 @@
       {
         "pair": "0x0c8d36aed0f697aa6b27130d65aa144a6306f58e0a5f7e81b0045c734c56254d",
         "dex": "uniswap",
-        "liquidityUsd": 73.49,
+        "liquidityUsd": 74.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,23 +178,14 @@
       {
         "pair": "0xc917798b3865f9eecACa99Ecc59BC41aD2375F6E",
         "dex": "pancakeswap",
-        "liquidityUsd": 3.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8f310b1925fb609637ee55695d83fd817f53d65b53314d418592fa7eb7a4228a",
-        "dex": "uniswap",
-        "liquidityUsd": 0.49,
+        "liquidityUsd": 3.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 25.2,
+    "top10Pct": 25.59,
     "projectLinks": {
       "websites": [
         "https://citrea.xyz/"

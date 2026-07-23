@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-22T07:50:23.795Z",
+  "scanned_at": "2026-07-23T07:51:32.618Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -67,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xe75a9ff3bf03098ca2424b4761fa17becca7355e98bd7ae7fd486e4ff6dd8442"
+          }
         }
       ]
     },
@@ -99,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -122,10 +114,20 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 87567.73,
+    "pools": [
+      {
+        "pair": "0xe75a9ff3bf03098ca2424b4761fa17becca7355e98bd7ae7fd486e4ff6dd8442",
+        "dex": "uniswap",
+        "liquidityUsd": 87567.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 0.8,
     "projectLinks": null
   },

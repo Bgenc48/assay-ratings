@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-22T07:50:43.735Z",
+  "scanned_at": "2026-07-23T07:51:48.588Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -89,7 +89,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 90.3% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 90.4% of circulating supply.",
           "evidence": null
         }
       ]
@@ -132,12 +132,21 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 119.97000000000001,
+    "liquidityUsd": 125.67,
     "pools": [
       {
-        "pair": "0xc0a32ce0a2bd93652f31de55bdc82c2148d7c4a60cdd99ec7ba0ecd441e170c2",
+        "pair": "0x34cf58d390dccb6a48dd747db833f97fff4f803aabed32e359c3cc4353152ada",
         "dex": "uniswap",
-        "liquidityUsd": 6.79,
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5baa91ad41a51472304768b8c01d482d2ab7ee295a925d54e62c1dfb53c80690",
+        "dex": "uniswap",
+        "liquidityUsd": 0.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +155,7 @@
       {
         "pair": "0x214ba89cf4ce27618bf3b3c5def5b4cad2bfed47198b49303cecd38c7547ee29",
         "dex": "uniswap",
-        "liquidityUsd": 113.18,
+        "liquidityUsd": 125.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +171,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 90.35,
+    "top10Pct": 90.37,
     "projectLinks": null
   },
   "notes": null,

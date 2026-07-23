@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "TOWNS",
   "name": "Towns",
-  "scanned_at": "2026-07-22T07:49:46.880Z",
+  "scanned_at": "2026-07-23T07:50:57.895Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 42.5,
+    "overall": 44.6,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,13 +77,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 51.0% of circulating supply.",
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 50.0%.",
           "evidence": null
         }
       ]
@@ -99,11 +99,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -126,12 +121,21 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 179197.29,
+    "liquidityUsd": 196574.43,
     "pools": [
       {
         "pair": "0x48Be08d21FCcF3F793783c23C33555F5E0C2B7cd",
         "dex": "aerodrome",
-        "liquidityUsd": 178836.33,
+        "liquidityUsd": 181634.95,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfad2469b92c68806df21ae007513fd10af984c386c097f1ae4e2f0aa3d953e0b",
+        "dex": "uniswap",
+        "liquidityUsd": 14591.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +144,7 @@
       {
         "pair": "0xF099ceFE04717710dd2EC40f2e0c9C06134F5Eb5",
         "dex": "aerodrome",
-        "liquidityUsd": 347.57,
+        "liquidityUsd": 334.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,14 +153,14 @@
       {
         "pair": "0xB4095C89746b824A5d54B8877dD23Ea66E757548",
         "dex": "uniswap",
-        "liquidityUsd": 13.39,
+        "liquidityUsd": 13.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 50.95,
+    "top10Pct": 49.99,
     "projectLinks": {
       "websites": [
         "https://www.towns.com/",

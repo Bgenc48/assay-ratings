@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-07-22T07:51:12.587Z",
+  "scanned_at": "2026-07-23T07:52:19.380Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xbcb4e57223d23b00fd7bcaf9a729dd55f74cae7db33ca313880d613a02ddcee2"
+            "pair": "0x156a21099a1019e1909ec99e14fb5fe2582feb322d42ab6103c4ea4a34714816"
           }
         }
       ]
@@ -120,39 +120,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 759728.85,
+    "liquidityUsd": 3454442.14,
     "pools": [
-      {
-        "pair": "0xbcb4e57223d23b00fd7bcaf9a729dd55f74cae7db33ca313880d613a02ddcee2",
-        "dex": "uniswap",
-        "liquidityUsd": 759686.63,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x156a21099a1019e1909ec99e14fb5fe2582feb322d42ab6103c4ea4a34714816",
         "dex": "uniswap",
-        "liquidityUsd": 19.14,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8e32e6e3753a8e7c4adb56247920cdc7a3661f209009457bc60816c0c5f489e6",
-        "dex": "uniswap",
-        "liquidityUsd": 22.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa9e735693f33b5d8f3798f7947bd705d35262f02748dd7da18bb8079c3a63e07",
-        "dex": "uniswap",
-        "liquidityUsd": 0.57,
+        "liquidityUsd": 3454413.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -161,7 +134,25 @@
       {
         "pair": "0x43d7a2766118b0a0d4d9c40024e0ef46f6c275a68b9c2cc9fdcd49f9b246f471",
         "dex": "uniswap",
-        "liquidityUsd": 0.01,
+        "liquidityUsd": 0.15,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa9e735693f33b5d8f3798f7947bd705d35262f02748dd7da18bb8079c3a63e07",
+        "dex": "uniswap",
+        "liquidityUsd": 0.08,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb949b5a2f0258ddbdec67d90a346e11a5580b0e534bceb0db4585f3c0275518b",
+        "dex": "uniswap",
+        "liquidityUsd": 7.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -170,7 +161,34 @@
       {
         "pair": "0xc61faae2ebb95cf3ac266eeb2367ea3f3484aa82caa233d4de20881dd7c0302d",
         "dex": "uniswap",
-        "liquidityUsd": 0.13,
+        "liquidityUsd": 0.22,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8e32e6e3753a8e7c4adb56247920cdc7a3661f209009457bc60816c0c5f489e6",
+        "dex": "uniswap",
+        "liquidityUsd": 19.56,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xaebe1697a8c9d66f108de1f6304098553bfb4528d1c3102a9bca0b4d79664e4f",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x195ecb1c8b63f98e37afaac30a745820c23487db129013922bdbabb71f1481e1",
+        "dex": "uniswap",
+        "liquidityUsd": 1.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
