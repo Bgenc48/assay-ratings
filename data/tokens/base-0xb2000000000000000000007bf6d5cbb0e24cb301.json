@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BRIAN",
   "name": "Coinbase Man",
-  "scanned_at": "2026-07-23T07:51:27.444Z",
+  "scanned_at": "2026-07-24T07:49:36.099Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -88,16 +88,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": 75,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 10.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -130,12 +123,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 377651.18999999994,
+    "liquidityUsd": 367218.88,
     "pools": [
       {
         "pair": "0x02f924e13a22fcf86551a2228206905bfe4a78b1b2d0158c76dbddb38ea50013",
         "dex": "uniswap",
-        "liquidityUsd": 114956.15,
+        "liquidityUsd": 87744.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +137,7 @@
       {
         "pair": "0xfc9e7c69581885aa0377e417224d2f5756414ec7c9d44e242c56e98c5e52cc78",
         "dex": "uniswap",
-        "liquidityUsd": 80149.58,
+        "liquidityUsd": 80721.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +146,7 @@
       {
         "pair": "0x9c4101ff7e0553841b81e835d358bd88b56019a5c64d26f9731196de40e5b52c",
         "dex": "uniswap",
-        "liquidityUsd": 66923.17,
+        "liquidityUsd": 65277.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +155,7 @@
       {
         "pair": "0x24688a93ccc4f193eb59ceb2b502a30d901ecb0d17a05092bcb19ef5d03e1d74",
         "dex": "uniswap",
-        "liquidityUsd": 55170.91,
+        "liquidityUsd": 51332.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +164,16 @@
       {
         "pair": "0x37d6fc6fecb7ce88bb9b271dbd32425cbd9d3e1b792325030071c4f6ffbe0064",
         "dex": "uniswap",
-        "liquidityUsd": 26802.32,
+        "liquidityUsd": 24516.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xccb50dbf08bc419cb29aab31126faa07be2203c5355debda62bd1163496ace7d",
+        "dex": "uniswap",
+        "liquidityUsd": 30327.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,32 +182,23 @@
       {
         "pair": "0x6119752958ec192a9e19590f1bae63969271d640ac953180dc09bc987a7a1cdc",
         "dex": "uniswap",
-        "liquidityUsd": 25358,
+        "liquidityUsd": 24215.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0d38f396bba8790ae435aa4a50cfcee72c9d169e1ce56d7bf4134d5765087e26",
+        "pair": "0x177e943280929966ca7b5442ae9ed8f07bb574113a4e25c2d55c4101a292690a",
         "dex": "uniswap",
-        "liquidityUsd": 6230.64,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5374294149fb01dac1224022a50f5ea707c1c8a27ff782ede3a092b1e78b51c2",
-        "dex": "uniswap",
-        "liquidityUsd": 2060.42,
+        "liquidityUsd": 3082.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 9.98,
+    "top10Pct": 10.05,
     "projectLinks": {
       "websites": [],
       "socials": []

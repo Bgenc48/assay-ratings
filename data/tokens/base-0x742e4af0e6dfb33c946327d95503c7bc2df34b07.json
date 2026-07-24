@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-23T07:51:48.588Z",
+  "scanned_at": "2026-07-24T07:50:03.015Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -102,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.concentration",
       "letter": "C",
       "reason": "Top-10 unlabeled holders exceed 50%."
@@ -130,23 +119,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 125.67,
+    "liquidityUsd": 125.61,
     "pools": [
-      {
-        "pair": "0x34cf58d390dccb6a48dd747db833f97fff4f803aabed32e359c3cc4353152ada",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x5baa91ad41a51472304768b8c01d482d2ab7ee295a925d54e62c1dfb53c80690",
         "dex": "uniswap",
-        "liquidityUsd": 0.58,
+        "liquidityUsd": 0.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

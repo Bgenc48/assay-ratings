@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "CTR",
   "name": "CTR",
-  "scanned_at": "2026-07-23T07:48:25.502Z",
+  "scanned_at": "2026-07-24T07:46:07.971Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 66.4,
+    "overall": 64.6,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -78,15 +78,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 121 days old; trust needs time (Provisional).",
+          "text": "Token is 122 days old; trust needs time (Provisional).",
           "evidence": "0x878a413f286203463f32a1d0de06649b37e334baa552f1c184205883d9c1ad19"
         }
       ]
     },
     "holderConcentration": {
-      "score": 50,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 35.2%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -108,7 +115,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "753246380710731000000000000",
+    "totalSupply": "752989309115134000000000000",
     "decimals": 18,
     "owner": "0x8a99057cec644e91ca9ffc8ee5fddabafb929b66",
     "controlType": "safe",
@@ -118,13 +125,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 121,
-    "liquidityUsd": 747855.51,
+    "ageDays": 122,
+    "liquidityUsd": 729459.2599999999,
     "pools": [
       {
         "pair": "0x0ab02e160f0df68dc049B012c514857306960Eae",
         "dex": "aerodrome",
-        "liquidityUsd": 456884.32,
+        "liquidityUsd": 446786.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +140,7 @@
       {
         "pair": "0xf023Ea2DA2321dAb1fB640DBc9AbCdD1b0933A8c",
         "dex": "aerodrome",
-        "liquidityUsd": 266671.26,
+        "liquidityUsd": 260590.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +149,16 @@
       {
         "pair": "0x2b0219c334bf754fb94ce6bf9ca0e680d79b165f5ea77b14f569931178057a1d",
         "dex": "uniswap",
-        "liquidityUsd": 21087.86,
+        "liquidityUsd": 20394.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe613d24873a94e161dad7519adcd7e1256aada852faf6f78def730655cb5ce53",
+        "dex": "uniswap",
+        "liquidityUsd": 70.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,16 +167,16 @@
       {
         "pair": "0x4345e201455c27Ae3BEEDe5eb3d0884ec34cF57d",
         "dex": "pancakeswap",
-        "liquidityUsd": 1477.28,
+        "liquidityUsd": 1440.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x2675bc448e8fc2e35f77796f96d008a5b0549b6d0bfd0eb4c0e74b87ad7c035b",
+        "pair": "0x861b493b69ba7df96a598c3eb454b3f9702e4773afa406aed1052822102b0ba7",
         "dex": "uniswap",
-        "liquidityUsd": 1657.32,
+        "liquidityUsd": 100.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +185,7 @@
       {
         "pair": "0x0c8d36aed0f697aa6b27130d65aa144a6306f58e0a5f7e81b0045c734c56254d",
         "dex": "uniswap",
-        "liquidityUsd": 74.15,
+        "liquidityUsd": 73.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,14 +194,14 @@
       {
         "pair": "0xc917798b3865f9eecACa99Ecc59BC41aD2375F6E",
         "dex": "pancakeswap",
-        "liquidityUsd": 3.32,
+        "liquidityUsd": 3.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 25.59,
+    "top10Pct": 35.23,
     "projectLinks": {
       "websites": [
         "https://citrea.xyz/"

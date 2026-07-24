@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-23T07:50:25.096Z",
+  "scanned_at": "2026-07-24T07:48:10.826Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x0f0586bc529a2a477fd99a4f3625d1660af64a0bccf47f6969e8ad20eb7213ce"
+            "pair": "0x770557c50215ca8af3ec2ca7cabcb80ab27938002326a9709284d21366b62b5e"
           }
         }
       ]
@@ -116,12 +116,30 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 3.98,
+    "liquidityUsd": 35.32,
     "pools": [
       {
-        "pair": "0x0f0586bc529a2a477fd99a4f3625d1660af64a0bccf47f6969e8ad20eb7213ce",
+        "pair": "0xe30b17321361d2a91972283ac1608b7792d35173a78a9f823d01528458c662ba",
         "dex": "uniswap",
-        "liquidityUsd": 3.98,
+        "liquidityUsd": 8.38,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x770557c50215ca8af3ec2ca7cabcb80ab27938002326a9709284d21366b62b5e",
+        "dex": "uniswap",
+        "liquidityUsd": 15.87,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe7ce847f084ac50aaed49b53602c9f9ea21e9c894488dbdcfc1fa51195a45d60",
+        "dex": "uniswap",
+        "liquidityUsd": 11.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

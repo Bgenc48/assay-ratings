@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "MEY",
   "name": "Mey Network",
-  "scanned_at": "2026-07-23T07:50:04.820Z",
+  "scanned_at": "2026-07-24T07:47:48.940Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 47.4%.",
+          "text": "Top-10 unlabeled holders control 47.3%.",
           "evidence": null
         }
       ]
@@ -116,12 +116,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 219135.92,
+    "liquidityUsd": 214219.94,
     "pools": [
       {
         "pair": "0x77310Fc8950dd83a035769018f2a05b1E989a52a",
         "dex": "uniswap",
-        "liquidityUsd": 111167.18,
+        "liquidityUsd": 107910.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +130,7 @@
       {
         "pair": "0xAe37030302643Ee121DFA50E76b27b90Fac9e872",
         "dex": "aerodrome",
-        "liquidityUsd": 104047.53,
+        "liquidityUsd": 102471.72,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -139,7 +139,16 @@
       {
         "pair": "0xa3116c935b8fe346a8F42D7eFC4C6e7a52947e48",
         "dex": "aerodrome",
-        "liquidityUsd": 3472.22,
+        "liquidityUsd": 3398.45,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa0aF7695C02bCB9318D2253D039A59382c0C675C",
+        "dex": "uniswap",
+        "liquidityUsd": 122.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +157,7 @@
       {
         "pair": "0x8cd2D9238574105eb25a1b0A00e9B33Eb15Cc165",
         "dex": "uniswap",
-        "liquidityUsd": 324.57,
+        "liquidityUsd": 316.74,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -157,18 +166,9 @@
           "address": "0x22a3de4a53ad2e984aaf446365e0fd976d8704f3",
           "sharePct": 84150.43
         }
-      },
-      {
-        "pair": "0xa0aF7695C02bCB9318D2253D039A59382c0C675C",
-        "dex": "uniswap",
-        "liquidityUsd": 124.42,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 47.35,
+    "top10Pct": 47.34,
     "projectLinks": {
       "websites": [
         "https://mey.network/",

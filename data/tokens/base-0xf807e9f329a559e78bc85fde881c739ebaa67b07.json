@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CZ",
   "name": "The Final Form Bull",
-  "scanned_at": "2026-07-23T07:51:01.734Z",
+  "scanned_at": "2026-07-24T07:48:58.453Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xbd5f09167d55cc1da8fd315916bafb902a93c6814b7d2d04b285c2839805284d"
+          }
         }
       ]
     },
@@ -113,8 +116,18 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 437352.83,
+    "pools": [
+      {
+        "pair": "0xbd5f09167d55cc1da8fd315916bafb902a93c6814b7d2d04b285c2839805284d",
+        "dex": "uniswap",
+        "liquidityUsd": 437352.83,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 0,
     "projectLinks": null
   },
