@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-24T07:50:03.015Z",
+  "scanned_at": "2026-07-25T07:35:50.108Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,13 +61,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x214ba89cf4ce27618bf3b3c5def5b4cad2bfed47198b49303cecd38c7547ee29"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -121,36 +118,8 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 125.61,
-    "pools": [
-      {
-        "pair": "0x5baa91ad41a51472304768b8c01d482d2ab7ee295a925d54e62c1dfb53c80690",
-        "dex": "uniswap",
-        "liquidityUsd": 0.52,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x214ba89cf4ce27618bf3b3c5def5b4cad2bfed47198b49303cecd38c7547ee29",
-        "dex": "uniswap",
-        "liquidityUsd": 125.09,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd217f61f2f8ed9419677c1f881d875abe45da2f13baf6902e4184d787940cf6b",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": 90.37,
     "projectLinks": null
   },

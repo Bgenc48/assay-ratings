@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "VBEEF",
   "name": "Virtual Beef",
-  "scanned_at": "2026-07-24T07:51:30.315Z",
+  "scanned_at": "2026-07-25T07:37:02.060Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -94,11 +95,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -118,14 +114,32 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 139974.26,
+    "liquidityUsd": 57869.01,
     "pools": [
       {
         "pair": "0x669a9a318d547cb609687f50326fbaf1cece9e2ff540e3638fec89a037e8643e",
         "dex": "uniswap",
-        "liquidityUsd": 139962.98,
+        "liquidityUsd": 57837.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc57677cf707ff3bd8017054698225444800ecdfea98f0900018abcc583c3a069",
+        "dex": "uniswap",
+        "liquidityUsd": 10.39,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x482902f2e136e6730b6f0b397fb901859d661f2312f3288d37d278f3d6b706a9",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -134,16 +148,7 @@
       {
         "pair": "0xd0f057cf30f55659e9b6e30521532d459825466f44388b36f83c22660ec8911a",
         "dex": "uniswap",
-        "liquidityUsd": 3.2,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x39635658d30b4c954e03b1ddceab56bc1988fbd8113c370e67b0c0bc3ad0ae96",
-        "dex": "uniswap",
-        "liquidityUsd": 2.21,
+        "liquidityUsd": 12.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -152,14 +157,23 @@
       {
         "pair": "0xa2fe636b1339113120d1f4c3050b0f84b3d45bc6e61f5714ab7da9225e22d37f",
         "dex": "uniswap",
-        "liquidityUsd": 5.87,
+        "liquidityUsd": 5.83,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x39635658d30b4c954e03b1ddceab56bc1988fbd8113c370e67b0c0bc3ad0ae96",
+        "dex": "uniswap",
+        "liquidityUsd": 2.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,

@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "NOCK",
   "name": "Nock",
-  "scanned_at": "2026-07-24T07:50:49.191Z",
+  "scanned_at": "2026-07-25T07:36:27.883Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "UR",
+    "letter": "D",
     "overall": 46.8,
     "provisional": true,
     "badge": "Custodial",
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "12603115827363739013671875",
+    "totalSupply": "12693635684999237060546875",
     "decimals": 16,
     "owner": "0xdc373766c03c645f04695224527ba7ef61fd4288",
     "controlType": "safe",
@@ -113,13 +113,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 217,
-    "liquidityUsd": 1139496.2700000003,
+    "ageDays": 218,
+    "liquidityUsd": 977221.7599999999,
     "pools": [
       {
         "pair": "0x85f1Aa3a70fEdd1C52705c15BAEd143e675CD626",
         "dex": "aerodrome",
-        "liquidityUsd": 791785.1,
+        "liquidityUsd": 789206.4,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -128,16 +128,7 @@
       {
         "pair": "0xd316152008e12105594c32686b9d0401fd2c60ca4805c84f280069d218b771a8",
         "dex": "uniswap",
-        "liquidityUsd": 142672.48,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa7b77a07ec321aaf50bac4126bb85a742c9b87d3ec0665246549f8307385a842",
-        "dex": "uniswap",
-        "liquidityUsd": 158997.97,
+        "liquidityUsd": 140690.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +137,7 @@
       {
         "pair": "0x71A4a6F6ea5C26Ce486B7eD0D8723A897ef5AD9A",
         "dex": "uniswap",
-        "liquidityUsd": 37878.76,
+        "liquidityUsd": 39944.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,16 +146,7 @@
       {
         "pair": "0xd895205b29aed2abe84b75d478fafed933390866948f31d79613e21ed7cfc69e",
         "dex": "uniswap",
-        "liquidityUsd": 2001.21,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcff2a79f04139c9c292fdfc86dd83d0d2223f958d33e89830ae645ec3b904238",
-        "dex": "uniswap",
-        "liquidityUsd": 1076.12,
+        "liquidityUsd": 2025.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,7 +155,7 @@
       {
         "pair": "0x8d15F9d33D9921D02217FB86Fd48Fbcd241b1A2a",
         "dex": "aerodrome",
-        "liquidityUsd": 2288.78,
+        "liquidityUsd": 2245.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -182,14 +164,32 @@
       {
         "pair": "0x467a8846E7B54eAC5D4D1cb2FDC9B8752212Ff0e",
         "dex": "hydrex",
-        "liquidityUsd": 2795.85,
+        "liquidityUsd": 2001.35,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcff2a79f04139c9c292fdfc86dd83d0d2223f958d33e89830ae645ec3b904238",
+        "dex": "uniswap",
+        "liquidityUsd": 1081.23,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xdd516c93efdb712a365bafdb2cb149ce183f6d498ba3d8d14bab5b6707c08d2f",
+        "dex": "uniswap",
+        "liquidityUsd": 25.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 20.32,
+    "top10Pct": 20.16,
     "projectLinks": {
       "websites": [
         "https://nockchain.org",
@@ -204,9 +204,5 @@
     }
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

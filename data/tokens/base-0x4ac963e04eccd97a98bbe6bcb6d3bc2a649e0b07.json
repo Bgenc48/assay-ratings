@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-07-24T07:50:35.673Z",
+  "scanned_at": "2026-07-25T07:36:16.225Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -109,12 +109,21 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 3596928.39,
+    "liquidityUsd": 3632983.8200000003,
     "pools": [
       {
         "pair": "0x156a21099a1019e1909ec99e14fb5fe2582feb322d42ab6103c4ea4a34714816",
         "dex": "uniswap",
-        "liquidityUsd": 3596904.79,
+        "liquidityUsd": 3632960.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x43d7a2766118b0a0d4d9c40024e0ef46f6c275a68b9c2cc9fdcd49f9b246f471",
+        "dex": "uniswap",
+        "liquidityUsd": 0.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -123,23 +132,14 @@
       {
         "pair": "0x8e32e6e3753a8e7c4adb56247920cdc7a3661f209009457bc60816c0c5f489e6",
         "dex": "uniswap",
-        "liquidityUsd": 23.6,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xaebe1697a8c9d66f108de1f6304098553bfb4528d1c3102a9bca0b4d79664e4f",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 23.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 10.97,
+    "top10Pct": 11,
     "projectLinks": null
   },
   "notes": null,

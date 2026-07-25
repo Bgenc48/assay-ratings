@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Robinhood",
   "name": "Robinhood",
-  "scanned_at": "2026-07-24T07:51:27.966Z",
+  "scanned_at": "2026-07-25T07:36:59.929Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -83,9 +83,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -120,56 +127,83 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 6879203.46,
+    "liquidityUsd": 6874591.53,
     "pools": [
-      {
-        "pair": "0xc8352bda4f38b30dae3bfd6ccece84237cf3b7073aab93dcd5942beef78037b7",
-        "dex": "uniswap",
-        "liquidityUsd": 2.78,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5096f633054368eb0a0860a9e7ddeccd8089d8b72720fe733abfda9f8c2c7b6b",
-        "dex": "uniswap",
-        "liquidityUsd": 0.98,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x9ae630975263d3a239b317d4412f32e27c3d20f64885d64fa1d0ccd3c38d8c24",
         "dex": "uniswap",
-        "liquidityUsd": 6879199.55,
+        "liquidityUsd": 6874247.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xae9daa346b432da20e068433c2ffd9482e4115d0bad6c2f3f6488b8490848a2f",
+        "pair": "0x994ef1d521c35471450e7aca65a01294bb733a264e9fe747890e905c9b2ed7bc",
         "dex": "uniswap",
-        "liquidityUsd": 0.15,
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x558fb0c4f3ed8045b4f4a4fa3cb79d3324e2e0f8fcff6f4779cbe223cf414afc",
+        "dex": "uniswap",
+        "liquidityUsd": 45.29,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd5c3fc53c9cb35c5d0764e5362625f717ee61d6303a854f9b69772b42ccf2100",
+        "dex": "uniswap",
+        "liquidityUsd": 282.22,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd00bdf21495a67defb31f26cc86d88f9f889939578de4ef916e67fd474d0fe44",
+        "dex": "uniswap",
+        "liquidityUsd": 0.52,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcce40b7b9065d5f8282b46289cca551d61359237849106cf7f48188cabf59603",
+        "dex": "uniswap",
+        "liquidityUsd": 7.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3705eab294bcb5fd1156cca53926dc2bf861bfd65189c61ff253f3a961e13080",
+        "dex": "uniswap",
+        "liquidityUsd": 7.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc8352bda4f38b30dae3bfd6ccece84237cf3b7073aab93dcd5942beef78037b7",
+        "dex": "uniswap",
+        "liquidityUsd": 0.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
-    "projectLinks": {
-      "websites": [
-        "https://o1.exchange/",
-        "https://docs.o1.exchange/"
-      ],
-      "socials": [
-        "https://x.com/o1_exchange",
-        "https://discord.gg/o1exchange"
-      ]
-    }
+    "top10Pct": 0,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

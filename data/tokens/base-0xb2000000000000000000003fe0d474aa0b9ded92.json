@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "USOH",
   "name": "United States Oil Holdings (USOH)",
-  "scanned_at": "2026-07-24T07:51:34.353Z",
+  "scanned_at": "2026-07-25T07:37:07.458Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -88,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -123,19 +130,19 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 107855.31,
+    "liquidityUsd": 46632.52,
     "pools": [
       {
         "pair": "0x0700512f2d7b998edbf8067ad57492da67f19a3c7964805d692831d09e804f4a",
         "dex": "uniswap",
-        "liquidityUsd": 107855.31,
+        "liquidityUsd": 46632.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BULL",
   "name": "The Base Bull",
-  "scanned_at": "2026-07-24T07:51:32.358Z",
+  "scanned_at": "2026-07-25T07:37:04.158Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,13 +72,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x207abbfd3e97cc5c952c3173600025314213b182e6cffe24512ae2f30fb000f2"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -123,18 +120,8 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 106838.73,
-    "pools": [
-      {
-        "pair": "0x207abbfd3e97cc5c952c3173600025314213b182e6cffe24512ae2f30fb000f2",
-        "dex": "uniswap",
-        "liquidityUsd": 106838.73,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": null,
     "projectLinks": null
   },
