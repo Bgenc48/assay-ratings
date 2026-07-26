@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "GJESSE",
   "name": "Ghibli Jesse",
-  "scanned_at": "2026-07-25T07:36:18.657Z",
+  "scanned_at": "2026-07-26T07:55:13.746Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -77,7 +77,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xf0948708de7f0021352a5132dbc29e7a3a7152b229354cefe8bafcd97385f253"
+            "pair": "0x8375c823fd5676556352fe7e947ec767d2d80bd8d085fcc3b8ae768dd5667568"
           }
         }
       ]
@@ -94,7 +94,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 6.2%.",
+          "text": "Top-10 unlabeled holders control 5.2%.",
           "evidence": null
         }
       ]
@@ -130,48 +130,39 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 19009.74,
+    "liquidityUsd": 410.8399999999999,
     "pools": [
-      {
-        "pair": "0xf0948708de7f0021352a5132dbc29e7a3a7152b229354cefe8bafcd97385f253",
-        "dex": "uniswap",
-        "liquidityUsd": 18463.53,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x8375c823fd5676556352fe7e947ec767d2d80bd8d085fcc3b8ae768dd5667568",
         "dex": "uniswap",
-        "liquidityUsd": 300.49,
+        "liquidityUsd": 284.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4efda034f2bc43543ae58a4e5ea9a525670fc6f79837571184a00df95d23ad8c",
+        "pair": "0xdf1d1c683a42e4f370743496ed02f05aff3196dbf6ebb63b70bbd6089655b459",
         "dex": "uniswap",
-        "liquidityUsd": 76.25,
+        "liquidityUsd": 54.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x1ab3dc617ffd647f359146e4c7ef0f5904a31f3a609f36d86518db9174722ba7",
+        "pair": "0x8ffe98b3333ef3b4ce3b8dad2e606a5e28666947fe88ca4bf1e2c3f4e8f7ae66",
         "dex": "uniswap",
-        "liquidityUsd": 56.28,
+        "liquidityUsd": 50.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb74182e51cb3de68b29f8dc034de7855fc87756bf150ee9dd02f5b25c26e05b4",
+        "pair": "0xa922e5201d24fbf6d370b3593c036c7669ec501503f705d6dfddd1b8812097af",
         "dex": "uniswap",
-        "liquidityUsd": 93.13,
+        "liquidityUsd": 15.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,32 +171,14 @@
       {
         "pair": "0x047f4943a67072605d4fc014e0e4e630c35f434ba28b6072828d8bb7e925a254",
         "dex": "uniswap",
-        "liquidityUsd": 6.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x27c37a964da069bd155d95aeb75582999381e9090c79b17cc67f74673be4b0c7",
-        "dex": "uniswap",
-        "liquidityUsd": 13.65,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x66cf44f560e85b2712e31005d67c68cdf597e3cc2acafca01ff01dc00394819c",
-        "dex": "uniswap",
-        "liquidityUsd": 0.04,
+        "liquidityUsd": 5.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 6.16,
+    "top10Pct": 5.19,
     "projectLinks": {
       "websites": [
         "https://ghibli-jesse.xyz"

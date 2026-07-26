@@ -1,0 +1,156 @@
+{
+  "address": "0x9aaae745cf2830fb8ddc6248b17436dc3a5e701c",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "GOCHU",
+  "name": "Gochujangcoin",
+  "scanned_at": "2026-07-26T07:56:35.346Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "C",
+    "overall": 69.3,
+    "provisional": false,
+    "badge": "Discretionary",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x73ccDEAA8957422C0a64E83f50c8814c7B33FE99"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 88.8% of circulating supply.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "29999999950000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [
+      "pause()",
+      "unpause()",
+      "burnFrom(address,uint256)"
+    ],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 783,
+    "liquidityUsd": 101662.28,
+    "pools": [
+      {
+        "pair": "0x73ccDEAA8957422C0a64E83f50c8814c7B33FE99",
+        "dex": "uniswap",
+        "liquidityUsd": 101662.28,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 88.81,
+    "projectLinks": {
+      "websites": [
+        "https://gochu.org",
+        "https://gochu.org/wp-content/uploads/2024/06/Red-Pepper-Paste-Paper-without-mainnet-20240603.pdf",
+        "https://www.tiktok.com/@gochujangcoin",
+        "https://instagram.com/gochujangcoin",
+        "https://youtube.com/@gochujangcoin",
+        "https://linktr.ee/gochujangcoin"
+      ],
+      "socials": [
+        "https://x.com/gochujangonbase",
+        "https://t.me/gochujangcoin"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

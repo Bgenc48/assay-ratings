@@ -1,0 +1,166 @@
+{
+  "address": "0x7a65e14206ec44b5381d546fb53b39f7c91b3914",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "MTR",
+  "name": "Matter",
+  "scanned_at": "2026-07-26T07:56:18.988Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "UR",
+    "overall": 47.1,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 35,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.unclassified-mint",
+          "severity": "warn",
+          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x93ecc1773d617Eb9e921a9A7e9a13a1C83Ca2A2e"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 25 days old; trust needs time (Provisional).",
+          "evidence": "0xde3c68d0e9783038831906bbf02c96b0e6120d041c54b9fe72321a546e07a37f"
+        }
+      ]
+    },
+    "holderConcentration": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.unclassified-mint",
+      "letter": "C",
+      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "495000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [
+      "mint(address,uint256)"
+    ],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 25,
+    "liquidityUsd": 1134856.51,
+    "pools": [
+      {
+        "pair": "0x93ecc1773d617Eb9e921a9A7e9a13a1C83Ca2A2e",
+        "dex": "aerodrome",
+        "liquidityUsd": 1133261.75,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5e03Cb47130B9a81534Efd935b48399c3b64F1BF",
+        "dex": "aerodrome",
+        "liquidityUsd": 1594.76,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 0,
+    "projectLinks": null
+  },
+  "notes": null,
+  "coi": false,
+  "pendingReview": {
+    "computed": "D"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+}

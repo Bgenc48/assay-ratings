@@ -1,0 +1,146 @@
+{
+  "address": "0xb8147ce9b0dac5f8165785dec6494e57748e4b78",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "DCAI",
+  "name": "DCAI",
+  "scanned_at": "2026-07-26T07:56:22.452Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B",
+    "overall": 75.6,
+    "provisional": false,
+    "badge": "Code-Enforced",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xb8147ce9b0dac5f8165785dec6494e57748e4b78",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x06831088c586D475E51c37c716f8F5c601793eF4"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "100000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 437,
+    "liquidityUsd": 374467.54,
+    "pools": [
+      {
+        "pair": "0x06831088c586D475E51c37c716f8F5c601793eF4",
+        "dex": "uniswap",
+        "liquidityUsd": 374467.54,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 20.25,
+    "projectLinks": {
+      "websites": [
+        "https://www.dcai.ai/",
+        "https://docsend.com/view/mti7vk8sbz83pv8c"
+      ],
+      "socials": [
+        "https://x.com/DCAIbyDynaChain",
+        "https://t.me/DCAI_Official"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

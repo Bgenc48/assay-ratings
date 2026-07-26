@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-25T07:32:12.008Z",
+  "scanned_at": "2026-07-26T07:49:52.530Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xed3504c486a13f17f2d79b8c88113f2da05bd28628316374dc32dbd5bfc447e5"
+          }
         }
       ]
     },
@@ -113,8 +116,36 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 4,
+    "pools": [
+      {
+        "pair": "0xed3504c486a13f17f2d79b8c88113f2da05bd28628316374dc32dbd5bfc447e5",
+        "dex": "uniswap",
+        "liquidityUsd": 3.52,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0680d78aa915a6b823f40ae79513f68749334d795f9299cf5b49bc3be90853e7",
+        "dex": "uniswap",
+        "liquidityUsd": 0.2,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x04673d729ae9e5323ab5964969c409da49d508b2c744deeb3cc999446176a0f5",
+        "dex": "uniswap",
+        "liquidityUsd": 0.28,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 0,
     "projectLinks": null
   },
