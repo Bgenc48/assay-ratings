@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OFC",
   "name": "OFC",
-  "scanned_at": "2026-07-26T07:51:18.014Z",
+  "scanned_at": "2026-07-27T08:52:53.867Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 122 days old; trust needs time (Provisional).",
+          "text": "Token is 123 days old; trust needs time (Provisional).",
           "evidence": "0x2884eb650a86637ba702a63790ca91e0a415271de847e452766d08a1c84375a8"
         }
       ]
@@ -118,13 +118,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 122,
-    "liquidityUsd": 228155.48,
+    "ageDays": 123,
+    "liquidityUsd": 221187.55,
     "pools": [
       {
         "pair": "0x44b5D0d8ce8C643c7e217E92492621C4c0Ae3121",
         "dex": "aerodrome",
-        "liquidityUsd": 203339.11,
+        "liquidityUsd": 196465.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +133,7 @@
       {
         "pair": "0x66E1031dB440890a824F0dB80489Be979BD16a86",
         "dex": "aerodrome",
-        "liquidityUsd": 24350.2,
+        "liquidityUsd": 23791.49,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -144,9 +144,27 @@
         }
       },
       {
+        "pair": "0x93da2a9e6812d01694f6d611244de3a5bf3b3555bdcc0d6ef042e288615bd9f8",
+        "dex": "uniswap",
+        "liquidityUsd": 376.84,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0xf57dbade9f581b2631576fdbfcc08ebac1e9706927414194484df60ce2fce569",
         "dex": "uniswap",
-        "liquidityUsd": 457.67,
+        "liquidityUsd": 454.51,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xac3d2acb831f597cdefc7bd8727f896304211b6403dcfc4e100ee8d3ed951031",
+        "dex": "uniswap",
+        "liquidityUsd": 90.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,14 +173,23 @@
       {
         "pair": "0xa4aa254f455aa856eb8767ee49ea8b437cc9cac1e7697d8d2516a947859caf14",
         "dex": "uniswap",
-        "liquidityUsd": 8.5,
+        "liquidityUsd": 8.53,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xac9b132166293a45b42f6e47cb38f03f2d491506e4a11b48239b6466728bc6fa",
+        "dex": "uniswap",
+        "liquidityUsd": 0.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 25.14,
+    "top10Pct": 25.09,
     "projectLinks": {
       "websites": [
         "https://club.onefootball.com/",

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Gitlawb",
   "name": "Gitlawb",
-  "scanned_at": "2026-07-26T07:54:27.049Z",
+  "scanned_at": "2026-07-27T08:55:21.043Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716"
+          }
         }
       ]
     },
@@ -118,10 +121,43 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 20.66,
+    "pools": [
+      {
+        "pair": "0x8619202bb9de4aebb09c59f1779700ee24b9170c69bd75c1970a1bb8f397d576",
+        "dex": "uniswap",
+        "liquidityUsd": 0.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716",
+        "dex": "uniswap",
+        "liquidityUsd": 18.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x30ed30f4f572461b7202e7369fd08725c5a6ba52aa12ec85cf2f4728ac5821e3",
+        "dex": "uniswap",
+        "liquidityUsd": 2.05,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 99.87,
-    "projectLinks": null
+    "projectLinks": {
+      "websites": [
+        "https://clanker.world/clanker/0xAE45b8faE07fFB2E5f4373bFCB6f4Bd827A45b07"
+      ],
+      "socials": []
+    }
   },
   "notes": null,
   "coi": false

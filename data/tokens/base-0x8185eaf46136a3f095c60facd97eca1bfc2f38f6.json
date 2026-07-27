@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "$OLIVIA2.0",
   "name": "Olivia AI 2.0",
-  "scanned_at": "2026-07-26T07:49:27.776Z",
+  "scanned_at": "2026-07-27T08:51:25.120Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 76 days old; trust needs time (Provisional).",
+          "text": "Token is 77 days old; trust needs time (Provisional).",
           "evidence": "0xc870d7047228d0b34991eff702b6e9d0d4edfe37b3cc688d962a417c7f1f53f4"
         }
       ]
@@ -132,13 +132,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 76,
-    "liquidityUsd": 3633027.48,
+    "ageDays": 77,
+    "liquidityUsd": 3832314.99,
     "pools": [
       {
         "pair": "0x3E117EB37d0dB3016F4f0CC79F6cE7c648d64E00",
         "dex": "uniswap",
-        "liquidityUsd": 3633027.48,
+        "liquidityUsd": 3725027.83,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfc02323e0b5f0a75fbecf3a296317951b3f8581cf031be7731f5bf76f38ddaac",
+        "dex": "uniswap",
+        "liquidityUsd": 107287.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

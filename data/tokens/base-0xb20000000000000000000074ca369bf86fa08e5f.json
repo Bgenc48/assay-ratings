@@ -1,24 +1,30 @@
 {
-  "address": "0x10d991b3f8f04d552597d95de80d86fc29a77b07",
+  "address": "0xb20000000000000000000074ca369bf86fa08e5f",
   "chain": "base",
   "status": "ok",
-  "symbol": "VBEEF",
-  "name": "Virtual Beef",
-  "scanned_at": "2026-07-27T08:56:52.306Z",
+  "symbol": "AiFI",
+  "name": "AiFI",
+  "scanned_at": "2026-07-27T08:57:31.569Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 72.5,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
-    "badge": "Discretionary",
-    "coverage": "partial"
+    "badge": "Code-Enforced",
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -28,14 +34,19 @@
       ]
     },
     "adminSurface": {
-      "score": 40,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.unknown-gate",
-          "severity": "warn",
-          "text": "Privileged capabilities exist; their controller could not be classified.",
-          "evidence": null
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xb20000000000000000000074ca369bf86fa08e5f",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
         }
       ]
     },
@@ -66,7 +77,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x669a9a318d547cb609687f50326fbaf1cece9e2ff540e3638fec89a037e8643e"
+            "pair": "0xfb1c0435880f8a07f835f2bbb595a3c16eb12019f07c535f076922bfaa94a9b3"
           }
         }
       ]
@@ -77,16 +88,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,6 +99,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -109,44 +118,33 @@
     "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
-    "privileged": [
-      "burnFrom(address,uint256)"
-    ],
+    "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 56978.579999999994,
+    "liquidityUsd": 93432.8,
     "pools": [
       {
-        "pair": "0x669a9a318d547cb609687f50326fbaf1cece9e2ff540e3638fec89a037e8643e",
+        "pair": "0xfb1c0435880f8a07f835f2bbb595a3c16eb12019f07c535f076922bfaa94a9b3",
         "dex": "uniswap",
-        "liquidityUsd": 56954.27,
+        "liquidityUsd": 93428.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x482902f2e136e6730b6f0b397fb901859d661f2312f3288d37d278f3d6b706a9",
+        "pair": "0x4932e81b0050e68589edb44cae01859cc95e1a601c2ca6ad717896d2882ccd08",
         "dex": "uniswap",
-        "liquidityUsd": 13.71,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc57677cf707ff3bd8017054698225444800ecdfea98f0900018abcc583c3a069",
-        "dex": "uniswap",
-        "liquidityUsd": 10.6,
+        "liquidityUsd": 4.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

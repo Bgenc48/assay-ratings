@@ -1,15 +1,15 @@
 {
-  "address": "0x10d991b3f8f04d552597d95de80d86fc29a77b07",
+  "address": "0xc0f7800a382afde51e930de4b1f130a1d85eeb07",
   "chain": "base",
   "status": "ok",
-  "symbol": "VBEEF",
-  "name": "Virtual Beef",
-  "scanned_at": "2026-07-27T08:56:52.306Z",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-07-27T08:57:28.968Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 72.5,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,6 +19,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -66,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x669a9a318d547cb609687f50326fbaf1cece9e2ff540e3638fec89a037e8643e"
+            "pair": "0x31d4263a7443d4ae906dfce58b695947b866a3ffa1930ee79c92048a571d0cb8"
           }
         }
       ]
@@ -96,6 +102,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -114,32 +125,23 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 56978.579999999994,
+    "liquidityUsd": 8093875.38,
     "pools": [
       {
-        "pair": "0x669a9a318d547cb609687f50326fbaf1cece9e2ff540e3638fec89a037e8643e",
+        "pair": "0x045fe976990bb953824cdfe3d4cb6b073913eaf89d866019ead305f5982c4a8c",
         "dex": "uniswap",
-        "liquidityUsd": 56954.27,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x482902f2e136e6730b6f0b397fb901859d661f2312f3288d37d278f3d6b706a9",
+        "pair": "0x31d4263a7443d4ae906dfce58b695947b866a3ffa1930ee79c92048a571d0cb8",
         "dex": "uniswap",
-        "liquidityUsd": 13.71,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc57677cf707ff3bd8017054698225444800ecdfea98f0900018abcc583c3a069",
-        "dex": "uniswap",
-        "liquidityUsd": 10.6,
+        "liquidityUsd": 8093875.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
