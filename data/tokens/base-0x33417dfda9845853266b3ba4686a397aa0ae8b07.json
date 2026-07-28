@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-27T08:55:58.675Z",
+  "scanned_at": "2026-07-28T07:56:10.159Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xb081bc18ad3fddb75fb8cac67e1ae0b610ca16099951451f1475b7c837da53e9"
+            "pair": "0x8bdd45b17ce9ddbf8b860b32a0b5c098552ad86d4f97d97f5129690334728a26"
           }
         }
       ]
@@ -116,12 +116,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 245789.49999999997,
+    "liquidityUsd": 15.120000000000001,
     "pools": [
       {
-        "pair": "0xb081bc18ad3fddb75fb8cac67e1ae0b610ca16099951451f1475b7c837da53e9",
+        "pair": "0x6bf27ce15ec586156d60dd8a0d64db15dfce7d9cc36bbb733b80cb38f24be563",
         "dex": "uniswap",
-        "liquidityUsd": 245765.27,
+        "liquidityUsd": 3.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,27 +137,9 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x6bf27ce15ec586156d60dd8a0d64db15dfce7d9cc36bbb733b80cb38f24be563",
-        "dex": "uniswap",
-        "liquidityUsd": 3.74,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0xa3ede137623d490cc1e1259428b1be5608d73456da9c323041a300af8ad24cdc",
         "dex": "uniswap",
         "liquidityUsd": 1.62,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x83a9f1fd59e3f6964db42276bc418395b8a8a8c169cc842ea4f0b24f40f0664c",
-        "dex": "uniswap",
-        "liquidityUsd": 9.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

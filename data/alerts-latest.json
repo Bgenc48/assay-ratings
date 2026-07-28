@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-07-27T08:57:34.077Z",
+  "generated_at": "2026-07-28T07:58:07.282Z",
   "alerts": [
     {
-      "at": "2026-07-27T08:53:28.359Z",
+      "at": "2026-07-28T07:49:00.683Z",
       "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
+      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "symbol": "USDC",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade B- → B.",
       "evidence": null
     },
     {
-      "at": "2026-07-27T08:53:28.359Z",
+      "at": "2026-07-28T07:52:57.092Z",
       "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
+      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+      "symbol": "SHIB",
+      "severity": "CRITICAL",
+      "kind": "liquidity-security-drop",
+      "text": "Burned/locked share of the dominant pool fell 100% → 0%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-28T07:54:24.720Z",
+      "chain": "base",
+      "address": "0xcb111e6a2a3bde90856d299d61341ac302167d23",
+      "symbol": "cbMEGA",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state UR → F.",
+      "evidence": null
+    },
+    {
+      "at": "2026-07-28T07:57:53.452Z",
+      "chain": "base",
+      "address": "0xc0f7800a382afde51e930de4b1f130a1d85eeb07",
+      "symbol": "OpenAI",
       "severity": "WARN",
       "kind": "cap-triggered",
       "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
       "evidence": null
     },
     {
-      "at": "2026-07-27T08:54:13.471Z",
+      "at": "2026-07-28T07:57:59.868Z",
       "chain": "base",
-      "address": "0xcb111e6a2a3bde90856d299d61341ac302167d23",
-      "symbol": "cbMEGA",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state F → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-27T08:54:59.919Z",
-      "chain": "base",
-      "address": "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
-      "symbol": "FLOCK",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-27T08:57:30.817Z",
-      "chain": "base",
-      "address": "0xc0f7800a382afde51e930de4b1f130a1d85eeb07",
+      "address": "0xa6977034a44f40949a735844b7e008a8ead4fb07",
       "symbol": "OpenAI",
       "severity": "INFO",
       "kind": "listed",
@@ -52,13 +52,13 @@
       "evidence": null
     },
     {
-      "at": "2026-07-27T08:57:33.325Z",
+      "at": "2026-07-28T07:58:06.531Z",
       "chain": "base",
-      "address": "0xb20000000000000000000074ca369bf86fa08e5f",
-      "symbol": "AiFI",
+      "address": "0xe0c48bfa530e3993ffd1a9202e4022327643e15f",
+      "symbol": "xtoken",
       "severity": "INFO",
       "kind": "listed",
-      "text": "AiFI is now rated: C.",
+      "text": "xtoken is now rated: D.",
       "evidence": null
     }
   ]

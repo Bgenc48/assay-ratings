@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "NTFS",
   "name": "National Trust Fund System",
-  "scanned_at": "2026-07-27T08:57:17.751Z",
+  "scanned_at": "2026-07-28T07:57:37.577Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -88,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 2.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -123,12 +130,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 118991.36,
+    "liquidityUsd": 140263.97,
     "pools": [
       {
         "pair": "0x6574242535bb4096e34784a056f46676777dc0323cc11a93916f0ca7e062a1ab",
         "dex": "uniswap",
-        "liquidityUsd": 118991.09,
+        "liquidityUsd": 140263.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,14 +144,23 @@
       {
         "pair": "0x35f9f1165dc405587e5dc29a28fab2220ff2674f0f3a10cc36fed2597daa46e6",
         "dex": "uniswap",
-        "liquidityUsd": 0.27,
+        "liquidityUsd": 0.32,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb5d65ef4ce6d31bf9256dc4c2a6fd3cee301b5c27e3d9268fe7522570ee23873",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 2.01,
     "projectLinks": null
   },
   "notes": null,

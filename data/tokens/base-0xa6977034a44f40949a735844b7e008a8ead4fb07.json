@@ -1,28 +1,34 @@
 {
-  "address": "0x1f16e03c1a5908818f47f6ee7bb16690b40d0671",
+  "address": "0xa6977034a44f40949a735844b7e008a8ead4fb07",
   "chain": "base",
   "status": "ok",
-  "symbol": "RECALL",
-  "name": "Recall",
-  "scanned_at": "2026-07-28T07:55:45.188Z",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-07-28T07:57:58.262Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 50.7,
-    "provisional": false,
+    "letter": "C",
+    "overall": 70,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unclassified-mint",
+          "id": "supply.unverified",
           "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
           "evidence": null
         }
       ]
@@ -66,20 +72,27 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x0abe41C8AAa9282429e06EBEd48bE36298981d94"
+            "pair": "0xa8c3d1b1f5c9c3de6b4a63692a9678c226ab26818ca6c9b4e3f568939b6fb853"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -89,14 +102,9 @@
   },
   "caps": [
     {
-      "id": "cap.unclassified-mint",
+      "id": "cap.unverified",
       "letter": "C",
-      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
+      "reason": "Source code is not verified on a public explorer."
     },
     {
       "id": "cap.claim-light",
@@ -106,88 +114,51 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "999999999999999999999999999",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
-    "proxy": "eip1967",
-    "proxyImplementation": "0x7d2ef7444685cbf764853d664826c2d640fec517",
+    "proxy": null,
+    "proxyImplementation": null,
     "privileged": [
-      "mint(address,uint256)",
-      "pause()",
-      "unpause()",
       "burnFrom(address,uint256)"
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 530,
-    "liquidityUsd": 494886.63999999996,
+    "verifiedSource": false,
+    "ageDays": null,
+    "liquidityUsd": null,
     "pools": [
       {
-        "pair": "0x0abe41C8AAa9282429e06EBEd48bE36298981d94",
-        "dex": "aerodrome",
-        "liquidityUsd": 493958.04,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5e3791F68EbCEAC82788f3becAb154C15141A2f4",
-        "dex": "aerodrome",
-        "liquidityUsd": 746.16,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x305e9b85f2399fd3869855C976c44F4Ee02A3430",
-        "dex": "hydrex",
-        "liquidityUsd": 117.1,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3e8eff1bb290600c4308c975bd0cc6a8e80bb30ce474fee2b03f8fb35d877ee7",
+        "pair": "0xa8c3d1b1f5c9c3de6b4a63692a9678c226ab26818ca6c9b4e3f568939b6fb853",
         "dex": "uniswap",
-        "liquidityUsd": 64.07,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x374512b2fd3b2AA5c876F402492a798a46eeC217",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.01,
+        "pair": "0xa1442f330fc969550cb573a95472a30690fb91b1b8df7645aa45ec58e0142edf",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x195D060B4D01Df32e8bFf72a0d36eFD2361B3cb3",
-        "dex": "sushiswap",
-        "liquidityUsd": 1.26,
+        "pair": "0xf01b178caec620eab2311407b7620ea583ed65a8f443ce992cea5d82b9a2a11b",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 29.18,
-    "projectLinks": {
-      "websites": [
-        "https://recall.network/"
-      ],
-      "socials": [
-        "https://x.com/recallnet"
-      ]
-    }
+    "top10Pct": 0,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

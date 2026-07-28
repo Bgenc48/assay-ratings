@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-07-27T08:56:01.918Z",
+  "scanned_at": "2026-07-28T07:56:12.447Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xc61faae2ebb95cf3ac266eeb2367ea3f3484aa82caa233d4de20881dd7c0302d"
+          }
         }
       ]
     },
@@ -106,9 +109,19 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
-    "top10Pct": 11,
+    "liquidityUsd": 0.22,
+    "pools": [
+      {
+        "pair": "0xc61faae2ebb95cf3ac266eeb2367ea3f3484aa82caa233d4de20881dd7c0302d",
+        "dex": "uniswap",
+        "liquidityUsd": 0.22,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 10.99,
     "projectLinks": null
   },
   "notes": null,
