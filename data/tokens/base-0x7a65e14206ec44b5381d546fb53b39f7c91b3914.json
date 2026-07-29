@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "MTR",
   "name": "Matter",
-  "scanned_at": "2026-07-28T07:57:24.353Z",
+  "scanned_at": "2026-07-29T08:09:46.478Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 27 days old; trust needs time (Provisional).",
+          "text": "Token is 28 days old; trust needs time (Provisional).",
           "evidence": "0xde3c68d0e9783038831906bbf02c96b0e6120d041c54b9fe72321a546e07a37f"
         }
       ]
@@ -132,13 +132,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 27,
-    "liquidityUsd": 1150432.7100000002,
+    "ageDays": 28,
+    "liquidityUsd": 1172078.0599999998,
     "pools": [
       {
         "pair": "0x93ecc1773d617Eb9e921a9A7e9a13a1C83Ca2A2e",
         "dex": "aerodrome",
-        "liquidityUsd": 1148805.6,
+        "liquidityUsd": 1153514.66,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xFd0b8dDc4f1F03069ACd8c35C2319f8BA4ec88b5",
+        "dex": "uniswap",
+        "liquidityUsd": 10006.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,7 +156,7 @@
       {
         "pair": "0x5e03Cb47130B9a81534Efd935b48399c3b64F1BF",
         "dex": "aerodrome",
-        "liquidityUsd": 1627.11,
+        "liquidityUsd": 8557.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

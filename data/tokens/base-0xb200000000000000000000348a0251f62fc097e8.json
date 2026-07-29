@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "GJESSE",
   "name": "Ghibli Jesse",
-  "scanned_at": "2026-07-28T07:56:16.694Z",
+  "scanned_at": "2026-07-29T08:08:34.428Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -77,7 +77,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xdf1d1c683a42e4f370743496ed02f05aff3196dbf6ebb63b70bbd6089655b459"
+            "pair": "0x8ffe98b3333ef3b4ce3b8dad2e606a5e28666947fe88ca4bf1e2c3f4e8f7ae66"
           }
         }
       ]
@@ -130,21 +130,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 125.06,
+    "liquidityUsd": 66.8,
     "pools": [
-      {
-        "pair": "0xdf1d1c683a42e4f370743496ed02f05aff3196dbf6ebb63b70bbd6089655b459",
-        "dex": "uniswap",
-        "liquidityUsd": 56.09,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x8ffe98b3333ef3b4ce3b8dad2e606a5e28666947fe88ca4bf1e2c3f4e8f7ae66",
         "dex": "uniswap",
-        "liquidityUsd": 53.6,
+        "liquidityUsd": 53.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,16 +144,7 @@
       {
         "pair": "0xa922e5201d24fbf6d370b3593c036c7669ec501503f705d6dfddd1b8812097af",
         "dex": "uniswap",
-        "liquidityUsd": 13.76,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xec937b6f0905fcf2be293b6825abd737547691351d0aea79b5205df8af116fb9",
-        "dex": "uniswap",
-        "liquidityUsd": 1.61,
+        "liquidityUsd": 13.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Gitlawb",
   "name": "Gitlawb",
-  "scanned_at": "2026-07-28T07:55:32.904Z",
+  "scanned_at": "2026-07-29T08:07:50.026Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716"
+          }
         }
       ]
     },
@@ -118,10 +121,25 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 19.75,
+    "pools": [
+      {
+        "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716",
+        "dex": "uniswap",
+        "liquidityUsd": 19.75,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 99.87,
-    "projectLinks": null
+    "projectLinks": {
+      "websites": [
+        "https://clanker.world/clanker/0xAE45b8faE07fFB2E5f4373bFCB6f4Bd827A45b07"
+      ],
+      "socials": []
+    }
   },
   "notes": null,
   "coi": false

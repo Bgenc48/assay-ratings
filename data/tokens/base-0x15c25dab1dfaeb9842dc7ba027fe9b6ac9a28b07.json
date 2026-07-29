@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-28T07:57:20.694Z",
+  "scanned_at": "2026-07-29T08:09:43.260Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x828c948fc1d0053ef5c924e569213ec28c8169d2c4e53beb52cc90206009c86f"
+            "pair": "0x48fa1dd76e30138aa3fe7619e2049383521437032eccb9bd944835f7013891d3"
           }
         }
       ]
@@ -89,7 +83,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
+          "text": "Top-10 unlabeled holders control 0.1%.",
           "evidence": null
         }
       ]
@@ -101,11 +95,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -125,41 +114,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 0.92,
+    "liquidityUsd": 108.75,
     "pools": [
       {
-        "pair": "0xfba39ef350ae120082c36e5a403e361aa58d798cd47b563d53ea08f11baa78e3",
+        "pair": "0x48fa1dd76e30138aa3fe7619e2049383521437032eccb9bd944835f7013891d3",
         "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7267541c788cd797151eb18baac657ca348842a7f467063c0b514d5eefea9dde",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x828c948fc1d0053ef5c924e569213ec28c8169d2c4e53beb52cc90206009c86f",
-        "dex": "uniswap",
-        "liquidityUsd": 0.92,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf4111409c6da934201ee7475807e6190d7dd59743d2ac38d3a632fb2646ee23f",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 108.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,7 +137,7 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xe98d215e15480b777429a86cbd6e3222df25d42289df49cd0904ce47096e5ef2",
+        "pair": "0xc3b6f1e014a90380b1d21e44c5d093718bc203183146e1eb1a7978263b11ed6e",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -184,7 +146,7 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x11b7fe0fff63d295d1f34ae14c97fb70aba4e648edfba9f7fc35d87411b9935b",
+        "pair": "0x7cbdae040be945d1ee619b76fa717ee72a75d01804b17aa5fe2a6ff99c46d4eb",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -193,7 +155,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": 0.1,
     "projectLinks": null
   },
   "notes": null,

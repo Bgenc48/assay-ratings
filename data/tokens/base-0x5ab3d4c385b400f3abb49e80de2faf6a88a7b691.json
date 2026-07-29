@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "FLOCK",
   "name": "FLock.io",
-  "scanned_at": "2026-07-28T07:55:05.956Z",
+  "scanned_at": "2026-07-29T08:07:19.085Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 48.9,
+    "overall": 47.1,
     "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,13 +77,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 49.5%.",
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 52.6% of circulating supply.",
           "evidence": null
         }
       ]
@@ -101,6 +101,11 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
       "id": "cap.age-24mo",
       "letter": "A",
       "reason": "A+ requires 24 clean months of operating history."
@@ -113,7 +118,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "433396590746741773465194588",
+    "totalSupply": "433654587081765478141688618",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -125,13 +130,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 584,
-    "liquidityUsd": 332129.79000000004,
+    "ageDays": 585,
+    "liquidityUsd": 328496.67,
     "pools": [
       {
         "pair": "0x7AF45dfaF2fDEA139B2295f37fFea2E16e6Fd8BA",
         "dex": "uniswap",
-        "liquidityUsd": 116634.44,
+        "liquidityUsd": 114579.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +145,7 @@
       {
         "pair": "0xd7338B6F338DA54b922bbBC6fBE3EFEDD5Ce35fa",
         "dex": "aerodrome",
-        "liquidityUsd": 76237.87,
+        "liquidityUsd": 75601.36,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +154,7 @@
       {
         "pair": "0x4910C78a1C75E36548F1f2f1f4dCb71A4F69fC07",
         "dex": "aerodrome",
-        "liquidityUsd": 78550.53,
+        "liquidityUsd": 78621.47,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -158,7 +163,7 @@
       {
         "pair": "0xd162C4444d5eFEaD433F080696D1f4Dc2BCD58Fb",
         "dex": "aerodrome",
-        "liquidityUsd": 25115.52,
+        "liquidityUsd": 25122.26,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -167,7 +172,7 @@
       {
         "pair": "0xef724d142f283411f66bDe8De4d863e7295b9972",
         "dex": "aerodrome",
-        "liquidityUsd": 12202.81,
+        "liquidityUsd": 12180.57,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -176,7 +181,7 @@
       {
         "pair": "0x15aEda0387EBeF5Fd8300560010De83780477147",
         "dex": "uniswap",
-        "liquidityUsd": 10836.53,
+        "liquidityUsd": 10120.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -185,7 +190,7 @@
       {
         "pair": "0xdAA601bc9E5B00337f11fB17CD574D3f01633Fe6",
         "dex": "aerodrome",
-        "liquidityUsd": 6612.09,
+        "liquidityUsd": 6404.68,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -194,14 +199,14 @@
       {
         "pair": "0xB7E0c9CaeB559429B5b8B37c118E1d2764550416",
         "dex": "aerodrome",
-        "liquidityUsd": 5940,
+        "liquidityUsd": 5865.74,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 49.54,
+    "top10Pct": 52.6,
     "projectLinks": {
       "websites": [],
       "socials": [

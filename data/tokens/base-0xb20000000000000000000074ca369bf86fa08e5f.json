@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "AiFI",
   "name": "AiFI",
-  "scanned_at": "2026-07-28T07:57:54.202Z",
+  "scanned_at": "2026-07-29T08:10:15.299Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,13 +72,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xfb1c0435880f8a07f835f2bbb595a3c16eb12019f07c535f076922bfaa94a9b3"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -130,18 +127,8 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 54513.17,
-    "pools": [
-      {
-        "pair": "0xfb1c0435880f8a07f835f2bbb595a3c16eb12019f07c535f076922bfaa94a9b3",
-        "dex": "uniswap",
-        "liquidityUsd": 54513.17,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": 0,
     "projectLinks": null
   },

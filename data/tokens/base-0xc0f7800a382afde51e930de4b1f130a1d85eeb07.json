@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-28T07:57:50.237Z",
+  "scanned_at": "2026-07-29T08:10:11.865Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 64.2,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x31d4263a7443d4ae906dfce58b695947b866a3ffa1930ee79c92048a571d0cb8"
+            "pair": "0x214e3dbeec48cc8bdc11a640d15dfbd3ffae5cfcef49a5e3dbc987bce6f11288"
           }
         }
       ]
@@ -83,13 +77,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 60.0% of circulating supply.",
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.1%.",
           "evidence": null
         }
       ]
@@ -101,16 +95,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -130,39 +114,12 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 183477.93,
+    "liquidityUsd": null,
     "pools": [
       {
-        "pair": "0x215df30090de36291e4298ba24d1465534cf7535552b9295b21a58c72a4b1972",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf6ce7116ee10b8415ee76514870a2129d2d3864ca672fe4e6982e16906c78451",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x045fe976990bb953824cdfe3d4cb6b073913eaf89d866019ead305f5982c4a8c",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x25a0684c1c10f2dc40d028b217406e13a179f7703f27ea5a6082456d46c712a8",
+        "pair": "0x214e3dbeec48cc8bdc11a640d15dfbd3ffae5cfcef49a5e3dbc987bce6f11288",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -180,15 +137,6 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x31d4263a7443d4ae906dfce58b695947b866a3ffa1930ee79c92048a571d0cb8",
-        "dex": "uniswap",
-        "liquidityUsd": 183477.93,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x377944c4672a0057db6e89dca7287dbb1d5c33b6f2f439d5e6fdfd1684c11a4e",
         "dex": "uniswap",
         "liquidityUsd": null,
@@ -198,7 +146,16 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x31554a78abb1c9dc0d36ead5b29558ee229347173db57e3d0cc6f930fcf6ede1",
+        "pair": "0x045fe976990bb953824cdfe3d4cb6b073913eaf89d866019ead305f5982c4a8c",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4db24048e96bb3cd162960e91bbf10a824044583df6f5246f10197a7f7f6cdd7",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -207,7 +164,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 59.97,
+    "top10Pct": 0.09,
     "projectLinks": null
   },
   "notes": null,

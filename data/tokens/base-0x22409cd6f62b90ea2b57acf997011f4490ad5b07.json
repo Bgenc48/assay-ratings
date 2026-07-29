@@ -1,18 +1,18 @@
 {
-  "address": "0xed327e881bdde8a134e6fddcf4a64881f86a3b07",
+  "address": "0x22409cd6f62b90ea2b57acf997011f4490ad5b07",
   "chain": "base",
   "status": "ok",
-  "symbol": "Claude",
-  "name": "Claude",
-  "scanned_at": "2026-07-29T08:06:45.166Z",
+  "symbol": "PIPEDOG",
+  "name": "pipedog",
+  "scanned_at": "2026-07-29T08:10:35.549Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.5,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x86de6fa7502f9a5060632b9d957031c49fab6dfdded112c50523e281a21377fc"
+          }
         }
       ]
     },
@@ -74,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 3.4%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -114,8 +110,27 @@
     "verifiedSource": true,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [],
-    "top10Pct": 3.36,
+    "pools": [
+      {
+        "pair": "0x86de6fa7502f9a5060632b9d957031c49fab6dfdded112c50523e281a21377fc",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4b51c4f17f6ee3201e63fc9b284a829c6aea7cff92f291d576f610e34a8d2ec8",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

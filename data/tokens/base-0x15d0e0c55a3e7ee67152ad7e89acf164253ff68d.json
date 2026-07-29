@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "HYPE",
   "name": "HYPE",
-  "scanned_at": "2026-07-28T07:53:07.039Z",
+  "scanned_at": "2026-07-29T08:05:28.128Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x5e2AFd6E24B9e3ae63531B06D3f4fa23eb04F741"
+            "pair": "0x9E48d016eE76cf53e2De8dc8058c7549c8c202DF"
           }
         }
       ]
@@ -106,7 +106,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "23009062274820000000000",
+    "totalSupply": "23276262731820000000000",
     "decimals": 18,
     "owner": "0x838a95b6a3e06b6f11c437e22f3c7561a6ec40f1",
     "controlType": "unknown",
@@ -119,13 +119,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 293,
-    "liquidityUsd": 6930.929999999999,
+    "ageDays": 294,
+    "liquidityUsd": 244222.62000000002,
     "pools": [
       {
         "pair": "0x5e2AFd6E24B9e3ae63531B06D3f4fa23eb04F741",
         "dex": "pancakeswap",
-        "liquidityUsd": 3357.03,
+        "liquidityUsd": 3348.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -134,16 +134,7 @@
       {
         "pair": "0xbCE15E3E9799C9296c631b8fCa65386d9554f49A",
         "dex": "hydrex",
-        "liquidityUsd": 1163.8,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd908476009dD679a079A3302D92779b47E8AD514",
-        "dex": "uniswap",
-        "liquidityUsd": 488.24,
+        "liquidityUsd": 1173.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -152,7 +143,16 @@
       {
         "pair": "0x25fD39f3Ac6f355E7dE7D629481bB00B5A0d9Ae6",
         "dex": "uniswap",
-        "liquidityUsd": 664.57,
+        "liquidityUsd": 664.61,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd908476009dD679a079A3302D92779b47E8AD514",
+        "dex": "uniswap",
+        "liquidityUsd": 489.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -161,25 +161,16 @@
       {
         "pair": "0x9EeCe9Af59f90111C7bb84eB78b310704BcBC588",
         "dex": "aerodrome",
-        "liquidityUsd": 228.78,
+        "liquidityUsd": 225.12,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xde1f994fdcb6b94d4d2c5048dde800c1b319a0dd750a4b891643dc6ebc377e88",
-        "dex": "uniswap",
-        "liquidityUsd": 734.06,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0xdcD1502034561421BD01e918b1460517A14a66A1",
         "dex": "pancakeswap",
-        "liquidityUsd": 241.3,
+        "liquidityUsd": 244,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -188,14 +179,23 @@
       {
         "pair": "0x7E3C6288bE608795ac30Da107903deFD625c53cb",
         "dex": "aerodrome",
-        "liquidityUsd": 53.15,
+        "liquidityUsd": 53.94,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9E48d016eE76cf53e2De8dc8058c7549c8c202DF",
+        "dex": "aerodrome",
+        "liquidityUsd": 238023.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 22.13,
+    "top10Pct": 21.88,
     "projectLinks": null
   },
   "notes": null,

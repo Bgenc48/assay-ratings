@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "xtoken",
   "name": "xtoken",
-  "scanned_at": "2026-07-28T07:58:00.618Z",
+  "scanned_at": "2026-07-29T08:10:27.618Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -19,12 +19,6 @@
       "score": 60,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.latent-mint",
           "severity": "warn",
@@ -84,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 35 days old; trust needs time (Provisional).",
+          "text": "Token is 36 days old; trust needs time (Provisional).",
           "evidence": "0x42b25bf0354a778c0fdb1e822cc010d3cffbab9ccb0b3aaac7eff843ad449524"
         }
       ]
@@ -108,11 +102,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.eoa-upgrade",
       "letter": "D",
@@ -145,14 +134,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 35,
-    "liquidityUsd": 116292.63,
+    "verifiedSource": true,
+    "ageDays": 36,
+    "liquidityUsd": 115210.06,
     "pools": [
       {
         "pair": "0x2227e2Cd686Dea3393b5e63CfF30fdE7711bAD83",
         "dex": "uniswap",
-        "liquidityUsd": 116292.63,
+        "liquidityUsd": 115210.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
