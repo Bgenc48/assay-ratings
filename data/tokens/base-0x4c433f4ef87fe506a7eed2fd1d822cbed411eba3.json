@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "TSG",
   "name": "the sleeping giant",
-  "scanned_at": "2026-07-29T08:07:52.742Z",
+  "scanned_at": "2026-07-30T07:50:50.302Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70.4,
+    "letter": "C",
+    "overall": 63.9,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -72,9 +72,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 72 days old; trust needs time (Provisional).",
+          "evidence": "0x72776799bae9c3cf16d8ef278b3a8002babc36111a3c3ef46eb1b9960ee192f1"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 75,
@@ -88,6 +95,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -106,40 +118,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 173316.49,
+    "ageDays": 72,
+    "liquidityUsd": 146163.63,
     "pools": [
       {
         "pair": "0x5e4c78bf666d78fa1e751abc84cf9933d17b1736d4605f400173ac63ac52b1f8",
         "dex": "uniswap",
-        "liquidityUsd": 147645.39,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5d7e5805c897486e03e0b583eceabd9e4cd59d1ad361445b79809effb2edc546",
-        "dex": "uniswap",
-        "liquidityUsd": 21355.07,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4796d6609f63b3e0d7d00b3683147b409cdf1cf02bd9519e7d095f80e13d8477",
-        "dex": "uniswap",
-        "liquidityUsd": 1716.13,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf1aec20eabf8d7e080553f08ad5a494a9f31df5eed60338a15225ebba33cea12",
-        "dex": "uniswap",
-        "liquidityUsd": 1648.05,
+        "liquidityUsd": 145599.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,34 +133,7 @@
       {
         "pair": "0x25358851dd7454fd38cd685acdc937d3b892314489164538c33582a45bb76b93",
         "dex": "uniswap",
-        "liquidityUsd": 595.86,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa6e4a8283669b852167066d7aacc08845c642b8bd37adeb0f37d3ff862c52b48",
-        "dex": "uniswap",
-        "liquidityUsd": 332.6,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe0d4135812e5865ae2ea301f2defba8c9cb00457823ab85f5f9a1dee9b5c2110",
-        "dex": "uniswap",
-        "liquidityUsd": 15.34,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x565ca42da813c0eb1e7082ea4ecc985137e37941874753df82a9a14eebf07064",
-        "dex": "uniswap",
-        "liquidityUsd": 8.05,
+        "liquidityUsd": 563.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "cbMEGA",
   "name": "Coinbase Wrapped MEGA",
-  "scanned_at": "2026-07-29T08:06:27.620Z",
+  "scanned_at": "2026-07-30T07:49:16.189Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 27.9,
+    "letter": "F",
+    "overall": 27.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -72,9 +72,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 106 days old; trust needs time (Provisional).",
+          "evidence": "0x6663d20834049e9fa1583f5502c77232c6a574ce6a9cb3bb22ccef1332195689"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 25,
@@ -83,7 +90,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 44.5%.",
+          "text": "Top-10 unlabeled holders control 45.4%.",
           "evidence": null
         }
       ]
@@ -104,6 +111,11 @@
       "id": "cap.eoa-upgrade",
       "letter": "D",
       "reason": "Upgradeable with an EOA admin and no timelock."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -128,13 +140,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 1204474.65,
+    "ageDays": 106,
+    "liquidityUsd": 135142.78,
     "pools": [
       {
         "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83",
         "dex": "aerodrome",
-        "liquidityUsd": 1204473.65,
+        "liquidityUsd": 135044.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc47687d4615ce111e72573ebcb8ead9216a9f115c020bece73e31092caef835c",
+        "dex": "uniswap",
+        "liquidityUsd": 83.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,6 +171,24 @@
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0x9D2139818d9cB7dc067B6128d337AAB1AA460aF6",
+        "dex": "equalizer",
+        "liquidityUsd": 5,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xbc26628d22e10d486209095d1839354228be69d4c51ea6c938f27d0a161379f7",
+        "dex": "uniswap",
+        "liquidityUsd": 4.74,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0x8ce50c3371f898fe8631d1b1aacc7353a78e73074e91fdea15431286978f23b4",
         "dex": "uniswap",
         "liquidityUsd": 0.91,
@@ -159,25 +198,21 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xf4eE91aE0b68FF67854D66039Cd827c8f3338533",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.02,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "pair": "0x3751DfB5FCa4490bcf1dEF2b4CA600CEEb773f29",
+        "dex": "equalizer",
+        "liquidityUsd": 4.63,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 44.51,
+    "top10Pct": 45.4,
     "projectLinks": {
       "websites": [],
       "socials": []
     }
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "F"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

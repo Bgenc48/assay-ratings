@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MIGGLES",
   "name": "Mister Miggles",
-  "scanned_at": "2026-07-29T08:06:47.950Z",
+  "scanned_at": "2026-07-30T07:49:41.036Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
     "overall": 85,
-    "provisional": true,
+    "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
@@ -111,13 +111,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 380435.12,
+    "ageDays": 744,
+    "liquidityUsd": 369611.67,
     "pools": [
       {
         "pair": "0x17A3Ad8c74c4947005aFEDa9965305ae2EB2518a",
         "dex": "uniswap",
-        "liquidityUsd": 358389.02,
+        "liquidityUsd": 348834.31,
         "lpBurnedPct": 99.97,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -126,16 +126,7 @@
       {
         "pair": "0xadAd4ce0C68F50A19CF5063E0B91d701Daab1df1",
         "dex": "uniswap",
-        "liquidityUsd": 11968.68,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x326841EFD63340767e02ec88E583f18a82AF4A48",
-        "dex": "aerodrome",
-        "liquidityUsd": 2929.98,
+        "liquidityUsd": 11748.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,16 +135,16 @@
       {
         "pair": "0x0710409c47e133656dfd0e14d016416ae56175f768532ccce4dfa10e0b68d1c2",
         "dex": "uniswap",
-        "liquidityUsd": 4705.96,
+        "liquidityUsd": 4672.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x026ebfF523E928d5E073eA8b07D9740aACAd3480",
-        "dex": "uniswap",
-        "liquidityUsd": 963.02,
+        "pair": "0x326841EFD63340767e02ec88E583f18a82AF4A48",
+        "dex": "aerodrome",
+        "liquidityUsd": 2907.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +153,7 @@
       {
         "pair": "0x1AD9e6154A45aACBF98f96F386E4C477A5C8D490",
         "dex": "hydrex",
-        "liquidityUsd": 739.98,
+        "liquidityUsd": 720.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +162,7 @@
       {
         "pair": "0x5C892D75021F54Bd562631ba3B69EDb81ad47269",
         "dex": "0xba34aA640b8Be02A439221BCbea1f48c1035EEF9",
-        "liquidityUsd": 506.6,
+        "liquidityUsd": 501.16,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -184,14 +175,23 @@
       {
         "pair": "0x27e13dfA957231A606ab7F535b34275865a66f44",
         "dex": "aerodrome",
-        "liquidityUsd": 231.88,
+        "liquidityUsd": 228.08,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x2abd727393515fbece4c565575fd2aecb90d07f6365bf00fc66800fb1f863475",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 12.25,
+    "top10Pct": 12.2,
     "projectLinks": {
       "websites": [
         "https://miggles.io"

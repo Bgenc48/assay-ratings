@@ -4,13 +4,13 @@
   "status": "ok",
   "symbol": "B3",
   "name": "B3",
-  "scanned_at": "2026-07-29T08:03:52.238Z",
+  "scanned_at": "2026-07-30T07:46:27.843Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 46.7,
-    "provisional": true,
+    "overall": 50.7,
+    "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -92,6 +92,11 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
     },
     {
       "id": "cap.claim-light",
@@ -114,13 +119,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 512772.6000000001,
+    "ageDays": 548,
+    "liquidityUsd": 494277.56000000006,
     "pools": [
       {
         "pair": "0xB099C658e784b41EE435d48a8eb67e8f27285C93",
         "dex": "aerodrome",
-        "liquidityUsd": 501753.02,
+        "liquidityUsd": 482303.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -129,7 +134,7 @@
       {
         "pair": "0x4C1453376952F899365d295c716aaA1010B8FEaa",
         "dex": "alien-base",
-        "liquidityUsd": 9724.84,
+        "liquidityUsd": 9497.31,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -142,7 +147,7 @@
       {
         "pair": "0xa74eF758e0fEE9777Ca8723b249C24A84B3F3D82",
         "dex": "uniswap",
-        "liquidityUsd": 191,
+        "liquidityUsd": 262.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +156,16 @@
       {
         "pair": "0x9CE351A521d4238AFE545F83efBFd98C440257fA",
         "dex": "alien-base",
-        "liquidityUsd": 1011,
+        "liquidityUsd": 988.21,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc59aac3e3718891819910e247442c6129c01e9a93589ffb0a18cc0f19554073d",
+        "dex": "uniswap",
+        "liquidityUsd": 1012.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,25 +174,16 @@
       {
         "pair": "0xb1e1001127c4dca8fc52ced8d84cd6304b71a77ba06b01284075906a6eaffa98",
         "dex": "uniswap",
-        "liquidityUsd": 84.75,
+        "liquidityUsd": 83.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xD286c0236DC67151F777F45530638652ad6d2a13",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.08,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcFFae035a84a97cB3b179E9E9DEFCDBdc13A0744",
-        "dex": "aerodrome",
-        "liquidityUsd": 7.51,
+        "pair": "0x716d308ee8b3467d6d6d433fab0c1b33de9c89067e63e0e600ea13fa2f839ab2",
+        "dex": "uniswap",
+        "liquidityUsd": 129.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -187,14 +192,14 @@
       {
         "pair": "0xCF34e0c70d922d771f26dB8271Fb6DA977DE865e",
         "dex": "pancakeswap",
-        "liquidityUsd": 0.4,
+        "liquidityUsd": 0.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 21,
+    "top10Pct": 21.01,
     "projectLinks": {
       "websites": [
         "https://b3.fun",

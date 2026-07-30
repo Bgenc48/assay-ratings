@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-29T08:06:12.946Z",
+  "scanned_at": "2026-07-30T07:48:53.167Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 72.5,
+    "letter": "C",
+    "overall": 58.6,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -69,18 +69,25 @@
       ]
     },
     "trackRecord": {
-      "score": null,
-      "notApplicable": false,
-      "findings": []
-    },
-    "holderConcentration": {
-      "score": 100,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.distributed",
+          "id": "track.young",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.4%.",
+          "text": "Token is 17 days old; trust needs time (Provisional).",
+          "evidence": "0xeab84038165a1928c6e7372137b54f710e00a1069ac83fc36b32090ca9ce8bf7"
+        }
+      ]
+    },
+    "holderConcentration": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 80.4% of circulating supply.",
           "evidence": null
         }
       ]
@@ -92,6 +99,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -112,10 +129,10 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
+    "ageDays": 17,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": 0.38,
+    "top10Pct": 80.38,
     "projectLinks": null
   },
   "notes": null,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-29T08:09:43.260Z",
+  "scanned_at": "2026-07-30T07:52:57.984Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x48fa1dd76e30138aa3fe7619e2049383521437032eccb9bd944835f7013891d3"
+            "pair": "0x7cbdae040be945d1ee619b76fa717ee72a75d01804b17aa5fe2a6ff99c46d4eb"
           }
         }
       ]
@@ -83,7 +83,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.1%.",
+          "text": "Top-10 unlabeled holders control 1.1%.",
           "evidence": null
         }
       ]
@@ -116,35 +116,8 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 108.75,
+    "liquidityUsd": null,
     "pools": [
-      {
-        "pair": "0x48fa1dd76e30138aa3fe7619e2049383521437032eccb9bd944835f7013891d3",
-        "dex": "uniswap",
-        "liquidityUsd": 108.75,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8e48864c54ffb9b3757b961c8b64bde235f62c351bafc728c96471f6bc301b0c",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc3b6f1e014a90380b1d21e44c5d093718bc203183146e1eb1a7978263b11ed6e",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x7cbdae040be945d1ee619b76fa717ee72a75d01804b17aa5fe2a6ff99c46d4eb",
         "dex": "uniswap",
@@ -155,7 +128,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0.1,
+    "top10Pct": 1.12,
     "projectLinks": null
   },
   "notes": null,

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-07-29T08:08:31.561Z",
+  "scanned_at": "2026-07-30T07:51:38.720Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70.4,
+    "letter": "C",
+    "overall": 63.9,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -61,20 +61,24 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x54b4838fb942a362191ea06e0736401ec075e63dc295c6ca2ab7a0a726e6c070"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 9 days old; trust needs time (Provisional).",
+          "evidence": "0xbf481d43d43882d7b668c2ba577d90015f207de860b81ccacf90e24da0b53109"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 75,
@@ -88,6 +92,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -108,28 +117,9 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 0.9500000000000001,
-    "pools": [
-      {
-        "pair": "0x54b4838fb942a362191ea06e0736401ec075e63dc295c6ca2ab7a0a726e6c070",
-        "dex": "uniswap",
-        "liquidityUsd": 0.91,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe27a9c30ce355cca9c42117d716bc4cc86a20209c210d9cc1914a31827f312bd",
-        "dex": "uniswap",
-        "liquidityUsd": 0.04,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "ageDays": 9,
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": 10.99,
     "projectLinks": null
   },

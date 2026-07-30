@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Base",
   "name": "Base",
-  "scanned_at": "2026-07-29T08:06:18.404Z",
+  "scanned_at": "2026-07-30T07:49:01.300Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 72.5,
+    "letter": "C",
+    "overall": 65.7,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -61,20 +61,24 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xdc76733596ca6672ccef07a94d286a21997ae46c287a8f6561723bcb5a31e30f"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 18 days old; trust needs time (Provisional).",
+          "evidence": "0xfba1cf226033bb4588facd77fa13067f700ed5652a881bcf9827da86184c639c"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 100,
@@ -83,7 +87,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 1.9%.",
+          "text": "Top-10 unlabeled holders control 1.0%.",
           "evidence": null
         }
       ]
@@ -95,6 +99,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -115,20 +124,10 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 95.45,
-    "pools": [
-      {
-        "pair": "0xdc76733596ca6672ccef07a94d286a21997ae46c287a8f6561723bcb5a31e30f",
-        "dex": "uniswap",
-        "liquidityUsd": 95.45,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": 1.88,
+    "ageDays": 18,
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": 1,
     "projectLinks": null
   },
   "notes": null,

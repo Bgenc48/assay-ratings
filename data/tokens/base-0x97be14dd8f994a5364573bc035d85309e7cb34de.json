@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "JitoSOL",
   "name": "Jito Staked SOL",
-  "scanned_at": "2026-07-29T08:06:21.916Z",
+  "scanned_at": "2026-07-30T07:49:06.167Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 59.2,
+    "letter": "UR",
+    "overall": 54.3,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -78,9 +78,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 163 days old; trust needs time (Provisional).",
+          "evidence": "0x9f77ccb3024de6aa50b944fd2c318777aa55ba43c1b282f83c5ebd69956ae558"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 100,
@@ -89,7 +96,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 4.7%.",
+          "text": "Top-10 unlabeled holders control 5.7%.",
           "evidence": null
         }
       ]
@@ -107,6 +114,11 @@
       "reason": "Source code is not verified on a public explorer."
     },
     {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -114,7 +126,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "89374460730669",
+    "totalSupply": "91810505154408",
     "decimals": 9,
     "owner": null,
     "controlType": "none",
@@ -124,13 +136,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": null,
-    "liquidityUsd": 11332395.53,
+    "ageDays": 163,
+    "liquidityUsd": 11231182.950000001,
     "pools": [
       {
         "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871",
         "dex": "uniswap",
-        "liquidityUsd": 10686995.64,
+        "liquidityUsd": 10591511.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +151,7 @@
       {
         "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
         "dex": "pancakeswap",
-        "liquidityUsd": 645385.87,
+        "liquidityUsd": 639670.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,25 +160,20 @@
       {
         "pair": "0xC5a10dAD3B73410F34ec29B50952C377AfAF64d9",
         "dex": "pancakeswap",
-        "liquidityUsd": 8.1,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x08f070822591F7175E3add0bADE85C087d991b27",
-        "dex": "pancakeswap",
-        "liquidityUsd": 5.92,
+        "liquidityUsd": 0.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 4.68,
+    "top10Pct": 5.67,
     "projectLinks": null
   },
   "notes": null,
-  "coi": false
+  "coi": false,
+  "pendingReview": {
+    "computed": "D"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

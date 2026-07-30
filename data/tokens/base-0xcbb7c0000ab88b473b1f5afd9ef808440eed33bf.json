@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "cbBTC",
   "name": "Coinbase Wrapped BTC",
-  "scanned_at": "2026-07-29T08:02:20.063Z",
+  "scanned_at": "2026-07-30T07:45:01.630Z",
   "methodology_version": "0.2.1",
   "profile": "custodial-wrapped",
   "grade": {
     "letter": "UR",
-    "overall": 44.6,
-    "provisional": true,
+    "overall": 51.4,
+    "provisional": false,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -70,7 +70,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -111,6 +111,11 @@
       "waivedBy": "profile.custodial-wrapped (reviewed registry); superseded by cap.custodial-undisclosed"
     },
     {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -118,7 +123,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4446156870615",
+    "totalSupply": "4444866373236",
     "decimals": 8,
     "owner": "0xce56d20689d836ec7a728ceb94a15746696c16e6",
     "controlType": "eoa",
@@ -133,13 +138,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 38974224.38,
+    "ageDays": 709,
+    "liquidityUsd": 38786085.68,
     "pools": [
       {
         "pair": "0x4e962BB3889Bf030368F56810A9c96B83CB3E778",
         "dex": "aerodrome",
-        "liquidityUsd": 8922956.89,
+        "liquidityUsd": 8670055.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +153,7 @@
       {
         "pair": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
         "dex": "pancakeswap",
-        "liquidityUsd": 5396007.39,
+        "liquidityUsd": 5362404.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +162,7 @@
       {
         "pair": "0x42d4a22CaD0F5a49681a5715cE994Af73A43B76b",
         "dex": "aerodrome",
-        "liquidityUsd": 5439976.23,
+        "liquidityUsd": 5658631.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +171,7 @@
       {
         "pair": "0x160D7E9d948B16c163332a277b393c288408eb12",
         "dex": "aerodrome",
-        "liquidityUsd": 4065216.59,
+        "liquidityUsd": 4357677.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,7 +180,7 @@
       {
         "pair": "0x7C7420DD105E2779316423Ba3E973f434315EFA9",
         "dex": "aerodrome",
-        "liquidityUsd": 616641.83,
+        "liquidityUsd": 655314.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -184,16 +189,7 @@
       {
         "pair": "0xb94b22332ABf5f89877A14Cc88f2aBC48c34B3Df",
         "dex": "pancakeswap",
-        "liquidityUsd": 1746955.85,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7AeA2E8A3843516afa07293a10Ac8E49906dabD1",
-        "dex": "uniswap",
-        "liquidityUsd": 4515559.98,
+        "liquidityUsd": 1720695.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -202,14 +198,23 @@
       {
         "pair": "0xfBB6Eed8e7aa03B138556eeDaF5D271A5E1e43ef",
         "dex": "uniswap",
-        "liquidityUsd": 8270909.62,
+        "liquidityUsd": 7922330.77,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7AeA2E8A3843516afa07293a10Ac8E49906dabD1",
+        "dex": "uniswap",
+        "liquidityUsd": 4438975.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 1.36,
     "projectLinks": {
       "websites": [],
       "socials": []

@@ -1,28 +1,28 @@
 {
-  "address": "0x1f16e03c1a5908818f47f6ee7bb16690b40d0671",
+  "address": "0xde2b3d68b593c1c9e0cb6e55cbf289cdf5a5cb07",
   "chain": "base",
   "status": "ok",
-  "symbol": "RECALL",
-  "name": "Recall",
-  "scanned_at": "2026-07-30T07:51:00.912Z",
+  "symbol": "PIPEDOG",
+  "name": "pipedog",
+  "scanned_at": "2026-07-30T07:53:52.964Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 50.7,
-    "provisional": false,
+    "letter": "B-",
+    "overall": 72.5,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
-      "score": 35,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "supply.unclassified-mint",
-          "severity": "warn",
-          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
           "evidence": null
         }
       ]
@@ -66,20 +66,27 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x0abe41C8AAa9282429e06EBEd48bE36298981d94"
+            "pair": "0x673170a046409fdb0276b4dfb2a3e394fe3ea6a7a875213b07528e9bad350f1b"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -89,16 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.unclassified-mint",
-      "letter": "C",
-      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -106,88 +103,96 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "999999999999999999999999999",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
-    "proxy": "eip1967",
-    "proxyImplementation": "0x7d2ef7444685cbf764853d664826c2d640fec517",
+    "proxy": null,
+    "proxyImplementation": null,
     "privileged": [
-      "mint(address,uint256)",
-      "pause()",
-      "unpause()",
       "burnFrom(address,uint256)"
     ],
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 532,
-    "liquidityUsd": 493194.68999999994,
+    "ageDays": null,
+    "liquidityUsd": null,
     "pools": [
       {
-        "pair": "0x0abe41C8AAa9282429e06EBEd48bE36298981d94",
-        "dex": "aerodrome",
-        "liquidityUsd": 492041.88,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5e3791F68EbCEAC82788f3becAb154C15141A2f4",
-        "dex": "aerodrome",
-        "liquidityUsd": 722.63,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x6Ee714d6d8dF7662BcA805f58CC1d5A8886D78eB",
-        "dex": "aerodrome",
-        "liquidityUsd": 243.91,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x305e9b85f2399fd3869855C976c44F4Ee02A3430",
-        "dex": "hydrex",
-        "liquidityUsd": 116.54,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3e8eff1bb290600c4308c975bd0cc6a8e80bb30ce474fee2b03f8fb35d877ee7",
+        "pair": "0x673170a046409fdb0276b4dfb2a3e394fe3ea6a7a875213b07528e9bad350f1b",
         "dex": "uniswap",
-        "liquidityUsd": 64.42,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xe8EB2f513ec5739397D420313c17F3986838A237",
-        "dex": "aerodrome",
-        "liquidityUsd": 5.31,
+        "pair": "0xb005b6640965e600ea50e888bc93cea82b9fdefb4d81bb09f285c03beaac2592",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6ad84b7d56c837d875e913c164ea0b684c4aaddd851c2f6cf5dec0a705a8bb2f",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe9ef41e9e8d5cfeb60c382e0bfae830794c77ef2ba39b9a0d540cc4df9c7c6c1",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa6344eaa87f4c4250bd08bd36a67e12db0b66840e11dd4ea58c5de86fe927b8e",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xccebeac1fa9c66c086cf9b46274428608a56d99d6982bd2dd1ddb67bd6c8719c",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9eaa92c63eae3761b034852bcd4da10598529bf90f69f6cb8d52a0e28a08256d",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x2c538f84addc2ab5d7ddfbea674283e9055f210b2cd1a9e8ac801565fdafb558",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 29.16,
-    "projectLinks": {
-      "websites": [
-        "https://recall.network/"
-      ],
-      "socials": [
-        "https://x.com/recallnet"
-      ]
-    }
+    "top10Pct": 0,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

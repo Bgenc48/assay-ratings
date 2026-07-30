@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Gitlawb",
   "name": "Gitlawb",
-  "scanned_at": "2026-07-29T08:07:50.026Z",
+  "scanned_at": "2026-07-30T07:50:46.829Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 64.2,
+    "overall": 58.6,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -72,9 +72,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 13 days old; trust needs time (Provisional).",
+          "evidence": "0xba43b6f70d624b6550c5393008206bf9374e4c8b8a488f4fc06ebfd0e73d0495"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 0,
@@ -101,6 +108,11 @@
       "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -120,13 +132,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 19.75,
+    "ageDays": 13,
+    "liquidityUsd": 33.4,
     "pools": [
       {
         "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716",
         "dex": "uniswap",
-        "liquidityUsd": 19.75,
+        "liquidityUsd": 33.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "LATI",
   "name": "Latitude",
-  "scanned_at": "2026-07-29T08:10:03.103Z",
+  "scanned_at": "2026-07-30T07:53:16.327Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,9 +83,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 114 days old; trust needs time (Provisional).",
+          "evidence": "0x85858521bc37ae5000e24a652fe64ae86d8ab062ecfb4b6c027d4e3a1b9d9eaa"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 0,
@@ -117,6 +124,11 @@
       "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -134,13 +146,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": null,
-    "liquidityUsd": 110042.18,
+    "ageDays": 114,
+    "liquidityUsd": 110203.86,
     "pools": [
       {
         "pair": "0x339b073007D7a61FCdDbfa7BdEb20b4Eb4CD7CCD",
         "dex": "sushiswap",
-        "liquidityUsd": 110042.18,
+        "liquidityUsd": 110203.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ZEST",
   "name": "Zest",
-  "scanned_at": "2026-07-29T08:05:12.729Z",
+  "scanned_at": "2026-07-30T07:47:45.062Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 55.8,
+    "letter": "D",
+    "overall": 51.4,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -72,9 +72,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 57 days old; trust needs time (Provisional).",
+          "evidence": "0x18c991e15d44e504b5cc9fc25246550200b45c798de7dd4b7517e1ad3c8c45d2"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 100,
@@ -83,7 +90,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.4%.",
+          "text": "Top-10 unlabeled holders control 7.5%.",
           "evidence": null
         }
       ]
@@ -96,6 +103,11 @@
   },
   "caps": [
     {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -103,7 +115,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "483386496133069604138970",
+    "totalSupply": "479064747545906348334879",
     "decimals": 18,
     "owner": "0x4ddae1d1bb8dacd4c8fa56792fde60f446755d0f",
     "controlType": "safe",
@@ -116,20 +128,20 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 228110.59,
+    "ageDays": 57,
+    "liquidityUsd": 228113.28,
     "pools": [
       {
         "pair": "0x3693022BD390E147D8dD89a05403C80FF21dd64B",
         "dex": "aerodrome",
-        "liquidityUsd": 228110.59,
+        "liquidityUsd": 228113.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 7.41,
+    "top10Pct": 7.48,
     "projectLinks": {
       "websites": [
         "https://www.zestprotocol.com/",
