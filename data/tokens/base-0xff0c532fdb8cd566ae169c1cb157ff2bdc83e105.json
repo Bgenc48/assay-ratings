@@ -1,18 +1,18 @@
 {
-  "address": "0x693b8de886712f0039eef578bbe5ac7ea3b598ce",
+  "address": "0xff0c532fdb8cd566ae169c1cb157ff2bdc83e105",
   "chain": "base",
   "status": "ok",
-  "symbol": "doji",
-  "name": "doji",
-  "scanned_at": "2026-07-31T08:18:26.600Z",
+  "symbol": "Fren Pet",
+  "name": "Fren Pet",
+  "scanned_at": "2026-07-31T08:21:51.791Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 68.3,
-    "provisional": true,
+    "overall": 64.4,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -57,22 +57,22 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x65Df01daC03A314771d7525E0E350B92D1659829"
+            "pair": "0xDE66c35e01ED8e619Bf092352338ef94f2327337"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
@@ -96,83 +96,100 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "1000000000000000000000000000",
+    "totalSupply": "7211844968346448365122591",
     "decimals": 18,
-    "owner": null,
-    "controlType": "none",
+    "owner": "0x54c4dd8c2e124c65f55e1e096ab1fb6543e1206c",
+    "controlType": "unknown",
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [
+      "blacklist(address)",
       "burnFrom(address,uint256)"
     ],
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 26014.989999999998,
+    "ageDays": 1065,
+    "liquidityUsd": 616133.4999999999,
     "pools": [
       {
-        "pair": "0x65Df01daC03A314771d7525E0E350B92D1659829",
+        "pair": "0xDE66c35e01ED8e619Bf092352338ef94f2327337",
         "dex": "uniswap",
-        "liquidityUsd": 19463.67,
+        "liquidityUsd": 614604.83,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x29b3a7869E3662D00aaBD89A8ee74B2F703a6a66",
+        "dex": "baseswap",
+        "liquidityUsd": 1507.2,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x047f606fd5b2baa5f5c6c4ab8958e45cb6b054b7",
+          "sharePct": 83.7
+        }
+      },
+      {
+        "pair": "0xe3ce23c074a3c4cf79f1cd565a1002679a7c8a9278118dcda978d522423d50da",
+        "dex": "uniswap",
+        "liquidityUsd": 8.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x59d924e3a022d08c81d6e7b673698b3a6ebcb72b9064087d2f4e277b7c865a92",
-        "dex": "uniswap",
-        "liquidityUsd": 209.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "pair": "0x95d6856d120a79CAaa0827B1cb100e9FB9DCFDEe",
+        "dex": "aerodrome",
+        "liquidityUsd": 6.14,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x047f606fd5b2baa5f5c6c4ab8958e45cb6b054b7",
+          "sharePct": 99.99
+        }
+      },
+      {
+        "pair": "0x381f910cBba212E09f79451B83A70B96B4d4b87b",
+        "dex": "sushiswap",
+        "liquidityUsd": 0.27,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x7b1908d98764c152a1d53f45cc121cf516f08044ab604ad260db6cf2450a80d8",
+        "pair": "0x9C93Fd133424B07543336200Ce8E83be0F7AcB8C",
         "dex": "uniswap",
-        "liquidityUsd": 5656.15,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9d81bf35d3bac55981aa7d8142d95753b82b13de72600785503309056addabdb",
-        "dex": "uniswap",
-        "liquidityUsd": 550.55,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc01a42b7e5e831a6bd8cc5db46217b7b1bd06280153744ff14ac493e287485cd",
-        "dex": "uniswap",
-        "liquidityUsd": 104.09,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xb4ffacfa381b3ff342947067a5dc9ca72654cc9485f2d508befc8aeae65fb1b2",
-        "dex": "uniswap",
-        "liquidityUsd": 31.25,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
+        "liquidityUsd": 6.95,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xeb77cb361fa03a3bc07d28a3a2cfebb2644de140",
+          "sharePct": 99.99
+        }
       }
     ],
-    "top10Pct": 21.64,
+    "top10Pct": 21.35,
     "projectLinks": {
       "websites": [
-        "https://www.doji.dog/"
+        "https://frenpet.xyz",
+        "https://docs.frenpet.xyz",
+        "https://warpcast.com/frenpet"
       ],
       "socials": [
-        "https://x.com/DojiOnBase"
+        "https://x.com/frenpetonbase",
+        "https://t.me/frenpet",
+        "https://discord.gg/gC4sHDQua4"
       ]
     }
   },

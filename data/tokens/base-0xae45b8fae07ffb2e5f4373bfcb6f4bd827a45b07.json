@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Gitlawb",
   "name": "Gitlawb",
-  "scanned_at": "2026-07-30T07:50:46.829Z",
+  "scanned_at": "2026-07-31T08:18:30.516Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 13 days old; trust needs time (Provisional).",
+          "text": "Token is 14 days old; trust needs time (Provisional).",
           "evidence": "0xba43b6f70d624b6550c5393008206bf9374e4c8b8a488f4fc06ebfd0e73d0495"
         }
       ]
@@ -132,13 +132,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 13,
-    "liquidityUsd": 33.4,
+    "ageDays": 14,
+    "liquidityUsd": 33.3,
     "pools": [
       {
         "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716",
         "dex": "uniswap",
-        "liquidityUsd": 33.4,
+        "liquidityUsd": 33.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa1cd143e2e3db034c4915d399ec3b7f0bc4373bbcb3a8d46e01c4596cd9e9ba1",
+        "dex": "uniswap",
+        "liquidityUsd": 0,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

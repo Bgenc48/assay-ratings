@@ -1,17 +1,17 @@
 {
-  "address": "0xab6363da0c80cef3ae105bd6241e30872355d021",
+  "address": "0xa4dc42370e21fcf2182d24b39bebb7a5695adb07",
   "chain": "base",
   "status": "ok",
-  "symbol": "ROLL",
-  "name": "Roll",
-  "scanned_at": "2026-07-31T08:19:33.939Z",
+  "symbol": "PIPEDOG",
+  "name": "pipedog",
+  "scanned_at": "2026-07-31T08:21:44.490Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
-    "badge": "Code-Enforced",
+    "badge": "Discretionary",
     "coverage": "partial"
   },
   "dimensions": {
@@ -28,19 +28,14 @@
       ]
     },
     "adminSurface": {
-      "score": 100,
+      "score": 40,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.none",
-          "severity": "info",
-          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
-          "evidence": {
-            "type": "eth_call",
-            "to": "0xab6363da0c80cef3ae105bd6241e30872355d021",
-            "data": "0x8da5cb5b",
-            "result": null
-          }
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
         }
       ]
     },
@@ -71,13 +66,13 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x0a04e1c94584a6f91228da6c0dba6bf0fbe5c9fa20ec6df57490494994489333"
+            "pair": "0xCc83D7a0bf1297a63e76364A22516037Adf71Fc0"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -88,7 +83,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 1.5%.",
+          "text": "Top-10 unlabeled holders control 0.0%.",
           "evidence": null
         }
       ]
@@ -101,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -113,76 +103,51 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "1000000000000000000000000000",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
-    "privileged": [],
+    "privileged": [
+      "burnFrom(address,uint256)"
+    ],
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 198,
-    "liquidityUsd": 1676469.1,
+    "ageDays": null,
+    "liquidityUsd": 8900268.15,
     "pools": [
       {
-        "pair": "0x0a04e1c94584a6f91228da6c0dba6bf0fbe5c9fa20ec6df57490494994489333",
+        "pair": "0x40d4ad70615a7216e4e7eb39d06479ff646f9a4a7f5d1f6fee7a41be1f34519e",
         "dex": "uniswap",
-        "liquidityUsd": 1651315.48,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xE47F7dbA68a00dc1A6f11458BcDFcA810E1CFEbF",
+        "pair": "0xb0272fdbda5a2310732f6f39b92fd88bb54d3817197d6432f63e0849aa960582",
         "dex": "uniswap",
-        "liquidityUsd": 23538.95,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x595beA2246d5D296E0FEF76DfE3df2B07EC70E5f",
-        "dex": "pancakeswap",
-        "liquidityUsd": 1600.75,
+        "pair": "0xCc83D7a0bf1297a63e76364A22516037Adf71Fc0",
+        "dex": "aerodrome",
+        "liquidityUsd": 8900268.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xb345f418f4238b68ec46d8f056389e959226e79fa2dbeda194577b4695a754ff",
-        "dex": "uniswap",
-        "liquidityUsd": 13.87,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xafF8cB4A06875e2b5279DD79AD5FB2B064eB290f",
-        "dex": "pancakeswap",
-        "liquidityUsd": 0.05,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 1.53,
-    "projectLinks": {
-      "websites": [
-        "https://rollx.trade/",
-        "https://coinmarketcap.com/zh/currencies/rollx/"
-      ],
-      "socials": [
-        "https://x.com/rollxfi",
-        "https://discord.gg/rollx"
-      ]
-    }
+    "top10Pct": 0,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

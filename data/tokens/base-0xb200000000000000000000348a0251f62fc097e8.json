@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "GJESSE",
   "name": "Ghibli Jesse",
-  "scanned_at": "2026-07-30T07:51:41.964Z",
+  "scanned_at": "2026-07-31T08:19:26.576Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,13 +72,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xdf1d1c683a42e4f370743496ed02f05aff3196dbf6ebb63b70bbd6089655b459"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -94,7 +91,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 5.3%.",
+          "text": "Top-10 unlabeled holders control 5.2%.",
           "evidence": null
         }
       ]
@@ -130,25 +127,10 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 54.38,
-    "pools": [
-      {
-        "pair": "0xdf1d1c683a42e4f370743496ed02f05aff3196dbf6ebb63b70bbd6089655b459",
-        "dex": "uniswap",
-        "liquidityUsd": 54.38,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": 5.26,
-    "projectLinks": {
-      "websites": [
-        "https://ghibli-jesse.xyz"
-      ],
-      "socials": []
-    }
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": 5.23,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

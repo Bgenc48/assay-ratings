@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "TITN",
   "name": "Titan",
-  "scanned_at": "2026-07-30T07:53:10.115Z",
+  "scanned_at": "2026-07-31T08:20:57.565Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -111,13 +111,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 380,
-    "liquidityUsd": 329294.75,
+    "ageDays": 381,
+    "liquidityUsd": 326934.32,
     "pools": [
       {
         "pair": "0x611865e603862a3D1cd29146458564a684e1cBbb",
         "dex": "aerodrome",
-        "liquidityUsd": 289474.66,
+        "liquidityUsd": 287418.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,16 +126,29 @@
       {
         "pair": "0x50b5d6f6ACCDCc7Dc048de35B2B9Ba5FdD5a283e",
         "dex": "aerodrome",
-        "liquidityUsd": 39801.07,
+        "liquidityUsd": 39489.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0xe63c331771CF2c7C35DdAf65dCFb5f62041eEeE4",
+        "dex": "aerodrome",
+        "liquidityUsd": 6.92,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x2c187aa1f4285034e73b4e4018420424405547f2",
+          "sharePct": 99.99
+        }
+      },
+      {
         "pair": "0xfe2313df3e27aD2608B16230695d835E18d409f4",
         "dex": "aerodrome",
-        "liquidityUsd": 19.02,
+        "liquidityUsd": 18.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

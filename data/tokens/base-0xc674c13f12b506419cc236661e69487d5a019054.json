@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Robinhood",
   "name": "Robinhood",
-  "scanned_at": "2026-07-30T07:52:39.339Z",
+  "scanned_at": "2026-07-31T08:20:25.777Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xd790f8ecb95cf66b145c4245dfa3d3d63d9aab2553ded81e7084605396c1ef4a"
+            "pair": "0xcb8cef62bc4f5753c45aafe0ed865f8ecbc4061d4014111d4b82dd36114ec2ee"
           }
         }
       ]
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 7 days old; trust needs time (Provisional).",
+          "text": "Token is 8 days old; trust needs time (Provisional).",
           "evidence": "0xe18b53d1bfa49de8a40464096e65170f4412a2a137766a037932e488ff222002"
         }
       ]
@@ -127,22 +127,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 7,
-    "liquidityUsd": 5.93,
+    "ageDays": 8,
+    "liquidityUsd": null,
     "pools": [
       {
         "pair": "0xcb8cef62bc4f5753c45aafe0ed865f8ecbc4061d4014111d4b82dd36114ec2ee",
         "dex": "uniswap",
         "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd790f8ecb95cf66b145c4245dfa3d3d63d9aab2553ded81e7084605396c1ef4a",
-        "dex": "uniswap",
-        "liquidityUsd": 5.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

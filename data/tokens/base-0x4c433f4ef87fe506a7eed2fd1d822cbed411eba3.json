@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "TSG",
   "name": "the sleeping giant",
-  "scanned_at": "2026-07-30T07:50:50.302Z",
+  "scanned_at": "2026-07-31T08:18:34.227Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 72 days old; trust needs time (Provisional).",
+          "text": "Token is 73 days old; trust needs time (Provisional).",
           "evidence": "0x72776799bae9c3cf16d8ef278b3a8002babc36111a3c3ef46eb1b9960ee192f1"
         }
       ]
@@ -118,13 +118,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 72,
-    "liquidityUsd": 146163.63,
+    "ageDays": 73,
+    "liquidityUsd": 170897.36,
     "pools": [
       {
         "pair": "0x5e4c78bf666d78fa1e751abc84cf9933d17b1736d4605f400173ac63ac52b1f8",
         "dex": "uniswap",
-        "liquidityUsd": 145599.95,
+        "liquidityUsd": 148827.34,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5d7e5805c897486e03e0b583eceabd9e4cd59d1ad361445b79809effb2edc546",
+        "dex": "uniswap",
+        "liquidityUsd": 21488.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +142,7 @@
       {
         "pair": "0x25358851dd7454fd38cd685acdc937d3b892314489164538c33582a45bb76b93",
         "dex": "uniswap",
-        "liquidityUsd": 563.68,
+        "liquidityUsd": 581.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
