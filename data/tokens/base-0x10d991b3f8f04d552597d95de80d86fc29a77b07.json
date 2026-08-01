@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "VBEEF",
   "name": "Virtual Beef",
-  "scanned_at": "2026-07-31T08:20:29.593Z",
+  "scanned_at": "2026-08-01T07:48:59.406Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 7 days old; trust needs time (Provisional).",
+          "text": "Token is 8 days old; trust needs time (Provisional).",
           "evidence": "0x319348ad7bf3f98fe7324a393ed384c9ebab3040963b9431b7e180cdc424c8c6"
         }
       ]
@@ -127,13 +127,31 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 7,
-    "liquidityUsd": 52320.23,
+    "ageDays": 8,
+    "liquidityUsd": 52339.26,
     "pools": [
       {
         "pair": "0x669a9a318d547cb609687f50326fbaf1cece9e2ff540e3638fec89a037e8643e",
         "dex": "uniswap",
-        "liquidityUsd": 52320.23,
+        "liquidityUsd": 52316.21,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x482902f2e136e6730b6f0b397fb901859d661f2312f3288d37d278f3d6b706a9",
+        "dex": "uniswap",
+        "liquidityUsd": 12.94,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc57677cf707ff3bd8017054698225444800ecdfea98f0900018abcc583c3a069",
+        "dex": "uniswap",
+        "liquidityUsd": 10.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

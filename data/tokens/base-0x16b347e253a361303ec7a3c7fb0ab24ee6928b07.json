@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-07-31T08:18:14.109Z",
+  "scanned_at": "2026-08-01T07:46:31.215Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,13 +61,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x88e86dbfa10b298959aa70f4d673f8dbc7a7cd9c8c339f57cc78c05e02638b51"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -78,7 +75,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 15 days old; trust needs time (Provisional).",
+          "text": "Token is 16 days old; trust needs time (Provisional).",
           "evidence": "0x97011416169d6256b7b0d07516f6ae55defa67461070d281af874d1108f83492"
         }
       ]
@@ -127,28 +124,9 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 15,
-    "liquidityUsd": 143.82,
-    "pools": [
-      {
-        "pair": "0x88e86dbfa10b298959aa70f4d673f8dbc7a7cd9c8c339f57cc78c05e02638b51",
-        "dex": "uniswap",
-        "liquidityUsd": 119.98,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x2536257eeab590725ccd7074341107acd1b0c7d1e93e2e2c3d2eb64b101e3dc4",
-        "dex": "uniswap",
-        "liquidityUsd": 23.84,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "ageDays": 16,
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": 1.08,
     "projectLinks": null
   },
