@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "PROS",
   "name": "Wrapped PROS",
-  "scanned_at": "2026-08-01T07:42:10.419Z",
+  "scanned_at": "2026-08-02T07:45:13.628Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 108 days old; trust needs time (Provisional).",
+          "text": "Token is 109 days old; trust needs time (Provisional).",
           "evidence": "0xe163c483d97097c44719ffede6c9af66f41539d872a02f6e10450acabea7b13a"
         }
       ]
@@ -90,7 +90,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 59.3% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 59.8% of circulating supply.",
           "evidence": null
         }
       ]
@@ -125,7 +125,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "3874415599366308620855103",
+    "totalSupply": "3859114001473661087507592",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -138,31 +138,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 108,
-    "liquidityUsd": 790642.4799999999,
+    "ageDays": 109,
+    "liquidityUsd": 756643.26,
     "pools": [
-      {
-        "pair": "0xee0d536a3636ca08e8646df476b4548afe5193ddda26b61cc73de0fd154be65b",
-        "dex": "uniswap",
-        "liquidityUsd": 29964.52,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x2eb6bf077ea7849dbf37c8b8bb57394db5acde25ba3b571447314e06b616cbd1",
-        "dex": "uniswap",
-        "liquidityUsd": 18608.78,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x3f4E90Ff4125d9FCC4F4B7Ba5213f596e9A1115d",
         "dex": "uniswap",
-        "liquidityUsd": 6364.05,
+        "liquidityUsd": 6443.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +153,7 @@
       {
         "pair": "0xe89170c528acc5f03b1e9d13ade9423888b7b06e4dab11f780831d8200836778",
         "dex": "uniswap",
-        "liquidityUsd": 1333.68,
+        "liquidityUsd": 1354.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,7 +162,7 @@
       {
         "pair": "0x8A8e4170C09074b109352190d47e54d7c1F61e4E",
         "dex": "aerodrome",
-        "liquidityUsd": 731499.19,
+        "liquidityUsd": 745749.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -189,7 +171,7 @@
       {
         "pair": "0x24BDDff0577D1Ee32f92A0b92296cA9702611c6A",
         "dex": "aerodrome",
-        "liquidityUsd": 2844.6,
+        "liquidityUsd": 3061.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -198,7 +180,7 @@
       {
         "pair": "0xfbc8430728e4f114b4cD1B3A9FDd1382c133F63c",
         "dex": "aerodrome",
-        "liquidityUsd": 25.2,
+        "liquidityUsd": 25.48,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -207,14 +189,23 @@
       {
         "pair": "0xA1DC70D55489784b68f8d2c045eaa51F59dd7ad5",
         "dex": "pancakeswap",
-        "liquidityUsd": 2.46,
+        "liquidityUsd": 2.5,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc47bc81c85fdc5609c586b6de80f43c4e03f60aa811de86f3359caedc97cbfb6",
+        "dex": "uniswap",
+        "liquidityUsd": 5.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 59.33,
+    "top10Pct": 59.76,
     "projectLinks": null
   },
   "notes": null,

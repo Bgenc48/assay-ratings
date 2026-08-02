@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "xtoken",
   "name": "xtoken",
-  "scanned_at": "2026-08-01T07:50:07.249Z",
+  "scanned_at": "2026-08-02T07:53:31.711Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 39 days old; trust needs time (Provisional).",
+          "text": "Token is 40 days old; trust needs time (Provisional).",
           "evidence": "0x42b25bf0354a778c0fdb1e822cc010d3cffbab9ccb0b3aaac7eff843ad449524"
         }
       ]
@@ -135,22 +135,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 39,
-    "liquidityUsd": 114072.97,
+    "ageDays": 40,
+    "liquidityUsd": 113782.2,
     "pools": [
       {
         "pair": "0x2227e2Cd686Dea3393b5e63CfF30fdE7711bAD83",
         "dex": "uniswap",
-        "liquidityUsd": 114072.97,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x98af8f0fc6fb015d491b14af071ea62bdcaea07b43c9d4c5546522d61c8e296d",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 113782.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

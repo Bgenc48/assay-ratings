@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ZORA",
   "name": "Zora",
-  "scanned_at": "2026-08-01T07:44:00.611Z",
+  "scanned_at": "2026-08-02T07:47:04.892Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": false,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -82,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 54.0% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -100,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.age-24mo",
       "letter": "A",
@@ -128,13 +116,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 519,
-    "liquidityUsd": 393270.93,
+    "ageDays": 520,
+    "liquidityUsd": 396221.88,
     "pools": [
       {
         "pair": "0xEdc625B74537eE3a10874f53D170E9c17A906B9c",
         "dex": "uniswap",
-        "liquidityUsd": 148795.86,
+        "liquidityUsd": 149064.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -143,7 +131,7 @@
       {
         "pair": "0x3f53f1Fd5b7723DDf38D93a584D280B9b94C3111",
         "dex": "aerodrome",
-        "liquidityUsd": 63206.7,
+        "liquidityUsd": 67364.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -152,7 +140,7 @@
       {
         "pair": "0xAdB8Fb846DBD3Bd6A23335CEe65Bb610C1cf0ea3",
         "dex": "aerodrome",
-        "liquidityUsd": 35235.16,
+        "liquidityUsd": 36633.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -161,7 +149,7 @@
       {
         "pair": "0x4c598eD2D67D2f189263f70cf4573c5c1e6718b3",
         "dex": "uniswap",
-        "liquidityUsd": 38514.7,
+        "liquidityUsd": 38825.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -170,7 +158,7 @@
       {
         "pair": "0xd694bd7285eeeee19d3d5da38f613859168c422d628def88a0c95dad12071f3a",
         "dex": "uniswap",
-        "liquidityUsd": 33133.55,
+        "liquidityUsd": 33262.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -179,7 +167,7 @@
       {
         "pair": "0xA0Ca5bEbC42cDbf3623B1C09206Ae4e3975B0FC7",
         "dex": "uniswap",
-        "liquidityUsd": 26190.09,
+        "liquidityUsd": 23116.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -188,7 +176,7 @@
       {
         "pair": "0x396a74f0392c37853e5a7885ded4f357fe4aee5812f71267cb08f292bf803a78",
         "dex": "uniswap",
-        "liquidityUsd": 27799.21,
+        "liquidityUsd": 27710.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -197,14 +185,14 @@
       {
         "pair": "0x0D209fd74849A5ba5761382347321934e4A62368",
         "dex": "aerodrome",
-        "liquidityUsd": 20395.66,
+        "liquidityUsd": 20243.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 53.96,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://zora.co"

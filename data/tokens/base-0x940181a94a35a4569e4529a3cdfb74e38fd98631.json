@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "AERO",
   "name": "Aerodrome",
-  "scanned_at": "2026-08-01T07:39:33.504Z",
+  "scanned_at": "2026-08-02T07:42:26.006Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 54.7,
+    "letter": "C",
+    "overall": 55.9,
     "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -81,7 +81,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -133,13 +133,13 @@
     },
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1069,
-    "liquidityUsd": 32129046.370000005,
+    "ageDays": 1070,
+    "liquidityUsd": 30663288.4,
     "pools": [
       {
         "pair": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
         "dex": "aerodrome",
-        "liquidityUsd": 25551371.83,
+        "liquidityUsd": 24792971.95,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -148,7 +148,7 @@
       {
         "pair": "0x82321f3BEB69f503380D6B233857d5C43562e2D0",
         "dex": "aerodrome",
-        "liquidityUsd": 1161091.35,
+        "liquidityUsd": 1329790.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,34 +157,16 @@
       {
         "pair": "0x20CB8f872ae894F7c9e32e621C186e5AFCe82Fd0",
         "dex": "pancakeswap",
-        "liquidityUsd": 170330.95,
+        "liquidityUsd": 152709.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xE5B5f522E98B5a2baAe212d4dA66b865B781DB97",
-        "dex": "uniswap",
-        "liquidityUsd": 180912.55,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7f670f78B17dEC44d5Ef68a48740b6f8849cc2e6",
-        "dex": "aerodrome",
-        "liquidityUsd": 2357256.17,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
         "pair": "0xa4FDd479eda160671636e2eCF8f993Cbf86258a8",
         "dex": "aerodrome",
-        "liquidityUsd": 476838.62,
+        "liquidityUsd": 457052.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -193,7 +175,16 @@
       {
         "pair": "0xdFe5F275020def30993f042174Fc2D335678b626",
         "dex": "aerodrome",
-        "liquidityUsd": 849826.05,
+        "liquidityUsd": 807850.94,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xE5B5f522E98B5a2baAe212d4dA66b865B781DB97",
+        "dex": "uniswap",
+        "liquidityUsd": 173808.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -202,14 +193,23 @@
       {
         "pair": "0x4e506648d493C8870f55e870480f92f2F33ecE51",
         "dex": "aerodrome",
-        "liquidityUsd": 1381418.85,
+        "liquidityUsd": 1136875.56,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xBE00fF35AF70E8415D0eB605a286D8A45466A4c1",
+        "dex": "aerodrome",
+        "liquidityUsd": 1812228.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 17.59,
     "projectLinks": {
       "websites": [
         "https://aerodrome.finance/docs",
@@ -222,9 +222,5 @@
     }
   },
   "notes": "governance.claimed was removed 2026-07-20: it was asserted without cited evidence and, with no on-chain governance verifier in v0.2, caused the report to publish 'governance verifiably executes on-chain' at score 85 — a verification nobody performed. Re-add only with a real governance check (see docs/reviews/UR-AERO-2026-07.md).",
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }
