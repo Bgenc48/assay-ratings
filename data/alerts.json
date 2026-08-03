@@ -1,6 +1,86 @@
 {
-  "generated_at": "2026-08-02T07:54:33.121Z",
+  "generated_at": "2026-08-03T09:00:26.083Z",
   "alerts": [
+    {
+      "at": "2026-08-03T08:45:21.281Z",
+      "chain": "base",
+      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+      "symbol": "AERO",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state C → UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-03T08:46:43.865Z",
+      "chain": "base",
+      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "symbol": "cbBTC",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-03T08:47:46.241Z",
+      "chain": "base",
+      "address": "0x8185eaf46136a3f095c60facd97eca1bfc2f38f6",
+      "symbol": "$OLIVIA2.0",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-03T08:51:37.804Z",
+      "chain": "base",
+      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
+      "symbol": "AMETA",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-03T08:52:21.486Z",
+      "chain": "base",
+      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-03T09:00:14.028Z",
+      "chain": "base",
+      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "OpenAI is now rated: B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-03T09:00:22.726Z",
+      "chain": "base",
+      "address": "0xbf8e8f0e8866a7052f948c16508644347c57aba3",
+      "symbol": "aeon",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "aeon is now rated: B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-03T09:00:25.332Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000e19f18ee4b9d550992",
+      "symbol": "SOAF",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "SOAF is now rated: C.",
+      "evidence": null
+    },
     {
       "at": "2026-08-02T07:42:36.462Z",
       "chain": "base",
@@ -2919,86 +2999,6 @@
       "severity": "WARN",
       "kind": "grade-state",
       "text": "Grade state UR → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:36:45.484Z",
-      "chain": "base",
-      "address": "0xcb111e6a2a3bde90856d299d61341ac302167d23",
-      "symbol": "cbMEGA",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → F.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:36:51.949Z",
-      "chain": "base",
-      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
-      "symbol": "DRV",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:37:08.894Z",
-      "chain": "base",
-      "address": "0x00000000a22c618fd6b4d7e9a335c4b96b189a38",
-      "symbol": "TOWNS",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade F → D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:37:34.209Z",
-      "chain": "base",
-      "address": "0x2100a39f514d8fe3f26963a29b95b030a0a5d4b7",
-      "symbol": "UPONLY",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:37:38.902Z",
-      "chain": "base",
-      "address": "0x196f914d0fdc1966378e77dc9a4ca326c70f8b07",
-      "symbol": "TRUMP",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "TRUMP is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:37:44.909Z",
-      "chain": "base",
-      "address": "0x16b347e253a361303ec7a3c7fb0ab24ee6928b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:37:47.849Z",
-      "chain": "base",
-      "address": "0x693b8de886712f0039eef578bbe5ac7ea3b598ce",
-      "symbol": "doji",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "doji is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-16T07:35:19.531Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "CRITICAL",
-      "kind": "downgrade",
-      "text": "Grade D → F.",
       "evidence": null
     }
   ]

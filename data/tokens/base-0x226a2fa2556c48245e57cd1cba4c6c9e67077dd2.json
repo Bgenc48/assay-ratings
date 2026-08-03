@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BIO",
   "name": "BIO",
-  "scanned_at": "2026-08-02T07:51:48.915Z",
+  "scanned_at": "2026-08-03T08:56:42.645Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xd40BffA9C9E35493B88a2b6744C49D8716b00898"
+            "pair": "0x4267F2Da3a054c34dD6463d951eb3A9474901FBd"
           }
         }
       ]
@@ -83,7 +83,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 43.6%.",
+          "text": "Top-10 unlabeled holders control 43.7%.",
           "evidence": null
         }
       ]
@@ -108,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "182108654935606440000000000",
+    "totalSupply": "182061045099967740000000000",
     "decimals": 18,
     "owner": "0xd9c6ee1547fd6d48f8872dd866473893bbe8a1ab",
     "controlType": "safe",
@@ -121,13 +121,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 506,
-    "liquidityUsd": 601844.67,
+    "ageDays": 507,
+    "liquidityUsd": 917442.13,
     "pools": [
       {
         "pair": "0xa79A2eAfDfb8F71bAd810AE12A89711Fb6CaF9AC",
         "dex": "pancakeswap",
-        "liquidityUsd": 63477.84,
+        "liquidityUsd": 61848.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,7 +136,7 @@
       {
         "pair": "0x052E77018Bfb98dc6373C37d757bb1d3fAd09eC5",
         "dex": "uniswap",
-        "liquidityUsd": 1803.82,
+        "liquidityUsd": 1759.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,7 +145,7 @@
       {
         "pair": "0xe15587dc839a23fc090c9425d361b923fcddacf8990c18ebd73695adbf59e727",
         "dex": "uniswap",
-        "liquidityUsd": 776.17,
+        "liquidityUsd": 762.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -154,7 +154,7 @@
       {
         "pair": "0x222cCBE78890A4d9Ef8d22d7FC1B968Be0F2c653",
         "dex": "aerodrome",
-        "liquidityUsd": 221219.7,
+        "liquidityUsd": 225989.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -163,16 +163,7 @@
       {
         "pair": "0xd40BffA9C9E35493B88a2b6744C49D8716b00898",
         "dex": "aerodrome",
-        "liquidityUsd": 314558.25,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe10949b980f62f844cb4109f39ea1186c19f4b4ac55e38054bbec7e27394436e",
-        "dex": "uniswap",
-        "liquidityUsd": 8.89,
+        "liquidityUsd": 295595.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -188,17 +179,33 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd2228bc53ab5294a789c2c796d3d09b44da19357515399697dffba9f9b92d7aa",
+        "pair": "0xdcb06f0aedb513c3afb9ea292d744da9848637251681824fe2eb75561aea6ed6",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4267F2Da3a054c34dD6463d951eb3A9474901FBd",
+        "dex": "aerodrome",
+        "liquidityUsd": 331485.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 43.65,
-    "projectLinks": null
+    "top10Pct": 43.67,
+    "projectLinks": {
+      "websites": [
+        "https://peptai.xyz/"
+      ],
+      "socials": [
+        "https://x.com/peptai_"
+      ]
+    }
   },
   "notes": null,
   "coi": false

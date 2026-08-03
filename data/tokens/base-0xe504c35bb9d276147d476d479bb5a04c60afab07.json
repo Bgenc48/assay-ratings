@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-02T07:45:00.810Z",
+  "scanned_at": "2026-08-03T08:48:09.055Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 65.7,
+    "overall": 63.1,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -75,22 +75,15 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 22 days old; trust needs time (Provisional).",
+          "text": "Token is 23 days old; trust needs time (Provisional).",
           "evidence": "0x43f6664884ab86ff39fa451bca3dcb41f8b6ac5bfc8f67fe38889758b6ca278c"
         }
       ]
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 3.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -124,10 +117,10 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 22,
+    "ageDays": 23,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": 2.98,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,
