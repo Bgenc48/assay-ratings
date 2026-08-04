@@ -1,84 +1,144 @@
 {
-  "generated_at": "2026-08-03T09:00:26.083Z",
+  "generated_at": "2026-08-04T08:09:22.938Z",
   "alerts": [
     {
-      "at": "2026-08-03T08:45:21.281Z",
-      "chain": "base",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "symbol": "AERO",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state C → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T08:46:43.865Z",
+      "at": "2026-08-04T07:58:47.427Z",
       "chain": "base",
       "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
       "symbol": "cbBTC",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
       "evidence": null
     },
     {
-      "at": "2026-08-03T08:47:46.241Z",
+      "at": "2026-08-04T07:59:31.526Z",
       "chain": "base",
       "address": "0x8185eaf46136a3f095c60facd97eca1bfc2f38f6",
       "symbol": "$OLIVIA2.0",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T08:51:37.804Z",
-      "chain": "base",
-      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
-      "symbol": "AMETA",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T08:52:21.486Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
       "severity": "WARN",
       "kind": "cap-triggered",
       "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
       "evidence": null
     },
     {
-      "at": "2026-08-03T09:00:14.028Z",
+      "at": "2026-08-04T08:02:14.459Z",
       "chain": "base",
-      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
+      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
+      "symbol": "ZORA",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B+ → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:02:14.459Z",
+      "chain": "base",
+      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
+      "symbol": "ZORA",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:02:26.250Z",
+      "chain": "base",
+      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
+      "symbol": "AMETA",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:04:29.694Z",
+      "chain": "base",
+      "address": "0x2100a39f514d8fe3f26963a29b95b030a0a5d4b7",
+      "symbol": "UPONLY",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:06:24.207Z",
+      "chain": "base",
+      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
+      "symbol": "cbXRP",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state UR → F.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:08:09.035Z",
+      "chain": "base",
+      "address": "0x22409cd6f62b90ea2b57acf997011f4490ad5b07",
+      "symbol": "PIPEDOG",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:08:09.035Z",
+      "chain": "base",
+      "address": "0x22409cd6f62b90ea2b57acf997011f4490ad5b07",
+      "symbol": "PIPEDOG",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:08:14.034Z",
+      "chain": "base",
+      "address": "0x3f58e7054fcaa38c74c1f46a5206e479ed995b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:08:14.034Z",
+      "chain": "base",
+      "address": "0x3f58e7054fcaa38c74c1f46a5206e479ed995b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:08:21.045Z",
+      "chain": "base",
+      "address": "0xde2b3d68b593c1c9e0cb6e55cbf289cdf5a5cb07",
+      "symbol": "PIPEDOG",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:08:21.045Z",
+      "chain": "base",
+      "address": "0xde2b3d68b593c1c9e0cb6e55cbf289cdf5a5cb07",
+      "symbol": "PIPEDOG",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-04T08:09:22.186Z",
+      "chain": "base",
+      "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
       "symbol": "OpenAI",
       "severity": "INFO",
       "kind": "listed",
       "text": "OpenAI is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T09:00:22.726Z",
-      "chain": "base",
-      "address": "0xbf8e8f0e8866a7052f948c16508644347c57aba3",
-      "symbol": "aeon",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "aeon is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T09:00:25.332Z",
-      "chain": "base",
-      "address": "0xb200000000000000000000e19f18ee4b9d550992",
-      "symbol": "SOAF",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "SOAF is now rated: C.",
       "evidence": null
     }
   ]

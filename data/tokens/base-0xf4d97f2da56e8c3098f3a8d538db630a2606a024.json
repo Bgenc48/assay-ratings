@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "DIEM",
   "name": "Diem",
-  "scanned_at": "2026-08-03T08:55:31.674Z",
+  "scanned_at": "2026-08-04T08:05:22.953Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 44.7,
+    "overall": 46.2,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "full"
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 9.2%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -106,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "37175265050793221455525",
+    "totalSupply": "37220168208715352950748",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -118,13 +125,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 351,
-    "liquidityUsd": 9534387.170000002,
+    "ageDays": 352,
+    "liquidityUsd": 10006029.38,
     "pools": [
       {
         "pair": "0xBc3231036Ee1ECa03E5F67FEceDC640D21610823",
         "dex": "aerodrome",
-        "liquidityUsd": 184491.22,
+        "liquidityUsd": 214002.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +140,7 @@
       {
         "pair": "0x01271A205e3F37cbfC9B353170D726060E193C0D",
         "dex": "aerodrome",
-        "liquidityUsd": 3955642.37,
+        "liquidityUsd": 4141082.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +149,7 @@
       {
         "pair": "0xbB345D35450BF9Ee76F3D2cE214E8e7AC5e1071d",
         "dex": "aerodrome",
-        "liquidityUsd": 5172394.27,
+        "liquidityUsd": 5423012.86,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -151,7 +158,7 @@
       {
         "pair": "0x80d995189ecc593672aD4703b250a5e82672EB1D",
         "dex": "uniswap",
-        "liquidityUsd": 199899.88,
+        "liquidityUsd": 209342.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,16 +167,7 @@
       {
         "pair": "0x063555796734FF6d04B8F27CD216bB05B6D95394",
         "dex": "aerodrome",
-        "liquidityUsd": 9857.21,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x14b80ebc26e08a33153e1b2c6a8a97e2c8c063677a3ae01172260a5c3f5f6e87",
-        "dex": "uniswap",
-        "liquidityUsd": 6019.3,
+        "liquidityUsd": 10127.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,7 +176,7 @@
       {
         "pair": "0x782D7C494d5DDC20c246a82aC8fe277e2728d002",
         "dex": "aerodrome",
-        "liquidityUsd": 3451.3,
+        "liquidityUsd": 3629.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -187,14 +185,23 @@
       {
         "pair": "0x3a431b4c228f2f1d8bfa65d96ef39b4af8a50f342f9eb676750ff4920e3b8c5f",
         "dex": "uniswap",
-        "liquidityUsd": 2631.62,
+        "liquidityUsd": 2720.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x148fe840de4aA27Fe2cad8d4EEF59a941AFE31cB",
+        "dex": "0x7Ca1dCCFB4f49564b8f13E18a67747fd428F1C40",
+        "liquidityUsd": 2111.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 10.5,
+    "top10Pct": 9.19,
     "projectLinks": {
       "websites": [
         "https://venice.ai/blog/introducing-diem-as-tokenized-intelligence-the-next-evolution-of-vvv"

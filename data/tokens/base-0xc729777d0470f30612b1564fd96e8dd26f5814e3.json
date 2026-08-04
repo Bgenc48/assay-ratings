@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SAPIEN",
   "name": "Sapien",
-  "scanned_at": "2026-08-03T08:57:03.861Z",
+  "scanned_at": "2026-08-04T08:06:40.798Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -88,7 +88,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 49.4%.",
+          "text": "Top-10 unlabeled holders control 49.5%.",
           "evidence": null
         }
       ]
@@ -123,13 +123,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 353,
-    "liquidityUsd": 878938.6000000001,
+    "ageDays": 354,
+    "liquidityUsd": 869664.3300000001,
     "pools": [
       {
         "pair": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862",
         "dex": "aerodrome",
-        "liquidityUsd": 825966.96,
+        "liquidityUsd": 816468.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +138,7 @@
       {
         "pair": "0x682A02D5a32DDb09D1cf4791fB4124E0d4E17b67",
         "dex": "uniswap",
-        "liquidityUsd": 52851.9,
+        "liquidityUsd": 53075.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,7 +147,7 @@
       {
         "pair": "0xAA03871da2C5e83e620FD44D6d08C9695E6BED91",
         "dex": "aerodrome",
-        "liquidityUsd": 63.14,
+        "liquidityUsd": 62.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -156,19 +156,10 @@
       {
         "pair": "0x9F12a2CB7ad24E7BeF73174677a171617C83D2EC",
         "dex": "aerodrome",
-        "liquidityUsd": 55.68,
+        "liquidityUsd": 56.68,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x1062E43FEbf02ef5e126e3fD1CecaFDB59755535",
-        "dex": "hydrex",
-        "liquidityUsd": 0.39,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
@@ -179,9 +170,18 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1062E43FEbf02ef5e126e3fD1CecaFDB59755535",
+        "dex": "hydrex",
+        "liquidityUsd": 0.39,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 49.44,
+    "top10Pct": 49.51,
     "projectLinks": {
       "websites": [
         "https://earn.sapien.io/"

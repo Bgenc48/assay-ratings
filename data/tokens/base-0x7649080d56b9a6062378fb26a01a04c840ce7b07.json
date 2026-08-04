@@ -1,18 +1,18 @@
 {
-  "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
+  "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
   "chain": "base",
   "status": "ok",
-  "symbol": "AMETA",
-  "name": "Alpha City",
-  "scanned_at": "2026-08-04T08:02:15.211Z",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-08-04T08:09:19.808Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 69.3,
-    "provisional": false,
+    "letter": "B-",
+    "overall": 70,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,18 +66,18 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x9aa4826fd33557a7d882296e3df5101b36ba09260f1757248af0e3957ed21674"
+            "pair": "0x01599CE6bad4888C77Ad34c80F6971832fD94fBD"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -89,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,42 +96,42 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "10000000000000000000000000000",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [
-      "blacklist(address)"
+      "burnFrom(address,uint256)"
     ],
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 549,
-    "liquidityUsd": 52052.3,
+    "ageDays": null,
+    "liquidityUsd": 1134915.5,
     "pools": [
       {
-        "pair": "0x9aa4826fd33557a7d882296e3df5101b36ba09260f1757248af0e3957ed21674",
+        "pair": "0x6365fc740d8be54b96e7159629b3979c085f2465f4a2162b66f7a225d6b5f666",
         "dex": "uniswap",
-        "liquidityUsd": 52052.3,
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x01599CE6bad4888C77Ad34c80F6971832fD94fBD",
+        "dex": "aerodrome",
+        "liquidityUsd": 1134915.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 25.2,
-    "projectLinks": {
-      "websites": [
-        "https://alphacitymeta.com",
-        "https://docs.alphacitymeta.com"
-      ],
-      "socials": [
-        "https://x.com/alphametaeco",
-        "https://t.me/alphacityai"
-      ]
-    }
+    "top10Pct": null,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

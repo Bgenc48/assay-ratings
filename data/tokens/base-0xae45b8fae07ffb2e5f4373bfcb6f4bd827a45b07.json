@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Gitlawb",
   "name": "Gitlawb",
-  "scanned_at": "2026-08-03T08:54:54.865Z",
+  "scanned_at": "2026-08-04T08:04:53.470Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,13 +61,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -78,7 +75,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 17 days old; trust needs time (Provisional).",
+          "text": "Token is 18 days old; trust needs time (Provisional).",
           "evidence": "0xba43b6f70d624b6550c5393008206bf9374e4c8b8a488f4fc06ebfd0e73d0495"
         }
       ]
@@ -132,26 +129,11 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 17,
-    "liquidityUsd": 17.43,
-    "pools": [
-      {
-        "pair": "0x32a8133e86088176c0b0e0355e56fc061d1690155c80c04476f0df41bf8af716",
-        "dex": "uniswap",
-        "liquidityUsd": 17.43,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "ageDays": 18,
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": 99.87,
-    "projectLinks": {
-      "websites": [
-        "https://clanker.world/clanker/0xAE45b8faE07fFB2E5f4373bFCB6f4Bd827A45b07"
-      ],
-      "socials": []
-    }
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

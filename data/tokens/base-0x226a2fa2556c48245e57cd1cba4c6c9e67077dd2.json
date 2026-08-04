@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BIO",
   "name": "BIO",
-  "scanned_at": "2026-08-03T08:56:42.645Z",
+  "scanned_at": "2026-08-04T08:06:24.958Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x4267F2Da3a054c34dD6463d951eb3A9474901FBd"
+            "pair": "0xd40BffA9C9E35493B88a2b6744C49D8716b00898"
           }
         }
       ]
@@ -83,7 +83,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 43.7%.",
+          "text": "Top-10 unlabeled holders control 44.0%.",
           "evidence": null
         }
       ]
@@ -108,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "182061045099967740000000000",
+    "totalSupply": "182027882930602440000000000",
     "decimals": 18,
     "owner": "0xd9c6ee1547fd6d48f8872dd866473893bbe8a1ab",
     "controlType": "safe",
@@ -121,13 +121,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 507,
-    "liquidityUsd": 917442.13,
+    "ageDays": 508,
+    "liquidityUsd": 563941.71,
     "pools": [
       {
         "pair": "0xa79A2eAfDfb8F71bAd810AE12A89711Fb6CaF9AC",
         "dex": "pancakeswap",
-        "liquidityUsd": 61848.88,
+        "liquidityUsd": 63024.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,16 +136,7 @@
       {
         "pair": "0x052E77018Bfb98dc6373C37d757bb1d3fAd09eC5",
         "dex": "uniswap",
-        "liquidityUsd": 1759.95,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe15587dc839a23fc090c9425d361b923fcddacf8990c18ebd73695adbf59e727",
-        "dex": "uniswap",
-        "liquidityUsd": 762.69,
+        "liquidityUsd": 1791.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -154,7 +145,7 @@
       {
         "pair": "0x222cCBE78890A4d9Ef8d22d7FC1B968Be0F2c653",
         "dex": "aerodrome",
-        "liquidityUsd": 225989.81,
+        "liquidityUsd": 191316.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -163,7 +154,7 @@
       {
         "pair": "0xd40BffA9C9E35493B88a2b6744C49D8716b00898",
         "dex": "aerodrome",
-        "liquidityUsd": 295595.56,
+        "liquidityUsd": 307809.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -179,6 +170,15 @@
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0x7113401bdb6b6aa1e6f37667b29cd04201fd3c641cb5b39f0a9ac41bf50701b6",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0xdcb06f0aedb513c3afb9ea292d744da9848637251681824fe2eb75561aea6ed6",
         "dex": "uniswap",
         "liquidityUsd": null,
@@ -188,24 +188,17 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4267F2Da3a054c34dD6463d951eb3A9474901FBd",
-        "dex": "aerodrome",
-        "liquidityUsd": 331485.24,
+        "pair": "0xd2228bc53ab5294a789c2c796d3d09b44da19357515399697dffba9f9b92d7aa",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 43.67,
-    "projectLinks": {
-      "websites": [
-        "https://peptai.xyz/"
-      ],
-      "socials": [
-        "https://x.com/peptai_"
-      ]
-    }
+    "top10Pct": 44.05,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

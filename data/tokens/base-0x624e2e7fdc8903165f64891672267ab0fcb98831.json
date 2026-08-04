@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SOSO",
   "name": "SoSoValue",
-  "scanned_at": "2026-08-03T08:50:07.581Z",
+  "scanned_at": "2026-08-04T08:01:23.234Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -114,12 +114,21 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 285734.62,
+    "liquidityUsd": 276528.67,
     "pools": [
       {
         "pair": "0x29183f918920a2AEF0115A9C7374945589968aEa",
         "dex": "uniswap",
-        "liquidityUsd": 285421.29,
+        "liquidityUsd": 276220.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8f314c4B7859624e27d61d8Dc2774B6d974FD61B",
+        "dex": "aerodrome",
+        "liquidityUsd": 2.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +137,7 @@
       {
         "pair": "0xCd41410e1825b003612012d5f9cfa9126187C014",
         "dex": "alien-base",
-        "liquidityUsd": 274.14,
+        "liquidityUsd": 267.75,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -137,14 +146,14 @@
       {
         "pair": "0x630D913e86B59717cAf142858E035c0F9C1cDc24",
         "dex": "alien-base",
-        "liquidityUsd": 39.19,
+        "liquidityUsd": 38.31,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 13.75,
+    "top10Pct": 13.7,
     "projectLinks": {
       "websites": [
         "https://gr4ys.gr3y.space/",
