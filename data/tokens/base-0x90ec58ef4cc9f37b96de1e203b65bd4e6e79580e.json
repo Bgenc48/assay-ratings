@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "AMETA",
   "name": "Alpha City",
-  "scanned_at": "2026-08-04T08:02:15.211Z",
+  "scanned_at": "2026-08-05T08:02:22.177Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -113,13 +113,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 549,
-    "liquidityUsd": 52052.3,
+    "ageDays": 550,
+    "liquidityUsd": 51471.23,
     "pools": [
       {
         "pair": "0x9aa4826fd33557a7d882296e3df5101b36ba09260f1757248af0e3957ed21674",
         "dex": "uniswap",
-        "liquidityUsd": 52052.3,
+        "liquidityUsd": 51470.9,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb4c5956b878f1b38805e998794f4edc9a960db4df5abcac361ae45a19ec53ede",
+        "dex": "uniswap",
+        "liquidityUsd": 0.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

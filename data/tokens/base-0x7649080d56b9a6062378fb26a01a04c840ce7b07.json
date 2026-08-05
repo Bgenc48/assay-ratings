@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-04T08:09:19.808Z",
+  "scanned_at": "2026-08-05T08:08:41.583Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70,
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -109,10 +116,28 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 1134915.5,
+    "liquidityUsd": 1163576.04,
     "pools": [
       {
-        "pair": "0x6365fc740d8be54b96e7159629b3979c085f2465f4a2162b66f7a225d6b5f666",
+        "pair": "0x647ea0a4f0f9a3413b47f1aeeaf022216c8dacada0dfa86f1804e5a15244b5eb",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x67042eead01e98117ee47d84dc495b685bbc60dcd057f23b1459572edd66f3e8",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x18b71301db41af3b2451f50f6c4633b8423633c422592db277305d48fda7b547",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -123,14 +148,14 @@
       {
         "pair": "0x01599CE6bad4888C77Ad34c80F6971832fD94fBD",
         "dex": "aerodrome",
-        "liquidityUsd": 1134915.5,
+        "liquidityUsd": 1163576.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,

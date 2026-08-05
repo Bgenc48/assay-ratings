@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-04T08:09:06.968Z",
+  "scanned_at": "2026-08-05T08:08:28.710Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 72.5,
+    "letter": "C",
+    "overall": 65.7,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -66,15 +66,22 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xd92534826ebd7e9abe890d8bdedd590479e1343c2bbe4f1d1cc308ff8f27413b"
+            "pair": "0x0edba36d7c5e13768ef94218c4463ab5b2422111aed139db1adf623f623f1754"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 2 days old; trust needs time (Provisional).",
+          "evidence": "0x71be2f88ed8d8c43a6e94453b38b9d6a673f82e83cc02e920bb11dea1a1c6566"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 100,
@@ -96,6 +103,11 @@
   },
   "caps": [
     {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -115,18 +127,9 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
+    "ageDays": 2,
     "liquidityUsd": null,
     "pools": [
-      {
-        "pair": "0xd92534826ebd7e9abe890d8bdedd590479e1343c2bbe4f1d1cc308ff8f27413b",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x0edba36d7c5e13768ef94218c4463ab5b2422111aed139db1adf623f623f1754",
         "dex": "uniswap",

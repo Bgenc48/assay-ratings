@@ -1,6 +1,106 @@
 {
-  "generated_at": "2026-08-04T08:09:22.938Z",
+  "generated_at": "2026-08-05T08:09:01.317Z",
   "alerts": [
+    {
+      "at": "2026-08-05T07:58:36.891Z",
+      "chain": "base",
+      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+      "symbol": "AERO",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state UR → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-05T08:08:03.792Z",
+      "chain": "base",
+      "address": "0xa4dc42370e21fcf2182d24b39bebb7a5695adb07",
+      "symbol": "PIPEDOG",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-05T08:08:03.792Z",
+      "chain": "base",
+      "address": "0xa4dc42370e21fcf2182d24b39bebb7a5695adb07",
+      "symbol": "PIPEDOG",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-05T08:08:17.514Z",
+      "chain": "base",
+      "address": "0x73adfa3a448d63025d52e39f921369386e4fcb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-05T08:08:17.514Z",
+      "chain": "base",
+      "address": "0x73adfa3a448d63025d52e39f921369386e4fcb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-05T08:08:32.385Z",
+      "chain": "base",
+      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-05T08:08:32.385Z",
+      "chain": "base",
+      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-05T08:08:50.701Z",
+      "chain": "base",
+      "address": "0x2b31d3ed065f1f834d5c85efed49089f4c4f6b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "OpenAI is now rated: B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-05T08:08:56.963Z",
+      "chain": "base",
+      "address": "0x1a44233fae8d50f1aeb3a5d58dd426ff4814cb53",
+      "symbol": "QUID",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "QUID is now rated: B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-05T08:09:00.566Z",
+      "chain": "base",
+      "address": "0x3329c0315f6a0c0787d94755de083ef625fa5b6b",
+      "symbol": "VLTX",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "VLTX is now rated: C.",
+      "evidence": null
+    },
     {
       "at": "2026-08-04T07:58:47.427Z",
       "chain": "base",
@@ -2899,106 +2999,6 @@
       "severity": "WARN",
       "kind": "cap-triggered",
       "text": "New hard cap: Custodial control asserted by the reviewed registry without a verified issuer disclosure on record (insufficient data). (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:32:17.983Z",
-      "chain": "base",
-      "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
-      "symbol": "cbETH",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Issuance and administration are issuer-controlled; code does not constrain the issuer. (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:32:30.008Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade F → B+.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:32:30.008Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "WARN",
-      "kind": "profile-changed",
-      "text": "Category profile changed: standard → bridged (assigned only in the reviewed registry; see methodology §6).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:32:30.008Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: A mint path exists whose controller could not be classified automatically (insufficient data).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:32:30.008Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: More than 50% of primary liquidity is withdrawable by one key.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:32:46.455Z",
-      "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
-      "severity": "WARN",
-      "kind": "profile-changed",
-      "text": "Category profile changed: standard → custodial-wrapped (assigned only in the reviewed registry; see methodology §6).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:32:46.455Z",
-      "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
-      "severity": "WARN",
-      "kind": "cap-waived",
-      "text": "Hard cap moved from active to waived (profile.custodial-wrapped (reviewed registry); superseded by cap.custodial-undisclosed): Mint or issuance is controlled by an externally-owned account.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:32:46.455Z",
-      "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Custodial control asserted by the reviewed registry without a verified issuer disclosure on record (insufficient data). (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:32:46.455Z",
-      "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Issuance and administration are issuer-controlled; code does not constrain the issuer. (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-17T07:32:46.455Z",
-      "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
-      "severity": "WARN",
-      "kind": "cap-waived",
-      "text": "Hard cap moved from active to waived (profile.custodial-wrapped (reviewed registry); superseded by cap.custodial-undisclosed): Upgradeable with an EOA admin and no timelock.",
       "evidence": null
     }
   ]

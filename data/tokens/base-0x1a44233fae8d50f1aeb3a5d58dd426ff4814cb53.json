@@ -1,0 +1,214 @@
+{
+  "address": "0x1a44233fae8d50f1aeb3a5d58dd426ff4814cb53",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "QUID",
+  "name": "Squid",
+  "scanned_at": "2026-08-05T08:08:51.452Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B+",
+    "overall": 82.9,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0x1a44233fae8d50f1aeb3a5d58dd426ff4814cb53",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x07C4bc0F5fb6Cb069124DF3e1aE0B8fD8148ccC4"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 36 days old; trust needs time (Provisional).",
+          "evidence": "0xfa597bef31cc47432f9c43411d582f8c5306bcd77b6fa1e14b25197aeb83b12e"
+        }
+      ]
+    },
+    "holderConcentration": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 4.4%.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 36,
+    "liquidityUsd": 1031403.2,
+    "pools": [
+      {
+        "pair": "0x07C4bc0F5fb6Cb069124DF3e1aE0B8fD8148ccC4",
+        "dex": "pancakeswap",
+        "liquidityUsd": 1025827.36,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x98eCe336Cb774bFF618147827a17500E8Ca11f97",
+        "dex": "uniswap",
+        "liquidityUsd": 1520.53,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x735937E28a89B8f48e36bB61d03FDFd5f3D7a337",
+        "dex": "pancakeswap",
+        "liquidityUsd": 1842.84,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xC20a862e2f7b49F42Ab635fce40cfDeD9E55E088",
+        "dex": "aerodrome",
+        "liquidityUsd": 2208.44,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6c97de9dd0c487db6d3c6a2546ac1e03c3514800ec71fb5b14aad5a13d012e23",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3e3f4b68dd7643b25f672e44f157fe578e720aa3d6992837a0159a4a0526358a",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x2FAb705B405a5501ADdB7Dcabd79D31e36D91194",
+        "dex": "uniswap",
+        "liquidityUsd": 4.03,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4b6ac150059f01b438a079278eccba2553d730c5468d0179bd3b5619ae5e9a97",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 4.44,
+    "projectLinks": null
+  },
+  "notes": null,
+  "coi": false
+}
