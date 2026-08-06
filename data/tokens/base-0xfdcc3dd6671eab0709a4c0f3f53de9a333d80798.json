@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-08-05T08:08:22.830Z",
+  "scanned_at": "2026-08-06T08:09:53.390Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c"
+            "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F"
           }
         }
       ]
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 171.3% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 164.0% of circulating supply.",
           "evidence": null
         }
       ]
@@ -113,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "674712644536210509933128",
+    "totalSupply": "704402814536210509933128",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -128,29 +128,20 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1078,
-    "liquidityUsd": 199124.21000000002,
+    "ageDays": 1079,
+    "liquidityUsd": 97090.82,
     "pools": [
-      {
-        "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c",
-        "dex": "uniswap",
-        "liquidityUsd": 102033.41,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F",
         "dex": "aerodrome",
-        "liquidityUsd": 97090.8,
+        "liquidityUsd": 97090.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 171.26,
+    "top10Pct": 164.04,
     "projectLinks": null
   },
   "notes": null,

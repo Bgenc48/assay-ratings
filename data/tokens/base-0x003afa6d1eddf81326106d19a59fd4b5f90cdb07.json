@@ -1,18 +1,18 @@
 {
-  "address": "0xe62bfbe57763ec24c0f130426f34dbce11fc5b06",
+  "address": "0x003afa6d1eddf81326106d19a59fd4b5f90cdb07",
   "chain": "base",
   "status": "ok",
-  "symbol": "TITN",
-  "name": "Titan",
-  "scanned_at": "2026-08-06T08:08:14.295Z",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-08-06T08:10:37.479Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B",
-    "overall": 75.4,
-    "provisional": false,
-    "badge": "Custodial",
-    "coverage": "partial"
+    "letter": "B-",
+    "overall": 70,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -28,13 +28,13 @@
       ]
     },
     "adminSurface": {
-      "score": 55,
+      "score": 40,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.safe",
+          "id": "admin.unknown-gate",
           "severity": "warn",
-          "text": "Privileged capabilities gated by a 2-of-3 multisig with no timelock.",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
           "evidence": null
         }
       ]
@@ -66,18 +66,18 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x611865e603862a3D1cd29146458564a684e1cBbb"
+            "pair": "0xe8c541aEBA0e4B7D59077DE1CBF788c354f9973D"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -89,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,48 +96,41 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "928116567833665000000000000",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
-    "owner": "0x68fbde17200f69d0d17e2a858c79c264ee7bcea9",
-    "controlType": "safe",
+    "owner": null,
+    "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
-    "privileged": [],
+    "privileged": [
+      "burnFrom(address,uint256)"
+    ],
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 387,
-    "liquidityUsd": 298587.18000000005,
+    "ageDays": null,
+    "liquidityUsd": 3176074.5,
     "pools": [
       {
-        "pair": "0x611865e603862a3D1cd29146458564a684e1cBbb",
-        "dex": "aerodrome",
-        "liquidityUsd": 261467.64,
+        "pair": "0x5b78484e6cff6685befaa436f3f462d0a45d8d7cbce8d0ac4c51a98bea8fd163",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x50b5d6f6ACCDCc7Dc048de35B2B9Ba5FdD5a283e",
+        "pair": "0xe8c541aEBA0e4B7D59077DE1CBF788c354f9973D",
         "dex": "aerodrome",
-        "liquidityUsd": 37101.66,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xfe2313df3e27aD2608B16230695d835E18d409f4",
-        "dex": "aerodrome",
-        "liquidityUsd": 17.88,
+        "liquidityUsd": 3176074.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 10.08,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

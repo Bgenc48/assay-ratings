@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "cbMEGA",
   "name": "Coinbase Wrapped MEGA",
-  "scanned_at": "2026-08-05T08:03:25.548Z",
+  "scanned_at": "2026-08-06T08:04:00.973Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 112 days old; trust needs time (Provisional).",
+          "text": "Token is 114 days old; trust needs time (Provisional).",
           "evidence": "0x6663d20834049e9fa1583f5502c77232c6a574ce6a9cb3bb22ccef1332195689"
         }
       ]
@@ -90,7 +90,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 42.1%.",
+          "text": "Top-10 unlabeled holders control 43.2%.",
           "evidence": null
         }
       ]
@@ -140,13 +140,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 112,
-    "liquidityUsd": 127129.41,
+    "ageDays": 114,
+    "liquidityUsd": 120588.77,
     "pools": [
       {
         "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83",
         "dex": "aerodrome",
-        "liquidityUsd": 127118.74,
+        "liquidityUsd": 120583.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,23 +155,14 @@
       {
         "pair": "0x9D2139818d9cB7dc067B6128d337AAB1AA460aF6",
         "dex": "equalizer",
-        "liquidityUsd": 5.05,
+        "liquidityUsd": 5.02,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x66364e1847ac72311bb43d14f75ff7f7d2079b3f02c90f5c75727436f3b6014d",
-        "dex": "uniswap",
-        "liquidityUsd": 5.62,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 42.14,
+    "top10Pct": 43.21,
     "projectLinks": {
       "websites": [],
       "socials": []

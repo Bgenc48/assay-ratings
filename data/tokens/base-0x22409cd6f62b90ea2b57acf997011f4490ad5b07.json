@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "PIPEDOG",
   "name": "pipedog",
-  "scanned_at": "2026-08-05T08:07:40.858Z",
+  "scanned_at": "2026-08-06T08:08:49.869Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x86de6fa7502f9a5060632b9d957031c49fab6dfdded112c50523e281a21377fc"
+            "pair": "0x0c672f532e71e9e89ee37b504ce3850b2dfb728f6cf99e804cdf38a89f7f0b85"
           }
         }
       ]
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 7 days old; trust needs time (Provisional).",
+          "text": "Token is 8 days old; trust needs time (Provisional).",
           "evidence": "0x487de0050f988bd163b26849d46df5cf53453440e080628be1f7805dec7973d0"
         }
       ]
@@ -127,11 +127,11 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 7,
+    "ageDays": 8,
     "liquidityUsd": null,
     "pools": [
       {
-        "pair": "0x86de6fa7502f9a5060632b9d957031c49fab6dfdded112c50523e281a21377fc",
+        "pair": "0x0c672f532e71e9e89ee37b504ce3850b2dfb728f6cf99e804cdf38a89f7f0b85",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,

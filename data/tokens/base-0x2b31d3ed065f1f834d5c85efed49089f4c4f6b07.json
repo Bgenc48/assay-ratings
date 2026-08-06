@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-05T08:08:48.092Z",
+  "scanned_at": "2026-08-06T08:10:23.764Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -109,8 +109,26 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 9026728.5,
+    "liquidityUsd": 6971104.67,
     "pools": [
+      {
+        "pair": "0x8D3e3E8e041DbE09CE210Dc3a84D0b8B5218FfcA",
+        "dex": "aerodrome",
+        "liquidityUsd": 6971104.67,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xF61D2f912B850133F2216a5aF7cB9fb8e55589d0",
+        "dex": "uniswap",
+        "liquidityUsd": 0,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x3ba670f7be74919bb5ec261384478f9165bc430072367df68d9869f2c87cbdb9",
         "dex": "uniswap",
@@ -121,9 +139,9 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8D3e3E8e041DbE09CE210Dc3a84D0b8B5218FfcA",
-        "dex": "aerodrome",
-        "liquidityUsd": 9026728.5,
+        "pair": "0x0dcd9b267987b36bf845635760c438ccd66cd5fb451357d917a0214052d6a439",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "DEXTF",
   "name": "Memento",
-  "scanned_at": "2026-08-05T08:06:35.040Z",
+  "scanned_at": "2026-08-06T08:07:37.578Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "12396309065950351123077183",
+    "totalSupply": "12382843408032686758614783",
     "decimals": 18,
     "owner": "0xc3916b3ee83e201d6775470eccf1e93463f48127",
     "controlType": "eoa",
@@ -115,19 +115,28 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 95077.05,
+    "liquidityUsd": 90371.23,
     "pools": [
       {
         "pair": "0xC3F617c8A3DA6d286c8f97aF946A8f293632C852",
         "dex": "hydrex",
-        "liquidityUsd": 95077.05,
+        "liquidityUsd": 90340.58,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5f198375776642B495aF7c4cEf69B9b6e9246f8A",
+        "dex": "aerodrome",
+        "liquidityUsd": 30.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 32.97,
+    "top10Pct": 33,
     "projectLinks": {
       "websites": [
         "https://mementoblockchain.com/",

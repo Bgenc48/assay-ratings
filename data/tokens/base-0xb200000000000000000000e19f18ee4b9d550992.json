@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SOAF",
   "name": "Strategic Oil American Fund - SOAF",
-  "scanned_at": "2026-08-05T08:08:38.147Z",
+  "scanned_at": "2026-08-06T08:10:10.187Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,13 +72,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xb243fc215f3db2cc4ef7aa618c0e8fc1fba9c5fc2513b671395540d84d6553d1"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -124,26 +121,7 @@
     "verifiedSource": false,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [
-      {
-        "pair": "0xb243fc215f3db2cc4ef7aa618c0e8fc1fba9c5fc2513b671395540d84d6553d1",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x98ea6e95e27ed25b6b6dfe1ca70f8cbf174f06af9b46093b624581a37e0a4b1e",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "pools": [],
     "top10Pct": null,
     "projectLinks": null
   },

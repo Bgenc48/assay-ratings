@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-05T08:02:42.383Z",
+  "scanned_at": "2026-08-06T08:03:22.043Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xe5e792dd8d4b659ee1008eda1253dcf36505618fbd9be527a9ef2cd6f8ec0c72"
+            "pair": "0x599e109ec056c1b88c6ad018eef05237a20c405364b5fef74db64e3ccbd1c9a9"
           }
         }
       ]
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 24 days old; trust needs time (Provisional).",
+          "text": "Token is 25 days old; trust needs time (Provisional).",
           "evidence": "0x18c3be755d94a734ebd1161154ae5c750ebbadf7cc61294588a23912aa8bb4bf"
         }
       ]
@@ -127,13 +127,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 24,
-    "liquidityUsd": 0.08,
+    "ageDays": 25,
+    "liquidityUsd": 7.72,
     "pools": [
       {
-        "pair": "0xe5e792dd8d4b659ee1008eda1253dcf36505618fbd9be527a9ef2cd6f8ec0c72",
+        "pair": "0x599e109ec056c1b88c6ad018eef05237a20c405364b5fef74db64e3ccbd1c9a9",
         "dex": "uniswap",
-        "liquidityUsd": 0.08,
+        "liquidityUsd": 7.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
