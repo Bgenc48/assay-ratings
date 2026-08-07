@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "TITN",
   "name": "Titan",
-  "scanned_at": "2026-08-06T08:08:14.295Z",
+  "scanned_at": "2026-08-07T06:46:26.287Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -111,13 +111,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 387,
-    "liquidityUsd": 298587.18000000005,
+    "ageDays": 388,
+    "liquidityUsd": 297597.58999999997,
     "pools": [
       {
         "pair": "0x611865e603862a3D1cd29146458564a684e1cBbb",
         "dex": "aerodrome",
-        "liquidityUsd": 261467.64,
+        "liquidityUsd": 260574.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,23 +126,27 @@
       {
         "pair": "0x50b5d6f6ACCDCc7Dc048de35B2B9Ba5FdD5a283e",
         "dex": "aerodrome",
-        "liquidityUsd": 37101.66,
+        "liquidityUsd": 37016.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xfe2313df3e27aD2608B16230695d835E18d409f4",
+        "pair": "0xe63c331771CF2c7C35DdAf65dCFb5f62041eEeE4",
         "dex": "aerodrome",
-        "liquidityUsd": 17.88,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
+        "liquidityUsd": 6.49,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x2c187aa1f4285034e73b4e4018420424405547f2",
+          "sharePct": 99.99
+        }
       }
     ],
-    "top10Pct": 10.08,
+    "top10Pct": 10.06,
     "projectLinks": null
   },
   "notes": null,

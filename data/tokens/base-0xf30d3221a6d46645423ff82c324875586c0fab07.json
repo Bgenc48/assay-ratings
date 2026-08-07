@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-06T08:07:56.362Z",
+  "scanned_at": "2026-08-07T06:46:04.458Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 13 days old; trust needs time (Provisional).",
+          "text": "Token is 14 days old; trust needs time (Provisional).",
           "evidence": "0x374ae037dabde48b2e5ea52c25e4096457ed0fd68fad1e1274fd51e9633dfb1f"
         }
       ]
@@ -127,7 +127,7 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 13,
+    "ageDays": 14,
     "liquidityUsd": 266.98,
     "pools": [
       {
@@ -161,6 +161,15 @@
         "pair": "0x0df2b870cd2646b82c1d33ec8ef151db04db4847ce5aaad0e7879a64464a4fff",
         "dex": "uniswap",
         "liquidityUsd": 0.44,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x2e6a8a585691c51986d585e57eb339c4f1c5fe6334754597674749f5642865f1",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

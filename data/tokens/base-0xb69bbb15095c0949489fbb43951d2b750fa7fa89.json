@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "DEXTF",
   "name": "Memento",
-  "scanned_at": "2026-08-06T08:07:37.578Z",
+  "scanned_at": "2026-08-07T06:45:44.514Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 30,
+    "overall": 27.9,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 36.6%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -101,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "12382843408032686758614783",
+    "totalSupply": "12391297900886008426459800",
     "decimals": 18,
     "owner": "0xc3916b3ee83e201d6775470eccf1e93463f48127",
     "controlType": "eoa",
@@ -115,12 +122,21 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 90371.23,
+    "liquidityUsd": 87904.8,
     "pools": [
       {
         "pair": "0xC3F617c8A3DA6d286c8f97aF946A8f293632C852",
         "dex": "hydrex",
-        "liquidityUsd": 90340.58,
+        "liquidityUsd": 87645.23,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x53ce89c3c2bc9d135625b1b08959a8f9f9720866888b3e86fd1c8e1b6c83cbd2",
+        "dex": "uniswap",
+        "liquidityUsd": 229.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -129,14 +145,14 @@
       {
         "pair": "0x5f198375776642B495aF7c4cEf69B9b6e9246f8A",
         "dex": "aerodrome",
-        "liquidityUsd": 30.65,
+        "liquidityUsd": 29.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 33,
+    "top10Pct": 36.62,
     "projectLinks": {
       "websites": [
         "https://mementoblockchain.com/",

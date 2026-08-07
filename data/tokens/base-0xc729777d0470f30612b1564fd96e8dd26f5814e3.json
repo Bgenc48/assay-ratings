@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SAPIEN",
   "name": "Sapien",
-  "scanned_at": "2026-08-06T08:07:23.885Z",
+  "scanned_at": "2026-08-07T06:45:29.184Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -88,7 +88,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 49.5%.",
+          "text": "Top-10 unlabeled holders control 40.6%.",
           "evidence": null
         }
       ]
@@ -123,13 +123,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 356,
-    "liquidityUsd": 909317.25,
+    "ageDays": 357,
+    "liquidityUsd": 901672.7100000001,
     "pools": [
       {
         "pair": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862",
         "dex": "aerodrome",
-        "liquidityUsd": 853157.09,
+        "liquidityUsd": 844410.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +138,7 @@
       {
         "pair": "0x682A02D5a32DDb09D1cf4791fB4124E0d4E17b67",
         "dex": "uniswap",
-        "liquidityUsd": 56096.39,
+        "liquidityUsd": 57137.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,23 +147,32 @@
       {
         "pair": "0xAA03871da2C5e83e620FD44D6d08C9695E6BED91",
         "dex": "aerodrome",
-        "liquidityUsd": 63.26,
+        "liquidityUsd": 65.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0x9F12a2CB7ad24E7BeF73174677a171617C83D2EC",
+        "dex": "aerodrome",
+        "liquidityUsd": 58.91,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0x225Ca8cF2CE1d643F65722a4C7c747A19442B8Ef",
         "dex": "pancakeswap",
-        "liquidityUsd": 0.51,
+        "liquidityUsd": 0.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 49.51,
+    "top10Pct": 40.63,
     "projectLinks": {
       "websites": [
         "https://earn.sapien.io/"

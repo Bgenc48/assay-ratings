@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "COBIE",
   "name": "Baseapp Man",
-  "scanned_at": "2026-08-06T08:05:53.303Z",
+  "scanned_at": "2026-08-07T06:44:00.807Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,10 +72,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x81f61a004e99224565940af14d4227a5d5f18619a6555450ce7b0a4b02e66096"
+          }
         }
       ]
     },
@@ -127,10 +130,43 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 97.37,
+    "pools": [
+      {
+        "pair": "0x81f61a004e99224565940af14d4227a5d5f18619a6555450ce7b0a4b02e66096",
+        "dex": "uniswap",
+        "liquidityUsd": 76.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd49fbbcd1c7d0a05a4697eeb6bbbe94a9df0b215bbc48bd9e9a6b3d91de207ba",
+        "dex": "uniswap",
+        "liquidityUsd": 16.98,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5beaba29f1cb4eabf5e91a2973d738b3f86b6fc5c7c6856dde9087c89fe8adfc",
+        "dex": "uniswap",
+        "liquidityUsd": 4.26,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 9.08,
-    "projectLinks": null
+    "projectLinks": {
+      "websites": [],
+      "socials": [
+        "https://x.com/baseapp/status/2077683856119910774"
+      ]
+    }
   },
   "notes": null,
   "coi": false

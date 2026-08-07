@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "NTFS",
   "name": "National Trust Fund System",
-  "scanned_at": "2026-08-06T08:08:18.344Z",
+  "scanned_at": "2026-08-07T06:46:31.913Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,10 +72,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x84327618b08d401112f023a4ae280a2bf7f1c2906d8921d75463ee17beb79c8e"
+          }
         }
       ]
     },
@@ -121,7 +124,17 @@
     "verifiedSource": false,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [],
+    "pools": [
+      {
+        "pair": "0x84327618b08d401112f023a4ae280a2bf7f1c2906d8921d75463ee17beb79c8e",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 26.98,
     "projectLinks": null
   },
