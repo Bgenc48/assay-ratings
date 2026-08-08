@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "SOSO",
   "name": "SoSoValue",
-  "scanned_at": "2026-08-07T06:40:19.689Z",
+  "scanned_at": "2026-08-08T06:04:45.210Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 48.8,
+    "overall": 50.8,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 9.6%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -114,12 +121,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 315652.24999999994,
+    "liquidityUsd": 319404.81,
     "pools": [
       {
         "pair": "0x29183f918920a2AEF0115A9C7374945589968aEa",
         "dex": "uniswap",
-        "liquidityUsd": 304864.29,
+        "liquidityUsd": 308228.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,33 +135,33 @@
       {
         "pair": "0x636da53e0251b3cb0b4d10dbaff488b294f97bd5212b7e2a7c1bc3fb57fd6e31",
         "dex": "uniswap",
-        "liquidityUsd": 10724.43,
+        "liquidityUsd": 10887.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8f314c4B7859624e27d61d8Dc2774B6d974FD61B",
-        "dex": "aerodrome",
-        "liquidityUsd": 2.61,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x630D913e86B59717cAf142858E035c0F9C1cDc24",
+        "pair": "0xCd41410e1825b003612012d5f9cfa9126187C014",
         "dex": "alien-base",
-        "liquidityUsd": 60.92,
+        "liquidityUsd": 289.51,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 13.59,
-    "projectLinks": null
+    "top10Pct": 9.59,
+    "projectLinks": {
+      "websites": [
+        "https://gr4ys.gr3y.space/",
+        "https://www.youtube.com/@ZetanMedia"
+      ],
+      "socials": [
+        "https://x.com/ZetanOutreach",
+        "https://discord.gg/QBUZjqtBVn"
+      ]
+    }
   },
   "notes": null,
   "coi": false

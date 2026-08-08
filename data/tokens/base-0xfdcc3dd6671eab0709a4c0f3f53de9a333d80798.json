@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-08-07T06:48:02.007Z",
+  "scanned_at": "2026-08-08T06:13:20.266Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c"
+            "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F"
           }
         }
       ]
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 166.8% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 113.2% of circulating supply.",
           "evidence": null
         }
       ]
@@ -113,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "692576554536210509933128",
+    "totalSupply": "711782394536210509933128",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -128,82 +128,20 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1079,
-    "liquidityUsd": 199474.63999999998,
+    "ageDays": 1080,
+    "liquidityUsd": 97090.92,
     "pools": [
-      {
-        "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c",
-        "dex": "uniswap",
-        "liquidityUsd": 102033.26,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F",
         "dex": "aerodrome",
-        "liquidityUsd": 97090.9,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xada452F1340FAF2faA5CD6Cf5380f9585A624b8c",
-        "dex": "uniswap",
-        "liquidityUsd": 129.49,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9b9fbe1e8AE78993aB96b2b980Fbd6215C6a2efC",
-        "dex": "uniswap",
-        "liquidityUsd": 203.07,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd3CeCe2Dd4Ac45be8A93Dee6b49fEba705B12208",
-        "dex": "aerodrome",
-        "liquidityUsd": 17.92,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x6c83579629317644db7add1e8c054497824db5d5",
-          "sharePct": 110888.25
-        }
-      },
-      {
-        "pair": "0x3e576D9559A5B2Da5733420C9bD946b0FB615995",
-        "dex": "aerodrome",
-        "liquidityUsd": null,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x214183c90c177cc2b7129f5c17948971d32e322e",
-          "sharePct": 99.99
-        }
-      },
-      {
-        "pair": "0xca2ebc5f15c36260205e82900befe9f1052eb409045ced9873f962c0aac9a3d7",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 97090.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 166.84,
+    "top10Pct": 113.2,
     "projectLinks": null
   },
   "notes": null,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "RAVE",
   "name": "RaveDAO",
-  "scanned_at": "2026-08-07T06:41:43.121Z",
+  "scanned_at": "2026-08-08T06:06:21.469Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 67.6% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 72.6% of circulating supply.",
           "evidence": null
         }
       ]
@@ -113,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "23735858211554000000000000",
+    "totalSupply": "23502076798917000000000000",
     "decimals": 18,
     "owner": "0x9831156f1a6e506fca41503590b42f07c2e80f54",
     "controlType": "safe",
@@ -124,12 +124,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": 295,
-    "liquidityUsd": 338401.31,
+    "liquidityUsd": 338954.08999999997,
     "pools": [
       {
         "pair": "0x1d3a89d06b3b673ce35059867e3749fc82ca38b9089889eba9da2f058c695da4",
         "dex": "uniswap",
-        "liquidityUsd": 16912.3,
+        "liquidityUsd": 17271.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +138,7 @@
       {
         "pair": "0x51663B8A28E7Ea197c5CcF983AfC084Da0a8023D",
         "dex": "aerodrome",
-        "liquidityUsd": 321488.14,
+        "liquidityUsd": 321681.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -152,9 +152,18 @@
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x062E6e13B26C1C1e5aFa76D1d70DB55e81f61b07",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.1,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 67.62,
+    "top10Pct": 72.63,
     "projectLinks": null
   },
   "notes": null,

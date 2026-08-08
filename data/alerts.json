@@ -1,6 +1,138 @@
 {
-  "generated_at": "2026-08-07T06:49:00.466Z",
+  "generated_at": "2026-08-08T06:14:29.865Z",
   "alerts": [
+    {
+      "at": "2026-08-08T06:00:39.177Z",
+      "chain": "base",
+      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+      "symbol": "AERO",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state C → UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:01:26.635Z",
+      "chain": "base",
+      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+      "symbol": "DAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B+ → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:01:26.635Z",
+      "chain": "base",
+      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+      "symbol": "DAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:03:28.590Z",
+      "chain": "base",
+      "address": "0x8b7dde054be9d180c1be7fae0874697374a49832",
+      "symbol": "PROS",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:06:04.494Z",
+      "chain": "base",
+      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
+      "symbol": "AMETA",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:13:07.608Z",
+      "chain": "base",
+      "address": "0x3c5cd672b204ba0fc48e93b98c0922920a87912d",
+      "symbol": "BSW",
+      "severity": "CRITICAL",
+      "kind": "upgraded",
+      "text": "Contract implementation changed: 0xd735a760f94c9c568ebf4b16295d9d7bd19179b7 → 0x033fcdf677e236c2261538056cbba103d52804dc.",
+      "evidence": {
+        "field": "facts.proxyImplementation"
+      }
+    },
+    {
+      "at": "2026-08-08T06:13:55.221Z",
+      "chain": "base",
+      "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:13:55.221Z",
+      "chain": "base",
+      "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:13:59.181Z",
+      "chain": "base",
+      "address": "0x2b31d3ed065f1f834d5c85efed49089f4c4f6b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:13:59.181Z",
+      "chain": "base",
+      "address": "0x2b31d3ed065f1f834d5c85efed49089f4c4f6b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:14:20.925Z",
+      "chain": "base",
+      "address": "0x003afa6d1eddf81326106d19a59fd4b5f90cdb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:14:20.925Z",
+      "chain": "base",
+      "address": "0x003afa6d1eddf81326106d19a59fd4b5f90cdb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:14:29.113Z",
+      "chain": "base",
+      "address": "0x2a4332d0333473618fe76bced4270095547e6b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "OpenAI is now rated: C.",
+      "evidence": null
+    },
     {
       "at": "2026-08-07T06:35:58.744Z",
       "chain": "base",
@@ -2869,136 +3001,6 @@
       "severity": "INFO",
       "kind": "listed",
       "text": "RECALL is now rated: D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-19T07:45:00.245Z",
-      "chain": "base",
-      "address": "0x5399592239c030da026b58e4a0a45918895c6b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-19T07:45:07.556Z",
-      "chain": "base",
-      "address": "0xf4d97f2da56e8c3098f3a8d538db630a2606a024",
-      "symbol": "DIEM",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "DIEM is now rated: UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-19T07:45:09.825Z",
-      "chain": "base",
-      "address": "0xb2008bc0163db6117f212b04ae1ebdf55cd2400b",
-      "symbol": "BRIAN",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "BRIAN is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-19T07:45:12.169Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000008490555611bbad993f",
-      "symbol": "ARAIL",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "ARAIL is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-19T07:45:15.357Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000004d5cb65c1a377005ba",
-      "symbol": "HOODFART",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "HOODFART is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-18T07:12:07.187Z",
-      "chain": "base",
-      "address": "0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed",
-      "symbol": "DEGEN",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-18T07:12:56.979Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-18T07:12:56.979Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-18T07:16:51.848Z",
-      "chain": "base",
-      "address": "0x8a6786e0f64736771e34df56b869d4c620870b07",
-      "symbol": "Claude",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-18T07:16:56.223Z",
-      "chain": "base",
-      "address": "0x50f88fe97f72cd3e75b9eb4f747f59bceba80d59",
-      "symbol": "jesse",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-18T07:17:11.761Z",
-      "chain": "base",
-      "address": "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
-      "symbol": "FLOCK",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-18T07:17:34.655Z",
-      "chain": "base",
-      "address": "0xae45b8fae07ffb2e5f4373bfcb6f4bd827a45b07",
-      "symbol": "Gitlawb",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "Gitlawb is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-18T07:17:37.114Z",
-      "chain": "base",
-      "address": "0x4c433f4ef87fe506a7eed2fd1d822cbed411eba3",
-      "symbol": "TSG",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "TSG is now rated: B-.",
       "evidence": null
     }
   ]

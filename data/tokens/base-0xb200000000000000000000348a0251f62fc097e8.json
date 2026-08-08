@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "GJESSE",
   "name": "Ghibli Jesse",
-  "scanned_at": "2026-08-07T06:44:42.577Z",
+  "scanned_at": "2026-08-08T06:10:02.928Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,13 +72,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x8375c823fd5676556352fe7e947ec767d2d80bd8d085fcc3b8ae768dd5667568"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -130,88 +127,10 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 468.21,
-    "pools": [
-      {
-        "pair": "0x1ab3dc617ffd647f359146e4c7ef0f5904a31f3a609f36d86518db9174722ba7",
-        "dex": "uniswap",
-        "liquidityUsd": 55.33,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8375c823fd5676556352fe7e947ec767d2d80bd8d085fcc3b8ae768dd5667568",
-        "dex": "uniswap",
-        "liquidityUsd": 276.77,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xdf1d1c683a42e4f370743496ed02f05aff3196dbf6ebb63b70bbd6089655b459",
-        "dex": "uniswap",
-        "liquidityUsd": 52.61,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8ffe98b3333ef3b4ce3b8dad2e606a5e28666947fe88ca4bf1e2c3f4e8f7ae66",
-        "dex": "uniswap",
-        "liquidityUsd": 50.42,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x27c37a964da069bd155d95aeb75582999381e9090c79b17cc67f74673be4b0c7",
-        "dex": "uniswap",
-        "liquidityUsd": 10.43,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd18c78ca55ed394fb71cefe8be75cb68770ca8cfb2d6c801d29554b8274cf721",
-        "dex": "uniswap",
-        "liquidityUsd": 4.63,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x047f4943a67072605d4fc014e0e4e630c35f434ba28b6072828d8bb7e925a254",
-        "dex": "uniswap",
-        "liquidityUsd": 4.78,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa922e5201d24fbf6d370b3593c036c7669ec501503f705d6dfddd1b8812097af",
-        "dex": "uniswap",
-        "liquidityUsd": 13.24,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": 5.23,
-    "projectLinks": {
-      "websites": [
-        "https://ghibli-jesse.xyz"
-      ],
-      "socials": []
-    }
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "PROS",
   "name": "Wrapped PROS",
-  "scanned_at": "2026-08-07T06:39:05.288Z",
+  "scanned_at": "2026-08-08T06:03:21.745Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 40,
+    "overall": 41.8,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -78,19 +78,19 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 114 days old; trust needs time (Provisional).",
+          "text": "Token is 115 days old; trust needs time (Provisional).",
           "evidence": "0xe163c483d97097c44719ffede6c9af66f41539d872a02f6e10450acabea7b13a"
         }
       ]
     },
     "holderConcentration": {
-      "score": 0,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 58.2% of circulating supply.",
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 39.4%.",
           "evidence": null
         }
       ]
@@ -108,11 +108,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
       "id": "cap.age-6mo",
       "letter": "B+",
       "reason": "Token is younger than 6 months (Provisional)."
@@ -125,7 +120,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4045765284953903102693539",
+    "totalSupply": "4046308603797898024025598",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -138,13 +133,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 114,
-    "liquidityUsd": 716031.0300000001,
+    "ageDays": 115,
+    "liquidityUsd": 705804.99,
     "pools": [
       {
         "pair": "0x8A8e4170C09074b109352190d47e54d7c1F61e4E",
         "dex": "aerodrome",
-        "liquidityUsd": 688200.17,
+        "liquidityUsd": 678169.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +148,7 @@
       {
         "pair": "0xe09391afeca776dbf5cf9849808f4cdfa5e37d2bc863774f1618048a2424d9e8",
         "dex": "uniswap",
-        "liquidityUsd": 18877.97,
+        "liquidityUsd": 18879,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +157,7 @@
       {
         "pair": "0x24BDDff0577D1Ee32f92A0b92296cA9702611c6A",
         "dex": "aerodrome",
-        "liquidityUsd": 2888.41,
+        "liquidityUsd": 2756.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +166,7 @@
       {
         "pair": "0x3f4E90Ff4125d9FCC4F4B7Ba5213f596e9A1115d",
         "dex": "uniswap",
-        "liquidityUsd": 6039.81,
+        "liquidityUsd": 5973.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,14 +175,23 @@
       {
         "pair": "0xfbc8430728e4f114b4cD1B3A9FDd1382c133F63c",
         "dex": "aerodrome",
-        "liquidityUsd": 24.67,
+        "liquidityUsd": 24.5,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xA1DC70D55489784b68f8d2c045eaa51F59dd7ad5",
+        "dex": "pancakeswap",
+        "liquidityUsd": 2.28,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 58.2,
+    "top10Pct": 39.42,
     "projectLinks": null
   },
   "notes": null,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SAPIEN",
   "name": "Sapien",
-  "scanned_at": "2026-08-07T06:45:29.184Z",
+  "scanned_at": "2026-08-08T06:10:53.570Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -88,7 +88,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 40.6%.",
+          "text": "Top-10 unlabeled holders control 40.4%.",
           "evidence": null
         }
       ]
@@ -123,13 +123,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 357,
-    "liquidityUsd": 901672.7100000001,
+    "ageDays": 358,
+    "liquidityUsd": 897657.2,
     "pools": [
       {
         "pair": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862",
         "dex": "aerodrome",
-        "liquidityUsd": 844410.5,
+        "liquidityUsd": 839915.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +138,7 @@
       {
         "pair": "0x682A02D5a32DDb09D1cf4791fB4124E0d4E17b67",
         "dex": "uniswap",
-        "liquidityUsd": 57137.65,
+        "liquidityUsd": 57617.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,7 +147,7 @@
       {
         "pair": "0xAA03871da2C5e83e620FD44D6d08C9695E6BED91",
         "dex": "aerodrome",
-        "liquidityUsd": 65.12,
+        "liquidityUsd": 63.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -156,7 +156,7 @@
       {
         "pair": "0x9F12a2CB7ad24E7BeF73174677a171617C83D2EC",
         "dex": "aerodrome",
-        "liquidityUsd": 58.91,
+        "liquidityUsd": 59.13,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -165,14 +165,23 @@
       {
         "pair": "0x225Ca8cF2CE1d643F65722a4C7c747A19442B8Ef",
         "dex": "pancakeswap",
-        "liquidityUsd": 0.53,
+        "liquidityUsd": 0.55,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa15C30AFd1bd6d75bc525c1daE2e349534dee442",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 40.63,
+    "top10Pct": 40.38,
     "projectLinks": {
       "websites": [
         "https://earn.sapien.io/"

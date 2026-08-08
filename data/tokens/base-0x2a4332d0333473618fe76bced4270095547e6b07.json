@@ -1,16 +1,16 @@
 {
-  "address": "0x8bfac1b375bf2894d6f12fb2eb48b1c1a7916789",
+  "address": "0x2a4332d0333473618fe76bced4270095547e6b07",
   "chain": "base",
   "status": "ok",
-  "symbol": "MEY",
-  "name": "Mey Network",
-  "scanned_at": "2026-08-08T06:06:05.245Z",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-08-08T06:14:25.646Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 63.2,
-    "provisional": false,
+    "overall": 65.7,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -28,13 +28,13 @@
       ]
     },
     "adminSurface": {
-      "score": 25,
+      "score": 40,
       "notApplicable": false,
       "findings": [
         {
-          "id": "admin.eoa",
+          "id": "admin.unknown-gate",
           "severity": "warn",
-          "text": "Material admin powers are held by a single externally-owned account.",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
           "evidence": null
         }
       ]
@@ -66,24 +66,31 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x77310Fc8950dd83a035769018f2a05b1E989a52a"
+            "pair": "0x9c091525e2CB68aF016B7607A3E280af379FC5ca"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 75,
-      "notApplicable": false,
-      "findings": []
-    },
-    "holderConcentration": {
       "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 47.2%.",
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 3 days old; trust needs time (Provisional).",
+          "evidence": "0xb6e29555cfb93fd867859a7b97885a5e6020b0b854461111f21513d4d3e0668a"
+        }
+      ]
+    },
+    "holderConcentration": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
           "evidence": null
         }
       ]
@@ -96,9 +103,9 @@
   },
   "caps": [
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -108,10 +115,10 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "2300000000000000000000000000",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
-    "owner": "0x7a4019ed07f9bcf4b6340a57fc7aa0c2f204ea83",
-    "controlType": "eoa",
+    "owner": null,
+    "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [
@@ -120,71 +127,39 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 640,
-    "liquidityUsd": 200799.29,
+    "ageDays": 3,
+    "liquidityUsd": 9526777.6,
     "pools": [
       {
-        "pair": "0x77310Fc8950dd83a035769018f2a05b1E989a52a",
+        "pair": "0xd27070c367a697ec211bb8278d60ca28ac6d2aea505e50cc559e14a9e0dbcdd4",
         "dex": "uniswap",
-        "liquidityUsd": 101402.5,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xAe37030302643Ee121DFA50E76b27b90Fac9e872",
+        "pair": "0xda1a44e015974e6ef7b1032aca8b3a6815bae7a9ba28ae82821c24d8907e1ebd",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9c091525e2CB68aF016B7607A3E280af379FC5ca",
         "dex": "aerodrome",
-        "liquidityUsd": 95812.1,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa3116c935b8fe346a8F42D7eFC4C6e7a52947e48",
-        "dex": "aerodrome",
-        "liquidityUsd": 3169.51,
+        "liquidityUsd": 9526777.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa0aF7695C02bCB9318D2253D039A59382c0C675C",
-        "dex": "uniswap",
-        "liquidityUsd": 115.72,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8cd2D9238574105eb25a1b0A00e9B33Eb15Cc165",
-        "dex": "uniswap",
-        "liquidityUsd": 299.46,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x22a3de4a53ad2e984aaf446365e0fd976d8704f3",
-          "sharePct": 84150.43
-        }
       }
     ],
-    "top10Pct": 47.22,
-    "projectLinks": {
-      "websites": [
-        "https://mey.network/",
-        "https://docs.mey.network/mey-network",
-        "https://www.facebook.com/MeyNetwork"
-      ],
-      "socials": [
-        "https://x.com/Mey_Network",
-        "https://t.me/Mey_Network"
-      ]
-    }
+    "top10Pct": 0,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

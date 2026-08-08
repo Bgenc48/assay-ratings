@@ -1,54 +1,136 @@
 {
-  "generated_at": "2026-08-07T06:49:00.466Z",
+  "generated_at": "2026-08-08T06:14:29.865Z",
   "alerts": [
     {
-      "at": "2026-08-07T06:35:58.744Z",
-      "chain": "base",
-      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-      "symbol": "USDC",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-07T06:36:33.761Z",
+      "at": "2026-08-08T06:00:39.177Z",
       "chain": "base",
       "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
       "symbol": "AERO",
       "severity": "WARN",
       "kind": "grade-state",
-      "text": "Grade state UR → C.",
+      "text": "Grade state C → UR.",
       "evidence": null
     },
     {
-      "at": "2026-08-07T06:41:26.940Z",
+      "at": "2026-08-08T06:01:26.635Z",
+      "chain": "base",
+      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+      "symbol": "DAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B+ → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:01:26.635Z",
+      "chain": "base",
+      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+      "symbol": "DAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:03:28.590Z",
+      "chain": "base",
+      "address": "0x8b7dde054be9d180c1be7fae0874697374a49832",
+      "symbol": "PROS",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:06:04.494Z",
       "chain": "base",
       "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
       "symbol": "AMETA",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:13:07.608Z",
+      "chain": "base",
+      "address": "0x3c5cd672b204ba0fc48e93b98c0922920a87912d",
+      "symbol": "BSW",
+      "severity": "CRITICAL",
+      "kind": "upgraded",
+      "text": "Contract implementation changed: 0xd735a760f94c9c568ebf4b16295d9d7bd19179b7 → 0x033fcdf677e236c2261538056cbba103d52804dc.",
+      "evidence": {
+        "field": "facts.proxyImplementation"
+      }
+    },
+    {
+      "at": "2026-08-08T06:13:55.221Z",
+      "chain": "base",
+      "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
+      "symbol": "OpenAI",
       "severity": "WARN",
       "kind": "downgrade",
       "text": "Grade B- → C.",
       "evidence": null
     },
     {
-      "at": "2026-08-07T06:43:51.621Z",
+      "at": "2026-08-08T06:13:55.221Z",
       "chain": "base",
-      "address": "0x693b8de886712f0039eef578bbe5ac7ea3b598ce",
-      "symbol": "doji",
+      "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:13:59.181Z",
+      "chain": "base",
+      "address": "0x2b31d3ed065f1f834d5c85efed49089f4c4f6b07",
+      "symbol": "OpenAI",
       "severity": "WARN",
       "kind": "downgrade",
       "text": "Grade B- → C.",
       "evidence": null
     },
     {
-      "at": "2026-08-07T06:45:11.874Z",
+      "at": "2026-08-08T06:13:59.181Z",
       "chain": "base",
-      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
-      "symbol": "cbXRP",
+      "address": "0x2b31d3ed065f1f834d5c85efed49089f4c4f6b07",
+      "symbol": "OpenAI",
       "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → F.",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:14:20.925Z",
+      "chain": "base",
+      "address": "0x003afa6d1eddf81326106d19a59fd4b5f90cdb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:14:20.925Z",
+      "chain": "base",
+      "address": "0x003afa6d1eddf81326106d19a59fd4b5f90cdb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-08T06:14:29.113Z",
+      "chain": "base",
+      "address": "0x2a4332d0333473618fe76bced4270095547e6b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "OpenAI is now rated: C.",
       "evidence": null
     }
   ]

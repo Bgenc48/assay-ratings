@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "PIPEDOG",
   "name": "pipedog",
-  "scanned_at": "2026-08-07T06:47:23.491Z",
+  "scanned_at": "2026-08-08T06:12:45.563Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 63.1,
+    "overall": 65.7,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -75,15 +75,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 7 days old; trust needs time (Provisional).",
+          "text": "Token is 8 days old; trust needs time (Provisional).",
           "evidence": "0x6beb450b949181cbeadcc8615caffdfd3aede458311870cead47019a02173f57"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -117,10 +124,10 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 7,
+    "ageDays": 8,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,
