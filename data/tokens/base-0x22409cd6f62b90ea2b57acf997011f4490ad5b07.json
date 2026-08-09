@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "PIPEDOG",
   "name": "pipedog",
-  "scanned_at": "2026-08-08T06:12:31.029Z",
+  "scanned_at": "2026-08-09T06:18:04.390Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 10 days old; trust needs time (Provisional).",
+          "text": "Token is 11 days old; trust needs time (Provisional).",
           "evidence": "0x487de0050f988bd163b26849d46df5cf53453440e080628be1f7805dec7973d0"
         }
       ]
@@ -127,7 +127,7 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 10,
+    "ageDays": 11,
     "liquidityUsd": null,
     "pools": [
       {
@@ -140,7 +140,25 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xeb7b31414fb7a6f402c6aa4b8367c94e75e2733ce92676c2bf2610c5336124d3",
+        "pair": "0xc2288662ed770bdbfb22487516f6d4fea4614cbaeec441b963fdf6340563da5e",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0c672f532e71e9e89ee37b504ce3850b2dfb728f6cf99e804cdf38a89f7f0b85",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x86de6fa7502f9a5060632b9d957031c49fab6dfdded112c50523e281a21377fc",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -149,7 +167,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": 0.02,
     "projectLinks": null
   },
   "notes": null,

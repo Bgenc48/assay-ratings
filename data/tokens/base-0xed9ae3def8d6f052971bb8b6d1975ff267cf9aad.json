@@ -1,0 +1,201 @@
+{
+  "address": "0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "BLUAI",
+  "name": "Bluwhale AI",
+  "scanned_at": "2026-08-09T06:21:41.262Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "F",
+    "overall": 24.1,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.eoa-mint",
+          "severity": "crit",
+          "text": "A mint path exists and its controller is an externally-owned account. Supply can be inflated unilaterally.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.eoa",
+          "severity": "crit",
+          "text": "Material admin powers are held by a single externally-owned account.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB",
+            "lpDominantHolder": {
+              "address": "0x0a02944700fe01c4374617004681b9f1615ebf6d",
+              "sharePct": 99.56
+            }
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 50.1% of circulating supply.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.eoa-mint",
+      "letter": "F",
+      "reason": "Mint or issuance is controlled by an externally-owned account."
+    },
+    {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB (LP holder 0x0a02944700fe01c4374617004681b9f1615ebf6d, 99.56% of that pool)."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "10774460105672130000000000",
+    "decimals": 18,
+    "owner": "0xa1e963ff6b129d446a2890f22c47a5abf15ce7dc",
+    "controlType": "eoa",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [
+      "mint(address,uint256)",
+      "burnFrom(address,uint256)"
+    ],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 290,
+    "liquidityUsd": 228782.33,
+    "pools": [
+      {
+        "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB",
+        "dex": "aerodrome",
+        "liquidityUsd": 228782.05,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x0a02944700fe01c4374617004681b9f1615ebf6d",
+          "sharePct": 99.56
+        }
+      },
+      {
+        "pair": "0x515e07a62c06aa85eb460cfab04bdabec21c2ec8123a1253277b621a7b407495",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4f3c3229bfd501844d91a795135fdf8d923ed96fc64d2acefb1c9f4228396ff2",
+        "dex": "uniswap",
+        "liquidityUsd": 0.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x555803dc7543631a9098da5619eb1dd729e24f26a94975d321d4056be84a6a2d",
+        "dex": "uniswap",
+        "liquidityUsd": 0.04,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1f203bbbc4c249000327a7a1cf0f666273877e8791d2b627769b1937f4f6a393",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 50.15,
+    "projectLinks": null
+  },
+  "notes": null,
+  "coi": false
+}

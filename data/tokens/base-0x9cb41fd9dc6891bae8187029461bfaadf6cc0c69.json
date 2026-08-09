@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "noice",
   "name": "noice",
-  "scanned_at": "2026-08-08T06:06:28.068Z",
+  "scanned_at": "2026-08-09T06:10:11.445Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 54.4% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 54.3% of circulating supply.",
           "evidence": null
         }
       ]
@@ -121,12 +121,21 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 194110.46,
+    "liquidityUsd": 210520.39,
     "pools": [
       {
         "pair": "0xeFF7f8Fe083d7a446717B992bf84391253e54789",
         "dex": "uniswap",
-        "liquidityUsd": 187587.54,
+        "liquidityUsd": 188587.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x663c709a765297e8dc71ef8cd112aad38705c3fe3cf4316b04fb5a849c46fae4",
+        "dex": "uniswap",
+        "liquidityUsd": 15377.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +144,7 @@
       {
         "pair": "0x9Ea86AA9f7203da077371bb2F82ec555E6E22f81",
         "dex": "aerodrome",
-        "liquidityUsd": 4138.3,
+        "liquidityUsd": 4148.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +153,7 @@
       {
         "pair": "0x9728C6640603C18631754E1f46379Ae392b9B777",
         "dex": "aerodrome",
-        "liquidityUsd": 2311.55,
+        "liquidityUsd": 2332.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,14 +162,14 @@
       {
         "pair": "0x5984BC5CA90388Aac221147Ca9DA419A2a458A9F",
         "dex": "hydrex",
-        "liquidityUsd": 73.07,
+        "liquidityUsd": 73.66,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 54.36,
+    "top10Pct": 54.26,
     "projectLinks": {
       "websites": [
         "https://noice.so/noice",

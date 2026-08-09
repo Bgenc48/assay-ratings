@@ -1,0 +1,204 @@
+{
+  "address": "0x696f9436b67233384889472cd7cd58a6fb5df4f1",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "AVNT",
+  "name": "Avantis",
+  "scanned_at": "2026-08-09T06:21:12.533Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B",
+    "overall": 75.4,
+    "provisional": false,
+    "badge": "Custodial",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 55,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.safe",
+          "severity": "warn",
+          "text": "Privileged capabilities gated by a 3-of-6 multisig with no timelock.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xe30d5BF485F7476AC15884a28ffb3C9cEA635DCB"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": "0x87d800febb81977d47989630356b9b62d5b22426",
+    "controlType": "safe",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 473,
+    "liquidityUsd": 684523.15,
+    "pools": [
+      {
+        "pair": "0xe30d5BF485F7476AC15884a28ffb3C9cEA635DCB",
+        "dex": "aerodrome",
+        "liquidityUsd": 582120.25,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc4ed25e61cBdE561c982789f740E3e9A8C317100",
+        "dex": "aerodrome",
+        "liquidityUsd": 40960.65,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x04f0C5d0e2fc9329F08E0112a37d7D9B7CfF1043",
+        "dex": "uniswap",
+        "liquidityUsd": 26192.1,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9144A6e8ad6f56db96daC444eB173831660Ba3e5",
+        "dex": "uniswap",
+        "liquidityUsd": 15851.6,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x721bcd563603a559616dc9Fb886A1732186995a4",
+        "dex": "hydrex",
+        "liquidityUsd": 6621.77,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe86d1cccaf5543db6ff6ac7e70e5dee2d713d3ca37f591a1c6de37b93fce48b0",
+        "dex": "uniswap",
+        "liquidityUsd": 6617.03,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0f62c69be79b91a0ce2c175dd6e98318031fb117018883bc661c0228335a4c7c",
+        "dex": "uniswap",
+        "liquidityUsd": 3286.27,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0b8781a7c4cae77f0f4986ed01e3036a0a9069efb41b57225067cc38258798ce",
+        "dex": "uniswap",
+        "liquidityUsd": 2873.48,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 19.47,
+    "projectLinks": {
+      "websites": [
+        "https://www.avantisfi.com/",
+        "https://docs.avantisfi.com/"
+      ],
+      "socials": [
+        "https://twitter.com/avantisfi",
+        "https://discord.com/invite/avantisfi"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

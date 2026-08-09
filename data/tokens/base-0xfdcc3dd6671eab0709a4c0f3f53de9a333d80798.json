@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-08-08T06:13:20.266Z",
+  "scanned_at": "2026-08-09T06:19:17.382Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F"
+            "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c"
           }
         }
       ]
@@ -113,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "711782394536210509933128",
+    "totalSupply": "711913424536210509933128",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -128,9 +128,18 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1080,
-    "liquidityUsd": 97090.92,
+    "ageDays": 1081,
+    "liquidityUsd": 199226.01,
     "pools": [
+      {
+        "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c",
+        "dex": "uniswap",
+        "liquidityUsd": 102037.21,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F",
         "dex": "aerodrome",
@@ -139,9 +148,40 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xDaA874751B96a73679c48DaD6daE4541527564dc",
+        "dex": "uniswap",
+        "liquidityUsd": 97.88,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xca2ebc5f15c36260205e82900befe9f1052eb409045ced9873f962c0aac9a3d7",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3e576D9559A5B2Da5733420C9bD946b0FB615995",
+        "dex": "aerodrome",
+        "liquidityUsd": null,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x214183c90c177cc2b7129f5c17948971d32e322e",
+          "sharePct": 99.99
+        }
       }
     ],
-    "top10Pct": 113.2,
+    "top10Pct": 113.18,
     "projectLinks": null
   },
   "notes": null,

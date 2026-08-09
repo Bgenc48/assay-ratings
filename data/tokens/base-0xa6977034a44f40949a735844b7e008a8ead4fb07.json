@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-08T06:12:17.354Z",
+  "scanned_at": "2026-08-09T06:17:33.806Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xc4e8736acf35682b2513ed6200e3865eca22c16cd384ab7ff8aed1a0710d3577"
+            "pair": "0xa95b5760e309493d8ee739ee68f961af3b8cb3db50fd0900bbf1eb958150cb78"
           }
         }
       ]
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 11 days old; trust needs time (Provisional).",
+          "text": "Token is 12 days old; trust needs time (Provisional).",
           "evidence": "0x6a65028096b6ef1a3133e5e7b6dea9aedd2b4fda1886531483455f08f9384edb"
         }
       ]
@@ -127,18 +127,9 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 11,
+    "ageDays": 12,
     "liquidityUsd": null,
     "pools": [
-      {
-        "pair": "0xc4e8736acf35682b2513ed6200e3865eca22c16cd384ab7ff8aed1a0710d3577",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0xa95b5760e309493d8ee739ee68f961af3b8cb3db50fd0900bbf1eb958150cb78",
         "dex": "uniswap",
@@ -149,7 +140,7 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0bd08a0948d82f82b8e619805e51a9356a5914f104af900468d8d6a358d18ee4",
+        "pair": "0xc0d78a7b83b50a2f14765bb8669142d76c0b76a81b7cd8cef351946d4034c6b3",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,

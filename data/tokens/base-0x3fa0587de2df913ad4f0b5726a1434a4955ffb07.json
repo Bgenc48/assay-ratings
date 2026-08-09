@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Base",
   "name": "Base",
-  "scanned_at": "2026-08-08T06:06:42.956Z",
+  "scanned_at": "2026-08-09T06:10:33.253Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x96bcdbfb31b9879ccb80f6201c2574d237dd8ea249e1a1a6a4ee7f1158f44210"
+          }
         }
       ]
     },
@@ -75,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 27 days old; trust needs time (Provisional).",
+          "text": "Token is 28 days old; trust needs time (Provisional).",
           "evidence": "0xfba1cf226033bb4588facd77fa13067f700ed5652a881bcf9827da86184c639c"
         }
       ]
@@ -87,7 +90,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 1.0%.",
+          "text": "Top-10 unlabeled holders control 3.1%.",
           "evidence": null
         }
       ]
@@ -124,10 +127,20 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 27,
-    "liquidityUsd": null,
-    "pools": [],
-    "top10Pct": 1,
+    "ageDays": 28,
+    "liquidityUsd": 3.75,
+    "pools": [
+      {
+        "pair": "0x96bcdbfb31b9879ccb80f6201c2574d237dd8ea249e1a1a6a4ee7f1158f44210",
+        "dex": "uniswap",
+        "liquidityUsd": 3.75,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 3.14,
     "projectLinks": null
   },
   "notes": null,

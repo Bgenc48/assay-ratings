@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "LMTS",
   "name": "Limitless Official Token",
-  "scanned_at": "2026-08-08T06:04:26.958Z",
+  "scanned_at": "2026-08-09T06:07:05.766Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -123,13 +123,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 291,
-    "liquidityUsd": 816436.5299999999,
+    "ageDays": 292,
+    "liquidityUsd": 811714.7500000001,
     "pools": [
       {
         "pair": "0xbe4C36B9542610dF83Ca690C8b5BC53BbbC5d542",
         "dex": "aerodrome",
-        "liquidityUsd": 271338.45,
+        "liquidityUsd": 269003.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +138,7 @@
       {
         "pair": "0xa5E0Da329eE5AA03f09228e534953496334080f5",
         "dex": "aerodrome",
-        "liquidityUsd": 538519.94,
+        "liquidityUsd": 536115.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,11 +147,33 @@
       {
         "pair": "0x6cdd1bcaf26c37a0b2de7437f4c56b0f0f2c187894d787aa9aff5b7f7c408d18",
         "dex": "uniswap",
-        "liquidityUsd": 6578.14,
+        "liquidityUsd": 6595.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xde95269d2f298b03d6d9febe58c8d50579e836c36000a668aed01c81cd487bd7",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x401e11343954a108455f770DED4E2E65A80d985f",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.42,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xf16e9a5d117e0f6de416779942d943365321cfca",
+          "sharePct": 616616.96
+        }
       }
     ],
     "top10Pct": 8.7,

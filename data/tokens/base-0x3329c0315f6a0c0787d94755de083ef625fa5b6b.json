@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "VLTX",
   "name": "Valtherix AI",
-  "scanned_at": "2026-08-08T06:14:11.038Z",
+  "scanned_at": "2026-08-09T06:20:38.058Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,16 +83,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 17 days old; trust needs time (Provisional).",
-          "evidence": "0xfd09f566c52872dd9199281da2854a23967c12f656d2dfdfa35b667cec39c019"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 100,
@@ -119,11 +112,6 @@
       "reason": "Source code is not verified on a public explorer."
     },
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -141,13 +129,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 17,
-    "liquidityUsd": 335853.27,
+    "ageDays": null,
+    "liquidityUsd": 368591.91,
     "pools": [
       {
         "pair": "0xCFc98C1e031053Bdc3E40Ed7f01F3cF94a0446E0",
         "dex": "uniswap",
-        "liquidityUsd": 335853.27,
+        "liquidityUsd": 368591.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
