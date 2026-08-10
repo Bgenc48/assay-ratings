@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-08-09T06:11:23.851Z",
+  "scanned_at": "2026-08-10T06:54:34.844Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x2567fd2fed4c0ce5968b1f036573dff4194268381882b15a77221e427d7d9815"
+          }
         }
       ]
     },
@@ -75,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 26 days old; trust needs time (Provisional).",
+          "text": "Token is 27 days old; trust needs time (Provisional).",
           "evidence": "0xd68464708cc5db10de265f6f3ec39ec4c9dac3d0801ac68b34bc9d174c8eb1d9"
         }
       ]
@@ -129,9 +132,19 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 26,
-    "liquidityUsd": null,
-    "pools": [],
+    "ageDays": 27,
+    "liquidityUsd": 15.96,
+    "pools": [
+      {
+        "pair": "0x2567fd2fed4c0ce5968b1f036573dff4194268381882b15a77221e427d7d9815",
+        "dex": "uniswap",
+        "liquidityUsd": 15.96,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 93.36,
     "projectLinks": null
   },

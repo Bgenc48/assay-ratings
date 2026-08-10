@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "DEXTF",
   "name": "Memento",
-  "scanned_at": "2026-08-09T06:16:09.364Z",
+  "scanned_at": "2026-08-10T06:59:30.795Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.heavy",
           "severity": "warn",
-          "text": "Top-10 unlabeled holders control 36.6%.",
+          "text": "Top-10 unlabeled holders control 36.7%.",
           "evidence": null
         }
       ]
@@ -108,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "12408652221967738094578271",
+    "totalSupply": "12372112379077742038633753",
     "decimals": 18,
     "owner": "0xc3916b3ee83e201d6775470eccf1e93463f48127",
     "controlType": "eoa",
@@ -122,12 +122,21 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 85779.48000000001,
+    "liquidityUsd": 85055.04000000001,
     "pools": [
       {
         "pair": "0xC3F617c8A3DA6d286c8f97aF946A8f293632C852",
         "dex": "hydrex",
-        "liquidityUsd": 85749.91,
+        "liquidityUsd": 84804.03,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x53ce89c3c2bc9d135625b1b08959a8f9f9720866888b3e86fd1c8e1b6c83cbd2",
+        "dex": "uniswap",
+        "liquidityUsd": 221.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,14 +145,14 @@
       {
         "pair": "0x5f198375776642B495aF7c4cEf69B9b6e9246f8A",
         "dex": "aerodrome",
-        "liquidityUsd": 29.57,
+        "liquidityUsd": 29.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 36.56,
+    "top10Pct": 36.67,
     "projectLinks": {
       "websites": [
         "https://mementoblockchain.com/",

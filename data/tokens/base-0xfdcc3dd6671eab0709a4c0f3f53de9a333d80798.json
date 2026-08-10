@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-08-09T06:19:17.382Z",
+  "scanned_at": "2026-08-10T07:03:20.353Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 113.2% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 113.3% of circulating supply.",
           "evidence": null
         }
       ]
@@ -113,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "711913424536210509933128",
+    "totalSupply": "711283424536210509933128",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -128,13 +128,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1081,
-    "liquidityUsd": 199226.01,
+    "ageDays": 1082,
+    "liquidityUsd": 199258.5,
     "pools": [
       {
         "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c",
         "dex": "uniswap",
-        "liquidityUsd": 102037.21,
+        "liquidityUsd": 102039.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -143,45 +143,23 @@
       {
         "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F",
         "dex": "aerodrome",
-        "liquidityUsd": 97090.92,
+        "liquidityUsd": 97091.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xDaA874751B96a73679c48DaD6daE4541527564dc",
+        "pair": "0xada452F1340FAF2faA5CD6Cf5380f9585A624b8c",
         "dex": "uniswap",
-        "liquidityUsd": 97.88,
+        "liquidityUsd": 127.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xca2ebc5f15c36260205e82900befe9f1052eb409045ced9873f962c0aac9a3d7",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3e576D9559A5B2Da5733420C9bD946b0FB615995",
-        "dex": "aerodrome",
-        "liquidityUsd": null,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x214183c90c177cc2b7129f5c17948971d32e322e",
-          "sharePct": 99.99
-        }
       }
     ],
-    "top10Pct": 113.18,
+    "top10Pct": 113.28,
     "projectLinks": null
   },
   "notes": null,

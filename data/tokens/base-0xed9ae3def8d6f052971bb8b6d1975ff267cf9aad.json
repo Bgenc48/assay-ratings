@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "BLUAI",
   "name": "Bluwhale AI",
-  "scanned_at": "2026-08-09T06:21:41.262Z",
+  "scanned_at": "2026-08-10T07:06:08.276Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 24.1,
+    "overall": 25.6,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "full"
@@ -81,13 +81,13 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 50.1% of circulating supply.",
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 49.9%.",
           "evidence": null
         }
       ]
@@ -110,11 +110,6 @@
       "reason": "Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB (LP holder 0x0a02944700fe01c4374617004681b9f1615ebf6d, 99.56% of that pool)."
     },
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
       "id": "cap.age-12mo",
       "letter": "A-",
       "reason": "Token is younger than 12 months (Provisional)."
@@ -127,7 +122,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "10774460105672130000000000",
+    "totalSupply": "10834948097175360000000000",
     "decimals": 18,
     "owner": "0xa1e963ff6b129d446a2890f22c47a5abf15ce7dc",
     "controlType": "eoa",
@@ -140,13 +135,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 290,
-    "liquidityUsd": 228782.33,
+    "ageDays": 291,
+    "liquidityUsd": 197783.09,
     "pools": [
       {
         "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB",
         "dex": "aerodrome",
-        "liquidityUsd": 228782.05,
+        "liquidityUsd": 197783.09,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -155,45 +150,9 @@
           "address": "0x0a02944700fe01c4374617004681b9f1615ebf6d",
           "sharePct": 99.56
         }
-      },
-      {
-        "pair": "0x515e07a62c06aa85eb460cfab04bdabec21c2ec8123a1253277b621a7b407495",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4f3c3229bfd501844d91a795135fdf8d923ed96fc64d2acefb1c9f4228396ff2",
-        "dex": "uniswap",
-        "liquidityUsd": 0.24,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x555803dc7543631a9098da5619eb1dd729e24f26a94975d321d4056be84a6a2d",
-        "dex": "uniswap",
-        "liquidityUsd": 0.04,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x1f203bbbc4c249000327a7a1cf0f666273877e8791d2b627769b1937f4f6a393",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 50.15,
+    "top10Pct": 49.87,
     "projectLinks": null
   },
   "notes": null,

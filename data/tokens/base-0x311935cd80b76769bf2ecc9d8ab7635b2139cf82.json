@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SOL",
   "name": "Solana",
-  "scanned_at": "2026-08-09T06:04:14.851Z",
+  "scanned_at": "2026-08-10T06:47:31.375Z",
   "methodology_version": "0.2.1",
   "profile": "native-representation",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": null,
     "provisional": false,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -83,7 +83,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -107,7 +107,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "223789741474281",
+    "totalSupply": "213554545627188",
     "decimals": 9,
     "owner": null,
     "controlType": "none",
@@ -118,12 +118,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 2016380.6600000004,
+    "liquidityUsd": 1975208.58,
     "pools": [
       {
         "pair": "0x1131DB5977242a03eBeaD1aCD18F80A9A29e5922",
         "dex": "aerodrome",
-        "liquidityUsd": 427795.68,
+        "liquidityUsd": 372201.66,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -132,7 +132,7 @@
       {
         "pair": "0xCcfA472815563ff9eB2de95C7b2bE1Ccf91f7F31",
         "dex": "aerodrome",
-        "liquidityUsd": 321159.19,
+        "liquidityUsd": 330975.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -141,16 +141,7 @@
       {
         "pair": "0xab07dE353E15b80fa3B4224D5C8fDF3Ac9F50670",
         "dex": "pancakeswap",
-        "liquidityUsd": 217221.65,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8Df6dd38D718bD726374521c2DcFE90Eb9CB7d43",
-        "dex": "pancakeswap",
-        "liquidityUsd": 600070.62,
+        "liquidityUsd": 229707.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -159,16 +150,25 @@
       {
         "pair": "0x04d25d8f94A2018F8DdDe1E7941c625FA1a2c7cE",
         "dex": "pancakeswap",
-        "liquidityUsd": 263920.37,
+        "liquidityUsd": 269439.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x1cCA8388E671e83010843a1A0535B04F2D7E946B",
-        "dex": "uniswap",
-        "liquidityUsd": 77416.25,
+        "pair": "0x8Df6dd38D718bD726374521c2DcFE90Eb9CB7d43",
+        "dex": "pancakeswap",
+        "liquidityUsd": 607480.27,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xFCCE67a155DF9a1a95BeCfe7D09E32DfbE6F9816",
+        "dex": "aerodrome",
+        "liquidityUsd": 61901.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -177,23 +177,23 @@
       {
         "pair": "0xB8fA852a85Af20284906a898595f59BdD8C66cbE",
         "dex": "aerodrome",
-        "liquidityUsd": 70556.62,
+        "liquidityUsd": 68867.05,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xFCCE67a155DF9a1a95BeCfe7D09E32DfbE6F9816",
-        "dex": "aerodrome",
-        "liquidityUsd": 38240.28,
+        "pair": "0x415c88A05B75d1a65822d899f4A78b4C0D7CbefD",
+        "dex": "pancakeswap",
+        "liquidityUsd": 34635.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 24.3,
     "projectLinks": {
       "websites": [
         "https://solana.com/"

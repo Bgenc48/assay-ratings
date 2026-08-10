@@ -1,0 +1,169 @@
+{
+  "address": "0xc5fed7c8ccc75d8a72b601a66dffd7a489073f0b",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "ACU",
+  "name": "ACU",
+  "scanned_at": "2026-08-10T07:06:28.925Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B-",
+    "overall": 71.8,
+    "provisional": true,
+    "badge": "Custodial",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 55,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.safe",
+          "severity": "warn",
+          "text": "Privileged capabilities gated by a 4-of-7 multisig with no timelock.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x6d76a0f856a2ba951DA45Da9be399509Ad602e6A"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1886490207009000000",
+    "decimals": 12,
+    "owner": "0x9e13175e8b541fe9d43268807d5ac52305422a94",
+    "controlType": "safe",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 262,
+    "liquidityUsd": 212069.94,
+    "pools": [
+      {
+        "pair": "0x7f317a51d5fa4f879c76c675260da2de35765b87006f8e6045e937c41eb1d72d",
+        "dex": "uniswap",
+        "liquidityUsd": 13808.81,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x823267235953825559697e69d6e26c46b9b83fc81ffd5bafe1c8daf353e35d7c",
+        "dex": "uniswap",
+        "liquidityUsd": 1663.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6d76a0f856a2ba951DA45Da9be399509Ad602e6A",
+        "dex": "aerodrome",
+        "liquidityUsd": 196596.69,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4140af4b6094bf8e28fad359e8e54e6cd360312c41e8c0829a379d5edaedd75a",
+        "dex": "uniswap",
+        "liquidityUsd": 0.64,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 11.42,
+    "projectLinks": {
+      "websites": [
+        "https://acurast.com/",
+        "https://docs.acurast.com/"
+      ],
+      "socials": [
+        "https://t.me/acurastnetwork",
+        "https://discord.gg/wqgC6b6aKe",
+        "https://www.tiktok.com/@acurast"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

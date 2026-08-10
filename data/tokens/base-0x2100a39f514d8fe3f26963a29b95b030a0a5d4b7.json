@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "UPONLY",
   "name": "UPONLY",
-  "scanned_at": "2026-08-09T06:12:47.271Z",
+  "scanned_at": "2026-08-10T06:55:52.734Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,13 +61,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x911a2C812dA0b9B79CF6E3A00ce6fd39CbD13CcB"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -113,44 +110,11 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 572,
-    "liquidityUsd": 84660.48,
-    "pools": [
-      {
-        "pair": "0x911a2C812dA0b9B79CF6E3A00ce6fd39CbD13CcB",
-        "dex": "uniswap",
-        "liquidityUsd": 83849.47,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x89e974b9c59e4dce7210d44566e61b61ca0f945b5547af67524aa8a9d2965a44",
-        "dex": "uniswap",
-        "liquidityUsd": 608.34,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x42c693103aaee47323d87a5489a96ad4edfc82f553dd3ea8e7cc3d646421c27a",
-        "dex": "uniswap",
-        "liquidityUsd": 202.67,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "ageDays": 574,
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": 19.44,
-    "projectLinks": {
-      "websites": [],
-      "socials": [
-        "https://x.com/uponlybased?s=21"
-      ]
-    }
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

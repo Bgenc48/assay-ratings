@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "MTR",
   "name": "Matter",
-  "scanned_at": "2026-08-09T06:16:45.839Z",
+  "scanned_at": "2026-08-10T07:00:13.002Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "D",
+    "letter": "UR",
     "overall": 47.1,
     "provisional": true,
     "badge": "Discretionary",
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x93ecc1773d617Eb9e921a9A7e9a13a1C83Ca2A2e"
+          }
         }
       ]
     },
@@ -75,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 39 days old; trust needs time (Provisional).",
+          "text": "Token is 40 days old; trust needs time (Provisional).",
           "evidence": "0xde3c68d0e9783038831906bbf02c96b0e6120d041c54b9fe72321a546e07a37f"
         }
       ]
@@ -129,12 +132,44 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 39,
-    "liquidityUsd": null,
-    "pools": [],
+    "ageDays": 40,
+    "liquidityUsd": 1254634.39,
+    "pools": [
+      {
+        "pair": "0xFd0b8dDc4f1F03069ACd8c35C2319f8BA4ec88b5",
+        "dex": "uniswap",
+        "liquidityUsd": 17482.65,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x93ecc1773d617Eb9e921a9A7e9a13a1C83Ca2A2e",
+        "dex": "aerodrome",
+        "liquidityUsd": 1228234,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5e03Cb47130B9a81534Efd935b48399c3b64F1BF",
+        "dex": "aerodrome",
+        "liquidityUsd": 8917.74,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,
-  "coi": false
+  "coi": false,
+  "pendingReview": {
+    "computed": "D"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }
