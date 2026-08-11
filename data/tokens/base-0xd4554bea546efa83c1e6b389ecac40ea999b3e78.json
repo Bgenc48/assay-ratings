@@ -1,0 +1,203 @@
+{
+  "address": "0xd4554bea546efa83c1e6b389ecac40ea999b3e78",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "SQD",
+  "name": "Subsquid",
+  "scanned_at": "2026-08-11T06:24:17.259Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "F",
+    "overall": 38.8,
+    "provisional": false,
+    "badge": "Discretionary",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 35,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.unclassified-mint",
+          "severity": "warn",
+          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E",
+            "lpDominantHolder": {
+              "address": "0xe73018acd78b88519c1ed78c4f7171082d05a6a7",
+              "sharePct": 123.47
+            }
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 59.1% of circulating supply.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.unclassified-mint",
+      "letter": "C",
+      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "Externally-owned accounts can withdraw 98% of tracked liquidity — a majority. The largest such pool is 0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E (LP holder 0xe73018acd78b88519c1ed78c4f7171082d05a6a7, 123.47% of that pool)."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "9747229519909478783836194",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [
+      "mint(address,uint256)"
+    ],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 627,
+    "liquidityUsd": 296416.17999999993,
+    "pools": [
+      {
+        "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E",
+        "dex": "aerodrome",
+        "liquidityUsd": 286434.79,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xe73018acd78b88519c1ed78c4f7171082d05a6a7",
+          "sharePct": 123.47
+        }
+      },
+      {
+        "pair": "0xCe62141227cfd3Fe8d715F403B99F0377C0C16C6",
+        "dex": "aerodrome",
+        "liquidityUsd": 4469.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xEb7f70D9aDE093b69ea72baa23d14CA7B887E050",
+        "dex": "sushiswap",
+        "liquidityUsd": 7.56,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7f1d9e5a75FB96033152f9E519C838149916b793",
+        "dex": "aerodrome",
+        "liquidityUsd": 5504.1,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x9d0d34871984522b163e53d6eb6162338b5baca7",
+          "sharePct": 124.59
+        }
+      }
+    ],
+    "top10Pct": 59.1,
+    "projectLinks": {
+      "websites": [
+        "https://sqdgn.ai/"
+      ],
+      "socials": [
+        "https://x.com/helloSQDGN",
+        "https://t.me/SQDGNOfficial"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

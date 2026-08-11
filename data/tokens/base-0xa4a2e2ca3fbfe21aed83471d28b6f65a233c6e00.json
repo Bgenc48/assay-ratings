@@ -1,0 +1,213 @@
+{
+  "address": "0xa4a2e2ca3fbfe21aed83471d28b6f65a233c6e00",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "TIBBIR",
+  "name": "Ribbita by Virtuals",
+  "scanned_at": "2026-08-11T06:24:21.020Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "C",
+    "overall": 59.4,
+    "provisional": false,
+    "badge": "Discretionary",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.eoa",
+          "severity": "warn",
+          "text": "Material admin powers are held by a single externally-owned account.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x0c3b466104545efa096b8f944c1e524E1d0D4888"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "999904783797367999458008098",
+    "decimals": 18,
+    "owner": "0xe220329659d41b2a9f26e83816b424bdacf62567",
+    "controlType": "eoa",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": false,
+    "ageDays": 576,
+    "liquidityUsd": 2624043.4,
+    "pools": [
+      {
+        "pair": "0x0c3b466104545efa096b8f944c1e524E1d0D4888",
+        "dex": "uniswap",
+        "liquidityUsd": 2142815.6,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0f664afFB82f074937D5cFCD61b97F3F32d5dC50",
+        "dex": "aerodrome",
+        "liquidityUsd": 114786.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0E4409F7a8ebA3213F336daf608985302e79328c",
+        "dex": "aerodrome",
+        "liquidityUsd": 224811.69,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4Ae0272A740950d3D9B12a6eE9d5CA6B6aaF0efD",
+        "dex": "aerodrome",
+        "liquidityUsd": 116349.9,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xB3f0828eB3375B609b49E9Fb959472a29cD6E49a",
+        "dex": "hydrex",
+        "liquidityUsd": 16867.22,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x38981c23364dB3a50a6b2dD0196a22842788527C",
+        "dex": "uniswap",
+        "liquidityUsd": 5781.62,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb08a32FB67F910fCFE5Dc9561a6EA4A159BD9908",
+        "dex": "uniswap",
+        "liquidityUsd": 2407.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1b82bd3Ffd1b45Bf11a98ECCC12ABe14ca64Ed48",
+        "dex": "pancakeswap",
+        "liquidityUsd": 223.51,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 17.63,
+    "projectLinks": {
+      "websites": [
+        "https://ribbitcap.com/"
+      ],
+      "socials": [
+        "https://x.com/ribbita2012"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

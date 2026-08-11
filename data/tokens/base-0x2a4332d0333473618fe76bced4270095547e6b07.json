@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-10T07:05:23.351Z",
+  "scanned_at": "2026-08-11T06:23:22.467Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x9c091525e2CB68aF016B7607A3E280af379FC5ca"
+            "pair": "0x9a660e593a32eac144b7187e5fddb8844e2ed9380f849f8a6071cee43a32b261"
           }
         }
       ]
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 5 days old; trust needs time (Provisional).",
+          "text": "Token is 6 days old; trust needs time (Provisional).",
           "evidence": "0xb6e29555cfb93fd867859a7b97885a5e6020b0b854461111f21513d4d3e0668a"
         }
       ]
@@ -127,47 +127,11 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 5,
-    "liquidityUsd": 4086398.82,
+    "ageDays": 6,
+    "liquidityUsd": null,
     "pools": [
       {
-        "pair": "0x9c091525e2CB68aF016B7607A3E280af379FC5ca",
-        "dex": "aerodrome",
-        "liquidityUsd": 4086398.82,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xda1a44e015974e6ef7b1032aca8b3a6815bae7a9ba28ae82821c24d8907e1ebd",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd27070c367a697ec211bb8278d60ca28ac6d2aea505e50cc559e14a9e0dbcdd4",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x9a660e593a32eac144b7187e5fddb8844e2ed9380f849f8a6071cee43a32b261",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x1dd018a857a471a48aff1880890bb5aeabe77542cd33777c4d56530a58d06a65",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,

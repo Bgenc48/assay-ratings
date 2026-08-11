@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "CTR",
   "name": "CTR",
-  "scanned_at": "2026-08-10T06:49:33.597Z",
+  "scanned_at": "2026-08-11T06:11:41.116Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 67.7,
+    "overall": 64.6,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -78,15 +78,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 139 days old; trust needs time (Provisional).",
+          "text": "Token is 140 days old; trust needs time (Provisional).",
           "evidence": "0x878a413f286203463f32a1d0de06649b37e334baa552f1c184205883d9c1ad19"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 36.8%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -108,7 +115,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "751942020099180000000000000",
+    "totalSupply": "752119721338105000000000000",
     "decimals": 18,
     "owner": "0x8a99057cec644e91ca9ffc8ee5fddabafb929b66",
     "controlType": "safe",
@@ -118,13 +125,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 139,
-    "liquidityUsd": 746026.26,
+    "ageDays": 140,
+    "liquidityUsd": 739434.4900000001,
     "pools": [
       {
         "pair": "0x0ab02e160f0df68dc049B012c514857306960Eae",
         "dex": "aerodrome",
-        "liquidityUsd": 446414.52,
+        "liquidityUsd": 452145,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +140,7 @@
       {
         "pair": "0xf023Ea2DA2321dAb1fB640DBc9AbCdD1b0933A8c",
         "dex": "aerodrome",
-        "liquidityUsd": 262696.43,
+        "liquidityUsd": 264795.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,16 +149,7 @@
       {
         "pair": "0x2b0219c334bf754fb94ce6bf9ca0e680d79b165f5ea77b14f569931178057a1d",
         "dex": "uniswap",
-        "liquidityUsd": 20813.93,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x0840d9c2ff4cba4e274a0bc7c92a0d413c0cb516601b8fafb9efc2a01f7b0d96",
-        "dex": "uniswap",
-        "liquidityUsd": 14575.16,
+        "liquidityUsd": 20843.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +158,7 @@
       {
         "pair": "0x4345e201455c27Ae3BEEDe5eb3d0884ec34cF57d",
         "dex": "pancakeswap",
-        "liquidityUsd": 1454.53,
+        "liquidityUsd": 1478.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,14 +167,23 @@
       {
         "pair": "0xe613d24873a94e161dad7519adcd7e1256aada852faf6f78def730655cb5ce53",
         "dex": "uniswap",
-        "liquidityUsd": 71.69,
+        "liquidityUsd": 71.43,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x861b493b69ba7df96a598c3eb454b3f9702e4773afa406aed1052822102b0ba7",
+        "dex": "uniswap",
+        "liquidityUsd": 100.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 36.81,
     "projectLinks": {
       "websites": [
         "https://citrea.xyz/"

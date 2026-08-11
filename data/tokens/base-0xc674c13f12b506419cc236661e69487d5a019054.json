@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Robinhood",
   "name": "Robinhood",
-  "scanned_at": "2026-08-10T06:59:35.352Z",
+  "scanned_at": "2026-08-11T06:19:40.495Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,13 +61,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x3705eab294bcb5fd1156cca53926dc2bf861bfd65189c61ff253f3a961e13080"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -78,7 +75,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 18 days old; trust needs time (Provisional).",
+          "text": "Token is 19 days old; trust needs time (Provisional).",
           "evidence": "0xe18b53d1bfa49de8a40464096e65170f4412a2a137766a037932e488ff222002"
         }
       ]
@@ -90,7 +87,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
+          "text": "Top-10 unlabeled holders control 0.1%.",
           "evidence": null
         }
       ]
@@ -127,65 +124,10 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 18,
-    "liquidityUsd": 19.48,
-    "pools": [
-      {
-        "pair": "0xd790f8ecb95cf66b145c4245dfa3d3d63d9aab2553ded81e7084605396c1ef4a",
-        "dex": "uniswap",
-        "liquidityUsd": 4.45,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd67732a0978fb16e1562b18746d82bd87b59537ff204f050bfd07c008a5ad324",
-        "dex": "uniswap",
-        "liquidityUsd": 3.61,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcce40b7b9065d5f8282b46289cca551d61359237849106cf7f48188cabf59603",
-        "dex": "uniswap",
-        "liquidityUsd": 3.25,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc8352bda4f38b30dae3bfd6ccece84237cf3b7073aab93dcd5942beef78037b7",
-        "dex": "uniswap",
-        "liquidityUsd": 0.09,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3705eab294bcb5fd1156cca53926dc2bf861bfd65189c61ff253f3a961e13080",
-        "dex": "uniswap",
-        "liquidityUsd": 6.95,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe276df2bf7c7414ba606bb5c26d7a91a2637979a546bc880d3a6ecea0a1581dc",
-        "dex": "uniswap",
-        "liquidityUsd": 1.13,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": 0,
+    "ageDays": 19,
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": 0.11,
     "projectLinks": null
   },
   "notes": null,

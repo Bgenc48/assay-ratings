@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CHECK",
   "name": "Checkmate",
-  "scanned_at": "2026-08-10T06:51:58.052Z",
+  "scanned_at": "2026-08-11T06:13:25.200Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -111,13 +111,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 286,
-    "liquidityUsd": 301509.57999999996,
+    "ageDays": 287,
+    "liquidityUsd": 317632.41,
     "pools": [
       {
         "pair": "0x5a7B4970B2610aEe4776A6944d9F2171EE6060B0",
         "dex": "aerodrome",
-        "liquidityUsd": 295722.94,
+        "liquidityUsd": 299063.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xAc2733cbbA38DFf6fd94c7a751f3C26A3F10B1BC",
+        "dex": "uniswap",
+        "liquidityUsd": 12598.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +135,7 @@
       {
         "pair": "0x3c4384F3664B37A3Cb5A5cB3452B4B4A3Aa1256f",
         "dex": "aerodrome",
-        "liquidityUsd": 3547.8,
+        "liquidityUsd": 2975.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +144,7 @@
       {
         "pair": "0x45eef8deb7d55aa4f6d78164efe15d25823d857705d4035633cedb65d6d5018a",
         "dex": "uniswap",
-        "liquidityUsd": 861.05,
+        "liquidityUsd": 853.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +153,7 @@
       {
         "pair": "0x2d3C6d02b9A6D29b2ECCBec7B26BDA41836E1182",
         "dex": "aerodrome",
-        "liquidityUsd": 278.41,
+        "liquidityUsd": 271.61,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -153,15 +162,6 @@
           "address": "0xaaba500eeadf0d4e25b51b6121aecbde07b29a6e",
           "sharePct": 87.1
         }
-      },
-      {
-        "pair": "0xec623a82b691f7f4729dd531a87a05c825e784e46b8662cfd39bc68a5327e177",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x6a4BeFa1337865071E27c62dc9d7E3bCa253cE0f",
@@ -177,25 +177,25 @@
         }
       },
       {
-        "pair": "0xB20eeA81152F4cf1DC5e1e8E80840927359C7318",
+        "pair": "0xB5a64B150730b6c475CDC9C40632CE1D1ebf3ceC",
         "dex": "aerodrome",
-        "liquidityUsd": 0,
+        "liquidityUsd": 1083.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xB5a64B150730b6c475CDC9C40632CE1D1ebf3ceC",
+        "pair": "0x3f985184335BD9e0A4774C79668Ce57EE2AaCFe2",
         "dex": "aerodrome",
-        "liquidityUsd": 1099.35,
+        "liquidityUsd": 785.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 12.11,
+    "top10Pct": 11.8,
     "projectLinks": {
       "websites": [
         "https://anichess.com/",
