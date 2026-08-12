@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "cbBTC",
   "name": "Coinbase Wrapped BTC",
-  "scanned_at": "2026-08-11T06:09:17.771Z",
+  "scanned_at": "2026-08-12T06:47:39.799Z",
   "methodology_version": "0.2.1",
   "profile": "custodial-wrapped",
   "grade": {
     "letter": "UR",
-    "overall": 44.6,
-    "provisional": true,
+    "overall": 51.4,
+    "provisional": false,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -70,7 +70,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -111,6 +111,11 @@
       "waivedBy": "profile.custodial-wrapped (reviewed registry); superseded by cap.custodial-undisclosed"
     },
     {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -118,7 +123,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4496738121183",
+    "totalSupply": "4521151611861",
     "decimals": 8,
     "owner": "0xce56d20689d836ec7a728ceb94a15746696c16e6",
     "controlType": "eoa",
@@ -133,22 +138,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 33775428.96,
+    "ageDays": 722,
+    "liquidityUsd": 27455408.38,
     "pools": [
-      {
-        "pair": "0x42d4a22CaD0F5a49681a5715cE994Af73A43B76b",
-        "dex": "aerodrome",
-        "liquidityUsd": 6965818.75,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
         "dex": "pancakeswap",
-        "liquidityUsd": 4861687.84,
+        "liquidityUsd": 4899309.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +153,7 @@
       {
         "pair": "0x160D7E9d948B16c163332a277b393c288408eb12",
         "dex": "aerodrome",
-        "liquidityUsd": 4596292.39,
+        "liquidityUsd": 4761212.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +162,7 @@
       {
         "pair": "0x4e962BB3889Bf030368F56810A9c96B83CB3E778",
         "dex": "aerodrome",
-        "liquidityUsd": 8697202.25,
+        "liquidityUsd": 8814984.08,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,7 +171,7 @@
       {
         "pair": "0x7C7420DD105E2779316423Ba3E973f434315EFA9",
         "dex": "aerodrome",
-        "liquidityUsd": 815404.76,
+        "liquidityUsd": 733525.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -184,7 +180,7 @@
       {
         "pair": "0xb94b22332ABf5f89877A14Cc88f2aBC48c34B3Df",
         "dex": "pancakeswap",
-        "liquidityUsd": 1687169.11,
+        "liquidityUsd": 1678630.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -193,7 +189,7 @@
       {
         "pair": "0x3f9b863EF4B295d6Ba370215bcCa3785FCC44f44",
         "dex": "hydrex",
-        "liquidityUsd": 748552,
+        "liquidityUsd": 741474.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -202,7 +198,16 @@
       {
         "pair": "0x7AeA2E8A3843516afa07293a10Ac8E49906dabD1",
         "dex": "uniswap",
-        "liquidityUsd": 5403301.86,
+        "liquidityUsd": 5675152.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x22AEe3699b6A0fEd71490C103Bd4E5f3309891D5",
+        "dex": "aerodrome",
+        "liquidityUsd": 151118.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

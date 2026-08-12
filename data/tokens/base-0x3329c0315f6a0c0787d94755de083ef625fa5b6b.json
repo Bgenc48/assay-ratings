@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "VLTX",
   "name": "Valtherix AI",
-  "scanned_at": "2026-08-11T06:23:03.487Z",
+  "scanned_at": "2026-08-12T07:01:30.911Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -89,7 +89,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 20 days old; trust needs time (Provisional).",
+          "text": "Token is 21 days old; trust needs time (Provisional).",
           "evidence": "0xfd09f566c52872dd9199281da2854a23967c12f656d2dfdfa35b667cec39c019"
         }
       ]
@@ -141,20 +141,29 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 20,
-    "liquidityUsd": 424580.54,
+    "ageDays": 21,
+    "liquidityUsd": 471316.85,
     "pools": [
       {
         "pair": "0xCFc98C1e031053Bdc3E40Ed7f01F3cF94a0446E0",
         "dex": "uniswap",
-        "liquidityUsd": 424580.54,
+        "liquidityUsd": 471316.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc6F73eF7eDb3fcFB5f3fFdA22AE8100F5Eec6d8F",
+        "dex": "uniswap",
+        "liquidityUsd": 0,
+        "lpBurnedPct": 100,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 43.42,
+    "top10Pct": 43.43,
     "projectLinks": null
   },
   "notes": null,

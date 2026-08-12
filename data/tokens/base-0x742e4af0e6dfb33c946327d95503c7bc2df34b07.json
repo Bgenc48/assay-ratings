@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-11T06:17:27.479Z",
+  "scanned_at": "2026-08-12T06:56:11.435Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xfa8251828f9b2da79f05ae3ec35e6163b15b37bb064141cf18e3a53fb240a384"
+            "pair": "0xbf08c8290a97a49827497e4a14c5fd586814d039ff7f254dfe5016d6fb45ca38"
           }
         }
       ]
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 23 days old; trust needs time (Provisional).",
+          "text": "Token is 24 days old; trust needs time (Provisional).",
           "evidence": "0xbed8d4ef84dba3599bcb2e24e1a679d56bd51d4099aa4041f923175f078e6098"
         }
       ]
@@ -132,31 +132,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 23,
-    "liquidityUsd": 145.20999999999998,
+    "ageDays": 24,
+    "liquidityUsd": null,
     "pools": [
       {
         "pair": "0xbf08c8290a97a49827497e4a14c5fd586814d039ff7f254dfe5016d6fb45ca38",
         "dex": "uniswap",
         "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xfa8251828f9b2da79f05ae3ec35e6163b15b37bb064141cf18e3a53fb240a384",
-        "dex": "uniswap",
-        "liquidityUsd": 118.38,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xac86a4d2b0523f67b8280521d2032bdad07b69d2c0ac2466606c2a1ff5247efe",
-        "dex": "uniswap",
-        "liquidityUsd": 26.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
