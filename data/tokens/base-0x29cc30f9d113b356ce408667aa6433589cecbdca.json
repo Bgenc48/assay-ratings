@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ELSA",
   "name": "Elsa",
-  "scanned_at": "2026-08-12T06:50:53.423Z",
+  "scanned_at": "2026-08-13T06:55:38.511Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 84.6,
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -82,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -116,13 +116,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 216,
-    "liquidityUsd": 393233.98999999993,
+    "ageDays": 217,
+    "liquidityUsd": 392096.59,
     "pools": [
       {
         "pair": "0x83f3ACa29Bc79B048B99C56013475570acc97ccF",
         "dex": "pancakeswap",
-        "liquidityUsd": 368482.63,
+        "liquidityUsd": 366096.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -131,7 +131,7 @@
       {
         "pair": "0xdc8F367884437e398FBF4a94D3333fE0b5B376Db",
         "dex": "uniswap",
-        "liquidityUsd": 11461.81,
+        "liquidityUsd": 11353.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +140,7 @@
       {
         "pair": "0x5E4efb192Dfd5a267e5bEDac155FD9b79df82496",
         "dex": "aerodrome",
-        "liquidityUsd": 5647.82,
+        "liquidityUsd": 5571.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +149,16 @@
       {
         "pair": "0x9f073f766e3ee1eccd1d525ec8753ace09c94902e09acf328231389ef12df805",
         "dex": "uniswap",
-        "liquidityUsd": 3803.48,
+        "liquidityUsd": 3766.41,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0e71ec768629e65a9abdf43333228075fd16c9dbdfd41f90f1cc96e749b85416",
+        "dex": "uniswap",
+        "liquidityUsd": 3044.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,16 +167,7 @@
       {
         "pair": "0x8ec13b2f24d27ac531fcbe1cb551e7696cb8392879e3fb473f801395589776da",
         "dex": "uniswap",
-        "liquidityUsd": 1577.54,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x194797673fdf948efe25c506095054347df8308dff94845ef0738b7bc0b4016a",
-        "dex": "uniswap",
-        "liquidityUsd": 1558.25,
+        "liquidityUsd": 1572.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -176,23 +176,23 @@
       {
         "pair": "0xf3240f7578172cf710879e1ef84d04e632ab81282497ec0f0d04277a877a2832",
         "dex": "uniswap",
-        "liquidityUsd": 698.67,
+        "liquidityUsd": 691.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xf098aa17a6288ec704a7c8eec468a0671925c472d4aca6cafd58ad881e03ca5a",
+        "pair": "0x120eE6b5DbF9507AfE3E50f10f664F718bFF0696",
         "dex": "uniswap",
-        "liquidityUsd": 3.79,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "liquidityUsd": 0,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 15.26,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://moltnbook.com"

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "xtoken",
   "name": "xtoken",
-  "scanned_at": "2026-08-12T06:59:18.877Z",
+  "scanned_at": "2026-08-13T07:06:59.068Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 46.2,
+    "overall": 42.9,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -78,15 +78,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 50 days old; trust needs time (Provisional).",
+          "text": "Token is 51 days old; trust needs time (Provisional).",
           "evidence": "0x42b25bf0354a778c0fdb1e822cc010d3cffbab9ccb0b3aaac7eff843ad449524"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 100.0% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -99,6 +106,11 @@
       "id": "cap.eoa-upgrade",
       "letter": "D",
       "reason": "Upgradeable with an EOA admin and no timelock."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.age-6mo",
@@ -123,20 +135,20 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 50,
-    "liquidityUsd": 114844.44,
+    "ageDays": 51,
+    "liquidityUsd": 114614.22,
     "pools": [
       {
         "pair": "0x2227e2Cd686Dea3393b5e63CfF30fdE7711bAD83",
         "dex": "uniswap",
-        "liquidityUsd": 114844.44,
+        "liquidityUsd": 114614.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 99.99,
     "projectLinks": null
   },
   "notes": null,

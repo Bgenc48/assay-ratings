@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "JitoSOL",
   "name": "Jito Staked SOL",
-  "scanned_at": "2026-08-12T06:53:45.955Z",
+  "scanned_at": "2026-08-13T06:58:58.027Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -84,7 +84,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 175 days old; trust needs time (Provisional).",
+          "text": "Token is 176 days old; trust needs time (Provisional).",
           "evidence": "0x9f77ccb3024de6aa50b944fd2c318777aa55ba43c1b282f83c5ebd69956ae558"
         }
       ]
@@ -96,7 +96,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 5.5%.",
+          "text": "Top-10 unlabeled holders control 5.7%.",
           "evidence": null
         }
       ]
@@ -126,7 +126,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "97011295600552",
+    "totalSupply": "93847366094945",
     "decimals": 9,
     "owner": null,
     "controlType": "none",
@@ -136,13 +136,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 175,
-    "liquidityUsd": 11601868.68,
+    "ageDays": 176,
+    "liquidityUsd": 11647139.63,
     "pools": [
       {
         "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871",
         "dex": "uniswap",
-        "liquidityUsd": 10777350.59,
+        "liquidityUsd": 10818157.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,14 +151,23 @@
       {
         "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
         "dex": "pancakeswap",
-        "liquidityUsd": 824518.09,
+        "liquidityUsd": 828974.84,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xebbb033f3f6850d9e8b0d5dcd685892db4b37013767b7acfa3cc4bbc630155c3",
+        "dex": "uniswap",
+        "liquidityUsd": 7.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 5.53,
+    "top10Pct": 5.72,
     "projectLinks": null
   },
   "notes": null,

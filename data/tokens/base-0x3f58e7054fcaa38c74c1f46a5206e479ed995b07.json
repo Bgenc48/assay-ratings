@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-12T06:59:37.582Z",
+  "scanned_at": "2026-08-13T07:07:18.245Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x2b7f8b754c0d9595852517086229f439f82994189789b959fabec3d40b5f1dc9"
+            "pair": "0x97a693ac3e5d6df70bd0ae0d66c7fbbafbd5dfe09503206cfdd753c141131201"
           }
         }
       ]
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 14 days old; trust needs time (Provisional).",
+          "text": "Token is 15 days old; trust needs time (Provisional).",
           "evidence": "0x152e2d754646920ebd5d94449977ba9db0aac54bf393a964860c63ec80e6f798"
         }
       ]
@@ -120,74 +120,11 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 14,
+    "ageDays": 15,
     "liquidityUsd": null,
     "pools": [
       {
-        "pair": "0x2b7f8b754c0d9595852517086229f439f82994189789b959fabec3d40b5f1dc9",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5394430eea9f27c90ed788124d168ad2d0b98ab553a29a3c85cd3ebbef315cbd",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x980cade20fb1aef0bef6406f09e2a08f07fe1bbea4514caa3a5882a0216eac73",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa2b9830e4fe7c936db0b9bc47bd271a85f72c513440e38fb6ef634eb62b55716",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x0b84f7122e5b02b07cb28271c0e17c6404cf030cb96c17fb6642ddc88412f4e1",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x350351a474b8d608b77f668670db778dcb8a9b1e2fbb5ac537b9552e389532f7",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x1e8b61672cc7e53ce8b691ac090139576aff1ac2e30a9599ed12fe927cc96b86",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xdd282917d3c283927dc9293976b3b3d70d64c2e32ceb338a15125a0fb61ceb82",
+        "pair": "0x97a693ac3e5d6df70bd0ae0d66c7fbbafbd5dfe09503206cfdd753c141131201",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
