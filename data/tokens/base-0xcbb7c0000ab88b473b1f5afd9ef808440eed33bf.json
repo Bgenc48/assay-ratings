@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "cbBTC",
   "name": "Coinbase Wrapped BTC",
-  "scanned_at": "2026-08-13T06:51:55.607Z",
+  "scanned_at": "2026-08-14T06:47:46.180Z",
   "methodology_version": "0.2.1",
   "profile": "custodial-wrapped",
   "grade": {
     "letter": "UR",
-    "overall": 44.6,
-    "provisional": true,
+    "overall": 51.4,
+    "provisional": false,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -70,7 +70,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -111,6 +111,11 @@
       "waivedBy": "profile.custodial-wrapped (reviewed registry); superseded by cap.custodial-undisclosed"
     },
     {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -118,7 +123,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4474056934261",
+    "totalSupply": "4462382255380",
     "decimals": 8,
     "owner": "0xce56d20689d836ec7a728ceb94a15746696c16e6",
     "controlType": "eoa",
@@ -132,14 +137,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 36038810.69,
+    "verifiedSource": true,
+    "ageDays": 724,
+    "liquidityUsd": 37455444.81,
     "pools": [
       {
-        "pair": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
-        "dex": "pancakeswap",
-        "liquidityUsd": 4846469.04,
+        "pair": "0x42d4a22CaD0F5a49681a5715cE994Af73A43B76b",
+        "dex": "aerodrome",
+        "liquidityUsd": 7241664.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +153,16 @@
       {
         "pair": "0x160D7E9d948B16c163332a277b393c288408eb12",
         "dex": "aerodrome",
-        "liquidityUsd": 5072024.37,
+        "liquidityUsd": 4959155.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
+        "dex": "pancakeswap",
+        "liquidityUsd": 4834959.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +171,7 @@
       {
         "pair": "0x4e962BB3889Bf030368F56810A9c96B83CB3E778",
         "dex": "aerodrome",
-        "liquidityUsd": 9183167.96,
+        "liquidityUsd": 9181009.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +180,7 @@
       {
         "pair": "0x7C7420DD105E2779316423Ba3E973f434315EFA9",
         "dex": "aerodrome",
-        "liquidityUsd": 757316.92,
+        "liquidityUsd": 710254.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,25 +189,7 @@
       {
         "pair": "0xb94b22332ABf5f89877A14Cc88f2aBC48c34B3Df",
         "dex": "pancakeswap",
-        "liquidityUsd": 1915080.72,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7AeA2E8A3843516afa07293a10Ac8E49906dabD1",
-        "dex": "uniswap",
-        "liquidityUsd": 5695945.23,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x22AEe3699b6A0fEd71490C103Bd4E5f3309891D5",
-        "dex": "aerodrome",
-        "liquidityUsd": 151819.04,
+        "liquidityUsd": 1880538.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -202,7 +198,16 @@
       {
         "pair": "0xfBB6Eed8e7aa03B138556eeDaF5D271A5E1e43ef",
         "dex": "uniswap",
-        "liquidityUsd": 8416987.41,
+        "liquidityUsd": 8497510.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x22AEe3699b6A0fEd71490C103Bd4E5f3309891D5",
+        "dex": "aerodrome",
+        "liquidityUsd": 150352.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

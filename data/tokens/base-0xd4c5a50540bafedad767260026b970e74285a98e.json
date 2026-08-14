@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "SpaceX",
   "name": "SpaceX",
-  "scanned_at": "2026-08-13T07:12:43.447Z",
+  "scanned_at": "2026-08-14T07:01:32.837Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 72.5,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,6 +19,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -66,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xCcFBBE6954457e971275575BA765662350Ad72A8"
+            "pair": "0x563104a167dce9016123764a9e8b715f77960a24645094102af98b64ce4a614b"
           }
         }
       ]
@@ -96,6 +102,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -114,19 +125,10 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 9701956.17,
+    "liquidityUsd": null,
     "pools": [
-      {
-        "pair": "0xCcFBBE6954457e971275575BA765662350Ad72A8",
-        "dex": "aerodrome",
-        "liquidityUsd": 9701956.17,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x563104a167dce9016123764a9e8b715f77960a24645094102af98b64ce4a614b",
         "dex": "uniswap",

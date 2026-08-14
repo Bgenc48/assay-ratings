@@ -1,18 +1,18 @@
 {
-  "address": "0x9aaae745cf2830fb8ddc6248b17436dc3a5e701c",
+  "address": "0xa4a92aa22cb174fbb48fd1a0d34f345217fc7b07",
   "chain": "base",
   "status": "ok",
-  "symbol": "GOCHU",
-  "name": "Gochujangcoin",
-  "scanned_at": "2026-08-14T06:57:39.648Z",
+  "symbol": "OpenAI",
+  "name": "OpenAI",
+  "scanned_at": "2026-08-14T07:01:41.141Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 69.3,
-    "provisional": false,
+    "letter": "B-",
+    "overall": 70,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,27 +66,20 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x73ccDEAA8957422C0a64E83f50c8814c7B33FE99"
+            "pair": "0xa5508e8FCAeBF529D942c2A6Bc68d90863830eB0"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 88.8% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -96,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -108,48 +96,51 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "29999999950000000000000000000000",
+    "totalSupply": "100000000000000000000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
     "proxy": null,
     "proxyImplementation": null,
     "privileged": [
-      "pause()",
-      "unpause()",
       "burnFrom(address,uint256)"
     ],
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 802,
-    "liquidityUsd": 141896.2,
+    "ageDays": null,
+    "liquidityUsd": 9703933.16,
     "pools": [
       {
-        "pair": "0x73ccDEAA8957422C0a64E83f50c8814c7B33FE99",
+        "pair": "0xac5292ec5e0defcf1df9554a488940754595fc023cb695b71fbde7799cbbfcfc",
         "dex": "uniswap",
-        "liquidityUsd": 141896.2,
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd721f667306bbb27ccf67523d9f5ee7e2e1e18b246fd16f5e2ad837eb6148a2f",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa5508e8FCAeBF529D942c2A6Bc68d90863830eB0",
+        "dex": "aerodrome",
+        "liquidityUsd": 9703933.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 88.81,
-    "projectLinks": {
-      "websites": [
-        "https://gochu.org",
-        "https://gochu.org/wp-content/uploads/2024/06/Red-Pepper-Paste-Paper-without-mainnet-20240603.pdf",
-        "https://www.tiktok.com/@gochujangcoin",
-        "https://instagram.com/gochujangcoin",
-        "https://youtube.com/@gochujangcoin",
-        "https://linktr.ee/gochujangcoin"
-      ],
-      "socials": [
-        "https://x.com/gochujangonbase",
-        "https://t.me/gochujangcoin"
-      ]
-    }
+    "top10Pct": null,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

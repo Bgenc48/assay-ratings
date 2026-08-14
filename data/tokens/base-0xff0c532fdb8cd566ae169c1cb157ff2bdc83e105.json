@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "Fren Pet",
   "name": "Fren Pet",
-  "scanned_at": "2026-08-13T07:08:04.559Z",
+  "scanned_at": "2026-08-14T06:58:36.307Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 60.4,
-    "provisional": true,
+    "overall": 64.4,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "7183808851018683438649804",
+    "totalSupply": "7183785250111684376315429",
     "decimals": 18,
     "owner": "0x54c4dd8c2e124c65f55e1e096ab1fb6543e1206c",
     "controlType": "unknown",
@@ -108,14 +108,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 502181.68,
+    "verifiedSource": true,
+    "ageDays": 1079,
+    "liquidityUsd": 539433.8,
     "pools": [
       {
         "pair": "0xDE66c35e01ED8e619Bf092352338ef94f2327337",
         "dex": "uniswap",
-        "liquidityUsd": 500560.5,
+        "liquidityUsd": 537643.21,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -124,7 +124,7 @@
       {
         "pair": "0x29b3a7869E3662D00aaBD89A8ee74B2F703a6a66",
         "dex": "baseswap",
-        "liquidityUsd": 1614.68,
+        "liquidityUsd": 1782.79,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -137,7 +137,7 @@
       {
         "pair": "0x95d6856d120a79CAaa0827B1cb100e9FB9DCFDEe",
         "dex": "aerodrome",
-        "liquidityUsd": 6.5,
+        "liquidityUsd": 7.49,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -146,9 +146,18 @@
           "address": "0x047f606fd5b2baa5f5c6c4ab8958e45cb6b054b7",
           "sharePct": 99.99
         }
+      },
+      {
+        "pair": "0x381f910cBba212E09f79451B83A70B96B4d4b87b",
+        "dex": "sushiswap",
+        "liquidityUsd": 0.31,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 21.44,
     "projectLinks": {
       "websites": [
         "https://frenpet.xyz",

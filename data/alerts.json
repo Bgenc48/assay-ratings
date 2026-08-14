@@ -1,6 +1,136 @@
 {
-  "generated_at": "2026-08-13T07:12:52.530Z",
+  "generated_at": "2026-08-14T07:01:43.279Z",
   "alerts": [
+    {
+      "at": "2026-08-14T06:48:07.190Z",
+      "chain": "base",
+      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "symbol": "cbBTC",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T06:49:56.729Z",
+      "chain": "base",
+      "address": "0x11030f79109269d796fd0fb956d6244e502757f7",
+      "symbol": "CTR",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T06:49:56.729Z",
+      "chain": "base",
+      "address": "0x11030f79109269d796fd0fb956d6244e502757f7",
+      "symbol": "CTR",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T06:51:30.168Z",
+      "chain": "base",
+      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+      "symbol": "SHIB",
+      "severity": "CRITICAL",
+      "kind": "liquidity-security-drop",
+      "text": "Burned/locked share of the dominant pool fell 100% → 0%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T06:52:09.039Z",
+      "chain": "base",
+      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
+      "symbol": "AMETA",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T06:52:40.043Z",
+      "chain": "base",
+      "address": "0x9cb41fd9dc6891bae8187029461bfaadf6cc0c69",
+      "symbol": "noice",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T06:52:50.592Z",
+      "chain": "base",
+      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T06:56:20.923Z",
+      "chain": "base",
+      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
+      "symbol": "cbXRP",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state UR → F.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T06:59:14.449Z",
+      "chain": "base",
+      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T07:00:34.024Z",
+      "chain": "base",
+      "address": "0x696f9436b67233384889472cd7cd58a6fb5df4f1",
+      "symbol": "AVNT",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T07:01:37.042Z",
+      "chain": "base",
+      "address": "0xd4c5a50540bafedad767260026b970e74285a98e",
+      "symbol": "SpaceX",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T07:01:37.042Z",
+      "chain": "base",
+      "address": "0xd4c5a50540bafedad767260026b970e74285a98e",
+      "symbol": "SpaceX",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-14T07:01:42.528Z",
+      "chain": "base",
+      "address": "0xa4a92aa22cb174fbb48fd1a0d34f345217fc7b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "OpenAI is now rated: B-.",
+      "evidence": null
+    },
     {
       "at": "2026-08-13T06:52:15.900Z",
       "chain": "base",
@@ -2871,136 +3001,6 @@
       "severity": "INFO",
       "kind": "listed",
       "text": "DEXTF is now rated: F.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:44:31.021Z",
-      "chain": "base",
-      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-      "symbol": "USDC",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:45:46.020Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B+.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:45:46.020Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:49:35.285Z",
-      "chain": "base",
-      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
-      "symbol": "DRV",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state C → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:49:35.285Z",
-      "chain": "base",
-      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
-      "symbol": "DRV",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:49:42.327Z",
-      "chain": "base",
-      "address": "0xed327e881bdde8a134e6fddcf4a64881f86a3b07",
-      "symbol": "Claude",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:49:42.327Z",
-      "chain": "base",
-      "address": "0xed327e881bdde8a134e6fddcf4a64881f86a3b07",
-      "symbol": "Claude",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:49:48.918Z",
-      "chain": "base",
-      "address": "0x00000000a22c618fd6b4d7e9a335c4b96b189a38",
-      "symbol": "TOWNS",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:49:52.210Z",
-      "chain": "base",
-      "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
-      "symbol": "CZ",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:49:52.210Z",
-      "chain": "base",
-      "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
-      "symbol": "CZ",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:50:14.230Z",
-      "chain": "base",
-      "address": "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
-      "symbol": "FLOCK",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:51:11.836Z",
-      "chain": "base",
-      "address": "0x33417dfda9845853266b3ba4686a397aa0ae8b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-22T07:51:23.866Z",
-      "chain": "base",
-      "address": "0xfd15909c86bcd27f195b0b9f9a791c17eb87eb07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: C.",
       "evidence": null
     }
   ]

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-13T06:58:38.960Z",
+  "scanned_at": "2026-08-14T06:52:40.793Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 63.1,
+    "overall": 58.6,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -78,15 +78,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 31 days old; trust needs time (Provisional).",
+          "text": "Token is 32 days old; trust needs time (Provisional).",
           "evidence": "0xeab84038165a1928c6e7372137b54f710e00a1069ac83fc36b32090ca9ce8bf7"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 80.5% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -95,6 +102,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
     {
       "id": "cap.age-6mo",
       "letter": "B+",
@@ -120,20 +132,83 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 31,
-    "liquidityUsd": 8.41,
+    "ageDays": 32,
+    "liquidityUsd": 160.48000000000002,
     "pools": [
       {
         "pair": "0xe30b17321361d2a91972283ac1608b7792d35173a78a9f823d01528458c662ba",
         "dex": "uniswap",
-        "liquidityUsd": 8.41,
+        "liquidityUsd": 113.26,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1c143096113c7e7e3f837f20ed1d93f80640b6d48fb029d05112fa8261445ef2",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xed69803c28c7a0f2c443463bb221927f8b557518c54901d764d567de4a1dc489",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x770557c50215ca8af3ec2ca7cabcb80ab27938002326a9709284d21366b62b5e",
+        "dex": "uniswap",
+        "liquidityUsd": 34.85,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xda7980e04441795d186d787e6aa9aa13d091e9d18b693b4bf852bb1e86b981d3",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe7ce847f084ac50aaed49b53602c9f9ea21e9c894488dbdcfc1fa51195a45d60",
+        "dex": "uniswap",
+        "liquidityUsd": 12.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1bd17d986988f4dc5daaf3fe4ac3f7e0db9e2f00aa5da06fa32bf5e64f3363bd",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcc0e36662917c680d699cb1890f5ab6c584c35de4cc435e2aad49c21dc95b23e",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 80.46,
     "projectLinks": null
   },
   "notes": null,
