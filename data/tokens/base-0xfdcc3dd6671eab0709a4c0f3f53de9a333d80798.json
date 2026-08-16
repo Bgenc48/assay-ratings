@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-08-15T05:57:11.617Z",
+  "scanned_at": "2026-08-16T06:05:46.383Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c"
+            "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F"
           }
         }
       ]
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 112.9% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 113.0% of circulating supply.",
           "evidence": null
         }
       ]
@@ -113,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "713664134536210509933128",
+    "totalSupply": "712800464536210509933128",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -128,20 +128,29 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1087,
-    "liquidityUsd": 102051.39,
+    "ageDays": 1088,
+    "liquidityUsd": 97216.13,
     "pools": [
       {
-        "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c",
+        "pair": "0xada452F1340FAF2faA5CD6Cf5380f9585A624b8c",
         "dex": "uniswap",
-        "liquidityUsd": 102051.39,
+        "liquidityUsd": 124.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xa1ad70a9c7b98f7d98ff80b9f56c78ddd0e2d1d6304c75402ac06988096101dd",
+        "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F",
+        "dex": "aerodrome",
+        "liquidityUsd": 97091.58,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xca2ebc5f15c36260205e82900befe9f1052eb409045ced9873f962c0aac9a3d7",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -150,7 +159,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 112.9,
+    "top10Pct": 113.04,
     "projectLinks": null
   },
   "notes": null,

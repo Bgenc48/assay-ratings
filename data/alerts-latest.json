@@ -1,54 +1,174 @@
 {
-  "generated_at": "2026-08-15T05:59:35.623Z",
+  "generated_at": "2026-08-16T06:10:16.461Z",
   "alerts": [
     {
-      "at": "2026-08-15T05:46:38.190Z",
+      "at": "2026-08-16T05:54:21.277Z",
       "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
+      "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd",
+      "symbol": "ZRO",
       "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "kind": "upgrade",
+      "text": "Grade C → B.",
       "evidence": null
     },
     {
-      "at": "2026-08-15T05:59:24.030Z",
+      "at": "2026-08-16T05:54:21.277Z",
       "chain": "base",
-      "address": "0xd4c5a50540bafedad767260026b970e74285a98e",
-      "symbol": "SpaceX",
+      "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd",
+      "symbol": "ZRO",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T05:55:18.919Z",
+      "chain": "base",
+      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
+      "symbol": "ZORA",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B+ → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T05:55:18.919Z",
+      "chain": "base",
+      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
+      "symbol": "ZORA",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T05:55:32.757Z",
+      "chain": "base",
+      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
+      "symbol": "AMETA",
       "severity": "INFO",
       "kind": "upgrade",
       "text": "Grade C → B-.",
       "evidence": null
     },
     {
-      "at": "2026-08-15T05:59:24.030Z",
+      "at": "2026-08-16T06:01:44.126Z",
       "chain": "base",
-      "address": "0xd4c5a50540bafedad767260026b970e74285a98e",
-      "symbol": "SpaceX",
+      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
+      "symbol": "cbXRP",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state F → UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T06:02:21.265Z",
+      "chain": "base",
+      "address": "0xc729777d0470f30612b1564fd96e8dd26f5814e3",
+      "symbol": "SAPIEN",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T06:02:21.265Z",
+      "chain": "base",
+      "address": "0xc729777d0470f30612b1564fd96e8dd26f5814e3",
+      "symbol": "SAPIEN",
       "severity": "INFO",
       "kind": "cap-cleared",
-      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
       "evidence": null
     },
     {
-      "at": "2026-08-15T05:59:33.297Z",
+      "at": "2026-08-16T06:06:07.038Z",
       "chain": "base",
-      "address": "0xa3b8479f638788c8321ccafbae7930a8171b1b07",
-      "symbol": "Claude",
+      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
+      "symbol": "OpenAI",
       "severity": "INFO",
-      "kind": "listed",
-      "text": "Claude is now rated: B-.",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
       "evidence": null
     },
     {
-      "at": "2026-08-15T05:59:34.871Z",
+      "at": "2026-08-16T06:07:30.056Z",
       "chain": "base",
-      "address": "0xaa8319bff7898f24780b6f80839b1ea13f02a4b8",
-      "symbol": "QSAVE",
+      "address": "0x9e00fc92493451eba1c63dd3880d68b622037ba3",
+      "symbol": "1F916",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T06:08:42.861Z",
+      "chain": "base",
+      "address": "0x6b458b475695121b78b7ef8fa88a73973c6bcb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T06:08:42.861Z",
+      "chain": "base",
+      "address": "0x6b458b475695121b78b7ef8fa88a73973c6bcb07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T06:09:43.565Z",
+      "chain": "base",
+      "address": "0xde271d6463094127d3de6a8487c57fd9f2766b07",
+      "symbol": "牛来",
       "severity": "INFO",
       "kind": "listed",
-      "text": "QSAVE is now rated: C.",
+      "text": "牛来 is now rated: B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T06:09:52.088Z",
+      "chain": "base",
+      "address": "0x88fb150bdc53a65fe94dea0c9ba0a6daf8c6e196",
+      "symbol": "LINK",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "LINK is now rated: C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T06:09:59.510Z",
+      "chain": "base",
+      "address": "0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e",
+      "symbol": "CHIP",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "CHIP is now rated: D.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T06:10:05.562Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000004c27f6523082f41d01",
+      "symbol": "Basecat",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "Basecat is now rated: C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-16T06:10:15.710Z",
+      "chain": "base",
+      "address": "0x85635006d808030e97f3174c8ea1b4aa1f1feba3",
+      "symbol": "VVVeity",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "VVVeity is now rated: C.",
       "evidence": null
     }
   ]

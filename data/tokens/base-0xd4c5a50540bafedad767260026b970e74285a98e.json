@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SpaceX",
   "name": "SpaceX",
-  "scanned_at": "2026-08-15T05:59:20.628Z",
+  "scanned_at": "2026-08-16T06:09:17.329Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x563104a167dce9016123764a9e8b715f77960a24645094102af98b64ce4a614b"
+          }
         }
       ]
     },
@@ -114,7 +117,17 @@
     "verifiedSource": true,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [],
+    "pools": [
+      {
+        "pair": "0x563104a167dce9016123764a9e8b715f77960a24645094102af98b64ce4a614b",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 0,
     "projectLinks": null
   },
