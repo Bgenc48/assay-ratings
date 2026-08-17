@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TIBBIR",
   "name": "Ribbita by Virtuals",
-  "scanned_at": "2026-08-16T06:08:57.399Z",
+  "scanned_at": "2026-08-17T06:18:53.927Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 59.4,
-    "provisional": false,
+    "overall": 57.3,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -78,7 +78,7 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -100,11 +100,6 @@
       "reason": "Source code is not verified on a public explorer."
     },
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -122,13 +117,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 581,
-    "liquidityUsd": 3150769.8499999996,
+    "ageDays": null,
+    "liquidityUsd": 3151015.0700000003,
     "pools": [
       {
         "pair": "0x0c3b466104545efa096b8f944c1e524E1d0D4888",
         "dex": "uniswap",
-        "liquidityUsd": 2591135,
+        "liquidityUsd": 2593062.62,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -137,7 +132,7 @@
       {
         "pair": "0x0f664afFB82f074937D5cFCD61b97F3F32d5dC50",
         "dex": "aerodrome",
-        "liquidityUsd": 118929.28,
+        "liquidityUsd": 119583.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +141,7 @@
       {
         "pair": "0x0E4409F7a8ebA3213F336daf608985302e79328c",
         "dex": "aerodrome",
-        "liquidityUsd": 288811.73,
+        "liquidityUsd": 285791.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +150,7 @@
       {
         "pair": "0x4Ae0272A740950d3D9B12a6eE9d5CA6B6aaF0efD",
         "dex": "aerodrome",
-        "liquidityUsd": 121243.85,
+        "liquidityUsd": 121646.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +159,7 @@
       {
         "pair": "0xB3f0828eB3375B609b49E9Fb959472a29cD6E49a",
         "dex": "hydrex",
-        "liquidityUsd": 20452.65,
+        "liquidityUsd": 20473.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,7 +168,7 @@
       {
         "pair": "0x38981c23364dB3a50a6b2dD0196a22842788527C",
         "dex": "uniswap",
-        "liquidityUsd": 6944.58,
+        "liquidityUsd": 6984.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -182,7 +177,7 @@
       {
         "pair": "0xb08a32FB67F910fCFE5Dc9561a6EA4A159BD9908",
         "dex": "uniswap",
-        "liquidityUsd": 2929.23,
+        "liquidityUsd": 3179.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -191,7 +186,7 @@
       {
         "pair": "0x1b82bd3Ffd1b45Bf11a98ECCC12ABe14ca64Ed48",
         "dex": "pancakeswap",
-        "liquidityUsd": 323.53,
+        "liquidityUsd": 293.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

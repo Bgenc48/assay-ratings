@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "JitoSOL",
   "name": "Jito Staked SOL",
-  "scanned_at": "2026-08-16T05:56:35.184Z",
+  "scanned_at": "2026-08-17T06:02:13.813Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 50.8,
+    "overall": 54.3,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -84,15 +84,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 179 days old; trust needs time (Provisional).",
+          "text": "Token is 180 days old; trust needs time (Provisional).",
           "evidence": "0x9f77ccb3024de6aa50b944fd2c318777aa55ba43c1b282f83c5ebd69956ae558"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 2.3%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -129,13 +136,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 179,
-    "liquidityUsd": 11504902.66,
+    "ageDays": 180,
+    "liquidityUsd": 11527259.22,
     "pools": [
       {
         "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871",
         "dex": "uniswap",
-        "liquidityUsd": 10654114.49,
+        "liquidityUsd": 10676997.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,14 +151,23 @@
       {
         "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
         "dex": "pancakeswap",
-        "liquidityUsd": 850788.17,
+        "liquidityUsd": 850260.85,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xC5a10dAD3B73410F34ec29B50952C377AfAF64d9",
+        "dex": "pancakeswap",
+        "liquidityUsd": 0.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 2.33,
     "projectLinks": null
   },
   "notes": null,

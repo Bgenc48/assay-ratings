@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Basecat",
   "name": "Basecat",
-  "scanned_at": "2026-08-16T06:10:00.260Z",
+  "scanned_at": "2026-08-17T06:20:22.682Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -88,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -123,8 +130,35 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 4.68,
+    "liquidityUsd": 96215.54,
     "pools": [
+      {
+        "pair": "0xf79478d5a6baE4546F7e489e80b2fC690B558944",
+        "dex": "uniswap",
+        "liquidityUsd": 88731.34,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb2C15972a135a0d4b5374D5F13138355C571Ca10",
+        "dex": "uniswap",
+        "liquidityUsd": 6069.18,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xF4341b3e7582955b57728B3772D8D423474Dc60b",
+        "dex": "uniswap",
+        "liquidityUsd": 1415.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x215b2146c3164aba3f5b18e8619b737c7f7dd11e5ba693646dcd9a336c5a30ba",
         "dex": "uniswap",
@@ -135,16 +169,7 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xf79478d5a6baE4546F7e489e80b2fC690B558944",
-        "dex": "uniswap",
-        "liquidityUsd": 4.68,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe51737e1fde0c5a0f4b5f8a626520841d882588a5cf1ec668954e71fc4efaadb",
+        "pair": "0x44043bf57cae76d82c71daf4fbaf588df837362933f265a1d1e84c406834e78c",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -162,7 +187,7 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x02b86e8735e8ad71dbe3425f76bdc774c64f2688fad376721e1834effc6104e5",
+        "pair": "0x8930762cccc36040f25fc29db58a8ec22e872a347260d992f39666a3cdce7e5a",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -171,25 +196,7 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x1c5c45f909f8e59932e6a3d1da5871519a1dae3f1a027ace423fe7a54e9d0603",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x24e9d3c3fc884d376f0ec4d907b5670e331df37dbe5dc6ad8b3543bc0bbff232",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8b41b516ea0f6220b80c31b36cea3ff04a360c16f526e0b3d7f3f34b847b7b99",
+        "pair": "0x1577888ccb1f4878414f91fc1f45fe759197dcbd3aa99a6a9101693e01991c08",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -198,10 +205,16 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": {
-      "websites": [],
-      "socials": []
+      "websites": [
+        "https://basecatonbase.com/",
+        "https://x.com/BasecatOnBase/status/2089032843263447220?s=20"
+      ],
+      "socials": [
+        "https://x.com/BasecatOnBase",
+        "https://t.me/basecatonbase"
+      ]
     }
   },
   "notes": null,

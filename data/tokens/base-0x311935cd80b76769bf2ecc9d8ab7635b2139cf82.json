@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SOL",
   "name": "Solana",
-  "scanned_at": "2026-08-16T05:50:03.609Z",
+  "scanned_at": "2026-08-17T05:56:04.562Z",
   "methodology_version": "0.2.1",
   "profile": "native-representation",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": null,
     "provisional": false,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -78,12 +78,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -100,6 +100,11 @@
       "reason": "Source code is not verified on a public explorer."
     },
     {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -107,7 +112,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "229364469947255",
+    "totalSupply": "232733815808234",
     "decimals": 9,
     "owner": null,
     "controlType": "none",
@@ -117,13 +122,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": null,
-    "liquidityUsd": 2052221.67,
+    "ageDays": 264,
+    "liquidityUsd": 2046683.2,
     "pools": [
       {
         "pair": "0x1131DB5977242a03eBeaD1aCD18F80A9A29e5922",
         "dex": "aerodrome",
-        "liquidityUsd": 442559.72,
+        "liquidityUsd": 389257.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -132,7 +137,7 @@
       {
         "pair": "0xCcfA472815563ff9eB2de95C7b2bE1Ccf91f7F31",
         "dex": "aerodrome",
-        "liquidityUsd": 222302.5,
+        "liquidityUsd": 270391.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -141,7 +146,7 @@
       {
         "pair": "0xab07dE353E15b80fa3B4224D5C8fDF3Ac9F50670",
         "dex": "pancakeswap",
-        "liquidityUsd": 244391.34,
+        "liquidityUsd": 245486.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,7 +155,7 @@
       {
         "pair": "0x04d25d8f94A2018F8DdDe1E7941c625FA1a2c7cE",
         "dex": "pancakeswap",
-        "liquidityUsd": 254588.41,
+        "liquidityUsd": 243136.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -159,7 +164,7 @@
       {
         "pair": "0x8Df6dd38D718bD726374521c2DcFE90Eb9CB7d43",
         "dex": "pancakeswap",
-        "liquidityUsd": 712994.45,
+        "liquidityUsd": 723661.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -168,7 +173,7 @@
       {
         "pair": "0xFCCE67a155DF9a1a95BeCfe7D09E32DfbE6F9816",
         "dex": "aerodrome",
-        "liquidityUsd": 64940.23,
+        "liquidityUsd": 63895.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -177,7 +182,7 @@
       {
         "pair": "0xB8fA852a85Af20284906a898595f59BdD8C66cbE",
         "dex": "aerodrome",
-        "liquidityUsd": 69465.09,
+        "liquidityUsd": 69175.7,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -186,14 +191,14 @@
       {
         "pair": "0x1cCA8388E671e83010843a1A0535B04F2D7E946B",
         "dex": "uniswap",
-        "liquidityUsd": 40979.93,
+        "liquidityUsd": 41678.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 22.82,
     "projectLinks": {
       "websites": [
         "https://solana.com/"
@@ -205,5 +210,9 @@
   },
   "notes": "Bridged representation of the Solana L1 native coin on Base (native SOL is locked on Solana and an ERC-20 minted on Base via the Base–Solana bridge; see docs.base.org/base-chain/quickstart/base-solana-bridge). Promoted from auto-discovery to the hand-curated registry to assign the native-representation profile. Published as NS (Not Scored): Assay's automated methodology grades token contracts, not an L1's consensus or its bridge operators, so the wrapper's facts publish without a letter grade. Address confirmed liquid on Base and symbol-gated as SOL; owner should confirm it is the intended canonical bridge representation.",
   "coi": false,
+  "pendingReview": {
+    "computed": "D"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review.",
   "profileNote": "Not Scored — native-asset representation. This contract is a bridged representation of another chain's native coin. Assay's automated methodology grades token contracts, not the underlying chain's consensus or its bridge operators; the wrapper's on-chain facts are published below without a letter grade."
 }

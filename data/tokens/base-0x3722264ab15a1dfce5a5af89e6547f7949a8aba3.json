@@ -1,0 +1,227 @@
+{
+  "address": "0x3722264ab15a1dfce5a5af89e6547f7949a8aba3",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "LFI",
+  "name": "LienFi",
+  "scanned_at": "2026-08-17T06:20:56.944Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "C",
+    "overall": 65.7,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x6ef02666f150d9649655b884e043b61b0990fad9be4c632d0c7568bb24da9367"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 108 days old; trust needs time (Provisional).",
+          "evidence": "0xe84a138895ca31629a91804dbfcd550498b933109793e66788a3b5f71f366a72"
+        }
+      ]
+    },
+    "holderConcentration": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 8.9%.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "100000000000000000000000000000",
+    "decimals": 18,
+    "owner": "0x660eaaedebc968f8f3694354fa8ec0b4c5ba8d12",
+    "controlType": "unknown",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": false,
+    "ageDays": 108,
+    "liquidityUsd": 976999.1800000002,
+    "pools": [
+      {
+        "pair": "0x6ef02666f150d9649655b884e043b61b0990fad9be4c632d0c7568bb24da9367",
+        "dex": "uniswap",
+        "liquidityUsd": 734434.43,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8343C68279587498526114e6385F0a87f248E0D9",
+        "dex": "aerodrome",
+        "liquidityUsd": 105220.18,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x588f68b9fA04366F33f8Ce095C13F0cebaB9406a",
+        "dex": "uniswap",
+        "liquidityUsd": 86518.53,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x53ab4c60ff04b782F630A8685af95404f099aAFD",
+        "dex": "hydrex",
+        "liquidityUsd": 19547.65,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x24c0F6B57b4A6dAF685986F7E371B7628fc64FD6",
+        "dex": "hydrex",
+        "liquidityUsd": 12601.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x095b804125550956898652c5554b6b4aac12df303d207b5832146b86fd1f09f9",
+        "dex": "uniswap",
+        "liquidityUsd": 10991.79,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x41932EA9b35Bd2e663678Dfca8228498A05A3689",
+        "dex": "pancakeswap",
+        "liquidityUsd": 329.63,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x70005f7323ff0f89bcc31098a88c8eac0a8b83a1c6af3481edb75e8c8d8d6f1f",
+        "dex": "uniswap",
+        "liquidityUsd": 7355.84,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 8.91,
+    "projectLinks": {
+      "websites": [
+        "https://lienfi.com"
+      ],
+      "socials": [
+        "https://x.com/lienfiapp"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

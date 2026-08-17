@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ELSA",
   "name": "Elsa",
-  "scanned_at": "2026-08-16T05:53:01.153Z",
+  "scanned_at": "2026-08-17T05:58:40.090Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -116,13 +116,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 220,
-    "liquidityUsd": 357706.74,
+    "ageDays": 221,
+    "liquidityUsd": 320273.4599999999,
     "pools": [
       {
         "pair": "0x83f3ACa29Bc79B048B99C56013475570acc97ccF",
         "dex": "pancakeswap",
-        "liquidityUsd": 340434.13,
+        "liquidityUsd": 308731.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -131,29 +131,51 @@
       {
         "pair": "0xdc8F367884437e398FBF4a94D3333fE0b5B376Db",
         "dex": "uniswap",
-        "liquidityUsd": 10460.27,
+        "liquidityUsd": 9438.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x5E4efb192Dfd5a267e5bEDac155FD9b79df82496",
-        "dex": "aerodrome",
-        "liquidityUsd": 5269.17,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8ec13b2f24d27ac531fcbe1cb551e7696cb8392879e3fb473f801395589776da",
+        "pair": "0x194797673fdf948efe25c506095054347df8308dff94845ef0738b7bc0b4016a",
         "dex": "uniswap",
-        "liquidityUsd": 1543.17,
+        "liquidityUsd": 1449.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf3240f7578172cf710879e1ef84d04e632ab81282497ec0f0d04277a877a2832",
+        "dex": "uniswap",
+        "liquidityUsd": 634.98,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6Ff9b1Efa79106A9BbBBe6c5b9D044aC465b789c",
+        "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
+        "liquidityUsd": 17.5,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa04eC5e729bCe8dEa7794a4444836eEd268E1096",
+        "dex": "aerodrome",
+        "liquidityUsd": 2.11,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x5178d1db8dbe3498de478109577053abc8a03a49",
+          "sharePct": 99.99
+        }
       }
     ],
     "top10Pct": null,

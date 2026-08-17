@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "VVVeity",
   "name": "Venice Deity",
-  "scanned_at": "2026-08-16T06:10:06.312Z",
+  "scanned_at": "2026-08-17T06:20:33.167Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 75 days old; trust needs time (Provisional).",
+          "text": "Token is 76 days old; trust needs time (Provisional).",
           "evidence": "0x6afb49ab592996a177b512dae9432f80d0bd53f11fe3ce0eebcb339192703a7a"
         }
       ]
@@ -125,13 +125,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 75,
-    "liquidityUsd": 144814.43000000002,
+    "ageDays": 76,
+    "liquidityUsd": 563546.84,
     "pools": [
       {
         "pair": "0x123e50d024df1e6fe41347850a5695918242927b4e2623d2b97625248ccd2c20",
         "dex": "uniswap",
-        "liquidityUsd": 144251.18,
+        "liquidityUsd": 562011.04,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x41aed8183af4d1104e47ae64ae9b3c9dbba04c7b715da84f831117f73ed21f19",
+        "dex": "uniswap",
+        "liquidityUsd": 95.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +149,7 @@
       {
         "pair": "0x3f901e7deface6e8b82415292f69489741942d86c74b915dbd09d0e8898ca751",
         "dex": "uniswap",
-        "liquidityUsd": 96.39,
+        "liquidityUsd": 162.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +158,7 @@
       {
         "pair": "0x3183faef79315d94aa30999d6aa081cfcd81a10295092bbdb24e3a89ae3123b4",
         "dex": "uniswap",
-        "liquidityUsd": 161.5,
+        "liquidityUsd": 215.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,16 +167,7 @@
       {
         "pair": "0xa53831bbc09e77d0abf7b7893c7dd9753bc58c2ef0c28aec32195b9cdd11bf5b",
         "dex": "uniswap",
-        "liquidityUsd": 150,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xddee2e1ee10d5b161ea9c96737e58eced31eec8a2e745b05eef53dfaa559dc0b",
-        "dex": "uniswap",
-        "liquidityUsd": 69.19,
+        "liquidityUsd": 233.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -176,25 +176,25 @@
       {
         "pair": "0xb412ac069675c30257b7548ecac32906754b838be1f66bd9045d9be0e659ec7a",
         "dex": "uniswap",
-        "liquidityUsd": 86.17,
+        "liquidityUsd": 118.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xda5e4846a46401d645312014d8ddd3a4cdd75823518bd1ad17decac71c9ba96b",
+        "pair": "0x07084defd238fc25f0549dd6ea91b47c58c219d2cab7c4dd1581c6e5b7f9ac28",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 616.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x3ceff3e9931f1358a56026a39633f1b85608d40e866b9eba2ec13fbdd9f0f400",
+        "pair": "0xddee2e1ee10d5b161ea9c96737e58eced31eec8a2e745b05eef53dfaa559dc0b",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 93.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -204,7 +204,8 @@
     "top10Pct": 7.42,
     "projectLinks": {
       "websites": [
-        "https://www.vvveity.com/"
+        "https://www.vvveity.com/",
+        "https://stock.vvveity.com/docs"
       ],
       "socials": [
         "https://x.com/vvveity"

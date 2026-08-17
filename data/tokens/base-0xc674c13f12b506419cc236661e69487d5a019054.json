@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Robinhood",
   "name": "Robinhood",
-  "scanned_at": "2026-08-16T06:02:37.573Z",
+  "scanned_at": "2026-08-17T06:10:13.177Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -66,22 +66,15 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x3705eab294bcb5fd1156cca53926dc2bf861bfd65189c61ff253f3a961e13080"
+            "pair": "0xcce40b7b9065d5f8282b46289cca551d61359237849106cf7f48188cabf59603"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 24 days old; trust needs time (Provisional).",
-          "evidence": "0xe18b53d1bfa49de8a40464096e65170f4412a2a137766a037932e488ff222002"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 100,
@@ -103,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -127,40 +115,31 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 24,
-    "liquidityUsd": 15.75,
+    "ageDays": null,
+    "liquidityUsd": 3.59,
     "pools": [
-      {
-        "pair": "0x3705eab294bcb5fd1156cca53926dc2bf861bfd65189c61ff253f3a961e13080",
-        "dex": "uniswap",
-        "liquidityUsd": 8.78,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd790f8ecb95cf66b145c4245dfa3d3d63d9aab2553ded81e7084605396c1ef4a",
-        "dex": "uniswap",
-        "liquidityUsd": 5.02,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe276df2bf7c7414ba606bb5c26d7a91a2637979a546bc880d3a6ecea0a1581dc",
-        "dex": "uniswap",
-        "liquidityUsd": 1.63,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x791540eb9e836460f75bd518b8493b0cf2076e971890a5cdad4811177316d477",
         "dex": "uniswap",
         "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x20297ff0ab32cf16bc4af44b6409253f2adf1a9f6b9b773b274efa3c83dd7bee",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcce40b7b9065d5f8282b46289cca551d61359237849106cf7f48188cabf59603",
+        "dex": "uniswap",
+        "liquidityUsd": 3.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "VLTX",
   "name": "Valtherix AI",
-  "scanned_at": "2026-08-16T06:06:57.589Z",
+  "scanned_at": "2026-08-17T06:16:10.777Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -68,17 +68,14 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.permanent",
-          "severity": "info",
-          "text": "100% of the dominant pool's LP is burned or locked permanently.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xc6F73eF7eDb3fcFB5f3fFdA22AE8100F5Eec6d8F"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -89,22 +86,15 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 25 days old; trust needs time (Provisional).",
+          "text": "Token is 26 days old; trust needs time (Provisional).",
           "evidence": "0xfd09f566c52872dd9199281da2854a23967c12f656d2dfdfa35b667cec39c019"
         }
       ]
     },
     "holderConcentration": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 43.4%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -141,20 +131,10 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 25,
+    "ageDays": 26,
     "liquidityUsd": null,
-    "pools": [
-      {
-        "pair": "0xc6F73eF7eDb3fcFB5f3fFdA22AE8100F5Eec6d8F",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
-        "lpBurnedPct": 100,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": 43.43,
+    "pools": [],
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

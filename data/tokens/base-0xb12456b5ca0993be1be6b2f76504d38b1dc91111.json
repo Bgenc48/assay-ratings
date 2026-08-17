@@ -1,0 +1,211 @@
+{
+  "address": "0xb12456b5ca0993be1be6b2f76504d38b1dc91111",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "TREX",
+  "name": "Google T-REX",
+  "scanned_at": "2026-08-17T06:21:07.724Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "C",
+    "overall": 70,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xb12456b5ca0993be1be6b2f76504d38b1dc91111",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x4da1C1426B4EFa76343A08DC44e3596270340913"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "100000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": false,
+    "ageDays": null,
+    "liquidityUsd": 177450.76,
+    "pools": [
+      {
+        "pair": "0x4da1C1426B4EFa76343A08DC44e3596270340913",
+        "dex": "uniswap",
+        "liquidityUsd": 177450.76,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8cc35e05d1052c87f364e5680e1413511c195ecf385812935b18376ecf5ec834",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7cedb478dd34478e06f8e37d6a6b389da2d7c6f74da7d212829b86221ab0b56d",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4b2b3272a9dc0114ffbe22c2647aa4556d7b4bb1fa3e453df6c85fbac0d9c826",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x533a59d418bab22f6b37a7deacc143d64d9a09214600d75bc9a6357ced7fe2dc",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1acbe31969ffcdd65a0160c554301363919ca4457801383251e23ae9671dc289",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb7bb3dceddf6e8786ccde86d10fff64ee38b659552086d7789761dcd9e832ffb",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x81c293426a3cfa2070adeb98f6981e3b10b3ce8f6f4fe0994addc6b66e2d22e5",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://unilaunch.fun/token/base/0xB12456b5cA0993Be1bE6B2F76504d38B1dC91111"
+      ],
+      "socials": []
+    }
+  },
+  "notes": null,
+  "coi": false
+}
