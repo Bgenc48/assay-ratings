@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ATLAS",
   "name": "Atlas",
-  "scanned_at": "2026-08-17T06:18:08.675Z",
+  "scanned_at": "2026-08-18T06:05:30.711Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x6556eeb8452e9ca0c605a1ab5be75ef1e9deae96fef76e7e4f1b2651dd212c15"
+            "pair": "0x8901302202519546644bf0fc445b0073bf30e624ba185a6373207f489b89ea4a"
           }
         }
       ]
@@ -125,28 +125,37 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": null,
+    "liquidityUsd": 32307.6,
     "pools": [
       {
-        "pair": "0x6556eeb8452e9ca0c605a1ab5be75ef1e9deae96fef76e7e4f1b2651dd212c15",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xba71621d451adabb2c483be0fc823bbf070ffd65f0839a75eda067646f3665ac",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x8901302202519546644bf0fc445b0073bf30e624ba185a6373207f489b89ea4a",
+        "dex": "uniswap",
+        "liquidityUsd": 32307.6,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcebb1c179d8bc85535acd5bebd1f32e7ab5504846047048e420283147e26127e",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x35ef39827f260c76554982f1648d86d28fbdf938c2a935526724a12eb6aa2804",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6f441928e34f4f08ca15ed2f4eef6562c023fb2dc9b3c80162f486a8feed425e",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,

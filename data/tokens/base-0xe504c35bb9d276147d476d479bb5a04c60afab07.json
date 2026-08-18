@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-17T05:57:19.170Z",
+  "scanned_at": "2026-08-18T05:52:04.739Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 63.1,
+    "overall": 65.7,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x6c9d64d97f9e83e584341a8c117b235799f6635abfdd76dd82295633065fe4e0"
+            "pair": "0x4514715469c7bd5f6a11092358f93ef89902866b080aadb5b47477361d851973"
           }
         }
       ]
@@ -78,15 +78,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 37 days old; trust needs time (Provisional).",
+          "text": "Token is 38 days old; trust needs time (Provisional).",
           "evidence": "0x43f6664884ab86ff39fa451bca3dcb41f8b6ac5bfc8f67fe38889758b6ca278c"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 3.3%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -120,29 +127,20 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 37,
-    "liquidityUsd": 2.56,
+    "ageDays": 38,
+    "liquidityUsd": 0.06,
     "pools": [
       {
-        "pair": "0x6c9d64d97f9e83e584341a8c117b235799f6635abfdd76dd82295633065fe4e0",
+        "pair": "0x4514715469c7bd5f6a11092358f93ef89902866b080aadb5b47477361d851973",
         "dex": "uniswap",
-        "liquidityUsd": 2.56,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3a829b230122eda98b01b01a265c0d8f30607c53efbc7fe1618545c6ab1c946d",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 0.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 3.29,
     "projectLinks": null
   },
   "notes": null,

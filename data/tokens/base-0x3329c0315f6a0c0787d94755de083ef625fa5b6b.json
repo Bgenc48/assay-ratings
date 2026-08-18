@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "VLTX",
   "name": "Valtherix AI",
-  "scanned_at": "2026-08-17T06:16:10.777Z",
+  "scanned_at": "2026-08-18T06:04:12.023Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -86,15 +86,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 26 days old; trust needs time (Provisional).",
+          "text": "Token is 27 days old; trust needs time (Provisional).",
           "evidence": "0xfd09f566c52872dd9199281da2854a23967c12f656d2dfdfa35b667cec39c019"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 43.4%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -131,10 +138,10 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 26,
+    "ageDays": 27,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": null,
+    "top10Pct": 43.43,
     "projectLinks": null
   },
   "notes": null,
