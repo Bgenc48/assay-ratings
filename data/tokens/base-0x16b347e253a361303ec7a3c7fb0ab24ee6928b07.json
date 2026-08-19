@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-18T05:57:53.258Z",
+  "scanned_at": "2026-08-19T06:01:41.741Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 63.1,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -69,16 +69,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 33 days old; trust needs time (Provisional).",
-          "evidence": "0x97011416169d6256b7b0d07516f6ae55defa67461070d281af874d1108f83492"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": null,
@@ -92,11 +85,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -117,7 +105,7 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 33,
+    "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
     "top10Pct": null,

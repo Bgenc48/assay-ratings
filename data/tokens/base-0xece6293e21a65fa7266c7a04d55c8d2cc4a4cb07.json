@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "牛来",
   "name": "牛来",
-  "scanned_at": "2026-08-18T06:07:16.938Z",
+  "scanned_at": "2026-08-19T06:22:28.180Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.5,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -116,28 +109,28 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 1.71,
+    "liquidityUsd": 1.79,
     "pools": [
       {
-        "pair": "0x8fFe96c9926f668A4843863E585c6EE2ffEfB8bA",
-        "dex": "aerodrome",
-        "liquidityUsd": 1.71,
+        "pair": "0x669a15ddf0007dcaed549b754d43ef32c5c31d0650095e7699d644211d280cff",
+        "dex": "uniswap",
+        "liquidityUsd": 0.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x10be8f6c162eed3b3a72b8f44a6494f5ec4677faaeb5c8e22a457a5d24a929fb",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "pair": "0x8fFe96c9926f668A4843863E585c6EE2ffEfB8bA",
+        "dex": "aerodrome",
+        "liquidityUsd": 1.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

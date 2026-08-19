@@ -1,0 +1,229 @@
+{
+  "address": "0xc0634090f2fe6c6d75e61be2b949464abb498973",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "KTA",
+  "name": "Keeta",
+  "scanned_at": "2026-08-19T06:23:34.932Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "UR",
+    "overall": 55,
+    "provisional": false,
+    "badge": "Code-Enforced",
+    "coverage": "full"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xc0634090f2fe6c6d75e61be2b949464abb498973",
+            "data": "0x8da5cb5b",
+            "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe",
+            "lpDominantHolder": {
+              "address": "0xd38ab996aab7b7955bdf0d91f5742c3856589fe6",
+              "sharePct": 99.21
+            }
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "Externally-owned accounts can withdraw 96% of tracked liquidity — a majority. The largest such pool is 0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe (LP holder 0xd38ab996aab7b7955bdf0d91f5742c3856589fe6, 99.21% of that pool)."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 531,
+    "liquidityUsd": 3615367.3100000005,
+    "pools": [
+      {
+        "pair": "0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe",
+        "dex": "aerodrome",
+        "liquidityUsd": 3458680.58,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xd38ab996aab7b7955bdf0d91f5742c3856589fe6",
+          "sharePct": 99.21
+        }
+      },
+      {
+        "pair": "0x46D710c35BdfB800a18A820712310048Ef8B5256",
+        "dex": "aerodrome",
+        "liquidityUsd": 67973.83,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8d421B0D641193D67Dd1aa024DAb17fcdE0BfC89",
+        "dex": "uniswap",
+        "liquidityUsd": 55516.97,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xD6438733879790A68ccdaf21D7eD58d62B579eb3",
+        "dex": "aerodrome",
+        "liquidityUsd": 15524.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9c5edc768b5db73bf71856dc7d79bcc8368d7a4d3ded2091a20010f089cb0e74",
+        "dex": "uniswap",
+        "liquidityUsd": 5615.07,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x07a1362d0D0b221C21ca4f2CbD83eB58B1ec81C9",
+        "dex": "uniswap",
+        "liquidityUsd": 7956.62,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xC874416E1FDEE2dc291Fe1a4B7b91FB4c5875fc2",
+        "dex": "hydrex",
+        "liquidityUsd": 2233.47,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x438c7f6a3b32fdcf043ad3285dbc128486df894a1f3d448b1da38b2f2a1a43cb",
+        "dex": "uniswap",
+        "liquidityUsd": 1866.71,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 24.94,
+    "projectLinks": {
+      "websites": [
+        "https://keeta.com",
+        "https://docs.keeta.com",
+        "https://www.reddit.com/r/keeta/",
+        "https://www.linkedin.com/company/keetanetwork/",
+        "https://www.instagram.com/keetanetwork/"
+      ],
+      "socials": [
+        "https://x.com/KeetaNetwork",
+        "https://discord.gg/keeta"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false,
+  "pendingReview": {
+    "computed": "D"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+}

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "cbMEGA",
   "name": "Coinbase Wrapped MEGA",
-  "scanned_at": "2026-08-18T05:56:10.399Z",
+  "scanned_at": "2026-08-19T05:58:25.236Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 125 days old; trust needs time (Provisional).",
+          "text": "Token is 126 days old; trust needs time (Provisional).",
           "evidence": "0x6663d20834049e9fa1583f5502c77232c6a574ce6a9cb3bb22ccef1332195689"
         }
       ]
@@ -145,34 +145,34 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 125,
-    "liquidityUsd": 183813.13999999998,
+    "ageDays": 126,
+    "liquidityUsd": 131919.84999999998,
     "pools": [
       {
         "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83",
         "dex": "aerodrome",
-        "liquidityUsd": 183804,
+        "liquidityUsd": 131910.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x9D2139818d9cB7dc067B6128d337AAB1AA460aF6",
+        "pair": "0x66364e1847ac72311bb43d14f75ff7f7d2079b3f02c90f5c75727436f3b6014d",
+        "dex": "uniswap",
+        "liquidityUsd": 5.12,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3751DfB5FCa4490bcf1dEF2b4CA600CEEb773f29",
         "dex": "equalizer",
-        "liquidityUsd": 4.78,
+        "liquidityUsd": 4.36,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xbc26628d22e10d486209095d1839354228be69d4c51ea6c938f27d0a161379f7",
-        "dex": "uniswap",
-        "liquidityUsd": 4.36,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],

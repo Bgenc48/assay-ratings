@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "LFI",
   "name": "LienFi",
-  "scanned_at": "2026-08-18T06:07:27.186Z",
+  "scanned_at": "2026-08-19T06:22:43.294Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 65.7,
+    "overall": 63.1,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -84,22 +84,15 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 109 days old; trust needs time (Provisional).",
+          "text": "Token is 110 days old; trust needs time (Provisional).",
           "evidence": "0xe84a138895ca31629a91804dbfcd550498b933109793e66788a3b5f71f366a72"
         }
       ]
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 8.9%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -136,13 +129,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 109,
-    "liquidityUsd": 608332.9699999999,
+    "ageDays": 110,
+    "liquidityUsd": 775620.8300000001,
     "pools": [
       {
         "pair": "0x6ef02666f150d9649655b884e043b61b0990fad9be4c632d0c7568bb24da9367",
         "dex": "uniswap",
-        "liquidityUsd": 389395.54,
+        "liquidityUsd": 516731.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +144,7 @@
       {
         "pair": "0x8343C68279587498526114e6385F0a87f248E0D9",
         "dex": "aerodrome",
-        "liquidityUsd": 97493.54,
+        "liquidityUsd": 126869.66,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +153,7 @@
       {
         "pair": "0x588f68b9fA04366F33f8Ce095C13F0cebaB9406a",
         "dex": "uniswap",
-        "liquidityUsd": 88261.63,
+        "liquidityUsd": 93734.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +162,7 @@
       {
         "pair": "0x53ab4c60ff04b782F630A8685af95404f099aAFD",
         "dex": "hydrex",
-        "liquidityUsd": 17286.73,
+        "liquidityUsd": 23498.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,16 +171,7 @@
       {
         "pair": "0x24c0F6B57b4A6dAF685986F7E371B7628fc64FD6",
         "dex": "hydrex",
-        "liquidityUsd": 11066.35,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xb2C15972a135a0d4b5374D5F13138355C571Ca10",
-        "dex": "uniswap",
-        "liquidityUsd": 4458.59,
+        "liquidityUsd": 14196.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -196,7 +180,7 @@
       {
         "pair": "0x41932EA9b35Bd2e663678Dfca8228498A05A3689",
         "dex": "pancakeswap",
-        "liquidityUsd": 310.48,
+        "liquidityUsd": 396.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -205,14 +189,23 @@
       {
         "pair": "0x7D55dcABc41626818e52d6289bf4b9A71a04D13A",
         "dex": "pancakeswap",
-        "liquidityUsd": 60.11,
+        "liquidityUsd": 69.4,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfcf482c993b53342f6a9307d2fbeff710872787165728e6de1beb43d1f825d67",
+        "dex": "uniswap",
+        "liquidityUsd": 124.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 8.91,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://lienfi.com"

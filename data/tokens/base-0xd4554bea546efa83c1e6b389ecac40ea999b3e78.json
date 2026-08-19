@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SQD",
   "name": "Subsquid",
-  "scanned_at": "2026-08-18T06:05:53.306Z",
+  "scanned_at": "2026-08-19T06:19:33.017Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -107,7 +107,7 @@
     {
       "id": "cap.rug-ready",
       "letter": "D",
-      "reason": "Externally-owned accounts can withdraw 99% of tracked liquidity — a majority. The largest such pool is 0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E (LP holder 0xe73018acd78b88519c1ed78c4f7171082d05a6a7, 123.47% of that pool)."
+      "reason": "Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E (LP holder 0xe73018acd78b88519c1ed78c4f7171082d05a6a7, 123.47% of that pool)."
     },
     {
       "id": "cap.concentration",
@@ -139,13 +139,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 634,
-    "liquidityUsd": 271516.49,
+    "ageDays": 635,
+    "liquidityUsd": 272476.37000000005,
     "pools": [
       {
         "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E",
         "dex": "aerodrome",
-        "liquidityUsd": 262852.54,
+        "liquidityUsd": 267558.34,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -156,18 +156,9 @@
         }
       },
       {
-        "pair": "0xCe62141227cfd3Fe8d715F403B99F0377C0C16C6",
-        "dex": "aerodrome",
-        "liquidityUsd": 3941.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x7f1d9e5a75FB96033152f9E519C838149916b793",
         "dex": "aerodrome",
-        "liquidityUsd": 4722.58,
+        "liquidityUsd": 4918.03,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,

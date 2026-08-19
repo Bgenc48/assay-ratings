@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "Fren Pet",
   "name": "Fren Pet",
-  "scanned_at": "2026-08-18T06:02:36.234Z",
+  "scanned_at": "2026-08-19T06:12:08.607Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 64.4,
-    "provisional": false,
+    "overall": 59.7,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "7183654592479972722558733",
+    "totalSupply": "7183481296459473980131003",
     "decimals": 18,
     "owner": "0x54c4dd8c2e124c65f55e1e096ab1fb6543e1206c",
     "controlType": "unknown",
@@ -108,14 +108,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 1083,
-    "liquidityUsd": 582123.55,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 602752.5399999999,
     "pools": [
       {
         "pair": "0xDE66c35e01ED8e619Bf092352338ef94f2327337",
         "dex": "uniswap",
-        "liquidityUsd": 580243.6,
+        "liquidityUsd": 600804.85,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -124,20 +124,16 @@
       {
         "pair": "0x29b3a7869E3662D00aaBD89A8ee74B2F703a6a66",
         "dex": "baseswap",
-        "liquidityUsd": 1862.3,
+        "liquidityUsd": 1921.57,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x047f606fd5b2baa5f5c6c4ab8958e45cb6b054b7",
-          "sharePct": 83.7
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x95d6856d120a79CAaa0827B1cb100e9FB9DCFDEe",
         "dex": "aerodrome",
-        "liquidityUsd": 7.36,
+        "liquidityUsd": 7.76,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -148,9 +144,18 @@
         }
       },
       {
+        "pair": "0xe3ce23c074a3c4cf79f1cd565a1002679a7c8a9278118dcda978d522423d50da",
+        "dex": "uniswap",
+        "liquidityUsd": 8.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0x381f910cBba212E09f79451B83A70B96B4d4b87b",
         "dex": "sushiswap",
-        "liquidityUsd": 0.29,
+        "liquidityUsd": 0.32,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -159,7 +164,7 @@
       {
         "pair": "0x9C93Fd133424B07543336200Ce8E83be0F7AcB8C",
         "dex": "uniswap",
-        "liquidityUsd": 10,
+        "liquidityUsd": 9.67,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
