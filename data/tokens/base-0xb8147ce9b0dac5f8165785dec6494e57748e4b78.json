@@ -4,13 +4,13 @@
   "status": "ok",
   "symbol": "DCAI",
   "name": "DCAI",
-  "scanned_at": "2026-08-19T06:08:31.847Z",
+  "scanned_at": "2026-08-20T06:08:38.250Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B",
-    "overall": 77.2,
-    "provisional": false,
+    "overall": 77.5,
+    "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
   },
@@ -77,7 +77,7 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -93,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -116,13 +111,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": null,
-    "ageDays": 461,
-    "liquidityUsd": 361261.56,
+    "ageDays": null,
+    "liquidityUsd": 423656.31,
     "pools": [
       {
         "pair": "0x06831088c586D475E51c37c716f8F5c601793eF4",
         "dex": "uniswap",
-        "liquidityUsd": 361261.56,
+        "liquidityUsd": 423656.31,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,

@@ -1,6 +1,1976 @@
 {
-  "generated_at": "2026-08-19T06:24:05.250Z",
+  "generated_at": "2026-08-20T06:21:19.496Z",
   "alerts": [
+    {
+      "at": "2026-08-20T05:49:35.400Z",
+      "chain": "base",
+      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "symbol": "USDC",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:51:19.895Z",
+      "chain": "base",
+      "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "symbol": "cbETH",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state C → UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:52:08.279Z",
+      "chain": "base",
+      "address": "0x311935cd80B76769bf2eCC9d8AB7635b2139cF82",
+      "symbol": "SOL",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:52:08.279Z",
+      "chain": "base",
+      "address": "0x311935cd80B76769bf2eCC9d8AB7635b2139cF82",
+      "symbol": "SOL",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:52:26.630Z",
+      "chain": "base",
+      "address": "0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf",
+      "symbol": "VVV",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:52:30.944Z",
+      "chain": "base",
+      "address": "0x8185eaf46136a3f095c60facd97eca1bfc2f38f6",
+      "symbol": "$OLIVIA2.0",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:52:30.944Z",
+      "chain": "base",
+      "address": "0x8185eaf46136a3f095c60facd97eca1bfc2f38f6",
+      "symbol": "$OLIVIA2.0",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:52:30.944Z",
+      "chain": "base",
+      "address": "0x8185eaf46136a3f095c60facd97eca1bfc2f38f6",
+      "symbol": "$OLIVIA2.0",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:53:03.715Z",
+      "chain": "base",
+      "address": "0x182fa643e5f29d5eca75e7b9cf9336a3fe4620b2",
+      "symbol": "O",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:53:24.723Z",
+      "chain": "base",
+      "address": "0xe504c35bb9d276147d476d479bb5a04c60afab07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:53:24.723Z",
+      "chain": "base",
+      "address": "0xe504c35bb9d276147d476d479bb5a04c60afab07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:53:45.754Z",
+      "chain": "base",
+      "address": "0x8b7dde054be9d180c1be7fae0874697374a49832",
+      "symbol": "PROS",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:54:04.863Z",
+      "chain": "base",
+      "address": "0xb3b32f9f8827d4634fe7d973fa1034ec9fddb3b3",
+      "symbol": "B3",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:54:25.960Z",
+      "chain": "base",
+      "address": "0x11030f79109269d796fd0fb956d6244e502757f7",
+      "symbol": "CTR",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:54:25.960Z",
+      "chain": "base",
+      "address": "0x11030f79109269d796fd0fb956d6244e502757f7",
+      "symbol": "CTR",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:54:39.268Z",
+      "chain": "base",
+      "address": "0x853a7c99227499dba9db8c3a02aa691afdebf841",
+      "symbol": "PLAY",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:55:00.444Z",
+      "chain": "base",
+      "address": "0x16ee7ecac70d1028e7712751e2ee6ba808a7dd92",
+      "symbol": "FUN",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade D → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:55:00.444Z",
+      "chain": "base",
+      "address": "0x16ee7ecac70d1028e7712751e2ee6ba808a7dd92",
+      "symbol": "FUN",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:55:00.444Z",
+      "chain": "base",
+      "address": "0x16ee7ecac70d1028e7712751e2ee6ba808a7dd92",
+      "symbol": "FUN",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:55:21.560Z",
+      "chain": "base",
+      "address": "0x8c0d3adcf8ce094e1ae437557ec90a6374dc9bdd",
+      "symbol": "OVPP",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade B- → B.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:55:21.560Z",
+      "chain": "base",
+      "address": "0x8c0d3adcf8ce094e1ae437557ec90a6374dc9bdd",
+      "symbol": "OVPP",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:55:35.486Z",
+      "chain": "base",
+      "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+      "symbol": "ELSA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:55:56.005Z",
+      "chain": "base",
+      "address": "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93",
+      "symbol": "LMTS",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:56:03.672Z",
+      "chain": "base",
+      "address": "0xbaa5cc21fd487b8fcc2f632f3f4e8d37262a0842",
+      "symbol": "MORPHO",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state C → UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:56:03.672Z",
+      "chain": "base",
+      "address": "0xbaa5cc21fd487b8fcc2f632f3f4e8d37262a0842",
+      "symbol": "MORPHO",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:56:32.211Z",
+      "chain": "base",
+      "address": "0x752c5a95d202972e124390f30a50154409d3c858",
+      "symbol": "OFC",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:56:49.369Z",
+      "chain": "base",
+      "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd",
+      "symbol": "ZRO",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:56:49.369Z",
+      "chain": "base",
+      "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd",
+      "symbol": "ZRO",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:57:00.812Z",
+      "chain": "base",
+      "address": "0x7297968ffb753dd12e4f6b1f18d9865c76707fc2",
+      "symbol": "ZEST",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:57:34.089Z",
+      "chain": "base",
+      "address": "0x9126236476efba9ad8ab77855c60eb5bf37586eb",
+      "symbol": "CHECK",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:57:45.425Z",
+      "chain": "base",
+      "address": "0x55365c9e68e70122020184f4441b498e8bf06ac6",
+      "symbol": "QWLA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:58:07.462Z",
+      "chain": "base",
+      "address": "0x15d0e0c55a3e7ee67152ad7e89acf164253ff68d",
+      "symbol": "HYPE",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:58:28.467Z",
+      "chain": "base",
+      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
+      "symbol": "ZORA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:58:40.287Z",
+      "chain": "base",
+      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
+      "symbol": "AMETA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:58:57.640Z",
+      "chain": "base",
+      "address": "0x8bfac1b375bf2894d6f12fb2eb48b1c1a7916789",
+      "symbol": "MEY",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:59:02.168Z",
+      "chain": "base",
+      "address": "0xf43eb8de897fbc7f2502483b2bef7bb9ea179229",
+      "symbol": "ZEN",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:59:07.069Z",
+      "chain": "base",
+      "address": "0x18cd0ef93be7f3bb052885bc2d66947ac7799b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:59:07.069Z",
+      "chain": "base",
+      "address": "0x18cd0ef93be7f3bb052885bc2d66947ac7799b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:59:20.416Z",
+      "chain": "base",
+      "address": "0x1aa8fd5bcce2231c6100d55bf8b377cff33acfc3",
+      "symbol": "RAVE",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:59:20.416Z",
+      "chain": "base",
+      "address": "0x1aa8fd5bcce2231c6100d55bf8b377cff33acfc3",
+      "symbol": "RAVE",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:59:20.416Z",
+      "chain": "base",
+      "address": "0x1aa8fd5bcce2231c6100d55bf8b377cff33acfc3",
+      "symbol": "RAVE",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:59:24.443Z",
+      "chain": "base",
+      "address": "0x9cb41fd9dc6891bae8187029461bfaadf6cc0c69",
+      "symbol": "noice",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:59:45.365Z",
+      "chain": "base",
+      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T05:59:45.365Z",
+      "chain": "base",
+      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:02.636Z",
+      "chain": "base",
+      "address": "0x3fa0587de2df913ad4f0b5726a1434a4955ffb07",
+      "symbol": "Base",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:02.636Z",
+      "chain": "base",
+      "address": "0x3fa0587de2df913ad4f0b5726a1434a4955ffb07",
+      "symbol": "Base",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:15.401Z",
+      "chain": "base",
+      "address": "0x97be14dd8f994a5364573bc035d85309e7cb34de",
+      "symbol": "JitoSOL",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state UR → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:15.401Z",
+      "chain": "base",
+      "address": "0x97be14dd8f994a5364573bc035d85309e7cb34de",
+      "symbol": "JitoSOL",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:15.401Z",
+      "chain": "base",
+      "address": "0x97be14dd8f994a5364573bc035d85309e7cb34de",
+      "symbol": "JitoSOL",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:22.801Z",
+      "chain": "base",
+      "address": "0x8453cf5dd4840072b5da025ca4c5caa13c192b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:22.801Z",
+      "chain": "base",
+      "address": "0x8453cf5dd4840072b5da025ca4c5caa13c192b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:22.801Z",
+      "chain": "base",
+      "address": "0x8453cf5dd4840072b5da025ca4c5caa13c192b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:30.833Z",
+      "chain": "base",
+      "address": "0xcb111e6a2a3bde90856d299d61341ac302167d23",
+      "symbol": "cbMEGA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:30.833Z",
+      "chain": "base",
+      "address": "0xcb111e6a2a3bde90856d299d61341ac302167d23",
+      "symbol": "cbMEGA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:35.100Z",
+      "chain": "base",
+      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+      "symbol": "DRV",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state UR → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:35.100Z",
+      "chain": "base",
+      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+      "symbol": "DRV",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:35.100Z",
+      "chain": "base",
+      "address": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+      "symbol": "DRV",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:53.176Z",
+      "chain": "base",
+      "address": "0xc4aa3dc36ba618eaa0d76a89750430181cfc7b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:00:53.176Z",
+      "chain": "base",
+      "address": "0xc4aa3dc36ba618eaa0d76a89750430181cfc7b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:01:04.861Z",
+      "chain": "base",
+      "address": "0xed327e881bdde8a134e6fddcf4a64881f86a3b07",
+      "symbol": "Claude",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:01:19.062Z",
+      "chain": "base",
+      "address": "0x00000000a22c618fd6b4d7e9a335c4b96b189a38",
+      "symbol": "TOWNS",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:01:30.292Z",
+      "chain": "base",
+      "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
+      "symbol": "CZ",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:01:30.292Z",
+      "chain": "base",
+      "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
+      "symbol": "CZ",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:01:48.817Z",
+      "chain": "base",
+      "address": "0x8a6786e0f64736771e34df56b869d4c620870b07",
+      "symbol": "Claude",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:01:48.817Z",
+      "chain": "base",
+      "address": "0x8a6786e0f64736771e34df56b869d4c620870b07",
+      "symbol": "Claude",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:01:51.124Z",
+      "chain": "base",
+      "address": "0x50f88fe97f72cd3e75b9eb4f747f59bceba80d59",
+      "symbol": "jesse",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:01:51.124Z",
+      "chain": "base",
+      "address": "0x50f88fe97f72cd3e75b9eb4f747f59bceba80d59",
+      "symbol": "jesse",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:01:58.858Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000000ee9988edd75453501",
+      "symbol": "PAMPU",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:01:58.858Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000000ee9988edd75453501",
+      "symbol": "PAMPU",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:02:10.799Z",
+      "chain": "base",
+      "address": "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
+      "symbol": "FLOCK",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:02:18.438Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000007bf6d5cbb0e24cb301",
+      "symbol": "BRIAN",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:02:18.438Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000007bf6d5cbb0e24cb301",
+      "symbol": "BRIAN",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:02:31.379Z",
+      "chain": "base",
+      "address": "0x196f914d0fdc1966378e77dc9a4ca326c70f8b07",
+      "symbol": "TRUMP",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:02:31.379Z",
+      "chain": "base",
+      "address": "0x196f914d0fdc1966378e77dc9a4ca326c70f8b07",
+      "symbol": "TRUMP",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:03:06.861Z",
+      "chain": "base",
+      "address": "0xae45b8fae07ffb2e5f4373bfcb6f4bd827a45b07",
+      "symbol": "Gitlawb",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:03:06.861Z",
+      "chain": "base",
+      "address": "0xae45b8fae07ffb2e5f4373bfcb6f4bd827a45b07",
+      "symbol": "Gitlawb",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:03:23.427Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000cfe0745f0793f0206b",
+      "symbol": "COBIE",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:03:23.427Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000cfe0745f0793f0206b",
+      "symbol": "COBIE",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:03:31.765Z",
+      "chain": "base",
+      "address": "0x742e4af0e6dfb33c946327d95503c7bc2df34b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:03:31.765Z",
+      "chain": "base",
+      "address": "0x742e4af0e6dfb33c946327d95503c7bc2df34b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:03:31.765Z",
+      "chain": "base",
+      "address": "0x742e4af0e6dfb33c946327d95503c7bc2df34b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:03:39.799Z",
+      "chain": "base",
+      "address": "0x1f16e03c1a5908818f47f6ee7bb16690b40d0671",
+      "symbol": "RECALL",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:03:51.204Z",
+      "chain": "base",
+      "address": "0x5399592239c030da026b58e4a0a45918895c6b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:03:51.204Z",
+      "chain": "base",
+      "address": "0x5399592239c030da026b58e4a0a45918895c6b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:04:03.470Z",
+      "chain": "base",
+      "address": "0xf4d97f2da56e8c3098f3a8d538db630a2606a024",
+      "symbol": "DIEM",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:04:14.568Z",
+      "chain": "base",
+      "address": "0xb2008bc0163db6117f212b04ae1ebdf55cd2400b",
+      "symbol": "BRIAN",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:04:14.568Z",
+      "chain": "base",
+      "address": "0xb2008bc0163db6117f212b04ae1ebdf55cd2400b",
+      "symbol": "BRIAN",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:04:27.350Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000008490555611bbad993f",
+      "symbol": "ARAIL",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:04:27.350Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000008490555611bbad993f",
+      "symbol": "ARAIL",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:04:27.350Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000008490555611bbad993f",
+      "symbol": "ARAIL",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:04:35.579Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000004d5cb65c1a377005ba",
+      "symbol": "HOODFART",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:04:35.579Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000004d5cb65c1a377005ba",
+      "symbol": "HOODFART",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:04:47.445Z",
+      "chain": "base",
+      "address": "0x9c5c4237e53024a4fe722334af6d62990bddbb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:04:47.445Z",
+      "chain": "base",
+      "address": "0x9c5c4237e53024a4fe722334af6d62990bddbb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:05:08.462Z",
+      "chain": "base",
+      "address": "0x33417dfda9845853266b3ba4686a397aa0ae8b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:05:08.462Z",
+      "chain": "base",
+      "address": "0x33417dfda9845853266b3ba4686a397aa0ae8b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:05:11.543Z",
+      "chain": "base",
+      "address": "0x4ac963e04eccd97a98bbe6bcb6d3bc2a649e0b07",
+      "symbol": "Claude",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:05:11.543Z",
+      "chain": "base",
+      "address": "0x4ac963e04eccd97a98bbe6bcb6d3bc2a649e0b07",
+      "symbol": "Claude",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:05:26.418Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000348a0251f62fc097e8",
+      "symbol": "GJESSE",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:05:26.418Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000348a0251f62fc097e8",
+      "symbol": "GJESSE",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:05:39.638Z",
+      "chain": "base",
+      "address": "0xfd15909c86bcd27f195b0b9f9a791c17eb87eb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:05:39.638Z",
+      "chain": "base",
+      "address": "0xfd15909c86bcd27f195b0b9f9a791c17eb87eb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:05:47.650Z",
+      "chain": "base",
+      "address": "0xab6363da0c80cef3ae105bd6241e30872355d021",
+      "symbol": "ROLL",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:06:00.638Z",
+      "chain": "base",
+      "address": "0x9b5e262cf9bb04869ab40b19af91d2dc85761722",
+      "symbol": "NOCK",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state UR → D.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:06:00.638Z",
+      "chain": "base",
+      "address": "0x9b5e262cf9bb04869ab40b19af91d2dc85761722",
+      "symbol": "NOCK",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:06:22.855Z",
+      "chain": "base",
+      "address": "0x226a2fa2556c48245e57cd1cba4c6c9e67077dd2",
+      "symbol": "BIO",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:06:35.316Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000152d943e9e1967c8dc",
+      "symbol": "CORE",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:06:35.316Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000152d943e9e1967c8dc",
+      "symbol": "CORE",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:06:39.948Z",
+      "chain": "base",
+      "address": "0xd82e82caa2bf63b9ec72548358bb5a90651c9b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:06:39.948Z",
+      "chain": "base",
+      "address": "0xd82e82caa2bf63b9ec72548358bb5a90651c9b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:06:53.500Z",
+      "chain": "base",
+      "address": "0xc729777d0470f30612b1564fd96e8dd26f5814e3",
+      "symbol": "SAPIEN",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:07:02.367Z",
+      "chain": "base",
+      "address": "0x22af33fe49fd1fa80c7149773dde5890d3c76f3b",
+      "symbol": "BNKR",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:07:22.060Z",
+      "chain": "base",
+      "address": "0xc674c13f12b506419cc236661e69487d5a019054",
+      "symbol": "Robinhood",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:07:22.060Z",
+      "chain": "base",
+      "address": "0xc674c13f12b506419cc236661e69487d5a019054",
+      "symbol": "Robinhood",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:07:36.235Z",
+      "chain": "base",
+      "address": "0x10d991b3f8f04d552597d95de80d86fc29a77b07",
+      "symbol": "VBEEF",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:07:36.235Z",
+      "chain": "base",
+      "address": "0x10d991b3f8f04d552597d95de80d86fc29a77b07",
+      "symbol": "VBEEF",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:07:47.411Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000018827a623b18da22a",
+      "symbol": "BULL",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:07:47.411Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000018827a623b18da22a",
+      "symbol": "BULL",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:07:58.413Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000003fe0d474aa0b9ded92",
+      "symbol": "USOH",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:07:58.413Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000003fe0d474aa0b9ded92",
+      "symbol": "USOH",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:08:08.460Z",
+      "chain": "base",
+      "address": "0xf30d3221a6d46645423ff82c324875586c0fab07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:08:08.460Z",
+      "chain": "base",
+      "address": "0xf30d3221a6d46645423ff82c324875586c0fab07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:08:37.496Z",
+      "chain": "base",
+      "address": "0x7a65e14206ec44b5381d546fb53b39f7c91b3914",
+      "symbol": "MTR",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:08:53.074Z",
+      "chain": "base",
+      "address": "0xb8147ce9b0dac5f8165785dec6494e57748e4b78",
+      "symbol": "DCAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:11.705Z",
+      "chain": "base",
+      "address": "0xe62bfbe57763ec24c0f130426f34dbce11fc5b06",
+      "symbol": "TITN",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:13.466Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000109019757367070eb0",
+      "symbol": "NTFS",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:13.466Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000109019757367070eb0",
+      "symbol": "NTFS",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:33.444Z",
+      "chain": "base",
+      "address": "0x6921c09f2b5cee21a929591a070d4b0354dbee8d",
+      "symbol": "LATI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:33.444Z",
+      "chain": "base",
+      "address": "0x6921c09f2b5cee21a929591a070d4b0354dbee8d",
+      "symbol": "LATI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:33.444Z",
+      "chain": "base",
+      "address": "0x6921c09f2b5cee21a929591a070d4b0354dbee8d",
+      "symbol": "LATI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:33.444Z",
+      "chain": "base",
+      "address": "0x6921c09f2b5cee21a929591a070d4b0354dbee8d",
+      "symbol": "LATI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:39.327Z",
+      "chain": "base",
+      "address": "0x9aaae745cf2830fb8ddc6248b17436dc3a5e701c",
+      "symbol": "GOCHU",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:39.327Z",
+      "chain": "base",
+      "address": "0x9aaae745cf2830fb8ddc6248b17436dc3a5e701c",
+      "symbol": "GOCHU",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:59.524Z",
+      "chain": "base",
+      "address": "0xc0f7800a382afde51e930de4b1f130a1d85eeb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:09:59.524Z",
+      "chain": "base",
+      "address": "0xc0f7800a382afde51e930de4b1f130a1d85eeb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:12:08.443Z",
+      "chain": "base",
+      "address": "0x3c5cd672b204ba0fc48e93b98c0922920a87912d",
+      "symbol": "BSW",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:12:44.376Z",
+      "chain": "base",
+      "address": "0xfdcc3dd6671eab0709a4c0f3f53de9a333d80798",
+      "symbol": "SBC",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:12:50.120Z",
+      "chain": "base",
+      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:12:50.120Z",
+      "chain": "base",
+      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:13:13.305Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000e19f18ee4b9d550992",
+      "symbol": "SOAF",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:13:13.305Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000e19f18ee4b9d550992",
+      "symbol": "SOAF",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:13:26.100Z",
+      "chain": "base",
+      "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:13:26.100Z",
+      "chain": "base",
+      "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:13:50.596Z",
+      "chain": "base",
+      "address": "0x3329c0315f6a0c0787d94755de083ef625fa5b6b",
+      "symbol": "VLTX",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:13:50.596Z",
+      "chain": "base",
+      "address": "0x3329c0315f6a0c0787d94755de083ef625fa5b6b",
+      "symbol": "VLTX",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:14:11.604Z",
+      "chain": "base",
+      "address": "0x003afa6d1eddf81326106d19a59fd4b5f90cdb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:14:11.604Z",
+      "chain": "base",
+      "address": "0x003afa6d1eddf81326106d19a59fd4b5f90cdb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:14:24.587Z",
+      "chain": "base",
+      "address": "0x9e00fc92493451eba1c63dd3880d68b622037ba3",
+      "symbol": "1F916",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:14:24.587Z",
+      "chain": "base",
+      "address": "0x9e00fc92493451eba1c63dd3880d68b622037ba3",
+      "symbol": "1F916",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:14:24.587Z",
+      "chain": "base",
+      "address": "0x9e00fc92493451eba1c63dd3880d68b622037ba3",
+      "symbol": "1F916",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:14:58.741Z",
+      "chain": "base",
+      "address": "0x696f9436b67233384889472cd7cd58a6fb5df4f1",
+      "symbol": "AVNT",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:15:15.993Z",
+      "chain": "base",
+      "address": "0xe014d2a4da6e450f21b5050120d291e63c8940fd",
+      "symbol": "SOGNI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0xCc68Cb8B514A2216D2eECe3A0e8597Ce483610eb (LP holder 0x77ffdb8b9042f20142723c9f0fcf5154591d7487, 99.96% of that pool).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:15:15.993Z",
+      "chain": "base",
+      "address": "0xe014d2a4da6e450f21b5050120d291e63c8940fd",
+      "symbol": "SOGNI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:15:28.071Z",
+      "chain": "base",
+      "address": "0xc08cd26474722ce93f4d0c34d16201461c10aa8c",
+      "symbol": "CARV",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:15:28.071Z",
+      "chain": "base",
+      "address": "0xc08cd26474722ce93f4d0c34d16201461c10aa8c",
+      "symbol": "CARV",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:15:28.071Z",
+      "chain": "base",
+      "address": "0xc08cd26474722ce93f4d0c34d16201461c10aa8c",
+      "symbol": "CARV",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:15:40.435Z",
+      "chain": "base",
+      "address": "0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad",
+      "symbol": "BLUAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB (LP holder 0x0a02944700fe01c4374617004681b9f1615ebf6d, 99.56% of that pool).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:15:40.435Z",
+      "chain": "base",
+      "address": "0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad",
+      "symbol": "BLUAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:15:40.435Z",
+      "chain": "base",
+      "address": "0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad",
+      "symbol": "BLUAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:15:54.128Z",
+      "chain": "base",
+      "address": "0x43baaf2f2aa8f27ce064bbf71de0ade7ea488ba3",
+      "symbol": "ATLAS",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:15:54.128Z",
+      "chain": "base",
+      "address": "0x43baaf2f2aa8f27ce064bbf71de0ade7ea488ba3",
+      "symbol": "ATLAS",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:05.334Z",
+      "chain": "base",
+      "address": "0x6b458b475695121b78b7ef8fa88a73973c6bcb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:05.334Z",
+      "chain": "base",
+      "address": "0x6b458b475695121b78b7ef8fa88a73973c6bcb07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:18.198Z",
+      "chain": "base",
+      "address": "0xc5fed7c8ccc75d8a72b601a66dffd7a489073f0b",
+      "symbol": "ACU",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade B- → B.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:18.198Z",
+      "chain": "base",
+      "address": "0xc5fed7c8ccc75d8a72b601a66dffd7a489073f0b",
+      "symbol": "ACU",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:35.068Z",
+      "chain": "base",
+      "address": "0x15a9e76cd69a71cd485372a51c131e245ef09b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:35.068Z",
+      "chain": "base",
+      "address": "0x15a9e76cd69a71cd485372a51c131e245ef09b07",
+      "symbol": "OpenAI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:44.111Z",
+      "chain": "base",
+      "address": "0xd4554bea546efa83c1e6b389ecac40ea999b3e78",
+      "symbol": "SQD",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade F → D.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:44.111Z",
+      "chain": "base",
+      "address": "0xd4554bea546efa83c1e6b389ecac40ea999b3e78",
+      "symbol": "SQD",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E (LP holder 0xe73018acd78b88519c1ed78c4f7171082d05a6a7, 123.47% of that pool).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:44.111Z",
+      "chain": "base",
+      "address": "0xd4554bea546efa83c1e6b389ecac40ea999b3e78",
+      "symbol": "SQD",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:44.111Z",
+      "chain": "base",
+      "address": "0xd4554bea546efa83c1e6b389ecac40ea999b3e78",
+      "symbol": "SQD",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:16:55.421Z",
+      "chain": "base",
+      "address": "0xa4a2e2ca3fbfe21aed83471d28b6f65a233c6e00",
+      "symbol": "TIBBIR",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:17:22.465Z",
+      "chain": "base",
+      "address": "0x7f7a0a49bfda13f149f3320ee09edf37a8abcba3",
+      "symbol": "sami",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:17:22.465Z",
+      "chain": "base",
+      "address": "0x7f7a0a49bfda13f149f3320ee09edf37a8abcba3",
+      "symbol": "sami",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:18:00.688Z",
+      "chain": "base",
+      "address": "0xaa8319bff7898f24780b6f80839b1ea13f02a4b8",
+      "symbol": "QSAVE",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:18:00.688Z",
+      "chain": "base",
+      "address": "0xaa8319bff7898f24780b6f80839b1ea13f02a4b8",
+      "symbol": "QSAVE",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:18:00.688Z",
+      "chain": "base",
+      "address": "0xaa8319bff7898f24780b6f80839b1ea13f02a4b8",
+      "symbol": "QSAVE",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:18:55.161Z",
+      "chain": "base",
+      "address": "0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e",
+      "symbol": "CHIP",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:18:55.161Z",
+      "chain": "base",
+      "address": "0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e",
+      "symbol": "CHIP",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:19:00.854Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000004c27f6523082f41d01",
+      "symbol": "Basecat",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:19:00.854Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000004c27f6523082f41d01",
+      "symbol": "Basecat",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:19:13.672Z",
+      "chain": "base",
+      "address": "0x85635006d808030e97f3174c8ea1b4aa1f1feba3",
+      "symbol": "VVVeity",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:19:13.672Z",
+      "chain": "base",
+      "address": "0x85635006d808030e97f3174c8ea1b4aa1f1feba3",
+      "symbol": "VVVeity",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:19:37.202Z",
+      "chain": "base",
+      "address": "0x3722264ab15a1dfce5a5af89e6547f7949a8aba3",
+      "symbol": "LFI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:19:37.202Z",
+      "chain": "base",
+      "address": "0x3722264ab15a1dfce5a5af89e6547f7949a8aba3",
+      "symbol": "LFI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:19:37.202Z",
+      "chain": "base",
+      "address": "0x3722264ab15a1dfce5a5af89e6547f7949a8aba3",
+      "symbol": "LFI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:19:47.212Z",
+      "chain": "base",
+      "address": "0xb12456b5ca0993be1be6b2f76504d38b1dc91111",
+      "symbol": "TREX",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:19:47.212Z",
+      "chain": "base",
+      "address": "0xb12456b5ca0993be1be6b2f76504d38b1dc91111",
+      "symbol": "TREX",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:20:21.505Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000002d0ba3164cc74f58b7",
+      "symbol": "GOOGLc",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:20:21.505Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000002d0ba3164cc74f58b7",
+      "symbol": "GOOGLc",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:20:47.359Z",
+      "chain": "base",
+      "address": "0xc0634090f2fe6c6d75e61be2b949464abb498973",
+      "symbol": "KTA",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state UR → B.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:20:47.359Z",
+      "chain": "base",
+      "address": "0xc0634090f2fe6c6d75e61be2b949464abb498973",
+      "symbol": "KTA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Externally-owned accounts can withdraw 96% of tracked liquidity — a majority. The largest such pool is 0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe (LP holder 0xd38ab996aab7b7955bdf0d91f5742c3856589fe6, 99.21% of that pool).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:20:47.359Z",
+      "chain": "base",
+      "address": "0xc0634090f2fe6c6d75e61be2b949464abb498973",
+      "symbol": "KTA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:20:58.685Z",
+      "chain": "base",
+      "address": "0x4409d3392019bae6b914a5d92fbff46fa2aca368",
+      "symbol": "TSLA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:21:03.520Z",
+      "chain": "base",
+      "address": "0xb20000000000000000000078ee7ce2fe4908108c",
+      "symbol": "NVDAc",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:21:03.520Z",
+      "chain": "base",
+      "address": "0xb20000000000000000000078ee7ce2fe4908108c",
+      "symbol": "NVDAc",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-08-20T06:21:18.745Z",
+      "chain": "base",
+      "address": "0x6e963857ad4e6cc5bc6866a8b8cce4e238314b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "OpenAI is now rated: B-.",
+      "evidence": null
+    },
     {
       "at": "2026-08-19T05:57:59.366Z",
       "chain": "base",
@@ -1029,1978 +2999,6 @@
       "severity": "INFO",
       "kind": "cap-cleared",
       "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-13T06:54:51.187Z",
-      "chain": "base",
-      "address": "0x11030f79109269d796fd0fb956d6244e502757f7",
-      "symbol": "CTR",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-13T06:54:51.187Z",
-      "chain": "base",
-      "address": "0x11030f79109269d796fd0fb956d6244e502757f7",
-      "symbol": "CTR",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-13T06:58:51.728Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-13T07:07:09.550Z",
-      "chain": "base",
-      "address": "0xe0c48bfa530e3993ffd1a9202e4022327643e15f",
-      "symbol": "xtoken",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-13T07:09:37.946Z",
-      "chain": "base",
-      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-13T07:11:30.375Z",
-      "chain": "base",
-      "address": "0x696f9436b67233384889472cd7cd58a6fb5df4f1",
-      "symbol": "AVNT",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade B- → B.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-12T06:48:01.195Z",
-      "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-12T06:52:10.074Z",
-      "chain": "base",
-      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
-      "symbol": "SHIB",
-      "severity": "CRITICAL",
-      "kind": "liquidity-security-drop",
-      "text": "Burned/locked share of the dominant pool fell 100% → 0%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-12T06:57:30.656Z",
-      "chain": "base",
-      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
-      "symbol": "cbXRP",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state F → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-12T06:59:32.520Z",
-      "chain": "base",
-      "address": "0xe0c48bfa530e3993ffd1a9202e4022327643e15f",
-      "symbol": "xtoken",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-12T07:03:15.584Z",
-      "chain": "base",
-      "address": "0xd4c5a50540bafedad767260026b970e74285a98e",
-      "symbol": "SpaceX",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "SpaceX is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-12T07:03:18.331Z",
-      "chain": "base",
-      "address": "0x7f7a0a49bfda13f149f3320ee09edf37a8abcba3",
-      "symbol": "sami",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "sami is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:09:37.865Z",
-      "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:11:18.713Z",
-      "chain": "base",
-      "address": "0xe504c35bb9d276147d476d479bb5a04c60afab07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:11:18.713Z",
-      "chain": "base",
-      "address": "0xe504c35bb9d276147d476d479bb5a04c60afab07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:15:16.286Z",
-      "chain": "base",
-      "address": "0xcb111e6a2a3bde90856d299d61341ac302167d23",
-      "symbol": "cbMEGA",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:18:59.499Z",
-      "chain": "base",
-      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
-      "symbol": "cbXRP",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → F.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:22:21.710Z",
-      "chain": "base",
-      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:23:41.267Z",
-      "chain": "base",
-      "address": "0x696f9436b67233384889472cd7cd58a6fb5df4f1",
-      "symbol": "AVNT",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:24:00.805Z",
-      "chain": "base",
-      "address": "0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad",
-      "symbol": "BLUAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:24:16.509Z",
-      "chain": "base",
-      "address": "0x15a9e76cd69a71cd485372a51c131e245ef09b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:24:20.270Z",
-      "chain": "base",
-      "address": "0xd4554bea546efa83c1e6b389ecac40ea999b3e78",
-      "symbol": "SQD",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "SQD is now rated: F.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-11T06:24:30.192Z",
-      "chain": "base",
-      "address": "0xa4a2e2ca3fbfe21aed83471d28b6f65a233c6e00",
-      "symbol": "TIBBIR",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "TIBBIR is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T06:49:04.776Z",
-      "chain": "base",
-      "address": "0xe504c35bb9d276147d476d479bb5a04c60afab07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T06:49:04.776Z",
-      "chain": "base",
-      "address": "0xe504c35bb9d276147d476d479bb5a04c60afab07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T06:51:33.999Z",
-      "chain": "base",
-      "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd",
-      "symbol": "ZRO",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T06:51:33.999Z",
-      "chain": "base",
-      "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd",
-      "symbol": "ZRO",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T06:52:22.983Z",
-      "chain": "base",
-      "address": "0x15d0e0c55a3e7ee67152ad7e89acf164253ff68d",
-      "symbol": "HYPE",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 12 months (Provisional). (≤ A-).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T06:52:37.765Z",
-      "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T06:53:42.569Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T06:58:41.084Z",
-      "chain": "base",
-      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
-      "symbol": "cbXRP",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state F → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T07:00:22.170Z",
-      "chain": "base",
-      "address": "0x7a65e14206ec44b5381d546fb53b39f7c91b3914",
-      "symbol": "MTR",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state D → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T07:03:42.463Z",
-      "chain": "base",
-      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T07:04:36.578Z",
-      "chain": "base",
-      "address": "0x1a44233fae8d50f1aeb3a5d58dd426ff4814cb53",
-      "symbol": "QUID",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T07:04:58.749Z",
-      "chain": "base",
-      "address": "0x3329c0315f6a0c0787d94755de083ef625fa5b6b",
-      "symbol": "VLTX",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T07:06:17.677Z",
-      "chain": "base",
-      "address": "0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad",
-      "symbol": "BLUAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T07:06:28.174Z",
-      "chain": "base",
-      "address": "0x6b458b475695121b78b7ef8fa88a73973c6bcb07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-10T07:06:34.300Z",
-      "chain": "base",
-      "address": "0xc5fed7c8ccc75d8a72b601a66dffd7a489073f0b",
-      "symbol": "ACU",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "ACU is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:03:33.719Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B+.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:03:33.719Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:08:05.717Z",
-      "chain": "base",
-      "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd",
-      "symbol": "ZRO",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:08:05.717Z",
-      "chain": "base",
-      "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd",
-      "symbol": "ZRO",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:09:06.373Z",
-      "chain": "base",
-      "address": "0x15d0e0c55a3e7ee67152ad7e89acf164253ff68d",
-      "symbol": "HYPE",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:09:09.184Z",
-      "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:10:32.502Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:12:51.806Z",
-      "chain": "base",
-      "address": "0x2100a39f514d8fe3f26963a29b95b030a0a5d4b7",
-      "symbol": "UPONLY",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:13:25.623Z",
-      "chain": "base",
-      "address": "0x693b8de886712f0039eef578bbe5ac7ea3b598ce",
-      "symbol": "doji",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:16:50.323Z",
-      "chain": "base",
-      "address": "0x7a65e14206ec44b5381d546fb53b39f7c91b3914",
-      "symbol": "MTR",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:17:29.040Z",
-      "chain": "base",
-      "address": "0xc0f7800a382afde51e930de4b1f130a1d85eeb07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:19:35.646Z",
-      "chain": "base",
-      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:20:15.765Z",
-      "chain": "base",
-      "address": "0x2b31d3ed065f1f834d5c85efed49089f4c4f6b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:20:37.308Z",
-      "chain": "base",
-      "address": "0x1a44233fae8d50f1aeb3a5d58dd426ff4814cb53",
-      "symbol": "QUID",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:20:45.826Z",
-      "chain": "base",
-      "address": "0x3329c0315f6a0c0787d94755de083ef625fa5b6b",
-      "symbol": "VLTX",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:21:25.232Z",
-      "chain": "base",
-      "address": "0x696f9436b67233384889472cd7cd58a6fb5df4f1",
-      "symbol": "AVNT",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "AVNT is now rated: B.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:21:32.746Z",
-      "chain": "base",
-      "address": "0xe014d2a4da6e450f21b5050120d291e63c8940fd",
-      "symbol": "SOGNI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "SOGNI is now rated: D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:21:40.511Z",
-      "chain": "base",
-      "address": "0xc08cd26474722ce93f4d0c34d16201461c10aa8c",
-      "symbol": "CARV",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "CARV is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:21:48.479Z",
-      "chain": "base",
-      "address": "0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad",
-      "symbol": "BLUAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "BLUAI is now rated: F.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-09T06:21:53.028Z",
-      "chain": "base",
-      "address": "0x43baaf2f2aa8f27ce064bbf71de0ade7ea488ba3",
-      "symbol": "ATLAS",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "ATLAS is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:00:39.177Z",
-      "chain": "base",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "symbol": "AERO",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state C → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:01:26.635Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:01:26.635Z",
-      "chain": "base",
-      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "symbol": "DAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:03:28.590Z",
-      "chain": "base",
-      "address": "0x8b7dde054be9d180c1be7fae0874697374a49832",
-      "symbol": "PROS",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:06:04.494Z",
-      "chain": "base",
-      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
-      "symbol": "AMETA",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:13:07.608Z",
-      "chain": "base",
-      "address": "0x3c5cd672b204ba0fc48e93b98c0922920a87912d",
-      "symbol": "BSW",
-      "severity": "CRITICAL",
-      "kind": "upgraded",
-      "text": "Contract implementation changed: 0xd735a760f94c9c568ebf4b16295d9d7bd19179b7 → 0x033fcdf677e236c2261538056cbba103d52804dc.",
-      "evidence": {
-        "field": "facts.proxyImplementation"
-      }
-    },
-    {
-      "at": "2026-08-08T06:13:55.221Z",
-      "chain": "base",
-      "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:13:55.221Z",
-      "chain": "base",
-      "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:13:59.181Z",
-      "chain": "base",
-      "address": "0x2b31d3ed065f1f834d5c85efed49089f4c4f6b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:13:59.181Z",
-      "chain": "base",
-      "address": "0x2b31d3ed065f1f834d5c85efed49089f4c4f6b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:14:20.925Z",
-      "chain": "base",
-      "address": "0x003afa6d1eddf81326106d19a59fd4b5f90cdb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:14:20.925Z",
-      "chain": "base",
-      "address": "0x003afa6d1eddf81326106d19a59fd4b5f90cdb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-08T06:14:29.113Z",
-      "chain": "base",
-      "address": "0x2a4332d0333473618fe76bced4270095547e6b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-07T06:35:58.744Z",
-      "chain": "base",
-      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-      "symbol": "USDC",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-07T06:36:33.761Z",
-      "chain": "base",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "symbol": "AERO",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-07T06:41:26.940Z",
-      "chain": "base",
-      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
-      "symbol": "AMETA",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-07T06:43:51.621Z",
-      "chain": "base",
-      "address": "0x693b8de886712f0039eef578bbe5ac7ea3b598ce",
-      "symbol": "doji",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-07T06:45:11.874Z",
-      "chain": "base",
-      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
-      "symbol": "cbXRP",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → F.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-06T07:58:05.973Z",
-      "chain": "base",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "symbol": "AERO",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state C → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-06T08:02:56.935Z",
-      "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B+.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-06T08:02:56.935Z",
-      "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-06T08:03:10.773Z",
-      "chain": "base",
-      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
-      "symbol": "AMETA",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-06T08:07:07.219Z",
-      "chain": "base",
-      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
-      "symbol": "cbXRP",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state F → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-06T08:10:39.499Z",
-      "chain": "base",
-      "address": "0x003afa6d1eddf81326106d19a59fd4b5f90cdb07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-06T08:10:41.502Z",
-      "chain": "base",
-      "address": "0x9e00fc92493451eba1c63dd3880d68b622037ba3",
-      "symbol": "1F916",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "1F916 is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-05T07:58:36.891Z",
-      "chain": "base",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "symbol": "AERO",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-05T08:08:03.792Z",
-      "chain": "base",
-      "address": "0xa4dc42370e21fcf2182d24b39bebb7a5695adb07",
-      "symbol": "PIPEDOG",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-05T08:08:03.792Z",
-      "chain": "base",
-      "address": "0xa4dc42370e21fcf2182d24b39bebb7a5695adb07",
-      "symbol": "PIPEDOG",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-05T08:08:17.514Z",
-      "chain": "base",
-      "address": "0x73adfa3a448d63025d52e39f921369386e4fcb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-05T08:08:17.514Z",
-      "chain": "base",
-      "address": "0x73adfa3a448d63025d52e39f921369386e4fcb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-05T08:08:32.385Z",
-      "chain": "base",
-      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-05T08:08:32.385Z",
-      "chain": "base",
-      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-05T08:08:50.701Z",
-      "chain": "base",
-      "address": "0x2b31d3ed065f1f834d5c85efed49089f4c4f6b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-05T08:08:56.963Z",
-      "chain": "base",
-      "address": "0x1a44233fae8d50f1aeb3a5d58dd426ff4814cb53",
-      "symbol": "QUID",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "QUID is now rated: B+.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-05T08:09:00.566Z",
-      "chain": "base",
-      "address": "0x3329c0315f6a0c0787d94755de083ef625fa5b6b",
-      "symbol": "VLTX",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "VLTX is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T07:58:47.427Z",
-      "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T07:59:31.526Z",
-      "chain": "base",
-      "address": "0x8185eaf46136a3f095c60facd97eca1bfc2f38f6",
-      "symbol": "$OLIVIA2.0",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:02:14.459Z",
-      "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:02:14.459Z",
-      "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:02:26.250Z",
-      "chain": "base",
-      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
-      "symbol": "AMETA",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:04:29.694Z",
-      "chain": "base",
-      "address": "0x2100a39f514d8fe3f26963a29b95b030a0a5d4b7",
-      "symbol": "UPONLY",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:06:24.207Z",
-      "chain": "base",
-      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
-      "symbol": "cbXRP",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → F.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:08:09.035Z",
-      "chain": "base",
-      "address": "0x22409cd6f62b90ea2b57acf997011f4490ad5b07",
-      "symbol": "PIPEDOG",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:08:09.035Z",
-      "chain": "base",
-      "address": "0x22409cd6f62b90ea2b57acf997011f4490ad5b07",
-      "symbol": "PIPEDOG",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:08:14.034Z",
-      "chain": "base",
-      "address": "0x3f58e7054fcaa38c74c1f46a5206e479ed995b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:08:14.034Z",
-      "chain": "base",
-      "address": "0x3f58e7054fcaa38c74c1f46a5206e479ed995b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:08:21.045Z",
-      "chain": "base",
-      "address": "0xde2b3d68b593c1c9e0cb6e55cbf289cdf5a5cb07",
-      "symbol": "PIPEDOG",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:08:21.045Z",
-      "chain": "base",
-      "address": "0xde2b3d68b593c1c9e0cb6e55cbf289cdf5a5cb07",
-      "symbol": "PIPEDOG",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-04T08:09:22.186Z",
-      "chain": "base",
-      "address": "0x7649080d56b9a6062378fb26a01a04c840ce7b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T08:45:21.281Z",
-      "chain": "base",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "symbol": "AERO",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state C → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T08:46:43.865Z",
-      "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T08:47:46.241Z",
-      "chain": "base",
-      "address": "0x8185eaf46136a3f095c60facd97eca1bfc2f38f6",
-      "symbol": "$OLIVIA2.0",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T08:51:37.804Z",
-      "chain": "base",
-      "address": "0x90ec58ef4cc9f37b96de1e203b65bd4e6e79580e",
-      "symbol": "AMETA",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T08:52:21.486Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T09:00:14.028Z",
-      "chain": "base",
-      "address": "0x8ad5d75db9447f7300d74a151b9cd24ed1a2cb07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T09:00:22.726Z",
-      "chain": "base",
-      "address": "0xbf8e8f0e8866a7052f948c16508644347c57aba3",
-      "symbol": "aeon",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "aeon is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-03T09:00:25.332Z",
-      "chain": "base",
-      "address": "0xb200000000000000000000e19f18ee4b9d550992",
-      "symbol": "SOAF",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "SOAF is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:42:36.462Z",
-      "chain": "base",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "symbol": "AERO",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:47:17.650Z",
-      "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B+.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:47:17.650Z",
-      "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:48:12.590Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:49:12.437Z",
-      "chain": "base",
-      "address": "0x00000000a22c618fd6b4d7e9a335c4b96b189a38",
-      "symbol": "TOWNS",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:50:18.728Z",
-      "chain": "base",
-      "address": "0x693b8de886712f0039eef578bbe5ac7ea3b598ce",
-      "symbol": "doji",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:51:48.164Z",
-      "chain": "base",
-      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
-      "symbol": "cbXRP",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state F → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:53:23.463Z",
-      "chain": "base",
-      "address": "0xc0f7800a382afde51e930de4b1f130a1d85eeb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:53:30.960Z",
-      "chain": "base",
-      "address": "0xa6977034a44f40949a735844b7e008a8ead4fb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:53:30.960Z",
-      "chain": "base",
-      "address": "0xa6977034a44f40949a735844b7e008a8ead4fb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-02T07:54:32.370Z",
-      "chain": "base",
-      "address": "0xfdcc3dd6671eab0709a4c0f3f53de9a333d80798",
-      "symbol": "SBC",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "SBC is now rated: D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-01T07:45:50.833Z",
-      "chain": "base",
-      "address": "0x00000000a22c618fd6b4d7e9a335c4b96b189a38",
-      "symbol": "TOWNS",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-01T07:48:20.224Z",
-      "chain": "base",
-      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
-      "symbol": "cbXRP",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → F.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-01T07:49:23.042Z",
-      "chain": "base",
-      "address": "0x15c25dab1dfaeb9842dc7ba027fe9b6ac9a28b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-01T07:49:23.042Z",
-      "chain": "base",
-      "address": "0x15c25dab1dfaeb9842dc7ba027fe9b6ac9a28b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-01T07:50:46.950Z",
-      "chain": "base",
-      "address": "0x3c5cd672b204ba0fc48e93b98c0922920a87912d",
-      "symbol": "BSW",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "BSW is now rated: D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-01T07:50:49.352Z",
-      "chain": "base",
-      "address": "0x73adfa3a448d63025d52e39f921369386e4fcb07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "OpenAI is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-08-01T07:50:56.891Z",
-      "chain": "base",
-      "address": "0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
-      "symbol": "TRUST",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "TRUST is now rated: D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-31T08:11:45.763Z",
-      "chain": "base",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "symbol": "AERO",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state C → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-31T08:21:24.685Z",
-      "chain": "base",
-      "address": "0xa6977034a44f40949a735844b7e008a8ead4fb07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "upgrade",
-      "text": "Grade C → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-31T08:21:24.685Z",
-      "chain": "base",
-      "address": "0xa6977034a44f40949a735844b7e008a8ead4fb07",
-      "symbol": "OpenAI",
-      "severity": "INFO",
-      "kind": "cap-cleared",
-      "text": "Hard cap cleared: Top-10 unlabeled holders exceed 50%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-31T08:21:51.041Z",
-      "chain": "base",
-      "address": "0xa4dc42370e21fcf2182d24b39bebb7a5695adb07",
-      "symbol": "PIPEDOG",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "PIPEDOG is now rated: B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-31T08:21:58.849Z",
-      "chain": "base",
-      "address": "0xff0c532fdb8cd566ae169c1cb157ff2bdc83e105",
-      "symbol": "Fren Pet",
-      "severity": "INFO",
-      "kind": "listed",
-      "text": "Fren Pet is now rated: C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:44:47.769Z",
-      "chain": "base",
-      "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
-      "symbol": "cbETH",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:45:14.460Z",
-      "chain": "base",
-      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
-      "symbol": "cbBTC",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:46:22.115Z",
-      "chain": "base",
-      "address": "0xe504c35bb9d276147d476d479bb5a04c60afab07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:46:22.115Z",
-      "chain": "base",
-      "address": "0xe504c35bb9d276147d476d479bb5a04c60afab07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:46:33.466Z",
-      "chain": "base",
-      "address": "0xb3b32f9f8827d4634fe7d973fa1034ec9fddb3b3",
-      "symbol": "B3",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:47:49.502Z",
-      "chain": "base",
-      "address": "0x7297968ffb753dd12e4f6b1f18d9865c76707fc2",
-      "symbol": "ZEST",
-      "severity": "CRITICAL",
-      "kind": "downgrade",
-      "text": "Grade C → D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:47:49.502Z",
-      "chain": "base",
-      "address": "0x7297968ffb753dd12e4f6b1f18d9865c76707fc2",
-      "symbol": "ZEST",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:47:54.246Z",
-      "chain": "base",
-      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
-      "symbol": "SHIB",
-      "severity": "CRITICAL",
-      "kind": "liquidity-security-drop",
-      "text": "Burned/locked share of the dominant pool fell 100% → 0%.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:48:17.231Z",
-      "chain": "base",
-      "address": "0x1111111111166b7fe7bd91427724b487980afc69",
-      "symbol": "ZORA",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:48:33.503Z",
-      "chain": "base",
-      "address": "0x8bfac1b375bf2894d6f12fb2eb48b1c1a7916789",
-      "symbol": "MEY",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:48:42.626Z",
-      "chain": "base",
-      "address": "0x18cd0ef93be7f3bb052885bc2d66947ac7799b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:48:42.626Z",
-      "chain": "base",
-      "address": "0x18cd0ef93be7f3bb052885bc2d66947ac7799b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:00.549Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:00.549Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:00.549Z",
-      "chain": "base",
-      "address": "0xb77fb1083e2544969cc2949912bf5376c1876b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:05.416Z",
-      "chain": "base",
-      "address": "0x3fa0587de2df913ad4f0b5726a1434a4955ffb07",
-      "symbol": "Base",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:05.416Z",
-      "chain": "base",
-      "address": "0x3fa0587de2df913ad4f0b5726a1434a4955ffb07",
-      "symbol": "Base",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:11.113Z",
-      "chain": "base",
-      "address": "0x97be14dd8f994a5364573bc035d85309e7cb34de",
-      "symbol": "JitoSOL",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state C → UR.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:11.113Z",
-      "chain": "base",
-      "address": "0x97be14dd8f994a5364573bc035d85309e7cb34de",
-      "symbol": "JitoSOL",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:15.439Z",
-      "chain": "base",
-      "address": "0x8453cf5dd4840072b5da025ca4c5caa13c192b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:23.708Z",
-      "chain": "base",
-      "address": "0xcb111e6a2a3bde90856d299d61341ac302167d23",
-      "symbol": "cbMEGA",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → F.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:23.708Z",
-      "chain": "base",
-      "address": "0xcb111e6a2a3bde90856d299d61341ac302167d23",
-      "symbol": "cbMEGA",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:37.051Z",
-      "chain": "base",
-      "address": "0xc4aa3dc36ba618eaa0d76a89750430181cfc7b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:37.051Z",
-      "chain": "base",
-      "address": "0xc4aa3dc36ba618eaa0d76a89750430181cfc7b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:40.285Z",
-      "chain": "base",
-      "address": "0xed327e881bdde8a134e6fddcf4a64881f86a3b07",
-      "symbol": "Claude",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:40.285Z",
-      "chain": "base",
-      "address": "0xed327e881bdde8a134e6fddcf4a64881f86a3b07",
-      "symbol": "Claude",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:40.285Z",
-      "chain": "base",
-      "address": "0xed327e881bdde8a134e6fddcf4a64881f86a3b07",
-      "symbol": "Claude",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:56.516Z",
-      "chain": "base",
-      "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
-      "symbol": "CZ",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:56.516Z",
-      "chain": "base",
-      "address": "0xf807e9f329a559e78bc85fde881c739ebaa67b07",
-      "symbol": "CZ",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:59.558Z",
-      "chain": "base",
-      "address": "0x8a6786e0f64736771e34df56b869d4c620870b07",
-      "symbol": "Claude",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:49:59.558Z",
-      "chain": "base",
-      "address": "0x8a6786e0f64736771e34df56b869d4c620870b07",
-      "symbol": "Claude",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:50:24.578Z",
-      "chain": "base",
-      "address": "0x2100a39f514d8fe3f26963a29b95b030a0a5d4b7",
-      "symbol": "UPONLY",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:50:32.293Z",
-      "chain": "base",
-      "address": "0x196f914d0fdc1966378e77dc9a4ca326c70f8b07",
-      "symbol": "TRUMP",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:50:32.293Z",
-      "chain": "base",
-      "address": "0x196f914d0fdc1966378e77dc9a4ca326c70f8b07",
-      "symbol": "TRUMP",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:50:42.623Z",
-      "chain": "base",
-      "address": "0x16b347e253a361303ec7a3c7fb0ab24ee6928b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:50:42.623Z",
-      "chain": "base",
-      "address": "0x16b347e253a361303ec7a3c7fb0ab24ee6928b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:50:49.551Z",
-      "chain": "base",
-      "address": "0xae45b8fae07ffb2e5f4373bfcb6f4bd827a45b07",
-      "symbol": "Gitlawb",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:50:53.972Z",
-      "chain": "base",
-      "address": "0x4c433f4ef87fe506a7eed2fd1d822cbed411eba3",
-      "symbol": "TSG",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:50:53.972Z",
-      "chain": "base",
-      "address": "0x4c433f4ef87fe506a7eed2fd1d822cbed411eba3",
-      "symbol": "TSG",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:00.161Z",
-      "chain": "base",
-      "address": "0x742e4af0e6dfb33c946327d95503c7bc2df34b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:12.597Z",
-      "chain": "base",
-      "address": "0x5399592239c030da026b58e4a0a45918895c6b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:12.597Z",
-      "chain": "base",
-      "address": "0x5399592239c030da026b58e4a0a45918895c6b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:26.125Z",
-      "chain": "base",
-      "address": "0xb2008bc0163db6117f212b04ae1ebdf55cd2400b",
-      "symbol": "BRIAN",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:26.125Z",
-      "chain": "base",
-      "address": "0xb2008bc0163db6117f212b04ae1ebdf55cd2400b",
-      "symbol": "BRIAN",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:34.522Z",
-      "chain": "base",
-      "address": "0x9c5c4237e53024a4fe722334af6d62990bddbb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:34.522Z",
-      "chain": "base",
-      "address": "0x9c5c4237e53024a4fe722334af6d62990bddbb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:37.970Z",
-      "chain": "base",
-      "address": "0x33417dfda9845853266b3ba4686a397aa0ae8b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:37.970Z",
-      "chain": "base",
-      "address": "0x33417dfda9845853266b3ba4686a397aa0ae8b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:41.213Z",
-      "chain": "base",
-      "address": "0x4ac963e04eccd97a98bbe6bcb6d3bc2a649e0b07",
-      "symbol": "Claude",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:41.213Z",
-      "chain": "base",
-      "address": "0x4ac963e04eccd97a98bbe6bcb6d3bc2a649e0b07",
-      "symbol": "Claude",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:48.712Z",
-      "chain": "base",
-      "address": "0xfd15909c86bcd27f195b0b9f9a791c17eb87eb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:51:48.712Z",
-      "chain": "base",
-      "address": "0xfd15909c86bcd27f195b0b9f9a791c17eb87eb07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:52:00.582Z",
-      "chain": "base",
-      "address": "0x9b5e262cf9bb04869ab40b19af91d2dc85761722",
-      "symbol": "NOCK",
-      "severity": "WARN",
-      "kind": "grade-state",
-      "text": "Grade state UR → D.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:52:23.722Z",
-      "chain": "base",
-      "address": "0xd82e82caa2bf63b9ec72548358bb5a90651c9b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:52:23.722Z",
-      "chain": "base",
-      "address": "0xd82e82caa2bf63b9ec72548358bb5a90651c9b07",
-      "symbol": "OpenAI",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:52:35.006Z",
-      "chain": "base",
-      "address": "0x22af33fe49fd1fa80c7149773dde5890d3c76f3b",
-      "symbol": "BNKR",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:52:42.084Z",
-      "chain": "base",
-      "address": "0xc674c13f12b506419cc236661e69487d5a019054",
-      "symbol": "Robinhood",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:52:42.084Z",
-      "chain": "base",
-      "address": "0xc674c13f12b506419cc236661e69487d5a019054",
-      "symbol": "Robinhood",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-07-30T07:52:46.653Z",
-      "chain": "base",
-      "address": "0x10d991b3f8f04d552597d95de80d86fc29a77b07",
-      "symbol": "VBEEF",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
       "evidence": null
     }
   ]

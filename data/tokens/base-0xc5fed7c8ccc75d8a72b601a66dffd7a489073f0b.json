@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ACU",
   "name": "ACU",
-  "scanned_at": "2026-08-19T06:19:09.516Z",
+  "scanned_at": "2026-08-20T06:16:06.085Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 71.8,
+    "letter": "B",
+    "overall": 75.5,
     "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,18 +66,18 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x6d76a0f856a2ba951DA45Da9be399509Ad602e6A"
+            "pair": "0x7feEd89be48f937E131f764EF01a2AC02ceC31f8"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -89,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "1781314999283000000",
+    "totalSupply": "1764583437989000000",
     "decimals": 12,
     "owner": "0x9e13175e8b541fe9d43268807d5ac52305422a94",
     "controlType": "safe",
@@ -110,32 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 271,
-    "liquidityUsd": 251179.84,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 224734.43,
     "pools": [
-      {
-        "pair": "0x7f317a51d5fa4f879c76c675260da2de35765b87006f8e6045e937c41eb1d72d",
-        "dex": "uniswap",
-        "liquidityUsd": 15065.89,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x7feEd89be48f937E131f764EF01a2AC02ceC31f8",
         "dex": "pancakeswap",
-        "liquidityUsd": 4954.6,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x823267235953825559697e69d6e26c46b9b83fc81ffd5bafe1c8daf353e35d7c",
-        "dex": "uniswap",
-        "liquidityUsd": 94.63,
+        "liquidityUsd": 196266.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,14 +121,41 @@
       {
         "pair": "0x6d76a0f856a2ba951DA45Da9be399509Ad602e6A",
         "dex": "aerodrome",
-        "liquidityUsd": 231064.72,
+        "liquidityUsd": 12183.05,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7f317a51d5fa4f879c76c675260da2de35765b87006f8e6045e937c41eb1d72d",
+        "dex": "uniswap",
+        "liquidityUsd": 16173.51,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x823267235953825559697e69d6e26c46b9b83fc81ffd5bafe1c8daf353e35d7c",
+        "dex": "uniswap",
+        "liquidityUsd": 110.38,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4140af4b6094bf8e28fad359e8e54e6cd360312c41e8c0829a379d5edaedd75a",
+        "dex": "uniswap",
+        "liquidityUsd": 0.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 11.95,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://acurast.com/",

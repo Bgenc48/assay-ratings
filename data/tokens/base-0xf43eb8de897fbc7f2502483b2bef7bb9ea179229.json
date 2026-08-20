@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ZEN",
   "name": "Horizen",
-  "scanned_at": "2026-08-19T05:57:10.314Z",
+  "scanned_at": "2026-08-20T05:58:58.392Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 42.5,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 53.2% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -99,11 +92,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -124,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 2784384.7600000002,
+    "liquidityUsd": 3111761.98,
     "pools": [
       {
         "pair": "0x0392B12a1cEb0cd13af5Ea448CF5586EA609852D",
         "dex": "aerodrome",
-        "liquidityUsd": 1737468.47,
+        "liquidityUsd": 1980790.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +128,7 @@
       {
         "pair": "0x47f9e291bb766Fc307Ad7BBa4f29f3Eab6A97101",
         "dex": "aerodrome",
-        "liquidityUsd": 1017380.09,
+        "liquidityUsd": 1108841.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +137,7 @@
       {
         "pair": "0xbFA5184f90B071C34C85d065b8c7877617248ef7",
         "dex": "aerodrome",
-        "liquidityUsd": 19957.66,
+        "liquidityUsd": 12633.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,7 +146,7 @@
       {
         "pair": "0x91a6E9dc63cab9e52f29F712D688E845dD01a5fe",
         "dex": "uniswap",
-        "liquidityUsd": 6048.86,
+        "liquidityUsd": 6357.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -167,7 +155,7 @@
       {
         "pair": "0x415233bF9B9156d4f777d580E67C0a4e398A84C3",
         "dex": "hydrex",
-        "liquidityUsd": 1967.18,
+        "liquidityUsd": 2126.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -176,32 +164,32 @@
       {
         "pair": "0xD1291750B30ca46587aA533C68a470F13bE5cbC9",
         "dex": "aerodrome",
-        "liquidityUsd": 854.92,
+        "liquidityUsd": 895.1,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb003177E36ee0b8d3624DD2c5AF1CA15b175c8B9",
-        "dex": "pancakeswap",
-        "liquidityUsd": 644.73,
+        "pair": "0x99D5434Eb5FC88D00311Ad89BC7946BD439Ba14d",
+        "dex": "aerodrome",
+        "liquidityUsd": 69.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x99D5434Eb5FC88D00311Ad89BC7946BD439Ba14d",
+        "pair": "0x699e3dFc812b1d9Cc34770CFA3C6ef9925bC1756",
         "dex": "aerodrome",
-        "liquidityUsd": 62.85,
+        "liquidityUsd": 47.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 53.24,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.horizen.io/"

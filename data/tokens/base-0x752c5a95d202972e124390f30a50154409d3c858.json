@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "OFC",
   "name": "OFC",
-  "scanned_at": "2026-08-19T05:55:23.727Z",
+  "scanned_at": "2026-08-20T05:56:14.341Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 57.9,
+    "overall": 64.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,19 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 146 days old; trust needs time (Provisional).",
-          "evidence": "0x2884eb650a86637ba702a63790ca91e0a415271de847e452766d08a1c84375a8"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -117,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 146,
-    "liquidityUsd": 214507.50999999998,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 209507.34,
     "pools": [
       {
         "pair": "0x44b5D0d8ce8C643c7e217E92492621C4c0Ae3121",
         "dex": "aerodrome",
-        "liquidityUsd": 191272.24,
+        "liquidityUsd": 186669.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,27 +121,41 @@
       {
         "pair": "0x66E1031dB440890a824F0dB80489Be979BD16a86",
         "dex": "aerodrome",
-        "liquidityUsd": 23222.49,
+        "liquidityUsd": 22801.71,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x05a2c175ba2d4c53bf2eb463e0101fdd0ebda44b",
-          "sharePct": 258.15
-        }
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xdd4e9067e258d5dafaa1089a041b13650f2a7cefb44c6bcd8b4e508a46166fa7",
+        "dex": "uniswap",
+        "liquidityUsd": 18.93,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xf57dbade9f581b2631576fdbfcc08ebac1e9706927414194484df60ce2fce569",
         "dex": "uniswap",
-        "liquidityUsd": 12.78,
+        "liquidityUsd": 12.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa4aa254f455aa856eb8767ee49ea8b437cc9cac1e7697d8d2516a947859caf14",
+        "dex": "uniswap",
+        "liquidityUsd": 4.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 26.51,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://club.onefootball.com/",

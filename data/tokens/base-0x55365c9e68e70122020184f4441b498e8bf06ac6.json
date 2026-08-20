@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "QWLA",
   "name": "Qawalla Token",
-  "scanned_at": "2026-08-19T05:56:22.020Z",
+  "scanned_at": "2026-08-20T05:57:34.841Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 42.5,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 70.3% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -99,11 +92,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -126,19 +114,19 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 160879.29,
+    "liquidityUsd": 189093.52,
     "pools": [
       {
         "pair": "0x551d9C1bFdd3f9De16A355fB44577bDa59eBfeF1",
         "dex": "uniswap",
-        "liquidityUsd": 160879.29,
+        "liquidityUsd": 189093.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 70.32,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

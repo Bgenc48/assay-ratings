@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MTR",
   "name": "Matter",
-  "scanned_at": "2026-08-19T06:08:12.520Z",
+  "scanned_at": "2026-08-20T06:08:30.173Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 47.1,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 49 days old; trust needs time (Provisional).",
-          "evidence": "0xde3c68d0e9783038831906bbf02c96b0e6120d041c54b9fe72321a546e07a37f"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -106,11 +92,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -131,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 49,
-    "liquidityUsd": 1273173.8399999999,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 1326468.26,
     "pools": [
       {
         "pair": "0xFd0b8dDc4f1F03069ACd8c35C2319f8BA4ec88b5",
         "dex": "uniswap",
-        "liquidityUsd": 17595.44,
+        "liquidityUsd": 17895.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,7 +128,7 @@
       {
         "pair": "0x93ecc1773d617Eb9e921a9A7e9a13a1C83Ca2A2e",
         "dex": "aerodrome",
-        "liquidityUsd": 1246502.95,
+        "liquidityUsd": 1298920.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -156,14 +137,14 @@
       {
         "pair": "0x5e03Cb47130B9a81534Efd935b48399c3b64F1BF",
         "dex": "aerodrome",
-        "liquidityUsd": 9075.45,
+        "liquidityUsd": 9651.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

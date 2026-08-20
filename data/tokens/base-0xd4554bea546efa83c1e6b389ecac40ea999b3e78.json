@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SQD",
   "name": "Subsquid",
-  "scanned_at": "2026-08-19T06:19:33.017Z",
+  "scanned_at": "2026-08-20T06:16:35.819Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "F",
-    "overall": 38.8,
-    "provisional": false,
+    "letter": "D",
+    "overall": 41.8,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -57,40 +57,29 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 0,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.rug-ready",
-          "severity": "crit",
-          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E",
-            "lpDominantHolder": {
-              "address": "0xe73018acd78b88519c1ed78c4f7171082d05a6a7",
-              "sharePct": 123.47
-            }
+            "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 59.1% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -103,21 +92,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.rug-ready",
-      "letter": "D",
-      "reason": "Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E (LP holder 0xe73018acd78b88519c1ed78c4f7171082d05a6a7, 123.47% of that pool)."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
     },
     {
       "id": "cap.claim-light",
@@ -138,38 +112,39 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 635,
-    "liquidityUsd": 272476.37000000005,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 278136.28,
     "pools": [
       {
         "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E",
         "dex": "aerodrome",
-        "liquidityUsd": 267558.34,
+        "liquidityUsd": 268669.58,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0xe73018acd78b88519c1ed78c4f7171082d05a6a7",
-          "sharePct": 123.47
-        }
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xCe62141227cfd3Fe8d715F403B99F0377C0C16C6",
+        "dex": "aerodrome",
+        "liquidityUsd": 4493.62,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x7f1d9e5a75FB96033152f9E519C838149916b793",
         "dex": "aerodrome",
-        "liquidityUsd": 4918.03,
+        "liquidityUsd": 4973.08,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x9d0d34871984522b163e53d6eb6162338b5baca7",
-          "sharePct": 124.59
-        }
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 59.1,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://sqdgn.ai/"

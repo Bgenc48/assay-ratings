@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TITN",
   "name": "Titan",
-  "scanned_at": "2026-08-19T06:08:51.109Z",
+  "scanned_at": "2026-08-20T06:08:53.824Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B",
-    "overall": 75.4,
-    "provisional": false,
+    "overall": 75.5,
+    "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -89,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "931422650505386000000000000",
+    "totalSupply": "931447906601251000000000000",
     "decimals": 18,
     "owner": "0x68fbde17200f69d0d17e2a858c79c264ee7bcea9",
     "controlType": "safe",
@@ -111,13 +106,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": null,
-    "ageDays": 400,
-    "liquidityUsd": 274878.15,
+    "ageDays": null,
+    "liquidityUsd": 275387.17000000004,
     "pools": [
       {
         "pair": "0x611865e603862a3D1cd29146458564a684e1cBbb",
         "dex": "aerodrome",
-        "liquidityUsd": 241153.41,
+        "liquidityUsd": 241598.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,23 +121,45 @@
       {
         "pair": "0x50b5d6f6ACCDCc7Dc048de35B2B9Ba5FdD5a283e",
         "dex": "aerodrome",
-        "liquidityUsd": 33708.37,
+        "liquidityUsd": 33729.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0xad1fdf3bc14ee4258075bcadfaea5933489b07dbc4d1a7c1076bf915a5bfd8fe",
+        "dex": "uniswap",
+        "liquidityUsd": 35.83,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe63c331771CF2c7C35DdAf65dCFb5f62041eEeE4",
+        "dex": "aerodrome",
+        "liquidityUsd": 6.19,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x2c187aa1f4285034e73b4e4018420424405547f2",
+          "sharePct": 99.99
+        }
+      },
+      {
         "pair": "0xfe2313df3e27aD2608B16230695d835E18d409f4",
         "dex": "aerodrome",
-        "liquidityUsd": 16.37,
+        "liquidityUsd": 17.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 10.02,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "VBEEF",
   "name": "Virtual Beef",
-  "scanned_at": "2026-08-19T06:07:18.128Z",
+  "scanned_at": "2026-08-20T06:07:22.811Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,39 +61,22 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x669a9a318d547cb609687f50326fbaf1cece9e2ff540e3638fec89a037e8643e"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 26 days old; trust needs time (Provisional).",
-          "evidence": "0x319348ad7bf3f98fe7324a393ed384c9ebab3040963b9431b7e180cdc424c8c6"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -102,11 +85,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -126,21 +104,11 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 26,
-    "liquidityUsd": 45034.88,
-    "pools": [
-      {
-        "pair": "0x669a9a318d547cb609687f50326fbaf1cece9e2ff540e3638fec89a037e8643e",
-        "dex": "uniswap",
-        "liquidityUsd": 45034.88,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": 0,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

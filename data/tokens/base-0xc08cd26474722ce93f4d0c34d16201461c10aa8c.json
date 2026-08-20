@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "CARV",
   "name": "CARV",
-  "scanned_at": "2026-08-19T06:18:04.219Z",
+  "scanned_at": "2026-08-20T06:15:16.743Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
-    "provisional": false,
+    "letter": "B",
+    "overall": 75.5,
+    "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 68.9% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -96,16 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -113,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "559043765248343000000000000",
+    "totalSupply": "559128826578790000000000000",
     "decimals": 18,
     "owner": "0xa92b9adf01279e22c26789608e98ecc27da6f741",
     "controlType": "safe",
@@ -122,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 719,
-    "liquidityUsd": 315171.31000000006,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 324513.5900000001,
     "pools": [
       {
         "pair": "0xff862675c47B6a2C9072DCBe2f37a78A445c4f37",
         "dex": "aerodrome",
-        "liquidityUsd": 232459.25,
+        "liquidityUsd": 235870.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +121,7 @@
       {
         "pair": "0x4b241E7E1Ba2D76c888aaACb6F099b42F57Aec2b",
         "dex": "aerodrome",
-        "liquidityUsd": 80892.39,
+        "liquidityUsd": 86484.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,7 +130,7 @@
       {
         "pair": "0x23036ec2Ed7d2f1B2490c6f9C32494066A7d56fb",
         "dex": "uniswap",
-        "liquidityUsd": 1767.65,
+        "liquidityUsd": 2101.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -156,27 +139,32 @@
       {
         "pair": "0xbe54ED1762172820d088aa676a8E2947AeEB10b0",
         "dex": "aerodrome",
-        "liquidityUsd": 25.56,
+        "liquidityUsd": 26.53,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x9a0575dc06c6514729c5e8c19369de2f7ef3659a",
-          "sharePct": 1413.6
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x3E83D211D2ca52DB3Cf51d9540C979CAC298Aa1B",
         "dex": "hydrex",
-        "liquidityUsd": 26.46,
+        "liquidityUsd": 26.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0763a94f1f6dbc3cca0f453263856e7de4f3b775fc6db757dbc0664751cc12c8",
+        "dex": "uniswap",
+        "liquidityUsd": 3.98,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 68.86,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://carv.io/"

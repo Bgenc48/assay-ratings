@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "TREX",
   "name": "Google T-REX",
-  "scanned_at": "2026-08-19T06:23:03.993Z",
+  "scanned_at": "2026-08-20T06:19:37.954Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -107,11 +101,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -128,14 +117,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 29116.12,
+    "liquidityUsd": 21807.680000000004,
     "pools": [
       {
         "pair": "0x4da1C1426B4EFa76343A08DC44e3596270340913",
         "dex": "uniswap",
-        "liquidityUsd": 28481.19,
+        "liquidityUsd": 21279.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +133,7 @@
       {
         "pair": "0x5513529fc3c1e18734b8e8c2b78dff0fc935108f200b85d41f68ed360467f924",
         "dex": "uniswap",
-        "liquidityUsd": 78.25,
+        "liquidityUsd": 66.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +142,7 @@
       {
         "pair": "0x09738d86b2463be1602c2fa1a9db914761bd366dcbcb7a125f9aabf1f1cf813b",
         "dex": "uniswap",
-        "liquidityUsd": 363.77,
+        "liquidityUsd": 352.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +151,16 @@
       {
         "pair": "0x533a59d418bab22f6b37a7deacc143d64d9a09214600d75bc9a6357ced7fe2dc",
         "dex": "uniswap",
-        "liquidityUsd": 114.49,
+        "liquidityUsd": 60.34,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa393cd10def3ef6e956873af6ae83de84bc382c0eca19a8d2563c03304f6b13f",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +169,7 @@
       {
         "pair": "0x8cc35e05d1052c87f364e5680e1413511c195ecf385812935b18376ecf5ec834",
         "dex": "uniswap",
-        "liquidityUsd": 56.6,
+        "liquidityUsd": 26.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,7 +178,7 @@
       {
         "pair": "0x7cedb478dd34478e06f8e37d6a6b389da2d7c6f74da7d212829b86221ab0b56d",
         "dex": "uniswap",
-        "liquidityUsd": 21.82,
+        "liquidityUsd": 20.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

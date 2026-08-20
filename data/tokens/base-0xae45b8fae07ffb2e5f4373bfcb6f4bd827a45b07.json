@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "Gitlawb",
   "name": "Gitlawb",
-  "scanned_at": "2026-08-19T06:02:11.379Z",
+  "scanned_at": "2026-08-20T06:02:56.043Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 64.2,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -74,16 +74,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 99.9% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -92,11 +85,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -120,7 +108,7 @@
     "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": 99.87,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

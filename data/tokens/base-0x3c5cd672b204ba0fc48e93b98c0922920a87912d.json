@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BSW",
   "name": "Lydia",
-  "scanned_at": "2026-08-19T06:12:32.059Z",
+  "scanned_at": "2026-08-20T06:12:01.234Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 43.6,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,19 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 41 days old; trust needs time (Provisional).",
-          "evidence": "0xae56197b7a452c2701cde5c3ae3889870ed623fce9254257704ad7046504d1ac"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -99,11 +92,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -127,8 +115,8 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 41,
+    "verifiedSource": null,
+    "ageDays": null,
     "liquidityUsd": null,
     "pools": [
       {
@@ -141,7 +129,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 22.48,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

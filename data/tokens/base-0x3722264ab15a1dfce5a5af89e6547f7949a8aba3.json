@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "LFI",
   "name": "LienFi",
-  "scanned_at": "2026-08-19T06:22:43.294Z",
+  "scanned_at": "2026-08-20T06:19:26.569Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 63.1,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -78,16 +72,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 110 days old; trust needs time (Provisional).",
-          "evidence": "0xe84a138895ca31629a91804dbfcd550498b933109793e66788a3b5f71f366a72"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": null,
@@ -101,16 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -128,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 110,
-    "liquidityUsd": 775620.8300000001,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 810993.26,
     "pools": [
       {
         "pair": "0x6ef02666f150d9649655b884e043b61b0990fad9be4c632d0c7568bb24da9367",
         "dex": "uniswap",
-        "liquidityUsd": 516731.07,
+        "liquidityUsd": 568901.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +121,7 @@
       {
         "pair": "0x8343C68279587498526114e6385F0a87f248E0D9",
         "dex": "aerodrome",
-        "liquidityUsd": 126869.66,
+        "liquidityUsd": 118127.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,16 +130,7 @@
       {
         "pair": "0x588f68b9fA04366F33f8Ce095C13F0cebaB9406a",
         "dex": "uniswap",
-        "liquidityUsd": 93734.49,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x53ab4c60ff04b782F630A8685af95404f099aAFD",
-        "dex": "hydrex",
-        "liquidityUsd": 23498.28,
+        "liquidityUsd": 108753.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +139,16 @@
       {
         "pair": "0x24c0F6B57b4A6dAF685986F7E371B7628fc64FD6",
         "dex": "hydrex",
-        "liquidityUsd": 14196.53,
+        "liquidityUsd": 9666.82,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x53ab4c60ff04b782F630A8685af95404f099aAFD",
+        "dex": "hydrex",
+        "liquidityUsd": 4930.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,7 +157,7 @@
       {
         "pair": "0x41932EA9b35Bd2e663678Dfca8228498A05A3689",
         "dex": "pancakeswap",
-        "liquidityUsd": 396.51,
+        "liquidityUsd": 406.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -189,7 +166,7 @@
       {
         "pair": "0x7D55dcABc41626818e52d6289bf4b9A71a04D13A",
         "dex": "pancakeswap",
-        "liquidityUsd": 69.4,
+        "liquidityUsd": 78.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -198,7 +175,7 @@
       {
         "pair": "0xfcf482c993b53342f6a9307d2fbeff710872787165728e6de1beb43d1f825d67",
         "dex": "uniswap",
-        "liquidityUsd": 124.89,
+        "liquidityUsd": 128.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

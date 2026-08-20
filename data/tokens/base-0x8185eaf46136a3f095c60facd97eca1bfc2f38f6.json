@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "$OLIVIA2.0",
   "name": "Olivia AI 2.0",
-  "scanned_at": "2026-08-19T05:52:25.854Z",
+  "scanned_at": "2026-08-20T05:52:27.380Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 58.6,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 100 days old; trust needs time (Provisional).",
-          "evidence": "0xc870d7047228d0b34991eff702b6e9d0d4edfe37b3cc688d962a417c7f1f53f4"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 96.1% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -102,16 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -131,21 +107,30 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 100,
-    "liquidityUsd": 881491.29,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 621012.53,
     "pools": [
       {
         "pair": "0x3E117EB37d0dB3016F4f0CC79F6cE7c648d64E00",
         "dex": "uniswap",
-        "liquidityUsd": 881491.29,
+        "liquidityUsd": 621012.53,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x15ed857e9e6e4baa5deab5007a9a9fcefa483ca87bdf25b120c9366b27a442a9",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 96.13,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

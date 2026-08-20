@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TSLA",
   "name": "Tesla - Tokenized on Base",
-  "scanned_at": "2026-08-19T06:23:46.195Z",
+  "scanned_at": "2026-08-20T06:20:48.110Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 81.5,
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 7 days old; trust needs time (Provisional).",
-          "evidence": "0x5fd8c046289ec5792e94fbb1d132b010cb23d8d54ce25c78ac68209d4abbff10"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": null,
@@ -100,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -122,14 +110,32 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 7,
-    "liquidityUsd": 349391.16,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 1024529.35,
     "pools": [
       {
         "pair": "0xE49B3f5614a926b5f468c9ee340343d1bb59C507",
         "dex": "uniswap",
-        "liquidityUsd": 349391.16,
+        "liquidityUsd": 1024529.35,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4cbbb11f301f00f16d659f731c3c8b37e1f308d77bb03f1668d978747188f9dc",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4def7eca50af21496363e59d376870460fbf6cbbc504318945caf4cdc55fcf9e",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

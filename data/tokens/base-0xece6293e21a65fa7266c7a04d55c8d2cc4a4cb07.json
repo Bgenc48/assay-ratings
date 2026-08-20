@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "牛来",
   "name": "牛来",
-  "scanned_at": "2026-08-19T06:22:28.180Z",
+  "scanned_at": "2026-08-20T06:19:14.423Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x8fFe96c9926f668A4843863E585c6EE2ffEfB8bA"
+            "pair": "0x669a15ddf0007dcaed549b754d43ef32c5c31d0650095e7699d644211d280cff"
           }
         }
       ]
@@ -107,23 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1.79,
+    "liquidityUsd": 0.18,
     "pools": [
       {
         "pair": "0x669a15ddf0007dcaed549b754d43ef32c5c31d0650095e7699d644211d280cff",
         "dex": "uniswap",
-        "liquidityUsd": 0.2,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8fFe96c9926f668A4843863E585c6EE2ffEfB8bA",
-        "dex": "aerodrome",
-        "liquidityUsd": 1.59,
+        "liquidityUsd": 0.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

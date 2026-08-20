@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "VVVeity",
   "name": "Venice Deity",
-  "scanned_at": "2026-08-19T06:22:03.790Z",
+  "scanned_at": "2026-08-20T06:19:01.605Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 78 days old; trust needs time (Provisional).",
-          "evidence": "0x6afb49ab592996a177b512dae9432f80d0bd53f11fe3ce0eebcb339192703a7a"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.4%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -102,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -124,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 78,
-    "liquidityUsd": 65265.920000000006,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 118488.09,
     "pools": [
       {
         "pair": "0x123e50d024df1e6fe41347850a5695918242927b4e2623d2b97625248ccd2c20",
         "dex": "uniswap",
-        "liquidityUsd": 65108.91,
+        "liquidityUsd": 92289.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,16 +121,7 @@
       {
         "pair": "0xdD468c77a2CD3E9241a3c75B6f5452b9d1E2fF35",
         "dex": "uniswap",
-        "liquidityUsd": 82.79,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xddee2e1ee10d5b161ea9c96737e58eced31eec8a2e745b05eef53dfaa559dc0b",
-        "dex": "uniswap",
-        "liquidityUsd": 59.74,
+        "liquidityUsd": 82.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,16 +130,7 @@
       {
         "pair": "0xb5cb3780769f1af57ab361ffda0882b7787ea3e5cf566d8dcf03de228ad7e585",
         "dex": "uniswap",
-        "liquidityUsd": 1.54,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3183faef79315d94aa30999d6aa081cfcd81a10295092bbdb24e3a89ae3123b4",
-        "dex": "uniswap",
-        "liquidityUsd": 8.94,
+        "liquidityUsd": 2.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -176,7 +139,7 @@
       {
         "pair": "0x3f901e7deface6e8b82415292f69489741942d86c74b915dbd09d0e8898ca751",
         "dex": "uniswap",
-        "liquidityUsd": 1.29,
+        "liquidityUsd": 1.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -185,23 +148,41 @@
       {
         "pair": "0x41aed8183af4d1104e47ae64ae9b3c9dbba04c7b715da84f831117f73ed21f19",
         "dex": "uniswap",
-        "liquidityUsd": 1.29,
+        "liquidityUsd": 1.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xbc90962a54d441e100e4d1bcc68e0367299c65758e2d2070b3ad5f4be30a8cf9",
+        "pair": "0x3cafc50fd5cd8c134b2cc1420a18eed806458326099b3f209bd2cf3078f88e63",
         "dex": "uniswap",
-        "liquidityUsd": 1.42,
+        "liquidityUsd": 0.53,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3183faef79315d94aa30999d6aa081cfcd81a10295092bbdb24e3a89ae3123b4",
+        "dex": "uniswap",
+        "liquidityUsd": 8.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd9688cbda92695788e7394415847e7435cda085c7c45b71ccba23aa28c246f2c",
+        "dex": "uniswap",
+        "liquidityUsd": 26101.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 7.42,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.vvveity.com/",
