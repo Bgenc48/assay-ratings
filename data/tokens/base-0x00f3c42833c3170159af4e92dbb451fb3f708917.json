@@ -1,0 +1,152 @@
+{
+  "address": "0x00f3c42833c3170159af4e92dbb451fb3f708917",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "ICP",
+  "name": "ICP",
+  "scanned_at": "2026-08-21T06:22:00.317Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "F",
+    "overall": 28.2,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.eoa-mint",
+          "severity": "crit",
+          "text": "A mint path exists and its controller is an externally-owned account. Supply can be inflated unilaterally.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 25,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.eoa",
+          "severity": "crit",
+          "text": "Material admin powers are held by a single externally-owned account.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xBe762d548f8CA86A78E9Da6e3DdC87F91457e398"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.eoa-mint",
+      "letter": "F",
+      "reason": "Mint or issuance is controlled by an externally-owned account."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "25571353276421",
+    "decimals": 8,
+    "owner": "0x70ae25592209b57f62b3a3e832ab356228a2192c",
+    "controlType": "eoa",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [
+      "mint(address,uint256)"
+    ],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 467976.21,
+    "pools": [
+      {
+        "pair": "0xBe762d548f8CA86A78E9Da6e3DdC87F91457e398",
+        "dex": "aerodrome",
+        "liquidityUsd": 467945.45,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7bF0A9e81b51331DbFe96997E09e5d1C717E2FA6",
+        "dex": "aerodrome",
+        "liquidityUsd": 23.25,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x00059bB264031930CF5267D2d40FFB15cCC15a2C",
+        "dex": "aerodrome",
+        "liquidityUsd": 7.51,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": null
+  },
+  "notes": null,
+  "coi": false
+}

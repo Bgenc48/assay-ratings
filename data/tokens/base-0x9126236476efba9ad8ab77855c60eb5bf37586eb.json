@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CHECK",
   "name": "Checkmate",
-  "scanned_at": "2026-08-20T05:57:13.827Z",
+  "scanned_at": "2026-08-21T05:58:20.094Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -107,12 +107,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 37799.259999999995,
+    "liquidityUsd": 46672.63,
     "pools": [
       {
         "pair": "0x5a7B4970B2610aEe4776A6944d9F2171EE6060B0",
         "dex": "aerodrome",
-        "liquidityUsd": 33298.21,
+        "liquidityUsd": 27496.46,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xAc2733cbbA38DFf6fd94c7a751f3C26A3F10B1BC",
+        "dex": "uniswap",
+        "liquidityUsd": 12892.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +130,16 @@
       {
         "pair": "0x3c4384F3664B37A3Cb5A5cB3452B4B4A3Aa1256f",
         "dex": "aerodrome",
-        "liquidityUsd": 2703.67,
+        "liquidityUsd": 2746.47,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf0125d06B76CEbC2Ab3831A938E07Ab6988B00c9",
+        "dex": "aerodrome",
+        "liquidityUsd": 1857.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,25 +148,7 @@
       {
         "pair": "0xB5a64B150730b6c475CDC9C40632CE1D1ebf3ceC",
         "dex": "aerodrome",
-        "liquidityUsd": 1084.57,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x2d3C6d02b9A6D29b2ECCBec7B26BDA41836E1182",
-        "dex": "aerodrome",
-        "liquidityUsd": 272.49,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3f985184335BD9e0A4774C79668Ce57EE2AaCFe2",
-        "dex": "aerodrome",
-        "liquidityUsd": 212.55,
+        "liquidityUsd": 1005.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,28 +157,28 @@
       {
         "pair": "0xD4E145Efdbbbb97CE8C23d4C0Fd59C902Bc34dFa",
         "dex": "aerodrome",
-        "liquidityUsd": 119.29,
+        "liquidityUsd": 120.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x567b69f72c0a2689C9be0cfBa576Af3CAA896Cb2",
-        "dex": "hydrex",
-        "liquidityUsd": 86.14,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x0E7D30b7532A48D66b49eE193feb0c8128608fDa",
+        "pair": "0x2d3C6d02b9A6D29b2ECCBec7B26BDA41836E1182",
         "dex": "aerodrome",
-        "liquidityUsd": 22.34,
+        "liquidityUsd": 277.39,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3f985184335BD9e0A4774C79668Ce57EE2AaCFe2",
+        "dex": "aerodrome",
+        "liquidityUsd": 275.56,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],

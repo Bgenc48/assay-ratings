@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ARAIL",
   "name": "AssetRail",
-  "scanned_at": "2026-08-20T06:04:15.319Z",
+  "scanned_at": "2026-08-21T06:06:10.399Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -79,9 +79,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 55.4% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -90,6 +97,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -111,7 +123,7 @@
     "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": null,
+    "top10Pct": 55.43,
     "projectLinks": null
   },
   "notes": null,

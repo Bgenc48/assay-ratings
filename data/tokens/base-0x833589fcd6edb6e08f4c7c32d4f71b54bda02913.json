@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "USDC",
   "name": "USD Coin",
-  "scanned_at": "2026-08-20T05:49:30.370Z",
+  "scanned_at": "2026-08-21T05:50:46.143Z",
   "methodology_version": "0.2.1",
   "profile": "fiat-stablecoin",
   "grade": {
@@ -130,7 +130,7 @@
     }
   ],
   "facts": {
-    "totalSupply": "4229694881101734",
+    "totalSupply": "4269608349725726",
     "decimals": 6,
     "owner": "0x3abd6f64a422225e61e435bae41db12096106df7",
     "controlType": "eoa",
@@ -146,30 +146,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 304630.01,
+    "liquidityUsd": 343162.01,
     "pools": [
-      {
-        "pair": "0x0E635F8EeED4F7279d56692D552F034ECE136019",
-        "dex": "alien-base",
-        "liquidityUsd": 127253.67,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x5D0bC342178C8Fe2c2f9A9fcC9D52555C99936db",
         "dex": "quickswap",
-        "liquidityUsd": 82371.01,
+        "liquidityUsd": 114323.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x867dbb1b6417abcb3696d5a5d9cc38cbf9f0f6d17355515fe1c8303e791832c4",
-        "dex": "uniswap",
-        "liquidityUsd": 21303.58,
+        "pair": "0x0E635F8EeED4F7279d56692D552F034ECE136019",
+        "dex": "alien-base",
+        "liquidityUsd": 127300.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,7 +169,7 @@
       {
         "pair": "0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD",
         "dex": "aerodrome",
-        "liquidityUsd": 33291.14,
+        "liquidityUsd": 33042.37,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -187,7 +178,16 @@
       {
         "pair": "0x06959273E9A65433De71F5A452D529544E07dDD0",
         "dex": "uniswap",
-        "liquidityUsd": 12077.26,
+        "liquidityUsd": 12081.77,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x867dbb1b6417abcb3696d5a5d9cc38cbf9f0f6d17355515fe1c8303e791832c4",
+        "dex": "uniswap",
+        "liquidityUsd": 21307.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -196,7 +196,7 @@
       {
         "pair": "0x29Ed55B18Af0Add137952CB3E29FB77B32fCE426",
         "dex": "pancakeswap",
-        "liquidityUsd": 15061.87,
+        "liquidityUsd": 15066.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -205,19 +205,19 @@
       {
         "pair": "0xdac0f353d884f6e0db833036558a9f225eda392f4d1ff1a61f13c8f7875186bf",
         "dex": "uniswap",
-        "liquidityUsd": 11911.07,
+        "liquidityUsd": 11913.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x7a8D53466144e1f75De2e70EC908e18F771b49fB",
-        "dex": "solidlycom",
-        "liquidityUsd": 1360.41,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "pair": "0x96508AE8037c6bD16162620187691F1c1e3e07C1",
+        "dex": "aerodrome",
+        "liquidityUsd": 8124.85,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],

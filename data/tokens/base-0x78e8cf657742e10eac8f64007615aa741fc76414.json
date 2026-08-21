@@ -1,0 +1,164 @@
+{
+  "address": "0x78e8cf657742e10eac8f64007615aa741fc76414",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "USDL",
+  "name": "USDL Stablecoin",
+  "scanned_at": "2026-08-21T06:22:13.715Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "D",
+    "overall": 46.4,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 35,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.unclassified-mint",
+          "severity": "warn",
+          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xf0d64B4fe5D2619a3aDBE2734AD0584FC54bed88"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.unclassified-mint",
+      "letter": "C",
+      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1316793455320000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [
+      "mint(address,uint256)"
+    ],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 578719.2999999999,
+    "pools": [
+      {
+        "pair": "0x98637C29AbC801001c63fb0E3B94F27A65B610AC",
+        "dex": "aerodrome",
+        "liquidityUsd": 158310.04,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf0d64B4fe5D2619a3aDBE2734AD0584FC54bed88",
+        "dex": "aerodrome",
+        "liquidityUsd": 385504.04,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb5A4098D905DF12Aab6575584D9DbBb77CB3B008",
+        "dex": "aerodrome",
+        "liquidityUsd": 34905.22,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://www.liquidloans.io/",
+        "https://docs.liquidloans.io/",
+        "https://go.liquidloans.io/",
+        "https://docs.liquidloans.io/base/audits",
+        "https://www.liquidloans.io/base/whitepaper"
+      ],
+      "socials": [
+        "https://twitter.com/liquidloansio",
+        "http://t.me/liquidloans"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

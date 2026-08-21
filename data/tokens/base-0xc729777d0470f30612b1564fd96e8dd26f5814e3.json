@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SAPIEN",
   "name": "Sapien",
-  "scanned_at": "2026-08-20T06:06:40.699Z",
+  "scanned_at": "2026-08-21T06:08:20.629Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -82,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 40.6%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -119,12 +112,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 774215.14,
+    "liquidityUsd": 765945.36,
     "pools": [
       {
         "pair": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862",
         "dex": "aerodrome",
-        "liquidityUsd": 715765.79,
+        "liquidityUsd": 707173.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +126,7 @@
       {
         "pair": "0x682A02D5a32DDb09D1cf4791fB4124E0d4E17b67",
         "dex": "uniswap",
-        "liquidityUsd": 58027.18,
+        "liquidityUsd": 58530.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +135,7 @@
       {
         "pair": "0x9F12a2CB7ad24E7BeF73174677a171617C83D2EC",
         "dex": "aerodrome",
-        "liquidityUsd": 97.85,
+        "liquidityUsd": 101.8,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -151,7 +144,7 @@
       {
         "pair": "0x4bb2beec37a218b2041ffea997e519431a077f78c8692d253c5e7027a27cc992",
         "dex": "uniswap",
-        "liquidityUsd": 99.79,
+        "liquidityUsd": 96.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,16 +153,25 @@
       {
         "pair": "0x972efc5f24051e65555e9c2920fef1c6815cc3be77b193f6133729faa9b1489d",
         "dex": "uniswap",
-        "liquidityUsd": 30.11,
+        "liquidityUsd": 32.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x1062E43FEbf02ef5e126e3fD1CecaFDB59755535",
-        "dex": "hydrex",
-        "liquidityUsd": 0.47,
+        "pair": "0x225Ca8cF2CE1d643F65722a4C7c747A19442B8Ef",
+        "dex": "pancakeswap",
+        "liquidityUsd": 0.52,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x46eba17e5cf17a85a46959ec7766748ce0263d8991577ce4c8bf20e0e7d2dcb5",
+        "dex": "uniswap",
+        "liquidityUsd": 10.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -183,18 +185,9 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xeDD523508b9366b729A10282912CAef3cAC2964b",
-        "dex": "uniswap",
-        "liquidityUsd": 193.95,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 40.57,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://earn.sapien.io/"

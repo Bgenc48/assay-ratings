@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-20T06:16:18.948Z",
+  "scanned_at": "2026-08-21T06:17:20.786Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 64.2,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x4fffe48e71257ac9a41c1537a45d4976327aa48f012af3ad0cea240985943f60"
+            "pair": "0x5c384c3c768e39c99785b113992027b86cb0e0e19127ee8fb7eddc28f3cee8c8"
           }
         }
       ]
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 100.0% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -121,19 +109,19 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 0.01,
+    "liquidityUsd": null,
     "pools": [
       {
-        "pair": "0x4fffe48e71257ac9a41c1537a45d4976327aa48f012af3ad0cea240985943f60",
+        "pair": "0x5c384c3c768e39c99785b113992027b86cb0e0e19127ee8fb7eddc28f3cee8c8",
         "dex": "uniswap",
-        "liquidityUsd": 0.01,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 99.99,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,
