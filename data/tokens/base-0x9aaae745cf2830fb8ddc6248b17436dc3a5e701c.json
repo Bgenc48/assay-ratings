@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "GOCHU",
   "name": "Gochujangcoin",
-  "scanned_at": "2026-08-21T06:11:12.633Z",
+  "scanned_at": "2026-08-22T05:59:51.076Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
-    "provisional": true,
+    "letter": "C",
+    "overall": 69.3,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,14 +72,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 88.8% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -88,6 +95,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -109,21 +121,21 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 184257.35,
+    "verifiedSource": true,
+    "ageDays": 810,
+    "liquidityUsd": 184696.22,
     "pools": [
       {
         "pair": "0x73ccDEAA8957422C0a64E83f50c8814c7B33FE99",
         "dex": "uniswap",
-        "liquidityUsd": 184257.35,
+        "liquidityUsd": 184696.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 88.81,
     "projectLinks": {
       "websites": [
         "https://gochu.org",

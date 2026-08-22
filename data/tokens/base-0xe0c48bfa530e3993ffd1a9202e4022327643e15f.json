@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "xtoken",
   "name": "xtoken",
-  "scanned_at": "2026-08-21T06:11:55.462Z",
+  "scanned_at": "2026-08-22T06:00:11.579Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 50,
+    "overall": 42.9,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -69,14 +69,28 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 60 days old; trust needs time (Provisional).",
+          "evidence": "0x42b25bf0354a778c0fdb1e822cc010d3cffbab9ccb0b3aaac7eff843ad449524"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 100.0% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -89,6 +103,16 @@
       "id": "cap.eoa-upgrade",
       "letter": "D",
       "reason": "Upgradeable with an EOA admin and no timelock."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -107,11 +131,11 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
+    "verifiedSource": true,
+    "ageDays": 60,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": null,
+    "top10Pct": 99.99,
     "projectLinks": null
   },
   "notes": null,

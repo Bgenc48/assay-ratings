@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "doji",
   "name": "doji",
-  "scanned_at": "2026-08-21T06:04:44.031Z",
+  "scanned_at": "2026-08-22T05:56:26.507Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70,
+    "overall": 70.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -107,14 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 34404.46,
+    "liquidityUsd": 44319.36999999999,
     "pools": [
       {
         "pair": "0x65Df01daC03A314771d7525E0E350B92D1659829",
         "dex": "uniswap",
-        "liquidityUsd": 33942.04,
+        "liquidityUsd": 43699.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -123,7 +123,7 @@
       {
         "pair": "0xe88d0ee821b21a71ff4db28c607585ecbd74730e553097aab2adfeaf75fe5a8c",
         "dex": "uniswap",
-        "liquidityUsd": 267.4,
+        "liquidityUsd": 360.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -132,16 +132,7 @@
       {
         "pair": "0x70dacbb216b6367e0baedc0e0773e807b173711aa1bc48adecb0bf041e6f0609",
         "dex": "uniswap",
-        "liquidityUsd": 50.21,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7b1908d98764c152a1d53f45cc121cf516f08044ab604ad260db6cf2450a80d8",
-        "dex": "uniswap",
-        "liquidityUsd": 53.13,
+        "liquidityUsd": 67.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,14 +141,32 @@
       {
         "pair": "0x9d81bf35d3bac55981aa7d8142d95753b82b13de72600785503309056addabdb",
         "dex": "uniswap",
-        "liquidityUsd": 91.68,
+        "liquidityUsd": 124.2,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7b1908d98764c152a1d53f45cc121cf516f08044ab604ad260db6cf2450a80d8",
+        "dex": "uniswap",
+        "liquidityUsd": 65.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x63f54b8e44ed07e7b923e0f600bf3ba19667ddf6e87a78374dce1f97c6741108",
+        "dex": "uniswap",
+        "liquidityUsd": 1.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 19.78,
     "projectLinks": {
       "websites": [
         "https://www.doji.dog/"

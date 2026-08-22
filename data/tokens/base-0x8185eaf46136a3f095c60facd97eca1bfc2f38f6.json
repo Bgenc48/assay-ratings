@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "$OLIVIA2.0",
   "name": "Olivia AI 2.0",
-  "scanned_at": "2026-08-21T05:54:07.989Z",
+  "scanned_at": "2026-08-22T05:49:19.462Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 63.1,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,9 +72,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 103 days old; trust needs time (Provisional).",
+          "evidence": "0xc870d7047228d0b34991eff702b6e9d0d4edfe37b3cc688d962a417c7f1f53f4"
+        }
+      ]
     },
     "holderConcentration": {
       "score": null,
@@ -88,6 +95,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -107,23 +119,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 530542.65,
+    "verifiedSource": true,
+    "ageDays": 103,
+    "liquidityUsd": 1346180.79,
     "pools": [
       {
         "pair": "0x3E117EB37d0dB3016F4f0CC79F6cE7c648d64E00",
         "dex": "uniswap",
-        "liquidityUsd": 530542.65,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x53820c23a171ff0d229716b8102ff9bfea38b32fa7ffcf85d21366af62dee538",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 1346180.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

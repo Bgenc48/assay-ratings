@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "Fren Pet",
   "name": "Fren Pet",
-  "scanned_at": "2026-08-21T06:12:59.370Z",
+  "scanned_at": "2026-08-22T06:00:51.028Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 60.4,
-    "provisional": true,
+    "overall": 64.4,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "7167322697928109801870913",
+    "totalSupply": "7167192519654434324634277",
     "decimals": 18,
     "owner": "0x54c4dd8c2e124c65f55e1e096ab1fb6543e1206c",
     "controlType": "unknown",
@@ -108,14 +108,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 635407.41,
+    "verifiedSource": true,
+    "ageDays": 1087,
+    "liquidityUsd": 628485.32,
     "pools": [
       {
         "pair": "0xDE66c35e01ED8e619Bf092352338ef94f2327337",
         "dex": "uniswap",
-        "liquidityUsd": 633359.27,
+        "liquidityUsd": 626405.84,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -124,7 +124,7 @@
       {
         "pair": "0x29b3a7869E3662D00aaBD89A8ee74B2F703a6a66",
         "dex": "baseswap",
-        "liquidityUsd": 2048.14,
+        "liquidityUsd": 2079.48,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -135,7 +135,7 @@
         }
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 21.39,
     "projectLinks": {
       "websites": [
         "https://frenpet.xyz",

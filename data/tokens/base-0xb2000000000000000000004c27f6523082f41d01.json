@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Basecat",
   "name": "Basecat",
-  "scanned_at": "2026-08-21T06:19:36.591Z",
+  "scanned_at": "2026-08-22T06:04:54.710Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "thin"
@@ -19,6 +19,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -71,7 +77,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x215b2146c3164aba3f5b18e8619b737c7f7dd11e5ba693646dcd9a336c5a30ba"
+            "pair": "0x8930762cccc36040f25fc29db58a8ec22e872a347260d992f39666a3cdce7e5a"
           }
         }
       ]
@@ -94,6 +100,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -110,14 +121,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 691570.2300000001,
+    "liquidityUsd": 2404642.5500000003,
     "pools": [
       {
         "pair": "0xf79478d5a6baE4546F7e489e80b2fC690B558944",
         "dex": "uniswap",
-        "liquidityUsd": 80557.32,
+        "liquidityUsd": 519385.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +137,7 @@
       {
         "pair": "0x215b2146c3164aba3f5b18e8619b737c7f7dd11e5ba693646dcd9a336c5a30ba",
         "dex": "uniswap",
-        "liquidityUsd": 430258.63,
+        "liquidityUsd": 820613.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +146,16 @@
       {
         "pair": "0x8930762cccc36040f25fc29db58a8ec22e872a347260d992f39666a3cdce7e5a",
         "dex": "uniswap",
-        "liquidityUsd": 63138.85,
+        "liquidityUsd": 822164.05,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3ff98d961db31aedf4548cde271d4367bd1e8c6c132ebb2cfd55c56835dc63e7",
+        "dex": "uniswap",
+        "liquidityUsd": 21999.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,16 +164,7 @@
       {
         "pair": "0x44043bf57cae76d82c71daf4fbaf588df837362933f265a1d1e84c406834e78c",
         "dex": "uniswap",
-        "liquidityUsd": 48644.62,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x2a0301ca545aa7305d3d830f7ce7ad2f647bc89f03e1aaf5b7d7c95c45b88d8b",
-        "dex": "uniswap",
-        "liquidityUsd": 36150.38,
+        "liquidityUsd": 58238.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,28 +173,28 @@
       {
         "pair": "0x0c7030a804a9cf9afea9bddd3cbd1a8ef4217f4718b7b959c87f33d5c8130d4d",
         "dex": "uniswap",
-        "liquidityUsd": 28955.86,
+        "liquidityUsd": 126395.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x7F46c37Cbd5666DaB3331E966e5e68B1dB3E3726",
-        "dex": "aerodrome",
-        "liquidityUsd": 594.52,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
+        "pair": "0x6a50d928dde88d54367b9e7958866bab522bf8580de10901106484f013820408",
+        "dex": "uniswap",
+        "liquidityUsd": 11443.32,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x48daEB28eFB7FB378b9986dCb09180fe8869ED80",
-        "dex": "aerodrome",
-        "liquidityUsd": 3270.05,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
+        "pair": "0xf1e5f2db2595a03a6e3d42447cd0cfbde9f3b4a68b4fdb5d94fc6dc0b389c32d",
+        "dex": "uniswap",
+        "liquidityUsd": 24401.54,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],

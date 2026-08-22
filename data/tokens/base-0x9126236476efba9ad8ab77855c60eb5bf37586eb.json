@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "CHECK",
   "name": "Checkmate",
-  "scanned_at": "2026-08-21T05:58:20.094Z",
+  "scanned_at": "2026-08-22T05:52:23.565Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 64.5,
+    "overall": 63.2,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +88,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 46672.63,
+    "verifiedSource": true,
+    "ageDays": 298,
+    "liquidityUsd": 47651.29000000001,
     "pools": [
       {
         "pair": "0x5a7B4970B2610aEe4776A6944d9F2171EE6060B0",
         "dex": "aerodrome",
-        "liquidityUsd": 27496.46,
+        "liquidityUsd": 29325.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +126,7 @@
       {
         "pair": "0xAc2733cbbA38DFf6fd94c7a751f3C26A3F10B1BC",
         "dex": "uniswap",
-        "liquidityUsd": 12892.5,
+        "liquidityUsd": 13719.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,34 +135,16 @@
       {
         "pair": "0x3c4384F3664B37A3Cb5A5cB3452B4B4A3Aa1256f",
         "dex": "aerodrome",
-        "liquidityUsd": 2746.47,
+        "liquidityUsd": 2786.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xf0125d06B76CEbC2Ab3831A938E07Ab6988B00c9",
+        "pair": "0x3f985184335BD9e0A4774C79668Ce57EE2AaCFe2",
         "dex": "aerodrome",
-        "liquidityUsd": 1857.61,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xB5a64B150730b6c475CDC9C40632CE1D1ebf3ceC",
-        "dex": "aerodrome",
-        "liquidityUsd": 1005.95,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xD4E145Efdbbbb97CE8C23d4C0Fd59C902Bc34dFa",
-        "dex": "aerodrome",
-        "liquidityUsd": 120.69,
+        "liquidityUsd": 186.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,23 +153,45 @@
       {
         "pair": "0x2d3C6d02b9A6D29b2ECCBec7B26BDA41836E1182",
         "dex": "aerodrome",
-        "liquidityUsd": 277.39,
+        "liquidityUsd": 313.35,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xaaba500eeadf0d4e25b51b6121aecbde07b29a6e",
+          "sharePct": 81.46
+        }
+      },
+      {
+        "pair": "0xB5a64B150730b6c475CDC9C40632CE1D1ebf3ceC",
+        "dex": "aerodrome",
+        "liquidityUsd": 1081.76,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x3f985184335BD9e0A4774C79668Ce57EE2AaCFe2",
+        "pair": "0x567b69f72c0a2689C9be0cfBa576Af3CAA896Cb2",
+        "dex": "hydrex",
+        "liquidityUsd": 111.45,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xD4E145Efdbbbb97CE8C23d4C0Fd59C902Bc34dFa",
         "dex": "aerodrome",
-        "liquidityUsd": 275.56,
+        "liquidityUsd": 126.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 11.75,
     "projectLinks": {
       "websites": [
         "https://anichess.com/",

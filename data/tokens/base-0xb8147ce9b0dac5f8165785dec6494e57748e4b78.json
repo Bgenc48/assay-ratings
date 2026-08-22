@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "DCAI",
   "name": "DCAI",
-  "scanned_at": "2026-08-21T06:10:19.615Z",
+  "scanned_at": "2026-08-22T05:59:31.697Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B",
-    "overall": 77.5,
-    "provisional": true,
+    "overall": 75.6,
+    "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -93,6 +93,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,21 +115,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 448363.35,
+    "verifiedSource": true,
+    "ageDays": 464,
+    "liquidityUsd": 460925.94,
     "pools": [
       {
         "pair": "0x06831088c586D475E51c37c716f8F5c601793eF4",
         "dex": "uniswap",
-        "liquidityUsd": 448363.35,
+        "liquidityUsd": 460925.94,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 20.25,
     "projectLinks": {
       "websites": [
         "https://www.dcai.ai/",

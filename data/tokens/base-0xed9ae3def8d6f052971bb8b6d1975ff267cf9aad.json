@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BLUAI",
   "name": "Bluwhale AI",
-  "scanned_at": "2026-08-21T06:16:41.614Z",
+  "scanned_at": "2026-08-22T06:03:05.110Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 27.5,
+    "overall": 28.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -57,27 +57,31 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB"
+            "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB",
+            "lpDominantHolder": {
+              "address": "0x0a02944700fe01c4374617004681b9f1615ebf6d",
+              "sharePct": 99.56
+            }
           }
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -94,6 +98,16 @@
       "reason": "Mint or issuance is controlled by an externally-owned account."
     },
     {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB (LP holder 0x0a02944700fe01c4374617004681b9f1615ebf6d, 99.56% of that pool)."
+    },
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +115,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "8717781356955230000000000",
+    "totalSupply": "8762122385927680000000000",
     "decimals": 18,
     "owner": "0xa1e963ff6b129d446a2890f22c47a5abf15ce7dc",
     "controlType": "eoa",
@@ -113,21 +127,25 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 201704.12,
+    "verifiedSource": true,
+    "ageDays": 303,
+    "liquidityUsd": 202289.95,
     "pools": [
       {
         "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB",
         "dex": "aerodrome",
-        "liquidityUsd": 201704.12,
+        "liquidityUsd": 202289.95,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x0a02944700fe01c4374617004681b9f1615ebf6d",
+          "sharePct": 99.56
+        }
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 12.75,
     "projectLinks": null
   },
   "notes": null,

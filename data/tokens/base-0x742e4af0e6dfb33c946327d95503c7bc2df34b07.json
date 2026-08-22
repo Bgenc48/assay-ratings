@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-21T06:05:22.689Z",
+  "scanned_at": "2026-08-22T05:56:49.086Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 64.2,
+    "overall": 58.6,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -69,9 +69,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 34 days old; trust needs time (Provisional).",
+          "evidence": "0xbed8d4ef84dba3599bcb2e24e1a679d56bd51d4099aa4041f923175f078e6098"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 0,
@@ -98,6 +105,11 @@
       "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -116,8 +128,8 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
+    "verifiedSource": true,
+    "ageDays": 34,
     "liquidityUsd": null,
     "pools": [],
     "top10Pct": 90.56,

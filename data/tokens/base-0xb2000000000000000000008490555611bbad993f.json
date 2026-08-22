@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ARAIL",
   "name": "AssetRail",
-  "scanned_at": "2026-08-21T06:06:10.399Z",
+  "scanned_at": "2026-08-22T05:57:18.899Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -19,6 +19,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -98,6 +104,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.concentration",
       "letter": "C",
       "reason": "Top-10 unlabeled holders exceed 50%."
@@ -119,7 +130,7 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
     "liquidityUsd": null,
     "pools": [],

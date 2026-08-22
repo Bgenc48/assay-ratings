@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BNKR",
   "name": "BankrCoin",
-  "scanned_at": "2026-08-21T06:08:28.813Z",
+  "scanned_at": "2026-08-22T05:58:39.470Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
     "overall": 85,
-    "provisional": true,
+    "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -93,6 +93,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +115,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 2028664.95,
+    "verifiedSource": true,
+    "ageDays": 627,
+    "liquidityUsd": 2123036.53,
     "pools": [
       {
         "pair": "0xAEC085E5A5CE8d96A7bDd3eB3A62445d4f6CE703",
         "dex": "uniswap",
-        "liquidityUsd": 1802718.1,
+        "liquidityUsd": 1890133.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +131,7 @@
       {
         "pair": "0xCDD442e2De893c07146B2F1072f8e077559f9aa4",
         "dex": "aerodrome",
-        "liquidityUsd": 122301.23,
+        "liquidityUsd": 124267.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +140,7 @@
       {
         "pair": "0x680581725840958141Bb328666D8Fc185aC4FA49",
         "dex": "hydrex",
-        "liquidityUsd": 64668.02,
+        "liquidityUsd": 68085.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,25 +149,25 @@
       {
         "pair": "0x33fb6d4d1cf211e02bea728b609bae48ec1f97a827009f200d7e4c7b8ec0a716",
         "dex": "uniswap",
-        "liquidityUsd": 30125.48,
+        "liquidityUsd": 31230.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x80c394F8867e06704d39a5910666a3E71CA7F325",
+        "dex": "aerodrome",
+        "liquidityUsd": 1349.57,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
         "pair": "0xc16e685DE885EFC4A01D159db62bbB613a96ba70",
         "dex": "uniswap",
-        "liquidityUsd": 3475.33,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x10fa7159ed6b1c11d94c92ac25787c8ab9809cfd1b44e30e3b58b9172aa77bf1",
-        "dex": "uniswap",
-        "liquidityUsd": 3659.39,
+        "liquidityUsd": 3591.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,23 +176,23 @@
       {
         "pair": "0x87a44b2ff90d59448342017e80c513fd469c9f5edc34db815436a5d984000f52",
         "dex": "uniswap",
-        "liquidityUsd": 85.2,
+        "liquidityUsd": 424.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x17c9A4b6CAD28F5074C81B056C32bAD334329f25",
-        "dex": "aerodrome",
-        "liquidityUsd": 1632.2,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
+        "pair": "0x10fa7159ed6b1c11d94c92ac25787c8ab9809cfd1b44e30e3b58b9172aa77bf1",
+        "dex": "uniswap",
+        "liquidityUsd": 3953.12,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 31.54,
     "projectLinks": {
       "websites": [
         "https://bankr.bot",

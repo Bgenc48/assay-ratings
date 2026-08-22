@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SOGNI",
   "name": "Sogni AI",
-  "scanned_at": "2026-08-21T06:16:21.063Z",
+  "scanned_at": "2026-08-22T06:02:55.081Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
     "overall": 41.8,
-    "provisional": true,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -57,27 +57,31 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xCc68Cb8B514A2216D2eECe3A0e8597Ce483610eb"
+            "pair": "0xCc68Cb8B514A2216D2eECe3A0e8597Ce483610eb",
+            "lpDominantHolder": {
+              "address": "0x77ffdb8b9042f20142723c9f0fcf5154591d7487",
+              "sharePct": 99.96
+            }
           }
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -94,6 +98,16 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0xCc68Cb8B514A2216D2eECe3A0e8597Ce483610eb (LP holder 0x77ffdb8b9042f20142723c9f0fcf5154591d7487, 99.96% of that pool)."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +115,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "9999123256092320567705652859",
+    "totalSupply": "9999123027257770734732400275",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -113,21 +127,25 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 237487.51,
+    "verifiedSource": true,
+    "ageDays": 422,
+    "liquidityUsd": 241405.93,
     "pools": [
       {
         "pair": "0xCc68Cb8B514A2216D2eECe3A0e8597Ce483610eb",
         "dex": "aerodrome",
-        "liquidityUsd": 237487.51,
+        "liquidityUsd": 241405.93,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x77ffdb8b9042f20142723c9f0fcf5154591d7487",
+          "sharePct": 99.96
+        }
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 21.61,
     "projectLinks": {
       "websites": [
         "https://www.sogni.ai/",

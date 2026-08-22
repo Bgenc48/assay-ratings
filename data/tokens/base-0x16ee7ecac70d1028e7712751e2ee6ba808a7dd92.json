@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "FUN",
   "name": "Sport.fun",
-  "scanned_at": "2026-08-21T05:55:39.152Z",
+  "scanned_at": "2026-08-22T05:50:54.563Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 55.5,
+    "letter": "D",
+    "overall": 50.7,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,14 +72,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 75.2% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -88,6 +95,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,14 +122,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 399812.98,
+    "verifiedSource": true,
+    "ageDays": 283,
+    "liquidityUsd": 397269.57000000007,
     "pools": [
       {
         "pair": "0x659bE70647B0f63217D60e077F4417b1eCC65064",
         "dex": "aerodrome",
-        "liquidityUsd": 367369.22,
+        "liquidityUsd": 364735.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +138,7 @@
       {
         "pair": "0x147e90e02a91c1d0eb3887a4c08f64d8da8ae70a8cefe8f8612099519962aab7",
         "dex": "uniswap",
-        "liquidityUsd": 23237.95,
+        "liquidityUsd": 23455.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +147,7 @@
       {
         "pair": "0xaA94109F741b15fa39839a60Fc9a29e5Ba9E3Db8",
         "dex": "uniswap",
-        "liquidityUsd": 8910.93,
+        "liquidityUsd": 8785.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +156,7 @@
       {
         "pair": "0xC2BB4fd5648856c73F8b81156C9B52fe173085eD",
         "dex": "uniswap",
-        "liquidityUsd": 265.69,
+        "liquidityUsd": 265.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,16 +165,7 @@
       {
         "pair": "0x7995Ab86E35EE7816B52fD7A2bC4242De5313466",
         "dex": "aerodrome",
-        "liquidityUsd": 26.97,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x83c78A2e05595691f893dcC17f1B0A6F118D0538",
-        "dex": "aerodrome",
-        "liquidityUsd": 2.03,
+        "liquidityUsd": 27.52,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -166,23 +174,14 @@
       {
         "pair": "0xbcBc4c1428632a176D4CBe0B7B891bf4eE6b3E09",
         "dex": "hydrex",
-        "liquidityUsd": 0.19,
+        "liquidityUsd": 0.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcF94b3b07D295a89c5eA88d4B002F5503b4D170F",
-        "dex": "aerodrome",
-        "liquidityUsd": null,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 75.22,
     "projectLinks": {
       "websites": [
         "https://www.sport.fun/",

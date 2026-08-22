@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "TIBBIR",
   "name": "Ribbita by Virtuals",
-  "scanned_at": "2026-08-21T06:17:49.697Z",
+  "scanned_at": "2026-08-22T06:03:39.911Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 56.1,
-    "provisional": true,
+    "overall": 59.4,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,12 +78,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +94,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,14 +121,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 3899796.7500000005,
+    "verifiedSource": false,
+    "ageDays": 587,
+    "liquidityUsd": 4061247.0700000008,
     "pools": [
       {
         "pair": "0x0c3b466104545efa096b8f944c1e524E1d0D4888",
         "dex": "uniswap",
-        "liquidityUsd": 3231003.51,
+        "liquidityUsd": 3370535.41,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -121,7 +137,7 @@
       {
         "pair": "0x0f664afFB82f074937D5cFCD61b97F3F32d5dC50",
         "dex": "aerodrome",
-        "liquidityUsd": 138220.99,
+        "liquidityUsd": 142148.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +146,7 @@
       {
         "pair": "0x0E4409F7a8ebA3213F336daf608985302e79328c",
         "dex": "aerodrome",
-        "liquidityUsd": 366405.32,
+        "liquidityUsd": 383461.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +155,7 @@
       {
         "pair": "0x4Ae0272A740950d3D9B12a6eE9d5CA6B6aaF0efD",
         "dex": "aerodrome",
-        "liquidityUsd": 125868.22,
+        "liquidityUsd": 125265.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +164,7 @@
       {
         "pair": "0xB3f0828eB3375B609b49E9Fb959472a29cD6E49a",
         "dex": "hydrex",
-        "liquidityUsd": 26048.99,
+        "liquidityUsd": 26600.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +173,7 @@
       {
         "pair": "0x38981c23364dB3a50a6b2dD0196a22842788527C",
         "dex": "uniswap",
-        "liquidityUsd": 8849.85,
+        "liquidityUsd": 9163.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,23 +182,23 @@
       {
         "pair": "0xb08a32FB67F910fCFE5Dc9561a6EA4A159BD9908",
         "dex": "uniswap",
-        "liquidityUsd": 3352.93,
+        "liquidityUsd": 3625.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8dC1051B8Ac24C98cb2D1Da63933eA6Eda5Ac9e6",
-        "dex": "uniswap",
-        "liquidityUsd": 46.94,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
+        "pair": "0x1b82bd3Ffd1b45Bf11a98ECCC12ABe14ca64Ed48",
+        "dex": "pancakeswap",
+        "liquidityUsd": 447.1,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 17.33,
     "projectLinks": {
       "websites": [
         "https://ribbitcap.com/"

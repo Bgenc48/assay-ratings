@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TSLA",
   "name": "Tesla - Tokenized on Base",
-  "scanned_at": "2026-08-21T06:21:13.094Z",
+  "scanned_at": "2026-08-22T06:06:22.519Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 85,
+    "overall": 81.5,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,20 +66,24 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xE49B3f5614a926b5f468c9ee340343d1bb59C507"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 10 days old; trust needs time (Provisional).",
+          "evidence": "0x5fd8c046289ec5792e94fbb1d132b010cb23d8d54ce25c78ac68209d4abbff10"
+        }
+      ]
     },
     "holderConcentration": {
       "score": null,
@@ -93,6 +97,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,20 +119,10 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 13252.06,
-    "pools": [
-      {
-        "pair": "0xE49B3f5614a926b5f468c9ee340343d1bb59C507",
-        "dex": "uniswap",
-        "liquidityUsd": 13252.06,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "verifiedSource": true,
+    "ageDays": 10,
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": null,
     "projectLinks": null
   },

@@ -1,0 +1,209 @@
+{
+  "address": "0x3ec2156d4c0a9cbdab4a016633b7bcf6a8d68ea2",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "DRB",
+  "name": "DebtReliefBot",
+  "scanned_at": "2026-08-22T06:07:03.742Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B-",
+    "overall": 71.1,
+    "provisional": false,
+    "badge": "Discretionary",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x5116773e18A9C7bB03EBB961b38678E45E238923"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "100000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [
+      "burnFrom(address,uint256)"
+    ],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 533,
+    "liquidityUsd": 1293359.11,
+    "pools": [
+      {
+        "pair": "0x5116773e18A9C7bB03EBB961b38678E45E238923",
+        "dex": "uniswap",
+        "liquidityUsd": 1239254.31,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x385B47e56b73eb6549378f78F7c7Cbc42C56C9e0",
+        "dex": "aerodrome",
+        "liquidityUsd": 17687.9,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcb51c1779b68d50da258a0f5faec6d4200a275ec6c1cd883ed7209efe58c82a9",
+        "dex": "uniswap",
+        "liquidityUsd": 29195.26,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6adef97fbf29ae4faf705ffe2c4313b0a2b39dee4e3b111110f0fdc2ec53d8f0",
+        "dex": "uniswap",
+        "liquidityUsd": 514.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xDb6556a14976894a01085c2AbF3c85C86D1C15C8",
+        "dex": "aerodrome",
+        "liquidityUsd": 1330.12,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x17a7eEF6365D76c933F9288E6f215C3cb70146e9",
+        "dex": "uniswap",
+        "liquidityUsd": 3614.52,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x2890a889ba7ed760f2e59ab0b44da895bffd53cf2f5ce20e0c4abaf0323ca567",
+        "dex": "uniswap",
+        "liquidityUsd": 761.71,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9Da64ed1b87b3d0d3d1E731dd3aAAAc08eb0f5C3",
+        "dex": "aerodrome",
+        "liquidityUsd": 1000.49,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xf6fb2a7f3f85aaf1bff9205465a051b537a7fd7c",
+          "sharePct": 1165028.37
+        }
+      }
+    ],
+    "top10Pct": 13.81,
+    "projectLinks": {
+      "websites": [
+        "https://bio.site/drbtaskforce"
+      ],
+      "socials": [
+        "https://x.com/i/chat/group_join/g2013939076592800083/CqpiF0SHPP",
+        "https://t.me/DebtReliefBotPortal"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

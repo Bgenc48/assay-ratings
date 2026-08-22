@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "aeon",
   "name": "aeon",
-  "scanned_at": "2026-08-21T06:14:06.808Z",
+  "scanned_at": "2026-08-22T06:01:31.226Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70,
+    "overall": 70.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -105,14 +105,23 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 358685.85000000003,
+    "liquidityUsd": 532906.5199999999,
     "pools": [
       {
         "pair": "0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4",
         "dex": "uniswap",
-        "liquidityUsd": 351084.34,
+        "liquidityUsd": 520703.97,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7deaaa9bc3702ffc97293eef328f13f449c6e9034034c48e6a27ddc5ed96236a",
+        "dex": "uniswap",
+        "liquidityUsd": 4986.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +130,7 @@
       {
         "pair": "0x5eBDB19A6931431F959Fd3835193CF7243961807",
         "dex": "aerodrome",
-        "liquidityUsd": 5623.61,
+        "liquidityUsd": 4188.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,25 +139,7 @@
       {
         "pair": "0x1ead0a95834a91ce18e1acfee301919407708d53124687acf6d54537cf44dd8f",
         "dex": "uniswap",
-        "liquidityUsd": 799.32,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4182A7bB02DfC4273c5F6Fea7221F51c63AfCeee",
-        "dex": "treble",
-        "liquidityUsd": 540.21,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd27fe55518b8ab19115cf09dbc80d737bdff0018f27872284aa0df5b9ab214fc",
-        "dex": "uniswap",
-        "liquidityUsd": 288.02,
+        "liquidityUsd": 1277.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,16 +148,16 @@
       {
         "pair": "0x8ee2c16E31dc758EC51aAaB1035766cc205E979d",
         "dex": "uniswap",
-        "liquidityUsd": 318.43,
+        "liquidityUsd": 505.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xe9c20c0f345c5d7ca6653c75aec51db584e5c5a2f0bcd00a540cc689c3fa424a",
-        "dex": "uniswap",
-        "liquidityUsd": 17.07,
+        "pair": "0x4182A7bB02DfC4273c5F6Fea7221F51c63AfCeee",
+        "dex": "treble",
+        "liquidityUsd": 810.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,14 +166,23 @@
       {
         "pair": "0xe2c8011F9098f2b17eaa63C58d7443fD60EFC267",
         "dex": "uniswap",
-        "liquidityUsd": 14.85,
+        "liquidityUsd": 126.58,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd27fe55518b8ab19115cf09dbc80d737bdff0018f27872284aa0df5b9ab214fc",
+        "dex": "uniswap",
+        "liquidityUsd": 307.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 17.37,
     "projectLinks": {
       "websites": [
         "https://www.aeon.fun/",

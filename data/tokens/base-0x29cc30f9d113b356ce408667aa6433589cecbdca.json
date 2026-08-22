@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ELSA",
   "name": "Elsa",
-  "scanned_at": "2026-08-21T05:56:04.912Z",
+  "scanned_at": "2026-08-22T05:51:15.965Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 85,
+    "overall": 84.6,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -93,6 +93,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +115,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 338822.85000000003,
+    "verifiedSource": true,
+    "ageDays": 226,
+    "liquidityUsd": 354166.41,
     "pools": [
       {
         "pair": "0x83f3ACa29Bc79B048B99C56013475570acc97ccF",
         "dex": "pancakeswap",
-        "liquidityUsd": 327939.49,
+        "liquidityUsd": 338440.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,16 +131,16 @@
       {
         "pair": "0xdc8F367884437e398FBF4a94D3333fE0b5B376Db",
         "dex": "uniswap",
-        "liquidityUsd": 9967.85,
+        "liquidityUsd": 10342.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x6b919216c7f383078d751e74569865480c2ba36028bda02bca6403565e3a7584",
-        "dex": "uniswap",
-        "liquidityUsd": 853.84,
+        "pair": "0x5E4efb192Dfd5a267e5bEDac155FD9b79df82496",
+        "dex": "aerodrome",
+        "liquidityUsd": 5285.08,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,23 +149,50 @@
       {
         "pair": "0xf3240f7578172cf710879e1ef84d04e632ab81282497ec0f0d04277a877a2832",
         "dex": "uniswap",
-        "liquidityUsd": 60.64,
+        "liquidityUsd": 60.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x6Ff9b1Efa79106A9BbBBe6c5b9D044aC465b789c",
-        "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
-        "liquidityUsd": 1.03,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
+        "pair": "0x194797673fdf948efe25c506095054347df8308dff94845ef0738b7bc0b4016a",
+        "dex": "uniswap",
+        "liquidityUsd": 8.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8ec13b2f24d27ac531fcbe1cb551e7696cb8392879e3fb473f801395589776da",
+        "dex": "uniswap",
+        "liquidityUsd": 27.46,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0e71ec768629e65a9abdf43333228075fd16c9dbdfd41f90f1cc96e749b85416",
+        "dex": "uniswap",
+        "liquidityUsd": 1.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6b919216c7f383078d751e74569865480c2ba36028bda02bca6403565e3a7584",
+        "dex": "uniswap",
+        "liquidityUsd": 0.29,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 15.18,
     "projectLinks": {
       "websites": [
         "https://moltnbook.com"

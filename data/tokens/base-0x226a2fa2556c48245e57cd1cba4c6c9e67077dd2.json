@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BIO",
   "name": "BIO",
-  "scanned_at": "2026-08-21T06:07:46.124Z",
+  "scanned_at": "2026-08-22T05:58:14.718Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 51.8,
-    "provisional": true,
+    "overall": 53.2,
+    "provisional": false,
     "badge": "Custodial",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,14 +72,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 40.1%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -89,6 +96,11 @@
   },
   "caps": [
     {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -96,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "182553507895214220000000000",
+    "totalSupply": "182680179139828410000000000",
     "decimals": 18,
     "owner": "0xd9c6ee1547fd6d48f8872dd866473893bbe8a1ab",
     "controlType": "safe",
@@ -108,41 +120,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 745880.7200000001,
+    "verifiedSource": true,
+    "ageDays": 526,
+    "liquidityUsd": 730422.05,
     "pools": [
-      {
-        "pair": "0xa79A2eAfDfb8F71bAd810AE12A89711Fb6CaF9AC",
-        "dex": "pancakeswap",
-        "liquidityUsd": 88195.31,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x052E77018Bfb98dc6373C37d757bb1d3fAd09eC5",
-        "dex": "uniswap",
-        "liquidityUsd": 2345.18,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe15587dc839a23fc090c9425d361b923fcddacf8990c18ebd73695adbf59e727",
-        "dex": "uniswap",
-        "liquidityUsd": 685.52,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x222cCBE78890A4d9Ef8d22d7FC1B968Be0F2c653",
         "dex": "aerodrome",
-        "liquidityUsd": 294068.18,
+        "liquidityUsd": 286278.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,41 +136,68 @@
       {
         "pair": "0xd40BffA9C9E35493B88a2b6744C49D8716b00898",
         "dex": "aerodrome",
-        "liquidityUsd": 360576.31,
+        "liquidityUsd": 354405.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xFD8Dde3212Cf6211c101f1F7300Dd45a84C75F3F",
+        "pair": "0xa79A2eAfDfb8F71bAd810AE12A89711Fb6CaF9AC",
+        "dex": "pancakeswap",
+        "liquidityUsd": 86663.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x052E77018Bfb98dc6373C37d757bb1d3fAd09eC5",
         "dex": "uniswap",
-        "liquidityUsd": 0.13,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
+        "liquidityUsd": 2378.12,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe15587dc839a23fc090c9425d361b923fcddacf8990c18ebd73695adbf59e727",
+        "dex": "uniswap",
+        "liquidityUsd": 684.48,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
         "pair": "0xe10949b980f62f844cb4109f39ea1186c19f4b4ac55e38054bbec7e27394436e",
         "dex": "uniswap",
-        "liquidityUsd": 9.8,
+        "liquidityUsd": 11.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x6F3B05c215d6BFd832C7444e4DDeea59BF846290",
-        "dex": "pancakeswap",
-        "liquidityUsd": 0.29,
+        "pair": "0xfB7D50c48D868e7387b1232122e092d91ce2210E",
+        "dex": "uniswap",
+        "liquidityUsd": 0.14,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd12655ebbb7298e0cb283964386ba52384fa669bdfa23ea83d185268560bbf72",
+        "dex": "uniswap",
+        "liquidityUsd": 0.35,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 40.1,
     "projectLinks": null
   },
   "notes": null,

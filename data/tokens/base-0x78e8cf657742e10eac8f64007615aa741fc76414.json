@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "USDL",
   "name": "USDL Stablecoin",
-  "scanned_at": "2026-08-21T06:22:13.715Z",
+  "scanned_at": "2026-08-22T06:06:59.022Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 46.4,
+    "overall": 50.7,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,14 +72,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.7%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -92,6 +99,11 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -112,14 +124,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 578719.2999999999,
+    "verifiedSource": true,
+    "ageDays": 207,
+    "liquidityUsd": 545397.94,
     "pools": [
       {
         "pair": "0x98637C29AbC801001c63fb0E3B94F27A65B610AC",
         "dex": "aerodrome",
-        "liquidityUsd": 158310.04,
+        "liquidityUsd": 159848.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,23 +140,14 @@
       {
         "pair": "0xf0d64B4fe5D2619a3aDBE2734AD0584FC54bed88",
         "dex": "aerodrome",
-        "liquidityUsd": 385504.04,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xb5A4098D905DF12Aab6575584D9DbBb77CB3B008",
-        "dex": "aerodrome",
-        "liquidityUsd": 34905.22,
+        "liquidityUsd": 385549.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0.73,
     "projectLinks": {
       "websites": [
         "https://www.liquidloans.io/",

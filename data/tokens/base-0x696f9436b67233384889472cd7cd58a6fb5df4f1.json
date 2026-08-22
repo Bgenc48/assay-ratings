@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "AVNT",
   "name": "Avantis",
-  "scanned_at": "2026-08-21T06:15:59.933Z",
+  "scanned_at": "2026-08-22T06:02:42.394Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B",
-    "overall": 75.5,
-    "provisional": true,
+    "letter": "B-",
+    "overall": 73.6,
+    "provisional": false,
     "badge": "Custodial",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +88,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 742422,
+    "verifiedSource": true,
+    "ageDays": 486,
+    "liquidityUsd": 800341.4400000001,
     "pools": [
       {
         "pair": "0xe30d5BF485F7476AC15884a28ffb3C9cEA635DCB",
         "dex": "aerodrome",
-        "liquidityUsd": 597181.04,
+        "liquidityUsd": 648847.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +126,7 @@
       {
         "pair": "0xc4ed25e61cBdE561c982789f740E3e9A8C317100",
         "dex": "aerodrome",
-        "liquidityUsd": 52807.35,
+        "liquidityUsd": 53506.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +135,7 @@
       {
         "pair": "0x9144A6e8ad6f56db96daC444eB173831660Ba3e5",
         "dex": "uniswap",
-        "liquidityUsd": 33257.61,
+        "liquidityUsd": 36115.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +144,7 @@
       {
         "pair": "0x04f0C5d0e2fc9329F08E0112a37d7D9B7CfF1043",
         "dex": "uniswap",
-        "liquidityUsd": 29596.04,
+        "liquidityUsd": 32278.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +153,7 @@
       {
         "pair": "0x7ae0a3e490dddffa437fa65a5cc6db8b378caadda9a610e80944868124547d6b",
         "dex": "uniswap",
-        "liquidityUsd": 18951.15,
+        "liquidityUsd": 20066.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +162,7 @@
       {
         "pair": "0x721bcd563603a559616dc9Fb886A1732186995a4",
         "dex": "hydrex",
-        "liquidityUsd": 6542.91,
+        "liquidityUsd": 6000.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,23 +171,23 @@
       {
         "pair": "0x0b8781a7c4cae77f0f4986ed01e3036a0a9069efb41b57225067cc38258798ce",
         "dex": "uniswap",
-        "liquidityUsd": 2784.96,
+        "liquidityUsd": 3327.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x73827198ba26f0bb5990bfd3f04558b4fd8c7b0ae294860a95e0243af95139d4",
-        "dex": "uniswap",
-        "liquidityUsd": 1300.94,
+        "pair": "0xb1089DE9a6c37a606f7b0F7B40eE161A43dA3845",
+        "dex": "0x829cE74128Ea95C72aA379168Df529FEaa464aEE",
+        "liquidityUsd": 198.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 20.17,
     "projectLinks": {
       "websites": [
         "https://www.avantisfi.com/",
