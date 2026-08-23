@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ZEST",
   "name": "Zest",
-  "scanned_at": "2026-08-22T05:52:14.670Z",
+  "scanned_at": "2026-08-23T05:53:33.569Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 80 days old; trust needs time (Provisional).",
+          "text": "Token is 81 days old; trust needs time (Provisional).",
           "evidence": "0x18c991e15d44e504b5cc9fc25246550200b45c798de7dd4b7517e1ad3c8c45d2"
         }
       ]
@@ -115,7 +115,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "734240171358381571929862",
+    "totalSupply": "732580886364030005467655",
     "decimals": 18,
     "owner": "0x4ddae1d1bb8dacd4c8fa56792fde60f446755d0f",
     "controlType": "safe",
@@ -128,20 +128,29 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 80,
-    "liquidityUsd": 160592.28,
+    "ageDays": 81,
+    "liquidityUsd": 160265.89,
     "pools": [
       {
         "pair": "0x3693022BD390E147D8dD89a05403C80FF21dd64B",
         "dex": "aerodrome",
-        "liquidityUsd": 160592.28,
+        "liquidityUsd": 160265.89,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xea7a8f6a296720095524d8701e095daa84c954aa3b03f794bef974d18b23ac8e",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 1.82,
+    "top10Pct": 1.83,
     "projectLinks": {
       "websites": [
         "https://www.zestprotocol.com/",

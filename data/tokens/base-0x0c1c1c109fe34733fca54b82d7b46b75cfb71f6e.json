@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CHIP",
   "name": "Chip",
-  "scanned_at": "2026-08-22T06:04:48.260Z",
+  "scanned_at": "2026-08-23T06:04:16.955Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 143 days old; trust needs time (Provisional).",
+          "text": "Token is 144 days old; trust needs time (Provisional).",
           "evidence": "0x47b7a5772180353c5ae36ca1f0c9e08b8624483d6cbcc6127b79f29c435f24a9"
         }
       ]
@@ -125,7 +125,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "88357688471906000000000000",
+    "totalSupply": "88361394535628000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -137,13 +137,31 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 143,
-    "liquidityUsd": 192843.04,
+    "ageDays": 144,
+    "liquidityUsd": 191409.1,
     "pools": [
       {
         "pair": "0x592E01EDEb601016a20A3E6cD5bF533eBBadBC8b",
         "dex": "aerodrome",
-        "liquidityUsd": 192843.04,
+        "liquidityUsd": 191384.01,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xDBC00ac77AF0848377717967deD190468b7df7CA",
+        "dex": "pancakeswap",
+        "liquidityUsd": 24.26,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x45B8643880D8FeF3fd7a21229C3b41F0F6632676",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

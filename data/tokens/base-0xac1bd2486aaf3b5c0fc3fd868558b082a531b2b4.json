@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "TOSHI",
   "name": "Toshi",
-  "scanned_at": "2026-08-22T05:47:23.808Z",
+  "scanned_at": "2026-08-23T05:49:14.296Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -82,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": 50,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 35.2%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -118,13 +111,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1048,
-    "liquidityUsd": 1459910.54,
+    "ageDays": 1049,
+    "liquidityUsd": 1386652.17,
     "pools": [
       {
         "pair": "0x4b0Aaf3EBb163dd45F663b38b6d93f6093EBC2d3",
         "dex": "uniswap",
-        "liquidityUsd": 1167107.17,
+        "liquidityUsd": 1106259.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +126,7 @@
       {
         "pair": "0x060eea2f3f474c5a9a53e8b806e180b7f770b305e332f008aefae77030fe8955",
         "dex": "uniswap",
-        "liquidityUsd": 98584.37,
+        "liquidityUsd": 92401.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,25 +135,25 @@
       {
         "pair": "0x368ea6F645DeB6D1a8692fE93C550D2834150865",
         "dex": "uniswap",
-        "liquidityUsd": 65913.83,
+        "liquidityUsd": 61683.65,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x5aa4AD647580bfE86258d300Bc9852F4434E2c61",
-        "dex": "uniswap",
-        "liquidityUsd": 41963.75,
+        "pair": "0x74E4c08Bb50619b70550733D32b7e60424E9628e",
+        "dex": "aerodrome",
+        "liquidityUsd": 39492.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x74E4c08Bb50619b70550733D32b7e60424E9628e",
-        "dex": "aerodrome",
-        "liquidityUsd": 34031.2,
+        "pair": "0x5aa4AD647580bfE86258d300Bc9852F4434E2c61",
+        "dex": "uniswap",
+        "liquidityUsd": 39959.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +162,7 @@
       {
         "pair": "0xFc131B9981fB053C2cAb7373DAf70DeF1436c4BB",
         "dex": "uniswap",
-        "liquidityUsd": 33239.69,
+        "liquidityUsd": 29181.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,7 +171,7 @@
       {
         "pair": "0x4660Ff55A4Db144734AE76550Ee3093e0BA7F8D1",
         "dex": "aerodrome",
-        "liquidityUsd": 12456.18,
+        "liquidityUsd": 11472.48,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -187,14 +180,14 @@
       {
         "pair": "0xCefB04d884C9414140286B01754126b61DF6b247",
         "dex": "baseswap",
-        "liquidityUsd": 6614.35,
+        "liquidityUsd": 6201.22,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 35.18,
+    "top10Pct": 34.91,
     "projectLinks": {
       "websites": [
         "https://www.toshithecat.com/"

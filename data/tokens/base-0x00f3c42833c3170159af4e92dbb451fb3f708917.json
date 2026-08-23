@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ICP",
   "name": "ICP",
-  "scanned_at": "2026-08-22T06:06:47.747Z",
+  "scanned_at": "2026-08-23T06:06:05.098Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -106,7 +106,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "25927355288341",
+    "totalSupply": "26215569332175",
     "decimals": 8,
     "owner": "0x70ae25592209b57f62b3a3e832ab356228a2192c",
     "controlType": "eoa",
@@ -118,13 +118,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 431,
-    "liquidityUsd": 482695.13,
+    "ageDays": 432,
+    "liquidityUsd": 447725.74,
     "pools": [
       {
         "pair": "0xBe762d548f8CA86A78E9Da6e3DdC87F91457e398",
         "dex": "aerodrome",
-        "liquidityUsd": 482685.87,
+        "liquidityUsd": 447686.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,14 +133,36 @@
       {
         "pair": "0x418E877e232Af461De8eee07aBAE54556BEdBd52",
         "dex": "0x824E9C1C1E94454b0128F271a75d819596C5a2A4",
-        "liquidityUsd": 9.26,
+        "liquidityUsd": 8.69,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x00059bB264031930CF5267D2d40FFB15cCC15a2C",
+        "dex": "aerodrome",
+        "liquidityUsd": 7.85,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xa83c7fb023f0bb668e0f1536ae340dbdb1404d47",
+          "sharePct": 99.99
+        }
+      },
+      {
+        "pair": "0x7bF0A9e81b51331DbFe96997E09e5d1C717E2FA6",
+        "dex": "aerodrome",
+        "liquidityUsd": 22.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 28.11,
+    "top10Pct": 23.66,
     "projectLinks": null
   },
   "notes": null,

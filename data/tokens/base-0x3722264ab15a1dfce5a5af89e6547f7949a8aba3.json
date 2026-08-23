@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "LFI",
   "name": "LienFi",
-  "scanned_at": "2026-08-22T06:05:33.187Z",
+  "scanned_at": "2026-08-23T06:04:55.710Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -84,7 +84,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 113 days old; trust needs time (Provisional).",
+          "text": "Token is 114 days old; trust needs time (Provisional).",
           "evidence": "0xe84a138895ca31629a91804dbfcd550498b933109793e66788a3b5f71f366a72"
         }
       ]
@@ -96,7 +96,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 8.9%.",
+          "text": "Top-10 unlabeled holders control 6.9%.",
           "evidence": null
         }
       ]
@@ -136,22 +136,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 113,
-    "liquidityUsd": 996515.3200000001,
+    "ageDays": 114,
+    "liquidityUsd": 942166.4000000001,
     "pools": [
       {
         "pair": "0x6ef02666f150d9649655b884e043b61b0990fad9be4c632d0c7568bb24da9367",
         "dex": "uniswap",
-        "liquidityUsd": 658608.35,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x588f68b9fA04366F33f8Ce095C13F0cebaB9406a",
-        "dex": "uniswap",
-        "liquidityUsd": 123955.57,
+        "liquidityUsd": 618835.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +151,16 @@
       {
         "pair": "0x8343C68279587498526114e6385F0a87f248E0D9",
         "dex": "aerodrome",
-        "liquidityUsd": 168592.8,
+        "liquidityUsd": 163414.54,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x588f68b9fA04366F33f8Ce095C13F0cebaB9406a",
+        "dex": "uniswap",
+        "liquidityUsd": 118034.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +169,7 @@
       {
         "pair": "0x53ab4c60ff04b782F630A8685af95404f099aAFD",
         "dex": "hydrex",
-        "liquidityUsd": 33349.06,
+        "liquidityUsd": 30702.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,7 +178,7 @@
       {
         "pair": "0x24c0F6B57b4A6dAF685986F7E371B7628fc64FD6",
         "dex": "hydrex",
-        "liquidityUsd": 11325.54,
+        "liquidityUsd": 10531.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -187,7 +187,7 @@
       {
         "pair": "0x41932EA9b35Bd2e663678Dfca8228498A05A3689",
         "dex": "pancakeswap",
-        "liquidityUsd": 445.5,
+        "liquidityUsd": 421.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -196,7 +196,7 @@
       {
         "pair": "0x7D55dcABc41626818e52d6289bf4b9A71a04D13A",
         "dex": "pancakeswap",
-        "liquidityUsd": 88.06,
+        "liquidityUsd": 87.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -205,14 +205,14 @@
       {
         "pair": "0xfcf482c993b53342f6a9307d2fbeff710872787165728e6de1beb43d1f825d67",
         "dex": "uniswap",
-        "liquidityUsd": 150.44,
+        "liquidityUsd": 139.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 8.91,
+    "top10Pct": 6.9,
     "projectLinks": {
       "websites": [
         "https://lienfi.com"
