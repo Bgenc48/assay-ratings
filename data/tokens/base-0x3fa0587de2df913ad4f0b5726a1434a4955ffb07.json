@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "Base",
   "name": "Base",
-  "scanned_at": "2026-08-23T05:54:59.448Z",
+  "scanned_at": "2026-08-24T06:06:46.665Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,39 +61,22 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x255674f88a19df2688e23e562523abcf5656d637be7771a40cc3e3cfff3583c3"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 42 days old; trust needs time (Provisional).",
-          "evidence": "0xfba1cf226033bb4588facd77fa13067f700ed5652a881bcf9827da86184c639c"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 8.6%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -102,11 +85,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -126,21 +104,11 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 42,
+    "verifiedSource": null,
+    "ageDays": null,
     "liquidityUsd": null,
-    "pools": [
-      {
-        "pair": "0x255674f88a19df2688e23e562523abcf5656d637be7771a40cc3e3cfff3583c3",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": 8.63,
+    "pools": [],
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

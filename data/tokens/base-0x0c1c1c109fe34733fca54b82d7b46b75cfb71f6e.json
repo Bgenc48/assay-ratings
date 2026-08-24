@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "CHIP",
   "name": "Chip",
-  "scanned_at": "2026-08-23T06:04:16.955Z",
+  "scanned_at": "2026-08-24T06:26:18.055Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 40,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 144 days old; trust needs time (Provisional).",
-          "evidence": "0x47b7a5772180353c5ae36ca1f0c9e08b8624483d6cbcc6127b79f29c435f24a9"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 118.4% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -108,16 +94,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -125,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "88361394535628000000000000",
+    "totalSupply": "87943928145864000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -136,14 +112,32 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 144,
-    "liquidityUsd": 191409.1,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 231224.09,
     "pools": [
       {
         "pair": "0x592E01EDEb601016a20A3E6cD5bF533eBBadBC8b",
         "dex": "aerodrome",
-        "liquidityUsd": 191384.01,
+        "liquidityUsd": 231164.68,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5D4d2Edd62A452089bd3Afe157d14F9BeCed051D",
+        "dex": "aerodrome",
+        "liquidityUsd": 0,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfc3fe84e1bbd3f03ad939456fd7d096c5823ef5da7d4383c2e166cb9a8f07417",
+        "dex": "uniswap",
+        "liquidityUsd": 33.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -152,23 +146,14 @@
       {
         "pair": "0xDBC00ac77AF0848377717967deD190468b7df7CA",
         "dex": "pancakeswap",
-        "liquidityUsd": 24.26,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x45B8643880D8FeF3fd7a21229C3b41F0F6632676",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.83,
+        "liquidityUsd": 25.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 118.39,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://avely.me/usdai"

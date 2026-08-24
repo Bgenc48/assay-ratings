@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ICP",
   "name": "ICP",
-  "scanned_at": "2026-08-23T06:06:05.098Z",
+  "scanned_at": "2026-08-24T06:28:37.447Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 36.4,
-    "provisional": false,
+    "overall": 28.2,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -92,11 +92,6 @@
       "id": "cap.eoa-mint",
       "letter": "F",
       "reason": "Mint or issuance is controlled by an externally-owned account."
-    },
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
     },
     {
       "id": "cap.claim-light",
@@ -117,52 +112,30 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 432,
-    "liquidityUsd": 447725.74,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 465635.65,
     "pools": [
       {
         "pair": "0xBe762d548f8CA86A78E9Da6e3DdC87F91457e398",
         "dex": "aerodrome",
-        "liquidityUsd": 447686.44,
+        "liquidityUsd": 465635.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x418E877e232Af461De8eee07aBAE54556BEdBd52",
-        "dex": "0x824E9C1C1E94454b0128F271a75d819596C5a2A4",
-        "liquidityUsd": 8.69,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x00059bB264031930CF5267D2d40FFB15cCC15a2C",
-        "dex": "aerodrome",
-        "liquidityUsd": 7.85,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0xa83c7fb023f0bb668e0f1536ae340dbdb1404d47",
-          "sharePct": 99.99
-        }
-      },
-      {
-        "pair": "0x7bF0A9e81b51331DbFe96997E09e5d1C717E2FA6",
-        "dex": "aerodrome",
-        "liquidityUsd": 22.76,
+        "pair": "0x5cce25aA32E76e408a6e2F70418072D5c2e8f681",
+        "dex": "pancakeswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 23.66,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

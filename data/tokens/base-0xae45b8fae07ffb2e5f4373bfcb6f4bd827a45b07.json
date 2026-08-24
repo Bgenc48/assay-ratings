@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Gitlawb",
   "name": "Gitlawb",
-  "scanned_at": "2026-08-23T05:57:00.472Z",
+  "scanned_at": "2026-08-24T06:11:40.863Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 58.6,
+    "overall": 64.2,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -61,24 +61,20 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xa1cd143e2e3db034c4915d399ec3b7f0bc4373bbcb3a8d46e01c4596cd9e9ba1"
+          }
         }
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 37 days old; trust needs time (Provisional).",
-          "evidence": "0xba43b6f70d624b6550c5393008206bf9374e4c8b8a488f4fc06ebfd0e73d0495"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 0,
@@ -105,11 +101,6 @@
       "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -128,12 +119,27 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 37,
-    "liquidityUsd": null,
-    "pools": [],
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 0.04,
+    "pools": [
+      {
+        "pair": "0xa1cd143e2e3db034c4915d399ec3b7f0bc4373bbcb3a8d46e01c4596cd9e9ba1",
+        "dex": "uniswap",
+        "liquidityUsd": 0.04,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 99.87,
-    "projectLinks": null
+    "projectLinks": {
+      "websites": [
+        "https://clanker.world/clanker/0xAE45b8faE07fFB2E5f4373bFCB6f4Bd827A45b07"
+      ],
+      "socials": []
+    }
   },
   "notes": null,
   "coi": false

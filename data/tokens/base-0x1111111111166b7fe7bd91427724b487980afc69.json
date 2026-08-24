@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ZORA",
   "name": "Zora",
-  "scanned_at": "2026-08-23T05:53:56.354Z",
+  "scanned_at": "2026-08-24T06:05:04.341Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
     "overall": 85,
-    "provisional": false,
+    "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -93,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -115,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 540,
-    "liquidityUsd": 222166.63999999996,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 240997.35,
     "pools": [
       {
         "pair": "0xEdc625B74537eE3a10874f53D170E9c17A906B9c",
         "dex": "uniswap",
-        "liquidityUsd": 75652.62,
+        "liquidityUsd": 84747.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -131,7 +126,7 @@
       {
         "pair": "0x3f53f1Fd5b7723DDf38D93a584D280B9b94C3111",
         "dex": "aerodrome",
-        "liquidityUsd": 49346.21,
+        "liquidityUsd": 60193.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +135,7 @@
       {
         "pair": "0xAdB8Fb846DBD3Bd6A23335CEe65Bb610C1cf0ea3",
         "dex": "aerodrome",
-        "liquidityUsd": 45277.89,
+        "liquidityUsd": 39627.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +144,7 @@
       {
         "pair": "0xA0Ca5bEbC42cDbf3623B1C09206Ae4e3975B0FC7",
         "dex": "uniswap",
-        "liquidityUsd": 23266.36,
+        "liquidityUsd": 26771.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,16 +153,16 @@
       {
         "pair": "0x0D209fd74849A5ba5761382347321934e4A62368",
         "dex": "aerodrome",
-        "liquidityUsd": 20829,
+        "liquidityUsd": 22095.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd694bd7285eeeee19d3d5da38f613859168c422d628def88a0c95dad12071f3a",
+        "pair": "0x836690b0adfde387ec267f85c391ffae9aa0f9683baf9f36dbee25ba1e073f0f",
         "dex": "uniswap",
-        "liquidityUsd": 3269.46,
+        "liquidityUsd": 158.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -176,16 +171,16 @@
       {
         "pair": "0x19df8654FfE73D49cA8aF95C6e05A9A2BAd226Ca",
         "dex": "quickswap",
-        "liquidityUsd": 3473.93,
+        "liquidityUsd": 3746.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x36B4869995672DF7E3aFc36BE795Dbb998Bc639d",
+        "pair": "0xd694bd7285eeeee19d3d5da38f613859168c422d628def88a0c95dad12071f3a",
         "dex": "uniswap",
-        "liquidityUsd": 1051.17,
+        "liquidityUsd": 3657.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

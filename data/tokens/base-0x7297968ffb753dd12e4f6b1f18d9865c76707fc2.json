@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ZEST",
   "name": "Zest",
-  "scanned_at": "2026-08-23T05:53:33.569Z",
+  "scanned_at": "2026-08-24T06:03:48.844Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 51.4,
+    "overall": 51.8,
     "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 81 days old; trust needs time (Provisional).",
-          "evidence": "0x18c991e15d44e504b5cc9fc25246550200b45c798de7dd4b7517e1ad3c8c45d2"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 1.8%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -103,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -115,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "732580886364030005467655",
+    "totalSupply": "731261045881879406263117",
     "decimals": 18,
     "owner": "0x4ddae1d1bb8dacd4c8fa56792fde60f446755d0f",
     "controlType": "safe",
@@ -127,30 +108,21 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 81,
-    "liquidityUsd": 160265.89,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 162840.29,
     "pools": [
       {
         "pair": "0x3693022BD390E147D8dD89a05403C80FF21dd64B",
         "dex": "aerodrome",
-        "liquidityUsd": 160265.89,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xea7a8f6a296720095524d8701e095daa84c954aa3b03f794bef974d18b23ac8e",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 162840.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 1.83,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.zestprotocol.com/",

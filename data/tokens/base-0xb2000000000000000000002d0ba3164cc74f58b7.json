@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "GOOGLc",
   "name": "Alphabet Inc.",
-  "scanned_at": "2026-08-23T06:05:16.155Z",
+  "scanned_at": "2026-08-24T06:27:08.917Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -100,11 +94,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -121,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 442469.3300000001,
+    "liquidityUsd": 762900.1399999999,
     "pools": [
       {
         "pair": "0xB1987CAD1682841b4b641d50E520777eC5Ab5542",
         "dex": "aerodrome",
-        "liquidityUsd": 318887.93,
+        "liquidityUsd": 656058.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,25 +126,16 @@
       {
         "pair": "0x69dec50977fC57eCEcA472105c26F188FF2012ec",
         "dex": "pancakeswap",
-        "liquidityUsd": 48069.84,
+        "liquidityUsd": 41973.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x1c5a8b57000ff00e943728501f43a3679bb0e55369dbb49965117ba3bb76a49d",
+        "pair": "0x46eefd4135ff381410fbab8c75ea735609f86478021f88c39e6b4fcedcc37d2e",
         "dex": "uniswap",
-        "liquidityUsd": 51151.64,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x1f52F46BaC657564c31122b12b43A459E09273C8",
-        "dex": "uniswap",
-        "liquidityUsd": 15957.53,
+        "liquidityUsd": 15287.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +144,7 @@
       {
         "pair": "0x0d1518a9b2243F034a119A629B8F5170D59965b3",
         "dex": "hydrex",
-        "liquidityUsd": 1420.19,
+        "liquidityUsd": 962.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,16 +153,7 @@
       {
         "pair": "0xe87a417958bf5a93d523470981eb10e610998dbac113792088680afc54473f91",
         "dex": "uniswap",
-        "liquidityUsd": 4949.26,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7c14a1dbe0a2a2b5480c73e576251deadebfa3d0cdfc665278ee4001d6357f5b",
-        "dex": "uniswap",
-        "liquidityUsd": 64.61,
+        "liquidityUsd": 5160.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -191,14 +162,32 @@
       {
         "pair": "0xd24e50c6e5f1fe9e3bf39cca18a1e9025641d55d4107ba5526dd1a0926a6cdd3",
         "dex": "uniswap",
-        "liquidityUsd": 1968.33,
+        "liquidityUsd": 1968.71,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1f52F46BaC657564c31122b12b43A459E09273C8",
+        "dex": "uniswap",
+        "liquidityUsd": 358.57,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x69bbadafdb28b6952c2910bed1d49fb1b11a222cbf36143fc1aca3c26b35c28e",
+        "dex": "uniswap",
+        "liquidityUsd": 41130.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 30.53,
+    "top10Pct": 29.08,
     "projectLinks": {
       "websites": [
         "https://www.coinbase.com/tokenize"

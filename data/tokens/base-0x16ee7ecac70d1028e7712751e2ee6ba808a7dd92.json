@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "FUN",
   "name": "Sport.fun",
-  "scanned_at": "2026-08-23T05:52:22.939Z",
+  "scanned_at": "2026-08-24T06:01:55.306Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 50.7,
+    "letter": "C",
+    "overall": 55.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 75.3% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,16 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -122,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 284,
-    "liquidityUsd": 387035.04999999993,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 386011.36999999994,
     "pools": [
       {
         "pair": "0x659bE70647B0f63217D60e077F4417b1eCC65064",
         "dex": "aerodrome",
-        "liquidityUsd": 355324.64,
+        "liquidityUsd": 354474.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +121,7 @@
       {
         "pair": "0x147e90e02a91c1d0eb3887a4c08f64d8da8ae70a8cefe8f8612099519962aab7",
         "dex": "uniswap",
-        "liquidityUsd": 22646.6,
+        "liquidityUsd": 22543.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,7 +130,7 @@
       {
         "pair": "0xaA94109F741b15fa39839a60Fc9a29e5Ba9E3Db8",
         "dex": "uniswap",
-        "liquidityUsd": 8863.42,
+        "liquidityUsd": 8789.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -156,7 +139,7 @@
       {
         "pair": "0xC2BB4fd5648856c73F8b81156C9B52fe173085eD",
         "dex": "uniswap",
-        "liquidityUsd": 174.41,
+        "liquidityUsd": 174.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -165,10 +148,28 @@
       {
         "pair": "0x7995Ab86E35EE7816B52fD7A2bC4242De5313466",
         "dex": "aerodrome",
-        "liquidityUsd": 25.98,
+        "liquidityUsd": 26.34,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x83c78A2e05595691f893dcC17f1B0A6F118D0538",
+        "dex": "aerodrome",
+        "liquidityUsd": 1.97,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x2babcc51d0d1e76bd8e73968fcbe88f315dbb06546b7613ae1a6fe5ecaffafde",
+        "dex": "uniswap",
+        "liquidityUsd": 0.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
@@ -181,7 +182,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 75.26,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.sport.fun/",

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "DEXTF",
   "name": "Memento",
-  "scanned_at": "2026-08-23T05:58:55.716Z",
+  "scanned_at": "2026-08-24T06:16:36.039Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 27.9,
+    "overall": 28.2,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 37.1%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -108,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "12212672424133836660334727",
+    "totalSupply": "12161417665354682421655776",
     "decimals": 18,
     "owner": "0xc3916b3ee83e201d6775470eccf1e93463f48127",
     "controlType": "eoa",
@@ -120,14 +113,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 127449.24,
+    "liquidityUsd": 131605.03,
     "pools": [
       {
         "pair": "0xC3F617c8A3DA6d286c8f97aF946A8f293632C852",
         "dex": "hydrex",
-        "liquidityUsd": 127404.82,
+        "liquidityUsd": 131560.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,14 +129,14 @@
       {
         "pair": "0x5f198375776642B495aF7c4cEf69B9b6e9246f8A",
         "dex": "aerodrome",
-        "liquidityUsd": 44.42,
+        "liquidityUsd": 44.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 37.15,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://mementoblockchain.com/",

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "cbMEGA",
   "name": "Coinbase Wrapped MEGA",
-  "scanned_at": "2026-08-23T05:55:15.206Z",
+  "scanned_at": "2026-08-24T06:07:20.905Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 25.7,
+    "overall": 28.2,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 130 days old; trust needs time (Provisional).",
-          "evidence": "0x6663d20834049e9fa1583f5502c77232c6a574ce6a9cb3bb22ccef1332195689"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 76.8% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -111,16 +97,6 @@
       "id": "cap.eoa-upgrade",
       "letter": "D",
       "reason": "Upgradeable with an EOA admin and no timelock."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -144,30 +120,57 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 130,
-    "liquidityUsd": 149874.75999999998,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 19068.550000000003,
     "pools": [
       {
         "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83",
         "dex": "aerodrome",
-        "liquidityUsd": 149802.05,
+        "liquidityUsd": 19057.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xc47687d4615ce111e72573ebcb8ead9216a9f115c020bece73e31092caef835c",
+        "pair": "0x9D2139818d9cB7dc067B6128d337AAB1AA460aF6",
+        "dex": "equalizer",
+        "liquidityUsd": 6.33,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x756cd524bb6eec117a6d89480dab668e3ce4c05b915af4e0d8c17e4a95cfbcfa",
         "dex": "uniswap",
-        "liquidityUsd": 72.71,
+        "liquidityUsd": 4.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xF5512F16707e6Cf75ACc39335FFfC6D11AC19747",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.08,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x676F3E931b1B56E647171Ac48e7c1816AD51Db62",
+        "dex": "pancakeswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 76.78,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [],
       "socials": []

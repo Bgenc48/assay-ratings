@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-08-23T06:03:53.372Z",
+  "scanned_at": "2026-08-24T06:25:45.477Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -69,28 +69,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 14 days old; trust needs time (Provisional).",
-          "evidence": "0x8551ca636a42b503319250eb3e0260a79f7f39ea02f0c1b85eb96f1c1e288b53"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -99,11 +85,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -123,11 +104,11 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 14,
+    "verifiedSource": null,
+    "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": 0,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

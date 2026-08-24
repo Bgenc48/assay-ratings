@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "NOCK",
   "name": "Nock",
-  "scanned_at": "2026-08-23T05:58:01.248Z",
+  "scanned_at": "2026-08-24T06:14:45.494Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 46.8,
+    "overall": 46.1,
     "provisional": true,
     "badge": "Custodial",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -88,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -112,14 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 247,
-    "liquidityUsd": 1261070.7,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 1091243.6999999997,
     "pools": [
       {
         "pair": "0x85f1Aa3a70fEdd1C52705c15BAEd143e675CD626",
         "dex": "aerodrome",
-        "liquidityUsd": 895379.41,
+        "liquidityUsd": 915260.86,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -128,16 +123,7 @@
       {
         "pair": "0xd316152008e12105594c32686b9d0401fd2c60ca4805c84f280069d218b771a8",
         "dex": "uniswap",
-        "liquidityUsd": 116184.68,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa7b77a07ec321aaf50bac4126bb85a742c9b87d3ec0665246549f8307385a842",
-        "dex": "uniswap",
-        "liquidityUsd": 196289.07,
+        "liquidityUsd": 122403.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +132,7 @@
       {
         "pair": "0x71A4a6F6ea5C26Ce486B7eD0D8723A897ef5AD9A",
         "dex": "uniswap",
-        "liquidityUsd": 49736.63,
+        "liquidityUsd": 48256.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +141,7 @@
       {
         "pair": "0x8d15F9d33D9921D02217FB86Fd48Fbcd241b1A2a",
         "dex": "aerodrome",
-        "liquidityUsd": 2584.74,
+        "liquidityUsd": 2662.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,32 +150,41 @@
       {
         "pair": "0x467a8846E7B54eAC5D4D1cb2FDC9B8752212Ff0e",
         "dex": "hydrex",
-        "liquidityUsd": 298.66,
+        "liquidityUsd": 302.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xaf698Bc8299E7c280BC4E821FC8fd7570d28a71A",
+        "pair": "0xdd516c93efdb712a365bafdb2cb149ce183f6d498ba3d8d14bab5b6707c08d2f",
         "dex": "uniswap",
-        "liquidityUsd": 597.51,
+        "liquidityUsd": 30.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd6eb3271f78bfe5b7a71716175f276399427848745c17029f01d391a64f42873",
+        "pair": "0x3680f9f827f9becedc1a262ea02689bbc6c877203400b28ed7d88a6d88204a1b",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 807.64,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x556224DB736a65bdb9670fA21058DBd139671059",
+        "dex": "uniswap",
+        "liquidityUsd": 1519.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 20.95,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://nockchain.org",
