@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LINK",
   "name": "ChainLink Token",
-  "scanned_at": "2026-08-24T06:26:06.042Z",
+  "scanned_at": "2026-08-25T06:11:00.601Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 64.5,
-    "provisional": true,
+    "overall": 68.6,
+    "provisional": false,
     "badge": "Governance-Gated",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "184410843941160600804459",
+    "totalSupply": "187257462925263792181561",
     "decimals": 18,
     "owner": "0x7b0328745a01634c32efaf041d91432a075b308d",
     "controlType": "governor-timelock",
@@ -108,14 +108,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 176055.37999999998,
+    "verifiedSource": true,
+    "ageDays": 1107,
+    "liquidityUsd": 180103.2,
     "pools": [
       {
         "pair": "0x08C049F958E7d1f1b7ae44466b80d7773cA09c8e",
         "dex": "uniswap",
-        "liquidityUsd": 118044.57,
+        "liquidityUsd": 118300.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -124,7 +124,7 @@
       {
         "pair": "0x603F3FD0247e5A444a561D7DA081c3b00fcF7De9",
         "dex": "quickswap",
-        "liquidityUsd": 35598.22,
+        "liquidityUsd": 36383.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +133,7 @@
       {
         "pair": "0x224a5D3f2155f2F85Af70B6D72AEa61a15273ff4",
         "dex": "uniswap",
-        "liquidityUsd": 15675.36,
+        "liquidityUsd": 15896.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +142,16 @@
       {
         "pair": "0x906d29b81df7369343f65e04b19de6ac9940020c66f1d8865c5a45fbed5b8a02",
         "dex": "uniswap",
-        "liquidityUsd": 4814.68,
+        "liquidityUsd": 4933.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x53d08ee485ae9ababa12ac9882f3ec793ddf5c7efffcc4f134c397a4d069f1a2",
+        "dex": "uniswap",
+        "liquidityUsd": 2624.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +160,7 @@
       {
         "pair": "0x380CbdCaBc633A8D99eb02Aa31Fb15Cfa3e2cFC5",
         "dex": "uniswap",
-        "liquidityUsd": 1338.36,
+        "liquidityUsd": 1366.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,32 +169,23 @@
       {
         "pair": "0xb23aa0eb59A03404Adf88c48F1a4bA8b4bDA640E",
         "dex": "0x829cE74128Ea95C72aA379168Df529FEaa464aEE",
-        "liquidityUsd": 450.02,
+        "liquidityUsd": 458.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd62419409c197818e280a50847084a40f7b89afd4e3588bd7fdb20a09c75d7ee",
+        "pair": "0x0335dd8b5fd2d55eec70ea0969289e86ea6ddac7050074a99fce522219a0227f",
         "dex": "uniswap",
-        "liquidityUsd": 84.09,
+        "liquidityUsd": 140.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x76f706076E5b0A5d10A90474dd80D9e6ac5702aa",
-        "dex": "0x1bc323A5A87E6C7f463b805112DB39507fBb70E7",
-        "liquidityUsd": 50.08,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 23.72,
     "projectLinks": null
   },
   "notes": null,

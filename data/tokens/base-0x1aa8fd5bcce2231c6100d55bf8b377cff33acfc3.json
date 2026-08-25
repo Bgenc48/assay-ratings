@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "RAVE",
   "name": "RaveDAO",
-  "scanned_at": "2026-08-24T06:06:27.882Z",
+  "scanned_at": "2026-08-25T05:58:03.330Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B",
-    "overall": 75.5,
+    "letter": "C",
+    "overall": 66.4,
     "provisional": true,
     "badge": "Custodial",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,14 +72,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 84.7% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -89,6 +96,16 @@
   },
   "caps": [
     {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -96,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "22098063126887000000000000",
+    "totalSupply": "22115062443057000000000000",
     "decimals": 18,
     "owner": "0x9831156f1a6e506fca41503590b42f07c2e80f54",
     "controlType": "safe",
@@ -106,29 +123,56 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 333863.19,
+    "ageDays": 312,
+    "liquidityUsd": 214490.11999999997,
     "pools": [
       {
-        "pair": "0x1d3a89d06b3b673ce35059867e3749fc82ca38b9089889eba9da2f058c695da4",
-        "dex": "uniswap",
-        "liquidityUsd": 20365.35,
+        "pair": "0x51663B8A28E7Ea197c5CcF983AfC084Da0a8023D",
+        "dex": "aerodrome",
+        "liquidityUsd": 214477.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x51663B8A28E7Ea197c5CcF983AfC084Da0a8023D",
-        "dex": "aerodrome",
-        "liquidityUsd": 313497.84,
+        "pair": "0x7bce8334aa589a0b700446065f8abe2f592a2931e551ff47ada396f207938375",
+        "dex": "uniswap",
+        "liquidityUsd": 2.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xed2c689928af2e5031d7ec43ff26a498160f31945198e130817520e08ef782c8",
+        "dex": "uniswap",
+        "liquidityUsd": 1.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1d3a89d06b3b673ce35059867e3749fc82ca38b9089889eba9da2f058c695da4",
+        "dex": "uniswap",
+        "liquidityUsd": 8.59,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x37806f62ed9069aa40fc5dc255269647bf1f7f3c428cf6102126b6995b758ba9",
+        "dex": "uniswap",
+        "liquidityUsd": 0.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 84.66,
     "projectLinks": null
   },
   "notes": null,

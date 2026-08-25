@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "PAMPU",
   "name": "The Base Cat",
-  "scanned_at": "2026-08-24T06:10:03.326Z",
+  "scanned_at": "2026-08-25T06:00:18.509Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,7 +88,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -93,6 +99,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +121,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 26678.23,
+    "liquidityUsd": 24429.12,
     "pools": [
       {
         "pair": "0x4dc4dcca55db54a443dcea2ba72e9c35898458367f29cbd6c84f74cf94815d2f",
         "dex": "uniswap",
-        "liquidityUsd": 26329.62,
+        "liquidityUsd": 24130.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,32 +137,14 @@
       {
         "pair": "0xb4162a4aa1949b5a702c251d65894b6889884704d4a3eefd02afb78c711fe0db",
         "dex": "uniswap",
-        "liquidityUsd": 316.02,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5564a9b1597f38e5f3959a50b8ab4c5b295599b218c31dae1c18effc9d722693",
-        "dex": "uniswap",
-        "liquidityUsd": 1.06,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xdede0dc4d3d6fcb404d89f72797854e604003bcacdae981df097dc90314b55fd",
-        "dex": "uniswap",
-        "liquidityUsd": 31.53,
+        "liquidityUsd": 298.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 17.21,
     "projectLinks": {
       "websites": [
         "https://pampu.xyz/",

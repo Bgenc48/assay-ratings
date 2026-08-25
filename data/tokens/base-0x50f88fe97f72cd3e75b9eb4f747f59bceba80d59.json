@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "jesse",
   "name": "jesse",
-  "scanned_at": "2026-08-24T06:09:29.213Z",
+  "scanned_at": "2026-08-25T05:59:58.554Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 9.7%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -93,6 +106,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +128,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 558081.97,
+    "liquidityUsd": 573657.48,
     "pools": [
       {
         "pair": "0xc39acb3ce11ebcd3e1c5d67cdfb8707ab12674449fdab859327a8aabee03cd10",
         "dex": "uniswap",
-        "liquidityUsd": 548080.62,
+        "liquidityUsd": 563313.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +144,7 @@
       {
         "pair": "0x4e40ff3Be6bdA5b131c91520Fa73515076eEE098",
         "dex": "aerodrome",
-        "liquidityUsd": 7412.98,
+        "liquidityUsd": 7702.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,34 +153,38 @@
       {
         "pair": "0xE55BbED98db8f64d0d6813c819D6B037c2ee61bE",
         "dex": "uniswap",
-        "liquidityUsd": 838.74,
+        "liquidityUsd": 864.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xbE6e0de8f96c8decb7Ab3734247E7774f6609F84",
-        "dex": "leetswap",
-        "liquidityUsd": 346.12,
+        "pair": "0x0554A2857aFCB67cA14181461a8eB2699ED90A98",
+        "dex": "aerodrome",
+        "liquidityUsd": 542.6,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0554A2857aFCB67cA14181461a8eB2699ED90A98",
-        "dex": "aerodrome",
-        "liquidityUsd": 534.95,
+        "pair": "0xbE6e0de8f96c8decb7Ab3734247E7774f6609F84",
+        "dex": "leetswap",
+        "liquidityUsd": 356.69,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x5a36b57e359f21171ad96c164a9ec3d52c183716",
+          "sharePct": 99.99
+        }
       },
       {
         "pair": "0x055b22c9c22c4aa2e09e83866e8956819415ab56f75303573ed2ce0cb3abbb2d",
         "dex": "uniswap",
-        "liquidityUsd": 382.28,
+        "liquidityUsd": 384.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,23 +193,27 @@
       {
         "pair": "0xbAd80210fa3119324243279CB0212b1CE3218569",
         "dex": "aerodrome",
-        "liquidityUsd": 402.87,
+        "liquidityUsd": 409.4,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x735133d04b6a685a47fddd9a64bd05e91be05c92",
+          "sharePct": 99.99
+        }
       },
       {
         "pair": "0x3cf9d0208e6cfc6dff697a8880e1d32a545797bd094243bf3575d46963eff9c7",
         "dex": "uniswap",
-        "liquidityUsd": 83.41,
+        "liquidityUsd": 83.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 9.71,
     "projectLinks": {
       "websites": [
         "https://jesse.xyz/",

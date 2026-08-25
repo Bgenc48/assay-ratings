@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "LMTS",
   "name": "Limitless Official Token",
-  "scanned_at": "2026-08-24T06:02:34.993Z",
+  "scanned_at": "2026-08-25T05:55:53.093Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,14 +77,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 8.7%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -93,6 +100,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +122,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 774021.4699999999,
+    "verifiedSource": true,
+    "ageDays": 308,
+    "liquidityUsd": 858187.82,
     "pools": [
       {
         "pair": "0xbe4C36B9542610dF83Ca690C8b5BC53BbbC5d542",
         "dex": "aerodrome",
-        "liquidityUsd": 231566.07,
+        "liquidityUsd": 253291.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +138,7 @@
       {
         "pair": "0xa5E0Da329eE5AA03f09228e534953496334080f5",
         "dex": "aerodrome",
-        "liquidityUsd": 542180.37,
+        "liquidityUsd": 604496.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +147,25 @@
       {
         "pair": "0x6cdd1bcaf26c37a0b2de7437f4c56b0f0f2c187894d787aa9aff5b7f7c408d18",
         "dex": "uniswap",
-        "liquidityUsd": 253.13,
+        "liquidityUsd": 290.16,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5aaE605549a6ab9dA9712bab036eF8bc1a38b8dc",
+        "dex": "uniswap",
+        "liquidityUsd": 74.74,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x33645A0fe56fC3232EE69a48DfDE494b5f8A305C",
+        "dex": "uniswap",
+        "liquidityUsd": 5.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,23 +174,23 @@
       {
         "pair": "0x44317d0fb2bd02be1edc103a1fde61658ff91f662085b59924a1e559570a35a6",
         "dex": "uniswap",
-        "liquidityUsd": 21.82,
+        "liquidityUsd": 23.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd8656516d1AeeD2035Ea135F835a72c089969D7B",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.08,
+        "pair": "0x8238f4aa987c3bcb3017da7de7d1f71fe1afd9e995e9898f71ec931c244d99e9",
+        "dex": "uniswap",
+        "liquidityUsd": 6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 8.71,
     "projectLinks": {
       "websites": [],
       "socials": [

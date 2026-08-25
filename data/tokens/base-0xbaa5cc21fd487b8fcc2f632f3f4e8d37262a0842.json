@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MORPHO",
   "name": "Morpho Token",
-  "scanned_at": "2026-08-24T06:02:45.275Z",
+  "scanned_at": "2026-08-25T05:56:02.745Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 51.8,
-    "provisional": true,
+    "letter": "C",
+    "overall": 55.4,
+    "provisional": false,
     "badge": "Custodial",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -89,6 +89,11 @@
   },
   "caps": [
     {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -96,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "30233756548852994183865370",
+    "totalSupply": "30288643744386618178849235",
     "decimals": 18,
     "owner": "0xcba28b38103307ec8da98377fff9816c164f9afa",
     "controlType": "safe",
@@ -107,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 1758884.6099999999,
+    "verifiedSource": true,
+    "ageDays": 653,
+    "liquidityUsd": 1833843.7200000002,
     "pools": [
       {
         "pair": "0xB5F0b4aE66C14F7EFaA9aA1468E8FC536A3E288c",
         "dex": "aerodrome",
-        "liquidityUsd": 1077517.02,
+        "liquidityUsd": 1162428.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -123,7 +128,7 @@
       {
         "pair": "0x2F42Df4aF5312B492E9d7F7b2110D9c7bf2D9e4F",
         "dex": "uniswap",
-        "liquidityUsd": 176415.27,
+        "liquidityUsd": 168963.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -132,16 +137,7 @@
       {
         "pair": "0x2043B296fFC6b2d3bf4A3F3167d2Afb3B0FBdbEE",
         "dex": "uniswap",
-        "liquidityUsd": 366351.11,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3444bF60B93BD30f701601356Ac136aD6a9b7A79",
-        "dex": "uniswap",
-        "liquidityUsd": 34773.71,
+        "liquidityUsd": 366006.08,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,16 +146,25 @@
       {
         "pair": "0xd433B339c5C801228E1343C678Dc26213A7B8Aac",
         "dex": "aerodrome",
-        "liquidityUsd": 30716.31,
+        "liquidityUsd": 32790.97,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0x3444bF60B93BD30f701601356Ac136aD6a9b7A79",
+        "dex": "uniswap",
+        "liquidityUsd": 30077.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0x0b5801d76420450270ae80476bb57091a23969ef4c05f4f9441547d09e96c83b",
         "dex": "uniswap",
-        "liquidityUsd": 26522.16,
+        "liquidityUsd": 26287.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -168,7 +173,7 @@
       {
         "pair": "0xf76b2BA2dac24244B9cd3C05Da75cFd834f08259",
         "dex": "quickswap",
-        "liquidityUsd": 24401.98,
+        "liquidityUsd": 24822.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -177,7 +182,7 @@
       {
         "pair": "0xc1c26771c32ebbd6985d4f35798454efd3641edab9e8f47e9847dfb050ec7b12",
         "dex": "uniswap",
-        "liquidityUsd": 22187.05,
+        "liquidityUsd": 22467.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -195,9 +200,5 @@
     }
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "sami",
   "name": "sami-openlife",
-  "scanned_at": "2026-08-24T06:25:21.900Z",
+  "scanned_at": "2026-08-25T06:10:16.249Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 63.9,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,12 +78,19 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 14 days old; trust needs time (Provisional).",
+          "evidence": "0x250691e198cf2b27d11b962f82fa7a76ea0ba2158d2e09582bd209a571c6b200"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +101,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,21 +128,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 40856.24,
+    "verifiedSource": false,
+    "ageDays": 14,
+    "liquidityUsd": 41367.88,
     "pools": [
       {
         "pair": "0xc35ae08724a398137a7022919215f2fd79ad0e5efcb316e656e1342a56f1c9b5",
         "dex": "uniswap",
-        "liquidityUsd": 40856.24,
+        "liquidityUsd": 41367.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 16.34,
     "projectLinks": {
       "websites": [],
       "socials": [

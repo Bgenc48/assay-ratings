@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-24T06:17:07.028Z",
+  "scanned_at": "2026-08-25T06:04:46.926Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 65.7,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,14 +72,28 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 32 days old; trust needs time (Provisional).",
+          "evidence": "0x374ae037dabde48b2e5ea52c25e4096457ed0fd68fad1e1274fd51e9633dfb1f"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.9%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -88,6 +102,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -107,14 +126,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 14.52,
+    "verifiedSource": true,
+    "ageDays": 32,
+    "liquidityUsd": 14.510000000000002,
     "pools": [
       {
         "pair": "0x9cbd78fff641d13f6312f762000905b7e0abd5024f12e4b4827b236a858acd06",
         "dex": "uniswap",
-        "liquidityUsd": 11.81,
+        "liquidityUsd": 11.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +158,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0.87,
     "projectLinks": null
   },
   "notes": null,

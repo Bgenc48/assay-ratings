@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "牛来",
   "name": "牛来",
-  "scanned_at": "2026-08-24T06:26:48.247Z",
+  "scanned_at": "2026-08-25T06:11:43.228Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x10be8f6c162eed3b3a72b8f44a6494f5ec4677faaeb5c8e22a457a5d24a929fb"
+          }
         }
       ]
     },
@@ -104,10 +107,20 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [],
+    "pools": [
+      {
+        "pair": "0x10be8f6c162eed3b3a72b8f44a6494f5ec4677faaeb5c8e22a457a5d24a929fb",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": null,
     "projectLinks": null
   },

@@ -1,0 +1,200 @@
+{
+  "address": "0xb2000000000000000000006de4b70f9295cc7055",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "Presley",
+  "name": "KeyboardCat",
+  "scanned_at": "2026-08-25T06:14:49.803Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B+",
+    "overall": 85,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xb2000000000000000000006de4b70f9295cc7055",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xe1fd4e0eb17d10e7b8b537b4029f410f0df8a4b42a1f313b0a71bf4b47b45afd"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 99713.30999999998,
+    "pools": [
+      {
+        "pair": "0xe1fd4e0eb17d10e7b8b537b4029f410f0df8a4b42a1f313b0a71bf4b47b45afd",
+        "dex": "uniswap",
+        "liquidityUsd": 99296.15,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe3da70c6567a77c435d05c4e49ff125e1fd70bac0a0a68f50d583776d8f03518",
+        "dex": "uniswap",
+        "liquidityUsd": 166.93,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xbc9a2540df4b1aaad4ef17216076cd8b3dd51581d6e81900d151b0807be1e5b5",
+        "dex": "uniswap",
+        "liquidityUsd": 207.68,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe540fdfb69400d3aedaf6af2e029ff0bb9b126bda89e068152b168c0d7b4630e",
+        "dex": "uniswap",
+        "liquidityUsd": 8.42,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x27ce052bfa1817147493351d1a07dac0baf2d42c675a76627f896a14e1a18d6a",
+        "dex": "uniswap",
+        "liquidityUsd": 9.95,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe6322032d2612a5afee28b0a5f357168ac5392d85f0ae9688761174fbde99106",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4af3cf12da8880bdce3a89439c26df9da7fe2dcbf1385eb51e2cb4e952523b36",
+        "dex": "uniswap",
+        "liquidityUsd": 4.22,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x71d52fe6a1dd5505498d0bf38638c58c7ab5806d24703ad93f8f67f23cf5e724",
+        "dex": "uniswap",
+        "liquidityUsd": 19.96,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://www.youtube.com/watch?v=l4WOA5t0SOY"
+      ],
+      "socials": []
+    }
+  },
+  "notes": null,
+  "coi": false
+}
