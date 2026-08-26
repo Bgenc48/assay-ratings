@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BLUECHIP",
   "name": "BLUE CHIP",
-  "scanned_at": "2026-08-25T06:14:10.652Z",
+  "scanned_at": "2026-08-26T06:29:52.223Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -82,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 2.4%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -119,12 +112,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 428103.20999999996,
+    "liquidityUsd": 464546.20999999996,
     "pools": [
       {
         "pair": "0x41084f2d35b54dc0d070fbf76aa52c46f5d9c7e36c163252064b6b184d9429d9",
         "dex": "uniswap",
-        "liquidityUsd": 305568.68,
+        "liquidityUsd": 330731.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +126,7 @@
       {
         "pair": "0x59edcf191f467cdb6ed76ca06e21c6e143336ec65a2e5260be00ff348bde98c2",
         "dex": "uniswap",
-        "liquidityUsd": 86750.25,
+        "liquidityUsd": 85046.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +135,7 @@
       {
         "pair": "0x4b095f294d8efca4b50b948865e68262025a68ba80e759b5b75cddb995c6b43f",
         "dex": "uniswap",
-        "liquidityUsd": 28187.83,
+        "liquidityUsd": 37575.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +144,25 @@
       {
         "pair": "0x8ca1e98bf533962cd54e345bf6da38f98fe6afd857c4f516617f249cf56d0c50",
         "dex": "uniswap",
-        "liquidityUsd": 5913.61,
+        "liquidityUsd": 2245.52,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa81132ca92be9cca22a7c332637412f697f34d94a185e898784a482770f8af98",
+        "dex": "uniswap",
+        "liquidityUsd": 4999.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0ab4880a92e6632a5c161fa5a2a49d15bbfdabe1aaa49ec3f8b3c25e612374bb",
+        "dex": "uniswap",
+        "liquidityUsd": 2197.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +171,7 @@
       {
         "pair": "0x620dbb22f253a290eb945c414aee1add30751f50faf3b0e3807c4de162760e59",
         "dex": "uniswap",
-        "liquidityUsd": 964.31,
+        "liquidityUsd": 980.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,32 +180,14 @@
       {
         "pair": "0x56f929e0247e3f64381c9a2a1218a9c0c0ff3e1e8633d4a77b0d2ff54ee54533",
         "dex": "uniswap",
-        "liquidityUsd": 716.73,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x56b798d26f0cc84150422fd68cafb279d66df3b7b18cfafcab9793970f99c67d",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x915ee84ce60bb835f3bba87c42805bc90308585b271033e3137f3a1aeb265222",
-        "dex": "uniswap",
-        "liquidityUsd": 1.8,
+        "liquidityUsd": 768.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 2.44,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://basebluechip.com/"

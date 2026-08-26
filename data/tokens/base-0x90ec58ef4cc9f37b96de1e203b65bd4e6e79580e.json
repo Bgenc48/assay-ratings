@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "AMETA",
   "name": "Alpha City",
-  "scanned_at": "2026-08-25T05:57:27.346Z",
+  "scanned_at": "2026-08-26T06:02:30.648Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70.8,
-    "provisional": false,
+    "overall": 70,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -88,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -112,14 +107,23 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 570,
-    "liquidityUsd": 57001.479999999996,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 63948.29,
     "pools": [
       {
         "pair": "0x9aa4826fd33557a7d882296e3df5101b36ba09260f1757248af0e3957ed21674",
         "dex": "uniswap",
-        "liquidityUsd": 56990.96,
+        "liquidityUsd": 62339.44,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xFb559D225343A61884D46eeE91C1a805759F758b",
+        "dex": "uniswap",
+        "liquidityUsd": 1597.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +132,7 @@
       {
         "pair": "0x27f0a66f8291898d27fd6625bd008d9728255801f74e00c78e520b8ac0aa1c0d",
         "dex": "uniswap",
-        "liquidityUsd": 10.52,
+        "liquidityUsd": 11.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

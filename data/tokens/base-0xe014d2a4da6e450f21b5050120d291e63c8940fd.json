@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SOGNI",
   "name": "Sogni AI",
-  "scanned_at": "2026-08-25T06:09:01.507Z",
+  "scanned_at": "2026-08-26T06:21:39.722Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 41.8,
-    "provisional": false,
+    "letter": "F",
+    "overall": 37.3,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -76,7 +76,7 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -103,11 +103,6 @@
       "reason": "Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0xCc68Cb8B514A2216D2eECe3A0e8597Ce483610eb (LP holder 0x77ffdb8b9042f20142723c9f0fcf5154591d7487, 99.96% of that pool)."
     },
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -115,7 +110,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "9999106909117656884540418246",
+    "totalSupply": "9999105983663245267376323343",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -128,13 +123,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 425,
-    "liquidityUsd": 235586.38,
+    "ageDays": null,
+    "liquidityUsd": 235406.86,
     "pools": [
       {
         "pair": "0xCc68Cb8B514A2216D2eECe3A0e8597Ce483610eb",
         "dex": "aerodrome",
-        "liquidityUsd": 235586.38,
+        "liquidityUsd": 235406.86,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,

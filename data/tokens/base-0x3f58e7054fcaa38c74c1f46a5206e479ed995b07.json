@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-25T06:06:04.350Z",
+  "scanned_at": "2026-08-26T06:17:29.054Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,34 +66,20 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x980cade20fb1aef0bef6406f09e2a08f07fe1bbea4514caa3a5882a0216eac73"
+            "pair": "0x2cceb6b0f9b34ba330e5899e3193b5ab8dd3c8e350a41479e4b3bae3eea7bc17"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 27 days old; trust needs time (Provisional).",
-          "evidence": "0x152e2d754646920ebd5d94449977ba9db0aac54bf393a964860c63ec80e6f798"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -102,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -126,21 +107,30 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 27,
-    "liquidityUsd": 0.01,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": null,
     "pools": [
       {
-        "pair": "0x980cade20fb1aef0bef6406f09e2a08f07fe1bbea4514caa3a5882a0216eac73",
+        "pair": "0x2cceb6b0f9b34ba330e5899e3193b5ab8dd3c8e350a41479e4b3bae3eea7bc17",
         "dex": "uniswap",
-        "liquidityUsd": 0.01,
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1e8b61672cc7e53ce8b691ac090139576aff1ac2e30a9599ed12fe927cc96b86",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0.03,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

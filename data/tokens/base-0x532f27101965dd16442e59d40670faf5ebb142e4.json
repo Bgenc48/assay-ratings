@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BRETT",
   "name": "Brett",
-  "scanned_at": "2026-08-25T05:51:26.673Z",
+  "scanned_at": "2026-08-26T05:54:13.530Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
     "overall": 85,
-    "provisional": false,
+    "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -111,13 +111,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 913,
-    "liquidityUsd": 2401497.21,
+    "ageDays": null,
+    "liquidityUsd": 2333390.3600000003,
     "pools": [
       {
         "pair": "0x4e829F8A5213c42535AB84AA40BD4aDCCE9cBa02",
         "dex": "aerodrome",
-        "liquidityUsd": 830454.71,
+        "liquidityUsd": 812575.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +126,7 @@
       {
         "pair": "0xBA3F945812a83471d709BCe9C3CA699A19FB46f7",
         "dex": "uniswap",
-        "liquidityUsd": 1226014.95,
+        "liquidityUsd": 1192795.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +135,7 @@
       {
         "pair": "0x75CC10fdcEa4b7D13c115ABB08240ac9c9Be6f2f",
         "dex": "pancakeswap",
-        "liquidityUsd": 200806.58,
+        "liquidityUsd": 192411.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +144,7 @@
       {
         "pair": "0x43BBb129b56A998732767725A183b7a566843dBA",
         "dex": "aerodrome",
-        "liquidityUsd": 27718.04,
+        "liquidityUsd": 26139.77,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -153,7 +153,7 @@
       {
         "pair": "0x76Bf0abD20f1e0155Ce40A62615a90A709a6C3D8",
         "dex": "uniswap",
-        "liquidityUsd": 100958.31,
+        "liquidityUsd": 97155.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,32 +162,32 @@
       {
         "pair": "0x404E927b203375779a6aBD52A2049cE0ADf6609B",
         "dex": "sushiswap",
-        "liquidityUsd": 4571.65,
+        "liquidityUsd": 4440.34,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xFfa80952B3800240F11AD25E45e8d3E5C1593E70",
-        "dex": "aerodrome",
-        "liquidityUsd": 4037.37,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa745ec5e44ee4839cd6d1b76b76e800fed7cb6ceda014a6310c558213212c54e",
+        "pair": "0x27402edf3c6a6d6b5a279dfc7a2c8cbacebbfdfc3559f7c03d6971b09126a9f3",
         "dex": "uniswap",
-        "liquidityUsd": 6935.6,
+        "liquidityUsd": 5550.41,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x36a46dFF597C5A444bbC521D26787F57867D2214",
+        "dex": "uniswap",
+        "liquidityUsd": 2320.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 27.71,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.basedbrett.com/"

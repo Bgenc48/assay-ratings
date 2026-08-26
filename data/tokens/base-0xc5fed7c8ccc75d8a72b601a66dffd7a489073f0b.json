@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ACU",
   "name": "ACU",
-  "scanned_at": "2026-08-25T06:09:35.975Z",
+  "scanned_at": "2026-08-26T06:22:48.452Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 71.8,
+    "letter": "B",
+    "overall": 75.4,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -89,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "1901926603812000000",
+    "totalSupply": "1787176603812000000",
     "decimals": 12,
     "owner": "0x9e13175e8b541fe9d43268807d5ac52305422a94",
     "controlType": "safe",
@@ -111,13 +106,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 277,
-    "liquidityUsd": 212106.44999999998,
+    "ageDays": null,
+    "liquidityUsd": 229024.43,
     "pools": [
       {
         "pair": "0x7feEd89be48f937E131f764EF01a2AC02ceC31f8",
         "dex": "pancakeswap",
-        "liquidityUsd": 177986.44,
+        "liquidityUsd": 192969.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +121,7 @@
       {
         "pair": "0x6d76a0f856a2ba951DA45Da9be399509Ad602e6A",
         "dex": "aerodrome",
-        "liquidityUsd": 19572.86,
+        "liquidityUsd": 20147.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +130,7 @@
       {
         "pair": "0x7f317a51d5fa4f879c76c675260da2de35765b87006f8e6045e937c41eb1d72d",
         "dex": "uniswap",
-        "liquidityUsd": 14442.96,
+        "liquidityUsd": 15795.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,14 +139,14 @@
       {
         "pair": "0x823267235953825559697e69d6e26c46b9b83fc81ffd5bafe1c8daf353e35d7c",
         "dex": "uniswap",
-        "liquidityUsd": 104.19,
+        "liquidityUsd": 111.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 19.26,
+    "top10Pct": 19,
     "projectLinks": {
       "websites": [
         "https://acurast.com/",
