@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "sami",
   "name": "sami-openlife",
-  "scanned_at": "2026-08-26T06:23:36.862Z",
+  "scanned_at": "2026-08-27T16:52:12.175Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 63.9,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,12 +78,19 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 16 days old; trust needs time (Provisional).",
+          "evidence": "0x250691e198cf2b27d11b962f82fa7a76ea0ba2158d2e09582bd209a571c6b200"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +101,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,14 +128,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 38022.26,
+    "verifiedSource": false,
+    "ageDays": 16,
+    "liquidityUsd": 73488.15000000001,
     "pools": [
       {
         "pair": "0xc35ae08724a398137a7022919215f2fd79ad0e5efcb316e656e1342a56f1c9b5",
         "dex": "uniswap",
-        "liquidityUsd": 38006.55,
+        "liquidityUsd": 73446.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,14 +144,50 @@
       {
         "pair": "0x55b18ef334f01ef636761171432f0fb94b1c8cb6a48aaa0f95effc546d9d2f6d",
         "dex": "uniswap",
-        "liquidityUsd": 15.71,
+        "liquidityUsd": 24.37,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x94cc821e9df715be7cc0b26a6feb237d6830e0e01b10dbd3b5f752c6e5f4962e",
+        "dex": "uniswap",
+        "liquidityUsd": 4.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xbc964c32ca2c72102744501dd543922c16373e8b8b34739fefd655c91b3b6c8b",
+        "dex": "uniswap",
+        "liquidityUsd": 7.07,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7d944bd5173d23a808baa4101ead5df7ac1958883e29410c63c82661da845618",
+        "dex": "uniswap",
+        "liquidityUsd": 2.35,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd9a86b93b89623d65a8a4330991b7a91fd8f5e9cbadda476eabe7b99be47d60b",
+        "dex": "uniswap",
+        "liquidityUsd": 3.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 15.45,
     "projectLinks": {
       "websites": [],
       "socials": [

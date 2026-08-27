@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ELSA",
   "name": "Elsa",
-  "scanned_at": "2026-08-26T05:59:35.276Z",
+  "scanned_at": "2026-08-27T16:39:00.045Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 85,
+    "overall": 84.6,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -82,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -116,13 +116,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 230,
-    "liquidityUsd": 326353,
+    "ageDays": 232,
+    "liquidityUsd": 335884.25,
     "pools": [
       {
         "pair": "0x83f3ACa29Bc79B048B99C56013475570acc97ccF",
         "dex": "pancakeswap",
-        "liquidityUsd": 316713.73,
+        "liquidityUsd": 325941.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -131,14 +131,23 @@
       {
         "pair": "0xdc8F367884437e398FBF4a94D3333fE0b5B376Db",
         "dex": "uniswap",
-        "liquidityUsd": 9639.27,
+        "liquidityUsd": 9939.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf098aa17a6288ec704a7c8eec468a0671925c472d4aca6cafd58ad881e03ca5a",
+        "dex": "uniswap",
+        "liquidityUsd": 3.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 15.21,
     "projectLinks": {
       "websites": [
         "https://moltnbook.com"

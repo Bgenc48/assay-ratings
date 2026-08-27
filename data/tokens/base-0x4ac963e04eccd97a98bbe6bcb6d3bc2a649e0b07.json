@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-08-26T06:11:24.729Z",
+  "scanned_at": "2026-08-27T16:45:36.152Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70.4,
+    "letter": "C",
+    "overall": 63.9,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -69,9 +69,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 38 days old; trust needs time (Provisional).",
+          "evidence": "0xbf481d43d43882d7b668c2ba577d90015f207de860b81ccacf90e24da0b53109"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 75,
@@ -85,6 +92,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,10 +117,10 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
+    "ageDays": 38,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": 11,
+    "top10Pct": 12.17,
     "projectLinks": null
   },
   "notes": null,

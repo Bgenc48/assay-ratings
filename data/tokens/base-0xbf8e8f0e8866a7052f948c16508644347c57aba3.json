@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "aeon",
   "name": "aeon",
-  "scanned_at": "2026-08-26T06:19:26.059Z",
+  "scanned_at": "2026-08-27T16:49:33.699Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70,
+    "overall": 70.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -105,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 511502.31000000006,
+    "liquidityUsd": 588872.67,
     "pools": [
       {
         "pair": "0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4",
         "dex": "uniswap",
-        "liquidityUsd": 504368.93,
+        "liquidityUsd": 581386.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +121,7 @@
       {
         "pair": "0x5eBDB19A6931431F959Fd3835193CF7243961807",
         "dex": "aerodrome",
-        "liquidityUsd": 5259.46,
+        "liquidityUsd": 5265.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,16 +130,7 @@
       {
         "pair": "0x1ead0a95834a91ce18e1acfee301919407708d53124687acf6d54537cf44dd8f",
         "dex": "uniswap",
-        "liquidityUsd": 1197.12,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8ee2c16E31dc758EC51aAaB1035766cc205E979d",
-        "dex": "uniswap",
-        "liquidityUsd": 517.75,
+        "liquidityUsd": 1433.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +139,16 @@
       {
         "pair": "0xe2c8011F9098f2b17eaa63C58d7443fD60EFC267",
         "dex": "uniswap",
-        "liquidityUsd": 122.5,
+        "liquidityUsd": 133.97,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8ee2c16E31dc758EC51aAaB1035766cc205E979d",
+        "dex": "uniswap",
+        "liquidityUsd": 588.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +157,16 @@
       {
         "pair": "0xC351c674384380DFA82B49C79b9C4097f73a51Af",
         "dex": "pancakeswap",
-        "liquidityUsd": 3.32,
+        "liquidityUsd": 5.5,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x782423053b442633fc5A8F9e0b071030f88DF43F",
+        "dex": "aerodrome",
+        "liquidityUsd": 21.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,23 +175,14 @@
       {
         "pair": "0xe9c20c0f345c5d7ca6653c75aec51db584e5c5a2f0bcd00a540cc689c3fa424a",
         "dex": "uniswap",
-        "liquidityUsd": 32.34,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc4f528cdd1a50c0fdbc18c74b191868eb2971e32f92b90c9271d36bc6453d857",
-        "dex": "uniswap",
-        "liquidityUsd": 0.89,
+        "liquidityUsd": 37.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 18.21,
     "projectLinks": {
       "websites": [
         "https://www.aeon.fun/",

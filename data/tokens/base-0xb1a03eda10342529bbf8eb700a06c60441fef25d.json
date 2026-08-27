@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MIGGLES",
   "name": "Mister Miggles",
-  "scanned_at": "2026-08-26T06:06:22.580Z",
+  "scanned_at": "2026-08-27T16:42:41.523Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
     "overall": 85,
-    "provisional": true,
+    "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -110,15 +110,15 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 588314.13,
+    "verifiedSource": true,
+    "ageDays": 772,
+    "liquidityUsd": 621493.6200000001,
     "pools": [
       {
         "pair": "0x17A3Ad8c74c4947005aFEDa9965305ae2EB2518a",
         "dex": "uniswap",
-        "liquidityUsd": 546335.5,
-        "lpBurnedPct": 99.97,
+        "liquidityUsd": 577654.15,
+        "lpBurnedPct": 99.96,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
@@ -126,7 +126,7 @@
       {
         "pair": "0xadAd4ce0C68F50A19CF5063E0B91d701Daab1df1",
         "dex": "uniswap",
-        "liquidityUsd": 20053.35,
+        "liquidityUsd": 21243.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +135,7 @@
       {
         "pair": "0xcd396e3863f6805b59872f3719191b88b1d89ecfd71966c0d21a10d557bc5bc2",
         "dex": "uniswap",
-        "liquidityUsd": 15708.93,
+        "liquidityUsd": 15533.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,25 +144,16 @@
       {
         "pair": "0x326841EFD63340767e02ec88E583f18a82AF4A48",
         "dex": "aerodrome",
-        "liquidityUsd": 2175.43,
+        "liquidityUsd": 3924.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xC16F5d5C0a2C0784EfaFEDf28B934a9F0bA21CD7",
-        "dex": "uniswap",
-        "liquidityUsd": 380.36,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x026ebfF523E928d5E073eA8b07D9740aACAd3480",
-        "dex": "uniswap",
-        "liquidityUsd": 1680.32,
+        "pair": "0x1AD9e6154A45aACBF98f96F386E4C477A5C8D490",
+        "dex": "hydrex",
+        "liquidityUsd": 1293.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +162,7 @@
       {
         "pair": "0x5C892D75021F54Bd562631ba3B69EDb81ad47269",
         "dex": "0xba34aA640b8Be02A439221BCbea1f48c1035EEF9",
-        "liquidityUsd": 773.77,
+        "liquidityUsd": 817.68,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -182,16 +173,25 @@
         }
       },
       {
-        "pair": "0x1AD9e6154A45aACBF98f96F386E4C477A5C8D490",
-        "dex": "hydrex",
-        "liquidityUsd": 1206.47,
+        "pair": "0x0710409c47e133656dfd0e14d016416ae56175f768532ccce4dfa10e0b68d1c2",
+        "dex": "uniswap",
+        "liquidityUsd": 623.04,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xC16F5d5C0a2C0784EfaFEDf28B934a9F0bA21CD7",
+        "dex": "uniswap",
+        "liquidityUsd": 402.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 12.01,
     "projectLinks": {
       "websites": [
         "https://miggles.io"

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Ratspeak",
   "name": "Ratspeak",
-  "scanned_at": "2026-08-26T06:30:27.614Z",
+  "scanned_at": "2026-08-27T16:56:27.416Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70.4,
+    "letter": "C",
+    "overall": 63.9,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -72,9 +72,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 101 days old; trust needs time (Provisional).",
+          "evidence": "0xf0ca8666d3d373677686855b7b77e7cbca8cf0544e558ce06d2290c7abab68fc"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 75,
@@ -88,6 +95,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,14 +117,23 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 558953.1100000002,
+    "verifiedSource": true,
+    "ageDays": 101,
+    "liquidityUsd": 744037.9600000001,
     "pools": [
       {
         "pair": "0x5e9782079683037fc8bb57625683359d9efaef80f2b829c4bb5b1896c6bb40b6",
         "dex": "uniswap",
-        "liquidityUsd": 527056.31,
+        "liquidityUsd": 736513.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9ab2b08bf4d2d3dbdfde9d89993bc5a382a020b6ea04ea46c32e4f9f03713ba5",
+        "dex": "uniswap",
+        "liquidityUsd": 609.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,25 +142,7 @@
       {
         "pair": "0x112ba48cd70188a21aad6d33fc5eeba5a6eed12aef1816751c537d91bfb88e26",
         "dex": "uniswap",
-        "liquidityUsd": 20373.83,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf530d271db9940d832ad7eebe4434bec0af3c81c51bb8c227f7b333068bdb328",
-        "dex": "uniswap",
-        "liquidityUsd": 10301.66,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x65e2a61f739a0ef1087dd2b24e5a0957014bb511c342527b344572a0489b7069",
-        "dex": "uniswap",
-        "liquidityUsd": 934.4,
+        "liquidityUsd": 5264.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +151,16 @@
       {
         "pair": "0x0654601e52e1f4a418e5e0e4ff4fc206aeb0e702d18c52096684883dd8abe9d5",
         "dex": "uniswap",
-        "liquidityUsd": 74.67,
+        "liquidityUsd": 101.34,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf530d271db9940d832ad7eebe4434bec0af3c81c51bb8c227f7b333068bdb328",
+        "dex": "uniswap",
+        "liquidityUsd": 1301.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,16 +169,7 @@
       {
         "pair": "0x1f2ff60174857fbff81a98d212e5cc4ff29886481220db7eaaef03b068856527",
         "dex": "uniswap",
-        "liquidityUsd": 168.9,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc2ad59745a15505e0fff9602f51dcc790d28d828c63abf54ed75b20c48fb5b1b",
-        "dex": "uniswap",
-        "liquidityUsd": 0.8,
+        "liquidityUsd": 189.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,14 +178,23 @@
       {
         "pair": "0x7d59117BC682dC8ce22B20120E0F03ec7e879f59",
         "dex": "hydrex",
-        "liquidityUsd": 42.54,
+        "liquidityUsd": 46.95,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x65e2a61f739a0ef1087dd2b24e5a0957014bb511c342527b344572a0489b7069",
+        "dex": "uniswap",
+        "liquidityUsd": 10.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 17.77,
+    "top10Pct": 18.16,
     "projectLinks": {
       "websites": [
         "https://ratspeak.org/",

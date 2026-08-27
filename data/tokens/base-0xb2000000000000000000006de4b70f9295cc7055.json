@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "Presley",
   "name": "KeyboardCat",
-  "scanned_at": "2026-08-26T06:31:08.458Z",
+  "scanned_at": "2026-08-27T16:57:06.637Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.2%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -93,6 +106,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +128,23 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 90904.76,
+    "liquidityUsd": 91001.42,
     "pools": [
       {
         "pair": "0xe1fd4e0eb17d10e7b8b537b4029f410f0df8a4b42a1f313b0a71bf4b47b45afd",
         "dex": "uniswap",
-        "liquidityUsd": 90839.64,
+        "liquidityUsd": 90972.5,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfa4e8582c04495a6f80633120593e6fc73c103551f51b32fec24faa2b795942d",
+        "dex": "uniswap",
+        "liquidityUsd": 0.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +153,7 @@
       {
         "pair": "0xe3da70c6567a77c435d05c4e49ff125e1fd70bac0a0a68f50d583776d8f03518",
         "dex": "uniswap",
-        "liquidityUsd": 30.9,
+        "liquidityUsd": 16.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,59 +162,50 @@
       {
         "pair": "0xbc9a2540df4b1aaad4ef17216076cd8b3dd51581d6e81900d151b0807be1e5b5",
         "dex": "uniswap",
-        "liquidityUsd": 16.79,
+        "liquidityUsd": 0.36,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x24fa3ef024f7c72c5a4d787a8a4de4be077dbfb4e2693353877db1f904a53e41",
+        "pair": "0xe6322032d2612a5afee28b0a5f357168ac5392d85f0ae9688761174fbde99106",
         "dex": "uniswap",
-        "liquidityUsd": 3.25,
+        "liquidityUsd": 1.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xc6fa0a1e4408ca8f41b06b4bd5a82f3bb356f4a872a087542bd4c6ed52e2cf5d",
+        "pair": "0x27ce052bfa1817147493351d1a07dac0baf2d42c675a76627f896a14e1a18d6a",
         "dex": "uniswap",
-        "liquidityUsd": 1.95,
+        "liquidityUsd": 1.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd6f509781e76771f39527a35336d231320051dc6e64f5c38ebfc24269630a9e0",
+        "pair": "0xfdf95b4f4bf337da560ef08f7e54dd98b6434063f6a2628d4f421bafd95eb499",
         "dex": "uniswap",
-        "liquidityUsd": 9.55,
+        "liquidityUsd": 8.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x639de29a64ab77fc4469f58b964d913c53d59748d8c7b8b0cb0c7faf3b8c59cc",
+        "pair": "0x6dbb9d201b77550dc1874b09af8220b2da6bae8e4cd311448501aced9a74aa33",
         "dex": "uniswap",
-        "liquidityUsd": 2.58,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x0e525ed5b80abfea2b3901db3f4dd3f1d657014ba58177a79371663a0e43b447",
-        "dex": "uniswap",
-        "liquidityUsd": 0.1,
+        "liquidityUsd": 0.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0.16,
     "projectLinks": {
       "websites": [
         "https://www.youtube.com/watch?v=l4WOA5t0SOY"
