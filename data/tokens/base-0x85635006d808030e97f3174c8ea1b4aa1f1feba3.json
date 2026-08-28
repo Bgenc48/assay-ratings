@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "VVVeity",
   "name": "Venice Deity",
-  "scanned_at": "2026-08-27T16:53:15.423Z",
+  "scanned_at": "2026-08-28T18:06:58.005Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 87 days old; trust needs time (Provisional).",
+          "text": "Token is 88 days old; trust needs time (Provisional).",
           "evidence": "0x6afb49ab592996a177b512dae9432f80d0bd53f11fe3ce0eebcb339192703a7a"
         }
       ]
@@ -118,22 +118,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 87,
-    "liquidityUsd": 107959.94000000002,
+    "ageDays": 88,
+    "liquidityUsd": 135964.09,
     "pools": [
       {
         "pair": "0x123e50d024df1e6fe41347850a5695918242927b4e2623d2b97625248ccd2c20",
         "dex": "uniswap",
-        "liquidityUsd": 107867.52,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xdD468c77a2CD3E9241a3c75B6f5452b9d1E2fF35",
-        "dex": "uniswap",
-        "liquidityUsd": 86.1,
+        "liquidityUsd": 106019.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +133,7 @@
       {
         "pair": "0xb5cb3780769f1af57ab361ffda0882b7787ea3e5cf566d8dcf03de228ad7e585",
         "dex": "uniswap",
-        "liquidityUsd": 2.44,
+        "liquidityUsd": 2.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +142,7 @@
       {
         "pair": "0x3f901e7deface6e8b82415292f69489741942d86c74b915dbd09d0e8898ca751",
         "dex": "uniswap",
-        "liquidityUsd": 2.05,
+        "liquidityUsd": 1.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +151,34 @@
       {
         "pair": "0x41aed8183af4d1104e47ae64ae9b3c9dbba04c7b715da84f831117f73ed21f19",
         "dex": "uniswap",
-        "liquidityUsd": 1.83,
+        "liquidityUsd": 1.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xdD468c77a2CD3E9241a3c75B6f5452b9d1E2fF35",
+        "dex": "uniswap",
+        "liquidityUsd": 0.23,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfc6f55a8664cdb97e992346f806e2999ec1938036bb1393ea147ced5ba35ef8c",
+        "dex": "uniswap",
+        "liquidityUsd": 20632.71,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x560e3510d8637aa841308f3b73e83bb686cff5ec2bd21b5919365a8d38905266",
+        "dex": "uniswap",
+        "liquidityUsd": 9305.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

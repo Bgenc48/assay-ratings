@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-27T16:42:03.296Z",
+  "scanned_at": "2026-08-28T17:46:45.434Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x572d97c969bad6fb7ed2aedf2b93e7c493bd124504a3f4125cd180c36f7431a4"
+          }
         }
       ]
     },
@@ -75,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 45 days old; trust needs time (Provisional).",
+          "text": "Token is 46 days old; trust needs time (Provisional).",
           "evidence": "0xc9f7566ea9681101c71193c1f4ebc263cc40f707026aa9d09e1ad30ee2f9a820"
         }
       ]
@@ -129,9 +132,28 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 45,
-    "liquidityUsd": null,
-    "pools": [],
+    "ageDays": 46,
+    "liquidityUsd": 12.91,
+    "pools": [
+      {
+        "pair": "0x572d97c969bad6fb7ed2aedf2b93e7c493bd124504a3f4125cd180c36f7431a4",
+        "dex": "uniswap",
+        "liquidityUsd": 12.26,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8a086d6cc4894395e05434be15f1ba9c24489852e407edb27a1aa4d0bfc6034d",
+        "dex": "uniswap",
+        "liquidityUsd": 0.65,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 77.19,
     "projectLinks": null
   },

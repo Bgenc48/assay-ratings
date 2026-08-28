@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Polymarket",
   "name": "Polymarket",
-  "scanned_at": "2026-08-27T16:57:08.937Z",
+  "scanned_at": "2026-08-28T18:11:54.026Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -102,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -125,14 +114,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 4950427.58,
+    "liquidityUsd": 4950427.569999999,
     "pools": [
       {
         "pair": "0x345e4D267B2d698762067E0e786970bB62b4070F",
         "dex": "aerodrome",
-        "liquidityUsd": 4950427.57,
+        "liquidityUsd": 4950427.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -141,7 +130,7 @@
       {
         "pair": "0x58c032c0fd20ab4f2df48498e748ab11edf8e0f2b4c540434342807466d6d06f",
         "dex": "uniswap",
-        "liquidityUsd": 0.01,
+        "liquidityUsd": 0.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

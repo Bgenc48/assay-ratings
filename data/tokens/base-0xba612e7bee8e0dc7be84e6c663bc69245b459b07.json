@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-27T16:57:45.194Z",
+  "scanned_at": "2026-08-28T18:12:47.511Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -116,12 +116,21 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 4745095.28,
+    "liquidityUsd": 4950478.24,
     "pools": [
       {
         "pair": "0x97920Ed8bC61418A932E771e92b85A55dEd10324",
         "dex": "aerodrome",
-        "liquidityUsd": 4745095.28,
+        "liquidityUsd": 4950477.71,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4526a335629578493a7ffce31c3b40c5ae6ba476beb37505078b301e83400de0",
+        "dex": "uniswap",
+        "liquidityUsd": 0.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

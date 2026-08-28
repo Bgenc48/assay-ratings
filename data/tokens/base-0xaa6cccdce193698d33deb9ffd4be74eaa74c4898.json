@@ -1,0 +1,205 @@
+{
+  "address": "0xaa6cccdce193698d33deb9ffd4be74eaa74c4898",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "ElonRWA",
+  "name": "ElonRWA",
+  "scanned_at": "2026-08-28T18:13:49.320Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B+",
+    "overall": 85,
+    "provisional": false,
+    "badge": "Code-Enforced",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xaa6cccdce193698d33deb9ffd4be74eaa74c4898",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xD56f086E7B796b313d49f2BC926fAc4BDd2a2B0B"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 75,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "100000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 891,
+    "liquidityUsd": 594982.79,
+    "pools": [
+      {
+        "pair": "0xD56f086E7B796b313d49f2BC926fAc4BDd2a2B0B",
+        "dex": "uniswap",
+        "liquidityUsd": 579398.94,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3486886bdee659ce57013d3af0d179baa10815ce071dd0e69b630a84f704e665",
+        "dex": "uniswap",
+        "liquidityUsd": 1995.31,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa1e1bcc6ee19315160c50c4a683af2dbdaf5a0de850f7e0c802f0bdf3d7aab51",
+        "dex": "uniswap",
+        "liquidityUsd": 3272.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0ec2c3f33402acfec51fcf9892132cca2ba1b3007e7030890e8d96cb4b5d9735",
+        "dex": "uniswap",
+        "liquidityUsd": 349.15,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0463a6de69562be6392cbed82085143313234beab8b6a33748224935572b7f7b",
+        "dex": "uniswap",
+        "liquidityUsd": 2985.68,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xad073cb23ca51fef678bf478bc3c03226cdbf6396fed14c6c10bf6a161d83531",
+        "dex": "uniswap",
+        "liquidityUsd": 2987.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x450590d2d3c2b62eea2595f86887972bcb10ff94aaffa12f41c91bb392d99bd3",
+        "dex": "uniswap",
+        "liquidityUsd": 1994.33,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xde043cd8b925b121c2f84f3a483851a19323f038d0d9abcaddf1c5251c309ad7",
+        "dex": "uniswap",
+        "liquidityUsd": 1999.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 11.68,
+    "projectLinks": {
+      "websites": [
+        "https://elonrwa.com/",
+        "https://linktr.ee/ElonRWA"
+      ],
+      "socials": [
+        "https://twitter.com/ElonRWA",
+        "https://t.me/ElonRWA",
+        "https://discord.gg/jaHdvwzX4P"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-27T16:56:16.890Z",
+  "scanned_at": "2026-08-28T18:10:42.471Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -67,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x789ddc35999e9da04e7486641c5d7e659c95e64761399049391e643222a5024b"
+          }
         }
       ]
     },
@@ -99,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.concentration",
       "letter": "C",
       "reason": "Top-10 unlabeled holders exceed 50%."
@@ -127,10 +119,29 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 43.61,
+    "pools": [
+      {
+        "pair": "0x789ddc35999e9da04e7486641c5d7e659c95e64761399049391e643222a5024b",
+        "dex": "uniswap",
+        "liquidityUsd": 43.26,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9f2d13a4ce18364c65912c5545b7defb255afc4d2709775f6229f4d10c35abee",
+        "dex": "uniswap",
+        "liquidityUsd": 0.35,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 94.5,
     "projectLinks": null
   },

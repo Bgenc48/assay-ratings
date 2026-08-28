@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ZEST",
   "name": "Zest",
-  "scanned_at": "2026-08-27T16:39:55.102Z",
+  "scanned_at": "2026-08-28T17:40:46.062Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 51.4,
+    "overall": 47.7,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -78,22 +78,15 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 86 days old; trust needs time (Provisional).",
+          "text": "Token is 87 days old; trust needs time (Provisional).",
           "evidence": "0x18c991e15d44e504b5cc9fc25246550200b45c798de7dd4b7517e1ad3c8c45d2"
         }
       ]
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 1.5%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -115,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "758528870972027701044415",
+    "totalSupply": "761083729692360978968520",
     "decimals": 18,
     "owner": "0x4ddae1d1bb8dacd4c8fa56792fde60f446755d0f",
     "controlType": "safe",
@@ -128,29 +121,20 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 86,
-    "liquidityUsd": 163255.53,
+    "ageDays": 87,
+    "liquidityUsd": 162838.25,
     "pools": [
-      {
-        "pair": "0xcd916d63738cf2fcd74ce789860438aaf868fb01ea41e1ca53089c1607189473",
-        "dex": "uniswap",
-        "liquidityUsd": 286.6,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x3693022BD390E147D8dD89a05403C80FF21dd64B",
         "dex": "aerodrome",
-        "liquidityUsd": 162968.93,
+        "liquidityUsd": 162838.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 1.52,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.zestprotocol.com/",

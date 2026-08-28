@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Ratspeak",
   "name": "Ratspeak",
-  "scanned_at": "2026-08-27T16:56:27.416Z",
+  "scanned_at": "2026-08-28T18:10:57.634Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 63.9,
+    "overall": 63.1,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -78,13 +78,13 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 101 days old; trust needs time (Provisional).",
+          "text": "Token is 102 days old; trust needs time (Provisional).",
           "evidence": "0xf0ca8666d3d373677686855b7b77e7cbca8cf0544e558ce06d2290c7abab68fc"
         }
       ]
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -118,22 +118,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 101,
-    "liquidityUsd": 744037.9600000001,
+    "ageDays": 102,
+    "liquidityUsd": 614375.58,
     "pools": [
       {
         "pair": "0x5e9782079683037fc8bb57625683359d9efaef80f2b829c4bb5b1896c6bb40b6",
         "dex": "uniswap",
-        "liquidityUsd": 736513.06,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9ab2b08bf4d2d3dbdfde9d89993bc5a382a020b6ea04ea46c32e4f9f03713ba5",
-        "dex": "uniswap",
-        "liquidityUsd": 609.93,
+        "liquidityUsd": 590741.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +133,16 @@
       {
         "pair": "0x112ba48cd70188a21aad6d33fc5eeba5a6eed12aef1816751c537d91bfb88e26",
         "dex": "uniswap",
-        "liquidityUsd": 5264.63,
+        "liquidityUsd": 22834.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9ab2b08bf4d2d3dbdfde9d89993bc5a382a020b6ea04ea46c32e4f9f03713ba5",
+        "dex": "uniswap",
+        "liquidityUsd": 470.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,16 +151,7 @@
       {
         "pair": "0x0654601e52e1f4a418e5e0e4ff4fc206aeb0e702d18c52096684883dd8abe9d5",
         "dex": "uniswap",
-        "liquidityUsd": 101.34,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf530d271db9940d832ad7eebe4434bec0af3c81c51bb8c227f7b333068bdb328",
-        "dex": "uniswap",
-        "liquidityUsd": 1301.26,
+        "liquidityUsd": 82.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +160,7 @@
       {
         "pair": "0x1f2ff60174857fbff81a98d212e5cc4ff29886481220db7eaaef03b068856527",
         "dex": "uniswap",
-        "liquidityUsd": 189.93,
+        "liquidityUsd": 188.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,7 +169,7 @@
       {
         "pair": "0x7d59117BC682dC8ce22B20120E0F03ec7e879f59",
         "dex": "hydrex",
-        "liquidityUsd": 46.95,
+        "liquidityUsd": 47.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -187,14 +178,23 @@
       {
         "pair": "0x65e2a61f739a0ef1087dd2b24e5a0957014bb511c342527b344572a0489b7069",
         "dex": "uniswap",
-        "liquidityUsd": 10.86,
+        "liquidityUsd": 9.32,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd3a6110236a2b0f58b496d35b6f627e35f21c527aa62e3872808d945e2486c16",
+        "dex": "uniswap",
+        "liquidityUsd": 1.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 18.16,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://ratspeak.org/",

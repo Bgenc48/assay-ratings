@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SHIB",
   "name": "SHIBA INU",
-  "scanned_at": "2026-08-27T16:57:34.823Z",
+  "scanned_at": "2026-08-28T18:12:30.955Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -102,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.concentration",
       "letter": "C",
       "reason": "Top-10 unlabeled holders exceed 50%."
@@ -130,14 +119,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 4950434.23,
+    "liquidityUsd": 4950434.27,
     "pools": [
       {
         "pair": "0x6340045A8eCa368708627935C738264935699C33",
         "dex": "aerodrome",
-        "liquidityUsd": 4950434.23,
+        "liquidityUsd": 4950434.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

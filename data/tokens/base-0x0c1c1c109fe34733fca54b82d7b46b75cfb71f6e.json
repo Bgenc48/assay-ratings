@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CHIP",
   "name": "Chip",
-  "scanned_at": "2026-08-27T16:52:53.177Z",
+  "scanned_at": "2026-08-28T18:06:31.599Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 149 days old; trust needs time (Provisional).",
+          "text": "Token is 150 days old; trust needs time (Provisional).",
           "evidence": "0x47b7a5772180353c5ae36ca1f0c9e08b8624483d6cbcc6127b79f29c435f24a9"
         }
       ]
@@ -90,7 +90,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 111.3% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 103.4% of circulating supply.",
           "evidence": null
         }
       ]
@@ -125,7 +125,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "92489082761428000000000000",
+    "totalSupply": "99511862260824000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -137,13 +137,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 149,
-    "liquidityUsd": 262945.29,
+    "ageDays": 150,
+    "liquidityUsd": 107002.76,
     "pools": [
       {
         "pair": "0x592E01EDEb601016a20A3E6cD5bF533eBBadBC8b",
         "dex": "aerodrome",
-        "liquidityUsd": 262877.04,
+        "liquidityUsd": 106935.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -152,7 +152,7 @@
       {
         "pair": "0xDBC00ac77AF0848377717967deD190468b7df7CA",
         "dex": "pancakeswap",
-        "liquidityUsd": 28.23,
+        "liquidityUsd": 28.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -161,32 +161,14 @@
       {
         "pair": "0xfc3fe84e1bbd3f03ad939456fd7d096c5823ef5da7d4383c2e166cb9a8f07417",
         "dex": "uniswap",
-        "liquidityUsd": 38.57,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc05c8e8c8375aabe8f20fdd959ead3f99ee83d21a5188d1d1b51cee1393a7ac4",
-        "dex": "uniswap",
-        "liquidityUsd": 0.55,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x45B8643880D8FeF3fd7a21229C3b41F0F6632676",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.9,
+        "liquidityUsd": 39.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 111.29,
+    "top10Pct": 103.44,
     "projectLinks": {
       "websites": [
         "https://avely.me/usdai"

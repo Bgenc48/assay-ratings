@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BEATS",
   "name": "BEATS on BASE",
-  "scanned_at": "2026-08-27T16:56:23.637Z",
+  "scanned_at": "2026-08-28T18:10:51.591Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -116,16 +116,25 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 649,
-    "liquidityUsd": 149211.57,
+    "ageDays": 650,
+    "liquidityUsd": 142720.63,
     "pools": [
       {
         "pair": "0x870F9783501f79f66eecb19fa97F4BABf630b2A3",
         "dex": "uniswap",
-        "liquidityUsd": 149211.57,
+        "liquidityUsd": 142720.1,
         "lpBurnedPct": 0,
         "lpLockedPct": 99.99,
         "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xbd4adc3496870cbec7b84a4bf4d6d1fa7a1a2eaf60632635df1568bd6f4499f3",
+        "dex": "uniswap",
+        "liquidityUsd": 0.53,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],

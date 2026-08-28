@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "RECALL",
   "name": "Recall",
-  "scanned_at": "2026-08-27T16:44:51.066Z",
+  "scanned_at": "2026-08-28T17:53:50.369Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 50.7,
+    "overall": 50.8,
     "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -121,13 +121,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 560,
-    "liquidityUsd": 523372.11000000004,
+    "ageDays": 561,
+    "liquidityUsd": 588511.7000000001,
     "pools": [
       {
         "pair": "0x0abe41C8AAa9282429e06EBEd48bE36298981d94",
         "dex": "aerodrome",
-        "liquidityUsd": 522446.78,
+        "liquidityUsd": 587543.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,7 +136,7 @@
       {
         "pair": "0x5e3791F68EbCEAC82788f3becAb154C15141A2f4",
         "dex": "aerodrome",
-        "liquidityUsd": 865.88,
+        "liquidityUsd": 854.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,7 +145,16 @@
       {
         "pair": "0x3e8eff1bb290600c4308c975bd0cc6a8e80bb30ce474fee2b03f8fb35d877ee7",
         "dex": "uniswap",
-        "liquidityUsd": 52.57,
+        "liquidityUsd": 53.07,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6Ee714d6d8dF7662BcA805f58CC1d5A8886D78eB",
+        "dex": "aerodrome",
+        "liquidityUsd": 55.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -161,16 +170,16 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x195D060B4D01Df32e8bFf72a0d36eFD2361B3cb3",
+        "pair": "0x8a9895D1a93Ce3E946e883fdb36585e36495E9F6",
         "dex": "sushiswap",
-        "liquidityUsd": 1.12,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "liquidityUsd": 0.06,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 28.33,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://recall.network/"
