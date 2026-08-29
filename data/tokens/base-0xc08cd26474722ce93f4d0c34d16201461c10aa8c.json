@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "CARV",
   "name": "CARV",
-  "scanned_at": "2026-08-28T18:04:02.056Z",
+  "scanned_at": "2026-08-29T12:29:40.462Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B",
+    "overall": 75.4,
     "provisional": false,
     "badge": "Custodial",
     "coverage": "partial"
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 68.7% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.age-24mo",
       "letter": "A",
@@ -113,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "561857481877589000000000000",
+    "totalSupply": "561878674535117000000000000",
     "decimals": 18,
     "owner": "0xa92b9adf01279e22c26789608e98ecc27da6f741",
     "controlType": "safe",
@@ -124,12 +112,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": 729,
-    "liquidityUsd": 327013.61999999994,
+    "liquidityUsd": 330081.69,
     "pools": [
       {
         "pair": "0xff862675c47B6a2C9072DCBe2f37a78A445c4f37",
         "dex": "aerodrome",
-        "liquidityUsd": 238647.71,
+        "liquidityUsd": 240443.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +126,7 @@
       {
         "pair": "0x4b241E7E1Ba2D76c888aaACb6F099b42F57Aec2b",
         "dex": "aerodrome",
-        "liquidityUsd": 86186.26,
+        "liquidityUsd": 87677.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,27 +135,14 @@
       {
         "pair": "0x23036ec2Ed7d2f1B2490c6f9C32494066A7d56fb",
         "dex": "uniswap",
-        "liquidityUsd": 2163.22,
+        "liquidityUsd": 1960.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xbe54ED1762172820d088aa676a8E2947AeEB10b0",
-        "dex": "aerodrome",
-        "liquidityUsd": 16.43,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x9a0575dc06c6514729c5e8c19369de2f7ef3659a",
-          "sharePct": 2332.69
-        }
       }
     ],
-    "top10Pct": 68.74,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://carv.io/"

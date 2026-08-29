@@ -1,0 +1,213 @@
+{
+  "address": "0xcd2f22236dd9dfe2356d7c543161d4d260fd9bcb",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "GHST",
+  "name": "Aavegotchi GHST Token",
+  "scanned_at": "2026-08-29T12:50:25.064Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "UR",
+    "overall": 54.6,
+    "provisional": false,
+    "badge": "Discretionary",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 35,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.unclassified-mint",
+          "severity": "warn",
+          "text": "A mint path exists in the bytecode but its controller could not be classified automatically. Treated as insufficient data pending review — not as an open mint.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.unclassified-mint",
+      "letter": "C",
+      "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "19177783821965068431078029",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [
+      "mint(address,uint256)"
+    ],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 879,
+    "liquidityUsd": 1101203.04,
+    "pools": [
+      {
+        "pair": "0x0DFb9Cb66A18468850d6216fCc691aa20ad1e091",
+        "dex": "aerodrome",
+        "liquidityUsd": 252391.84,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067",
+        "dex": "aerodrome",
+        "liquidityUsd": 848056.23,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x56C11053159a24c0731b4b12356BC1f0578FB474",
+        "dex": "aerodrome",
+        "liquidityUsd": 698.21,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x873D3c477BBaeD55859C46E43FDAC6e73120f80c",
+        "dex": "uniswap",
+        "liquidityUsd": 42.65,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x59Da7538Bbea7facC9185b412e0D43da67A84Ab7",
+        "dex": "aerodrome",
+        "liquidityUsd": 11.55,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x81a53b8ad24Ded0B88f9c9EFE72885c488119037",
+        "dex": "sushiswap",
+        "liquidityUsd": 1.63,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8263C80Ba82fFb3506Eb731DCa78546244Ce2fC6",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.85,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe9f65d93b6d789569b5ab89277c0dddfbc2b5644d419f89d9aa1a44465e568a1",
+        "dex": "uniswap",
+        "liquidityUsd": 0.08,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://ghsttoken.com",
+        "https://aavegotchi.com",
+        "https://warpcast.com/aavegotchi",
+        "https://dapp.aavegotchi.com/games"
+      ],
+      "socials": [
+        "https://x.com/aavegotchi",
+        "https://t.me/AavegotchiGHST",
+        "https://discord.gg/aavegotchi"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false,
+  "pendingReview": {
+    "computed": "D"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+}

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "DRB",
   "name": "DebtReliefBot",
-  "scanned_at": "2026-08-28T18:09:55.135Z",
+  "scanned_at": "2026-08-29T12:41:32.853Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 71.1,
+    "overall": 70.8,
     "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -113,13 +113,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 539,
-    "liquidityUsd": 1366011.6699999997,
+    "ageDays": 540,
+    "liquidityUsd": 1442019.8200000003,
     "pools": [
       {
         "pair": "0x5116773e18A9C7bB03EBB961b38678E45E238923",
         "dex": "uniswap",
-        "liquidityUsd": 1291957.21,
+        "liquidityUsd": 1362623.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +128,7 @@
       {
         "pair": "0x385B47e56b73eb6549378f78F7c7Cbc42C56C9e0",
         "dex": "aerodrome",
-        "liquidityUsd": 18526.4,
+        "liquidityUsd": 20508.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +137,7 @@
       {
         "pair": "0xcb51c1779b68d50da258a0f5faec6d4200a275ec6c1cd883ed7209efe58c82a9",
         "dex": "uniswap",
-        "liquidityUsd": 24030.17,
+        "liquidityUsd": 26330.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,16 +146,7 @@
       {
         "pair": "0x44a830eb2d1fa704b2b3f021afc16102f13f81373ca200e9c8e69aefd6af8212",
         "dex": "uniswap",
-        "liquidityUsd": 25281.05,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa92f02d1e3a2417b2daea8653e3232e0b24ec8c32b482831ef5dbe0e39a5505d",
-        "dex": "uniswap",
-        "liquidityUsd": 980,
+        "liquidityUsd": 26544.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,16 +155,25 @@
       {
         "pair": "0xDb6556a14976894a01085c2AbF3c85C86D1C15C8",
         "dex": "aerodrome",
-        "liquidityUsd": 1431.17,
+        "liquidityUsd": 1521.09,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0x2890a889ba7ed760f2e59ab0b44da895bffd53cf2f5ce20e0c4abaf0323ca567",
+        "dex": "uniswap",
+        "liquidityUsd": 2827.59,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0x9Da64ed1b87b3d0d3d1E731dd3aAAAc08eb0f5C3",
         "dex": "aerodrome",
-        "liquidityUsd": 1026.41,
+        "liquidityUsd": 1091.86,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -184,16 +184,16 @@
         }
       },
       {
-        "pair": "0x2890a889ba7ed760f2e59ab0b44da895bffd53cf2f5ce20e0c4abaf0323ca567",
-        "dex": "uniswap",
-        "liquidityUsd": 2779.26,
+        "pair": "0xA9A12101BedDf0950c65c32a915ae21db002623D",
+        "dex": "hydrex",
+        "liquidityUsd": 571.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 13.01,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://bio.site/drbtaskforce"

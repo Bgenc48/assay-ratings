@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "USDL",
   "name": "USDL Stablecoin",
-  "scanned_at": "2026-08-28T18:09:48.745Z",
+  "scanned_at": "2026-08-29T12:41:08.056Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 50.7,
+    "overall": 46.9,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.7%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -126,12 +119,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": 214,
-    "liquidityUsd": 545935.42,
+    "liquidityUsd": 580877.52,
     "pools": [
       {
         "pair": "0x98637C29AbC801001c63fb0E3B94F27A65B610AC",
         "dex": "aerodrome",
-        "liquidityUsd": 160304.34,
+        "liquidityUsd": 160368.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,14 +133,23 @@
       {
         "pair": "0xf0d64B4fe5D2619a3aDBE2734AD0584FC54bed88",
         "dex": "aerodrome",
-        "liquidityUsd": 385631.08,
+        "liquidityUsd": 385629.74,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb5A4098D905DF12Aab6575584D9DbBb77CB3B008",
+        "dex": "aerodrome",
+        "liquidityUsd": 34878.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0.73,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.liquidloans.io/",

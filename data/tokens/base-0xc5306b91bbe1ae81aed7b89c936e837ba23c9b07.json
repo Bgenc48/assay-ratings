@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-28T18:11:57.373Z",
+  "scanned_at": "2026-08-29T12:45:23.281Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.5,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -116,7 +109,7 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 4.25,
+    "liquidityUsd": 4.5,
     "pools": [
       {
         "pair": "0x8f6cddf7d8940d31594d1ba36c9dc951d4e9ae35efecd70e17af693fc6e1ac07",
@@ -128,9 +121,9 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xbc97adecb999b34ded0d1fc135dae498628bafd00805af9d7d17cab1483b60bb",
+        "pair": "0x584a5689898d511afc5c4aa3d65f461ef779cb872b1ddc533d0807c4ef8020c3",
         "dex": "uniswap",
-        "liquidityUsd": 4.25,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,16 +139,16 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xA225053000e4cBbbD49dA6738A5d5Ac6bD71a1EA",
-        "dex": "aerodrome",
-        "liquidityUsd": 0,
+        "pair": "0xbc97adecb999b34ded0d1fc135dae498628bafd00805af9d7d17cab1483b60bb",
+        "dex": "uniswap",
+        "liquidityUsd": 4.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

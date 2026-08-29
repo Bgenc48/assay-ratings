@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "TREX",
   "name": "Google T-REX",
-  "scanned_at": "2026-08-28T18:07:47.391Z",
+  "scanned_at": "2026-08-29T12:37:17.882Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -88,16 +88,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 4.7%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -130,12 +123,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 17946.140000000003,
+    "liquidityUsd": 16855.26,
     "pools": [
       {
         "pair": "0x4da1C1426B4EFa76343A08DC44e3596270340913",
         "dex": "uniswap",
-        "liquidityUsd": 17573.72,
+        "liquidityUsd": 16564.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,41 +137,14 @@
       {
         "pair": "0x09738d86b2463be1602c2fa1a9db914761bd366dcbcb7a125f9aabf1f1cf813b",
         "dex": "uniswap",
-        "liquidityUsd": 292.16,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x533a59d418bab22f6b37a7deacc143d64d9a09214600d75bc9a6357ced7fe2dc",
-        "dex": "uniswap",
-        "liquidityUsd": 43.08,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8cc35e05d1052c87f364e5680e1413511c195ecf385812935b18376ecf5ec834",
-        "dex": "uniswap",
-        "liquidityUsd": 20.22,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7cedb478dd34478e06f8e37d6a6b389da2d7c6f74da7d212829b86221ab0b56d",
-        "dex": "uniswap",
-        "liquidityUsd": 16.96,
+        "liquidityUsd": 291.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 4.73,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://unilaunch.fun/token/base/0xB12456b5cA0993Be1bE6B2F76504d38B1dC91111"

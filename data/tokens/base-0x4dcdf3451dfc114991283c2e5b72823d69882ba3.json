@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Bots",
   "name": "Free Bots",
-  "scanned_at": "2026-08-28T18:13:54.349Z",
+  "scanned_at": "2026-08-29T12:49:10.583Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -83,16 +83,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.9%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -125,21 +118,21 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 395536.83999999997,
+    "liquidityUsd": 358735.82999999996,
     "pools": [
       {
         "pair": "0x9150f6e5faf636ae28e0c70634598d7ce9d7fd3931f7c0f5d7f75faf6016086c",
         "dex": "uniswap",
-        "liquidityUsd": 392361.64,
+        "liquidityUsd": 355871.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x2915f5bba2699083093c33cf27a21acbf98ffd1c38ede837d87b4dadf0e53753",
+        "pair": "0x735b1fb2c6505b892140354d179c9c808d07c96b99ce2e8fcf03348c5085e810",
         "dex": "uniswap",
-        "liquidityUsd": 142.1,
+        "liquidityUsd": 1497.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,18 +148,18 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x735b1fb2c6505b892140354d179c9c808d07c96b99ce2e8fcf03348c5085e810",
+        "pair": "0x8a024a33660a49f5fc89c9d6b8a359ad164cab8b058f9cc2acaedb256c20a103",
         "dex": "uniswap",
-        "liquidityUsd": 1499.99,
+        "liquidityUsd": 51.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8a024a33660a49f5fc89c9d6b8a359ad164cab8b058f9cc2acaedb256c20a103",
+        "pair": "0x2915f5bba2699083093c33cf27a21acbf98ffd1c38ede837d87b4dadf0e53753",
         "dex": "uniswap",
-        "liquidityUsd": 56.61,
+        "liquidityUsd": 142.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,7 +168,7 @@
       {
         "pair": "0xf754a4fd09734fa25ee7b893a3340d3713ce00090978ddcd2cb39c99a46350e6",
         "dex": "uniswap",
-        "liquidityUsd": 688.4,
+        "liquidityUsd": 372.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -191,16 +184,16 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd803e8a8fbdaf5ba54bceaa838dd02e06aea0e444b17bfd3bf8579db70a714d6",
+        "pair": "0xbf8cd54c568467decceac63de35b56bbc5c37b780f86f47fef95c26d2bdac19a",
         "dex": "uniswap",
-        "liquidityUsd": 0.24,
+        "liquidityUsd": 12.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 7.91,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://freebots.lol/"

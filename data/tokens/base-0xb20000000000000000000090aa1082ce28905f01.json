@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "BASELINE",
   "name": "Baseline",
-  "scanned_at": "2026-08-28T18:14:16.326Z",
+  "scanned_at": "2026-08-29T12:50:04.584Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "thin"
@@ -19,6 +19,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -94,6 +100,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -110,14 +121,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 148472.09,
+    "liquidityUsd": 132209.49,
     "pools": [
       {
         "pair": "0xbbe6d85795219745d3a06fff89509941a6b938cafb5e14430317656624a0e7fd",
         "dex": "uniswap",
-        "liquidityUsd": 148385.85,
+        "liquidityUsd": 132119.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,16 +146,7 @@
       {
         "pair": "0x35b4770f7ca9b9709237625dbd4fbce6d3b1e0212a6f53693daaf4d6638cada5",
         "dex": "uniswap",
-        "liquidityUsd": 9.52,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4607bdff56157d07d0889f1a3ab7d6db8fdcbcea22bf97f45edcebfdbeb34699",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 13.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

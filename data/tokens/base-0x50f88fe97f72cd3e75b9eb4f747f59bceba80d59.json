@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "jesse",
   "name": "jesse",
-  "scanned_at": "2026-08-28T17:49:59.906Z",
+  "scanned_at": "2026-08-29T12:03:11.892Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -83,7 +83,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -105,6 +105,11 @@
       "reason": "Source code is not verified on a public explorer."
     },
     {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -122,13 +127,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": null,
-    "liquidityUsd": 499005.2700000001,
+    "ageDays": 282,
+    "liquidityUsd": 484533.70999999996,
     "pools": [
       {
         "pair": "0xc39acb3ce11ebcd3e1c5d67cdfb8707ab12674449fdab859327a8aabee03cd10",
         "dex": "uniswap",
-        "liquidityUsd": 490010.27,
+        "liquidityUsd": 475733.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +142,7 @@
       {
         "pair": "0x4e40ff3Be6bdA5b131c91520Fa73515076eEE098",
         "dex": "aerodrome",
-        "liquidityUsd": 7067.02,
+        "liquidityUsd": 6924.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +151,7 @@
       {
         "pair": "0xE55BbED98db8f64d0d6813c819D6B037c2ee61bE",
         "dex": "uniswap",
-        "liquidityUsd": 776,
+        "liquidityUsd": 763.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +160,7 @@
       {
         "pair": "0xbE6e0de8f96c8decb7Ab3734247E7774f6609F84",
         "dex": "leetswap",
-        "liquidityUsd": 332.01,
+        "liquidityUsd": 321.32,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -168,7 +173,7 @@
       {
         "pair": "0x055b22c9c22c4aa2e09e83866e8956819415ab56f75303573ed2ce0cb3abbb2d",
         "dex": "uniswap",
-        "liquidityUsd": 344.01,
+        "liquidityUsd": 335.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -177,7 +182,7 @@
       {
         "pair": "0xbAd80210fa3119324243279CB0212b1CE3218569",
         "dex": "aerodrome",
-        "liquidityUsd": 385.7,
+        "liquidityUsd": 370.36,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -190,19 +195,19 @@
       {
         "pair": "0x3cf9d0208e6cfc6dff697a8880e1d32a545797bd094243bf3575d46963eff9c7",
         "dex": "uniswap",
-        "liquidityUsd": 75.17,
+        "liquidityUsd": 73.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x3C3aD27a7f71959Fc305aF9170d0DbF2846aeA06",
-        "dex": "hydrex",
-        "liquidityUsd": 15.09,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "pair": "0x33aD099583D4AFB39Ea678C040148d30C2Cea8ac",
+        "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
+        "liquidityUsd": 11.21,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-08-28T18:01:38.883Z",
+  "scanned_at": "2026-08-29T12:25:05.305Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 50.7,
-    "provisional": false,
+    "overall": 46.4,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 101.6% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +94,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -113,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "772340470346210509933128",
+    "totalSupply": "695238470346210509933128",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -127,9 +115,9 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 1101,
-    "liquidityUsd": 199282.39,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 199281.18,
     "pools": [
       {
         "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c",
@@ -143,7 +131,7 @@
       {
         "pair": "0xada452F1340FAF2faA5CD6Cf5380f9585A624b8c",
         "dex": "uniswap",
-        "liquidityUsd": 139.2,
+        "liquidityUsd": 137.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -165,14 +153,10 @@
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x214183c90c177cc2b7129f5c17948971d32e322e",
-          "sharePct": 99.99
-        }
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 101.64,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

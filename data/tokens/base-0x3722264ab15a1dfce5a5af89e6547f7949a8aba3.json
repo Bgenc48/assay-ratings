@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LFI",
   "name": "LienFi",
-  "scanned_at": "2026-08-28T18:07:29.443Z",
+  "scanned_at": "2026-08-29T12:36:57.002Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 63.1,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -78,16 +78,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 119 days old; trust needs time (Provisional).",
-          "evidence": "0xe84a138895ca31629a91804dbfcd550498b933109793e66788a3b5f71f366a72"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": null,
@@ -107,11 +100,6 @@
       "reason": "Source code is not verified on a public explorer."
     },
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -129,13 +117,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 119,
-    "liquidityUsd": 688934.5299999999,
+    "ageDays": null,
+    "liquidityUsd": 678962.15,
     "pools": [
       {
         "pair": "0x6ef02666f150d9649655b884e043b61b0990fad9be4c632d0c7568bb24da9367",
         "dex": "uniswap",
-        "liquidityUsd": 475551.28,
+        "liquidityUsd": 475846.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +132,7 @@
       {
         "pair": "0x8343C68279587498526114e6385F0a87f248E0D9",
         "dex": "aerodrome",
-        "liquidityUsd": 103847.72,
+        "liquidityUsd": 94879.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +141,7 @@
       {
         "pair": "0x588f68b9fA04366F33f8Ce095C13F0cebaB9406a",
         "dex": "uniswap",
-        "liquidityUsd": 82745.63,
+        "liquidityUsd": 81982.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +150,7 @@
       {
         "pair": "0x53ab4c60ff04b782F630A8685af95404f099aAFD",
         "dex": "hydrex",
-        "liquidityUsd": 26163.48,
+        "liquidityUsd": 25626.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +159,7 @@
       {
         "pair": "0x41932EA9b35Bd2e663678Dfca8228498A05A3689",
         "dex": "pancakeswap",
-        "liquidityUsd": 336.46,
+        "liquidityUsd": 334.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,28 +168,28 @@
       {
         "pair": "0x7D55dcABc41626818e52d6289bf4b9A71a04D13A",
         "dex": "pancakeswap",
-        "liquidityUsd": 66.9,
+        "liquidityUsd": 66.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x095b804125550956898652c5554b6b4aac12df303d207b5832146b86fd1f09f9",
+        "pair": "0x63c33f96bee48e936f36150febfc7714f892b3245883b28ac3902fa4acb95175",
         "dex": "uniswap",
-        "liquidityUsd": 122.32,
+        "liquidityUsd": 1.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xfcf482c993b53342f6a9307d2fbeff710872787165728e6de1beb43d1f825d67",
-        "dex": "uniswap",
-        "liquidityUsd": 100.74,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "pair": "0x8403efa77e9bab9bbD20a408AfbDdbC1861Ce1f3",
+        "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
+        "liquidityUsd": 225.62,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],

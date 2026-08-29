@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ATLAS",
   "name": "Atlas",
-  "scanned_at": "2026-08-28T18:04:19.820Z",
+  "scanned_at": "2026-08-29T12:30:30.759Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 65.7,
+    "overall": 63.1,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -90,16 +90,9 @@
       ]
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 2.3%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -137,19 +130,19 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": 21,
-    "liquidityUsd": 35282.76,
+    "liquidityUsd": 34416.11,
     "pools": [
       {
         "pair": "0x8901302202519546644bf0fc445b0073bf30e624ba185a6373207f489b89ea4a",
         "dex": "uniswap",
-        "liquidityUsd": 35282.76,
+        "liquidityUsd": 34416.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 2.33,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

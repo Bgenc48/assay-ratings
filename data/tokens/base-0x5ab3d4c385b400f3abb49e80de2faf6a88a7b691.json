@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "FLOCK",
   "name": "FLock.io",
-  "scanned_at": "2026-08-28T17:51:15.498Z",
+  "scanned_at": "2026-08-29T12:04:25.341Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 47.1,
+    "overall": 50.8,
     "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 51.9% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +94,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
       "id": "cap.age-24mo",
       "letter": "A",
       "reason": "A+ requires 24 clean months of operating history."
@@ -118,7 +106,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "457662318122020218173856111",
+    "totalSupply": "457917734493693685803585200",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -130,13 +118,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 616,
-    "liquidityUsd": 452451.37,
+    "ageDays": 617,
+    "liquidityUsd": 450837.42000000004,
     "pools": [
       {
         "pair": "0xd7338B6F338DA54b922bbBC6fBE3EFEDD5Ce35fa",
         "dex": "aerodrome",
-        "liquidityUsd": 171034.3,
+        "liquidityUsd": 171544.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,7 +133,7 @@
       {
         "pair": "0x7AF45dfaF2fDEA139B2295f37fFea2E16e6Fd8BA",
         "dex": "uniswap",
-        "liquidityUsd": 117170.46,
+        "liquidityUsd": 116511.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -154,7 +142,7 @@
       {
         "pair": "0x4910C78a1C75E36548F1f2f1f4dCb71A4F69fC07",
         "dex": "aerodrome",
-        "liquidityUsd": 94733.21,
+        "liquidityUsd": 94211.21,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -163,7 +151,7 @@
       {
         "pair": "0xd162C4444d5eFEaD433F080696D1f4Dc2BCD58Fb",
         "dex": "aerodrome",
-        "liquidityUsd": 29108.78,
+        "liquidityUsd": 28996.19,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -172,7 +160,7 @@
       {
         "pair": "0xef724d142f283411f66bDe8De4d863e7295b9972",
         "dex": "aerodrome",
-        "liquidityUsd": 14513.51,
+        "liquidityUsd": 14006.73,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -181,7 +169,7 @@
       {
         "pair": "0x15aEda0387EBeF5Fd8300560010De83780477147",
         "dex": "uniswap",
-        "liquidityUsd": 12385.39,
+        "liquidityUsd": 12241.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -190,7 +178,7 @@
       {
         "pair": "0xB7E0c9CaeB559429B5b8B37c118E1d2764550416",
         "dex": "aerodrome",
-        "liquidityUsd": 6867.23,
+        "liquidityUsd": 6824.05,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -199,14 +187,14 @@
       {
         "pair": "0xdAA601bc9E5B00337f11fB17CD574D3f01633Fe6",
         "dex": "aerodrome",
-        "liquidityUsd": 6638.49,
+        "liquidityUsd": 6502.15,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 51.94,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [],
       "socials": [
