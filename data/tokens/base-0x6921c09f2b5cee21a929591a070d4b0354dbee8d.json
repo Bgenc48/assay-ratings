@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "LATI",
   "name": "Latitude",
-  "scanned_at": "2026-08-29T12:19:55.711Z",
+  "scanned_at": "2026-08-30T10:55:55.542Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -89,15 +89,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 144 days old; trust needs time (Provisional).",
+          "text": "Token is 145 days old; trust needs time (Provisional).",
           "evidence": "0x85858521bc37ae5000e24a652fe64ae86d8ab062ecfb4b6c027d4e3a1b9d9eaa"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 100.0% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -110,6 +117,11 @@
       "id": "cap.unverified",
       "letter": "C",
       "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.age-6mo",
@@ -134,20 +146,20 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 144,
-    "liquidityUsd": 108632.56,
+    "ageDays": 145,
+    "liquidityUsd": 109560.24,
     "pools": [
       {
         "pair": "0x339b073007D7a61FCdDbfa7BdEb20b4Eb4CD7CCD",
         "dex": "sushiswap",
-        "liquidityUsd": 108632.56,
+        "liquidityUsd": 109560.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 99.97,
     "projectLinks": null
   },
   "notes": null,

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-29T12:42:39.814Z",
+  "scanned_at": "2026-08-30T11:10:31.729Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 63.1,
+    "overall": 58.6,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -78,15 +78,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 16 days old; trust needs time (Provisional).",
+          "text": "Token is 17 days old; trust needs time (Provisional).",
           "evidence": "0x7b77f4ce8f9995be05fd824ee4486809438573b60433462af1897c76d9064631"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 94.5% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -95,6 +102,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
     {
       "id": "cap.age-6mo",
       "letter": "B+",
@@ -120,31 +132,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 16,
+    "ageDays": 17,
     "liquidityUsd": 16.12,
     "pools": [
-      {
-        "pair": "0x789ddc35999e9da04e7486641c5d7e659c95e64761399049391e643222a5024b",
-        "dex": "uniswap",
-        "liquidityUsd": 16.11,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9f2d13a4ce18364c65912c5545b7defb255afc4d2709775f6229f4d10c35abee",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x79a5919240737c267aceae38cf0ff7630ad681f95d7bb85db4da41e6d3533b81",
         "dex": "uniswap",
         "liquidityUsd": 0.01,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x789ddc35999e9da04e7486641c5d7e659c95e64761399049391e643222a5024b",
+        "dex": "uniswap",
+        "liquidityUsd": 16.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,9 +161,18 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9f2d13a4ce18364c65912c5545b7defb255afc4d2709775f6229f4d10c35abee",
+        "dex": "uniswap",
+        "liquidityUsd": 0,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 94.5,
     "projectLinks": null
   },
   "notes": null,

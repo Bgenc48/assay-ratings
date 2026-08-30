@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "USDL",
   "name": "USDL Stablecoin",
-  "scanned_at": "2026-08-29T12:41:08.056Z",
+  "scanned_at": "2026-08-30T11:09:48.434Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 46.9,
+    "overall": 50.7,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.7%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -118,13 +125,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 214,
-    "liquidityUsd": 580877.52,
+    "ageDays": 215,
+    "liquidityUsd": 581178.05,
     "pools": [
       {
         "pair": "0x98637C29AbC801001c63fb0E3B94F27A65B610AC",
         "dex": "aerodrome",
-        "liquidityUsd": 160368.84,
+        "liquidityUsd": 160658.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +140,7 @@
       {
         "pair": "0xf0d64B4fe5D2619a3aDBE2734AD0584FC54bed88",
         "dex": "aerodrome",
-        "liquidityUsd": 385629.74,
+        "liquidityUsd": 385638.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,14 +149,14 @@
       {
         "pair": "0xb5A4098D905DF12Aab6575584D9DbBb77CB3B008",
         "dex": "aerodrome",
-        "liquidityUsd": 34878.94,
+        "liquidityUsd": 34881.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0.73,
     "projectLinks": {
       "websites": [
         "https://www.liquidloans.io/",

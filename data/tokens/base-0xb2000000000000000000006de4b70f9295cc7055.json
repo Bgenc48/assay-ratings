@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Presley",
   "name": "KeyboardCat",
-  "scanned_at": "2026-08-29T12:44:53.145Z",
+  "scanned_at": "2026-08-30T11:11:27.565Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,13 +72,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xfdf95b4f4bf337da560ef08f7e54dd98b6434063f6a2628d4f421bafd95eb499"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -130,70 +127,10 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 5.92,
-    "pools": [
-      {
-        "pair": "0xfa4e8582c04495a6f80633120593e6fc73c103551f51b32fec24faa2b795942d",
-        "dex": "uniswap",
-        "liquidityUsd": 0.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xbc9a2540df4b1aaad4ef17216076cd8b3dd51581d6e81900d151b0807be1e5b5",
-        "dex": "uniswap",
-        "liquidityUsd": 0.11,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x0e525ed5b80abfea2b3901db3f4dd3f1d657014ba58177a79371663a0e43b447",
-        "dex": "uniswap",
-        "liquidityUsd": 0.31,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x6dbb9d201b77550dc1874b09af8220b2da6bae8e4cd311448501aced9a74aa33",
-        "dex": "uniswap",
-        "liquidityUsd": 0.05,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xfdf95b4f4bf337da560ef08f7e54dd98b6434063f6a2628d4f421bafd95eb499",
-        "dex": "uniswap",
-        "liquidityUsd": 3.38,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x27ce052bfa1817147493351d1a07dac0baf2d42c675a76627f896a14e1a18d6a",
-        "dex": "uniswap",
-        "liquidityUsd": 1.7,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": 0.16,
-    "projectLinks": {
-      "websites": [
-        "https://www.youtube.com/watch?v=l4WOA5t0SOY"
-      ],
-      "socials": []
-    }
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

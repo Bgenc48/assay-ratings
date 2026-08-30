@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Suwappu",
   "name": "Suwappubot",
-  "scanned_at": "2026-08-29T12:50:15.301Z",
+  "scanned_at": "2026-08-30T11:15:20.303Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -83,9 +83,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -118,12 +125,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 112774.67,
+    "liquidityUsd": 94576.39,
     "pools": [
       {
         "pair": "0x787fe87a27824d11d743cd6007614d3f5776d1b42cce79358e390498bb436159",
         "dex": "uniswap",
-        "liquidityUsd": 112363.08,
+        "liquidityUsd": 94280.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -132,16 +139,7 @@
       {
         "pair": "0x0809c079b4b41a5a74d395df528c990307e66e0ca5edcbc73aad56aace75e756",
         "dex": "uniswap",
-        "liquidityUsd": 145.05,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x590e639677d8a24f64c3a0fae72c970841fc2cd14cc9b9919ecd97de83513355",
-        "dex": "uniswap",
-        "liquidityUsd": 79.07,
+        "liquidityUsd": 126.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,16 +148,16 @@
       {
         "pair": "0x9002ec55e591d1ad9f2104fbc124acbfd2a5851f461cebe0b1a032c021ee37ec",
         "dex": "uniswap",
-        "liquidityUsd": 161.2,
+        "liquidityUsd": 142.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4228c86b78e6d3e41930d5f710ce993df9cb63a2c3937d5cfb54de1530764aca",
+        "pair": "0x9f2ecebecf7eae773753ea219122d1d41e5147090834ae31dfc9ac62dd5d358a",
         "dex": "uniswap",
-        "liquidityUsd": 13.93,
+        "liquidityUsd": 6.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -168,7 +166,16 @@
       {
         "pair": "0xcea1eed0d76d4cd43a4afd69f06f190899d24816f440d3ff21c82c0e78931dce",
         "dex": "uniswap",
-        "liquidityUsd": 8.95,
+        "liquidityUsd": 7.47,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x236303fc872090b5f119df0e9d21abc13f95159271a13ac364dff521eec46f1a",
+        "dex": "uniswap",
+        "liquidityUsd": 1.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -177,23 +184,23 @@
       {
         "pair": "0xf6fe922f74be69f37b4417edf5c657b7f7f0e0575790672ce8dbdd6c469cbd53",
         "dex": "uniswap",
-        "liquidityUsd": 3.39,
+        "liquidityUsd": 3.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xa85ef84639c313373ff0c0d300a302294d903bf16772cb8635e467e6ecd382f8",
+        "pair": "0x86975212059b53c5973eaa9e1e0ed3c978d787da356ca38d86809124f3a51e03",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 7.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": {
       "websites": [
         "https://suwappu.bot"

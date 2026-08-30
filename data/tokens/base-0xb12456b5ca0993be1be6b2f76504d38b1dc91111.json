@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "TREX",
   "name": "Google T-REX",
-  "scanned_at": "2026-08-29T12:37:17.882Z",
+  "scanned_at": "2026-08-30T11:07:02.252Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -88,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 4.7%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -123,28 +130,19 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 16855.26,
+    "liquidityUsd": 16705.14,
     "pools": [
       {
         "pair": "0x4da1C1426B4EFa76343A08DC44e3596270340913",
         "dex": "uniswap",
-        "liquidityUsd": 16564.1,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x09738d86b2463be1602c2fa1a9db914761bd366dcbcb7a125f9aabf1f1cf813b",
-        "dex": "uniswap",
-        "liquidityUsd": 291.16,
+        "liquidityUsd": 16705.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 4.73,
     "projectLinks": {
       "websites": [
         "https://unilaunch.fun/token/base/0xB12456b5cA0993Be1bE6B2F76504d38B1dC91111"

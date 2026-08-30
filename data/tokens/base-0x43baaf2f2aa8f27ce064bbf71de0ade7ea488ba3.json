@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ATLAS",
   "name": "Atlas",
-  "scanned_at": "2026-08-29T12:30:30.759Z",
+  "scanned_at": "2026-08-30T11:03:14.414Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 63.1,
+    "overall": 65.7,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -84,15 +84,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 21 days old; trust needs time (Provisional).",
+          "text": "Token is 22 days old; trust needs time (Provisional).",
           "evidence": "0xae8d301862a19ededf35cb0dc49644fd8dda7c81adba5ef53cf87248461aad1f"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 2.3%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -129,20 +136,20 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 21,
-    "liquidityUsd": 34416.11,
+    "ageDays": 22,
+    "liquidityUsd": 34768.6,
     "pools": [
       {
         "pair": "0x8901302202519546644bf0fc445b0073bf30e624ba185a6373207f489b89ea4a",
         "dex": "uniswap",
-        "liquidityUsd": 34416.11,
+        "liquidityUsd": 34768.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 2.33,
     "projectLinks": null
   },
   "notes": null,

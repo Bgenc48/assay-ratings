@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "QWLA",
   "name": "Qawalla Token",
-  "scanned_at": "2026-08-29T11:54:35.721Z",
+  "scanned_at": "2026-08-30T10:40:24.718Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x551d9C1bFdd3f9De16A355fB44577bDa59eBfeF1"
+          }
         }
       ]
     },
@@ -123,8 +126,18 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 206697.29,
+    "pools": [
+      {
+        "pair": "0x551d9C1bFdd3f9De16A355fB44577bDa59eBfeF1",
+        "dex": "uniswap",
+        "liquidityUsd": 206697.29,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 70.32,
     "projectLinks": null
   },

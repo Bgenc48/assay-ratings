@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "RAVE",
   "name": "RaveDAO",
-  "scanned_at": "2026-08-29T11:57:15.943Z",
+  "scanned_at": "2026-08-30T10:41:48.649Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "22371190080984000000000000",
+    "totalSupply": "22382564696714000000000000",
     "decimals": 18,
     "owner": "0x9831156f1a6e506fca41503590b42f07c2e80f54",
     "controlType": "safe",
@@ -111,13 +111,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 317,
-    "liquidityUsd": 195007.74,
+    "ageDays": 318,
+    "liquidityUsd": 197719.74000000002,
     "pools": [
       {
         "pair": "0x51663B8A28E7Ea197c5CcF983AfC084Da0a8023D",
         "dex": "aerodrome",
-        "liquidityUsd": 195005.69,
+        "liquidityUsd": 197706.95,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1d3a89d06b3b673ce35059867e3749fc82ca38b9089889eba9da2f058c695da4",
+        "dex": "uniswap",
+        "liquidityUsd": 8.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,19 +135,19 @@
       {
         "pair": "0xed2c689928af2e5031d7ec43ff26a498160f31945198e130817520e08ef782c8",
         "dex": "uniswap",
-        "liquidityUsd": 1.68,
+        "liquidityUsd": 1.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x781Cc496494Ae9A79DdB443F8DF825d22f7F0456",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.37,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
+        "pair": "0x7bce8334aa589a0b700446065f8abe2f592a2931e551ff47ada396f207938375",
+        "dex": "uniswap",
+        "liquidityUsd": 2.38,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],

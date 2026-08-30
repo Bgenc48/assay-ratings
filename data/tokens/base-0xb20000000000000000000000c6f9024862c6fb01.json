@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BASELINE",
   "name": "Baseline",
-  "scanned_at": "2026-08-29T12:49:31.450Z",
+  "scanned_at": "2026-08-30T11:14:43.135Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -88,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -123,21 +130,21 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 124192.98,
+    "liquidityUsd": 132210.16,
     "pools": [
       {
         "pair": "0xf96cae3fbdf1231b5e891ad884bf28805c96c182a3d21a7dab5419e5b34f8e0f",
         "dex": "uniswap",
-        "liquidityUsd": 99142.73,
+        "liquidityUsd": 94786.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xf41c12e22c4a2374e3214d06d623a9e26794a8630e01008d2c98b67e1fd40abb",
+        "pair": "0x7938af253212662af1f1e6446bbc7394d5c727eb304a7089b629aba8a4f9b81c",
         "dex": "uniswap",
-        "liquidityUsd": 5799.84,
+        "liquidityUsd": 10743.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,59 +153,59 @@
       {
         "pair": "0x26df7eeb81ffe5ea225556052da711863d772481be0dea9db0fdf3d3f45acde5",
         "dex": "uniswap",
-        "liquidityUsd": 7838.22,
+        "liquidityUsd": 10423.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd641189a62dcf0004a0c1e579fd42a9c9cd6fb716887d556ad392fc5fbb34e42",
+        "pair": "0x1686d1c3b3d76b4064351210fed5cae16d2a18995ef6c64ab4f16cf3ced977df",
         "dex": "uniswap",
-        "liquidityUsd": 2570.7,
+        "liquidityUsd": 4771.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xa978d867a94204a5bbabcbcdb92158585b94610256c8776c936090d25e6d95c4",
+        "pair": "0x0f484267b42d0f859fb6098d5837482e23cfa5b3a1f8d919543717ff0c28b8dc",
         "dex": "uniswap",
-        "liquidityUsd": 4047.35,
+        "liquidityUsd": 2951.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x5feac6c649116d19b51220ca4962ce94ceb91d890b21d18b8074235848ddbe50",
+        "pair": "0xecb3e72ccc7a5ef0fbec6d20cbf45517be486b37262b86137e83232fb6579852",
         "dex": "uniswap",
-        "liquidityUsd": 2737.48,
+        "liquidityUsd": 2624.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xff9771dbbb4d0c841b35b941f73c728fa4d67debab5b61c1ede593fe09a581b7",
+        "pair": "0x199911ed95fe94f8b57ba115fe1819c0b48e9bd560e0a61640d21aeb589c95fd",
         "dex": "uniswap",
-        "liquidityUsd": 1197.27,
+        "liquidityUsd": 2962.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0d88beea3887705100e0caa4c695e491b8455ce725c7581896f8d0c6a99f4be0",
+        "pair": "0x1cca52c68d2b642e30b5675d393c254905609222eaeddd94c622fe084b3f3089",
         "dex": "uniswap",
-        "liquidityUsd": 859.39,
+        "liquidityUsd": 2946.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": {
       "websites": [
         "https://baselineonbase.fun/"

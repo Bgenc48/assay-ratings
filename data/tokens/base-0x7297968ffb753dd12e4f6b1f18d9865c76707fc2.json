@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ZEST",
   "name": "Zest",
-  "scanned_at": "2026-08-29T11:53:20.188Z",
+  "scanned_at": "2026-08-30T10:39:56.486Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 47.7,
+    "overall": 51.4,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -78,15 +78,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 87 days old; trust needs time (Provisional).",
+          "text": "Token is 88 days old; trust needs time (Provisional).",
           "evidence": "0x18c991e15d44e504b5cc9fc25246550200b45c798de7dd4b7517e1ad3c8c45d2"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 1.7%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -108,7 +115,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "747299688790279704233428",
+    "totalSupply": "747404406977716069350968",
     "decimals": 18,
     "owner": "0x4ddae1d1bb8dacd4c8fa56792fde60f446755d0f",
     "controlType": "safe",
@@ -121,20 +128,20 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 87,
-    "liquidityUsd": 163478.56,
+    "ageDays": 88,
+    "liquidityUsd": 163206.13,
     "pools": [
       {
         "pair": "0x3693022BD390E147D8dD89a05403C80FF21dd64B",
         "dex": "aerodrome",
-        "liquidityUsd": 163478.56,
+        "liquidityUsd": 163206.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 1.66,
     "projectLinks": {
       "websites": [
         "https://www.zestprotocol.com/",
