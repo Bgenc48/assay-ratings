@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "FRIEND",
   "name": "FRIEND",
-  "scanned_at": "2026-08-30T11:13:07.575Z",
+  "scanned_at": "2026-08-31T12:24:16.304Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 47.6,
-    "provisional": false,
+    "overall": 41.8,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 36.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -119,23 +112,23 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 850,
-    "liquidityUsd": 190397.05,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 159305.11,
     "pools": [
       {
         "pair": "0x7CfC830448484CDF830625373820241E61ef4acf",
         "dex": "unknown",
-        "liquidityUsd": 180597.86,
+        "liquidityUsd": 154347.04,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x27a2dbb5f0ade921dd2f1d51781367b027322c656687eb819b8a1fb58b5a5195",
+        "pair": "0xa2f5da370743377e9037781ff17483940174112a24aad23b9e1385f84d25d881",
         "dex": "uniswap",
-        "liquidityUsd": 2916.05,
+        "liquidityUsd": 50.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +137,7 @@
       {
         "pair": "0x4d8fa2ac2cff03a867546c9866d19eacd66f3e9316c40295ffc21aa099407f7e",
         "dex": "uniswap",
-        "liquidityUsd": 4547.56,
+        "liquidityUsd": 2762.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,25 +146,7 @@
       {
         "pair": "0x8a3afe37dccb4af64580bba5cacc8ef45e291e4c51cee9d1a573e1b58830f679",
         "dex": "uniswap",
-        "liquidityUsd": 1955.72,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x944826710cb01aca4885f26175f84304e44fa0d82498db04b13c5a69d7c18891",
-        "dex": "uniswap",
-        "liquidityUsd": 56.01,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x690fafa52083ff36f552db79b08f62c813444ef34dafd53bda1a770e22ff9ea7",
-        "dex": "uniswap",
-        "liquidityUsd": 177.58,
+        "liquidityUsd": 1921.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,23 +155,41 @@
       {
         "pair": "0x59e43ce26f2a9827b5975497859fd971354d780821df14fac138adcb463c70d5",
         "dex": "uniswap",
-        "liquidityUsd": 94.45,
+        "liquidityUsd": 82.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xDaA5EB5Fb16fA80D2D7bd87DB81983567faDea51",
+        "pair": "0x944826710cb01aca4885f26175f84304e44fa0d82498db04b13c5a69d7c18891",
         "dex": "uniswap",
-        "liquidityUsd": 51.82,
+        "liquidityUsd": 55.96,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc3114707308dcebf2d963ab9aa6a5c5c8d7a66e20ae0583b12b9a8835f6e1658",
+        "dex": "uniswap",
+        "liquidityUsd": 84.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x96a83d3a0ce01e1af44bb1f24f0c08437537a6d1466a3d0c76179129cac62a07",
+        "dex": "uniswap",
+        "liquidityUsd": 0.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 35.99,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.friend.tech"

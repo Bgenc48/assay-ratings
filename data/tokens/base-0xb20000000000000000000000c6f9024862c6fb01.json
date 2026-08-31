@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "BASELINE",
   "name": "Baseline",
-  "scanned_at": "2026-08-30T11:14:43.135Z",
+  "scanned_at": "2026-08-31T12:25:54.953Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -88,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -106,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -128,32 +110,41 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 132210.16,
+    "liquidityUsd": 133623.31,
     "pools": [
       {
         "pair": "0xf96cae3fbdf1231b5e891ad884bf28805c96c182a3d21a7dab5419e5b34f8e0f",
         "dex": "uniswap",
-        "liquidityUsd": 94786.26,
+        "liquidityUsd": 96607.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x7938af253212662af1f1e6446bbc7394d5c727eb304a7089b629aba8a4f9b81c",
+        "pair": "0xb6a98fec8e48afea99c5fa248e5a1b89ec6d363e26f0ca160fd5b9be91eab8e8",
         "dex": "uniswap",
-        "liquidityUsd": 10743.26,
+        "liquidityUsd": 10059.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x26df7eeb81ffe5ea225556052da711863d772481be0dea9db0fdf3d3f45acde5",
+        "pair": "0xdce0ba1ed17b6a1fa2762a44c14cdc824299748ea68fd9285353e2502818138c",
         "dex": "uniswap",
-        "liquidityUsd": 10423.3,
+        "liquidityUsd": 3972.6,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd641189a62dcf0004a0c1e579fd42a9c9cd6fb716887d556ad392fc5fbb34e42",
+        "dex": "uniswap",
+        "liquidityUsd": 5638.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,50 +153,41 @@
       {
         "pair": "0x1686d1c3b3d76b4064351210fed5cae16d2a18995ef6c64ab4f16cf3ced977df",
         "dex": "uniswap",
-        "liquidityUsd": 4771.26,
+        "liquidityUsd": 6578.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0f484267b42d0f859fb6098d5837482e23cfa5b3a1f8d919543717ff0c28b8dc",
+        "pair": "0xf41c12e22c4a2374e3214d06d623a9e26794a8630e01008d2c98b67e1fd40abb",
         "dex": "uniswap",
-        "liquidityUsd": 2951.59,
+        "liquidityUsd": 5493.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xecb3e72ccc7a5ef0fbec6d20cbf45517be486b37262b86137e83232fb6579852",
+        "pair": "0x26df7eeb81ffe5ea225556052da711863d772481be0dea9db0fdf3d3f45acde5",
         "dex": "uniswap",
-        "liquidityUsd": 2624.77,
+        "liquidityUsd": 5189.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x199911ed95fe94f8b57ba115fe1819c0b48e9bd560e0a61640d21aeb589c95fd",
+        "pair": "0x11c0efa812d79c1cdcee814a11e8d69f6e08e62c3de80fe778b1d0fc8fef5325",
         "dex": "uniswap",
-        "liquidityUsd": 2962.85,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x1cca52c68d2b642e30b5675d393c254905609222eaeddd94c622fe084b3f3089",
-        "dex": "uniswap",
-        "liquidityUsd": 2946.87,
+        "liquidityUsd": 83.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://baselineonbase.fun/"

@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "Suwappu",
   "name": "Suwappubot",
-  "scanned_at": "2026-08-30T11:15:20.303Z",
+  "scanned_at": "2026-08-31T12:26:17.496Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -123,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 94576.39,
+    "liquidityUsd": 66360.59,
     "pools": [
       {
         "pair": "0x787fe87a27824d11d743cd6007614d3f5776d1b42cce79358e390498bb436159",
         "dex": "uniswap",
-        "liquidityUsd": 94280.89,
+        "liquidityUsd": 66146.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +121,7 @@
       {
         "pair": "0x0809c079b4b41a5a74d395df528c990307e66e0ca5edcbc73aad56aace75e756",
         "dex": "uniswap",
-        "liquidityUsd": 126.46,
+        "liquidityUsd": 81.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,16 +130,7 @@
       {
         "pair": "0x9002ec55e591d1ad9f2104fbc124acbfd2a5851f461cebe0b1a032c021ee37ec",
         "dex": "uniswap",
-        "liquidityUsd": 142.05,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9f2ecebecf7eae773753ea219122d1d41e5147090834ae31dfc9ac62dd5d358a",
-        "dex": "uniswap",
-        "liquidityUsd": 6.22,
+        "liquidityUsd": 95.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,25 +139,7 @@
       {
         "pair": "0xcea1eed0d76d4cd43a4afd69f06f190899d24816f440d3ff21c82c0e78931dce",
         "dex": "uniswap",
-        "liquidityUsd": 7.47,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x236303fc872090b5f119df0e9d21abc13f95159271a13ac364dff521eec46f1a",
-        "dex": "uniswap",
-        "liquidityUsd": 1.9,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf6fe922f74be69f37b4417edf5c657b7f7f0e0575790672ce8dbdd6c469cbd53",
-        "dex": "uniswap",
-        "liquidityUsd": 3.89,
+        "liquidityUsd": 10.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -193,14 +148,41 @@
       {
         "pair": "0x86975212059b53c5973eaa9e1e0ed3c978d787da356ca38d86809124f3a51e03",
         "dex": "uniswap",
-        "liquidityUsd": 7.51,
+        "liquidityUsd": 6.54,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd9736858ebbf79a142c62aafd5327bae702befac5a29cfd8de3e66b6ffe4cd77",
+        "dex": "uniswap",
+        "liquidityUsd": 16.81,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf6fe922f74be69f37b4417edf5c657b7f7f0e0575790672ce8dbdd6c469cbd53",
+        "dex": "uniswap",
+        "liquidityUsd": 2.85,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x236303fc872090b5f119df0e9d21abc13f95159271a13ac364dff521eec46f1a",
+        "dex": "uniswap",
+        "liquidityUsd": 1.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://suwappu.bot"

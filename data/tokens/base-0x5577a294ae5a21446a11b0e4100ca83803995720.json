@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ba3PUMP",
   "name": "Pump (Bankr Bridged)",
-  "scanned_at": "2026-08-30T11:15:43.387Z",
+  "scanned_at": "2026-08-31T12:27:20.056Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 58.5,
+    "overall": 64.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,16 +72,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 4 days old; trust needs time (Provisional).",
-          "evidence": "0x081d884ca56b78d41b2bb3180d7f8afecbdca663dc557f7de35c6e89f31ea4da"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": null,
@@ -96,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -108,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "18037428006133000000000000",
+    "totalSupply": "18362847800300000000000000",
     "decimals": 18,
     "owner": "0xd7b0fe2655ae73ab93d5c9a14442dcb4c479d1e1",
     "controlType": "eoa",
@@ -117,41 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 4,
-    "liquidityUsd": 192299.81,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 137657.36,
     "pools": [
       {
         "pair": "0x60202877f451F03da7f8f48B94E2e6Bb053cF614",
         "dex": "uniswap",
-        "liquidityUsd": 104039.11,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5c9bf1e724954b8d46b52f39431cfb90723787771dbbf37913a5237a0962453a",
-        "dex": "uniswap",
-        "liquidityUsd": 16991.66,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x98538e23b2e4de8209b8d7ef5947e80d894e3c7ea9b390d399d6e9ced458c07f",
-        "dex": "uniswap",
-        "liquidityUsd": 4004.87,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8e78745b0c86e2b854ea72c439bfa4a6ba1946f9be0bd515ccfca0aa01e79cc4",
-        "dex": "uniswap",
-        "liquidityUsd": 495,
+        "liquidityUsd": 98880.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,34 +121,16 @@
       {
         "pair": "0x289cb2b11dcedafa0c3ac790c7c5fe4b7f59629b78ed0e61b412bfc613a02657",
         "dex": "uniswap",
-        "liquidityUsd": 40388.01,
+        "liquidityUsd": 36527.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8cf8b64e6b4cb55040819cf67b0c11c0fbf0984f080bef9d58e4ba81289d543c",
+        "pair": "0xb33a42a51773c3a365b4e9e64c0f6b36597fe4bb2fbcd28179ef99f248ad2d39",
         "dex": "uniswap",
-        "liquidityUsd": 9505.81,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x94aea579a4864a8fe85202b8a406640cccc3491a06f93404df70f5ca20712353",
-        "dex": "uniswap",
-        "liquidityUsd": 8166.63,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x2b2d3371d136b908b3fe2d4a1584020171c3da675d4d8d90e741a6936a87b131",
-        "dex": "uniswap",
-        "liquidityUsd": 8708.72,
+        "liquidityUsd": 2249.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

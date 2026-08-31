@@ -4,13 +4,13 @@
   "status": "ok",
   "symbol": "GOCHU",
   "name": "Gochujangcoin",
-  "scanned_at": "2026-08-30T10:56:03.243Z",
+  "scanned_at": "2026-08-31T12:06:31.498Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 69.3,
-    "provisional": false,
+    "overall": 64.2,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -66,13 +66,13 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xf2bfe1af2b521387931ba45a0c4ef6a37f761d40fc44e0b16402103d1612350c"
+            "pair": "0x943ce2bb7fbb0514e21feadf950b5991f5910c696167a16f0bef7c2fdd1c5ad1"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -121,14 +121,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 818,
-    "liquidityUsd": 713.12,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 680.16,
     "pools": [
       {
         "pair": "0x943ce2bb7fbb0514e21feadf950b5991f5910c696167a16f0bef7c2fdd1c5ad1",
         "dex": "uniswap",
-        "liquidityUsd": 347.49,
+        "liquidityUsd": 343.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,16 +137,7 @@
       {
         "pair": "0xf2bfe1af2b521387931ba45a0c4ef6a37f761d40fc44e0b16402103d1612350c",
         "dex": "uniswap",
-        "liquidityUsd": 357.78,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xfbc955dbcacc4d6e7e7849644c75f4f25d92c80f5d55e6415e4917e74b486669",
-        "dex": "uniswap",
-        "liquidityUsd": 3.82,
+        "liquidityUsd": 332.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +146,7 @@
       {
         "pair": "0x99c819e81d394b14d8c19f25533ac2d84c256de5b1e7c8dfb8d956825ba8480d",
         "dex": "uniswap",
-        "liquidityUsd": 4.03,
+        "liquidityUsd": 4.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

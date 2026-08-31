@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "RAWR",
   "name": "RAWR",
-  "scanned_at": "2026-08-30T11:15:00.043Z",
+  "scanned_at": "2026-08-31T12:26:08.303Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -88,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -99,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -121,84 +110,84 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 162271.08,
+    "liquidityUsd": 158118.74000000002,
     "pools": [
       {
         "pair": "0x69bbadafdb28b6952c2910bed1d49fb1b11a222cbf36143fc1aca3c26b35c28e",
         "dex": "uniswap",
-        "liquidityUsd": 131692.47,
+        "liquidityUsd": 144745.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xa9d0ad5e35cf7bae1b97aae8f8f932d672933209478f0dfc2e8aee986d5687d4",
+        "pair": "0x120857b22d44f9d019a9d9f5421be146de8b3349123dba059ac3eb9e7d189a3e",
         "dex": "uniswap",
-        "liquidityUsd": 4901.95,
+        "liquidityUsd": 4978.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb61133898061e0ea369b15ed364dfce11cdee3f2748aa529ac4b959fff544833",
+        "pair": "0x335a7b2935219fc2d2af0a3657ee3ae47d196fee8528647e7563d07502ee09b0",
         "dex": "uniswap",
-        "liquidityUsd": 8519.6,
+        "liquidityUsd": 4933.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x39205648bfa0d5e7dc82cb2d5490c43aff4cee5e77df67769ebe10f0aaef1b49",
+        "pair": "0x72b3d0ecbc884b5dc444c383fc8a55fb323e24a8afce8ff5fb94d5f79977c2c4",
         "dex": "uniswap",
-        "liquidityUsd": 3234.77,
+        "liquidityUsd": 980.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x428f14a7e6d9cb31856da6b3a3da7ffd844e1455eb968750414fba6b4870dd32",
+        "pair": "0xe53a5bf7bd33ad2818df5c25d62f72bce5e7a33a74651175c755929c52307fba",
         "dex": "uniswap",
-        "liquidityUsd": 7006.02,
+        "liquidityUsd": 377.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x35435636496700eac0966a1a88bda057d342a36d1814c0b13da15f965323492e",
+        "pair": "0x4e2de3e11619ecb74eae2ab93a74eb265ccd00021b199f54a94b308e068bbd24",
         "dex": "uniswap",
-        "liquidityUsd": 945.27,
+        "liquidityUsd": 516.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x113abad370d6451b3f5f7d86be7837213979becb7a8a7c8af53050d35174f2b9",
+        "pair": "0x97a2a457dc5b319e436eb03b2aeb19410b3b5391dbce8c09ad1b1dc17e048f53",
         "dex": "uniswap",
-        "liquidityUsd": 1022.68,
+        "liquidityUsd": 991.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x337122d49eb6b11be6bfa20a63687af55dcaf944697ef377b8ac95492312db01",
+        "pair": "0xdfe234291d9e96dcc834c77eb31456067dc7c1d713f0c1a72ddad6fd69f5ee11",
         "dex": "uniswap",
-        "liquidityUsd": 4948.32,
+        "liquidityUsd": 595.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 15.06,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://rawr.technology/"

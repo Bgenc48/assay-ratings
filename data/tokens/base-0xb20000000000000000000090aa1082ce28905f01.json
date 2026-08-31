@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "BASELINE",
   "name": "Baseline",
-  "scanned_at": "2026-08-30T11:15:17.225Z",
+  "scanned_at": "2026-08-31T12:26:12.036Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "thin"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -100,11 +94,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -121,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 50133.240000000005,
+    "liquidityUsd": 12264.21,
     "pools": [
       {
         "pair": "0xbbe6d85795219745d3a06fff89509941a6b938cafb5e14430317656624a0e7fd",
         "dex": "uniswap",
-        "liquidityUsd": 50132.66,
+        "liquidityUsd": 12263.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +126,7 @@
       {
         "pair": "0xde7b972eefb5a068e430825b3793975891ffb152f94c5951aad3ab105bb090e3",
         "dex": "uniswap",
-        "liquidityUsd": 0.58,
+        "liquidityUsd": 0.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "xtoken",
   "name": "xtoken",
-  "scanned_at": "2026-08-30T10:56:54.789Z",
+  "scanned_at": "2026-08-31T12:07:37.440Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 42.9,
+    "overall": 45.8,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -69,16 +69,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 68 days old; trust needs time (Provisional).",
-          "evidence": "0x42b25bf0354a778c0fdb1e822cc010d3cffbab9ccb0b3aaac7eff843ad449524"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 0,
@@ -110,11 +103,6 @@
       "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -131,8 +119,8 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 68,
+    "verifiedSource": null,
+    "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
     "top10Pct": 99.99,

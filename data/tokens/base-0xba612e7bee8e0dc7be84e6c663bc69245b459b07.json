@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-08-30T11:12:42.670Z",
+  "scanned_at": "2026-08-31T12:23:51.828Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.5,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -114,39 +107,30 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 8.940000000000001,
+    "liquidityUsd": 12.82,
     "pools": [
-      {
-        "pair": "0x106b5397b669c8ac7fd86fdc3a8c1355cd585d78e4ac66b8e33b188945926fb0",
-        "dex": "uniswap",
-        "liquidityUsd": 1.57,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x5e820e5664ee41d08a31875d923eae488465de1c41cca7f40015da1182811f7a",
         "dex": "uniswap",
-        "liquidityUsd": 5.86,
+        "liquidityUsd": 11.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x1f78c83f980ab9cdb587174b3e53b7918aa74d1b7cca131d27bf74f825d518ee",
+        "pair": "0x106b5397b669c8ac7fd86fdc3a8c1355cd585d78e4ac66b8e33b188945926fb0",
         "dex": "uniswap",
-        "liquidityUsd": 1.51,
+        "liquidityUsd": 1.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

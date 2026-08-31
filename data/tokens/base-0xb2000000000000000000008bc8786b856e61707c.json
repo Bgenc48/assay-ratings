@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "METAc",
   "name": "Meta Platforms Inc.",
-  "scanned_at": "2026-08-30T11:09:34.368Z",
+  "scanned_at": "2026-08-31T12:19:11.708Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "thin"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -100,11 +94,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -121,23 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1248039.95,
+    "liquidityUsd": 1059520.5099999998,
     "pools": [
       {
         "pair": "0xEAF57753BC382E0324a1D43F72E7027705a2273E",
         "dex": "aerodrome",
-        "liquidityUsd": 1160056.95,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xEC2800d4A96B40D1A387a49aa9c9861d2cE3454F",
-        "dex": "hydrex",
-        "liquidityUsd": 1587.43,
+        "liquidityUsd": 990457.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,16 +126,16 @@
       {
         "pair": "0x583919ec1975a1238C50e1940911894ee6912476",
         "dex": "uniswap",
-        "liquidityUsd": 3521.37,
+        "liquidityUsd": 3538.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x5a9f8b78252222a5812abe2522d90d99f9b61db4004d831e2daf927cd29f49aa",
-        "dex": "uniswap",
-        "liquidityUsd": 2776.5,
+        "pair": "0xEC2800d4A96B40D1A387a49aa9c9861d2cE3454F",
+        "dex": "hydrex",
+        "liquidityUsd": 1584.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +144,16 @@
       {
         "pair": "0x6d673b1f55808d09ea02914de8256fdb04c5ff383fb080fb404a459f167892a0",
         "dex": "uniswap",
-        "liquidityUsd": 3117.73,
+        "liquidityUsd": 3117.86,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5a9f8b78252222a5812abe2522d90d99f9b61db4004d831e2daf927cd29f49aa",
+        "dex": "uniswap",
+        "liquidityUsd": 2550.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,7 +162,7 @@
       {
         "pair": "0x1C9fcD793f44bd69D6C941b2eA53AF502338b20A",
         "dex": "uniswap",
-        "liquidityUsd": 21.52,
+        "liquidityUsd": 21.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -182,7 +171,7 @@
       {
         "pair": "0x939793794fd5996d55b48d3ebb4d9664b598ec2123a3cf7cfff7deb815a4e2f4",
         "dex": "uniswap",
-        "liquidityUsd": 47084.99,
+        "liquidityUsd": 32734.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -191,7 +180,7 @@
       {
         "pair": "0x5db3d5abeb3195fd0837dda3d88a539cb0be830da0ae75fa07a4fd7a61d44d6a",
         "dex": "uniswap",
-        "liquidityUsd": 29873.46,
+        "liquidityUsd": 25515.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

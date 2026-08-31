@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "RAVE",
   "name": "RaveDAO",
-  "scanned_at": "2026-08-30T10:41:48.649Z",
+  "scanned_at": "2026-08-31T11:52:00.576Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 71.5,
+    "letter": "B",
+    "overall": 75.5,
     "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -89,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "22382564696714000000000000",
+    "totalSupply": "22408273633652000000000000",
     "decimals": 18,
     "owner": "0x9831156f1a6e506fca41503590b42f07c2e80f54",
     "controlType": "safe",
@@ -110,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 318,
-    "liquidityUsd": 197719.74000000002,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 187917.85,
     "pools": [
       {
         "pair": "0x51663B8A28E7Ea197c5CcF983AfC084Da0a8023D",
         "dex": "aerodrome",
-        "liquidityUsd": 197706.95,
+        "liquidityUsd": 187908.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,25 +121,16 @@
       {
         "pair": "0x1d3a89d06b3b673ce35059867e3749fc82ca38b9089889eba9da2f058c695da4",
         "dex": "uniswap",
-        "liquidityUsd": 8.68,
+        "liquidityUsd": 8.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xed2c689928af2e5031d7ec43ff26a498160f31945198e130817520e08ef782c8",
+        "pair": "0xb82a3c47cb87d23975cc21bbc4e007f2f5adf8badad687c8aa54660598a1b10f",
         "dex": "uniswap",
-        "liquidityUsd": 1.73,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7bce8334aa589a0b700446065f8abe2f592a2931e551ff47ada396f207938375",
-        "dex": "uniswap",
-        "liquidityUsd": 2.38,
+        "liquidityUsd": 1.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

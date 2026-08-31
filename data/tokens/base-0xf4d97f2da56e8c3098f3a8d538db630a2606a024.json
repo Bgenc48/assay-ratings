@@ -4,13 +4,13 @@
   "status": "ok",
   "symbol": "DIEM",
   "name": "Diem",
-  "scanned_at": "2026-08-30T10:50:29.599Z",
+  "scanned_at": "2026-08-31T11:59:36.534Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 45.9,
-    "provisional": false,
+    "overall": 41.8,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -94,11 +94,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -106,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "37004075082618199025796",
+    "totalSupply": "37022873082715813611352",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -117,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 378,
-    "liquidityUsd": 11018680.68,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 11501825.169999996,
     "pools": [
       {
         "pair": "0xBc3231036Ee1ECa03E5F67FEceDC640D21610823",
         "dex": "aerodrome",
-        "liquidityUsd": 143817.75,
+        "liquidityUsd": 125271.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +128,7 @@
       {
         "pair": "0x01271A205e3F37cbfC9B353170D726060E193C0D",
         "dex": "aerodrome",
-        "liquidityUsd": 4021057.96,
+        "liquidityUsd": 4195460.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +137,7 @@
       {
         "pair": "0xbB345D35450BF9Ee76F3D2cE214E8e7AC5e1071d",
         "dex": "aerodrome",
-        "liquidityUsd": 6534674.28,
+        "liquidityUsd": 6834799.56,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -151,7 +146,7 @@
       {
         "pair": "0x80d995189ecc593672aD4703b250a5e82672EB1D",
         "dex": "uniswap",
-        "liquidityUsd": 258682.12,
+        "liquidityUsd": 284455.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +155,7 @@
       {
         "pair": "0x3b92f4962d799934d24d114f3d7569f836d5d9af01bd92ecee613d5ba89f17a2",
         "dex": "uniswap",
-        "liquidityUsd": 52901.49,
+        "liquidityUsd": 55132.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +164,7 @@
       {
         "pair": "0x782D7C494d5DDC20c246a82aC8fe277e2728d002",
         "dex": "aerodrome",
-        "liquidityUsd": 3444.85,
+        "liquidityUsd": 3627.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,16 +173,16 @@
       {
         "pair": "0x148fe840de4aA27Fe2cad8d4EEF59a941AFE31cB",
         "dex": "0x7Ca1dCCFB4f49564b8f13E18a67747fd428F1C40",
-        "liquidityUsd": 2421.05,
+        "liquidityUsd": 2547.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x063555796734FF6d04B8F27CD216bB05B6D95394",
-        "dex": "aerodrome",
-        "liquidityUsd": 1681.18,
+        "pair": "0x51142b371789a787241c246b3a2655c0ca74a289146b63ae6ecbb3e6d7f15cb5",
+        "dex": "uniswap",
+        "liquidityUsd": 530.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

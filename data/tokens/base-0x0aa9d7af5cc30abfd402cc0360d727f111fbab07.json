@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "Basecat",
   "name": "Basecat",
-  "scanned_at": "2026-08-30T11:11:12.355Z",
+  "scanned_at": "2026-08-31T12:21:40.989Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 68.3,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x481c66bbb6b6297bad5dc36230a2a42619ab48130408c14ed2eda0b7e561ccee"
+            "pair": "0x2428b34945934b021e0512667ea83b65cf3d6126e6e40e7603401b31c717a34b"
           }
         }
       ]
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -107,21 +107,21 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": null,
+    "liquidityUsd": 4.94,
     "pools": [
       {
-        "pair": "0x481c66bbb6b6297bad5dc36230a2a42619ab48130408c14ed2eda0b7e561ccee",
+        "pair": "0x2428b34945934b021e0512667ea83b65cf3d6126e6e40e7603401b31c717a34b",
         "dex": "uniswap",
-        "liquidityUsd": 0,
+        "liquidityUsd": 4.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 28.23,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

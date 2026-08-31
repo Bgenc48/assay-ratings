@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "POWERUSERS",
   "name": "powerusers",
-  "scanned_at": "2026-08-30T11:12:24.649Z",
+  "scanned_at": "2026-08-31T12:23:30.752Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -95,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -116,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 50198.27,
+    "liquidityUsd": 42726.38,
     "pools": [
       {
         "pair": "0x454b6af795fe6fd681528711aa5dcdb58c11f38298fbaa8f83319129dded74e0",
         "dex": "uniswap",
-        "liquidityUsd": 50031.03,
+        "liquidityUsd": 42556.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -132,7 +121,7 @@
       {
         "pair": "0x17770755931db8578405434209e8df1e57ca7bf5f67f88f121ff98a7766bb51b",
         "dex": "uniswap",
-        "liquidityUsd": 167.24,
+        "liquidityUsd": 170.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
