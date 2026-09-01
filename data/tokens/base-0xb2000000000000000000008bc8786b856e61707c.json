@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "METAc",
   "name": "Meta Platforms Inc.",
-  "scanned_at": "2026-08-31T12:19:11.708Z",
+  "scanned_at": "2026-09-01T10:42:25.506Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "277888510000",
+    "totalSupply": "342288510000",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -112,12 +112,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1059520.5099999998,
+    "liquidityUsd": 1037348.83,
     "pools": [
       {
         "pair": "0xEAF57753BC382E0324a1D43F72E7027705a2273E",
         "dex": "aerodrome",
-        "liquidityUsd": 990457.47,
+        "liquidityUsd": 1026455.16,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8e550867852ae8d40b74a67018d4be592cdc5415c3917a2037d88dc2a6f57029",
+        "dex": "uniswap",
+        "liquidityUsd": 594.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +135,7 @@
       {
         "pair": "0x583919ec1975a1238C50e1940911894ee6912476",
         "dex": "uniswap",
-        "liquidityUsd": 3538.99,
+        "liquidityUsd": 3129.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,16 +144,7 @@
       {
         "pair": "0xEC2800d4A96B40D1A387a49aa9c9861d2cE3454F",
         "dex": "hydrex",
-        "liquidityUsd": 1584.39,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x6d673b1f55808d09ea02914de8256fdb04c5ff383fb080fb404a459f167892a0",
-        "dex": "uniswap",
-        "liquidityUsd": 3117.86,
+        "liquidityUsd": 1571.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +153,25 @@
       {
         "pair": "0x5a9f8b78252222a5812abe2522d90d99f9b61db4004d831e2daf927cd29f49aa",
         "dex": "uniswap",
-        "liquidityUsd": 2550.34,
+        "liquidityUsd": 2935.42,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6d673b1f55808d09ea02914de8256fdb04c5ff383fb080fb404a459f167892a0",
+        "dex": "uniswap",
+        "liquidityUsd": 2541.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf58240134bd452ef00ffd256e573b986b9f9c3ae53ada9872ace5a1149a26e03",
+        "dex": "uniswap",
+        "liquidityUsd": 99.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,25 +180,7 @@
       {
         "pair": "0x1C9fcD793f44bd69D6C941b2eA53AF502338b20A",
         "dex": "uniswap",
-        "liquidityUsd": 21.63,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x939793794fd5996d55b48d3ebb4d9664b598ec2123a3cf7cfff7deb815a4e2f4",
-        "dex": "uniswap",
-        "liquidityUsd": 32734.45,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5db3d5abeb3195fd0837dda3d88a539cb0be830da0ae75fa07a4fd7a61d44d6a",
-        "dex": "uniswap",
-        "liquidityUsd": 25515.38,
+        "liquidityUsd": 21.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "GOCHU",
   "name": "Gochujangcoin",
-  "scanned_at": "2026-08-31T12:06:31.498Z",
+  "scanned_at": "2026-09-01T10:31:26.117Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 64.2,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x943ce2bb7fbb0514e21feadf950b5991f5910c696167a16f0bef7c2fdd1c5ad1"
+            "pair": "0xf2bfe1af2b521387931ba45a0c4ef6a37f761d40fc44e0b16402103d1612350c"
           }
         }
       ]
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 63.6% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -123,12 +111,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 680.16,
+    "liquidityUsd": 662.02,
     "pools": [
+      {
+        "pair": "0x1bf360f3d0980c3d1a46da5dabdca3a5e0b9fcb630d2461c291e90b4c4e61430",
+        "dex": "uniswap",
+        "liquidityUsd": 95.22,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x943ce2bb7fbb0514e21feadf950b5991f5910c696167a16f0bef7c2fdd1c5ad1",
         "dex": "uniswap",
-        "liquidityUsd": 343.33,
+        "liquidityUsd": 267.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +134,25 @@
       {
         "pair": "0xf2bfe1af2b521387931ba45a0c4ef6a37f761d40fc44e0b16402103d1612350c",
         "dex": "uniswap",
-        "liquidityUsd": 332.72,
+        "liquidityUsd": 280.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5492b3ef9d076b4d912d1b152ca0c04fcef33dfb4a5599c15c0c96039fe40350",
+        "dex": "uniswap",
+        "liquidityUsd": 6.52,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9ca68c811308e0b3cf5e78b5507ee18510ec6485c48cc40c18b11f4b58dce3dd",
+        "dex": "uniswap",
+        "liquidityUsd": 8.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,14 +161,14 @@
       {
         "pair": "0x99c819e81d394b14d8c19f25533ac2d84c256de5b1e7c8dfb8d956825ba8480d",
         "dex": "uniswap",
-        "liquidityUsd": 4.11,
+        "liquidityUsd": 3.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 63.65,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://gochu.org",
