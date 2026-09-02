@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "DEXTF",
   "name": "Memento",
-  "scanned_at": "2026-09-01T10:29:45.956Z",
+  "scanned_at": "2026-09-02T10:02:10.503Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 28.2,
+    "overall": 27.9,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 37.8%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -101,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "12045792722873842664273552",
+    "totalSupply": "12015585624604452388705998",
     "decimals": 18,
     "owner": "0xc3916b3ee83e201d6775470eccf1e93463f48127",
     "controlType": "eoa",
@@ -115,12 +122,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 147200.63,
+    "liquidityUsd": 133568.06000000003,
     "pools": [
       {
         "pair": "0xC3F617c8A3DA6d286c8f97aF946A8f293632C852",
         "dex": "hydrex",
-        "liquidityUsd": 147151.19,
+        "liquidityUsd": 133520.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -129,14 +136,14 @@
       {
         "pair": "0x5f198375776642B495aF7c4cEf69B9b6e9246f8A",
         "dex": "aerodrome",
-        "liquidityUsd": 49.44,
+        "liquidityUsd": 47.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 37.76,
     "projectLinks": {
       "websites": [
         "https://mementoblockchain.com/",

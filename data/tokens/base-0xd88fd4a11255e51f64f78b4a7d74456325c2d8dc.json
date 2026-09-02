@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BV7X",
   "name": "BitVault Signal",
-  "scanned_at": "2026-09-01T10:49:37.794Z",
+  "scanned_at": "2026-09-02T10:22:38.861Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70,
+    "overall": 70.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -109,12 +109,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 226318.74,
+    "liquidityUsd": 203636.44,
     "pools": [
       {
         "pair": "0x8de32c3e440d497cd3b607555be1f6115717965fff56247c02976814edcf384f",
         "dex": "uniswap",
-        "liquidityUsd": 225830.53,
+        "liquidityUsd": 203194.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -123,23 +123,23 @@
       {
         "pair": "0xB0669F896D3Edd9835fAD05c3e90458bFDBB3870",
         "dex": "uniswap",
-        "liquidityUsd": 487.99,
+        "liquidityUsd": 441.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xcdC4CD79BE3A5038C9D60A36b1ECbEb8282BE9F1",
-        "dex": "pancakeswap",
+        "pair": "0x0da4e13c34ea6de17ccc94e5c2546b13d2585ae2fe33e8d0a9aa287cbf9e8918",
+        "dex": "uniswap",
         "liquidityUsd": 0.22,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 11.89,
     "projectLinks": {
       "websites": [
         "https://www.bv7x.ai/",

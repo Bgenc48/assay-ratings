@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CAUSEWAY",
   "name": "Causeway",
-  "scanned_at": "2026-09-01T10:48:57.076Z",
+  "scanned_at": "2026-09-02T10:21:56.834Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,13 +66,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xd462b724637e0584b0911c31146ab724e818781526b1ec8bd6a8184b1f6f7075"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -112,18 +109,8 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 65900.64,
-    "pools": [
-      {
-        "pair": "0xd462b724637e0584b0911c31146ab724e818781526b1ec8bd6a8184b1f6f7075",
-        "dex": "uniswap",
-        "liquidityUsd": 65900.64,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": null,
     "projectLinks": null
   },

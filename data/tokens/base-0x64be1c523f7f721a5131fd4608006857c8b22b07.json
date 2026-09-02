@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SHIB",
   "name": "SHIBA INU",
-  "scanned_at": "2026-09-01T10:45:27.931Z",
+  "scanned_at": "2026-09-02T10:18:29.201Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 64.2,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xb2ca3c8755fef5491d6a5375a4bf264ddca1c0e98980ec203832a2301e92bb53"
+            "pair": "0x643ae437aa55c8f7aba16c69002d727d2cf6660d5547b534826bd628cb315a8a"
           }
         }
       ]
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 101.0% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -124,7 +112,7 @@
     "liquidityUsd": null,
     "pools": [
       {
-        "pair": "0xb2ca3c8755fef5491d6a5375a4bf264ddca1c0e98980ec203832a2301e92bb53",
+        "pair": "0x643ae437aa55c8f7aba16c69002d727d2cf6660d5547b534826bd628cb315a8a",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -133,7 +121,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 100.99,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

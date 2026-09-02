@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BASELINE",
   "name": "Baseline",
-  "scanned_at": "2026-09-01T10:47:40.397Z",
+  "scanned_at": "2026-09-02T10:20:39.535Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,10 +66,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x4607bdff56157d07d0889f1a3ab7d6db8fdcbcea22bf97f45edcebfdbeb34699"
+          }
         }
       ]
     },
@@ -110,9 +113,26 @@
     "verifiedSource": null,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [],
+    "pools": [
+      {
+        "pair": "0x4607bdff56157d07d0889f1a3ab7d6db8fdcbcea22bf97f45edcebfdbeb34699",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": null,
-    "projectLinks": null
+    "projectLinks": {
+      "websites": [
+        "https://www.dexerto.com/entertainment/vaseline-actually-changes-name-after-viral-baseline-pronunciation-3402876/"
+      ],
+      "socials": [
+        "https://x.com/Dexerto/status/2093277430198763718"
+      ]
+    }
   },
   "notes": null,
   "coi": false
