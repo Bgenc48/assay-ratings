@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "HOUSE",
   "name": "HOUSE COIN",
-  "scanned_at": "2026-09-02T10:21:22.744Z",
+  "scanned_at": "2026-09-03T10:33:01.720Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -71,7 +71,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x2bb4e7acd307c1af46017f82ac45c240ed29b10cda959ec36bef0f5f01a9f0e4"
+            "pair": "0x9aab41c34f19c9bbb838dd109871988a98ae1f4a05c2f924efe02d58b40072e2"
           }
         }
       ]
@@ -112,33 +112,24 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1.76,
+    "liquidityUsd": 9943.49,
     "pools": [
+      {
+        "pair": "0x9aab41c34f19c9bbb838dd109871988a98ae1f4a05c2f924efe02d58b40072e2",
+        "dex": "uniswap",
+        "liquidityUsd": 9942.86,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x2CdFA73ec05ee05e4D82828a06195f566C676a5f",
         "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
-        "liquidityUsd": 0.64,
+        "liquidityUsd": 0.63,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x2bb4e7acd307c1af46017f82ac45c240ed29b10cda959ec36bef0f5f01a9f0e4",
-        "dex": "uniswap",
-        "liquidityUsd": 0.89,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xabc274923b5d1d3e8d8b6e4dce140238c87df0140f8544dd60260c88a3302c5f",
-        "dex": "uniswap",
-        "liquidityUsd": 0.23,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BASED10",
   "name": "Base10 Index",
-  "scanned_at": "2026-09-02T10:20:06.260Z",
+  "scanned_at": "2026-09-03T10:30:35.087Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -109,12 +109,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 27108.3,
+    "liquidityUsd": 25232.86,
     "pools": [
       {
         "pair": "0x1d2d46ef574876dd93112b4e6290ec933af2b04bfe263c68c700c90973b9bd1a",
         "dex": "uniswap",
-        "liquidityUsd": 27108.3,
+        "liquidityUsd": 25216.47,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x26546790a79ed7fc81f6aeb435022d04f57a5b4a5259d5f99fa3534b7b09ac87",
+        "dex": "uniswap",
+        "liquidityUsd": 16.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

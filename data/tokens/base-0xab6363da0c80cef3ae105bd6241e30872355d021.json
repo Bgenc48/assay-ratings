@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ROLL",
   "name": "Roll",
-  "scanned_at": "2026-09-02T10:00:09.121Z",
+  "scanned_at": "2026-09-03T10:10:51.702Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -119,12 +119,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1521168.07,
+    "liquidityUsd": 1492293.2399999998,
     "pools": [
       {
         "pair": "0x0a04e1c94584a6f91228da6c0dba6bf0fbe5c9fa20ec6df57490494994489333",
         "dex": "uniswap",
-        "liquidityUsd": 1506508.8,
+        "liquidityUsd": 1477693.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +133,7 @@
       {
         "pair": "0xE47F7dbA68a00dc1A6f11458BcDFcA810E1CFEbF",
         "dex": "uniswap",
-        "liquidityUsd": 13076.08,
+        "liquidityUsd": 13020.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +142,7 @@
       {
         "pair": "0x595beA2246d5D296E0FEF76DfE3df2B07EC70E5f",
         "dex": "pancakeswap",
-        "liquidityUsd": 1583.18,
+        "liquidityUsd": 1574.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,25 +158,29 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x9c86a4CC398744e89e96Aea3fBC70C4E13001625",
-        "dex": "pancakeswap",
-        "liquidityUsd": 0,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x4D9EdA958cbC95122a9D12dCa353A79682D6Bd03",
         "dex": "pancakeswap",
         "liquidityUsd": 0.01,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x2906ec35aa1d1ec431b41706be38d680a1c31964",
+          "sharePct": 94794.74
+        }
+      },
+      {
+        "pair": "0x8e23893570dcd97f4fb6cfc7f625f24787a89dacb498d32c5eeaf310fdcaaf5e",
+        "dex": "uniswap",
+        "liquidityUsd": 5.14,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 1.1,
+    "top10Pct": 1.09,
     "projectLinks": {
       "websites": [
         "https://rollx.trade/",

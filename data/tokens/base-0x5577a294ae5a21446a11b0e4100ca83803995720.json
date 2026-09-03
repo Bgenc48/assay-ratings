@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ba3PUMP",
   "name": "Pump (Bankr Bridged)",
-  "scanned_at": "2026-09-02T10:21:11.299Z",
+  "scanned_at": "2026-09-03T10:32:50.368Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "16702756182411000000000000",
+    "totalSupply": "16553919838817000000000000",
     "decimals": 18,
     "owner": "0xd7b0fe2655ae73ab93d5c9a14442dcb4c479d1e1",
     "controlType": "eoa",
@@ -107,12 +107,30 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 147762.80999999997,
+    "liquidityUsd": 162895.19999999998,
     "pools": [
       {
         "pair": "0x60202877f451F03da7f8f48B94E2e6Bb053cF614",
         "dex": "uniswap",
-        "liquidityUsd": 97492.73,
+        "liquidityUsd": 99090.22,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x98538e23b2e4de8209b8d7ef5947e80d894e3c7ea9b390d399d6e9ced458c07f",
+        "dex": "uniswap",
+        "liquidityUsd": 3997.87,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8740982a7549dd47b59c1f8df0a1deac966de1838563560b03a930ca318bf382",
+        "dex": "uniswap",
+        "liquidityUsd": 3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +139,7 @@
       {
         "pair": "0x289cb2b11dcedafa0c3ac790c7c5fe4b7f59629b78ed0e61b412bfc613a02657",
         "dex": "uniswap",
-        "liquidityUsd": 33779.31,
+        "liquidityUsd": 34513.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +148,16 @@
       {
         "pair": "0xd229690a22b234f81b67fd22fd05b3a45eb00fc3b690a8d6217092ae69ec0850",
         "dex": "uniswap",
-        "liquidityUsd": 16490.77,
+        "liquidityUsd": 15508.34,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x813b1550d29fdef1f97f2a15590e02e9a7ef00d1a296c7e2c264db7e11eb9e43",
+        "dex": "uniswap",
+        "liquidityUsd": 9782.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

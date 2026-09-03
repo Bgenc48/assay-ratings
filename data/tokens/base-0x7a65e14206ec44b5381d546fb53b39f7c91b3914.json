@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MTR",
   "name": "Matter",
-  "scanned_at": "2026-09-02T10:03:30.418Z",
+  "scanned_at": "2026-09-03T10:14:36.491Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 46.4,
+    "overall": 50.8,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -114,12 +121,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1349346.08,
+    "liquidityUsd": 1349962.22,
     "pools": [
       {
         "pair": "0x93ecc1773d617Eb9e921a9A7e9a13a1C83Ca2A2e",
         "dex": "aerodrome",
-        "liquidityUsd": 1339317.22,
+        "liquidityUsd": 1339849.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,14 +135,14 @@
       {
         "pair": "0x5e03Cb47130B9a81534Efd935b48399c3b64F1BF",
         "dex": "aerodrome",
-        "liquidityUsd": 10028.86,
+        "liquidityUsd": 10113.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,

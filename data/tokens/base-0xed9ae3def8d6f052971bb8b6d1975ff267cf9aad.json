@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "BLUAI",
   "name": "Bluwhale AI",
-  "scanned_at": "2026-09-02T10:09:25.578Z",
+  "scanned_at": "2026-09-03T10:21:10.769Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 27.5,
+    "overall": 22.1,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -57,16 +57,20 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB"
+            "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB",
+            "lpDominantHolder": {
+              "address": "0x0a02944700fe01c4374617004681b9f1615ebf6d",
+              "sharePct": 99.54
+            }
           }
         }
       ]
@@ -94,6 +98,11 @@
       "reason": "Mint or issuance is controlled by an externally-owned account."
     },
     {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "Externally-owned accounts can withdraw 100% of tracked liquidity — a majority. The largest such pool is 0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB (LP holder 0x0a02944700fe01c4374617004681b9f1615ebf6d, 99.54% of that pool)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +110,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "8915512099401100000000000",
+    "totalSupply": "8970809665876030000000000",
     "decimals": 18,
     "owner": "0xa1e963ff6b129d446a2890f22c47a5abf15ce7dc",
     "controlType": "eoa",
@@ -115,15 +124,28 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 200380.61,
+    "liquidityUsd": 199395.68,
     "pools": [
       {
         "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB",
         "dex": "aerodrome",
-        "liquidityUsd": 200380.61,
+        "liquidityUsd": 199342.08,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x0a02944700fe01c4374617004681b9f1615ebf6d",
+          "sharePct": 99.54
+        }
+      },
+      {
+        "pair": "0x45D1b4905251e5954a44F7c51e17855d306421b7",
+        "dex": "aerodrome",
+        "liquidityUsd": 53.6,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],

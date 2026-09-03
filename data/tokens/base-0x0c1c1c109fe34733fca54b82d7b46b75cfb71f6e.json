@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CHIP",
   "name": "Chip",
-  "scanned_at": "2026-09-02T10:12:00.984Z",
+  "scanned_at": "2026-09-03T10:23:36.880Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "92240060573909000000000000",
+    "totalSupply": "93055643532705000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -114,12 +114,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 107362.36000000002,
+    "liquidityUsd": 104020.97,
     "pools": [
       {
         "pair": "0x592E01EDEb601016a20A3E6cD5bF533eBBadBC8b",
         "dex": "aerodrome",
-        "liquidityUsd": 107291.93,
+        "liquidityUsd": 103091.85,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x69d22a1b85d63ac610fd1769cfdb42af985797db6c2cd36bbe3babd165b74d98",
+        "dex": "uniswap",
+        "liquidityUsd": 852.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +137,7 @@
       {
         "pair": "0xDBC00ac77AF0848377717967deD190468b7df7CA",
         "dex": "pancakeswap",
-        "liquidityUsd": 28.88,
+        "liquidityUsd": 31.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +146,7 @@
       {
         "pair": "0xfc3fe84e1bbd3f03ad939456fd7d096c5823ef5da7d4383c2e166cb9a8f07417",
         "dex": "uniswap",
-        "liquidityUsd": 38.35,
+        "liquidityUsd": 41.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +155,7 @@
       {
         "pair": "0xc05c8e8c8375aabe8f20fdd959ead3f99ee83d21a5188d1d1b51cee1393a7ac4",
         "dex": "uniswap",
-        "liquidityUsd": 0.6,
+        "liquidityUsd": 0.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +173,7 @@
       {
         "pair": "0x45B8643880D8FeF3fd7a21229C3b41F0F6632676",
         "dex": "aerodrome",
-        "liquidityUsd": 2.58,
+        "liquidityUsd": 2.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "SQD",
   "name": "Subsquid",
-  "scanned_at": "2026-09-02T10:10:34.400Z",
+  "scanned_at": "2026-09-03T10:22:06.749Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "F",
-    "overall": 39,
+    "letter": "D",
+    "overall": 41.8,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 59.1% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -99,11 +92,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -126,12 +114,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 250452.08000000002,
+    "liquidityUsd": 253294.56,
     "pools": [
       {
         "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E",
         "dex": "aerodrome",
-        "liquidityUsd": 241844.51,
+        "liquidityUsd": 244643.08,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -140,7 +128,7 @@
       {
         "pair": "0xCe62141227cfd3Fe8d715F403B99F0377C0C16C6",
         "dex": "aerodrome",
-        "liquidityUsd": 4030.69,
+        "liquidityUsd": 4096.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,23 +137,14 @@
       {
         "pair": "0x7f1d9e5a75FB96033152f9E519C838149916b793",
         "dex": "aerodrome",
-        "liquidityUsd": 4575.93,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xA81111056cA24aC107639a0439b8AFa58d697Cb2",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.95,
+        "liquidityUsd": 4555.44,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 59.1,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://sqdgn.ai/"
