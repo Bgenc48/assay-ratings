@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TOSHI",
   "name": "Toshi",
-  "scanned_at": "2026-09-03T09:56:24.098Z",
+  "scanned_at": "2026-09-04T09:48:14.983Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
     "overall": 85,
-    "provisional": false,
+    "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -110,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 1060,
-    "liquidityUsd": 1373116.2899999998,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 1426874.3900000001,
     "pools": [
       {
         "pair": "0x4b0Aaf3EBb163dd45F663b38b6d93f6093EBC2d3",
         "dex": "uniswap",
-        "liquidityUsd": 1086256.82,
+        "liquidityUsd": 1132582.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +126,7 @@
       {
         "pair": "0x060eea2f3f474c5a9a53e8b806e180b7f770b305e332f008aefae77030fe8955",
         "dex": "uniswap",
-        "liquidityUsd": 92337.44,
+        "liquidityUsd": 95968.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,25 +135,25 @@
       {
         "pair": "0x368ea6F645DeB6D1a8692fE93C550D2834150865",
         "dex": "uniswap",
-        "liquidityUsd": 62565.95,
+        "liquidityUsd": 63625.1,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x5aa4AD647580bfE86258d300Bc9852F4434E2c61",
-        "dex": "uniswap",
-        "liquidityUsd": 38787.45,
+        "pair": "0x74E4c08Bb50619b70550733D32b7e60424E9628e",
+        "dex": "aerodrome",
+        "liquidityUsd": 37522.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x74E4c08Bb50619b70550733D32b7e60424E9628e",
-        "dex": "aerodrome",
-        "liquidityUsd": 38762.65,
+        "pair": "0x5aa4AD647580bfE86258d300Bc9852F4434E2c61",
+        "dex": "uniswap",
+        "liquidityUsd": 41093.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +162,7 @@
       {
         "pair": "0xFc131B9981fB053C2cAb7373DAf70DeF1436c4BB",
         "dex": "uniswap",
-        "liquidityUsd": 34989.23,
+        "liquidityUsd": 35869.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +171,7 @@
       {
         "pair": "0x4660Ff55A4Db144734AE76550Ee3093e0BA7F8D1",
         "dex": "aerodrome",
-        "liquidityUsd": 13178.59,
+        "liquidityUsd": 13693.9,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -180,7 +180,7 @@
       {
         "pair": "0xCefB04d884C9414140286B01754126b61DF6b247",
         "dex": "baseswap",
-        "liquidityUsd": 6238.16,
+        "liquidityUsd": 6519.6,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CORE",
   "name": "CoreBase",
-  "scanned_at": "2026-09-03T10:12:04.412Z",
+  "scanned_at": "2026-09-04T10:01:59.227Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -79,16 +79,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 1.5%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -118,7 +111,7 @@
     "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": 1.53,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

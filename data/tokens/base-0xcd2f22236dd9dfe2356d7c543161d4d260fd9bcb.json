@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "GHST",
   "name": "Aavegotchi GHST Token",
-  "scanned_at": "2026-09-03T10:32:20.213Z",
+  "scanned_at": "2026-09-04T10:19:19.973Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 48.8,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "20717302308502283792502046",
+    "totalSupply": "20678902341433040909835344",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -114,30 +114,30 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 879440.07,
+    "liquidityUsd": 892531.6999999998,
     "pools": [
-      {
-        "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067",
-        "dex": "aerodrome",
-        "liquidityUsd": 676389.81,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x0DFb9Cb66A18468850d6216fCc691aa20ad1e091",
         "dex": "aerodrome",
-        "liquidityUsd": 202450.15,
+        "liquidityUsd": 209297.29,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067",
+        "dex": "aerodrome",
+        "liquidityUsd": 682606.84,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0x56C11053159a24c0731b4b12356BC1f0578FB474",
         "dex": "aerodrome",
-        "liquidityUsd": 564.01,
+        "liquidityUsd": 587.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +146,34 @@
       {
         "pair": "0x873D3c477BBaeD55859C46E43FDAC6e73120f80c",
         "dex": "uniswap",
-        "liquidityUsd": 34.35,
+        "liquidityUsd": 35.39,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x81a53b8ad24Ded0B88f9c9EFE72885c488119037",
+        "dex": "sushiswap",
+        "liquidityUsd": 1.33,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8263C80Ba82fFb3506Eb731DCa78546244Ce2fC6",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.71,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb743e6d0e7648a2f47573cd9d2202b73d4849f41e572cc83d238458edded970a",
+        "dex": "uniswap",
+        "liquidityUsd": 1.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,36 +187,9 @@
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8263C80Ba82fFb3506Eb731DCa78546244Ce2fC6",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.71,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4FB60E5715A22Bdc29a1333d7894dA2AA735f5A9",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.09,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf9c0502cb4121F6cBF4e1D72F7644B314f45c6c9",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.24,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 11.5,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://ghsttoken.com",

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ARAIL",
   "name": "AssetRail",
-  "scanned_at": "2026-09-03T10:09:40.274Z",
+  "scanned_at": "2026-09-04T10:00:15.933Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,10 +66,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x7fb870c57bb606337940d45f7940a69f60608740bc9d9c034cf73579d54fec69"
+          }
         }
       ]
     },
@@ -79,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 55.4% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -97,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -121,10 +112,27 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
-    "top10Pct": 55.43,
-    "projectLinks": null
+    "liquidityUsd": 0.14,
+    "pools": [
+      {
+        "pair": "0x7fb870c57bb606337940d45f7940a69f60608740bc9d9c034cf73579d54fec69",
+        "dex": "uniswap",
+        "liquidityUsd": 0.14,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://assetrail.top"
+      ],
+      "socials": [
+        "https://x.com/AssetRailBase"
+      ]
+    }
   },
   "notes": null,
   "coi": false

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "HOUSE",
   "name": "HOUSE COIN",
-  "scanned_at": "2026-09-03T10:33:01.720Z",
+  "scanned_at": "2026-09-04T10:19:42.127Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,13 +66,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x9aab41c34f19c9bbb838dd109871988a98ae1f4a05c2f924efe02d58b40072e2"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -112,34 +109,10 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 9943.49,
-    "pools": [
-      {
-        "pair": "0x9aab41c34f19c9bbb838dd109871988a98ae1f4a05c2f924efe02d58b40072e2",
-        "dex": "uniswap",
-        "liquidityUsd": 9942.86,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x2CdFA73ec05ee05e4D82828a06195f566C676a5f",
-        "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
-        "liquidityUsd": 0.63,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": null,
-    "projectLinks": {
-      "websites": [],
-      "socials": [
-        "https://x.com/coinbase/status/2093710406695125093"
-      ]
-    }
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

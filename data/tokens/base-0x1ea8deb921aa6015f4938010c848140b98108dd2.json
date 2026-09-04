@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "vAPI",
   "name": "vAPI Network",
-  "scanned_at": "2026-09-03T10:34:32.030Z",
+  "scanned_at": "2026-09-04T10:21:07.211Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.5,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -116,55 +109,19 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 526268.4199999999,
+    "liquidityUsd": 530684.79,
     "pools": [
       {
         "pair": "0x05da2eb0bd58cb74ce0a0c4c93200a2e96778075fbe611b46967a334986c5671",
         "dex": "uniswap",
-        "liquidityUsd": 515655.64,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe77e64bf3cfd1a15e4f8418d10e90685f010321f484c0c9d66fb02279113e1d2",
-        "dex": "uniswap",
-        "liquidityUsd": 9439.35,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd2ba5be2e0291477cad908c912ce0f5ba3e625a552de1b181c133ed6397f819e",
-        "dex": "uniswap",
-        "liquidityUsd": 1169.97,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4175ae0cfecc8b2348fbced6cbd9d4b668913f97578d6f287b46b490b49a7ec7",
-        "dex": "uniswap",
-        "liquidityUsd": 2.63,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd3e8f13bdbcba6a21d6e8bebd9dfa5b84d236d9d00b98d8288376da7a3cdec95",
-        "dex": "uniswap",
-        "liquidityUsd": 0.83,
+        "liquidityUsd": 530684.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://vapinetwork.ai/",

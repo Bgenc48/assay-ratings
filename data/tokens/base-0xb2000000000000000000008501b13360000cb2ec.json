@@ -1,0 +1,202 @@
+{
+  "address": "0xb2000000000000000000008501b13360000cb2ec",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "cbZEC",
+  "name": "Coinbase Wrapped ZEC",
+  "scanned_at": "2026-09-04T10:22:52.079Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B+",
+    "overall": 85,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xb2000000000000000000008501b13360000cb2ec",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x0Fc47C17AF86078d809358db1b4db2DeBC988566"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "59297323407",
+    "decimals": 8,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 1075090.8,
+    "pools": [
+      {
+        "pair": "0xe4a1407210e5edfd381e6343fbf8daff3daa0ecbfa9121e3118898baa0601200",
+        "dex": "uniswap",
+        "liquidityUsd": 59883.19,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0Fc47C17AF86078d809358db1b4db2DeBC988566",
+        "dex": "aerodrome",
+        "liquidityUsd": 996594.85,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xee62cc64c74b050a0487563c73b0c26e5a20048fefa81cdddc60f1e07519a85f",
+        "dex": "uniswap",
+        "liquidityUsd": 954.08,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x39458e556e52168e77845a0df004ef890b3da17fd79e9a083418635d0675067e",
+        "dex": "uniswap",
+        "liquidityUsd": 50.16,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xD09240fC346E454E61a833b66de10f88937A0171",
+        "dex": "hydrex",
+        "liquidityUsd": 107.74,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0725964fd99fc1501f1406f0fd5f4e15b89559328e499ae8db6d90a62949354f",
+        "dex": "uniswap",
+        "liquidityUsd": 0.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x824eD9D2f9ca65636ebA5A89D3BC3c9FE7cc3F9a",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa94210e69ae2b3fd0ed364b89376164a88432cef8fcb7f8c281c66c2336b619d",
+        "dex": "uniswap",
+        "liquidityUsd": 17500.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://www.coinbase.com/campaigns/wrapped-assets"
+      ],
+      "socials": [
+        "https://x.com/coinbase"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

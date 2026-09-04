@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BV7X",
   "name": "BitVault Signal",
-  "scanned_at": "2026-09-03T10:34:51.449Z",
+  "scanned_at": "2026-09-04T10:21:18.754Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70.4,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -109,12 +109,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 198231.11,
+    "liquidityUsd": 209923.76,
     "pools": [
       {
         "pair": "0x8de32c3e440d497cd3b607555be1f6115717965fff56247c02976814edcf384f",
         "dex": "uniswap",
-        "liquidityUsd": 194814.75,
+        "liquidityUsd": 209469.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -123,23 +123,14 @@
       {
         "pair": "0xB0669F896D3Edd9835fAD05c3e90458bFDBB3870",
         "dex": "uniswap",
-        "liquidityUsd": 3416.18,
+        "liquidityUsd": 453.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcdC4CD79BE3A5038C9D60A36b1ECbEb8282BE9F1",
-        "dex": "pancakeswap",
-        "liquidityUsd": 0.18,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 11.89,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.bv7x.ai/",

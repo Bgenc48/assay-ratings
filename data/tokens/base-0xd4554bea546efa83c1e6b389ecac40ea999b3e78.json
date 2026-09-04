@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SQD",
   "name": "Subsquid",
-  "scanned_at": "2026-09-03T10:22:06.749Z",
+  "scanned_at": "2026-09-04T10:09:38.452Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -114,12 +114,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 253294.56,
+    "liquidityUsd": 255525.35,
     "pools": [
       {
         "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E",
         "dex": "aerodrome",
-        "liquidityUsd": 244643.08,
+        "liquidityUsd": 246839.18,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -128,7 +128,7 @@
       {
         "pair": "0xCe62141227cfd3Fe8d715F403B99F0377C0C16C6",
         "dex": "aerodrome",
-        "liquidityUsd": 4096.04,
+        "liquidityUsd": 4135.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,11 +137,15 @@
       {
         "pair": "0x7f1d9e5a75FB96033152f9E519C838149916b793",
         "dex": "aerodrome",
-        "liquidityUsd": 4555.44,
+        "liquidityUsd": 4550.2,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x9d0d34871984522b163e53d6eb6162338b5baca7",
+          "sharePct": 124.59
+        }
       }
     ],
     "top10Pct": null,

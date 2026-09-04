@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "DEXTF",
   "name": "Memento",
-  "scanned_at": "2026-09-03T10:13:08.955Z",
+  "scanned_at": "2026-09-04T10:02:23.907Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 27.9,
+    "overall": 28.2,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 37.7%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -108,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "12025396505308287317883957",
+    "totalSupply": "12032364492266598064351830",
     "decimals": 18,
     "owner": "0xc3916b3ee83e201d6775470eccf1e93463f48127",
     "controlType": "eoa",
@@ -122,12 +115,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 138719.77,
+    "liquidityUsd": 152414.16,
     "pools": [
       {
         "pair": "0xC3F617c8A3DA6d286c8f97aF946A8f293632C852",
         "dex": "hydrex",
-        "liquidityUsd": 138672.08,
+        "liquidityUsd": 152362.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,14 +129,14 @@
       {
         "pair": "0x5f198375776642B495aF7c4cEf69B9b6e9246f8A",
         "dex": "aerodrome",
-        "liquidityUsd": 47.69,
+        "liquidityUsd": 51.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 37.73,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://mementoblockchain.com/",
