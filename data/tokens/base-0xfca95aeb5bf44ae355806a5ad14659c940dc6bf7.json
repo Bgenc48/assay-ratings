@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SHIB",
   "name": "SHIBA INU",
-  "scanned_at": "2026-09-04T09:52:21.161Z",
+  "scanned_at": "2026-09-05T09:14:37.702Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
     "overall": 85,
-    "provisional": true,
+    "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -110,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 81559.48,
+    "verifiedSource": true,
+    "ageDays": 803,
+    "liquidityUsd": 81715.84999999998,
     "pools": [
       {
         "pair": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee",
         "dex": "uniswap",
-        "liquidityUsd": 72182.19,
+        "liquidityUsd": 72237.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,16 +126,7 @@
       {
         "pair": "0x4fbB43E487f128D3c94dC668ab5b60e0Ae9Ca001",
         "dex": "uniswap",
-        "liquidityUsd": 8047.5,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x1d2367386aa7a4a08726143b209b0f1f13a15a372da65c66a0d56bbe5e079cac",
-        "dex": "uniswap",
-        "liquidityUsd": 371.39,
+        "liquidityUsd": 8133.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,25 +135,16 @@
       {
         "pair": "0xc466e421fa7aa5da59a7f7b4aaed3f10905a781ec0c38665e2f08e477da730a7",
         "dex": "uniswap",
-        "liquidityUsd": 293.5,
+        "liquidityUsd": 292.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x381Ef53A1f112c7195d96181F6085A152C609C92",
-        "dex": "uniswap",
-        "liquidityUsd": 56.64,
-        "lpBurnedPct": 100,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x4235039335a809E39C282152Ef100197a8F95E8B",
         "dex": "uniswap",
-        "liquidityUsd": 96.14,
+        "liquidityUsd": 96.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +153,16 @@
       {
         "pair": "0x3c7eba8f08974e49937a844e489b2372b49d17a46d15a16ed79b02e22a27d7d3",
         "dex": "uniswap",
-        "liquidityUsd": 370.17,
+        "liquidityUsd": 368.43,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1d2367386aa7a4a08726143b209b0f1f13a15a372da65c66a0d56bbe5e079cac",
+        "dex": "uniswap",
+        "liquidityUsd": 384.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,14 +171,23 @@
       {
         "pair": "0xC09E5906180a541485Ec3fdC8bd34177925dA74D",
         "dex": "uniswap",
-        "liquidityUsd": 141.95,
+        "liquidityUsd": 145.73,
         "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x381Ef53A1f112c7195d96181F6085A152C609C92",
+        "dex": "uniswap",
+        "liquidityUsd": 56.47,
+        "lpBurnedPct": 100,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 14.16,
     "projectLinks": {
       "websites": [
         "https://schismaticshiba.com/"

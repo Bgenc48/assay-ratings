@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "cbBTC",
   "name": "Coinbase Wrapped BTC",
-  "scanned_at": "2026-09-04T09:48:46.190Z",
+  "scanned_at": "2026-09-05T09:10:26.964Z",
   "methodology_version": "0.2.1",
   "profile": "custodial-wrapped",
   "grade": {
-    "letter": "UR",
-    "overall": 44.6,
-    "provisional": true,
+    "letter": "C",
+    "overall": 56.9,
+    "provisional": false,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -70,7 +70,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
@@ -118,7 +118,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4528443907767",
+    "totalSupply": "4524424213509",
     "decimals": 8,
     "owner": "0xce56d20689d836ec7a728ceb94a15746696c16e6",
     "controlType": "eoa",
@@ -132,23 +132,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 44923980.14,
+    "verifiedSource": true,
+    "ageDays": 746,
+    "liquidityUsd": 45751374.13,
     "pools": [
       {
         "pair": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
         "dex": "pancakeswap",
-        "liquidityUsd": 5778907.2,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x160D7E9d948B16c163332a277b393c288408eb12",
-        "dex": "aerodrome",
-        "liquidityUsd": 4409024.17,
+        "liquidityUsd": 5572346.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,25 +148,16 @@
       {
         "pair": "0x7C7420DD105E2779316423Ba3E973f434315EFA9",
         "dex": "aerodrome",
-        "liquidityUsd": 1230635.13,
+        "liquidityUsd": 1272642.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x42d4a22CaD0F5a49681a5715cE994Af73A43B76b",
+        "pair": "0x160D7E9d948B16c163332a277b393c288408eb12",
         "dex": "aerodrome",
-        "liquidityUsd": 9485908.96,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7AeA2E8A3843516afa07293a10Ac8E49906dabD1",
-        "dex": "uniswap",
-        "liquidityUsd": 8879572.91,
+        "liquidityUsd": 4856440.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -184,7 +166,16 @@
       {
         "pair": "0xb94b22332ABf5f89877A14Cc88f2aBC48c34B3Df",
         "dex": "pancakeswap",
-        "liquidityUsd": 1563054.63,
+        "liquidityUsd": 1565477.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x42d4a22CaD0F5a49681a5715cE994Af73A43B76b",
+        "dex": "aerodrome",
+        "liquidityUsd": 10381473.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -193,7 +184,16 @@
       {
         "pair": "0x4e962BB3889Bf030368F56810A9c96B83CB3E778",
         "dex": "aerodrome",
-        "liquidityUsd": 5650855.63,
+        "liquidityUsd": 5614713.78,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7AeA2E8A3843516afa07293a10Ac8E49906dabD1",
+        "dex": "uniswap",
+        "liquidityUsd": 8984496.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -202,7 +202,7 @@
       {
         "pair": "0xfBB6Eed8e7aa03B138556eeDaF5D271A5E1e43ef",
         "dex": "uniswap",
-        "liquidityUsd": 7926021.51,
+        "liquidityUsd": 7503782.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -216,9 +216,5 @@
     }
   },
   "notes": "Custodial wrapped asset (Coinbase). Pausable/blacklistable by design and disclosed by the issuer. Scored under the methodology v0.2 custodial-wrapped profile: issuer control re-anchors upward only while an approved admin-disclosure claim verifies each scan; redeemability replaces liquidity permanence; capped at B+. Until the disclosure claim is approved, the profile caps at C (insufficient data).",
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

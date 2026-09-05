@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "BLUECHIP",
   "name": "BLUE CHIP",
-  "scanned_at": "2026-09-04T10:14:32.085Z",
+  "scanned_at": "2026-09-05T09:30:34.012Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "thin"
@@ -19,6 +19,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -94,6 +100,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -110,14 +121,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 688058.7,
+    "liquidityUsd": 876591.9,
     "pools": [
       {
         "pair": "0x41084f2d35b54dc0d070fbf76aa52c46f5d9c7e36c163252064b6b184d9429d9",
         "dex": "uniswap",
-        "liquidityUsd": 455165.55,
+        "liquidityUsd": 561160.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +137,7 @@
       {
         "pair": "0x4b095f294d8efca4b50b948865e68262025a68ba80e759b5b75cddb995c6b43f",
         "dex": "uniswap",
-        "liquidityUsd": 102501.68,
+        "liquidityUsd": 95558.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +146,7 @@
       {
         "pair": "0x59edcf191f467cdb6ed76ca06e21c6e143336ec65a2e5260be00ff348bde98c2",
         "dex": "uniswap",
-        "liquidityUsd": 85515.36,
+        "liquidityUsd": 134214.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +155,7 @@
       {
         "pair": "0x3dfDeCc334A8f2618321C78A9dE0E9428438F871",
         "dex": "aerodrome",
-        "liquidityUsd": 19813.36,
+        "liquidityUsd": 27282.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +164,16 @@
       {
         "pair": "0xd517f8e037bf3cea91de4a61b0d85a95b03b2ed8dc3b5ed0ba8d7d740219294a",
         "dex": "uniswap",
-        "liquidityUsd": 12491.27,
+        "liquidityUsd": 29237.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3c8e883866dfb21a82c785343497712fafbde02817e7f950676280100220d579",
+        "dex": "uniswap",
+        "liquidityUsd": 15612.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,25 +182,16 @@
       {
         "pair": "0x6109a4a0dd26f40318be53f2eea664bb965495889af1156011b234e556164f50",
         "dex": "uniswap",
-        "liquidityUsd": 9273.74,
+        "liquidityUsd": 10225.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xaa2e6544084ea3512caef547c2ac61f7df78ba152c2fe1275224b03dcafd663a",
+        "pair": "0x5f3157e889db783c82ab768f428c01e2a307b92458e4de67eb55e25098fbb716",
         "dex": "uniswap",
-        "liquidityUsd": 3245.57,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8ca1e98bf533962cd54e345bf6da38f98fe6afd857c4f516617f249cf56d0c50",
-        "dex": "uniswap",
-        "liquidityUsd": 52.17,
+        "liquidityUsd": 3299.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

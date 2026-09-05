@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "1F916",
   "name": "A Society For AI Agents",
-  "scanned_at": "2026-09-04T10:07:45.855Z",
+  "scanned_at": "2026-09-05T09:25:31.921Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 65.7,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,14 +78,28 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 30 days old; trust needs time (Provisional).",
+          "evidence": "0xd0c64f6cda6875947fefe6d79af92d718c82aa2ecb9bd904326bbe1ce68a58cd"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 9.1%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -88,6 +108,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,14 +135,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 254929.87000000002,
+    "verifiedSource": false,
+    "ageDays": 30,
+    "liquidityUsd": 247073.58,
     "pools": [
       {
         "pair": "0x24ecedb296899f0110dce5cfdd9c9dd74b2b11a21dee752e085f93c700c7fccb",
         "dex": "uniswap",
-        "liquidityUsd": 252930.55,
+        "liquidityUsd": 245110.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +151,7 @@
       {
         "pair": "0xfc3ce85d2d7e0b05eccc0164811dc198fbd0f3063585e0a8691834f9dd02133f",
         "dex": "uniswap",
-        "liquidityUsd": 54.23,
+        "liquidityUsd": 60.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +160,7 @@
       {
         "pair": "0xc63d4c67ab7b47fc2b327e91e864a7f4a4d2112ef7f6c92984496811d0d775f9",
         "dex": "uniswap",
-        "liquidityUsd": 7.07,
+        "liquidityUsd": 7.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +169,7 @@
       {
         "pair": "0x20f1ab24b8c7abe1be287f93ed68092f625d473872855a9332f6af422f7f4d12",
         "dex": "uniswap",
-        "liquidityUsd": 3,
+        "liquidityUsd": 3.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +178,7 @@
       {
         "pair": "0xe3ea11929660bc7aa484bb2fa30dbf547e1d0f252f329ba094278c553f6b719d",
         "dex": "uniswap",
-        "liquidityUsd": 9.73,
+        "liquidityUsd": 11.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,14 +187,14 @@
       {
         "pair": "0x66d101e0f25787d5b098b3f3b4273da6524213ac1cbefd373a5968e08c0c46ca",
         "dex": "uniswap",
-        "liquidityUsd": 1925.29,
+        "liquidityUsd": 1880.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 9.11,
     "projectLinks": {
       "websites": [
         "https://1f916.ai/"

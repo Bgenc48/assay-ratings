@@ -4,13 +4,13 @@
   "status": "ok",
   "symbol": "VIRTUAL",
   "name": "Virtual Protocol",
-  "scanned_at": "2026-09-04T09:48:58.723Z",
+  "scanned_at": "2026-09-05T09:10:49.623Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 41.8,
-    "provisional": true,
+    "overall": 49.1,
+    "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
@@ -112,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 8118248.12,
+    "verifiedSource": true,
+    "ageDays": 905,
+    "liquidityUsd": 8021455.18,
     "pools": [
       {
         "pair": "0x3f0296BF652e19bca772EC3dF08b32732F93014A",
         "dex": "aerodrome",
-        "liquidityUsd": 396345.59,
+        "liquidityUsd": 415654.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,25 +128,7 @@
       {
         "pair": "0x9c087Eb773291e50CF6c6a90ef0F4500e349B903",
         "dex": "uniswap",
-        "liquidityUsd": 506667.18,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x21594b992F68495dD28d605834b58889d0a727c7",
-        "dex": "aerodrome",
-        "liquidityUsd": 4290923.89,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9520E1a3BFd86DA6c1E9e5Ee4B9c2F11c413358F",
-        "dex": "aerodrome",
-        "liquidityUsd": 244599.63,
+        "liquidityUsd": 498282.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,16 +137,43 @@
       {
         "pair": "0x7CB770D0513c30e0CB45E4899e4a2CbEEd6F9830",
         "dex": "pancakeswap",
-        "liquidityUsd": 106643.75,
+        "liquidityUsd": 112515.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0x9520E1a3BFd86DA6c1E9e5Ee4B9c2F11c413358F",
+        "dex": "aerodrome",
+        "liquidityUsd": 241088.47,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x21594b992F68495dD28d605834b58889d0a727c7",
+        "dex": "aerodrome",
+        "liquidityUsd": 4217001.57,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0xC200F21EfE67c7F41B81A854c26F9cdA80593065",
         "dex": "aerodrome",
-        "liquidityUsd": 435038.08,
+        "liquidityUsd": 424077.14,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x529d2863a1521d0b57db028168fdE2E97120017C",
+        "dex": "uniswap",
+        "liquidityUsd": 789011.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,20 +182,15 @@
       {
         "pair": "0xE31c372a7Af875b3B5E0F3713B17ef51556da667",
         "dex": "uniswap",
-        "liquidityUsd": 1345466.8,
+        "liquidityUsd": 1323824,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x529d2863a1521d0b57db028168fdE2E97120017C",
-        "dex": "uniswap",
-        "liquidityUsd": 792563.2,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xf1c429b0ce94ef9893ef110d2cc100201dce71c8",
+          "sharePct": 94.88
+        }
       }
     ],
     "top10Pct": null,

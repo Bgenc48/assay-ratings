@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ElonRWA",
   "name": "ElonRWA",
-  "scanned_at": "2026-09-04T10:18:04.104Z",
+  "scanned_at": "2026-09-05T09:32:59.550Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
     "overall": 85,
-    "provisional": true,
+    "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -110,39 +110,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 627642.95,
+    "verifiedSource": true,
+    "ageDays": 899,
+    "liquidityUsd": 601337.8,
     "pools": [
       {
         "pair": "0xD56f086E7B796b313d49f2BC926fAc4BDd2a2B0B",
         "dex": "uniswap",
-        "liquidityUsd": 627635.08,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9D651E2491a57eE801de20a2ddE33747631fC083",
-        "dex": "aerodrome",
-        "liquidityUsd": 2.49,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5Ca1C5d0db6c558ca0a4c1Bb7792831aB5805672",
-        "dex": "aerodrome",
-        "liquidityUsd": 5.38,
+        "liquidityUsd": 601337.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 11.68,
     "projectLinks": {
       "websites": [
         "https://elonrwa.com/",

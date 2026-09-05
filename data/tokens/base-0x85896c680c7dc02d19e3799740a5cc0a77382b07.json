@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Cybercab",
   "name": "Cybercab",
-  "scanned_at": "2026-09-04T10:21:59.949Z",
+  "scanned_at": "2026-09-05T09:35:26.076Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -107,14 +107,23 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 4764874.64,
+    "liquidityUsd": 4769373.05,
     "pools": [
       {
         "pair": "0xd97B96b07cF15621c8AddFcb144778Bb293aD939",
         "dex": "aerodrome",
-        "liquidityUsd": 4764874.64,
+        "liquidityUsd": 4769373.05,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe37462eed04f704ff881d401eb75d7028de197b7c3a577dc98db608b9af0830b",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -124,15 +133,6 @@
         "pair": "0x0dabf860255c364169ec8b70754ecc267f70c03a373bfc9d4c8a030c2194a134",
         "dex": "uniswap",
         "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x049e83d05db28d040645415bbf0cb208c9a1991f238b826c1f476c76b9072051",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

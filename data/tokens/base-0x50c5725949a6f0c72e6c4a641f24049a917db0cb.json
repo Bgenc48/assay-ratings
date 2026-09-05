@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "DAI",
   "name": "Dai Stablecoin",
-  "scanned_at": "2026-09-04T09:48:34.322Z",
+  "scanned_at": "2026-09-05T09:10:14.254Z",
   "methodology_version": "0.2.1",
   "profile": "bridged",
   "grade": {
     "letter": "B+",
-    "overall": 82.5,
-    "provisional": true,
+    "overall": 85,
+    "provisional": false,
     "badge": "Bridged (canonical)",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -62,7 +62,7 @@
       "findings": []
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
@@ -86,7 +86,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "1791303336424739008404736",
+    "totalSupply": "1791803336424739008404736",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -106,23 +106,27 @@
         "result": "0x4200000000000000000000000000000000000010"
       }
     },
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 221933.52000000002,
+    "verifiedSource": true,
+    "ageDays": 1142,
+    "liquidityUsd": 220764.71,
     "pools": [
       {
         "pair": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823",
         "dex": "shark-swap",
-        "liquidityUsd": 63120.36,
+        "liquidityUsd": 62317.53,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x1239660af62d515bfecd4ee09c58d2cd32504605",
+          "sharePct": 99.98
+        }
       },
       {
         "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb",
         "dex": "uniswap",
-        "liquidityUsd": 54038.42,
+        "liquidityUsd": 53663.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -131,7 +135,7 @@
       {
         "pair": "0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
         "dex": "uniswap",
-        "liquidityUsd": 25185.17,
+        "liquidityUsd": 25186.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +144,7 @@
       {
         "pair": "0xd604cf300A4aE4345426dF42FFb296aa35b4bef2",
         "dex": "hydrex",
-        "liquidityUsd": 23614.91,
+        "liquidityUsd": 23616.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +153,7 @@
       {
         "pair": "0xC18F50d6A832f12F6DcAaeEe8D0c87A65B96787E",
         "dex": "uniswap",
-        "liquidityUsd": 17456.97,
+        "liquidityUsd": 17455.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,7 +162,7 @@
       {
         "pair": "0x22F9623817F152148B4E080E98Af66FBE9C5AdF8",
         "dex": "uniswap",
-        "liquidityUsd": 15858.22,
+        "liquidityUsd": 15861.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -167,7 +171,7 @@
       {
         "pair": "0xd64e7bF24eE5CC10B5Ab92525D256300Ad3FB81E",
         "dex": "uniswap",
-        "liquidityUsd": 11454.55,
+        "liquidityUsd": 11456.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -176,7 +180,7 @@
       {
         "pair": "0xe4eFf19c7AcE186ba39fD3eD639B2D34171f7efF",
         "dex": "pancakeswap",
-        "liquidityUsd": 11204.92,
+        "liquidityUsd": 11206.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
