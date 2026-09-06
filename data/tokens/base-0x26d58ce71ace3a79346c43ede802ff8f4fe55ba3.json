@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Suwappu",
   "name": "Suwappubot",
-  "scanned_at": "2026-09-05T09:33:37.726Z",
+  "scanned_at": "2026-09-06T09:49:02.478Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -125,12 +125,21 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 38807.189999999995,
+    "liquidityUsd": 38453.68,
     "pools": [
       {
         "pair": "0x787fe87a27824d11d743cd6007614d3f5776d1b42cce79358e390498bb436159",
         "dex": "uniswap",
-        "liquidityUsd": 38783.52,
+        "liquidityUsd": 38426.28,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5c0d01d5023edce8b89fe50a7d0d852541e198f5ee13d851cb313a936839b107",
+        "dex": "uniswap",
+        "liquidityUsd": 0.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +148,16 @@
       {
         "pair": "0x9002ec55e591d1ad9f2104fbc124acbfd2a5851f461cebe0b1a032c021ee37ec",
         "dex": "uniswap",
-        "liquidityUsd": 23.67,
+        "liquidityUsd": 22.9,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x86975212059b53c5973eaa9e1e0ed3c978d787da356ca38d86809124f3a51e03",
+        "dex": "uniswap",
+        "liquidityUsd": 4.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

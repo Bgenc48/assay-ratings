@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ICP",
   "name": "ICP",
-  "scanned_at": "2026-09-05T09:29:52.159Z",
+  "scanned_at": "2026-09-06T09:45:22.909Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 36.4,
+    "overall": 34.6,
     "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 35.5%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -106,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "26378835541008",
+    "totalSupply": "26378719409878",
     "decimals": 8,
     "owner": "0x70ae25592209b57f62b3a3e832ab356228a2192c",
     "controlType": "eoa",
@@ -118,13 +125,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 445,
-    "liquidityUsd": 631034.72,
+    "ageDays": 446,
+    "liquidityUsd": 639646.85,
     "pools": [
       {
         "pair": "0xD32150715fCD30918b2dFe29eAC483a69D435910",
         "dex": "uniswap",
-        "liquidityUsd": 15135.56,
+        "liquidityUsd": 15242.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +140,7 @@
       {
         "pair": "0x2c162DBe1132A099a15F66A04BEBaD4D477Ed865",
         "dex": "uniswap",
-        "liquidityUsd": 9941.46,
+        "liquidityUsd": 10396.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +149,7 @@
       {
         "pair": "0xa567b694eF655Ed10c2a6b89959E86fefdE2a3b7",
         "dex": "uniswap",
-        "liquidityUsd": 2984.37,
+        "liquidityUsd": 2983.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,32 +158,36 @@
       {
         "pair": "0xBe762d548f8CA86A78E9Da6e3DdC87F91457e398",
         "dex": "aerodrome",
-        "liquidityUsd": 602938.45,
+        "liquidityUsd": 610990.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x418E877e232Af461De8eee07aBAE54556BEdBd52",
-        "dex": "0x824E9C1C1E94454b0128F271a75d819596C5a2A4",
-        "liquidityUsd": 9.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
+        "pair": "0x00059bB264031930CF5267D2d40FFB15cCC15a2C",
+        "dex": "aerodrome",
+        "liquidityUsd": 8.45,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xa83c7fb023f0bb668e0f1536ae340dbdb1404d47",
+          "sharePct": 99.99
+        }
       },
       {
         "pair": "0x7bF0A9e81b51331DbFe96997E09e5d1C717E2FA6",
         "dex": "aerodrome",
-        "liquidityUsd": 25.51,
+        "liquidityUsd": 25.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 27.37,
+    "top10Pct": 35.45,
     "projectLinks": null
   },
   "notes": null,

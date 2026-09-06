@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "VIRTUAL",
   "name": "Virtual Protocol",
-  "scanned_at": "2026-09-05T09:10:49.623Z",
+  "scanned_at": "2026-09-06T09:31:42.547Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 49.1,
     "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "496995103814997539456865272",
+    "totalSupply": "496996529156901733909510765",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -113,13 +113,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 905,
-    "liquidityUsd": 8021455.18,
+    "ageDays": 906,
+    "liquidityUsd": 8064373.9,
     "pools": [
       {
         "pair": "0x3f0296BF652e19bca772EC3dF08b32732F93014A",
         "dex": "aerodrome",
-        "liquidityUsd": 415654.96,
+        "liquidityUsd": 414080.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,25 +128,7 @@
       {
         "pair": "0x9c087Eb773291e50CF6c6a90ef0F4500e349B903",
         "dex": "uniswap",
-        "liquidityUsd": 498282.74,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7CB770D0513c30e0CB45E4899e4a2CbEEd6F9830",
-        "dex": "pancakeswap",
-        "liquidityUsd": 112515.04,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9520E1a3BFd86DA6c1E9e5Ee4B9c2F11c413358F",
-        "dex": "aerodrome",
-        "liquidityUsd": 241088.47,
+        "liquidityUsd": 499544,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,25 +137,34 @@
       {
         "pair": "0x21594b992F68495dD28d605834b58889d0a727c7",
         "dex": "aerodrome",
-        "liquidityUsd": 4217001.57,
+        "liquidityUsd": 4252663.93,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xC200F21EfE67c7F41B81A854c26F9cdA80593065",
+        "pair": "0x9520E1a3BFd86DA6c1E9e5Ee4B9c2F11c413358F",
         "dex": "aerodrome",
-        "liquidityUsd": 424077.14,
+        "liquidityUsd": 238155.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x529d2863a1521d0b57db028168fdE2E97120017C",
-        "dex": "uniswap",
-        "liquidityUsd": 789011.26,
+        "pair": "0x7CB770D0513c30e0CB45E4899e4a2CbEEd6F9830",
+        "dex": "pancakeswap",
+        "liquidityUsd": 112363.44,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xC200F21EfE67c7F41B81A854c26F9cdA80593065",
+        "dex": "aerodrome",
+        "liquidityUsd": 428305.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -182,7 +173,7 @@
       {
         "pair": "0xE31c372a7Af875b3B5E0F3713B17ef51556da667",
         "dex": "uniswap",
-        "liquidityUsd": 1323824,
+        "liquidityUsd": 1332934.26,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -191,9 +182,18 @@
           "address": "0xf1c429b0ce94ef9893ef110d2cc100201dce71c8",
           "sharePct": 94.88
         }
+      },
+      {
+        "pair": "0x529d2863a1521d0b57db028168fdE2E97120017C",
+        "dex": "uniswap",
+        "liquidityUsd": 786325.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 33.95,
     "projectLinks": {
       "websites": [
         "http://virtuals.io/",

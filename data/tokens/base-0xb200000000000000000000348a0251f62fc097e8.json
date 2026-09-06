@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "GJESSE",
   "name": "Ghibli Jesse",
-  "scanned_at": "2026-09-05T09:20:37.255Z",
+  "scanned_at": "2026-09-06T09:38:15.847Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,10 +72,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x1ab3dc617ffd647f359146e4c7ef0f5904a31f3a609f36d86518db9174722ba7"
+          }
         }
       ]
     },
@@ -127,10 +130,25 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 8.46,
+    "pools": [
+      {
+        "pair": "0x1ab3dc617ffd647f359146e4c7ef0f5904a31f3a609f36d86518db9174722ba7",
+        "dex": "uniswap",
+        "liquidityUsd": 8.46,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 5.41,
-    "projectLinks": null
+    "projectLinks": {
+      "websites": [
+        "https://ghibli-jesse.xyz"
+      ],
+      "socials": []
+    }
   },
   "notes": null,
   "coi": false

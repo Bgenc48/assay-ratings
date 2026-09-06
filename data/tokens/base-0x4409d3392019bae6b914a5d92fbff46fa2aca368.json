@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "TSLA",
   "name": "Tesla - Tokenized on Base",
-  "scanned_at": "2026-09-05T09:29:19.589Z",
+  "scanned_at": "2026-09-06T09:44:50.962Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,13 +66,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x4cbbb11f301f00f16d659f731c3c8b37e1f308d77bb03f1668d978747188f9dc"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -83,7 +80,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 24 days old; trust needs time (Provisional).",
+          "text": "Token is 25 days old; trust needs time (Provisional).",
           "evidence": "0x5fd8c046289ec5792e94fbb1d132b010cb23d8d54ce25c78ac68209d4abbff10"
         }
       ]
@@ -123,28 +120,9 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 24,
-    "liquidityUsd": 0.04,
-    "pools": [
-      {
-        "pair": "0x4cbbb11f301f00f16d659f731c3c8b37e1f308d77bb03f1668d978747188f9dc",
-        "dex": "uniswap",
-        "liquidityUsd": 0.04,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x979fdfe54c384fb16fbdc61e30d6369f91c5ee10f337ef5390ea5c293ef597b2",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "ageDays": 25,
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": null,
     "projectLinks": null
   },

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "PROS",
   "name": "Wrapped PROS",
-  "scanned_at": "2026-09-05T09:12:26.772Z",
+  "scanned_at": "2026-09-06T09:33:01.127Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 41.8,
+    "overall": 43.6,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -78,22 +78,15 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 143 days old; trust needs time (Provisional).",
+          "text": "Token is 144 days old; trust needs time (Provisional).",
           "evidence": "0xe163c483d97097c44719ffede6c9af66f41539d872a02f6e10450acabea7b13a"
         }
       ]
     },
     "holderConcentration": {
-      "score": 25,
+      "score": 50,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 36.9%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -120,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4374415910841255011660112",
+    "totalSupply": "4384647572550732438818459",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -133,13 +126,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 143,
-    "liquidityUsd": 727671.71,
+    "ageDays": 144,
+    "liquidityUsd": 727984.2600000001,
     "pools": [
       {
         "pair": "0x3f4E90Ff4125d9FCC4F4B7Ba5213f596e9A1115d",
         "dex": "uniswap",
-        "liquidityUsd": 6856.68,
+        "liquidityUsd": 6854.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +141,7 @@
       {
         "pair": "0x8A8e4170C09074b109352190d47e54d7c1F61e4E",
         "dex": "aerodrome",
-        "liquidityUsd": 717476.57,
+        "liquidityUsd": 717796.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +150,7 @@
       {
         "pair": "0x24BDDff0577D1Ee32f92A0b92296cA9702611c6A",
         "dex": "aerodrome",
-        "liquidityUsd": 3308.61,
+        "liquidityUsd": 3302.66,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +159,7 @@
       {
         "pair": "0xfbc8430728e4f114b4cD1B3A9FDd1382c133F63c",
         "dex": "aerodrome",
-        "liquidityUsd": 26.83,
+        "liquidityUsd": 27.6,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -175,23 +168,23 @@
       {
         "pair": "0xA1DC70D55489784b68f8d2c045eaa51F59dd7ad5",
         "dex": "pancakeswap",
-        "liquidityUsd": 2.36,
+        "liquidityUsd": 2.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xc47bc81c85fdc5609c586b6de80f43c4e03f60aa811de86f3359caedc97cbfb6",
+        "pair": "0xf78873b37c9b07c83cc1b64132e9f37fcb962626e1217474d1076e20de4b4d19",
         "dex": "uniswap",
-        "liquidityUsd": 0.66,
+        "liquidityUsd": 0.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 36.93,
+    "top10Pct": 30.47,
     "projectLinks": null
   },
   "notes": null,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "cbMEGA",
   "name": "Coinbase Wrapped MEGA",
-  "scanned_at": "2026-09-05T09:16:48.856Z",
+  "scanned_at": "2026-09-06T09:36:03.146Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 144 days old; trust needs time (Provisional).",
+          "text": "Token is 145 days old; trust needs time (Provisional).",
           "evidence": "0x6663d20834049e9fa1583f5502c77232c6a574ce6a9cb3bb22ccef1332195689"
         }
       ]
@@ -145,13 +145,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 144,
-    "liquidityUsd": 159428.62,
+    "ageDays": 145,
+    "liquidityUsd": 100747.65000000001,
     "pools": [
       {
         "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83",
         "dex": "aerodrome",
-        "liquidityUsd": 158813.88,
+        "liquidityUsd": 100641.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,16 +160,7 @@
       {
         "pair": "0xc47687d4615ce111e72573ebcb8ead9216a9f115c020bece73e31092caef835c",
         "dex": "uniswap",
-        "liquidityUsd": 68.05,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3f598a69443841ed18c0f207d4dc07565ddb8fad11e13f0a514601c15aec6c47",
-        "dex": "uniswap",
-        "liquidityUsd": 459.25,
+        "liquidityUsd": 68.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,7 +169,7 @@
       {
         "pair": "0x8820eaf62ac7d32f8695344114f899d05b0a7862ebd05ad034be4632c37b9f1b",
         "dex": "uniswap",
-        "liquidityUsd": 30,
+        "liquidityUsd": 30.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -187,14 +178,32 @@
       {
         "pair": "0xc9d87aaa83f0e1bc425aa18a469c27cff88c7fa6c1caa0b373e00f5aabcf0124",
         "dex": "uniswap",
-        "liquidityUsd": 7.61,
+        "liquidityUsd": 7.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8ffc7b35384894da44fbc04dbabd0c58500161edc1f904cfed389b6e1c642d32",
+        "pair": "0xf4eE91aE0b68FF67854D66039Cd827c8f3338533",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1F94E67915CE2FFe7a7798195A782f0181A2C745",
+        "dex": "aerodrome",
+        "liquidityUsd": null,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5be041b20addd62c800d9516b7ec96bacac5134f5c4a7c920524c9353b373100",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -203,18 +212,9 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xc92191a7b9b7c95540cff48f3499edc271f5137daaaabdb8df3a2530dc1b8a9b",
+        "pair": "0x019e7af17d98f2131685663d5acfe5a451fd45fa48259e34c922194f4ec779c0",
         "dex": "uniswap",
-        "liquidityUsd": 41.29,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3776fff47d8bb237bb39d4ce181fcf64b2e0d2d68be42c97480c83ab83881698",
-        "dex": "uniswap",
-        "liquidityUsd": 8.54,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

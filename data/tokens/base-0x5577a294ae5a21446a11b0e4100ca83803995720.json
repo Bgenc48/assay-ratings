@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ba3PUMP",
   "name": "Pump (Bankr Bridged)",
-  "scanned_at": "2026-09-05T09:33:59.996Z",
+  "scanned_at": "2026-09-06T09:49:18.458Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 10 days old; trust needs time (Provisional).",
+          "text": "Token is 11 days old; trust needs time (Provisional).",
           "evidence": "0x081d884ca56b78d41b2bb3180d7f8afecbdca663dc557f7de35c6e89f31ea4da"
         }
       ]
@@ -115,7 +115,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "16294059602765000000000000",
+    "totalSupply": "16357105177589000000000000",
     "decimals": 18,
     "owner": "0xd7b0fe2655ae73ab93d5c9a14442dcb4c479d1e1",
     "controlType": "eoa",
@@ -125,13 +125,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 10,
-    "liquidityUsd": 145680.8,
+    "ageDays": 11,
+    "liquidityUsd": 104400.26,
     "pools": [
       {
         "pair": "0x60202877f451F03da7f8f48B94E2e6Bb053cF614",
         "dex": "uniswap",
-        "liquidityUsd": 97316.3,
+        "liquidityUsd": 94533.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,16 +140,16 @@
       {
         "pair": "0x289cb2b11dcedafa0c3ac790c7c5fe4b7f59629b78ed0e61b412bfc613a02657",
         "dex": "uniswap",
-        "liquidityUsd": 35768.06,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd229690a22b234f81b67fd22fd05b3a45eb00fc3b690a8d6217092ae69ec0850",
+        "pair": "0x8cf8b64e6b4cb55040819cf67b0c11c0fbf0984f080bef9d58e4ba81289d543c",
         "dex": "uniswap",
-        "liquidityUsd": 12596.44,
+        "liquidityUsd": 9866.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,12 +157,7 @@
       }
     ],
     "top10Pct": 0.8,
-    "projectLinks": {
-      "websites": [],
-      "socials": [
-        "https://x.com/BasedBBIAGBInu"
-      ]
-    }
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

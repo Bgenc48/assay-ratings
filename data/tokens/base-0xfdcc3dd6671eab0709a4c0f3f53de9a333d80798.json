@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-09-05T09:24:33.262Z",
+  "scanned_at": "2026-09-06T09:40:50.956Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 114.2% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 114.3% of circulating supply.",
           "evidence": null
         }
       ]
@@ -113,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "687166590346210509933128",
+    "totalSupply": "686909220346210509933128",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -128,13 +128,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1109,
-    "liquidityUsd": 199288.15000000002,
+    "ageDays": 1110,
+    "liquidityUsd": 199290.88999999998,
     "pools": [
       {
         "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c",
         "dex": "uniswap",
-        "liquidityUsd": 102055.32,
+        "liquidityUsd": 102056.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -143,7 +143,7 @@
       {
         "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F",
         "dex": "aerodrome",
-        "liquidityUsd": 97090.82,
+        "liquidityUsd": 97090.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -152,27 +152,14 @@
       {
         "pair": "0xada452F1340FAF2faA5CD6Cf5380f9585A624b8c",
         "dex": "uniswap",
-        "liquidityUsd": 142.01,
+        "liquidityUsd": 143.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3e576D9559A5B2Da5733420C9bD946b0FB615995",
-        "dex": "aerodrome",
-        "liquidityUsd": null,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x214183c90c177cc2b7129f5c17948971d32e322e",
-          "sharePct": 99.99
-        }
       }
     ],
-    "top10Pct": 114.24,
+    "top10Pct": 114.29,
     "projectLinks": null
   },
   "notes": null,

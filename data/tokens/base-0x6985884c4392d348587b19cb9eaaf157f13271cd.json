@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ZRO",
   "name": "LayerZero",
-  "scanned_at": "2026-09-05T09:14:14.760Z",
+  "scanned_at": "2026-09-06T09:34:19.869Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B",
-    "overall": 79.2,
+    "letter": "C",
+    "overall": 70,
     "provisional": false,
     "badge": "Custodial",
     "coverage": "partial"
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 64.9% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -89,6 +96,11 @@
   },
   "caps": [
     {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -96,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "6102899673272000000000000",
+    "totalSupply": "6099172629369000000000000",
     "decimals": 18,
     "owner": "0x28937ca4873f7289ebea0708c4e42b24835ecff0",
     "controlType": "safe",
@@ -106,13 +118,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 815,
-    "liquidityUsd": 205397.91999999998,
+    "ageDays": 816,
+    "liquidityUsd": 209275.99,
     "pools": [
       {
         "pair": "0x717e174d5dAe280802D1a2c15C1C0976561A3f61",
         "dex": "aerodrome",
-        "liquidityUsd": 72602.72,
+        "liquidityUsd": 75133.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +133,7 @@
       {
         "pair": "0xA4463789e8F3c6A599B3dFB608DDe55513Bcf289",
         "dex": "aerodrome",
-        "liquidityUsd": 32876.86,
+        "liquidityUsd": 33231.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +142,7 @@
       {
         "pair": "0x82685574957fEf6ab359D8c1083401B492dCa0CF",
         "dex": "aerodrome",
-        "liquidityUsd": 26540.79,
+        "liquidityUsd": 26798.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +151,7 @@
       {
         "pair": "0xa2d4A8e00dAaD32aCACe1A0dD0905f6aaF57E84e",
         "dex": "uniswap",
-        "liquidityUsd": 19679.45,
+        "liquidityUsd": 19932.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +160,7 @@
       {
         "pair": "0x72c03255e5151ebbee7e62a2bc1eeb71777a913f4af029abd817b0177a770c0a",
         "dex": "uniswap",
-        "liquidityUsd": 22812.41,
+        "liquidityUsd": 22948.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +169,7 @@
       {
         "pair": "0x4587df381022922f6622F9096C22e754BcF27b4F",
         "dex": "uniswap",
-        "liquidityUsd": 16149.64,
+        "liquidityUsd": 16273.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +178,7 @@
       {
         "pair": "0xcaEeDd8f1Acf55F2dF259afC090D519069F72a2B",
         "dex": "sushiswap",
-        "liquidityUsd": 5800.49,
+        "liquidityUsd": 5879.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,14 +187,14 @@
       {
         "pair": "0x41Fd11E5997fBC144418Fd2F1B5D9D9b45a94e32",
         "dex": "uniswap",
-        "liquidityUsd": 8935.56,
+        "liquidityUsd": 9077.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 64.87,
     "projectLinks": {
       "websites": [],
       "socials": []
