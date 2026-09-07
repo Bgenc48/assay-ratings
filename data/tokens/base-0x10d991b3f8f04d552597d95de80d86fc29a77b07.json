@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "VBEEF",
   "name": "Virtual Beef",
-  "scanned_at": "2026-09-06T09:39:19.140Z",
+  "scanned_at": "2026-09-07T10:40:44.841Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -72,16 +72,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 44 days old; trust needs time (Provisional).",
-          "evidence": "0x319348ad7bf3f98fe7324a393ed384c9ebab3040963b9431b7e180cdc424c8c6"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 100,
@@ -103,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -126,14 +114,41 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 44,
-    "liquidityUsd": 44935.43,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 30080.81,
     "pools": [
       {
         "pair": "0x669a9a318d547cb609687f50326fbaf1cece9e2ff540e3638fec89a037e8643e",
         "dex": "uniswap",
-        "liquidityUsd": 44935.43,
+        "liquidityUsd": 30060.95,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x482902f2e136e6730b6f0b397fb901859d661f2312f3288d37d278f3d6b706a9",
+        "dex": "uniswap",
+        "liquidityUsd": 10.57,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa2fe636b1339113120d1f4c3050b0f84b3d45bc6e61f5714ab7da9225e22d37f",
+        "dex": "uniswap",
+        "liquidityUsd": 6.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd0f057cf30f55659e9b6e30521532d459825466f44388b36f83c22660ec8911a",
+        "dex": "uniswap",
+        "liquidityUsd": 3.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

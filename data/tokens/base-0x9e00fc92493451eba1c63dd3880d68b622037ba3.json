@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "1F916",
   "name": "A Society For AI Agents",
-  "scanned_at": "2026-09-06T09:41:42.802Z",
+  "scanned_at": "2026-09-07T10:45:43.202Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -78,16 +72,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 31 days old; trust needs time (Provisional).",
-          "evidence": "0xd0c64f6cda6875947fefe6d79af92d718c82aa2ecb9bd904326bbe1ce68a58cd"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 100,
@@ -96,7 +83,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 9.1%.",
+          "text": "Top-10 unlabeled holders control 9.4%.",
           "evidence": null
         }
       ]
@@ -108,16 +95,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -135,14 +112,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 31,
-    "liquidityUsd": 275611.81999999995,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 218501.46999999997,
     "pools": [
       {
         "pair": "0x24ecedb296899f0110dce5cfdd9c9dd74b2b11a21dee752e085f93c700c7fccb",
         "dex": "uniswap",
-        "liquidityUsd": 273223.23,
+        "liquidityUsd": 216651.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +128,7 @@
       {
         "pair": "0xfc3ce85d2d7e0b05eccc0164811dc198fbd0f3063585e0a8691834f9dd02133f",
         "dex": "uniswap",
-        "liquidityUsd": 60.42,
+        "liquidityUsd": 48.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +137,7 @@
       {
         "pair": "0xc63d4c67ab7b47fc2b327e91e864a7f4a4d2112ef7f6c92984496811d0d775f9",
         "dex": "uniswap",
-        "liquidityUsd": 7.32,
+        "liquidityUsd": 6.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +146,16 @@
       {
         "pair": "0x20f1ab24b8c7abe1be287f93ed68092f625d473872855a9332f6af422f7f4d12",
         "dex": "uniswap",
-        "liquidityUsd": 3.3,
+        "liquidityUsd": 2.83,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe3ea11929660bc7aa484bb2fa30dbf547e1d0f252f329ba094278c553f6b719d",
+        "dex": "uniswap",
+        "liquidityUsd": 9.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,14 +164,14 @@
       {
         "pair": "0x66d101e0f25787d5b098b3f3b4273da6524213ac1cbefd373a5968e08c0c46ca",
         "dex": "uniswap",
-        "liquidityUsd": 2317.55,
+        "liquidityUsd": 1782.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 9.12,
+    "top10Pct": 9.4,
     "projectLinks": {
       "websites": [
         "https://1f916.ai/"

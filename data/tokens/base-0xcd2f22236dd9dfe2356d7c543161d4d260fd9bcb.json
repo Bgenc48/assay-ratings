@@ -4,13 +4,13 @@
   "status": "ok",
   "symbol": "GHST",
   "name": "Aavegotchi GHST Token",
-  "scanned_at": "2026-09-06T09:49:07.578Z",
+  "scanned_at": "2026-09-07T10:58:01.416Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 56.1,
-    "provisional": false,
+    "letter": "D",
+    "overall": 48.8,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -112,49 +112,36 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 887,
-    "liquidityUsd": 902118.49,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 900242.36,
     "pools": [
-      {
-        "pair": "0x0DFb9Cb66A18468850d6216fCc691aa20ad1e091",
-        "dex": "aerodrome",
-        "liquidityUsd": 210287.24,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067",
         "dex": "aerodrome",
-        "liquidityUsd": 691818.02,
+        "liquidityUsd": 691000.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8263C80Ba82fFb3506Eb731DCa78546244Ce2fC6",
+        "pair": "0x0DFb9Cb66A18468850d6216fCc691aa20ad1e091",
         "dex": "aerodrome",
-        "liquidityUsd": 0.71,
+        "liquidityUsd": 209205.24,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x334B4a562CEe1752EA2109Fb41f84EEd967fFD6E",
-        "dex": "sushiswap",
-        "liquidityUsd": 12.52,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x3977d6e0ac64995392b840dba79b9e58591c1743",
-          "sharePct": 99.99
-        }
+        "pair": "0x873D3c477BBaeD55859C46E43FDAC6e73120f80c",
+        "dex": "uniswap",
+        "liquidityUsd": 36.28,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": 11.52,

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "QUEEZING",
   "name": "Queezing",
-  "scanned_at": "2026-09-06T09:47:31.471Z",
+  "scanned_at": "2026-09-07T10:55:05.800Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -80,16 +74,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 12 days old; trust needs time (Provisional).",
-          "evidence": "0x867bcf5c0c637b35ec0a2823e3e6b144ff9ad87dc8db950901114832819a20f0"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 100,
@@ -98,7 +85,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.3%.",
+          "text": "Top-10 unlabeled holders control 0.6%.",
           "evidence": null
         }
       ]
@@ -110,16 +97,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -137,11 +114,11 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 12,
+    "verifiedSource": null,
+    "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": 0.31,
+    "top10Pct": 0.59,
     "projectLinks": null
   },
   "notes": null,

@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "NIKE",
   "name": "nike",
-  "scanned_at": "2026-09-06T09:50:41.718Z",
+  "scanned_at": "2026-09-07T11:01:32.634Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -95,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -118,32 +107,23 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 2120415.88,
+    "liquidityUsd": 0.060000000000000005,
     "pools": [
-      {
-        "pair": "0x11523a15f269354a8776e76cf15b0ec4123573a0f876c0c5a41abf2253e4fd4d",
-        "dex": "uniswap",
-        "liquidityUsd": 2070395.29,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x7023e412cf4f30480ec2ed811925943099333d54d3c318deb422936de02a1fef",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 0.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xa08b6E2861d9FB536d1Dee34dA06712Ed54b618B",
-        "dex": "aerodrome",
-        "liquidityUsd": 50020.59,
+        "pair": "0x11523a15f269354a8776e76cf15b0ec4123573a0f876c0c5a41abf2253e4fd4d",
+        "dex": "uniswap",
+        "liquidityUsd": 0.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

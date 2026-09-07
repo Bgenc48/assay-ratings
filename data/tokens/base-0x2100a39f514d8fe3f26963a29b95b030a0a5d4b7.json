@@ -4,13 +4,13 @@
   "status": "ok",
   "symbol": "UPONLY",
   "name": "UPONLY",
-  "scanned_at": "2026-09-06T09:37:02.255Z",
+  "scanned_at": "2026-09-07T10:36:44.314Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 71.1,
-    "provisional": false,
+    "overall": 70.4,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -88,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -112,23 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 601,
-    "liquidityUsd": 127464.22,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 127326.53,
     "pools": [
       {
         "pair": "0x911a2C812dA0b9B79CF6E3A00ce6fd39CbD13CcB",
         "dex": "uniswap",
-        "liquidityUsd": 127192.42,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x42c693103aaee47323d87a5489a96ad4edfc82f553dd3ea8e7cc3d646421c27a",
-        "dex": "uniswap",
-        "liquidityUsd": 271.8,
+        "liquidityUsd": 127326.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

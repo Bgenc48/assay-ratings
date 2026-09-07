@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MAMO",
   "name": "Mamo",
-  "scanned_at": "2026-09-06T09:47:55.193Z",
+  "scanned_at": "2026-09-07T10:55:58.238Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 71.1,
-    "provisional": false,
+    "overall": 70,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -88,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -112,23 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 474,
-    "liquidityUsd": 1456026.6500000001,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 1435975.32,
     "pools": [
       {
         "pair": "0xE2B3aA806e56603a244bFc111c9474F7DeDD03db",
         "dex": "aerodrome",
-        "liquidityUsd": 379939.21,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xAa067F08FeF60420d050A92E7800E588748B7d67",
-        "dex": "aerodrome",
-        "liquidityUsd": 271538.55,
+        "liquidityUsd": 369975.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +123,16 @@
       {
         "pair": "0x678F431DA2aBb9B5726bbf5CCDbaEEBB60dA9813",
         "dex": "aerodrome",
-        "liquidityUsd": 311066.37,
+        "liquidityUsd": 305120.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xAa067F08FeF60420d050A92E7800E588748B7d67",
+        "dex": "aerodrome",
+        "liquidityUsd": 265255.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +141,7 @@
       {
         "pair": "0x4A021bA3ab1F0121e7DF76f345C547db86Cb3468",
         "dex": "aerodrome",
-        "liquidityUsd": 406869.62,
+        "liquidityUsd": 411135.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +150,7 @@
       {
         "pair": "0x022CFACf2413925aAefcf4388eF2dD898dD2D346",
         "dex": "aerodrome",
-        "liquidityUsd": 39917.43,
+        "liquidityUsd": 39102.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +159,7 @@
       {
         "pair": "0xC1Ae12a3a15343bb8ac37CfC17960d3992c68bC6",
         "dex": "aerodrome",
-        "liquidityUsd": 31925.11,
+        "liquidityUsd": 30993.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,7 +168,7 @@
       {
         "pair": "0x51357bF59F0366923d1688293BaCC78B63F46F49",
         "dex": "aerodrome",
-        "liquidityUsd": 8847.06,
+        "liquidityUsd": 8547.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -182,14 +177,14 @@
       {
         "pair": "0x6E326d2C636E8b659C864aebc9d46B1c985c9A5c",
         "dex": "aerodrome",
-        "liquidityUsd": 5923.3,
+        "liquidityUsd": 5843.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 11.73,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://mamo.bot/"

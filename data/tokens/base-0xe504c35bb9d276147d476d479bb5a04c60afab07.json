@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "OpenAI",
   "name": "OpenAI",
-  "scanned_at": "2026-09-06T09:32:50.720Z",
+  "scanned_at": "2026-09-07T10:29:52.097Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -69,28 +69,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 57 days old; trust needs time (Provisional).",
-          "evidence": "0x43f6664884ab86ff39fa451bca3dcb41f8b6ac5bfc8f67fe38889758b6ca278c"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 3.3%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -99,11 +85,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -124,10 +105,10 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 57,
+    "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": 3.29,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

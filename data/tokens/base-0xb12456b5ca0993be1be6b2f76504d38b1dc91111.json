@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TREX",
   "name": "Google T-REX",
-  "scanned_at": "2026-09-06T09:44:11.966Z",
+  "scanned_at": "2026-09-07T10:50:11.030Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 82.9,
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,28 +77,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 22 days old; trust needs time (Provisional).",
-          "evidence": "0x04b581bab2d4983d6dbea57f60bc30720883afdf5ff19f60ce9f748b30fbd749"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 8.6%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -107,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -129,21 +110,30 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 22,
-    "liquidityUsd": 14472.25,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 13729.460000000001,
     "pools": [
       {
         "pair": "0x4da1C1426B4EFa76343A08DC44e3596270340913",
         "dex": "uniswap",
-        "liquidityUsd": 14472.25,
+        "liquidityUsd": 13678.34,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5513529fc3c1e18734b8e8c2b78dff0fc935108f200b85d41f68ed360467f924",
+        "dex": "uniswap",
+        "liquidityUsd": 51.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 8.57,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://unilaunch.fun/token/base/0xB12456b5cA0993Be1bE6B2F76504d38B1dC91111"

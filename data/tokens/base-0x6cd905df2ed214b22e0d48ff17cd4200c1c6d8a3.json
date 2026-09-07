@@ -4,13 +4,13 @@
   "status": "ok",
   "symbol": "TRUST",
   "name": "Intuition",
-  "scanned_at": "2026-09-06T09:40:47.476Z",
+  "scanned_at": "2026-09-07T10:43:39.311Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 54.3,
-    "provisional": false,
+    "overall": 46.7,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -113,13 +113,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 885,
-    "liquidityUsd": 310687.78,
+    "ageDays": null,
+    "liquidityUsd": 306592.46,
     "pools": [
       {
         "pair": "0xefF370558391e6b62bC1B3Ea816148d2BD186458",
         "dex": "uniswap",
-        "liquidityUsd": 24203.09,
+        "liquidityUsd": 24014.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +128,7 @@
       {
         "pair": "0xF92f7c82298b9f62b8e636F7E51fAD0235D69d56",
         "dex": "pancakeswap",
-        "liquidityUsd": 63.05,
+        "liquidityUsd": 63.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +137,7 @@
       {
         "pair": "0x17f707CF3EDBbd5d9251D4bCDF9Ad70a247D7B84",
         "dex": "aerodrome",
-        "liquidityUsd": 283095.45,
+        "liquidityUsd": 280654.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,14 +146,23 @@
       {
         "pair": "0x52448E17DABcb3b6654045974Afd572090BCC1F5",
         "dex": "aerodrome",
-        "liquidityUsd": 3326.19,
+        "liquidityUsd": 1858.65,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8ee871f3141161083232e24f6b5b28098f1b5e6562a47ed56c2c2ea279df275d",
+        "dex": "uniswap",
+        "liquidityUsd": 1.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 32.15,
+    "top10Pct": 32.12,
     "projectLinks": null
   },
   "notes": null,

@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "LFI",
   "name": "LienFi",
-  "scanned_at": "2026-09-06T09:44:05.184Z",
+  "scanned_at": "2026-09-07T10:50:04.666Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -78,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 128 days old; trust needs time (Provisional).",
-          "evidence": "0xe84a138895ca31629a91804dbfcd550498b933109793e66788a3b5f71f366a72"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.5%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -108,16 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -135,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 128,
-    "liquidityUsd": 625595.4600000001,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 641229.1599999999,
     "pools": [
       {
         "pair": "0x6ef02666f150d9649655b884e043b61b0990fad9be4c632d0c7568bb24da9367",
         "dex": "uniswap",
-        "liquidityUsd": 432845.86,
+        "liquidityUsd": 442008.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +121,7 @@
       {
         "pair": "0x8343C68279587498526114e6385F0a87f248E0D9",
         "dex": "aerodrome",
-        "liquidityUsd": 83176.75,
+        "liquidityUsd": 87717.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +130,7 @@
       {
         "pair": "0x588f68b9fA04366F33f8Ce095C13F0cebaB9406a",
         "dex": "uniswap",
-        "liquidityUsd": 75934.6,
+        "liquidityUsd": 77522.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +139,7 @@
       {
         "pair": "0x53ab4c60ff04b782F630A8685af95404f099aAFD",
         "dex": "hydrex",
-        "liquidityUsd": 32370.63,
+        "liquidityUsd": 32697.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,7 +148,7 @@
       {
         "pair": "0x569cbaedc953cc0ba615ed15a07b4ac09f3a0e1a19b70d50f33594433c0c2f32",
         "dex": "uniswap",
-        "liquidityUsd": 1113.99,
+        "liquidityUsd": 1116.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -187,7 +157,7 @@
       {
         "pair": "0x7D55dcABc41626818e52d6289bf4b9A71a04D13A",
         "dex": "pancakeswap",
-        "liquidityUsd": 58.93,
+        "liquidityUsd": 59.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -196,23 +166,23 @@
       {
         "pair": "0x095b804125550956898652c5554b6b4aac12df303d207b5832146b86fd1f09f9",
         "dex": "uniswap",
-        "liquidityUsd": 94.31,
+        "liquidityUsd": 103.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x093203a1e86d12c700149fc8c99447a5b896f8603dd25ef824fc8c99adb00542",
+        "pair": "0x7135726e7f7f81b2e914e0961bfc6ac9cdb924d1087e90c763ba97c67777bc3a",
         "dex": "uniswap",
-        "liquidityUsd": 0.39,
+        "liquidityUsd": 2.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 7.52,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://lienfi.com"

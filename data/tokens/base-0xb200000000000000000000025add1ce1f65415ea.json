@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "COPPERCOBIE",
   "name": "Copper Cobie",
-  "scanned_at": "2026-09-06T09:49:36.337Z",
+  "scanned_at": "2026-09-07T10:58:58.387Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -85,16 +85,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -129,7 +122,7 @@
     "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": 0.02,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

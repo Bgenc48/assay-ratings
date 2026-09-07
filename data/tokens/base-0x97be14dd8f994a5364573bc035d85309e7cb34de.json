@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "JitoSOL",
   "name": "Jito Staked SOL",
-  "scanned_at": "2026-09-06T09:35:53.817Z",
+  "scanned_at": "2026-09-07T10:34:38.855Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 57.9,
+    "overall": 59.2,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 60,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.latent-mint",
           "severity": "warn",
@@ -78,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -89,7 +83,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 3.9%.",
+          "text": "Top-10 unlabeled holders control 3.7%.",
           "evidence": null
         }
       ]
@@ -102,16 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -119,7 +103,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "111242719350016",
+    "totalSupply": "112382498254660",
     "decimals": 9,
     "owner": null,
     "controlType": "none",
@@ -128,14 +112,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 201,
-    "liquidityUsd": 15527640.27,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 15295729.08,
     "pools": [
       {
         "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871",
         "dex": "uniswap",
-        "liquidityUsd": 14320912.24,
+        "liquidityUsd": 14114260.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,14 +128,14 @@
       {
         "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
         "dex": "pancakeswap",
-        "liquidityUsd": 1206728.03,
+        "liquidityUsd": 1181468.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 3.93,
+    "top10Pct": 3.66,
     "projectLinks": null
   },
   "notes": null,

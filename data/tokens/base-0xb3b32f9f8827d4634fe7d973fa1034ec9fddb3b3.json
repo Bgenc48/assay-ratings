@@ -4,13 +4,13 @@
   "status": "ok",
   "symbol": "B3",
   "name": "B3",
-  "scanned_at": "2026-09-06T09:33:07.386Z",
+  "scanned_at": "2026-09-07T10:30:09.157Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 50.7,
-    "provisional": false,
+    "overall": 46.7,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -94,11 +94,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -118,14 +113,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 586,
-    "liquidityUsd": 570202.36,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 562186.0999999999,
     "pools": [
       {
         "pair": "0xB099C658e784b41EE435d48a8eb67e8f27285C93",
         "dex": "aerodrome",
-        "liquidityUsd": 557836.78,
+        "liquidityUsd": 549538.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -134,7 +129,7 @@
       {
         "pair": "0x4C1453376952F899365d295c716aaA1010B8FEaa",
         "dex": "alien-base",
-        "liquidityUsd": 11047.37,
+        "liquidityUsd": 10964.23,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -147,7 +142,7 @@
       {
         "pair": "0x9CE351A521d4238AFE545F83efBFd98C440257fA",
         "dex": "alien-base",
-        "liquidityUsd": 1146.82,
+        "liquidityUsd": 1135.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -156,43 +151,43 @@
       {
         "pair": "0xa74eF758e0fEE9777Ca8723b249C24A84B3F3D82",
         "dex": "uniswap",
-        "liquidityUsd": 155,
+        "liquidityUsd": 502.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xCF34e0c70d922d771f26dB8271Fb6DA977DE865e",
-        "dex": "pancakeswap",
-        "liquidityUsd": 0.39,
+        "pair": "0x55f8f40a66978620b84d169a4af8d04cae08ed7c46cb7a1057b5fd277cea65e0",
+        "dex": "uniswap",
+        "liquidityUsd": 9.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xa39a6dcF59124cecc11865BCaE8693187A669258",
+        "pair": "0x716d308ee8b3467d6d6d433fab0c1b33de9c89067e63e0e600ea13fa2f839ab2",
+        "dex": "uniswap",
+        "liquidityUsd": 27.08,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x225E6759931f6006bC44F84858f2a8844B44C70e",
         "dex": "aerodrome",
-        "liquidityUsd": 0.46,
+        "liquidityUsd": 1.46,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x55f8f40a66978620b84d169a4af8d04cae08ed7c46cb7a1057b5fd277cea65e0",
-        "dex": "uniswap",
-        "liquidityUsd": 8.75,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc59aac3e3718891819910e247442c6129c01e9a93589ffb0a18cc0f19554073d",
-        "dex": "uniswap",
-        "liquidityUsd": 6.79,
+        "pair": "0xcFFae035a84a97cB3b179E9E9DEFCDBdc13A0744",
+        "dex": "aerodrome",
+        "liquidityUsd": 7.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

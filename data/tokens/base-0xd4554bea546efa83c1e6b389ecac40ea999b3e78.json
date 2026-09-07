@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SQD",
   "name": "Subsquid",
-  "scanned_at": "2026-09-06T09:42:34.619Z",
+  "scanned_at": "2026-09-07T10:47:41.060Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 38.8,
-    "provisional": false,
+    "overall": 34,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -76,7 +76,7 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -115,11 +115,6 @@
       "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -138,14 +133,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 653,
-    "liquidityUsd": 254418.84999999998,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 259334.91999999998,
     "pools": [
       {
         "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E",
         "dex": "aerodrome",
-        "liquidityUsd": 250153.08,
+        "liquidityUsd": 250377.81,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -158,15 +153,36 @@
       {
         "pair": "0xCe62141227cfd3Fe8d715F403B99F0377C0C16C6",
         "dex": "aerodrome",
-        "liquidityUsd": 4265.77,
+        "liquidityUsd": 4233.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7f1d9e5a75FB96033152f9E519C838149916b793",
+        "dex": "aerodrome",
+        "liquidityUsd": 4723.5,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x9d0d34871984522b163e53d6eb6162338b5baca7",
+          "sharePct": 124.59
+        }
       }
     ],
     "top10Pct": 59.1,
-    "projectLinks": null
+    "projectLinks": {
+      "websites": [
+        "https://sqdgn.ai/"
+      ],
+      "socials": [
+        "https://x.com/helloSQDGN",
+        "https://t.me/SQDGNOfficial"
+      ]
+    }
   },
   "notes": null,
   "coi": false

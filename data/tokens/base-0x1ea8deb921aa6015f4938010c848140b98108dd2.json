@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "vAPI",
   "name": "vAPI Network",
-  "scanned_at": "2026-09-06T09:49:49.675Z",
+  "scanned_at": "2026-09-07T10:59:25.634Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -72,16 +72,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 6 days old; trust needs time (Provisional).",
-          "evidence": "0x3b43fe93b133a1e489f02ad48627ebfdbef1bde60a9ff0a93859a40c5669c236"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 100,
@@ -90,7 +83,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.3%.",
+          "text": "Top-10 unlabeled holders control 1.1%.",
           "evidence": null
         }
       ]
@@ -102,11 +95,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -127,29 +115,38 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 6,
-    "liquidityUsd": 499880.9,
+    "ageDays": null,
+    "liquidityUsd": 495246.4,
     "pools": [
       {
         "pair": "0x05da2eb0bd58cb74ce0a0c4c93200a2e96778075fbe611b46967a334986c5671",
         "dex": "uniswap",
-        "liquidityUsd": 499877.78,
+        "liquidityUsd": 494446.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x48e069cca943b09e74f9c86afcca2d64320f37cc52ea812f4cfe5df5d2acd196",
+        "pair": "0xd2ba5be2e0291477cad908c912ce0f5ba3e625a552de1b181c133ed6397f819e",
         "dex": "uniswap",
-        "liquidityUsd": 3.12,
+        "liquidityUsd": 604.9,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xde345b7d5b720a3b5a1feee4f4d958d8f9928b504f1c399439417d1e4fca6c11",
+        "dex": "uniswap",
+        "liquidityUsd": 194.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0.34,
+    "top10Pct": 1.08,
     "projectLinks": {
       "websites": [
         "https://vapinetwork.ai/",

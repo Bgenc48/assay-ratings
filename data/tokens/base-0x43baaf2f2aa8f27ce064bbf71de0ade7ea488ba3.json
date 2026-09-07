@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ATLAS",
   "name": "Atlas",
-  "scanned_at": "2026-09-06T09:42:18.383Z",
+  "scanned_at": "2026-09-07T10:46:59.389Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -67,24 +61,20 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x8901302202519546644bf0fc445b0073bf30e624ba185a6373207f489b89ea4a"
+          }
         }
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 29 days old; trust needs time (Provisional).",
-          "evidence": "0xae8d301862a19ededf35cb0dc49644fd8dda7c81adba5ef53cf87248461aad1f"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 100,
@@ -106,16 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -132,11 +112,30 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 29,
-    "liquidityUsd": null,
-    "pools": [],
-    "top10Pct": 2.33,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 35296.43,
+    "pools": [
+      {
+        "pair": "0x8901302202519546644bf0fc445b0073bf30e624ba185a6373207f489b89ea4a",
+        "dex": "uniswap",
+        "liquidityUsd": 35296.01,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x75bcc13162cc56f6bfbc2a289cb40ee920dabca0eba2c9defc25b9670e7d4316",
+        "dex": "uniswap",
+        "liquidityUsd": 0.42,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 2.31,
     "projectLinks": null
   },
   "notes": null,

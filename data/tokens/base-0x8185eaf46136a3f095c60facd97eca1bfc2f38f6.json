@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "$OLIVIA2.0",
   "name": "Olivia AI 2.0",
-  "scanned_at": "2026-09-06T09:32:20.586Z",
+  "scanned_at": "2026-09-07T10:29:14.543Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 58.6,
+    "overall": 64.2,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -72,16 +72,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 118 days old; trust needs time (Provisional).",
-          "evidence": "0xc870d7047228d0b34991eff702b6e9d0d4edfe37b3cc688d962a417c7f1f53f4"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 0,
@@ -108,11 +101,6 @@
       "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -131,14 +119,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 118,
-    "liquidityUsd": 732337.59,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 802279.93,
     "pools": [
       {
         "pair": "0x3E117EB37d0dB3016F4f0CC79F6cE7c648d64E00",
         "dex": "uniswap",
-        "liquidityUsd": 732337.59,
+        "liquidityUsd": 802279.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

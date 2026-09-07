@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "plumber",
   "name": "plumber",
-  "scanned_at": "2026-09-06T09:45:51.813Z",
+  "scanned_at": "2026-09-07T10:52:34.998Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -88,7 +88,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -123,12 +123,12 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 384157.03,
+    "liquidityUsd": 357726.0999999999,
     "pools": [
       {
         "pair": "0x5e916637e7c271972049cf33039e0feba2e8b6ba43b5e163e7720f15b3163deb",
         "dex": "uniswap",
-        "liquidityUsd": 232341.13,
+        "liquidityUsd": 212629.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +137,7 @@
       {
         "pair": "0x00259986a0eB018ADCf4C5123e67D4b40877ffBF",
         "dex": "uniswap",
-        "liquidityUsd": 101807.88,
+        "liquidityUsd": 85432.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +146,7 @@
       {
         "pair": "0x6c92C8a22115A98eFa5bcc87A35FA7e3A4E528a9",
         "dex": "uniswap",
-        "liquidityUsd": 26571.84,
+        "liquidityUsd": 23014.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +155,16 @@
       {
         "pair": "0xbd19ffa7e062db6873b8b2758c1b66d5c7a1f8b3f490ee6471027084c9943810",
         "dex": "uniswap",
-        "liquidityUsd": 18485.03,
+        "liquidityUsd": 28901.9,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd6bff0f8dd181c7f8a398735687e4dfaaed719875732f1ab9e46e58a7548a5b6",
+        "dex": "uniswap",
+        "liquidityUsd": 2991.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +173,7 @@
       {
         "pair": "0xf5a491beae09399bc6e22062dba47a8cf416e2066904dbb602257d2bd9e62589",
         "dex": "uniswap",
-        "liquidityUsd": 3156.23,
+        "liquidityUsd": 3243.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,7 +182,7 @@
       {
         "pair": "0xe09eaa98fe2aa9c31910564b435ff89ae6203689eab5844dff27aebf19464cf1",
         "dex": "uniswap",
-        "liquidityUsd": 500.27,
+        "liquidityUsd": 440.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -182,23 +191,14 @@
       {
         "pair": "0x8b89f08b3d2f7eea3cd0a3e00498218e1c37a9043bd68ac24fb54903ccc03747",
         "dex": "uniswap",
-        "liquidityUsd": 1119.95,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x21b9f66dadc2d8e43a5473e5bfdaeec7541b99b3a14eb2e6cf6a4d049a2658da",
-        "dex": "uniswap",
-        "liquidityUsd": 174.7,
+        "liquidityUsd": 1071.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 10.06,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://plumbermode.com/"

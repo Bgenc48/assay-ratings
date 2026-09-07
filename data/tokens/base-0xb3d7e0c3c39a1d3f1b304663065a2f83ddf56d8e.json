@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "AUTONO",
   "name": "AUTONOMOPOLY",
-  "scanned_at": "2026-09-06T09:49:45.007Z",
+  "scanned_at": "2026-09-07T10:59:14.336Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 115 days old; trust needs time (Provisional).",
-          "evidence": "0xef7a9ecbf7a97cded543d636e8d0537c6d761c722cfd288ba38cc8cb9ff0eaa3"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 9.3%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -102,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -126,14 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 115,
-    "liquidityUsd": 346120.1,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 297889.65,
     "pools": [
       {
         "pair": "0x84771828f44fcfbaae08e271ff74e272cc2934a3348ec724a475941185ce4eb9",
         "dex": "uniswap",
-        "liquidityUsd": 345937.27,
+        "liquidityUsd": 297696.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +123,7 @@
       {
         "pair": "0x10658cac642d7da5d89b81fe13fa31f7a63d4acd5f45d63f335af1ab26b63e10",
         "dex": "uniswap",
-        "liquidityUsd": 76.44,
+        "liquidityUsd": 68.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +132,7 @@
       {
         "pair": "0xa06e5496efad1e3fa6beef83da431a8f274eef5053c11616bc5ff95dbbb8df6c",
         "dex": "uniswap",
-        "liquidityUsd": 101.47,
+        "liquidityUsd": 88.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,14 +141,32 @@
       {
         "pair": "0xcF022eE161463AE16D590ED48549F6dA3818743c",
         "dex": "uniswap",
-        "liquidityUsd": 4.92,
+        "liquidityUsd": 4.5,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x03099829cda4e3c60b44d05b4720b1ce11d30814aaadb53c4f387948d0c592b6",
+        "dex": "uniswap",
+        "liquidityUsd": 28.9,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x591e6ad3dc2ff741b85cc9c1659cb64e63174831f9d229a0fee994f1a98cabca",
+        "dex": "uniswap",
+        "liquidityUsd": 2.27,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 9.32,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

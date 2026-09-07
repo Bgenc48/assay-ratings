@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "VLTX",
   "name": "Valtherix AI",
-  "scanned_at": "2026-09-06T09:41:30.870Z",
+  "scanned_at": "2026-09-07T10:45:15.149Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B",
-    "overall": 77.5,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -74,16 +74,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 46 days old; trust needs time (Provisional).",
-          "evidence": "0xfd09f566c52872dd9199281da2854a23967c12f656d2dfdfa35b667cec39c019"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 25,
@@ -105,11 +98,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -127,7 +115,7 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 46,
+    "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
     "top10Pct": 43.44,

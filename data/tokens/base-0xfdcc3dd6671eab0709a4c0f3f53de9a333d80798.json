@@ -4,13 +4,13 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-09-06T09:40:50.956Z",
+  "scanned_at": "2026-09-07T10:43:47.672Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 50.7,
-    "provisional": false,
+    "overall": 42.5,
+    "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
   },
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -127,14 +127,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 1110,
-    "liquidityUsd": 199290.88999999998,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 199309.9,
     "pools": [
       {
         "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c",
         "dex": "uniswap",
-        "liquidityUsd": 102056.15,
+        "liquidityUsd": 102056.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -152,11 +152,37 @@
       {
         "pair": "0xada452F1340FAF2faA5CD6Cf5380f9585A624b8c",
         "dex": "uniswap",
-        "liquidityUsd": 143.86,
+        "liquidityUsd": 145,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd3CeCe2Dd4Ac45be8A93Dee6b49fEba705B12208",
+        "dex": "aerodrome",
+        "liquidityUsd": 17.97,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x6c83579629317644db7add1e8c054497824db5d5",
+          "sharePct": 110888.25
+        }
+      },
+      {
+        "pair": "0x3e576D9559A5B2Da5733420C9bD946b0FB615995",
+        "dex": "aerodrome",
+        "liquidityUsd": null,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x214183c90c177cc2b7129f5c17948971d32e322e",
+          "sharePct": 99.99
+        }
       }
     ],
     "top10Pct": 114.29,

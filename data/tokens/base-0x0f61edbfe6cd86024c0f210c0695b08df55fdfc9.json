@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "BSTONK",
   "name": "BaseStonk",
-  "scanned_at": "2026-09-06T09:50:43.184Z",
+  "scanned_at": "2026-09-07T11:01:35.964Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 81.5,
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -77,19 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 20 days old; trust needs time (Provisional).",
-          "evidence": "0x4c564ba2a09921e830f12368f80be2c26e6a020d6e49167907ee43dd6aa9905b"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -100,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -122,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 20,
-    "liquidityUsd": 475891.6900000001,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 381213.74000000005,
     "pools": [
       {
         "pair": "0xc9786476d2492eb8ddb2ebf8b4b69e227e1f31397c790d877541ab0ed5cf5ee2",
         "dex": "uniswap",
-        "liquidityUsd": 268519.77,
+        "liquidityUsd": 225245.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +126,16 @@
       {
         "pair": "0xb5cd6e82b8fca463b1708af6fec2073c7c107f3e6c750a817c8f8885fb835748",
         "dex": "uniswap",
-        "liquidityUsd": 199518.04,
+        "liquidityUsd": 136022.15,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd6d23ffc7ff1875bd074a5f68b16e47abbc34df1c396ab6c25a9db217a65f165",
+        "dex": "uniswap",
+        "liquidityUsd": 15465.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,16 +144,7 @@
       {
         "pair": "0xEaFB61f7de3E69d073D8D8bf77804dA40cD7BC84",
         "dex": "uniswap",
-        "liquidityUsd": 1195.09,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd00d61c92fc7b060a710a5a5d8a38b4b72ee2dad5822e8719999e677b277c175",
-        "dex": "uniswap",
-        "liquidityUsd": 2962.65,
+        "liquidityUsd": 1365.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -165,16 +153,16 @@
       {
         "pair": "0xb7c709c38d3cd7ad07c14a998350f1a5505e02e2abb80cdce460576bccee48a5",
         "dex": "uniswap",
-        "liquidityUsd": 2398.07,
+        "liquidityUsd": 220.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xe0c1232c7f1f32d038d9d1cda1c42ebe77d5f220c5b3f9cc0e4d5a6e19236e19",
+        "pair": "0x04A686AeA74e279f4E802dd9fE56B02A47A91dbA",
         "dex": "uniswap",
-        "liquidityUsd": 418.52,
+        "liquidityUsd": 308.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -183,23 +171,23 @@
       {
         "pair": "0xd9C63D94287b3A0c5A2968EE98d094044fc3eD97",
         "dex": "9mm",
-        "liquidityUsd": 571.85,
+        "liquidityUsd": 70.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xf60509c3c434442010a090212e5b6c4f26886e844fe97b89a3457ac7fe00c918",
+        "pair": "0xd00d61c92fc7b060a710a5a5d8a38b4b72ee2dad5822e8719999e677b277c175",
         "dex": "uniswap",
-        "liquidityUsd": 307.7,
+        "liquidityUsd": 2515.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 13.79,
     "projectLinks": {
       "websites": [
         "https://basestonk.io/"

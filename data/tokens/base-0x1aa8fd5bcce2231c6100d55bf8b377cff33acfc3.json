@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "RAVE",
   "name": "RaveDAO",
-  "scanned_at": "2026-09-06T09:35:27.408Z",
+  "scanned_at": "2026-09-07T10:33:59.867Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 66.4,
+    "overall": 69.2,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -101,11 +101,6 @@
       "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -113,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "22492843861652000000000000",
+    "totalSupply": "22497976481530000000000000",
     "decimals": 18,
     "owner": "0x9831156f1a6e506fca41503590b42f07c2e80f54",
     "controlType": "safe",
@@ -123,38 +118,29 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 325,
-    "liquidityUsd": 184279.48,
+    "ageDays": null,
+    "liquidityUsd": 203834.39,
     "pools": [
       {
         "pair": "0x51663B8A28E7Ea197c5CcF983AfC084Da0a8023D",
         "dex": "aerodrome",
-        "liquidityUsd": 184271.49,
+        "liquidityUsd": 203834,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x1d3a89d06b3b673ce35059867e3749fc82ca38b9089889eba9da2f058c695da4",
-        "dex": "uniswap",
-        "liquidityUsd": 7.07,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xB359b1F51A9a3aa7E5439815820132D63ffF680d",
+        "pair": "0x781Cc496494Ae9A79DdB443F8DF825d22f7F0456",
         "dex": "aerodrome",
-        "liquidityUsd": 0.92,
+        "liquidityUsd": 0.39,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 68.41,
+    "top10Pct": 68.39,
     "projectLinks": null
   },
   "notes": null,

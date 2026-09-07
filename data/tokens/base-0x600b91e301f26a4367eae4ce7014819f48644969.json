@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "BLAPE",
   "name": "Blind Ape",
-  "scanned_at": "2026-09-06T09:50:58.141Z",
+  "scanned_at": "2026-09-07T11:01:50.422Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,27 +66,17 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x0ec5d2e455769ae209e48350ff5ff7d1d8f17bb14b3e5c754f4010502b3354ea"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 1 days old; trust needs time (Provisional).",
-          "evidence": "0x0af527981c16de6812627b75e324ed55d9d4b3f3cab9b1ab7953be219d1ab876"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": null,
@@ -106,16 +90,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -133,20 +107,10 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 0,
-    "liquidityUsd": 138821.62,
-    "pools": [
-      {
-        "pair": "0x0ec5d2e455769ae209e48350ff5ff7d1d8f17bb14b3e5c754f4010502b3354ea",
-        "dex": "uniswap",
-        "liquidityUsd": 138821.62,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": null,
     "projectLinks": null
   },

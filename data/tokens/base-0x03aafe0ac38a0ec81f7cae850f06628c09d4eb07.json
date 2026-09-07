@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Polymarket",
   "name": "Polymarket",
-  "scanned_at": "2026-09-06T09:47:12.531Z",
+  "scanned_at": "2026-09-07T10:54:19.932Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -61,24 +61,20 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x11e33be738b43c8f479f414484a200e0dc293fa66bd9fbe643e057ccf3f5ed00"
+          }
         }
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 15 days old; trust needs time (Provisional).",
-          "evidence": "0xd566689fc32e88b9de051e0b3377ab5193df59ac4e56761b54aa7d1d8a9fda04"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 100,
@@ -100,11 +96,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -123,10 +114,20 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 15,
+    "verifiedSource": null,
+    "ageDays": null,
     "liquidityUsd": null,
-    "pools": [],
+    "pools": [
+      {
+        "pair": "0x11e33be738b43c8f479f414484a200e0dc293fa66bd9fbe643e057ccf3f5ed00",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 0,
     "projectLinks": null
   },

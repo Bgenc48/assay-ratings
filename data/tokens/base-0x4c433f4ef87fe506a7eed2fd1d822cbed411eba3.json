@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "TSG",
   "name": "the sleeping giant",
-  "scanned_at": "2026-09-06T09:37:34.666Z",
+  "scanned_at": "2026-09-07T10:37:36.168Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 63.9,
+    "letter": "B-",
+    "overall": 70.4,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -72,16 +72,9 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 110 days old; trust needs time (Provisional).",
-          "evidence": "0x72776799bae9c3cf16d8ef278b3a8002babc36111a3c3ef46eb1b9960ee192f1"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
       "score": 75,
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -117,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 110,
-    "liquidityUsd": 87221.16,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 82674.28,
     "pools": [
       {
         "pair": "0x5e4c78bf666d78fa1e751abc84cf9933d17b1736d4605f400173ac63ac52b1f8",
         "dex": "uniswap",
-        "liquidityUsd": 87172.09,
+        "liquidityUsd": 82628,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +121,7 @@
       {
         "pair": "0x5d7e5805c897486e03e0b583eceabd9e4cd59d1ad361445b79809effb2edc546",
         "dex": "uniswap",
-        "liquidityUsd": 49.07,
+        "liquidityUsd": 46.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MORPHO",
   "name": "Morpho Token",
-  "scanned_at": "2026-09-06T09:33:55.504Z",
+  "scanned_at": "2026-09-07T10:31:30.999Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 53.2,
-    "provisional": false,
+    "overall": 51.8,
+    "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 38.3%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -120,13 +108,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 665,
-    "liquidityUsd": 1850381.6500000001,
+    "ageDays": null,
+    "liquidityUsd": 1736613.9,
     "pools": [
       {
         "pair": "0xB5F0b4aE66C14F7EFaA9aA1468E8FC536A3E288c",
         "dex": "aerodrome",
-        "liquidityUsd": 1125791.25,
+        "liquidityUsd": 1013559.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +123,7 @@
       {
         "pair": "0x2F42Df4aF5312B492E9d7F7b2110D9c7bf2D9e4F",
         "dex": "uniswap",
-        "liquidityUsd": 184276.55,
+        "liquidityUsd": 179320.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +132,7 @@
       {
         "pair": "0x2043B296fFC6b2d3bf4A3F3167d2Afb3B0FBdbEE",
         "dex": "uniswap",
-        "liquidityUsd": 404189.43,
+        "liquidityUsd": 406530.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +141,7 @@
       {
         "pair": "0xd433B339c5C801228E1343C678Dc26213A7B8Aac",
         "dex": "aerodrome",
-        "liquidityUsd": 31566.12,
+        "liquidityUsd": 31620.03,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -162,7 +150,7 @@
       {
         "pair": "0x3444bF60B93BD30f701601356Ac136aD6a9b7A79",
         "dex": "uniswap",
-        "liquidityUsd": 31050.24,
+        "liquidityUsd": 31229.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +159,7 @@
       {
         "pair": "0x0b5801d76420450270ae80476bb57091a23969ef4c05f4f9441547d09e96c83b",
         "dex": "uniswap",
-        "liquidityUsd": 26082.06,
+        "liquidityUsd": 26790.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,7 +168,7 @@
       {
         "pair": "0xf76b2BA2dac24244B9cd3C05Da75cFd834f08259",
         "dex": "quickswap",
-        "liquidityUsd": 24197.93,
+        "liquidityUsd": 24285.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -189,14 +177,14 @@
       {
         "pair": "0xc1c26771c32ebbd6985d4f35798454efd3641edab9e8f47e9847dfb050ec7b12",
         "dex": "uniswap",
-        "liquidityUsd": 23228.07,
+        "liquidityUsd": 23276.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 38.31,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://morpho.org/"
