@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ATLAS",
   "name": "Atlas",
-  "scanned_at": "2026-09-07T10:46:59.389Z",
+  "scanned_at": "2026-09-08T09:57:23.696Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 72.5,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,6 +19,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -96,6 +102,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -112,23 +123,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 35296.43,
+    "liquidityUsd": 34602.88,
     "pools": [
       {
         "pair": "0x8901302202519546644bf0fc445b0073bf30e624ba185a6373207f489b89ea4a",
         "dex": "uniswap",
-        "liquidityUsd": 35296.01,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x75bcc13162cc56f6bfbc2a289cb40ee920dabca0eba2c9defc25b9670e7d4316",
-        "dex": "uniswap",
-        "liquidityUsd": 0.42,
+        "liquidityUsd": 34602.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

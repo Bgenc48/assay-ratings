@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "RAVE",
   "name": "RaveDAO",
-  "scanned_at": "2026-09-07T10:33:59.867Z",
+  "scanned_at": "2026-09-08T09:51:28.465Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 69.2,
+    "overall": 66.4,
     "provisional": true,
     "badge": "Custodial",
     "coverage": "partial"
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 68.4% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 70.0% of circulating supply.",
           "evidence": null
         }
       ]
@@ -101,6 +101,11 @@
       "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -108,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "22497976481530000000000000",
+    "totalSupply": "22486345513773000000000000",
     "decimals": 18,
     "owner": "0x9831156f1a6e506fca41503590b42f07c2e80f54",
     "controlType": "safe",
@@ -118,13 +123,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 203834.39,
+    "ageDays": 327,
+    "liquidityUsd": 189469.59,
     "pools": [
       {
         "pair": "0x51663B8A28E7Ea197c5CcF983AfC084Da0a8023D",
         "dex": "aerodrome",
-        "liquidityUsd": 203834,
+        "liquidityUsd": 189469.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,14 +138,14 @@
       {
         "pair": "0x781Cc496494Ae9A79DdB443F8DF825d22f7F0456",
         "dex": "aerodrome",
-        "liquidityUsd": 0.39,
+        "liquidityUsd": 0.47,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 68.39,
+    "top10Pct": 69.97,
     "projectLinks": null
   },
   "notes": null,

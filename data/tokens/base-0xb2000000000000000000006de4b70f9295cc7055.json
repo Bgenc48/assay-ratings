@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Presley",
   "name": "KeyboardCat",
-  "scanned_at": "2026-09-07T10:54:14.862Z",
+  "scanned_at": "2026-09-08T10:02:01.584Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -85,9 +85,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 3.9%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -122,7 +129,7 @@
     "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": null,
+    "top10Pct": 3.87,
     "projectLinks": null
   },
   "notes": null,

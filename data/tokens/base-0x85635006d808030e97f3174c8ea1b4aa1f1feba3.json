@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "VVVeity",
   "name": "Venice Deity",
-  "scanned_at": "2026-09-07T10:49:31.478Z",
+  "scanned_at": "2026-09-08T09:59:05.661Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70,
+    "overall": 70.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -107,12 +107,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 94844.33000000002,
+    "liquidityUsd": 105894.00000000001,
     "pools": [
       {
         "pair": "0x123e50d024df1e6fe41347850a5695918242927b4e2623d2b97625248ccd2c20",
         "dex": "uniswap",
-        "liquidityUsd": 94751.42,
+        "liquidityUsd": 105886.94,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc9dd601bc4db0d7cb07bb717163b760b9a3c633f34166eee39c319c77e65c591",
+        "dex": "uniswap",
+        "liquidityUsd": 0.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +130,7 @@
       {
         "pair": "0xdD468c77a2CD3E9241a3c75B6f5452b9d1E2fF35",
         "dex": "uniswap",
-        "liquidityUsd": 83.82,
+        "liquidityUsd": 0.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +139,7 @@
       {
         "pair": "0xb5cb3780769f1af57ab361ffda0882b7787ea3e5cf566d8dcf03de228ad7e585",
         "dex": "uniswap",
-        "liquidityUsd": 5.52,
+        "liquidityUsd": 2.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +148,7 @@
       {
         "pair": "0x41aed8183af4d1104e47ae64ae9b3c9dbba04c7b715da84f831117f73ed21f19",
         "dex": "uniswap",
-        "liquidityUsd": 1.58,
+        "liquidityUsd": 1.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,23 +157,14 @@
       {
         "pair": "0x3f901e7deface6e8b82415292f69489741942d86c74b915dbd09d0e8898ca751",
         "dex": "uniswap",
-        "liquidityUsd": 1.91,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x95a833ee762c08f2e8e02bab885b136c7b440fbc8a15647094788f72bbf10c5c",
-        "dex": "uniswap",
-        "liquidityUsd": 0.08,
+        "liquidityUsd": 1.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 13.7,
     "projectLinks": {
       "websites": [
         "https://www.vvveity.com/",

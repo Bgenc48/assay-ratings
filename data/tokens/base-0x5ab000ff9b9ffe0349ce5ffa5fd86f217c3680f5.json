@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "STONKEX",
   "name": "The Stonks Exchange",
-  "scanned_at": "2026-09-07T10:56:26.432Z",
+  "scanned_at": "2026-09-08T10:03:20.379Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -82,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -112,12 +112,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 1276208.6099999999,
+    "liquidityUsd": 1131056.9000000001,
     "pools": [
       {
         "pair": "0x7692AcC1CDd771D09EbCae3663e1843b2911BEC7",
         "dex": "uniswap",
-        "liquidityUsd": 985307.12,
+        "liquidityUsd": 857332.66,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +126,7 @@
       {
         "pair": "0xBa72E99BC76De8D342DA78C0e4fC04D605936e71",
         "dex": "aerodrome",
-        "liquidityUsd": 228508.53,
+        "liquidityUsd": 227209.78,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -135,7 +135,7 @@
       {
         "pair": "0x381c95740e3e5a23d66b9757ade02d85e8810e3711f20aaa15c37e06963ab747",
         "dex": "uniswap",
-        "liquidityUsd": 34131.21,
+        "liquidityUsd": 28167.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,25 +144,16 @@
       {
         "pair": "0x4372af79b5dc09a8b0807bfa97d36e764fcee4b0a6b59f8312fd9f6e775949e1",
         "dex": "uniswap",
-        "liquidityUsd": 23529.75,
+        "liquidityUsd": 11921.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x55401bdc9a72a0001ebad6699c72c98e33a99095199436148975671c2ca3ac3e",
+        "pair": "0xd8178eb64674efb8a9b3fc9694a8d9b4715f0fd5e4ee41be67b9f2e3afb04e22",
         "dex": "uniswap",
-        "liquidityUsd": 1889.43,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7724e8d01ece54c443e2e00f52c6a83232bda07b305fb69a84c7b1918666714a",
-        "dex": "uniswap",
-        "liquidityUsd": 322.6,
+        "liquidityUsd": 2383.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,23 +162,32 @@
       {
         "pair": "0xe74ec425581d4654151d3250ad9c2717b2c50eb6aeed52c5859e7deec31e76a6",
         "dex": "uniswap",
-        "liquidityUsd": 1960.34,
+        "liquidityUsd": 1875.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x103c5e63333e263f9b41afd32186e175a680ca8438698c699ff4523224a3fe24",
+        "pair": "0x55401bdc9a72a0001ebad6699c72c98e33a99095199436148975671c2ca3ac3e",
         "dex": "uniswap",
-        "liquidityUsd": 559.63,
+        "liquidityUsd": 1826.51,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3D3B216A8B176F0CC6cC29F185F6E0708B7482b0",
+        "dex": "uniswap",
+        "liquidityUsd": 339.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 13.31,
     "projectLinks": {
       "websites": [
         "https://www.thestonks.exchange/"

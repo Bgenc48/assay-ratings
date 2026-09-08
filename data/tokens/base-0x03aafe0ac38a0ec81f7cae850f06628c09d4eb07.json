@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Polymarket",
   "name": "Polymarket",
-  "scanned_at": "2026-09-07T10:54:19.932Z",
+  "scanned_at": "2026-09-08T10:02:04.357Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,13 +61,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x11e33be738b43c8f479f414484a200e0dc293fa66bd9fbe643e057ccf3f5ed00"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -117,17 +114,7 @@
     "verifiedSource": null,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [
-      {
-        "pair": "0x11e33be738b43c8f479f414484a200e0dc293fa66bd9fbe643e057ccf3f5ed00",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "pools": [],
     "top10Pct": 0,
     "projectLinks": null
   },

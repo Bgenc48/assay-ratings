@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "cbXRP",
   "name": "Coinbase Wrapped XRP",
-  "scanned_at": "2026-09-07T10:39:20.386Z",
+  "scanned_at": "2026-09-08T09:53:37.427Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 28.2,
+    "overall": 34.2,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 3.5%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -122,12 +129,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 1119184.61,
+    "liquidityUsd": 1257727.9400000004,
     "pools": [
       {
         "pair": "0xB90fe999Be6869AF0aFC557DCCfBE169EA3403D6",
         "dex": "aerodrome",
-        "liquidityUsd": 570634.93,
+        "liquidityUsd": 730462.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,16 +143,7 @@
       {
         "pair": "0x62916B911F2B64d0e3A3b72472D6f8C08c75DcAA",
         "dex": "aerodrome",
-        "liquidityUsd": 122929.04,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x170b6bFc071426aaB7C81AE12383219facBb6B6A",
-        "dex": "pancakeswap",
-        "liquidityUsd": 92405.38,
+        "liquidityUsd": 143525.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -154,7 +152,7 @@
       {
         "pair": "0xA6da283cf7D06b2279626E787c329d6aCF7e2994",
         "dex": "aerodrome",
-        "liquidityUsd": 157482.62,
+        "liquidityUsd": 156623.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -163,7 +161,16 @@
       {
         "pair": "0xEE58348059c9AD6aC345be79C399da0c200627eD",
         "dex": "hydrex",
-        "liquidityUsd": 91917.88,
+        "liquidityUsd": 92044.34,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x170b6bFc071426aaB7C81AE12383219facBb6B6A",
+        "dex": "pancakeswap",
+        "liquidityUsd": 58515.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -172,7 +179,7 @@
       {
         "pair": "0x3733cbB1402C788900A0A152e61c9aA31888FB95",
         "dex": "uniswap",
-        "liquidityUsd": 46862.73,
+        "liquidityUsd": 46796.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -181,23 +188,23 @@
       {
         "pair": "0xb8fa9b30d8bc4cfa94d0228a7b57d613b53048838ce4e2d44033dae8cf1e03e2",
         "dex": "uniswap",
-        "liquidityUsd": 18881.53,
+        "liquidityUsd": 18812.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x13c9C9196f05989E28284F9Ba5a97f24e87D3072",
-        "dex": "pancakeswap",
-        "liquidityUsd": 18070.5,
+        "pair": "0x6ceFe2a691b1734042c10958B8E0EC19D81b2850",
+        "dex": "uniswap",
+        "liquidityUsd": 10947.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 3.51,
     "projectLinks": {
       "websites": [],
       "socials": []

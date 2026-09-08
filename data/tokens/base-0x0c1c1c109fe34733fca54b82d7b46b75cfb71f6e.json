@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CHIP",
   "name": "Chip",
-  "scanned_at": "2026-09-07T10:49:02.785Z",
+  "scanned_at": "2026-09-08T09:58:55.289Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 81.9% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 86.5% of circulating supply.",
           "evidence": null
         }
       ]
@@ -113,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "108003250295271000000000000",
+    "totalSupply": "108283488163579000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -124,14 +124,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 391090.56,
+    "liquidityUsd": 380699.48,
     "pools": [
       {
         "pair": "0x592E01EDEb601016a20A3E6cD5bF533eBBadBC8b",
         "dex": "aerodrome",
-        "liquidityUsd": 391079.6,
+        "liquidityUsd": 380685.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,9 +145,18 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x45B8643880D8FeF3fd7a21229C3b41F0F6632676",
+        "dex": "aerodrome",
+        "liquidityUsd": 2.79,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 81.91,
+    "top10Pct": 86.54,
     "projectLinks": {
       "websites": [
         "https://avely.me/usdai"

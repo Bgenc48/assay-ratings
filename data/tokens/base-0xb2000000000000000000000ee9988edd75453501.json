@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "PAMPU",
   "name": "The Base Cat",
-  "scanned_at": "2026-09-07T10:36:19.584Z",
+  "scanned_at": "2026-09-08T09:52:17.375Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -88,7 +88,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -123,19 +123,28 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 19673.59,
+    "liquidityUsd": 17880.88,
     "pools": [
       {
         "pair": "0x4dc4dcca55db54a443dcea2ba72e9c35898458367f29cbd6c84f74cf94815d2f",
         "dex": "uniswap",
-        "liquidityUsd": 19673.59,
+        "liquidityUsd": 17873.4,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x044de642cc1f267c76f7b912937afc06ee2ef8d13a349441bfe43f28442a7180",
+        "dex": "uniswap",
+        "liquidityUsd": 7.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 17.92,
     "projectLinks": {
       "websites": [
         "https://pampu.xyz/",

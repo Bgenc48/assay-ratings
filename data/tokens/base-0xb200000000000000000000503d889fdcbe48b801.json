@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "RAWR",
   "name": "RAWR",
-  "scanned_at": "2026-09-07T10:57:34.680Z",
+  "scanned_at": "2026-09-08T10:04:01.893Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -88,7 +88,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -123,12 +123,21 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 119817.79999999999,
+    "liquidityUsd": 93264.81000000001,
     "pools": [
       {
         "pair": "0x69bbadafdb28b6952c2910bed1d49fb1b11a222cbf36143fc1aca3c26b35c28e",
         "dex": "uniswap",
-        "liquidityUsd": 109394.17,
+        "liquidityUsd": 87090.22,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xdc0e5ffeef32f0b86f76984a583f57c61f98424c3489c156cdc06190081bf134",
+        "dex": "uniswap",
+        "liquidityUsd": 72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,16 +146,7 @@
       {
         "pair": "0xf1ae96f0eee23bf2d8e50eb50176ee9c92860f54beaec6b838fd32b684df69e8",
         "dex": "uniswap",
-        "liquidityUsd": 6829.61,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x207b7b2538d335c947bc4396edfabebd28129eb23bf83605fc43e7834b31c742",
-        "dex": "uniswap",
-        "liquidityUsd": 753.97,
+        "liquidityUsd": 3041.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +155,7 @@
       {
         "pair": "0xe59fffb83fee152f602f7cd00db4b9e41771d7176e5fb3456a499dfeb13149b7",
         "dex": "uniswap",
-        "liquidityUsd": 1272.14,
+        "liquidityUsd": 1741.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +164,7 @@
       {
         "pair": "0x22e43ac632c69586186cd26bfabb722c0d107e8517be3a92794d1a91f8044b94",
         "dex": "uniswap",
-        "liquidityUsd": 596.75,
+        "liquidityUsd": 527.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,7 +173,7 @@
       {
         "pair": "0x6cdeb431cd3e58d86cc6733609d1f2c574c0ec814ae3415675f020f814848859",
         "dex": "uniswap",
-        "liquidityUsd": 322.92,
+        "liquidityUsd": 285.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -182,7 +182,7 @@
       {
         "pair": "0x461d102e26ed9be1baae5ff009ccbd0f15591c54865ef2a193cc0a361d915163",
         "dex": "uniswap",
-        "liquidityUsd": 478.37,
+        "liquidityUsd": 375.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -191,14 +191,14 @@
       {
         "pair": "0x3f6593E37F3A3483F7a49Ea447736C6550445D0b",
         "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
-        "liquidityUsd": 169.87,
+        "liquidityUsd": 131.02,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 16.51,
     "projectLinks": {
       "websites": [
         "https://rawr.technology/"

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "WELL",
   "name": "WELL",
-  "scanned_at": "2026-09-07T11:00:36.930Z",
+  "scanned_at": "2026-09-08T10:06:09.691Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 41.8,
+    "overall": 37.3,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -57,16 +57,20 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657"
+            "pair": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657",
+            "lpDominantHolder": {
+              "address": "0xb5235bb9ec03353da455d742dd09cbc3817fe3fa",
+              "sharePct": 78.01
+            }
           }
         }
       ]
@@ -77,7 +81,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -94,6 +98,11 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "Externally-owned accounts can withdraw 98% of tracked liquidity — a majority. The largest such pool is 0x89D0F320ac73dd7d9513FFC5bc58D1161452a657 (LP holder 0xb5235bb9ec03353da455d742dd09cbc3817fe3fa, 78.01% of that pool)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +110,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4528835878551809200682392793",
+    "totalSupply": "4528873394502764060056303963",
     "decimals": 18,
     "owner": "0x8b621804a7637b781e2bbd58e256a591f2df7d51",
     "controlType": "unknown",
@@ -114,23 +123,27 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 1189386.03,
+    "liquidityUsd": 1186165.0399999998,
     "pools": [
       {
         "pair": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657",
         "dex": "aerodrome",
-        "liquidityUsd": 1168993.65,
+        "liquidityUsd": 1165140.1,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xb5235bb9ec03353da455d742dd09cbc3817fe3fa",
+          "sharePct": 78.01
+        }
       },
       {
         "pair": "0xCd401DE1cBAa0d770eE5FB70ff622c752C92B8c5",
         "dex": "aerodrome",
-        "liquidityUsd": 6549.55,
+        "liquidityUsd": 7108.41,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -139,7 +152,7 @@
       {
         "pair": "0x3Ba9ce0f19cF3CcB631b973c83712C7E6E9585ae",
         "dex": "aerodrome",
-        "liquidityUsd": 6624.83,
+        "liquidityUsd": 6602.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +161,7 @@
       {
         "pair": "0x722BcF6c16dAdcC29914E4E64290C46aa1406DE8",
         "dex": "uniswap",
-        "liquidityUsd": 5812.97,
+        "liquidityUsd": 5989.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,16 +170,20 @@
       {
         "pair": "0x293dAb9854AC5a7dB180DA988eB393df491352F0",
         "dex": "uniswap",
-        "liquidityUsd": 531.43,
+        "liquidityUsd": 531.83,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x74f3be2367374206f514100c0c8933dd5d363ccc",
+          "sharePct": 99.99
+        }
       },
       {
         "pair": "0x6DB04732CC8FF547fC9f51a083038E58eD84e65f",
         "dex": "0xba34aA640b8Be02A439221BCbea1f48c1035EEF9",
-        "liquidityUsd": 783.95,
+        "liquidityUsd": 782.49,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -177,25 +194,29 @@
         }
       },
       {
-        "pair": "0x0be9c587De554c60422c972AFb7a02700ac3C56a",
+        "pair": "0xB20EA827785C085E8b001D144565Df5f5f28B385",
         "dex": "pancakeswap",
-        "liquidityUsd": 68.29,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
+        "liquidityUsd": 7.42,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xd8121a508e56927688c1961454d02f13212c32cd",
+          "sharePct": 98.87
+        }
       },
       {
-        "pair": "0x81A8c12738F7346094526ECC2487a63f45dD1935",
-        "dex": "aerodrome",
-        "liquidityUsd": 21.36,
+        "pair": "0x08C29a6F7a00A6C892dCE8633DfB09e877fC4Fc9",
+        "dex": "equalizer",
+        "liquidityUsd": 2.39,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 22.48,
     "projectLinks": {
       "websites": [
         "https://moonwell.fi",
@@ -212,7 +233,7 @@
   "notes": null,
   "coi": false,
   "pendingReview": {
-    "computed": "D"
+    "computed": "F"
   },
   "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

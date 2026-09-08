@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "RECALL",
   "name": "Recall",
-  "scanned_at": "2026-09-07T10:37:59.161Z",
+  "scanned_at": "2026-09-08T09:52:59.101Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 50.8,
+    "overall": 50.7,
     "provisional": false,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -121,13 +121,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 571,
-    "liquidityUsd": 499099.80999999994,
+    "ageDays": 572,
+    "liquidityUsd": 498948.33999999997,
     "pools": [
       {
         "pair": "0x0abe41C8AAa9282429e06EBEd48bE36298981d94",
         "dex": "aerodrome",
-        "liquidityUsd": 498251.86,
+        "liquidityUsd": 498105.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,7 +136,7 @@
       {
         "pair": "0x5e3791F68EbCEAC82788f3becAb154C15141A2f4",
         "dex": "aerodrome",
-        "liquidityUsd": 798.41,
+        "liquidityUsd": 786.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,14 +145,23 @@
       {
         "pair": "0x3e8eff1bb290600c4308c975bd0cc6a8e80bb30ce474fee2b03f8fb35d877ee7",
         "dex": "uniswap",
-        "liquidityUsd": 49.54,
+        "liquidityUsd": 49.92,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe8EB2f513ec5739397D420313c17F3986838A237",
+        "dex": "aerodrome",
+        "liquidityUsd": 5.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 28.4,
     "projectLinks": {
       "websites": [
         "https://recall.network/"

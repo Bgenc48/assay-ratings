@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "Fren Pet",
   "name": "Fren Pet",
-  "scanned_at": "2026-09-07T10:43:13.182Z",
+  "scanned_at": "2026-09-08T09:55:15.318Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 60.4,
-    "provisional": true,
+    "overall": 64.4,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "7130791754265629749302098",
+    "totalSupply": "7122353467016070811598694",
     "decimals": 18,
     "owner": "0x54c4dd8c2e124c65f55e1e096ab1fb6543e1206c",
     "controlType": "unknown",
@@ -109,22 +109,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 719535.48,
+    "ageDays": 1104,
+    "liquidityUsd": 779046.2,
     "pools": [
       {
         "pair": "0xDE66c35e01ED8e619Bf092352338ef94f2327337",
         "dex": "uniswap",
-        "liquidityUsd": 713839.17,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7ef36ca3c4Cc12a72dC818353DE4F0A9A403E2f9",
-        "dex": "aerodrome",
-        "liquidityUsd": 2629.47,
+        "liquidityUsd": 772875.01,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -133,7 +124,7 @@
       {
         "pair": "0x29b3a7869E3662D00aaBD89A8ee74B2F703a6a66",
         "dex": "baseswap",
-        "liquidityUsd": 3066.84,
+        "liquidityUsd": 3293.76,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -142,9 +133,44 @@
           "address": "0x047f606fd5b2baa5f5c6c4ab8958e45cb6b054b7",
           "sharePct": 83.7
         }
+      },
+      {
+        "pair": "0x7ef36ca3c4Cc12a72dC818353DE4F0A9A403E2f9",
+        "dex": "aerodrome",
+        "liquidityUsd": 2847.33,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x95d6856d120a79CAaa0827B1cb100e9FB9DCFDEe",
+        "dex": "aerodrome",
+        "liquidityUsd": 13.15,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x047f606fd5b2baa5f5c6c4ab8958e45cb6b054b7",
+          "sharePct": 99.99
+        }
+      },
+      {
+        "pair": "0x9C93Fd133424B07543336200Ce8E83be0F7AcB8C",
+        "dex": "uniswap",
+        "liquidityUsd": 16.95,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xeb77cb361fa03a3bc07d28a3a2cfebb2644de140",
+          "sharePct": 99.99
+        }
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 21.53,
     "projectLinks": {
       "websites": [
         "https://frenpet.xyz",

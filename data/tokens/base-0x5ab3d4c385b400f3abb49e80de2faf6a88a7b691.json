@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "FLOCK",
   "name": "FLock.io",
-  "scanned_at": "2026-09-07T10:36:23.971Z",
+  "scanned_at": "2026-09-08T09:52:20.160Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 46.4,
-    "provisional": true,
+    "overall": 47.1,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,20 +66,27 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x7AF45dfaF2fDEA139B2295f37fFea2E16e6Fd8BA"
+            "pair": "0xd7338B6F338DA54b922bbBC6fBE3EFEDD5Ce35fa"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 56.6% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -94,6 +101,16 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +118,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "460198602692737751737065964",
+    "totalSupply": "460451464900694484690497762",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -112,14 +129,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 606070.77,
+    "verifiedSource": true,
+    "ageDays": 626,
+    "liquidityUsd": 582504.97,
     "pools": [
       {
         "pair": "0xd7338B6F338DA54b922bbBC6fBE3EFEDD5Ce35fa",
         "dex": "aerodrome",
-        "liquidityUsd": 178085.25,
+        "liquidityUsd": 178541.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +145,7 @@
       {
         "pair": "0x7AF45dfaF2fDEA139B2295f37fFea2E16e6Fd8BA",
         "dex": "uniswap",
-        "liquidityUsd": 182503.61,
+        "liquidityUsd": 167571.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +154,7 @@
       {
         "pair": "0x4910C78a1C75E36548F1f2f1f4dCb71A4F69fC07",
         "dex": "aerodrome",
-        "liquidityUsd": 137827.4,
+        "liquidityUsd": 131173.93,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -146,7 +163,7 @@
       {
         "pair": "0xd162C4444d5eFEaD433F080696D1f4Dc2BCD58Fb",
         "dex": "aerodrome",
-        "liquidityUsd": 41834.16,
+        "liquidityUsd": 39552.77,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -155,7 +172,7 @@
       {
         "pair": "0x15aEda0387EBeF5Fd8300560010De83780477147",
         "dex": "uniswap",
-        "liquidityUsd": 24682.06,
+        "liquidityUsd": 25003.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,16 +181,7 @@
       {
         "pair": "0xef724d142f283411f66bDe8De4d863e7295b9972",
         "dex": "aerodrome",
-        "liquidityUsd": 20882.94,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xB7E0c9CaeB559429B5b8B37c118E1d2764550416",
-        "dex": "aerodrome",
-        "liquidityUsd": 10289.03,
+        "liquidityUsd": 20538.76,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -182,14 +190,23 @@
       {
         "pair": "0xdAA601bc9E5B00337f11fB17CD574D3f01633Fe6",
         "dex": "aerodrome",
-        "liquidityUsd": 9966.32,
+        "liquidityUsd": 10441.41,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xB7E0c9CaeB559429B5b8B37c118E1d2764550416",
+        "dex": "aerodrome",
+        "liquidityUsd": 9681.75,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 56.63,
     "projectLinks": {
       "websites": [],
       "socials": [

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "DEXTF",
   "name": "Memento",
-  "scanned_at": "2026-09-07T10:40:26.185Z",
+  "scanned_at": "2026-09-08T09:54:00.799Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -108,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "12034969540320535138383495",
+    "totalSupply": "12035720994820031742592676",
     "decimals": 18,
     "owner": "0xc3916b3ee83e201d6775470eccf1e93463f48127",
     "controlType": "eoa",
@@ -122,12 +122,21 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 142095.75,
+    "liquidityUsd": 139978.27000000002,
     "pools": [
       {
         "pair": "0xC3F617c8A3DA6d286c8f97aF946A8f293632C852",
         "dex": "hydrex",
-        "liquidityUsd": 142095.75,
+        "liquidityUsd": 139929.6,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5f198375776642B495aF7c4cEf69B9b6e9246f8A",
+        "dex": "aerodrome",
+        "liquidityUsd": 48.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

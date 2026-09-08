@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "JitoSOL",
   "name": "Jito Staked SOL",
-  "scanned_at": "2026-09-07T10:34:38.855Z",
+  "scanned_at": "2026-09-08T09:51:41.113Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -19,6 +19,12 @@
       "score": 60,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.latent-mint",
           "severity": "warn",
@@ -83,7 +89,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 3.7%.",
+          "text": "Top-10 unlabeled holders control 3.2%.",
           "evidence": null
         }
       ]
@@ -95,6 +101,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -112,14 +123,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 15295729.08,
+    "liquidityUsd": 15176496.12,
     "pools": [
       {
         "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871",
         "dex": "uniswap",
-        "liquidityUsd": 14114260.97,
+        "liquidityUsd": 14007344.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,14 +139,14 @@
       {
         "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
         "dex": "pancakeswap",
-        "liquidityUsd": 1181468.11,
+        "liquidityUsd": 1169151.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 3.66,
+    "top10Pct": 3.21,
     "projectLinks": null
   },
   "notes": null,

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "O",
   "name": "o1.exchange",
-  "scanned_at": "2026-09-07T10:29:37.850Z",
+  "scanned_at": "2026-09-08T09:49:38.645Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 81.5,
+    "overall": 82.9,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -83,15 +83,22 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 104 days old; trust needs time (Provisional).",
+          "text": "Token is 105 days old; trust needs time (Provisional).",
           "evidence": "0x24e3481d362e1c0fee68c6aa93a0fd5e1b49e31c1c8ff1eb46cff8cd386f7ec3"
         }
       ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 1.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -123,13 +130,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 104,
-    "liquidityUsd": 2121923.8499999996,
+    "ageDays": 105,
+    "liquidityUsd": 1949237.12,
     "pools": [
       {
         "pair": "0x8D479A4C680A76D4Ae03f10203569558405DDFFF",
         "dex": "aerodrome",
-        "liquidityUsd": 2119636.93,
+        "liquidityUsd": 1946936.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +145,16 @@
       {
         "pair": "0xb86bd53946842df3bc1dbf7ff45dd97a6fc464837f2a6e14d6d099bed882a793",
         "dex": "uniswap",
-        "liquidityUsd": 1512.32,
+        "liquidityUsd": 1525.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x67d5582dfa75ad2aeeda2d92257745ec518c53bef60abb866d099f37632d320f",
+        "dex": "uniswap",
+        "liquidityUsd": 1.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,7 +163,7 @@
       {
         "pair": "0x2731ec8eF91445D8BA07b2Db974941d9Bfb628eA",
         "dex": "uniswap",
-        "liquidityUsd": 220.01,
+        "liquidityUsd": 206.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -156,14 +172,23 @@
       {
         "pair": "0xdbAa44Cfb24d8D7E40fC519a0862B92C644FcF10",
         "dex": "uniswap",
-        "liquidityUsd": 554.59,
+        "liquidityUsd": 564.36,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x688bc824cd8bef910cc4ff17722f944d177d513d538ed19a763883e6dc7c0529",
+        "dex": "uniswap",
+        "liquidityUsd": 2.78,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 1.01,
     "projectLinks": {
       "websites": [
         "https://o1.exchange/",

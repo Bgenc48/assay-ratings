@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "KTA",
   "name": "Keeta",
-  "scanned_at": "2026-09-07T10:50:56.801Z",
+  "scanned_at": "2026-09-08T10:00:05.318Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -100,7 +100,7 @@
     {
       "id": "cap.rug-ready",
       "letter": "D",
-      "reason": "Externally-owned accounts can withdraw 96% of tracked liquidity — a majority. The largest such pool is 0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe (LP holder 0xd38ab996aab7b7955bdf0d91f5742c3856589fe6, 99.21% of that pool)."
+      "reason": "Externally-owned accounts can withdraw 95% of tracked liquidity — a majority. The largest such pool is 0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe (LP holder 0xd38ab996aab7b7955bdf0d91f5742c3856589fe6, 99.21% of that pool)."
     },
     {
       "id": "cap.claim-light",
@@ -121,12 +121,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 4292279.67,
+    "liquidityUsd": 4499892.89,
     "pools": [
       {
         "pair": "0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe",
         "dex": "aerodrome",
-        "liquidityUsd": 4132269.14,
+        "liquidityUsd": 4291510.67,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -139,7 +139,7 @@
       {
         "pair": "0x8d421B0D641193D67Dd1aa024DAb17fcdE0BfC89",
         "dex": "uniswap",
-        "liquidityUsd": 68588.2,
+        "liquidityUsd": 72996.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,16 +148,7 @@
       {
         "pair": "0x46D710c35BdfB800a18A820712310048Ef8B5256",
         "dex": "aerodrome",
-        "liquidityUsd": 52577.57,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xD6438733879790A68ccdaf21D7eD58d62B579eb3",
-        "dex": "aerodrome",
-        "liquidityUsd": 15167.66,
+        "liquidityUsd": 54559.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +157,16 @@
       {
         "pair": "0xb61ff9eb53844a9ed8a9decb469e0df99930c16e6cdeb181790059dd32681282",
         "dex": "uniswap",
-        "liquidityUsd": 9779.93,
+        "liquidityUsd": 50074.85,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xD6438733879790A68ccdaf21D7eD58d62B579eb3",
+        "dex": "aerodrome",
+        "liquidityUsd": 15720.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,16 +175,7 @@
       {
         "pair": "0x07a1362d0D0b221C21ca4f2CbD83eB58B1ec81C9",
         "dex": "uniswap",
-        "liquidityUsd": 8671.58,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x438c7f6a3b32fdcf043ad3285dbc128486df894a1f3d448b1da38b2f2a1a43cb",
-        "dex": "uniswap",
-        "liquidityUsd": 2800.43,
+        "liquidityUsd": 9359.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -193,14 +184,23 @@
       {
         "pair": "0xC874416E1FDEE2dc291Fe1a4B7b91FB4c5875fc2",
         "dex": "hydrex",
-        "liquidityUsd": 2425.16,
+        "liquidityUsd": 2588.41,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x438c7f6a3b32fdcf043ad3285dbc128486df894a1f3d448b1da38b2f2a1a43cb",
+        "dex": "uniswap",
+        "liquidityUsd": 3082.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 24.35,
+    "top10Pct": 24.39,
     "projectLinks": {
       "websites": [
         "https://keeta.com",

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "Suwappu",
   "name": "Suwappubot",
-  "scanned_at": "2026-09-07T10:57:53.332Z",
+  "scanned_at": "2026-09-08T10:04:12.798Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 72.5,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,6 +19,12 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -96,6 +102,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -112,14 +123,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 39493.58,
+    "liquidityUsd": 38185.84,
     "pools": [
       {
         "pair": "0x787fe87a27824d11d743cd6007614d3f5776d1b42cce79358e390498bb436159",
         "dex": "uniswap",
-        "liquidityUsd": 39493.58,
+        "liquidityUsd": 38185.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

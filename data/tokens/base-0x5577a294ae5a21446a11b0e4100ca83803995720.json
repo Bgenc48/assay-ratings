@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "ba3PUMP",
   "name": "Pump (Bankr Bridged)",
-  "scanned_at": "2026-09-07T10:58:18.920Z",
+  "scanned_at": "2026-09-08T10:04:25.493Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 67.5,
+    "overall": 61.4,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -72,9 +72,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 13 days old; trust needs time (Provisional).",
+          "evidence": "0x081d884ca56b78d41b2bb3180d7f8afecbdca663dc557f7de35c6e89f31ea4da"
+        }
+      ]
     },
     "holderConcentration": {
       "score": 100,
@@ -96,6 +103,11 @@
   },
   "caps": [
     {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -103,7 +115,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "17420034437111000000000000",
+    "totalSupply": "17154825473539000000000000",
     "decimals": 18,
     "owner": "0xd7b0fe2655ae73ab93d5c9a14442dcb4c479d1e1",
     "controlType": "eoa",
@@ -113,13 +125,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 99965.65,
+    "ageDays": 13,
+    "liquidityUsd": 98982.84,
     "pools": [
       {
         "pair": "0x60202877f451F03da7f8f48B94E2e6Bb053cF614",
         "dex": "uniswap",
-        "liquidityUsd": 99965.65,
+        "liquidityUsd": 98982.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +147,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0.75,
+    "top10Pct": 0.77,
     "projectLinks": null
   },
   "notes": null,

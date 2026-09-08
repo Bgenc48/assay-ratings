@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BasedBBIAGBInu",
   "name": "BasedBaldBrianIAmGayBlueInu",
-  "scanned_at": "2026-09-07T10:58:10.507Z",
+  "scanned_at": "2026-09-08T10:04:21.692Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x289cb2b11dcedafa0c3ac790c7c5fe4b7f59629b78ed0e61b412bfc613a02657"
+            "pair": "0x52eb67a5c2d8310749b93990082e81dcccb62950766350c4b142157519a24e85"
           }
         }
       ]
@@ -89,7 +89,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 4.3%.",
+          "text": "Top-10 unlabeled holders control 4.4%.",
           "evidence": null
         }
       ]
@@ -125,7 +125,7 @@
     "bridge": null,
     "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": null,
+    "liquidityUsd": 164.24,
     "pools": [
       {
         "pair": "0x289cb2b11dcedafa0c3ac790c7c5fe4b7f59629b78ed0e61b412bfc613a02657",
@@ -135,9 +135,18 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x52eb67a5c2d8310749b93990082e81dcccb62950766350c4b142157519a24e85",
+        "dex": "uniswap",
+        "liquidityUsd": 164.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 4.25,
+    "top10Pct": 4.42,
     "projectLinks": null
   },
   "notes": null,

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "TRUMP",
   "name": "TRUMP",
-  "scanned_at": "2026-09-07T10:37:04.366Z",
+  "scanned_at": "2026-09-08T09:52:32.757Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x700098e8115750ab7b545160d966373e372db7de774a10736c11ce730ae8ca68"
+          }
         }
       ]
     },
@@ -111,10 +114,20 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 9.31,
+    "pools": [
+      {
+        "pair": "0x700098e8115750ab7b545160d966373e372db7de774a10736c11ce730ae8ca68",
+        "dex": "uniswap",
+        "liquidityUsd": 9.31,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": 0.16,
     "projectLinks": null
   },
