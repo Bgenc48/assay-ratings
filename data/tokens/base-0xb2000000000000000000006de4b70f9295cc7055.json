@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "Presley",
   "name": "KeyboardCat",
-  "scanned_at": "2026-09-08T10:02:01.584Z",
+  "scanned_at": "2026-09-09T09:55:45.689Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,10 +66,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xfdf95b4f4bf337da560ef08f7e54dd98b6434063f6a2628d4f421bafd95eb499"
+          }
         }
       ]
     },
@@ -85,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 3.9%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -103,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -125,12 +110,72 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
-    "top10Pct": 3.87,
-    "projectLinks": null
+    "liquidityUsd": 4.67,
+    "pools": [
+      {
+        "pair": "0xfa4e8582c04495a6f80633120593e6fc73c103551f51b32fec24faa2b795942d",
+        "dex": "uniswap",
+        "liquidityUsd": 0.21,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xbc9a2540df4b1aaad4ef17216076cd8b3dd51581d6e81900d151b0807be1e5b5",
+        "dex": "uniswap",
+        "liquidityUsd": 0.08,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x639de29a64ab77fc4469f58b964d913c53d59748d8c7b8b0cb0c7faf3b8c59cc",
+        "dex": "uniswap",
+        "liquidityUsd": 0.44,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfdf95b4f4bf337da560ef08f7e54dd98b6434063f6a2628d4f421bafd95eb499",
+        "dex": "uniswap",
+        "liquidityUsd": 2.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x27ce052bfa1817147493351d1a07dac0baf2d42c675a76627f896a14e1a18d6a",
+        "dex": "uniswap",
+        "liquidityUsd": 1.15,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x460ee8328b0fa55c24e4dc1cd4aad36fbab81d4f2fd0dc13592e594cf95e5054",
+        "dex": "uniswap",
+        "liquidityUsd": 0.66,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://www.youtube.com/watch?v=l4WOA5t0SOY"
+      ],
+      "socials": []
+    }
   },
   "notes": null,
   "coi": false

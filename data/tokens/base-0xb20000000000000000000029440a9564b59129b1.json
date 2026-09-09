@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "plumber",
   "name": "plumber",
-  "scanned_at": "2026-09-08T10:00:57.459Z",
+  "scanned_at": "2026-09-09T09:55:33.998Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -88,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -99,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -121,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 352810.93999999994,
+    "liquidityUsd": 289342.98,
     "pools": [
       {
         "pair": "0x5e916637e7c271972049cf33039e0feba2e8b6ba43b5e163e7720f15b3163deb",
         "dex": "uniswap",
-        "liquidityUsd": 209847.43,
+        "liquidityUsd": 176465.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,16 +126,7 @@
       {
         "pair": "0x00259986a0eB018ADCf4C5123e67D4b40877ffBF",
         "dex": "uniswap",
-        "liquidityUsd": 82101.57,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x6c92C8a22115A98eFa5bcc87A35FA7e3A4E528a9",
-        "dex": "uniswap",
-        "liquidityUsd": 23445.41,
+        "liquidityUsd": 61241.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +135,25 @@
       {
         "pair": "0xbd19ffa7e062db6873b8b2758c1b66d5c7a1f8b3f490ee6471027084c9943810",
         "dex": "uniswap",
-        "liquidityUsd": 29569.94,
+        "liquidityUsd": 26656.27,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6c92C8a22115A98eFa5bcc87A35FA7e3A4E528a9",
+        "dex": "uniswap",
+        "liquidityUsd": 17243.55,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x74f56b36ed8915037ff9913b31cecd3113e8a74f0724cb746aa939719d2ae98c",
+        "dex": "uniswap",
+        "liquidityUsd": 2226.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +162,7 @@
       {
         "pair": "0xd6bff0f8dd181c7f8a398735687e4dfaaed719875732f1ab9e46e58a7548a5b6",
         "dex": "uniswap",
-        "liquidityUsd": 2991.35,
+        "liquidityUsd": 2865.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,7 +171,7 @@
       {
         "pair": "0xf5a491beae09399bc6e22062dba47a8cf416e2066904dbb602257d2bd9e62589",
         "dex": "uniswap",
-        "liquidityUsd": 3331.29,
+        "liquidityUsd": 2298.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -182,23 +180,14 @@
       {
         "pair": "0xe09eaa98fe2aa9c31910564b435ff89ae6203689eab5844dff27aebf19464cf1",
         "dex": "uniswap",
-        "liquidityUsd": 439.77,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8b89f08b3d2f7eea3cd0a3e00498218e1c37a9043bd68ac24fb54903ccc03747",
-        "dex": "uniswap",
-        "liquidityUsd": 1084.18,
+        "liquidityUsd": 345.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 10.21,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://plumbermode.com/"

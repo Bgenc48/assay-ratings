@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "KTA",
   "name": "Keeta",
-  "scanned_at": "2026-09-08T10:00:05.318Z",
+  "scanned_at": "2026-09-09T09:55:19.552Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 55,
+    "letter": "B",
+    "overall": 77.5,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -62,20 +62,16 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 0,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.rug-ready",
-          "severity": "crit",
-          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe",
-            "lpDominantHolder": {
-              "address": "0xd38ab996aab7b7955bdf0d91f5742c3856589fe6",
-              "sharePct": 99.21
-            }
+            "pair": "0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe"
           }
         }
       ]
@@ -86,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -97,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.rug-ready",
-      "letter": "D",
-      "reason": "Externally-owned accounts can withdraw 95% of tracked liquidity — a majority. The largest such pool is 0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe (LP holder 0xd38ab996aab7b7955bdf0d91f5742c3856589fe6, 99.21% of that pool)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -119,27 +110,23 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 4499892.89,
+    "liquidityUsd": 4763223.74,
     "pools": [
       {
         "pair": "0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe",
         "dex": "aerodrome",
-        "liquidityUsd": 4291510.67,
+        "liquidityUsd": 4542268.92,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0xd38ab996aab7b7955bdf0d91f5742c3856589fe6",
-          "sharePct": 99.21
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x8d421B0D641193D67Dd1aa024DAb17fcdE0BfC89",
         "dex": "uniswap",
-        "liquidityUsd": 72996.85,
+        "liquidityUsd": 79782.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +135,7 @@
       {
         "pair": "0x46D710c35BdfB800a18A820712310048Ef8B5256",
         "dex": "aerodrome",
-        "liquidityUsd": 54559.74,
+        "liquidityUsd": 55139.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +144,7 @@
       {
         "pair": "0xb61ff9eb53844a9ed8a9decb469e0df99930c16e6cdeb181790059dd32681282",
         "dex": "uniswap",
-        "liquidityUsd": 50074.85,
+        "liquidityUsd": 54630.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +153,7 @@
       {
         "pair": "0xD6438733879790A68ccdaf21D7eD58d62B579eb3",
         "dex": "aerodrome",
-        "liquidityUsd": 15720.26,
+        "liquidityUsd": 16547.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,16 +162,7 @@
       {
         "pair": "0x07a1362d0D0b221C21ca4f2CbD83eB58B1ec81C9",
         "dex": "uniswap",
-        "liquidityUsd": 9359.73,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xC874416E1FDEE2dc291Fe1a4B7b91FB4c5875fc2",
-        "dex": "hydrex",
-        "liquidityUsd": 2588.41,
+        "liquidityUsd": 10535.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -193,14 +171,23 @@
       {
         "pair": "0x438c7f6a3b32fdcf043ad3285dbc128486df894a1f3d448b1da38b2f2a1a43cb",
         "dex": "uniswap",
-        "liquidityUsd": 3082.38,
+        "liquidityUsd": 3404.9,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9c5edc768b5db73bf71856dc7d79bcc8368d7a4d3ded2091a20010f089cb0e74",
+        "dex": "uniswap",
+        "liquidityUsd": 913.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 24.39,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://keeta.com",
@@ -216,9 +203,5 @@
     }
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

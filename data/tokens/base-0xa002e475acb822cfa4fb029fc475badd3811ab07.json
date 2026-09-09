@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LAPTOP",
   "name": "Laptop",
-  "scanned_at": "2026-09-08T10:07:12.737Z",
+  "scanned_at": "2026-09-09T09:57:05.316Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.5,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -114,14 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 433214.54,
+    "liquidityUsd": 1.09,
     "pools": [
       {
         "pair": "0x11d1e0c7009f6d92ed243902f2cc53b9a5fccca71d8b096021de25a91ad93572",
         "dex": "uniswap",
-        "liquidityUsd": 273799.43,
+        "liquidityUsd": 1.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,51 +123,6 @@
       {
         "pair": "0x0eaf54dc121c603fcd57aa1a7f9bf34cfcfa5a62ca7d745eb3c1cf925c27190c",
         "dex": "uniswap",
-        "liquidityUsd": 0.01,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xff09a562beb012471f7202ed918fd3c486cf1b049689d9c975f82dfbd46829f2",
-        "dex": "uniswap",
-        "liquidityUsd": 2.71,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x69d0b845F17fE9635a41f45090b12D0A601AC466",
-        "dex": "aerodrome",
-        "liquidityUsd": 59006.34,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe144684ded8df650d1e0be92f2df8fa5ce970f240fa437ac118c7ce65ac093ff",
-        "dex": "uniswap",
-        "liquidityUsd": 100406.05,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf30a4f7fb7a5ac1856d64d571f5c2fb2fb166c3fc11de7759608b082a461eabb",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x63a5cc2ab20b1b0b5ddb2aea9ee170e47e3841702e282e4e44614883c6d8ebda",
-        "dex": "uniswap",
         "liquidityUsd": 0,
         "lpBurnedPct": null,
         "lpLockedPct": null,
@@ -182,7 +130,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

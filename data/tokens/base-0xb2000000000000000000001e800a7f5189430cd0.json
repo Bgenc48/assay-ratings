@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "TSLAc",
   "name": "Tesla Inc.",
-  "scanned_at": "2026-09-08T10:06:31.672Z",
+  "scanned_at": "2026-09-09T09:56:50.265Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -77,7 +71,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xfef59908e654b1104455835f03327bb951fd10597c9106cf6624d17a2ad39f5b"
+            "pair": "0x469337fDcc5E8f38e2E4B670B04F57865D13a7BB"
           }
         }
       ]
@@ -88,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.3%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -107,11 +94,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -119,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "172744000000",
+    "totalSupply": "302620810000",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -128,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 465546.58999999997,
+    "liquidityUsd": 1323142.07,
     "pools": [
       {
         "pair": "0xfef59908e654b1104455835f03327bb951fd10597c9106cf6624d17a2ad39f5b",
         "dex": "uniswap",
-        "liquidityUsd": 258793.06,
+        "liquidityUsd": 269711.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +126,7 @@
       {
         "pair": "0x8106bc6c2219b2035488e59726da92bcb68e6a16acfcfca5d3bd7a7a3b860acd",
         "dex": "uniswap",
-        "liquidityUsd": 4355.75,
+        "liquidityUsd": 4417.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,16 +135,7 @@
       {
         "pair": "0xae1d70a9124335306f296e19176cb43e4de410e8b8925d26bee58fe480be2926",
         "dex": "uniswap",
-        "liquidityUsd": 2686.64,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xad6A86333C579d5Bbd150F28e74651006Fa87b3B",
-        "dex": "uniswap",
-        "liquidityUsd": 2227.38,
+        "liquidityUsd": 2697.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +144,7 @@
       {
         "pair": "0xde9ac3fc95c869fea714cc9ae18f241d9cc1ea3567bcd2afa13aff243e031cca",
         "dex": "uniswap",
-        "liquidityUsd": 199.41,
+        "liquidityUsd": 202.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,14 +153,23 @@
       {
         "pair": "0x469337fDcc5E8f38e2E4B670B04F57865D13a7BB",
         "dex": "aerodrome",
-        "liquidityUsd": 197284.35,
+        "liquidityUsd": 614373.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0494d39f59df8c68d0f98ef0bc51b7b6a14f1bcbced0e8a5642947a9b5ebd33e",
+        "pair": "0x519974ceBa3437aB1cEd0B77570CA65A25A9AB78",
+        "dex": "equalizer",
+        "liquidityUsd": 20.22,
+        "lpBurnedPct": 0.01,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xad6A86333C579d5Bbd150F28e74651006Fa87b3B",
         "dex": "uniswap",
         "liquidityUsd": null,
         "lpBurnedPct": null,
@@ -196,17 +178,22 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x6cb156a92ee0ceb99febd8258caa1c99090ee2c5ef09540c3c00f5362319aacf",
+        "pair": "0x98252f4f9af10c43f8426475952842a23a8ead458aa333698e624da455c35797",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 431718.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 7.33,
-    "projectLinks": null
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [],
+      "socials": [
+        "https://x.com/cobie/status/1282699342768373762"
+      ]
+    }
   },
   "notes": null,
   "coi": false

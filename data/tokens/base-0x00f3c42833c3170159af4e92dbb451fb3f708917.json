@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ICP",
   "name": "ICP",
-  "scanned_at": "2026-09-08T10:00:36.678Z",
+  "scanned_at": "2026-09-09T09:55:25.286Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 36.4,
-    "provisional": false,
+    "overall": 28.2,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -94,11 +94,6 @@
       "reason": "Mint or issuance is controlled by an externally-owned account."
     },
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -106,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "26546072297766",
+    "totalSupply": "26390534380468",
     "decimals": 8,
     "owner": "0x70ae25592209b57f62b3a3e832ab356228a2192c",
     "controlType": "eoa",
@@ -117,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 448,
-    "liquidityUsd": 762727.5399999999,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 736064.0699999998,
     "pools": [
       {
         "pair": "0xD32150715fCD30918b2dFe29eAC483a69D435910",
         "dex": "uniswap",
-        "liquidityUsd": 14017.36,
+        "liquidityUsd": 14006.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +128,7 @@
       {
         "pair": "0x2c162DBe1132A099a15F66A04BEBaD4D477Ed865",
         "dex": "uniswap",
-        "liquidityUsd": 7962.01,
+        "liquidityUsd": 8164.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +137,7 @@
       {
         "pair": "0xa567b694eF655Ed10c2a6b89959E86fefdE2a3b7",
         "dex": "uniswap",
-        "liquidityUsd": 3091.47,
+        "liquidityUsd": 3154.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +146,7 @@
       {
         "pair": "0xBe762d548f8CA86A78E9Da6e3DdC87F91457e398",
         "dex": "aerodrome",
-        "liquidityUsd": 737647.63,
+        "liquidityUsd": 710702.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,18 +155,32 @@
       {
         "pair": "0x00059bB264031930CF5267D2d40FFB15cCC15a2C",
         "dex": "aerodrome",
-        "liquidityUsd": 9.07,
+        "liquidityUsd": 8.95,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0xa83c7fb023f0bb668e0f1536ae340dbdb1404d47",
-          "sharePct": 99.99
-        }
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7bF0A9e81b51331DbFe96997E09e5d1C717E2FA6",
+        "dex": "aerodrome",
+        "liquidityUsd": 27.19,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf3e4d2303ca58c13b5bcda9db7c59dc2189d5c664c602a8ac0231c2ed8404dd3",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 28.68,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

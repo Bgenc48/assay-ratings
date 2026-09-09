@@ -1,0 +1,202 @@
+{
+  "address": "0x88f7222ae72884fe4bcf579e0d44b1a39d359837",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "PRIVVVATE",
+  "name": "PRIVVVATE",
+  "scanned_at": "2026-09-09T09:57:09.158Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B+",
+    "overall": 82.9,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0x88f7222ae72884fe4bcf579e0d44b1a39d359837",
+            "data": "0x8da5cb5b",
+            "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": 50,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.partial",
+          "severity": "warn",
+          "text": "Only 89% of the dominant pool's LP is burned or locked.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x4eF0F94370C6b65d385BCd91F05d7C67e7d3fd04"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "1000000000000000000000000000",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 130266.00000000001,
+    "pools": [
+      {
+        "pair": "0x4eF0F94370C6b65d385BCd91F05d7C67e7d3fd04",
+        "dex": "uniswap",
+        "liquidityUsd": 124076.99,
+        "lpBurnedPct": 89.08,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf3d4ddac64a138288dcd8e25405b8a7058eaf1d50f5faca2b49292bce0541cce",
+        "dex": "uniswap",
+        "liquidityUsd": 4816.79,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x669a420bde05f5f43978bb268f2e287b20f1315c5d0403aa9bb42c2b3ab7a71c",
+        "dex": "uniswap",
+        "liquidityUsd": 916.42,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xca199b024b21ebd87a15611d5a6a6ddb72be265c5e6127cbd69ecba76461efcf",
+        "dex": "uniswap",
+        "liquidityUsd": 50.74,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3f7c04c98d62ac853cde0c9aeb71027f50d1c5e6ad6303393dad1f534c10d636",
+        "dex": "uniswap",
+        "liquidityUsd": 52.51,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x53cb4b7728e0c4af1f1bd410b103ff9e4132bfab0b0e7c4bab565cd8212ac724",
+        "dex": "uniswap",
+        "liquidityUsd": 301.63,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5151d41d7b6cea221d3e393be536cd7537d37fdb3978b4d164addff0e8d38565",
+        "dex": "uniswap",
+        "liquidityUsd": 45.35,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd53df5ebc0cae79bd3a990a87d6e726ba1bd4f288e4e0bc8803a89558e609cb2",
+        "dex": "uniswap",
+        "liquidityUsd": 5.57,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://privvvlion.xyz/"
+      ],
+      "socials": [
+        "https://x.com/privvvatelion"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

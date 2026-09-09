@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "我的女友景甜",
   "name": "我的女友景甜",
-  "scanned_at": "2026-09-08T10:03:39.182Z",
+  "scanned_at": "2026-09-09T09:56:03.395Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.5,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 1.6%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -116,37 +109,28 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 83.10000000000001,
+    "liquidityUsd": 35.03,
     "pools": [
+      {
+        "pair": "0x836a3e15ee745f78fa1ec9ce425c5c80d6c7a194a8df19dfbf14fcd57fccfeb0",
+        "dex": "uniswap",
+        "liquidityUsd": 3.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x015abbbb86282bf1f66f5bdaa6644299f61b53bc6801ffae195f8963de482120",
         "dex": "uniswap",
-        "liquidityUsd": 58.49,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5e46fcb4eaaee0815e7698a9716a1bad34d50de7a06f6e583a82e9e5f0801a48",
-        "dex": "uniswap",
-        "liquidityUsd": 5.97,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x73cd274661d5262cd54d43e072d30b8c535197e7fab4dcfc9256f30f89a2a03c",
-        "dex": "uniswap",
-        "liquidityUsd": 18.64,
+        "liquidityUsd": 32.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 1.56,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

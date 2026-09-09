@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "SETZ",
   "name": "SETZ",
-  "scanned_at": "2026-09-08T10:05:37.740Z",
+  "scanned_at": "2026-09-09T09:56:34.699Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.1%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -102,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -114,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "100000000000000000000000000000",
+    "totalSupply": "99977492232734471763739188980",
     "decimals": 18,
     "owner": "0x660eaaedebc968f8f3694354fa8ec0b4c5ba8d12",
     "controlType": "unknown",
@@ -123,32 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 157271.62,
+    "liquidityUsd": 124059.09000000001,
     "pools": [
       {
         "pair": "0x2d6474a460ac27ffc6cb262243173ac25036c44e3c81113ed786cec7a970814c",
         "dex": "uniswap",
-        "liquidityUsd": 153214,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4b5239232c6f49f8f0d0847b86ac95630aae6d39747dc54227b30876bd6a95d6",
-        "dex": "uniswap",
-        "liquidityUsd": 1924.59,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8c3846a29b44580f1d531b0a972ae978c43c8a71fc48ef8caeca93544f99a18e",
-        "dex": "uniswap",
-        "liquidityUsd": 1927.94,
+        "liquidityUsd": 123892.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +121,7 @@
       {
         "pair": "0x9844bb1b333aaffbc17aa5a6b9da77e7049ae922f8f79a243a8dd9f6115f8247",
         "dex": "uniswap",
-        "liquidityUsd": 146.04,
+        "liquidityUsd": 118.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +130,7 @@
       {
         "pair": "0x7b5690529e2de4345f21e7c2a4749e25d8d657ecf71ce2afa15d775d177e302d",
         "dex": "uniswap",
-        "liquidityUsd": 38.34,
+        "liquidityUsd": 29.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,7 +139,7 @@
       {
         "pair": "0x880c486d0752b9e16272c02a7d6e36a1cecd3c9d15dee6d15b7a31ad533087eb",
         "dex": "uniswap",
-        "liquidityUsd": 17.31,
+        "liquidityUsd": 14.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -184,7 +148,16 @@
       {
         "pair": "0xd0eaa16518796b70a5676f8c759f7c3040da987bd4a18c8b0b644fe482198df3",
         "dex": "uniswap",
-        "liquidityUsd": 2.38,
+        "liquidityUsd": 2.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3758117fad9831df91628adefb1ebacccad63093bfc2eed2643873a590f64275",
+        "dex": "uniswap",
+        "liquidityUsd": 0.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -193,14 +166,14 @@
       {
         "pair": "0x60afba40f06a80640cbff12b85a44fb83c2ac35ef43cca1a02856d6ffc46cc70",
         "dex": "uniswap",
-        "liquidityUsd": 1.02,
+        "liquidityUsd": 0.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 7.08,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://setz.one"

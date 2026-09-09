@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BALD",
   "name": "BALD",
-  "scanned_at": "2026-09-08T10:01:36.512Z",
+  "scanned_at": "2026-09-09T09:55:41.479Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -82,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 9.9%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -117,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 64932.58,
+    "liquidityUsd": 71798.71999999999,
     "pools": [
       {
         "pair": "0x3bf7c28ed75855d4384796cb13e869e2309b27c15f06afe28cac8264db4f8286",
         "dex": "uniswap",
-        "liquidityUsd": 61691.03,
+        "liquidityUsd": 68783.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,16 +126,7 @@
       {
         "pair": "0x36d78a7fc4327fd7e2c9d89e42128aba3c22d90c502d173ef5fce4f1096f6608",
         "dex": "uniswap",
-        "liquidityUsd": 2793.34,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe048c275eb12b065d58583d7a2200d213e713305728fa5ab2813304f595173ba",
-        "dex": "uniswap",
-        "liquidityUsd": 51.18,
+        "liquidityUsd": 2558.98,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +135,16 @@
       {
         "pair": "0x3b2ad17e9db5a9338c039b5a06fe2a3718cc20e287467ccead3900428d9853b6",
         "dex": "uniswap",
-        "liquidityUsd": 394.87,
+        "liquidityUsd": 392.98,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe048c275eb12b065d58583d7a2200d213e713305728fa5ab2813304f595173ba",
+        "dex": "uniswap",
+        "liquidityUsd": 61.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +153,7 @@
       {
         "pair": "0x71bf8af8b70d8972b512dff9e18f4a6cfd2fb5e0c4c5d7f2e9d3748433147782",
         "dex": "uniswap",
-        "liquidityUsd": 2.16,
+        "liquidityUsd": 1.98,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -176,7 +169,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 9.94,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://x.com/i/communities/1966514182272000184"

@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "WELL",
   "name": "WELL",
-  "scanned_at": "2026-09-08T10:06:09.691Z",
+  "scanned_at": "2026-09-09T09:56:41.431Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 37.3,
+    "overall": 41.8,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -57,20 +57,16 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 0,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.rug-ready",
-          "severity": "crit",
-          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657",
-            "lpDominantHolder": {
-              "address": "0xb5235bb9ec03353da455d742dd09cbc3817fe3fa",
-              "sharePct": 78.01
-            }
+            "pair": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657"
           }
         }
       ]
@@ -81,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -98,11 +94,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.rug-ready",
-      "letter": "D",
-      "reason": "Externally-owned accounts can withdraw 98% of tracked liquidity — a majority. The largest such pool is 0x89D0F320ac73dd7d9513FFC5bc58D1161452a657 (LP holder 0xb5235bb9ec03353da455d742dd09cbc3817fe3fa, 78.01% of that pool)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -110,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4528873394502764060056303963",
+    "totalSupply": "4529029137407086712672207342",
     "decimals": 18,
     "owner": "0x8b621804a7637b781e2bbd58e256a591f2df7d51",
     "controlType": "unknown",
@@ -123,27 +114,23 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1186165.0399999998,
+    "liquidityUsd": 1198309.77,
     "pools": [
       {
         "pair": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657",
         "dex": "aerodrome",
-        "liquidityUsd": 1165140.1,
+        "liquidityUsd": 1176668.16,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0xb5235bb9ec03353da455d742dd09cbc3817fe3fa",
-          "sharePct": 78.01
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xCd401DE1cBAa0d770eE5FB70ff622c752C92B8c5",
         "dex": "aerodrome",
-        "liquidityUsd": 7108.41,
+        "liquidityUsd": 6963.59,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -152,7 +139,7 @@
       {
         "pair": "0x3Ba9ce0f19cF3CcB631b973c83712C7E6E9585ae",
         "dex": "aerodrome",
-        "liquidityUsd": 6602.51,
+        "liquidityUsd": 6849.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -161,7 +148,7 @@
       {
         "pair": "0x722BcF6c16dAdcC29914E4E64290C46aa1406DE8",
         "dex": "uniswap",
-        "liquidityUsd": 5989.89,
+        "liquidityUsd": 6483.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -170,53 +157,41 @@
       {
         "pair": "0x293dAb9854AC5a7dB180DA988eB393df491352F0",
         "dex": "uniswap",
-        "liquidityUsd": 531.83,
+        "liquidityUsd": 534.52,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x74f3be2367374206f514100c0c8933dd5d363ccc",
-          "sharePct": 99.99
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x6DB04732CC8FF547fC9f51a083038E58eD84e65f",
         "dex": "0xba34aA640b8Be02A439221BCbea1f48c1035EEF9",
-        "liquidityUsd": 782.49,
+        "liquidityUsd": 788.57,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x72ac0dac4784d1b0f6f15ceb4ee918c40aada55b",
-          "sharePct": 99.99
-        }
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xB20EA827785C085E8b001D144565Df5f5f28B385",
-        "dex": "pancakeswap",
-        "liquidityUsd": 7.42,
+        "pair": "0xef1A33aa4853EEec2Dc0fBd4ceE87C12D18E6B72",
+        "dex": "sushiswap",
+        "liquidityUsd": 0,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0xd8121a508e56927688c1961454d02f13212c32cd",
-          "sharePct": 98.87
-        }
+        "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x08C29a6F7a00A6C892dCE8633DfB09e877fC4Fc9",
-        "dex": "equalizer",
-        "liquidityUsd": 2.39,
+        "pair": "0x81A8c12738F7346094526ECC2487a63f45dD1935",
+        "dex": "aerodrome",
+        "liquidityUsd": 21.2,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 22.48,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://moonwell.fi",
@@ -233,7 +208,7 @@
   "notes": null,
   "coi": false,
   "pendingReview": {
-    "computed": "F"
+    "computed": "D"
   },
   "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

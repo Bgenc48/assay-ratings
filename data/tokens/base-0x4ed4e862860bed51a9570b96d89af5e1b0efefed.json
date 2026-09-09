@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "DEGEN",
   "name": "Degen",
-  "scanned_at": "2026-09-08T09:47:46.871Z",
+  "scanned_at": "2026-09-09T09:51:20.186Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B",
-    "overall": 77.1,
-    "provisional": false,
+    "overall": 75.5,
+    "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "36195026869306174713414917404",
+    "totalSupply": "36189963032465078823003958499",
     "decimals": 18,
     "owner": "0x704ec5c12ca20a293c2c0b72b22619a4231f3c0d",
     "controlType": "safe",
@@ -109,14 +109,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 975,
-    "liquidityUsd": 1173329.37,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 1185114.0699999998,
     "pools": [
       {
         "pair": "0x0cA6485b7e9cF814A3Fd09d81672B07323535b64",
         "dex": "uniswap",
-        "liquidityUsd": 1006323.7,
+        "liquidityUsd": 1017048.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -125,7 +125,7 @@
       {
         "pair": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA",
         "dex": "uniswap",
-        "liquidityUsd": 101064.6,
+        "liquidityUsd": 101985.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -134,7 +134,7 @@
       {
         "pair": "0x2C4909355b0C036840819484c3A882A95659aBf3",
         "dex": "aerodrome",
-        "liquidityUsd": 34025.21,
+        "liquidityUsd": 34225.43,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -143,7 +143,7 @@
       {
         "pair": "0xaFB62448929664Bfccb0aAe22f232520e765bA88",
         "dex": "aerodrome",
-        "liquidityUsd": 15432.09,
+        "liquidityUsd": 15425.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -152,7 +152,7 @@
       {
         "pair": "0xee381526b93d418077a9d1b9c9b495a3d135410af9a58bc2a5f512fb7b61cbf7",
         "dex": "uniswap",
-        "liquidityUsd": 6219.76,
+        "liquidityUsd": 6253.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -161,7 +161,7 @@
       {
         "pair": "0xc01162ED99a018D02b8a12f4712B0b9b87a9852F",
         "dex": "aerodrome",
-        "liquidityUsd": 5676.23,
+        "liquidityUsd": 5559.98,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -170,7 +170,7 @@
       {
         "pair": "0x54D281c7cc029a9Dd71F9ACb7487dd95B1EecF5a",
         "dex": "pancakeswap",
-        "liquidityUsd": 2233.77,
+        "liquidityUsd": 2241.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -179,18 +179,14 @@
       {
         "pair": "0x637ad8d2611d3efE2ef41fdBb40b9F21AbAF9585",
         "dex": "aerodrome",
-        "liquidityUsd": 2354.01,
+        "liquidityUsd": 2374.32,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x59ebff2be1e53691e819b953fe215d61135dd05f",
-          "sharePct": 105.79
-        }
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 30.86,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.degen.tips/",
