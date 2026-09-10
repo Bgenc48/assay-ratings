@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "cbBTC",
   "name": "Coinbase Wrapped BTC",
-  "scanned_at": "2026-09-09T09:51:35.097Z",
+  "scanned_at": "2026-09-10T09:49:56.193Z",
   "methodology_version": "0.2.1",
   "profile": "custodial-wrapped",
   "grade": {
@@ -118,7 +118,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4557479652356",
+    "totalSupply": "4561421721229",
     "decimals": 8,
     "owner": "0xce56d20689d836ec7a728ceb94a15746696c16e6",
     "controlType": "eoa",
@@ -132,14 +132,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 37160980.55,
+    "liquidityUsd": 37055134.3,
     "pools": [
       {
         "pair": "0x160D7E9d948B16c163332a277b393c288408eb12",
         "dex": "aerodrome",
-        "liquidityUsd": 4242240.94,
+        "liquidityUsd": 5040174.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +148,7 @@
       {
         "pair": "0x7C7420DD105E2779316423Ba3E973f434315EFA9",
         "dex": "aerodrome",
-        "liquidityUsd": 1290287.64,
+        "liquidityUsd": 1285237.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +157,7 @@
       {
         "pair": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
         "dex": "pancakeswap",
-        "liquidityUsd": 5259089.43,
+        "liquidityUsd": 5241833.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +166,7 @@
       {
         "pair": "0x42d4a22CaD0F5a49681a5715cE994Af73A43B76b",
         "dex": "aerodrome",
-        "liquidityUsd": 8959533.36,
+        "liquidityUsd": 9351369.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,7 +175,7 @@
       {
         "pair": "0xb94b22332ABf5f89877A14Cc88f2aBC48c34B3Df",
         "dex": "pancakeswap",
-        "liquidityUsd": 1607768,
+        "liquidityUsd": 1606067.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -184,16 +184,7 @@
       {
         "pair": "0x4e962BB3889Bf030368F56810A9c96B83CB3E778",
         "dex": "aerodrome",
-        "liquidityUsd": 5956186.24,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7AeA2E8A3843516afa07293a10Ac8E49906dabD1",
-        "dex": "uniswap",
-        "liquidityUsd": 8833395.32,
+        "liquidityUsd": 5661731.66,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -202,14 +193,23 @@
       {
         "pair": "0x3f9b863EF4B295d6Ba370215bcCa3785FCC44f44",
         "dex": "hydrex",
-        "liquidityUsd": 1012479.62,
+        "liquidityUsd": 1000548.93,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfBB6Eed8e7aa03B138556eeDaF5D271A5E1e43ef",
+        "dex": "uniswap",
+        "liquidityUsd": 7868170.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 1.25,
     "projectLinks": {
       "websites": [],
       "socials": []

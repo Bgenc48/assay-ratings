@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BIO",
   "name": "BIO",
-  "scanned_at": "2026-09-09T09:53:38.230Z",
+  "scanned_at": "2026-09-10T09:51:52.626Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x222cCBE78890A4d9Ef8d22d7FC1B968Be0F2c653"
+            "pair": "0xd40BffA9C9E35493B88a2b6744C49D8716b00898"
           }
         }
       ]
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "182598451079932490000000000",
+    "totalSupply": "182586583384702180000000000",
     "decimals": 18,
     "owner": "0xd9c6ee1547fd6d48f8872dd866473893bbe8a1ab",
     "controlType": "safe",
@@ -110,39 +110,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 724102.1300000001,
+    "liquidityUsd": 617982.4999999999,
     "pools": [
-      {
-        "pair": "0xa79A2eAfDfb8F71bAd810AE12A89711Fb6CaF9AC",
-        "dex": "pancakeswap",
-        "liquidityUsd": 78748.14,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x052E77018Bfb98dc6373C37d757bb1d3fAd09eC5",
-        "dex": "uniswap",
-        "liquidityUsd": 2338.13,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe15587dc839a23fc090c9425d361b923fcddacf8990c18ebd73695adbf59e727",
-        "dex": "uniswap",
-        "liquidityUsd": 648.27,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x222cCBE78890A4d9Ef8d22d7FC1B968Be0F2c653",
         "dex": "aerodrome",
-        "liquidityUsd": 322044.51,
+        "liquidityUsd": 235165.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,16 +124,34 @@
       {
         "pair": "0xd40BffA9C9E35493B88a2b6744C49D8716b00898",
         "dex": "aerodrome",
-        "liquidityUsd": 320311.26,
+        "liquidityUsd": 305921.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xe10949b980f62f844cb4109f39ea1186c19f4b4ac55e38054bbec7e27394436e",
+        "pair": "0xa79A2eAfDfb8F71bAd810AE12A89711Fb6CaF9AC",
+        "dex": "pancakeswap",
+        "liquidityUsd": 74003.45,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x052E77018Bfb98dc6373C37d757bb1d3fAd09eC5",
         "dex": "uniswap",
-        "liquidityUsd": 11.17,
+        "liquidityUsd": 2270.27,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe15587dc839a23fc090c9425d361b923fcddacf8990c18ebd73695adbf59e727",
+        "dex": "uniswap",
+        "liquidityUsd": 610.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,16 +160,25 @@
       {
         "pair": "0x6F3B05c215d6BFd832C7444e4DDeea59BF846290",
         "dex": "pancakeswap",
-        "liquidityUsd": 0.29,
+        "liquidityUsd": 0.27,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0xe10949b980f62f844cb4109f39ea1186c19f4b4ac55e38054bbec7e27394436e",
+        "dex": "uniswap",
+        "liquidityUsd": 10.51,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0x4BFf50D91BC2fDE06f31A91a781bd461f69e9BD8",
         "dex": "hydrex",
-        "liquidityUsd": 0.36,
+        "liquidityUsd": 0.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

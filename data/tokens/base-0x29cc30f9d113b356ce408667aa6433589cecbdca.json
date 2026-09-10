@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ELSA",
   "name": "Elsa",
-  "scanned_at": "2026-09-09T09:52:03.853Z",
+  "scanned_at": "2026-09-10T09:50:30.488Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 85,
+    "overall": 84.6,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -93,6 +93,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +115,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 375444.98999999993,
+    "verifiedSource": true,
+    "ageDays": 245,
+    "liquidityUsd": 360143.10000000003,
     "pools": [
       {
         "pair": "0x83f3ACa29Bc79B048B99C56013475570acc97ccF",
         "dex": "pancakeswap",
-        "liquidityUsd": 360580.22,
+        "liquidityUsd": 345878,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +131,7 @@
       {
         "pair": "0xdc8F367884437e398FBF4a94D3333fE0b5B376Db",
         "dex": "uniswap",
-        "liquidityUsd": 11217.67,
+        "liquidityUsd": 10710.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +140,34 @@
       {
         "pair": "0x9f073f766e3ee1eccd1d525ec8753ace09c94902e09acf328231389ef12df805",
         "dex": "uniswap",
-        "liquidityUsd": 3601.02,
+        "liquidityUsd": 3505.46,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8ec13b2f24d27ac531fcbe1cb551e7696cb8392879e3fb473f801395589776da",
+        "dex": "uniswap",
+        "liquidityUsd": 27.95,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6Ff9b1Efa79106A9BbBBe6c5b9D044aC465b789c",
+        "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
+        "liquidityUsd": 3.88,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x194797673fdf948efe25c506095054347df8308dff94845ef0738b7bc0b4016a",
+        "dex": "uniswap",
+        "liquidityUsd": 9.08,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,41 +176,27 @@
       {
         "pair": "0xa04eC5e729bCe8dEa7794a4444836eEd268E1096",
         "dex": "aerodrome",
-        "liquidityUsd": 3.33,
+        "liquidityUsd": 3.67,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8ec13b2f24d27ac531fcbe1cb551e7696cb8392879e3fb473f801395589776da",
-        "dex": "uniswap",
-        "liquidityUsd": 29.41,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x194797673fdf948efe25c506095054347df8308dff94845ef0738b7bc0b4016a",
-        "dex": "uniswap",
-        "liquidityUsd": 9.22,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x5178d1db8dbe3498de478109577053abc8a03a49",
+          "sharePct": 99.99
+        }
       },
       {
         "pair": "0xf098aa17a6288ec704a7c8eec468a0671925c472d4aca6cafd58ad881e03ca5a",
         "dex": "uniswap",
-        "liquidityUsd": 4.12,
+        "liquidityUsd": 4.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 15.35,
     "projectLinks": {
       "websites": [
         "https://moltnbook.com"

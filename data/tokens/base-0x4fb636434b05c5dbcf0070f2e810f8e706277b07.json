@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "LAPTOP",
   "name": "Laptop",
-  "scanned_at": "2026-09-09T09:57:02.572Z",
+  "scanned_at": "2026-09-10T09:54:17.787Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x5b853242bb7497138660f643d3f7a880d4013c839736b8a11593a2430a437fe1"
+            "pair": "0x4a086e68c6e180528e2171d4d31f0a47c621d035cd5719ff11a8db7a99ad392b"
           }
         }
       ]
@@ -109,12 +109,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1.29,
+    "liquidityUsd": 65.71000000000001,
     "pools": [
       {
-        "pair": "0x784a97eca24b68d56902cef6ce5d6874cf49e459168509f89005b04d17d6be73",
+        "pair": "0xe34443831f0cab8036085a03054b7de6a205657366cc179574418d1da281af62",
         "dex": "uniswap",
-        "liquidityUsd": 0.12,
+        "liquidityUsd": 0.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -123,7 +123,16 @@
       {
         "pair": "0x5b853242bb7497138660f643d3f7a880d4013c839736b8a11593a2430a437fe1",
         "dex": "uniswap",
-        "liquidityUsd": 0.41,
+        "liquidityUsd": 0.01,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8b81f233089a621be9b5184a82b18a5e9adcb66acb86bfc0dfd11da115410317",
+        "dex": "uniswap",
+        "liquidityUsd": 6.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -132,25 +141,7 @@
       {
         "pair": "0xd4089b22ea52cd2f74cb03affb57715230127f4488e2f47e0868abec7b95e5eb",
         "dex": "uniswap",
-        "liquidityUsd": 0.23,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x0a017f17caa12a3e22a5f271aaeb372d89b6303cc71b98decd4ba358d66d421b",
-        "dex": "uniswap",
-        "liquidityUsd": 0.15,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe34443831f0cab8036085a03054b7de6a205657366cc179574418d1da281af62",
-        "dex": "uniswap",
-        "liquidityUsd": 0.38,
+        "liquidityUsd": 0.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,18 +157,9 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd69c5811c2f79ef77d673c828d4a19f55155c4e2d5c8c2ec1f226d991fcbe907",
+        "pair": "0x4a086e68c6e180528e2171d4d31f0a47c621d035cd5719ff11a8db7a99ad392b",
         "dex": "uniswap",
-        "liquidityUsd": 0,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xb77f071b5b6e67d5f2b164206978bef505e5854e68ac6685ed23d4a3dadae15d",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
+        "liquidityUsd": 58.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -185,7 +167,16 @@
       }
     ],
     "top10Pct": null,
-    "projectLinks": null
+    "projectLinks": {
+      "websites": [
+        "http://virtuals.io/",
+        "https://whitepaper.virtuals.io/"
+      ],
+      "socials": [
+        "https://twitter.com/virtuals_io",
+        "https://t.me/virtuals"
+      ]
+    }
   },
   "notes": null,
   "coi": false

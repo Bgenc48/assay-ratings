@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ZEST",
   "name": "Zest",
-  "scanned_at": "2026-09-09T09:52:15.023Z",
+  "scanned_at": "2026-09-10T09:50:42.835Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 51.8,
+    "letter": "C",
+    "overall": 55.8,
     "provisional": true,
     "badge": "Custodial",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 2.1%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -96,7 +103,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "762856037642845396826357",
+    "totalSupply": "785578459824177854920184",
     "decimals": 18,
     "owner": "0x4ddae1d1bb8dacd4c8fa56792fde60f446755d0f",
     "controlType": "safe",
@@ -108,21 +115,21 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 151788.16,
+    "liquidityUsd": 160193.42,
     "pools": [
       {
         "pair": "0x3693022BD390E147D8dD89a05403C80FF21dd64B",
         "dex": "aerodrome",
-        "liquidityUsd": 151788.16,
+        "liquidityUsd": 160193.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 2.1,
     "projectLinks": {
       "websites": [
         "https://www.zestprotocol.com/",

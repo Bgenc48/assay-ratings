@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "DAI",
   "name": "Dai Stablecoin",
-  "scanned_at": "2026-09-09T09:51:33.054Z",
+  "scanned_at": "2026-09-10T09:49:52.945Z",
   "methodology_version": "0.2.1",
   "profile": "bridged",
   "grade": {
-    "letter": "B+",
-    "overall": 82.5,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Bridged (canonical)",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -67,9 +67,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 100.7% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -78,6 +85,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -106,23 +118,27 @@
         "result": "0x4200000000000000000000000000000000000010"
       }
     },
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 222003.73,
+    "liquidityUsd": 221564.9,
     "pools": [
       {
         "pair": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823",
         "dex": "shark-swap",
-        "liquidityUsd": 62773.59,
+        "liquidityUsd": 62519.44,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x1239660af62d515bfecd4ee09c58d2cd32504605",
+          "sharePct": 99.98
+        }
       },
       {
         "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb",
         "dex": "uniswap",
-        "liquidityUsd": 54448.54,
+        "liquidityUsd": 54284.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -131,7 +147,7 @@
       {
         "pair": "0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
         "dex": "uniswap",
-        "liquidityUsd": 25188.79,
+        "liquidityUsd": 25190.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +156,7 @@
       {
         "pair": "0xd604cf300A4aE4345426dF42FFb296aa35b4bef2",
         "dex": "hydrex",
-        "liquidityUsd": 23617.24,
+        "liquidityUsd": 23617.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +165,7 @@
       {
         "pair": "0xC18F50d6A832f12F6DcAaeEe8D0c87A65B96787E",
         "dex": "uniswap",
-        "liquidityUsd": 17433.37,
+        "liquidityUsd": 17431.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,7 +174,7 @@
       {
         "pair": "0x22F9623817F152148B4E080E98Af66FBE9C5AdF8",
         "dex": "uniswap",
-        "liquidityUsd": 15864.36,
+        "liquidityUsd": 15864.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -167,7 +183,7 @@
       {
         "pair": "0xd64e7bF24eE5CC10B5Ab92525D256300Ad3FB81E",
         "dex": "uniswap",
-        "liquidityUsd": 11469.65,
+        "liquidityUsd": 11448.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -176,14 +192,14 @@
       {
         "pair": "0xe4eFf19c7AcE186ba39fD3eD639B2D34171f7efF",
         "dex": "pancakeswap",
-        "liquidityUsd": 11208.19,
+        "liquidityUsd": 11207.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 100.74,
     "projectLinks": null
   },
   "notes": "Bridged representation of DAI on Base, graded on its Base contract structure, not on mainnet DAI. Scored under the methodology v0.2 bridged profile: if minting is verified on-chain to be restricted to the allowlisted canonical bridge, issuance anchors high and the report carries a derivative-trust note; otherwise it falls back to the standard treatment. Liquidity permanence is N/A (a canonical wrapper makes no LP-lock promise).",
