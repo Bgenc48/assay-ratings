@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ElonRWA",
   "name": "ElonRWA",
-  "scanned_at": "2026-09-10T09:53:36.200Z",
+  "scanned_at": "2026-09-11T09:53:51.389Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -112,15 +112,24 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 520991.28,
+    "liquidityUsd": 506266.88,
     "pools": [
       {
         "pair": "0xD56f086E7B796b313d49f2BC926fAc4BDd2a2B0B",
         "dex": "uniswap",
-        "liquidityUsd": 520991.28,
+        "liquidityUsd": 506264.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9D651E2491a57eE801de20a2ddE33747631fC083",
+        "dex": "aerodrome",
+        "liquidityUsd": 2.28,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],

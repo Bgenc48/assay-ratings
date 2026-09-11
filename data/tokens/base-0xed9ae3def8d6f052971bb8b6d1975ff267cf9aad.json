@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BLUAI",
   "name": "Bluwhale AI",
-  "scanned_at": "2026-09-10T09:52:39.604Z",
+  "scanned_at": "2026-09-11T09:52:43.166Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 27.5,
+    "overall": 28.2,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -57,16 +57,16 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB"
+            "pair": "0x45D1b4905251e5954a44F7c51e17855d306421b7"
           }
         }
       ]
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "10286510680430580000000000",
+    "totalSupply": "640498461037460000000000",
     "decimals": 18,
     "owner": "0xa1e963ff6b129d446a2890f22c47a5abf15ce7dc",
     "controlType": "eoa",
@@ -115,12 +115,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 185519.09,
+    "liquidityUsd": 91.93,
     "pools": [
       {
         "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB",
         "dex": "aerodrome",
-        "liquidityUsd": 185472.51,
+        "liquidityUsd": 44.16,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -129,7 +129,7 @@
       {
         "pair": "0x45D1b4905251e5954a44F7c51e17855d306421b7",
         "dex": "aerodrome",
-        "liquidityUsd": 46.58,
+        "liquidityUsd": 47.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

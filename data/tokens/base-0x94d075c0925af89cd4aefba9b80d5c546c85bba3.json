@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BasedBBIAGBInu",
   "name": "BasedBaldBrianIAmGayBlueInu",
-  "scanned_at": "2026-09-10T09:53:43.888Z",
+  "scanned_at": "2026-09-11T09:54:00.844Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xc960d0675551267fbde330545a75cf0b218e91fe01c95505dde0fa6713b6b1eb"
+            "pair": "0x52eb67a5c2d8310749b93990082e81dcccb62950766350c4b142157519a24e85"
           }
         }
       ]
@@ -107,17 +107,8 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 7.06,
+    "liquidityUsd": 174.23,
     "pools": [
-      {
-        "pair": "0xc960d0675551267fbde330545a75cf0b218e91fe01c95505dde0fa6713b6b1eb",
-        "dex": "uniswap",
-        "liquidityUsd": 7.06,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x289cb2b11dcedafa0c3ac790c7c5fe4b7f59629b78ed0e61b412bfc613a02657",
         "dex": "uniswap",
@@ -126,15 +117,19 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x52eb67a5c2d8310749b93990082e81dcccb62950766350c4b142157519a24e85",
+        "dex": "uniswap",
+        "liquidityUsd": 174.23,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": null,
-    "projectLinks": {
-      "websites": [],
-      "socials": [
-        "https://x.com/BasedBBIAGBInu"
-      ]
-    }
+    "projectLinks": null
   },
   "notes": null,
   "coi": false
