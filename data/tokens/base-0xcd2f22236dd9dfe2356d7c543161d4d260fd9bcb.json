@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "GHST",
   "name": "Aavegotchi GHST Token",
-  "scanned_at": "2026-09-11T09:53:58.721Z",
+  "scanned_at": "2026-09-12T09:30:12.447Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "D",
-    "overall": 46.4,
+    "letter": "UR",
+    "overall": 48.8,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "21220024461907199024324521",
+    "totalSupply": "21545574907478394222826412",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -112,32 +112,23 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 948385.89,
+    "liquidityUsd": 1002967.8300000001,
     "pools": [
-      {
-        "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067",
-        "dex": "aerodrome",
-        "liquidityUsd": 737021.69,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x0DFb9Cb66A18468850d6216fCc691aa20ad1e091",
         "dex": "aerodrome",
-        "liquidityUsd": 210765.49,
+        "liquidityUsd": 214340.39,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x56C11053159a24c0731b4b12356BC1f0578FB474",
+        "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067",
         "dex": "aerodrome",
-        "liquidityUsd": 558.85,
+        "liquidityUsd": 788589.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,16 +137,7 @@
       {
         "pair": "0x873D3c477BBaeD55859C46E43FDAC6e73120f80c",
         "dex": "uniswap",
-        "liquidityUsd": 35.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xb743e6d0e7648a2f47573cd9d2202b73d4849f41e572cc83d238458edded970a",
-        "dex": "uniswap",
-        "liquidityUsd": 1.77,
+        "liquidityUsd": 36.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,25 +153,16 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x59Da7538Bbea7facC9185b412e0D43da67A84Ab7",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.76,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x8263C80Ba82fFb3506Eb731DCa78546244Ce2fC6",
         "dex": "aerodrome",
-        "liquidityUsd": 0.74,
+        "liquidityUsd": 0.73,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 10.73,
     "projectLinks": {
       "websites": [
         "https://ghsttoken.com",
@@ -205,5 +178,9 @@
     }
   },
   "notes": null,
-  "coi": false
+  "coi": false,
+  "pendingReview": {
+    "computed": "D"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

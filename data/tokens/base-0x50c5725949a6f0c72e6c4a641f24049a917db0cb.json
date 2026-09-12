@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "DAI",
   "name": "Dai Stablecoin",
-  "scanned_at": "2026-09-11T09:49:00.594Z",
+  "scanned_at": "2026-09-12T09:26:24.814Z",
   "methodology_version": "0.2.1",
   "profile": "bridged",
   "grade": {
@@ -73,7 +73,7 @@
         {
           "id": "holders.dominant",
           "severity": "crit",
-          "text": "The top 10 unlabeled holders control 100.7% of circulating supply.",
+          "text": "The top 10 unlabeled holders control 100.6% of circulating supply.",
           "evidence": null
         }
       ]
@@ -98,7 +98,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "1774526712741945740267502",
+    "totalSupply": "1776326712741945740267502",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -120,12 +120,12 @@
     },
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 221290.56999999998,
+    "liquidityUsd": 222097.80000000002,
     "pools": [
       {
         "pair": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823",
         "dex": "shark-swap",
-        "liquidityUsd": 62303.12,
+        "liquidityUsd": 63363.82,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -138,7 +138,7 @@
       {
         "pair": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb",
         "dex": "uniswap",
-        "liquidityUsd": 54189.79,
+        "liquidityUsd": 53820.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,7 +147,7 @@
       {
         "pair": "0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
         "dex": "uniswap",
-        "liquidityUsd": 25185.46,
+        "liquidityUsd": 25234.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -156,7 +156,7 @@
       {
         "pair": "0xd604cf300A4aE4345426dF42FFb296aa35b4bef2",
         "dex": "hydrex",
-        "liquidityUsd": 23615.4,
+        "liquidityUsd": 23625.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -165,7 +165,7 @@
       {
         "pair": "0xC18F50d6A832f12F6DcAaeEe8D0c87A65B96787E",
         "dex": "uniswap",
-        "liquidityUsd": 17432.09,
+        "liquidityUsd": 17466.08,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -174,16 +174,7 @@
       {
         "pair": "0x22F9623817F152148B4E080E98Af66FBE9C5AdF8",
         "dex": "uniswap",
-        "liquidityUsd": 15864.16,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd64e7bF24eE5CC10B5Ab92525D256300Ad3FB81E",
-        "dex": "uniswap",
-        "liquidityUsd": 11492.84,
+        "liquidityUsd": 15889.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -192,14 +183,23 @@
       {
         "pair": "0xe4eFf19c7AcE186ba39fD3eD639B2D34171f7efF",
         "dex": "pancakeswap",
-        "liquidityUsd": 11207.71,
+        "liquidityUsd": 11227.26,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd64e7bF24eE5CC10B5Ab92525D256300Ad3FB81E",
+        "dex": "uniswap",
+        "liquidityUsd": 11470.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 100.74,
+    "top10Pct": 100.64,
     "projectLinks": null
   },
   "notes": "Bridged representation of DAI on Base, graded on its Base contract structure, not on mainnet DAI. Scored under the methodology v0.2 bridged profile: if minting is verified on-chain to be restricted to the allowlisted canonical bridge, issuance anchors high and the report carries a derivative-trust note; otherwise it falls back to the standard treatment. Liquidity permanence is N/A (a canonical wrapper makes no LP-lock promise).",

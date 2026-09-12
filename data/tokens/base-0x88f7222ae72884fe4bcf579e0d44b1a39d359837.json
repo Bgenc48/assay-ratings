@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "PRIVVVATE",
   "name": "PRIVVVATE",
-  "scanned_at": "2026-09-11T09:54:47.311Z",
+  "scanned_at": "2026-09-12T09:31:19.687Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 82.9,
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
     "coverage": "partial"
@@ -62,13 +62,13 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 50,
+      "score": 100,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.partial",
-          "severity": "warn",
-          "text": "Only 89% of the dominant pool's LP is burned or locked.",
+          "id": "liq.permanent",
+          "severity": "info",
+          "text": "100% of the dominant pool's LP is burned or locked permanently.",
           "evidence": {
             "source": "dexscreener+onchain",
             "pair": "0x4eF0F94370C6b65d385BCd91F05d7C67e7d3fd04"
@@ -112,13 +112,13 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 76064.74,
+    "liquidityUsd": 53490.97,
     "pools": [
       {
         "pair": "0x4eF0F94370C6b65d385BCd91F05d7C67e7d3fd04",
         "dex": "uniswap",
-        "liquidityUsd": 63921.32,
-        "lpBurnedPct": 89.08,
+        "liquidityUsd": 50135.88,
+        "lpBurnedPct": 100,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
@@ -126,16 +126,7 @@
       {
         "pair": "0xf3d4ddac64a138288dcd8e25405b8a7058eaf1d50f5faca2b49292bce0541cce",
         "dex": "uniswap",
-        "liquidityUsd": 9380.06,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x635d94fad6b432f13582fe15ab7bbe9adb32a0dd557fb29048d80107ac20550c",
-        "dex": "uniswap",
-        "liquidityUsd": 2166.72,
+        "liquidityUsd": 2835.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,16 +135,25 @@
       {
         "pair": "0x669a420bde05f5f43978bb268f2e287b20f1315c5d0403aa9bb42c2b3ab7a71c",
         "dex": "uniswap",
-        "liquidityUsd": 566.16,
+        "liquidityUsd": 485.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0x15cF0e6578db41713a22B411108f75098e3EE1f0",
+        "dex": "uniswap",
+        "liquidityUsd": 7.16,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0xca199b024b21ebd87a15611d5a6a6ddb72be265c5e6127cbd69ecba76461efcf",
         "dex": "uniswap",
-        "liquidityUsd": 27.44,
+        "liquidityUsd": 24.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +162,7 @@
       {
         "pair": "0xd53df5ebc0cae79bd3a990a87d6e726ba1bd4f288e4e0bc8803a89558e609cb2",
         "dex": "uniswap",
-        "liquidityUsd": 3.04,
+        "liquidityUsd": 2.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "RNBW",
   "name": "Rainbow",
-  "scanned_at": "2026-09-11T09:54:39.122Z",
+  "scanned_at": "2026-09-12T09:31:08.118Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 46.4,
+    "overall": 50.8,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 6.1%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -112,14 +119,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 146549.85000000003,
+    "liquidityUsd": 150551.75999999998,
     "pools": [
       {
         "pair": "0xb8e3840b850cd5e2d8229e54a04c3a10b653d072870bbfb26847d237fc655a37",
         "dex": "uniswap",
-        "liquidityUsd": 139485.91,
+        "liquidityUsd": 145933.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +135,7 @@
       {
         "pair": "0x4bf85cA48a620BAf9DDE3b6A7A6d88b219827caA",
         "dex": "aerodrome",
-        "liquidityUsd": 4585.41,
+        "liquidityUsd": 3405.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,16 +144,7 @@
       {
         "pair": "0x8408c2A9F28B9A9471DC423f3cd4868629b555c8",
         "dex": "uniswap",
-        "liquidityUsd": 527.84,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x390e1ebcdb50943217ceeb7c1c6283aec4588dae6c30f4b30d4570edab34fe47",
-        "dex": "uniswap",
-        "liquidityUsd": 1624.92,
+        "liquidityUsd": 558.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +153,16 @@
       {
         "pair": "0xd15707ac964a1b8757edabe5816a55f1e1d83071f3f31749c406c9d678708c02",
         "dex": "uniswap",
-        "liquidityUsd": 113.7,
+        "liquidityUsd": 123.65,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x390e1ebcdb50943217ceeb7c1c6283aec4588dae6c30f4b30d4570edab34fe47",
+        "dex": "uniswap",
+        "liquidityUsd": 229.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +171,7 @@
       {
         "pair": "0x8b2b1cc824eae6ca55af931e8d0c90c86ad7455edd643bbd424c266a91c94360",
         "dex": "uniswap",
-        "liquidityUsd": 171.17,
+        "liquidityUsd": 178.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,7 +180,7 @@
       {
         "pair": "0xcf9f67a3612ea0a8de6e5d934202213009cc3774aadc4ff6d1fd073b03bcc01d",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 78.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -182,14 +189,14 @@
       {
         "pair": "0x6c741dfbacf8331e8b6cb87b960c38ad8adab454d2238557d2de3f590aaa106b",
         "dex": "uniswap",
-        "liquidityUsd": 40.9,
+        "liquidityUsd": 43.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 6.09,
     "projectLinks": {
       "websites": [
         "https://rainbow.me"

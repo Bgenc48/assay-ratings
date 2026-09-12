@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ba3PUMP",
   "name": "Pump (Bankr Bridged)",
-  "scanned_at": "2026-09-11T09:54:02.076Z",
+  "scanned_at": "2026-09-12T09:30:16.500Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 64.5,
+    "overall": 59.6,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,19 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 17 days old; trust needs time (Provisional).",
+          "evidence": "0x081d884ca56b78d41b2bb3180d7f8afecbdca663dc557f7de35c6e89f31ea4da"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -89,6 +96,11 @@
   },
   "caps": [
     {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -96,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "18155627325352000000000000",
+    "totalSupply": "18139670112560000000000000",
     "decimals": 18,
     "owner": "0xd7b0fe2655ae73ab93d5c9a14442dcb4c479d1e1",
     "controlType": "eoa",
@@ -105,23 +117,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 101551.86000000002,
+    "verifiedSource": true,
+    "ageDays": 17,
+    "liquidityUsd": 89349.69,
     "pools": [
       {
         "pair": "0x60202877f451F03da7f8f48B94E2e6Bb053cF614",
         "dex": "uniswap",
-        "liquidityUsd": 90780.85,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8740982a7549dd47b59c1f8df0a1deac966de1838563560b03a930ca318bf382",
-        "dex": "uniswap",
-        "liquidityUsd": 2.83,
+        "liquidityUsd": 89349.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,18 +138,9 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd229690a22b234f81b67fd22fd05b3a45eb00fc3b690a8d6217092ae69ec0850",
-        "dex": "uniswap",
-        "liquidityUsd": 10768.18,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 13.97,
     "projectLinks": null
   },
   "notes": null,

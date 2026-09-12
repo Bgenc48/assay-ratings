@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "cbMEGA",
   "name": "Coinbase Wrapped MEGA",
-  "scanned_at": "2026-09-11T09:50:39.683Z",
+  "scanned_at": "2026-09-12T09:27:39.157Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 25.8,
+    "overall": 28.2,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 78.1% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -104,11 +97,6 @@
       "id": "cap.eoa-upgrade",
       "letter": "D",
       "reason": "Upgradeable with an EOA admin and no timelock."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
     },
     {
       "id": "cap.claim-light",
@@ -132,14 +120,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 17229.76,
+    "liquidityUsd": 18411.350000000006,
     "pools": [
       {
         "pair": "0x0150e3d89E161518C044ad191c4bdf6b40Df6E83",
         "dex": "aerodrome",
-        "liquidityUsd": 17186.6,
+        "liquidityUsd": 18105.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,41 +136,68 @@
       {
         "pair": "0xfdd817d77dd1b0f8bdf63847e1ab7fa3574d46f89ae529390f0bc9f40e9544d3",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 179.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc47687d4615ce111e72573ebcb8ead9216a9f115c020bece73e31092caef835c",
+        "dex": "uniswap",
+        "liquidityUsd": 67.98,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9D2139818d9cB7dc067B6128d337AAB1AA460aF6",
+        "dex": "equalizer",
+        "liquidityUsd": 6.08,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
         "pair": "0x8820eaf62ac7d32f8695344114f899d05b0a7862ebd05ad034be4632c37b9f1b",
         "dex": "uniswap",
-        "liquidityUsd": 43.16,
+        "liquidityUsd": 39.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xe764819433eb5b71bc58ab650af7b6634694e74200cf375c0634554b15456e9c",
+        "pair": "0x3751DfB5FCa4490bcf1dEF2b4CA600CEEb773f29",
+        "dex": "equalizer",
+        "liquidityUsd": 4.73,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa1d9c4c417f57d52d3745cbd2d4e32fce2a3585fc854212647383a59db451c24",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 4.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x019e7af17d98f2131685663d5acfe5a451fd45fa48259e34c922194f4ec779c0",
+        "pair": "0xbc26628d22e10d486209095d1839354228be69d4c51ea6c938f27d0a161379f7",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 4.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 78.06,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [],
       "socials": []

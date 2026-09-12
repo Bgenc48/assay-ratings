@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "MOONBASE",
   "name": "Moonbase",
-  "scanned_at": "2026-09-11T09:54:28.569Z",
+  "scanned_at": "2026-09-12T09:30:52.564Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,7 +88,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -93,6 +99,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +121,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 62998.77999999999,
+    "liquidityUsd": 55399.530000000006,
     "pools": [
       {
         "pair": "0x63d8d458d63d18a7a5941575105f5c6521170854d85c141de96afdeaaa803776",
         "dex": "uniswap",
-        "liquidityUsd": 58000.59,
+        "liquidityUsd": 51056.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +137,7 @@
       {
         "pair": "0xc75ffcd9d633a4125dd02ae8f343ba65e7c5cd5975d3c01aea04b05837b54d73",
         "dex": "uniswap",
-        "liquidityUsd": 4694.34,
+        "liquidityUsd": 4097.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +146,7 @@
       {
         "pair": "0x5b37367805f6789fa3e4d9ee939a0b2ee8f3096250fc3b3808e23b379bc9680d",
         "dex": "uniswap",
-        "liquidityUsd": 238.25,
+        "liquidityUsd": 188.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +155,7 @@
       {
         "pair": "0xb6Ad091e6231fFf8456Fc68C2D43A3454828B33c",
         "dex": "uniswap",
-        "liquidityUsd": 9.14,
+        "liquidityUsd": 7.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +164,7 @@
       {
         "pair": "0x1fb9a9b4523315087ddf6d9714905c4178bff1b6e28ebe5f102720c069903fa7",
         "dex": "uniswap",
-        "liquidityUsd": 31.79,
+        "liquidityUsd": 28.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,16 +173,7 @@
       {
         "pair": "0x6d2909d647fbd295c7b84b03b5963ca7d88faeed1824b5061db63b1ad86353d4",
         "dex": "uniswap",
-        "liquidityUsd": 22.3,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x65475d6dd74fee03507ac0727bcd1cff534195b288b4f755b7135ff919c813ba",
-        "dex": "uniswap",
-        "liquidityUsd": 1.1,
+        "liquidityUsd": 18.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,14 +182,14 @@
       {
         "pair": "0xfdaa7bec0ca2db7bc2b648d50769c1214af65d289a3cc6b09ccaa2642c09eff5",
         "dex": "uniswap",
-        "liquidityUsd": 1.27,
+        "liquidityUsd": 1.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 11.16,
     "projectLinks": {
       "websites": [],
       "socials": [

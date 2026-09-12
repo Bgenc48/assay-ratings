@@ -1,0 +1,195 @@
+{
+  "address": "0xa3d353743164972b37c8e5358fb1e76f0be8aba3",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "ELON",
+  "name": "ELON",
+  "scanned_at": "2026-09-12T09:31:29.328Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B-",
+    "overall": 70,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x955590753d5c19ab840d2901900625a8dcee8aa54f4184c84a79e015673b10ae"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "100000000000000000000000000000",
+    "decimals": 18,
+    "owner": "0x660eaaedebc968f8f3694354fa8ec0b4c5ba8d12",
+    "controlType": "unknown",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 118467.64000000001,
+    "pools": [
+      {
+        "pair": "0x955590753d5c19ab840d2901900625a8dcee8aa54f4184c84a79e015673b10ae",
+        "dex": "uniswap",
+        "liquidityUsd": 117510.2,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x650948305EB96B2219747f990e8B20bc23cB62a7",
+        "dex": "uniswap",
+        "liquidityUsd": 756.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9f1d1aa1d7d37f57a704b090fa7fd669dd13e3740a37281fbb3b0dccecf063cb",
+        "dex": "uniswap",
+        "liquidityUsd": 73.77,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6d8b4b36ef2cc4a7dc16cba79fabaab7d5b103ecd58b29245adac14bcf874109",
+        "dex": "uniswap",
+        "liquidityUsd": 21.11,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x56FB689d3f0d80913F87CA889a2445a671b53E34",
+        "dex": "aerodrome",
+        "liquidityUsd": 7.38,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf8f19a5503ec7e5a2494b0b75a5a040ca1ee77bf0826f30156d24d9b8998159f",
+        "dex": "uniswap",
+        "liquidityUsd": 51.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa71fc3ae8361885971fbae1e613504f38dedbf440f7d7a8892cbebdf8564fa47",
+        "dex": "uniswap",
+        "liquidityUsd": 6.74,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x118a32eff94e18822487ebb7d678b5ba7195b2fed374bd388dc55fe368081a14",
+        "dex": "uniswap",
+        "liquidityUsd": 41.4,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [],
+      "socials": [
+        "https://x.com/bankrbot/status/2098485642707804532?s=20"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

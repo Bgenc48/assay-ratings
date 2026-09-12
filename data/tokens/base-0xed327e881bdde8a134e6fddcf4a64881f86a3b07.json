@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "Claude",
   "name": "Claude",
-  "scanned_at": "2026-09-11T09:50:48.006Z",
+  "scanned_at": "2026-09-12T09:27:43.419Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 64.2,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -74,16 +74,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 93.4% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -92,11 +85,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -116,11 +104,11 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
     "liquidityUsd": null,
     "pools": [],
-    "top10Pct": 93.42,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

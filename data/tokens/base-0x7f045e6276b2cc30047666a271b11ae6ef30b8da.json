@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Grok",
   "name": "Grok Coin",
-  "scanned_at": "2026-09-11T09:54:53.560Z",
+  "scanned_at": "2026-09-12T09:31:25.214Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,13 +66,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x6b4ca655550d1c92ce63976cfe0acc5c54de5a5e7d617221797e95e8506b71af"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -112,18 +109,8 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 107549.79,
-    "pools": [
-      {
-        "pair": "0x6b4ca655550d1c92ce63976cfe0acc5c54de5a5e7d617221797e95e8506b71af",
-        "dex": "uniswap",
-        "liquidityUsd": 107549.79,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": null,
     "projectLinks": null
   },

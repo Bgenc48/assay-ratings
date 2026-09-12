@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TSG",
   "name": "the sleeping giant",
-  "scanned_at": "2026-09-11T09:51:21.296Z",
+  "scanned_at": "2026-09-12T09:27:59.709Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70.4,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -105,21 +105,30 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 75041.88,
+    "liquidityUsd": 76060.62999999999,
     "pools": [
       {
         "pair": "0x5e4c78bf666d78fa1e751abc84cf9933d17b1736d4605f400173ac63ac52b1f8",
         "dex": "uniswap",
-        "liquidityUsd": 75041.88,
+        "liquidityUsd": 76020.43,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5d7e5805c897486e03e0b583eceabd9e4cd59d1ad361445b79809effb2edc546",
+        "dex": "uniswap",
+        "liquidityUsd": 40.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 12.86,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [],
       "socials": [
