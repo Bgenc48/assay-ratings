@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "defi-native",
   "name": "defi-native",
-  "scanned_at": "2026-09-12T09:30:27.193Z",
+  "scanned_at": "2026-09-13T10:28:59.037Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -94,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -116,30 +105,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 66915.41,
+    "liquidityUsd": 71458.15,
     "pools": [
       {
         "pair": "0xb4a7c81b8a45d52872c86d3825ccbd4f4882773337ada59f85148a95e3ad37d8",
         "dex": "uniswap",
-        "liquidityUsd": 66705.59,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3931a429a4eb67d09bcba52ca7a7470238775bb4e057700fb5dd88f07fe3ca25",
-        "dex": "uniswap",
-        "liquidityUsd": 209.82,
+        "liquidityUsd": 71458.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 10.69,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://defi-native.ai",

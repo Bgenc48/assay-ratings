@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "AMZNc",
   "name": "Amazon.com Inc.",
-  "scanned_at": "2026-09-12T09:30:50.392Z",
+  "scanned_at": "2026-09-13T10:29:21.221Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -88,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 4.8%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -106,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -128,14 +110,23 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1212198.06,
+    "liquidityUsd": 1142363.89,
     "pools": [
       {
         "pair": "0x7F030e5fD657795C0937a3e8af2929Fd90DA91C7",
         "dex": "uniswap",
-        "liquidityUsd": 12183.93,
+        "liquidityUsd": 12114.48,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x893d654ad170fe1c68ac919814423d1e795d780c841b9aa4e8df2cdef79bc635",
+        "dex": "uniswap",
+        "liquidityUsd": 140.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,16 +144,7 @@
       {
         "pair": "0xd03Bc8C7F2FAedCe2aac81bF0444AEA08Ea06E9b",
         "dex": "aerodrome",
-        "liquidityUsd": 1118622.64,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x893d654ad170fe1c68ac919814423d1e795d780c841b9aa4e8df2cdef79bc635",
-        "dex": "uniswap",
-        "liquidityUsd": 20.03,
+        "liquidityUsd": 1078658.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,16 +153,16 @@
       {
         "pair": "0xBF65Da219Da66FE11a659Ef652716621302DAD62",
         "dex": "equalizer",
-        "liquidityUsd": 19,
+        "liquidityUsd": 19.03,
         "lpBurnedPct": 0.01,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x22Cf9B71933caC55b69f7cD9C6beB45A6Dde5c76",
-        "dex": "aerodrome",
-        "liquidityUsd": 1.37,
+        "pair": "0x9ebb3b3ec0c30d64bcd3553d48cc72736fb7eeba7b3780b9a2533f2f16a931a0",
+        "dex": "uniswap",
+        "liquidityUsd": 0.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -189,23 +171,23 @@
       {
         "pair": "0x795cd8715CC2C939b1A921327F43bEFA5F7FC2c4",
         "dex": "uniswap",
-        "liquidityUsd": 68505.55,
+        "liquidityUsd": 51230.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4dcb686b08a9923ae113bfad88ae5816a6e0cf4b88c0222e6e7a679471cf832b",
-        "dex": "uniswap",
-        "liquidityUsd": 12745.55,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "pair": "0x6B839Cfc0b01bc62D05306Ef02223E0D660Dd35E",
+        "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
+        "liquidityUsd": 100.42,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 4.81,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.boxamzn.tech/"

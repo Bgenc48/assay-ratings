@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "DEXTF",
   "name": "Memento",
-  "scanned_at": "2026-09-12T09:28:22.806Z",
+  "scanned_at": "2026-09-13T10:25:39.838Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 28.2,
+    "overall": 27.9,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 36.6%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -101,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "12039606588622329279353615",
+    "totalSupply": "12042869709011397264485268",
     "decimals": 18,
     "owner": "0xc3916b3ee83e201d6775470eccf1e93463f48127",
     "controlType": "eoa",
@@ -113,14 +120,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 140808.85,
+    "liquidityUsd": 123604.52,
     "pools": [
       {
         "pair": "0xC3F617c8A3DA6d286c8f97aF946A8f293632C852",
         "dex": "hydrex",
-        "liquidityUsd": 140759.72,
+        "liquidityUsd": 123556.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -129,14 +136,14 @@
       {
         "pair": "0x5f198375776642B495aF7c4cEf69B9b6e9246f8A",
         "dex": "aerodrome",
-        "liquidityUsd": 49.13,
+        "liquidityUsd": 47.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 36.63,
     "projectLinks": {
       "websites": [
         "https://mementoblockchain.com/",

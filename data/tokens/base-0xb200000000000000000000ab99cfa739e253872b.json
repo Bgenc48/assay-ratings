@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "MSFTc",
   "name": "Microsoft Corporation",
-  "scanned_at": "2026-09-12T09:31:04.524Z",
+  "scanned_at": "2026-09-13T10:29:33.227Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -88,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -99,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -121,23 +110,23 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 965948.87,
+    "liquidityUsd": 901266.12,
     "pools": [
       {
-        "pair": "0xD73cBeCC0F62C7C1704332ED119514d6d84DC607",
-        "dex": "uniswap",
-        "liquidityUsd": 12236.55,
+        "pair": "0x7103eB3c9590d1281f7dc03b2A9EE27C39dF5D54",
+        "dex": "aerodrome",
+        "liquidityUsd": 848707.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x7103eB3c9590d1281f7dc03b2A9EE27C39dF5D54",
-        "dex": "aerodrome",
-        "liquidityUsd": 894549.13,
+        "pair": "0xD73cBeCC0F62C7C1704332ED119514d6d84DC607",
+        "dex": "uniswap",
+        "liquidityUsd": 12159.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +135,7 @@
       {
         "pair": "0x890da4010ac1731403ea6d718638bec83f91638a1f6730c1734908a973b89b66",
         "dex": "uniswap",
-        "liquidityUsd": 2788.84,
+        "liquidityUsd": 2909.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +144,7 @@
       {
         "pair": "0xec228c4e5a6e54b9356936abb0d6b5382b49e7f647edfc7a0fa302de76c88459",
         "dex": "uniswap",
-        "liquidityUsd": 3103.64,
+        "liquidityUsd": 3103.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,32 +162,32 @@
       {
         "pair": "0x163c9d517BB963E441c63efB285BC6616e05CE43",
         "dex": "uniswap",
-        "liquidityUsd": 31157.41,
+        "liquidityUsd": 24840.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xA9fDc04900525adA74747B395dDe1AB9b550Bf57",
+        "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
+        "liquidityUsd": 101.21,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
         "pair": "0x4cbf20a1be5ca97216d0b63e0dda52f27e2423ee5aa867e3502ee3e1923af11d",
         "dex": "uniswap",
-        "liquidityUsd": 10623.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x2657b6B01B361CB8ea2ff9C96DfF8d96ba5d2540",
-        "dex": "uniswap",
-        "liquidityUsd": 11389.94,
+        "liquidityUsd": 9344.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 13.39,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://bluescreenonbase.com/",

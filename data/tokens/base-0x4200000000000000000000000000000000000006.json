@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "WETH",
   "name": "Wrapped Ether",
-  "scanned_at": "2026-09-12T09:25:54.463Z",
+  "scanned_at": "2026-09-13T10:21:48.073Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -82,9 +82,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 3.2%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -101,7 +108,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "237012743455057137595453",
+    "totalSupply": "244827359807705305516326",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -112,21 +119,21 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 153301601.57999998,
+    "liquidityUsd": 147719144.01,
     "pools": [
       {
-        "pair": "0x72AB388E2E2F6FaceF59E3C3FA2C4E29011c2D38",
-        "dex": "pancakeswap",
-        "liquidityUsd": 4636037.46,
+        "pair": "0xb4CB800910B228ED3d0834cF79D697127BBB00e5",
+        "dex": "uniswap",
+        "liquidityUsd": 389104.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb4CB800910B228ED3d0834cF79D697127BBB00e5",
-        "dex": "uniswap",
-        "liquidityUsd": 396754.43,
+        "pair": "0x72AB388E2E2F6FaceF59E3C3FA2C4E29011c2D38",
+        "dex": "pancakeswap",
+        "liquidityUsd": 4541287.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,16 +142,7 @@
       {
         "pair": "0x6c561B446416E1A00E8E93E221854d6eA4171372",
         "dex": "uniswap",
-        "liquidityUsd": 119607455.17,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd0b53D9277642d899DF5C87A3966A349A798F224",
-        "dex": "uniswap",
-        "liquidityUsd": 9114851.97,
+        "liquidityUsd": 119305759.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,16 +151,16 @@
       {
         "pair": "0x3FE04A59Ebd38cF06080a6F60a98D124eb59392A",
         "dex": "aerodrome",
-        "liquidityUsd": 6859030.54,
+        "liquidityUsd": 6508782.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb2cc224c1c9feE385f8ad6a55b4d94E92359DC59",
-        "dex": "aerodrome",
-        "liquidityUsd": 11180361.34,
+        "pair": "0xd0b53D9277642d899DF5C87A3966A349A798F224",
+        "dex": "uniswap",
+        "liquidityUsd": 9002284.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,23 +169,32 @@
       {
         "pair": "0x4e392fBfE4D0557C82D2F97F02ec39daA31516dd",
         "dex": "aerodrome",
-        "liquidityUsd": 147137.32,
+        "liquidityUsd": 145661.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xB775272E537cc670C65DC852908aD47015244EaF",
-        "dex": "pancakeswap",
-        "liquidityUsd": 1359973.35,
+        "pair": "0xb2cc224c1c9feE385f8ad6a55b4d94E92359DC59",
+        "dex": "aerodrome",
+        "liquidityUsd": 7673108.35,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x331C12605938d2a9aB893c495CfD5f4e875E3313",
+        "dex": "alien-base",
+        "liquidityUsd": 153154.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 3.17,
     "projectLinks": {
       "websites": [],
       "socials": []

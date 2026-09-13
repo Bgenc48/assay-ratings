@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "GHST",
   "name": "Aavegotchi GHST Token",
-  "scanned_at": "2026-09-12T09:30:12.447Z",
+  "scanned_at": "2026-09-13T10:28:45.446Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 48.8,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -112,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1002967.8300000001,
+    "liquidityUsd": 1013718.85,
     "pools": [
       {
         "pair": "0x0DFb9Cb66A18468850d6216fCc691aa20ad1e091",
         "dex": "aerodrome",
-        "liquidityUsd": 214340.39,
+        "liquidityUsd": 212200,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -128,25 +128,16 @@
       {
         "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067",
         "dex": "aerodrome",
-        "liquidityUsd": 788589.39,
+        "liquidityUsd": 800926.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x873D3c477BBaeD55859C46E43FDAC6e73120f80c",
-        "dex": "uniswap",
-        "liquidityUsd": 36.01,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x81a53b8ad24Ded0B88f9c9EFE72885c488119037",
-        "dex": "sushiswap",
-        "liquidityUsd": 1.31,
+        "pair": "0x56C11053159a24c0731b4b12356BC1f0578FB474",
+        "dex": "aerodrome",
+        "liquidityUsd": 591.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,14 +146,23 @@
       {
         "pair": "0x8263C80Ba82fFb3506Eb731DCa78546244Ce2fC6",
         "dex": "aerodrome",
-        "liquidityUsd": 0.73,
+        "liquidityUsd": 0.72,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4FB60E5715A22Bdc29a1333d7894dA2AA735f5A9",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 10.73,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://ghsttoken.com",

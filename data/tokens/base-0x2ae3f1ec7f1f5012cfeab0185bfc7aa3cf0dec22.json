@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "cbETH",
   "name": "Coinbase Wrapped Staked ETH",
-  "scanned_at": "2026-09-12T09:26:19.282Z",
+  "scanned_at": "2026-09-13T10:22:10.961Z",
   "methodology_version": "0.2.1",
   "profile": "custodial-wrapped",
   "grade": {
@@ -104,7 +104,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "77231139471675629159301",
+    "totalSupply": "77343077738154559709655",
     "decimals": 18,
     "owner": null,
     "controlType": "safe",
@@ -117,12 +117,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 2250449.04,
+    "liquidityUsd": 2242838.1300000004,
     "pools": [
       {
         "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97",
         "dex": "hydrex",
-        "liquidityUsd": 1154465.44,
+        "liquidityUsd": 1130577.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -131,7 +131,7 @@
       {
         "pair": "0x8356320a0db330746136ba9e748a5d07c0f97eab2e50b4ded222569ff3da3b8e",
         "dex": "uniswap",
-        "liquidityUsd": 243390.06,
+        "liquidityUsd": 238678.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +140,7 @@
       {
         "pair": "0x257FCbAE4Ac6B26A02E4FC5e1a11e4174B5ce395",
         "dex": "pancakeswap",
-        "liquidityUsd": 107232.06,
+        "liquidityUsd": 105168.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +149,16 @@
       {
         "pair": "0xc715096EeCC3f4A0FDBfF055a3db2926adC83244",
         "dex": "alien-base",
-        "liquidityUsd": 126454.67,
+        "liquidityUsd": 124436.36,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x74A4bF2cad1b172cDc82a5Da7130C7A59EB5460b",
+        "dex": "quickswap",
+        "liquidityUsd": 139982.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,41 +167,32 @@
       {
         "pair": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
         "dex": "alien-base",
-        "liquidityUsd": 277565.66,
+        "liquidityUsd": 278998.62,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x74A4bF2cad1b172cDc82a5Da7130C7A59EB5460b",
-        "dex": "quickswap",
-        "liquidityUsd": 120383.78,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
         "pair": "0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91",
         "dex": "aerodrome",
-        "liquidityUsd": 153884.93,
+        "liquidityUsd": 155549.25,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0e7C44658FB8dcf8f9cbCE5DCee9fCe924D3D8a3",
-        "dex": "quickswap",
-        "liquidityUsd": 67072.44,
+        "pair": "0x076a29b387dda06ce850805147fb1817df8680a7985de8a06ba191a643adde36",
+        "dex": "uniswap",
+        "liquidityUsd": 69447.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 3.78,
+    "top10Pct": 3.77,
     "projectLinks": null
   },
   "notes": "Custodial liquid-staking wrapper (Coinbase). Scored under the methodology v0.2 custodial-wrapped profile — same semantics as cbBTC. Until an approved issuer-disclosure claim verifies, the profile caps at C (insufficient data).",

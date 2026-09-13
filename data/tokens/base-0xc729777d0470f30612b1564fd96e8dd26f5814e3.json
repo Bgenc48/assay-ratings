@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SAPIEN",
   "name": "Sapien",
-  "scanned_at": "2026-09-12T09:28:20.632Z",
+  "scanned_at": "2026-09-13T10:25:27.323Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 85,
-    "provisional": true,
+    "overall": 84.6,
+    "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,14 +77,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 42.3%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -93,6 +100,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +122,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 30550.01,
+    "verifiedSource": true,
+    "ageDays": 394,
+    "liquidityUsd": 33989.02999999999,
     "pools": [
       {
         "pair": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862",
         "dex": "aerodrome",
-        "liquidityUsd": 15276.08,
+        "liquidityUsd": 18773.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +138,7 @@
       {
         "pair": "0x682A02D5a32DDb09D1cf4791fB4124E0d4E17b67",
         "dex": "uniswap",
-        "liquidityUsd": 15094.48,
+        "liquidityUsd": 15078.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +147,7 @@
       {
         "pair": "0x9F12a2CB7ad24E7BeF73174677a171617C83D2EC",
         "dex": "aerodrome",
-        "liquidityUsd": 108.42,
+        "liquidityUsd": 107.96,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -144,7 +156,7 @@
       {
         "pair": "0xfa4397a512f0621657234b1374c8d7b879472c500f6f60f015df2c6c7c3273fb",
         "dex": "uniswap",
-        "liquidityUsd": 28.26,
+        "liquidityUsd": 28.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,25 +165,7 @@
       {
         "pair": "0x225Ca8cF2CE1d643F65722a4C7c747A19442B8Ef",
         "dex": "pancakeswap",
-        "liquidityUsd": 0.54,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x972efc5f24051e65555e9c2920fef1c6815cc3be77b193f6133729faa9b1489d",
-        "dex": "uniswap",
-        "liquidityUsd": 32.22,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x46eba17e5cf17a85a46959ec7766748ce0263d8991577ce4c8bf20e0e7d2dcb5",
-        "dex": "uniswap",
-        "liquidityUsd": 9.95,
+        "liquidityUsd": 0.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -185,9 +179,18 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5478e98c12401a10F1A82e8eD87Ca5f88FAc4c90",
+        "dex": "hydrex",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 42.29,
     "projectLinks": {
       "websites": [
         "https://earn.sapien.io/"

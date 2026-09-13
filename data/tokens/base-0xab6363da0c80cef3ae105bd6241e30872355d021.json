@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ROLL",
   "name": "Roll",
-  "scanned_at": "2026-09-12T09:28:14.075Z",
+  "scanned_at": "2026-09-13T10:25:07.769Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,14 +77,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 1.1%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -93,6 +100,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +122,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 1509171.0099999998,
+    "verifiedSource": true,
+    "ageDays": 242,
+    "liquidityUsd": 1442922.76,
     "pools": [
       {
         "pair": "0x0a04e1c94584a6f91228da6c0dba6bf0fbe5c9fa20ec6df57490494994489333",
         "dex": "uniswap",
-        "liquidityUsd": 1494502.39,
+        "liquidityUsd": 1428423.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +138,7 @@
       {
         "pair": "0xE47F7dbA68a00dc1A6f11458BcDFcA810E1CFEbF",
         "dex": "uniswap",
-        "liquidityUsd": 13076.2,
+        "liquidityUsd": 12925.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +147,7 @@
       {
         "pair": "0x595beA2246d5D296E0FEF76DfE3df2B07EC70E5f",
         "dex": "pancakeswap",
-        "liquidityUsd": 1588.99,
+        "liquidityUsd": 1567.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,18 +172,18 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb345f418f4238b68ec46d8f056389e959226e79fa2dbeda194577b4695a754ff",
+        "pair": "0x8e23893570dcd97f4fb6cfc7f625f24787a89dacb498d32c5eeaf310fdcaaf5e",
         "dex": "uniswap",
-        "liquidityUsd": 0.78,
+        "liquidityUsd": 5.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb27456267fa7c194dc262ff6a97debda8d6c6a1ee5eced83f471b21f59da0699",
+        "pair": "0xb345f418f4238b68ec46d8f056389e959226e79fa2dbeda194577b4695a754ff",
         "dex": "uniswap",
-        "liquidityUsd": 2.63,
+        "liquidityUsd": 0.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -187,7 +199,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 1.08,
     "projectLinks": {
       "websites": [
         "https://rollx.trade/",

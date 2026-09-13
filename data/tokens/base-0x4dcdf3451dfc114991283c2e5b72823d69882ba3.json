@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "Bots",
   "name": "Free Bots",
-  "scanned_at": "2026-09-12T09:30:03.597Z",
+  "scanned_at": "2026-09-13T10:28:37.728Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -94,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -116,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 239612.9,
+    "liquidityUsd": 255778.25,
     "pools": [
       {
         "pair": "0x9150f6e5faf636ae28e0c70634598d7ce9d7fd3931f7c0f5d7f75faf6016086c",
         "dex": "uniswap",
-        "liquidityUsd": 239549.95,
+        "liquidityUsd": 255716.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -132,16 +121,7 @@
       {
         "pair": "0x735b1fb2c6505b892140354d179c9c808d07c96b99ce2e8fcf03348c5085e810",
         "dex": "uniswap",
-        "liquidityUsd": 23.31,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x937ab19ff69d055f747843c7575baa776b7d1309085eb5fd2396e3415c00cbf0",
-        "dex": "uniswap",
-        "liquidityUsd": 2.24,
+        "liquidityUsd": 23.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,23 +130,14 @@
       {
         "pair": "0x8a024a33660a49f5fc89c9d6b8a359ad164cab8b058f9cc2acaedb256c20a103",
         "dex": "uniswap",
-        "liquidityUsd": 36.62,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x2915f5bba2699083093c33cf27a21acbf98ffd1c38ede837d87b4dadf0e53753",
-        "dex": "uniswap",
-        "liquidityUsd": 0.78,
+        "liquidityUsd": 38.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 12.48,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://freebots.lol/"

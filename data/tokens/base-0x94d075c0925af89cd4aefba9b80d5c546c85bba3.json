@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "BasedBBIAGBInu",
   "name": "BasedBaldBrianIAmGayBlueInu",
-  "scanned_at": "2026-09-12T09:30:14.487Z",
+  "scanned_at": "2026-09-13T10:28:48.431Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x52eb67a5c2d8310749b93990082e81dcccb62950766350c4b142157519a24e85"
+            "pair": "0x289cb2b11dcedafa0c3ac790c7c5fe4b7f59629b78ed0e61b412bfc613a02657"
           }
         }
       ]
@@ -83,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 4.9%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -123,28 +105,10 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 174.47,
+    "liquidityUsd": null,
     "pools": [
-      {
-        "pair": "0x19f0649a4544e34e4ca2217f49a1d3f3000f379250094ed3fe444c6ee0dbd98e",
-        "dex": "uniswap",
-        "liquidityUsd": 0.24,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x52eb67a5c2d8310749b93990082e81dcccb62950766350c4b142157519a24e85",
-        "dex": "uniswap",
-        "liquidityUsd": 174.23,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x289cb2b11dcedafa0c3ac790c7c5fe4b7f59629b78ed0e61b412bfc613a02657",
         "dex": "uniswap",
@@ -155,13 +119,8 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 4.87,
-    "projectLinks": {
-      "websites": [],
-      "socials": [
-        "https://x.com/BasedBBIAGBInu"
-      ]
-    }
+    "top10Pct": null,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false
