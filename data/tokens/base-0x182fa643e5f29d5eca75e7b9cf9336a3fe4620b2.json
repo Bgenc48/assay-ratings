@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "O",
   "name": "o1.exchange",
-  "scanned_at": "2026-09-13T10:22:51.524Z",
+  "scanned_at": "2026-09-14T10:46:36.379Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 110 days old; trust needs time (Provisional).",
+          "text": "Token is 111 days old; trust needs time (Provisional).",
           "evidence": "0x24e3481d362e1c0fee68c6aa93a0fd5e1b49e31c1c8ff1eb46cff8cd386f7ec3"
         }
       ]
@@ -95,7 +95,7 @@
         {
           "id": "holders.distributed",
           "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.9%.",
+          "text": "Top-10 unlabeled holders control 1.2%.",
           "evidence": null
         }
       ]
@@ -130,13 +130,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 110,
-    "liquidityUsd": 2269263.86,
+    "ageDays": 111,
+    "liquidityUsd": 1877634.3499999999,
     "pools": [
       {
         "pair": "0x8D479A4C680A76D4Ae03f10203569558405DDFFF",
         "dex": "aerodrome",
-        "liquidityUsd": 2267605.36,
+        "liquidityUsd": 1875575.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,7 +145,7 @@
       {
         "pair": "0xb86bd53946842df3bc1dbf7ff45dd97a6fc464837f2a6e14d6d099bed882a793",
         "dex": "uniswap",
-        "liquidityUsd": 1513.65,
+        "liquidityUsd": 1503.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -154,23 +154,23 @@
       {
         "pair": "0x67d5582dfa75ad2aeeda2d92257745ec518c53bef60abb866d099f37632d320f",
         "dex": "uniswap",
-        "liquidityUsd": 1.63,
+        "liquidityUsd": 1.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x76230d6a8c7e401b2c8eea45274cd47fad73f43984f9edf88dfe52aee1022436",
+        "pair": "0xdbAa44Cfb24d8D7E40fC519a0862B92C644FcF10",
         "dex": "uniswap",
-        "liquidityUsd": 143.22,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "liquidityUsd": 553.34,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0.87,
+    "top10Pct": 1.22,
     "projectLinks": {
       "websites": [
         "https://o1.exchange/",

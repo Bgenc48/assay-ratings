@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "SPCXc",
   "name": "Space Exploration Technologies Corp.",
-  "scanned_at": "2026-09-13T10:29:24.694Z",
+  "scanned_at": "2026-09-14T10:50:43.712Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 9.5%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -94,6 +107,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +119,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "741162641625",
+    "totalSupply": "887362641625",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -110,23 +128,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 942746.8,
+    "liquidityUsd": 887465.52,
     "pools": [
       {
         "pair": "0x127a12FC0953ab2ab89558c67Ba6D597D7140431",
         "dex": "uniswap",
-        "liquidityUsd": 31651.88,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcf5c5eb7533db5377a0d69e3a2599d90793e7fd97e6fa84c9420a387c605a476",
-        "dex": "uniswap",
-        "liquidityUsd": 1583.5,
+        "liquidityUsd": 31522.08,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +144,7 @@
       {
         "pair": "0xbff93728ac507c40699cc877be1e0f06f515daacdd36e4efa63664e986b705a4",
         "dex": "uniswap",
-        "liquidityUsd": 807.99,
+        "liquidityUsd": 821.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +153,16 @@
       {
         "pair": "0xE08e2EDA9ce04009274Cf6E6543F9A234Bd910D2",
         "dex": "uniswap",
-        "liquidityUsd": 222.48,
+        "liquidityUsd": 221.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x98326b5cf98ad98d4ea25860ce4d2270be08351e8799f35eecb94d7a10c471d7",
+        "dex": "uniswap",
+        "liquidityUsd": 108.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +171,7 @@
       {
         "pair": "0x840de1733A6843a85C578aa05A319b7391A946FF",
         "dex": "aerodrome",
-        "liquidityUsd": 63,
+        "liquidityUsd": 61.41,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -162,16 +180,16 @@
       {
         "pair": "0x0bf58fe0FAc935Ac69595c19B12Ba0d75E3F8c0E",
         "dex": "aerodrome",
-        "liquidityUsd": 906369.9,
+        "liquidityUsd": 851764.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x2382223eb3607d310848a911bf31619670ab4e818c05d3834dcc195760610f06",
+        "pair": "0x92dacb03f5422696c8a1b24fe89b9d42f45efea35c1dc043b24558c73c4d5567",
         "dex": "uniswap",
-        "liquidityUsd": 1220.89,
+        "liquidityUsd": 1212.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,14 +198,14 @@
       {
         "pair": "0xb0ffB2A01AbbDD54c0b227543260aa65e2b84909",
         "dex": "aerodrome",
-        "liquidityUsd": 827.16,
+        "liquidityUsd": 1753.08,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 9.51,
     "projectLinks": null
   },
   "notes": null,

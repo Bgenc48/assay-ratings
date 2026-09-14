@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LSK",
   "name": "Lisk",
-  "scanned_at": "2026-09-13T10:30:03.696Z",
+  "scanned_at": "2026-09-14T10:51:26.005Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 48.8,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "881238789351760199191408",
+    "totalSupply": "660511185496654489997679",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -112,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 359462.38,
+    "liquidityUsd": 348030.17,
     "pools": [
       {
         "pair": "0x275BE3a43B66516e532BcaA36eE453EDd47614ea",
         "dex": "aerodrome",
-        "liquidityUsd": 359280.23,
+        "liquidityUsd": 347877.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,23 +128,14 @@
       {
         "pair": "0x4c629bee930cc5a6c079f17f7789e22c8d009bdb802eebfcc7082d55e221c532",
         "dex": "uniswap",
-        "liquidityUsd": 182.15,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x95d91522B23C05568dEEbB8fBFF071D5F2410EA9",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
+        "liquidityUsd": 152.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 14.69,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

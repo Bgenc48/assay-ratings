@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "TSLAc",
   "name": "Tesla Inc.",
-  "scanned_at": "2026-09-13T10:29:26.571Z",
+  "scanned_at": "2026-09-14T10:50:45.846Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 8.2%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -94,6 +107,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +119,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "276330439025",
+    "totalSupply": "290293690078",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -110,32 +128,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 1570786.1199999996,
+    "liquidityUsd": 973532.4400000001,
     "pools": [
-      {
-        "pair": "0x469337fDcc5E8f38e2E4B670B04F57865D13a7BB",
-        "dex": "aerodrome",
-        "liquidityUsd": 858404.49,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8106bc6c2219b2035488e59726da92bcb68e6a16acfcfca5d3bd7a7a3b860acd",
-        "dex": "uniswap",
-        "liquidityUsd": 3580.59,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0xde9ac3fc95c869fea714cc9ae18f241d9cc1ea3567bcd2afa13aff243e031cca",
         "dex": "uniswap",
-        "liquidityUsd": 577.91,
+        "liquidityUsd": 581.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,34 +144,34 @@
       {
         "pair": "0x184932c3ac837fd453584f765f61e405a132d7da85184e750f306d25ce28fc8e",
         "dex": "uniswap",
-        "liquidityUsd": 99.97,
+        "liquidityUsd": 99.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x98252f4f9af10c43f8426475952842a23a8ead458aa333698e624da455c35797",
-        "dex": "uniswap",
-        "liquidityUsd": 319240.44,
+        "pair": "0x469337fDcc5E8f38e2E4B670B04F57865D13a7BB",
+        "dex": "aerodrome",
+        "liquidityUsd": 733146.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xcc810e9a3ea08b7316cc8adf71f6ced5b29f7dd70075b4e1f2abb40241867885",
+        "pair": "0xad58e65ac4c6310e61247930c7b5245b0bb6226b225b5b6512d8e4708b728551",
         "dex": "uniswap",
-        "liquidityUsd": 226815.67,
+        "liquidityUsd": 146551.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xa104a34249c0ff4ee3f44e47256e4a7d963952467a0c15803cf9094542f57a80",
+        "pair": "0x12e2b034e8913ec8d9d2a01071616f6d8d623e8144c824066c0e5e765799cbf4",
         "dex": "uniswap",
-        "liquidityUsd": 161966.92,
+        "liquidityUsd": 26841.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,18 +180,39 @@
       {
         "pair": "0x9BF31C32AEdFeC2d51B338055C54bF65F2b7e205",
         "dex": "0xB0C2D8A877A5B48607d9C89B6Ad761F36Bc79C88",
-        "liquidityUsd": 100.13,
+        "liquidityUsd": 98.24,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1f9775c5e062cfbcfc67eb93090beb9dfe5d0d03573025ef9ce1a7d0df193f81",
+        "dex": "uniswap",
+        "liquidityUsd": 58484.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x98252f4f9af10c43f8426475952842a23a8ead458aa333698e624da455c35797",
+        "dex": "uniswap",
+        "liquidityUsd": 7727.68,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 8.16,
     "projectLinks": {
-      "websites": [],
+      "websites": [
+        "https://basegold.io",
+        "https://basegold.io/whitepaper.pdf"
+      ],
       "socials": [
-        "https://x.com/cobie/status/1282699342768373762"
+        "https://twitter.com/BaseGold_BG"
       ]
     }
   },

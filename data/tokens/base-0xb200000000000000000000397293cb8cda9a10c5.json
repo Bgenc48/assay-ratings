@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "SNDKc",
   "name": "Sandisk Corporation",
-  "scanned_at": "2026-09-13T10:29:44.339Z",
+  "scanned_at": "2026-09-14T10:51:08.939Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 10.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -94,6 +107,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +119,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "65416648508",
+    "totalSupply": "84216648508",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -110,14 +128,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 838254.8999999999,
+    "liquidityUsd": 867504.99,
     "pools": [
       {
         "pair": "0x84ad31e01bd8276ec68c1d564f7769e0c6ae505e7e40d4baad5b474f41c35435",
         "dex": "uniswap",
-        "liquidityUsd": 1057.47,
+        "liquidityUsd": 1035.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +144,7 @@
       {
         "pair": "0x695c4a3600d015fe3e74c26d81e8c05ad7c9e99dc8ef5bf5607cd59cc2370f19",
         "dex": "uniswap",
-        "liquidityUsd": 593.87,
+        "liquidityUsd": 595.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,19 +153,10 @@
       {
         "pair": "0x5A8236f575471e7BfCA2C8462a200c28f737246E",
         "dex": "aerodrome",
-        "liquidityUsd": 824797.86,
+        "liquidityUsd": 857193.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x507b27040e73D67B72Bb6620A4feD123CD866c8a",
-        "dex": "equalizer",
-        "liquidityUsd": 18.95,
-        "lpBurnedPct": 0.04,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
@@ -160,18 +169,9 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4e99F2f698d4377B43EdE0884DC743C0625C49C1",
-        "dex": "uniswap",
-        "liquidityUsd": 5316.18,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x6c40bd989d2299c008a827abeaa1302078ead10ebfa332153b3e955a60d42bcb",
         "dex": "uniswap",
-        "liquidityUsd": 5496.08,
+        "liquidityUsd": 5407.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,14 +180,32 @@
       {
         "pair": "0x38fc557f195e7ffb0dbda685dba1f9f4ee96915f15ff170e8552786c5fc3b94a",
         "dex": "uniswap",
-        "liquidityUsd": 974.49,
+        "liquidityUsd": 944.42,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc8390fc82d55a7f2c6080b9b9eebdb2975961b922336578175fe7a785ab13f06",
+        "dex": "uniswap",
+        "liquidityUsd": 2327.21,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3a88da052290814c276bda948ad7a261bef014f72239724d138ffe506fc78f9b",
+        "dex": "uniswap",
+        "liquidityUsd": 1.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 9.97,
     "projectLinks": null
   },
   "notes": null,

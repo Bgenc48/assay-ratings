@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BSTONK",
   "name": "BaseStonk",
-  "scanned_at": "2026-09-13T10:29:29.486Z",
+  "scanned_at": "2026-09-14T10:50:49.106Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -82,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -110,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 337466.00999999995,
+    "liquidityUsd": 407791.5399999999,
     "pools": [
       {
         "pair": "0xc9786476d2492eb8ddb2ebf8b4b69e227e1f31397c790d877541ab0ed5cf5ee2",
         "dex": "uniswap",
-        "liquidityUsd": 260068.72,
+        "liquidityUsd": 284247.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +126,25 @@
       {
         "pair": "0xb5cd6e82b8fca463b1708af6fec2073c7c107f3e6c750a817c8f8885fb835748",
         "dex": "uniswap",
-        "liquidityUsd": 68670.01,
+        "liquidityUsd": 114199.73,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8b979d307e01b7f28853cd473168850c8302edde7dd8fd40aa14c0b3ca14d7b9",
+        "dex": "uniswap",
+        "liquidityUsd": 999.01,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf3248ad24da5f0ca7484276c9a997660c24ac5409bf472de0b96445349c772bb",
+        "dex": "uniswap",
+        "liquidityUsd": 99.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +153,7 @@
       {
         "pair": "0xEaFB61f7de3E69d073D8D8bf77804dA40cD7BC84",
         "dex": "uniswap",
-        "liquidityUsd": 4183.54,
+        "liquidityUsd": 3330.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,16 +162,7 @@
       {
         "pair": "0xd9C63D94287b3A0c5A2968EE98d094044fc3eD97",
         "dex": "9mm",
-        "liquidityUsd": 1007.64,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd00d61c92fc7b060a710a5a5d8a38b4b72ee2dad5822e8719999e677b277c175",
-        "dex": "uniswap",
-        "liquidityUsd": 2324.66,
+        "liquidityUsd": 1245.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,32 +171,23 @@
       {
         "pair": "0x94c83634eedfd78815160ecdbe93fb9ddfbd337974f767a4b33ee3a7d9621a9e",
         "dex": "uniswap",
-        "liquidityUsd": 894.35,
+        "liquidityUsd": 1049.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb7c709c38d3cd7ad07c14a998350f1a5505e02e2abb80cdce460576bccee48a5",
+        "pair": "0xd00d61c92fc7b060a710a5a5d8a38b4b72ee2dad5822e8719999e677b277c175",
         "dex": "uniswap",
-        "liquidityUsd": 317.09,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x882092404a2aca696d81199f096e6f7b8021a085c1de75684fa403e95f3c674e",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 2619.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 12.54,
     "projectLinks": {
       "websites": [
         "https://basestonk.io/"

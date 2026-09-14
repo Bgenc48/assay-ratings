@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LAPTOP",
   "name": "Laptop",
-  "scanned_at": "2026-09-13T10:29:41.838Z",
+  "scanned_at": "2026-09-14T10:51:05.963Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 64.2,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,13 +61,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x11d1e0c7009f6d92ed243902f2cc53b9a5fccca71d8b096021de25a91ad93572"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -77,9 +74,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 100.0% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -88,6 +92,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -107,21 +116,11 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 0.08,
-    "pools": [
-      {
-        "pair": "0x11d1e0c7009f6d92ed243902f2cc53b9a5fccca71d8b096021de25a91ad93572",
-        "dex": "uniswap",
-        "liquidityUsd": 0.08,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": null,
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": 99.96,
     "projectLinks": null
   },
   "notes": null,

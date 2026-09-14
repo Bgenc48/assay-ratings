@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "NOCK",
   "name": "Nock",
-  "scanned_at": "2026-09-13T10:25:10.988Z",
+  "scanned_at": "2026-09-14T10:48:02.887Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 48.2,
+    "overall": 46.1,
     "provisional": true,
     "badge": "Custodial",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -89,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "15161060852293548583984375",
+    "totalSupply": "15248623535154876708984375",
     "decimals": 16,
     "owner": "0xdc373766c03c645f04695224527ba7ef61fd4288",
     "controlType": "safe",
@@ -112,14 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 268,
-    "liquidityUsd": 2632847.36,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 2429640.6499999994,
     "pools": [
       {
         "pair": "0x85f1Aa3a70fEdd1C52705c15BAEd143e675CD626",
         "dex": "aerodrome",
-        "liquidityUsd": 1635457.64,
+        "liquidityUsd": 1525492.65,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -128,16 +123,7 @@
       {
         "pair": "0x064a5df2ecfcb7c05779b147aa38e4b0e91c966267fbdbc8cf16addd83636b13",
         "dex": "uniswap",
-        "liquidityUsd": 271845.58,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x42e0452e7ce8557b889af78f0fefff309f193028824910ebbce863a06c240033",
-        "dex": "uniswap",
-        "liquidityUsd": 100864.1,
+        "liquidityUsd": 253751.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +132,16 @@
       {
         "pair": "0xa7b77a07ec321aaf50bac4126bb85a742c9b87d3ec0665246549f8307385a842",
         "dex": "uniswap",
-        "liquidityUsd": 468642.29,
+        "liquidityUsd": 411152.75,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x42e0452e7ce8557b889af78f0fefff309f193028824910ebbce863a06c240033",
+        "dex": "uniswap",
+        "liquidityUsd": 91057.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +150,7 @@
       {
         "pair": "0x71A4a6F6ea5C26Ce486B7eD0D8723A897ef5AD9A",
         "dex": "uniswap",
-        "liquidityUsd": 74992.13,
+        "liquidityUsd": 70700.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +159,7 @@
       {
         "pair": "0xd316152008e12105594c32686b9d0401fd2c60ca4805c84f280069d218b771a8",
         "dex": "uniswap",
-        "liquidityUsd": 77255.56,
+        "liquidityUsd": 73879.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,29 +168,29 @@
       {
         "pair": "0x467a8846E7B54eAC5D4D1cb2FDC9B8752212Ff0e",
         "dex": "hydrex",
-        "liquidityUsd": 3146.11,
+        "liquidityUsd": 3141.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xaf698Bc8299E7c280BC4E821FC8fd7570d28a71A",
-        "dex": "uniswap",
-        "liquidityUsd": 643.95,
+        "pair": "0x8d15F9d33D9921D02217FB86Fd48Fbcd241b1A2a",
+        "dex": "aerodrome",
+        "liquidityUsd": 464.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 16.55,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://nockchain.org",
         "https://docs.nockchain.org",
-        "https://nockblocks.com",
-        "https://nockscan.net"
+        "https://nockscan.net",
+        "https://nockblocks.com"
       ],
       "socials": [
         "https://x.com/nockchain",
