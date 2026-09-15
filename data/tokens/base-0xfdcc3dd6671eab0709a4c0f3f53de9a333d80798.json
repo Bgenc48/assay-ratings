@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-09-14T10:48:38.909Z",
+  "scanned_at": "2026-09-15T10:12:28.724Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "798558841277210509933128",
+    "totalSupply": "686048891277210509933128",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -117,12 +117,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 97239.95,
+    "liquidityUsd": 97237.42,
     "pools": [
       {
         "pair": "0xada452F1340FAF2faA5CD6Cf5380f9585A624b8c",
         "dex": "uniswap",
-        "liquidityUsd": 148.79,
+        "liquidityUsd": 146.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -131,10 +131,19 @@
       {
         "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F",
         "dex": "aerodrome",
-        "liquidityUsd": 97091.16,
+        "liquidityUsd": 97091.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3e576D9559A5B2Da5733420C9bD946b0FB615995",
+        "dex": "aerodrome",
+        "liquidityUsd": null,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],

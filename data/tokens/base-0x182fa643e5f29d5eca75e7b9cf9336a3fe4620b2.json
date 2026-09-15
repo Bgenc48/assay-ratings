@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "O",
   "name": "o1.exchange",
-  "scanned_at": "2026-09-14T10:46:36.379Z",
+  "scanned_at": "2026-09-15T10:10:08.319Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -83,7 +83,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 111 days old; trust needs time (Provisional).",
+          "text": "Token is 112 days old; trust needs time (Provisional).",
           "evidence": "0x24e3481d362e1c0fee68c6aa93a0fd5e1b49e31c1c8ff1eb46cff8cd386f7ec3"
         }
       ]
@@ -130,13 +130,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 111,
-    "liquidityUsd": 1877634.3499999999,
+    "ageDays": 112,
+    "liquidityUsd": 1959362.3900000001,
     "pools": [
       {
         "pair": "0x8D479A4C680A76D4Ae03f10203569558405DDFFF",
         "dex": "aerodrome",
-        "liquidityUsd": 1875575.4,
+        "liquidityUsd": 1949586.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,7 +145,7 @@
       {
         "pair": "0xb86bd53946842df3bc1dbf7ff45dd97a6fc464837f2a6e14d6d099bed882a793",
         "dex": "uniswap",
-        "liquidityUsd": 1503.97,
+        "liquidityUsd": 1526.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -154,7 +154,7 @@
       {
         "pair": "0x67d5582dfa75ad2aeeda2d92257745ec518c53bef60abb866d099f37632d320f",
         "dex": "uniswap",
-        "liquidityUsd": 1.64,
+        "liquidityUsd": 1.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -163,7 +163,16 @@
       {
         "pair": "0xdbAa44Cfb24d8D7E40fC519a0862B92C644FcF10",
         "dex": "uniswap",
-        "liquidityUsd": 553.34,
+        "liquidityUsd": 555.79,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xdd758DdCC1448f780C135d780AA1539E4f8c3440",
+        "dex": "0x25e89b02F0C62b67622B4eBd629C882A73d8CAbc",
+        "liquidityUsd": 7692.06,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,

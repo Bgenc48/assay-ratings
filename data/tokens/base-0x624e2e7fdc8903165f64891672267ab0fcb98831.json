@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "SOSO",
   "name": "SoSoValue",
-  "scanned_at": "2026-09-14T10:47:01.023Z",
+  "scanned_at": "2026-09-15T10:10:40.274Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 50.8,
+    "overall": 48.8,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": 75,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.3%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -121,12 +114,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 149705.69999999998,
+    "liquidityUsd": 149843.82000000004,
     "pools": [
       {
         "pair": "0x29183f918920a2AEF0115A9C7374945589968aEa",
         "dex": "uniswap",
-        "liquidityUsd": 90075.32,
+        "liquidityUsd": 90079.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +128,16 @@
       {
         "pair": "0x636da53e0251b3cb0b4d10dbaff488b294f97bd5212b7e2a7c1bc3fb57fd6e31",
         "dex": "uniswap",
-        "liquidityUsd": 59338.06,
+        "liquidityUsd": 59272.39,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xaF1fCF45DF716E70c967f34710cf3b44D0cB5c6e",
+        "dex": "uniswap",
+        "liquidityUsd": 1.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,16 +146,7 @@
       {
         "pair": "0x433b0700020713ccf50b9c3ae6a39be6e13ee4d12b6f5ed5656cf3f652982ea0",
         "dex": "uniswap",
-        "liquidityUsd": 0.33,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x17ed8b5358AD5dBF6EF5f07Cf5e398eA40579116",
-        "dex": "hydrex",
-        "liquidityUsd": 0.24,
+        "liquidityUsd": 0.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,31 +155,39 @@
       {
         "pair": "0x8f314c4B7859624e27d61d8Dc2774B6d974FD61B",
         "dex": "aerodrome",
-        "liquidityUsd": 2.3,
+        "liquidityUsd": 2.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0xB10807e07446539095Ec70fD771aC26F80841ef8",
+        "dex": "0x7456837fb64e6e3F6F51D5719CC8Be9aE3870534",
+        "liquidityUsd": 200.64,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0xCd41410e1825b003612012d5f9cfa9126187C014",
         "dex": "alien-base",
-        "liquidityUsd": 289.45,
+        "liquidityUsd": 287.4,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 7.25,
+    "top10Pct": 10.64,
     "projectLinks": {
       "websites": [
-        "https://gr4ys.gr3y.space/",
-        "https://www.youtube.com/@ZetanMedia"
+        "https://basegold.io",
+        "https://basegold.io/whitepaper.pdf"
       ],
       "socials": [
-        "https://x.com/ZetanOutreach",
-        "https://discord.gg/QBUZjqtBVn"
+        "https://twitter.com/BaseGold_BG"
       ]
     }
   },

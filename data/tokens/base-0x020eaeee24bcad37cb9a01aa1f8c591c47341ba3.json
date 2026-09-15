@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "SETZ",
   "name": "SETZ",
-  "scanned_at": "2026-09-14T10:50:26.886Z",
+  "scanned_at": "2026-09-15T10:14:00.029Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -94,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -116,30 +105,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 123158.47,
+    "liquidityUsd": 116165.84,
     "pools": [
       {
         "pair": "0x2d6474a460ac27ffc6cb262243173ac25036c44e3c81113ed786cec7a970814c",
         "dex": "uniswap",
-        "liquidityUsd": 123156.41,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd0eaa16518796b70a5676f8c759f7c3040da987bd4a18c8b0b644fe482198df3",
-        "dex": "uniswap",
-        "liquidityUsd": 2.06,
+        "liquidityUsd": 116165.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 14.38,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://setz.one"

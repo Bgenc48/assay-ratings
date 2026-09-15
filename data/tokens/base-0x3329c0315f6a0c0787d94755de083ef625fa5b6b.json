@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "VLTX",
   "name": "Valtherix AI",
-  "scanned_at": "2026-09-14T10:48:46.210Z",
+  "scanned_at": "2026-09-15T10:12:35.883Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B",
-    "overall": 77.5,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -62,17 +62,14 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
+          "id": "liq.none",
           "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x438419b7c3afE4d850b9499BEa7A9Fd20c8FcDfE"
-          }
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -113,17 +110,7 @@
     "verifiedSource": null,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [
-      {
-        "pair": "0x438419b7c3afE4d850b9499BEa7A9Fd20c8FcDfE",
-        "dex": "sushiswap",
-        "liquidityUsd": 0,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "pools": [],
     "top10Pct": null,
     "projectLinks": null
   },

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BSTONK",
   "name": "BaseStonk",
-  "scanned_at": "2026-09-14T10:50:49.106Z",
+  "scanned_at": "2026-09-15T10:14:12.744Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -82,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -110,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 407791.5399999999,
+    "liquidityUsd": 410829.89999999997,
     "pools": [
       {
         "pair": "0xc9786476d2492eb8ddb2ebf8b4b69e227e1f31397c790d877541ab0ed5cf5ee2",
         "dex": "uniswap",
-        "liquidityUsd": 284247.97,
+        "liquidityUsd": 285622.81,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +126,7 @@
       {
         "pair": "0xb5cd6e82b8fca463b1708af6fec2073c7c107f3e6c750a817c8f8885fb835748",
         "dex": "uniswap",
-        "liquidityUsd": 114199.73,
+        "liquidityUsd": 115244.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +135,7 @@
       {
         "pair": "0x8b979d307e01b7f28853cd473168850c8302edde7dd8fd40aa14c0b3ca14d7b9",
         "dex": "uniswap",
-        "liquidityUsd": 999.01,
+        "liquidityUsd": 998.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +144,7 @@
       {
         "pair": "0xf3248ad24da5f0ca7484276c9a997660c24ac5409bf472de0b96445349c772bb",
         "dex": "uniswap",
-        "liquidityUsd": 99.54,
+        "liquidityUsd": 97.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +153,7 @@
       {
         "pair": "0xEaFB61f7de3E69d073D8D8bf77804dA40cD7BC84",
         "dex": "uniswap",
-        "liquidityUsd": 3330.54,
+        "liquidityUsd": 3887.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,16 +162,7 @@
       {
         "pair": "0xd9C63D94287b3A0c5A2968EE98d094044fc3eD97",
         "dex": "9mm",
-        "liquidityUsd": 1245.94,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x94c83634eedfd78815160ecdbe93fb9ddfbd337974f767a4b33ee3a7d9621a9e",
-        "dex": "uniswap",
-        "liquidityUsd": 1049.79,
+        "liquidityUsd": 1282.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,14 +171,23 @@
       {
         "pair": "0xd00d61c92fc7b060a710a5a5d8a38b4b72ee2dad5822e8719999e677b277c175",
         "dex": "uniswap",
-        "liquidityUsd": 2619.02,
+        "liquidityUsd": 2642.34,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x94c83634eedfd78815160ecdbe93fb9ddfbd337974f767a4b33ee3a7d9621a9e",
+        "dex": "uniswap",
+        "liquidityUsd": 1054.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 12.54,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://basestonk.io/"

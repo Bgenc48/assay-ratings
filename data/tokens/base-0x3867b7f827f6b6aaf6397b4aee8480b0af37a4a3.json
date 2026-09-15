@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "CHUS",
   "name": "CHUS",
-  "scanned_at": "2026-09-14T10:50:56.465Z",
+  "scanned_at": "2026-09-15T10:14:16.828Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -88,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 100.0% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -106,16 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -133,21 +110,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 380943.3,
+    "liquidityUsd": 371732.07,
     "pools": [
       {
         "pair": "0xD2Dd397A086A304C6f545936206aB151641977c6",
         "dex": "sushiswap",
-        "liquidityUsd": 380943.3,
+        "liquidityUsd": 371732.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 99.97,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,
