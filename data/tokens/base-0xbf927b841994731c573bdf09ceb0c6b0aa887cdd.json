@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "VELVET",
   "name": "Velvet",
-  "scanned_at": "2026-09-15T10:10:05.485Z",
+  "scanned_at": "2026-09-16T10:02:14.998Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 57.1,
+    "overall": 55,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "13758979076511780000000000",
+    "totalSupply": "13805732077511780000000000",
     "decimals": 18,
     "owner": "0x8d2de8d2f73f1f4cab472ac9a881c9b123c79627",
     "controlType": "unknown",
@@ -107,12 +107,12 @@
     "bridge": null,
     "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 1014786.6899999998,
+    "liquidityUsd": 1004060.14,
     "pools": [
       {
         "pair": "0xF579B16f9b1A4aCc872D34a8141fbbD36C0ce10C",
         "dex": "aerodrome",
-        "liquidityUsd": 9411.9,
+        "liquidityUsd": 7501.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +121,7 @@
       {
         "pair": "0xDc9e387d65D036f0663E9B9aC4a6267f866075eA",
         "dex": "pancakeswap",
-        "liquidityUsd": 7106.54,
+        "liquidityUsd": 7045.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +130,16 @@
       {
         "pair": "0x6b0F53cbD9272D8117e9535FE25371dedF39a1bE",
         "dex": "aerodrome",
-        "liquidityUsd": 997462.69,
+        "liquidityUsd": 988898.6,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x206cc9a77e4f49168968087382d53abd383743f09231cc69d2b3f7cfd9929e18",
+        "dex": "uniswap",
+        "liquidityUsd": 324.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +148,7 @@
       {
         "pair": "0x77D190B97B20161345AC718c93f530E8a7A4800b",
         "dex": "hydrex",
-        "liquidityUsd": 325.34,
+        "liquidityUsd": 147,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,25 +157,16 @@
       {
         "pair": "0xD65D88c80007E665bE115FFB88D206C3449ED111",
         "dex": "aerodrome",
-        "liquidityUsd": 125.61,
+        "liquidityUsd": 121.53,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x206cc9a77e4f49168968087382d53abd383743f09231cc69d2b3f7cfd9929e18",
-        "dex": "uniswap",
-        "liquidityUsd": 331.55,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x1942Bc99cDbEA8e7Ed7027d8FdD4a92c0A20090b",
         "dex": "uniswap",
-        "liquidityUsd": 0.1,
+        "liquidityUsd": 0.09,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -175,14 +175,14 @@
       {
         "pair": "0x5027d7d84cde96c3ec944d854e914a557491440f61a03148caac1fd2835ec403",
         "dex": "uniswap",
-        "liquidityUsd": 22.96,
+        "liquidityUsd": 21.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 19.19,
+    "top10Pct": 20.21,
     "projectLinks": {
       "websites": [
         "https://velvet.capital",

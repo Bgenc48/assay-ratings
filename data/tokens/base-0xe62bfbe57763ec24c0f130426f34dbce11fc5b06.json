@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TITN",
   "name": "Titan",
-  "scanned_at": "2026-09-15T10:12:12.573Z",
+  "scanned_at": "2026-09-16T10:04:58.850Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B",
-    "overall": 75.5,
+    "overall": 77.5,
     "provisional": true,
     "badge": "Custodial",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 8.6%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -96,7 +103,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "931790949528506000000000000",
+    "totalSupply": "931791032993287000000000000",
     "decimals": 18,
     "owner": "0x68fbde17200f69d0d17e2a858c79c264ee7bcea9",
     "controlType": "safe",
@@ -107,12 +114,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 242054.38999999998,
+    "liquidityUsd": 242697.93999999997,
     "pools": [
       {
         "pair": "0x611865e603862a3D1cd29146458564a684e1cBbb",
         "dex": "aerodrome",
-        "liquidityUsd": 212358.83,
+        "liquidityUsd": 212908.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,14 +128,36 @@
       {
         "pair": "0x50b5d6f6ACCDCc7Dc048de35B2B9Ba5FdD5a283e",
         "dex": "aerodrome",
-        "liquidityUsd": 29695.56,
+        "liquidityUsd": 29770.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfe2313df3e27aD2608B16230695d835E18d409f4",
+        "dex": "aerodrome",
+        "liquidityUsd": 13.38,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe63c331771CF2c7C35DdAf65dCFb5f62041eEeE4",
+        "dex": "aerodrome",
+        "liquidityUsd": 5.52,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x2c187aa1f4285034e73b4e4018420424405547f2",
+          "sharePct": 99.99
+        }
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 8.56,
     "projectLinks": null
   },
   "notes": null,

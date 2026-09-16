@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "noice",
   "name": "noice",
-  "scanned_at": "2026-09-15T10:11:08.080Z",
+  "scanned_at": "2026-09-16T10:03:30.846Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 64.2,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 52.0% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -119,14 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 244421.6,
+    "liquidityUsd": 235633.26,
     "pools": [
       {
         "pair": "0xeFF7f8Fe083d7a446717B992bf84391253e54789",
         "dex": "uniswap",
-        "liquidityUsd": 237741.62,
+        "liquidityUsd": 229241.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +123,7 @@
       {
         "pair": "0x9Ea86AA9f7203da077371bb2F82ec555E6E22f81",
         "dex": "aerodrome",
-        "liquidityUsd": 2998.04,
+        "liquidityUsd": 2919.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +132,7 @@
       {
         "pair": "0x9728C6640603C18631754E1f46379Ae392b9B777",
         "dex": "aerodrome",
-        "liquidityUsd": 2365.88,
+        "liquidityUsd": 2251.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +141,7 @@
       {
         "pair": "0x663c709a765297e8dc71ef8cd112aad38705c3fe3cf4316b04fb5a849c46fae4",
         "dex": "uniswap",
-        "liquidityUsd": 1245.76,
+        "liquidityUsd": 1151.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +150,7 @@
       {
         "pair": "0x5984BC5CA90388Aac221147Ca9DA419A2a458A9F",
         "dex": "hydrex",
-        "liquidityUsd": 70.3,
+        "liquidityUsd": 68.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,7 +166,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 52.03,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://noice.so/noice",

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MEY",
   "name": "Mey Network",
-  "scanned_at": "2026-09-15T10:11:00.436Z",
+  "scanned_at": "2026-09-16T10:03:22.214Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 61.3,
+    "overall": 64.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 47.8%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -114,14 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 268168.86,
+    "liquidityUsd": 267975.31000000006,
     "pools": [
       {
         "pair": "0x77310Fc8950dd83a035769018f2a05b1E989a52a",
         "dex": "uniswap",
-        "liquidityUsd": 136090.69,
+        "liquidityUsd": 135890.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +123,7 @@
       {
         "pair": "0xAe37030302643Ee121DFA50E76b27b90Fac9e872",
         "dex": "aerodrome",
-        "liquidityUsd": 127503.79,
+        "liquidityUsd": 127442.24,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -139,7 +132,7 @@
       {
         "pair": "0xa3116c935b8fe346a8F42D7eFC4C6e7a52947e48",
         "dex": "aerodrome",
-        "liquidityUsd": 4038.77,
+        "liquidityUsd": 4107.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,27 +141,23 @@
       {
         "pair": "0x8cd2D9238574105eb25a1b0A00e9B33Eb15Cc165",
         "dex": "uniswap",
-        "liquidityUsd": 400.11,
+        "liquidityUsd": 399.03,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x22a3de4a53ad2e984aaf446365e0fd976d8704f3",
-          "sharePct": 84150.43
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xa0aF7695C02bCB9318D2253D039A59382c0C675C",
         "dex": "uniswap",
-        "liquidityUsd": 135.5,
+        "liquidityUsd": 136.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 47.8,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://mey.network/",

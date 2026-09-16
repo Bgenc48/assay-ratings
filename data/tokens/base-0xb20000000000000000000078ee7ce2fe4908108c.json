@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "NVDAc",
   "name": "NVIDIA Corporation",
-  "scanned_at": "2026-09-15T10:13:09.800Z",
+  "scanned_at": "2026-09-16T10:07:12.046Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "2001291807728",
+    "totalSupply": "1943418614518",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -112,12 +112,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 2541636.46,
+    "liquidityUsd": 2917832.3300000005,
     "pools": [
       {
         "pair": "0x853F5f1B92b16714Fe6CDA67CAad0856B83C7ab9",
         "dex": "aerodrome",
-        "liquidityUsd": 2297524.89,
+        "liquidityUsd": 2318085.97,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x41084f2d35b54dc0d070fbf76aa52c46f5d9c7e36c163252064b6b184d9429d9",
+        "dex": "uniswap",
+        "liquidityUsd": 391828.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,16 +135,7 @@
       {
         "pair": "0xb21769526e3a0814752628ec6c6e08efc883a025a18c64ee3ad376aa67728a18",
         "dex": "uniswap",
-        "liquidityUsd": 124526.32,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe82fa069a5e01a6dc36c6736b5de4f721d726291b080c69b48e21b9c5a11a2ad",
-        "dex": "uniswap",
-        "liquidityUsd": 60144.81,
+        "liquidityUsd": 125157.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +144,7 @@
       {
         "pair": "0x8e740D5Fa742B763cD82159894b9919eD57E4f70",
         "dex": "uniswap",
-        "liquidityUsd": 19208.41,
+        "liquidityUsd": 42855.66,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +153,7 @@
       {
         "pair": "0x20E5fAd2661Ee9Eb0c04824524030AF31943B62D",
         "dex": "aerodrome",
-        "liquidityUsd": 13954.14,
+        "liquidityUsd": 13610.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +162,7 @@
       {
         "pair": "0x60661b315553EB81872deEA9a66d567Cf0CCd33B",
         "dex": "uniswap",
-        "liquidityUsd": 22522.04,
+        "liquidityUsd": 22523.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,7 +171,7 @@
       {
         "pair": "0x3e8126A4a5DF68DD9cCA675E8dc925B5FED70CA9",
         "dex": "hydrex",
-        "liquidityUsd": 3514.34,
+        "liquidityUsd": 3532.54,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,7 +180,7 @@
       {
         "pair": "0x3a9BA3Db0DBe1F46b562f3138687d9E6333b894d",
         "dex": "hydrex",
-        "liquidityUsd": 241.51,
+        "liquidityUsd": 238.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

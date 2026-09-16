@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "QUID",
   "name": "Squid",
-  "scanned_at": "2026-09-15T10:12:34.877Z",
+  "scanned_at": "2026-09-16T10:05:53.498Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 85,
+    "overall": 82.9,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,14 +77,28 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 79 days old; trust needs time (Provisional).",
+          "evidence": "0xfa597bef31cc47432f9c43411d582f8c5306bcd77b6fa1e14b25197aeb83b12e"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 8.2%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -93,6 +107,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +129,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 803788.5499999999,
+    "verifiedSource": true,
+    "ageDays": 79,
+    "liquidityUsd": 803202.13,
     "pools": [
       {
         "pair": "0x07C4bc0F5fb6Cb069124DF3e1aE0B8fD8148ccC4",
         "dex": "pancakeswap",
-        "liquidityUsd": 795733.2,
+        "liquidityUsd": 797897.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +145,7 @@
       {
         "pair": "0x8b289ED9bb4fCf49e358a2EbC5bA2cC60A296c96",
         "dex": "aerodrome",
-        "liquidityUsd": 8026.22,
+        "liquidityUsd": 5270.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +154,16 @@
       {
         "pair": "0xebfd2adb5c3fb742a662a341aead1783e4f1d539fcbb2d68c1d44703291759f1",
         "dex": "uniswap",
-        "liquidityUsd": 23.89,
+        "liquidityUsd": 23.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3f1ae06a1d28284842fa057757e9a5eea582c397ba1b1be26857b8915d39c06c",
+        "dex": "uniswap",
+        "liquidityUsd": 3.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,14 +172,32 @@
       {
         "pair": "0xC20a862e2f7b49F42Ab635fce40cfDeD9E55E088",
         "dex": "aerodrome",
-        "liquidityUsd": 5.24,
+        "liquidityUsd": 5.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4b6ac150059f01b438a079278eccba2553d730c5468d0179bd3b5619ae5e9a97",
+        "dex": "uniswap",
+        "liquidityUsd": 0.91,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x73aa3313f70fF6Ae2Ae7Be054A2CcFb590803122",
+        "dex": "pancakeswap",
+        "liquidityUsd": 0.41,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 8.23,
     "projectLinks": null
   },
   "notes": null,

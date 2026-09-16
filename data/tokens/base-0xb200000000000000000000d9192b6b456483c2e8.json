@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "AMZNc",
   "name": "Amazon.com Inc.",
-  "scanned_at": "2026-09-15T10:14:07.676Z",
+  "scanned_at": "2026-09-16T10:08:40.208Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "566774273759",
+    "totalSupply": "549774273759",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -112,12 +112,39 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1099758.5499999998,
+    "liquidityUsd": 1166300.7,
     "pools": [
+      {
+        "pair": "0xd03Bc8C7F2FAedCe2aac81bF0444AEA08Ea06E9b",
+        "dex": "aerodrome",
+        "liquidityUsd": 1142097.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x7F030e5fD657795C0937a3e8af2929Fd90DA91C7",
         "dex": "uniswap",
-        "liquidityUsd": 12055.9,
+        "liquidityUsd": 11940.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0711662b92f3b79f0a9a7c69d5d84be3cab00d32071dbdb109e38e42e00b2415",
+        "dex": "uniswap",
+        "liquidityUsd": 9634.58,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8f40d8bc5e1a90722a75eb95727a86c5613502fe2df7b222c84bb056a42372e2",
+        "dex": "uniswap",
+        "liquidityUsd": 193.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,16 +153,7 @@
       {
         "pair": "0xb84a41d61d1742294ac331ab664d31bfdb7fd95787d4e2d8e7d8f9c2e3c4fe34",
         "dex": "uniswap",
-        "liquidityUsd": 2207.18,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x267b7b9a2641ab0cd651f5f142d2114f21976719c5b0fb4e559700d06369629f",
-        "dex": "uniswap",
-        "liquidityUsd": 99.95,
+        "liquidityUsd": 2105.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,16 +162,16 @@
       {
         "pair": "0x893d654ad170fe1c68ac919814423d1e795d780c841b9aa4e8df2cdef79bc635",
         "dex": "uniswap",
-        "liquidityUsd": 130.57,
+        "liquidityUsd": 228.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xd03Bc8C7F2FAedCe2aac81bF0444AEA08Ea06E9b",
-        "dex": "aerodrome",
-        "liquidityUsd": 1010594.39,
+        "pair": "0x267b7b9a2641ab0cd651f5f142d2114f21976719c5b0fb4e559700d06369629f",
+        "dex": "uniswap",
+        "liquidityUsd": 99.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -167,36 +185,10 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4bE684f77419999AA3E1162D25D9aE6FF64C05a0",
-        "dex": "uniswap",
-        "liquidityUsd": 41567.75,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x795cd8715CC2C939b1A921327F43bEFA5F7FC2c4",
-        "dex": "uniswap",
-        "liquidityUsd": 33101.44,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
       }
     ],
     "top10Pct": null,
-    "projectLinks": {
-      "websites": [
-        "https://deliveryguy.fun"
-      ],
-      "socials": [
-        "https://x.com/StonksDGUY",
-        "https://t.me/StonksDGUY"
-      ]
-    }
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

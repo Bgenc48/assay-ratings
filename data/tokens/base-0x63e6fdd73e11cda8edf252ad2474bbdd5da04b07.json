@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "LAPTOP",
   "name": "LAPTOP",
-  "scanned_at": "2026-09-15T10:14:18.826Z",
+  "scanned_at": "2026-09-16T10:08:55.646Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xe63fe163f1f8cdb6c5e5ffcc8de599a4e57355819ccea91ce0194501bc69b905"
+            "pair": "0x4c75680521bfb2682c4dc755b841b0eff4dce3b333e1e51abae513954cc8ff85"
           }
         }
       ]
@@ -109,26 +109,8 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 0.35000000000000003,
+    "liquidityUsd": null,
     "pools": [
-      {
-        "pair": "0x06d7cf95ff15837eaf1aabaa5965daae5511e5c7d88118529f1dab040ff07d84",
-        "dex": "uniswap",
-        "liquidityUsd": 0.07,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe63fe163f1f8cdb6c5e5ffcc8de599a4e57355819ccea91ce0194501bc69b905",
-        "dex": "uniswap",
-        "liquidityUsd": 0.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x4c75680521bfb2682c4dc755b841b0eff4dce3b333e1e51abae513954cc8ff85",
         "dex": "uniswap",

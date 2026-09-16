@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "JitoSOL",
   "name": "Jito Staked SOL",
-  "scanned_at": "2026-09-15T10:11:14.034Z",
+  "scanned_at": "2026-09-16T10:03:35.478Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 59.2,
+    "overall": 55.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 60,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.latent-mint",
           "severity": "warn",
@@ -83,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 3.4%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -123,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 14816992.089999998,
+    "liquidityUsd": 14412761.75,
     "pools": [
       {
         "pair": "0xe2B8c33AE97658ceaD06AfD47c7F3857e5851871",
         "dex": "uniswap",
-        "liquidityUsd": 13667778.18,
+        "liquidityUsd": 13309062.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,23 +121,14 @@
       {
         "pair": "0x155613e7A75a2aB73500f9B2c45910469500FF56",
         "dex": "pancakeswap",
-        "liquidityUsd": 1149206.63,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xebbb033f3f6850d9e8b0d5dcd685892db4b37013767b7acfa3cc4bbc630155c3",
-        "dex": "uniswap",
-        "liquidityUsd": 7.28,
+        "liquidityUsd": 1103698.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 3.43,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

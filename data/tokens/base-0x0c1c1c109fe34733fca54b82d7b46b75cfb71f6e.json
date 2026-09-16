@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CHIP",
   "name": "Chip",
-  "scanned_at": "2026-09-15T10:12:58.415Z",
+  "scanned_at": "2026-09-16T10:06:54.283Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "110751673384351000000000000",
+    "totalSupply": "100244497937438000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -114,21 +114,39 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 409111.54,
+    "liquidityUsd": 89785.76000000001,
     "pools": [
       {
         "pair": "0x592E01EDEb601016a20A3E6cD5bF533eBBadBC8b",
         "dex": "aerodrome",
-        "liquidityUsd": 409110.98,
+        "liquidityUsd": 89744.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xc05c8e8c8375aabe8f20fdd959ead3f99ee83d21a5188d1d1b51cee1393a7ac4",
+        "pair": "0xfc3fe84e1bbd3f03ad939456fd7d096c5823ef5da7d4383c2e166cb9a8f07417",
         "dex": "uniswap",
-        "liquidityUsd": 0.56,
+        "liquidityUsd": 38.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5D4d2Edd62A452089bd3Afe157d14F9BeCed051D",
+        "dex": "aerodrome",
+        "liquidityUsd": 0,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x45B8643880D8FeF3fd7a21229C3b41F0F6632676",
+        "dex": "aerodrome",
+        "liquidityUsd": 2.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
