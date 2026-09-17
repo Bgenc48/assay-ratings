@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ZEN",
   "name": "Horizen",
-  "scanned_at": "2026-09-16T10:03:24.342Z",
+  "scanned_at": "2026-09-17T10:06:22.262Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 46.4,
-    "provisional": true,
+    "overall": 47.1,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,14 +72,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 52.0% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -92,6 +99,16 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
     },
     {
       "id": "cap.claim-light",
@@ -112,14 +129,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 3635688.76,
+    "verifiedSource": true,
+    "ageDays": 457,
+    "liquidityUsd": 3759931.9799999995,
     "pools": [
       {
         "pair": "0x0392B12a1cEb0cd13af5Ea448CF5586EA609852D",
         "dex": "aerodrome",
-        "liquidityUsd": 2214069.58,
+        "liquidityUsd": 2317028.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +145,7 @@
       {
         "pair": "0x47f9e291bb766Fc307Ad7BBa4f29f3Eab6A97101",
         "dex": "aerodrome",
-        "liquidityUsd": 1403512.49,
+        "liquidityUsd": 1423940.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +154,7 @@
       {
         "pair": "0x91a6E9dc63cab9e52f29F712D688E845dD01a5fe",
         "dex": "uniswap",
-        "liquidityUsd": 8207.51,
+        "liquidityUsd": 8587.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +163,7 @@
       {
         "pair": "0xbFA5184f90B071C34C85d065b8c7877617248ef7",
         "dex": "aerodrome",
-        "liquidityUsd": 4669.61,
+        "liquidityUsd": 4792,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +172,7 @@
       {
         "pair": "0x415233bF9B9156d4f777d580E67C0a4e398A84C3",
         "dex": "hydrex",
-        "liquidityUsd": 3939.59,
+        "liquidityUsd": 4262.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +181,7 @@
       {
         "pair": "0xD1291750B30ca46587aA533C68a470F13bE5cbC9",
         "dex": "aerodrome",
-        "liquidityUsd": 1138.01,
+        "liquidityUsd": 1188.63,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -173,23 +190,23 @@
       {
         "pair": "0xb003177E36ee0b8d3624DD2c5AF1CA15b175c8B9",
         "dex": "pancakeswap",
-        "liquidityUsd": 59.7,
+        "liquidityUsd": 64.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x99D5434Eb5FC88D00311Ad89BC7946BD439Ba14d",
+        "pair": "0x699e3dFc812b1d9Cc34770CFA3C6ef9925bC1756",
         "dex": "aerodrome",
-        "liquidityUsd": 92.27,
+        "liquidityUsd": 67.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 52,
     "projectLinks": {
       "websites": [
         "https://www.horizen.io/"

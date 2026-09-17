@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "MSFTc",
   "name": "Microsoft Corporation",
-  "scanned_at": "2026-09-16T10:08:51.229Z",
+  "scanned_at": "2026-09-17T10:10:36.008Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 7.7%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -94,6 +107,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +119,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "272229243966",
+    "totalSupply": "254629243966",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -110,14 +128,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 936125.42,
+    "liquidityUsd": 948337.78,
     "pools": [
       {
         "pair": "0xD73cBeCC0F62C7C1704332ED119514d6d84DC607",
         "dex": "uniswap",
-        "liquidityUsd": 12207.29,
+        "liquidityUsd": 12118.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +144,16 @@
       {
         "pair": "0x7103eB3c9590d1281f7dc03b2A9EE27C39dF5D54",
         "dex": "aerodrome",
-        "liquidityUsd": 884887.82,
+        "liquidityUsd": 902944.45,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3f420f90308a4aa4534f33e16005ff2baa6becc2fa3b81ba67919ca36c60f3bf",
+        "dex": "uniswap",
+        "liquidityUsd": 99.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,25 +162,25 @@
       {
         "pair": "0x890da4010ac1731403ea6d718638bec83f91638a1f6730c1734908a973b89b66",
         "dex": "uniswap",
-        "liquidityUsd": 2779.95,
+        "liquidityUsd": 2824.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4cA5700B8094c5605d23CEC7e6E7946ee02B0D00",
+        "dex": "equalizer",
+        "liquidityUsd": 19.91,
+        "lpBurnedPct": 0.02,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
         "pair": "0x163c9d517BB963E441c63efB285BC6616e05CE43",
         "dex": "uniswap",
-        "liquidityUsd": 17030.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9D9788D7CE70b08C86796241f24e7f390883034a",
-        "dex": "uniswap",
-        "liquidityUsd": 82.5,
+        "liquidityUsd": 16894.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +189,7 @@
       {
         "pair": "0x4cbf20a1be5ca97216d0b63e0dda52f27e2423ee5aa867e3502ee3e1923af11d",
         "dex": "uniswap",
-        "liquidityUsd": 7046.68,
+        "liquidityUsd": 6941.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,23 +198,14 @@
       {
         "pair": "0xcda6dc0ec17d9665a3f18d4613a24dee0ab892de2f9aa9af714e6426def704dd",
         "dex": "uniswap",
-        "liquidityUsd": 6518.36,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe72a08373781c0b44f0cabe6ece14907a3d7fb4aaba92ec30d794ac51fb42c28",
-        "dex": "uniswap",
-        "liquidityUsd": 5572.54,
+        "liquidityUsd": 6495.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 7.68,
     "projectLinks": {
       "websites": [
         "https://bluescreenonbase.com/",

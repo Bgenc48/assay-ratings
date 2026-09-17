@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "cbZEC",
   "name": "Coinbase Wrapped ZEC",
-  "scanned_at": "2026-09-16T10:08:38.680Z",
+  "scanned_at": "2026-09-17T10:10:14.475Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,9 +88,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 5.7%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -94,6 +107,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +119,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "242091427573",
+    "totalSupply": "255023088815",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -110,14 +128,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 1295645.21,
+    "liquidityUsd": 363792.91000000003,
     "pools": [
       {
         "pair": "0x0Fc47C17AF86078d809358db1b4db2DeBC988566",
         "dex": "aerodrome",
-        "liquidityUsd": 1131467.7,
+        "liquidityUsd": 192706.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +144,7 @@
       {
         "pair": "0xe4a1407210e5edfd381e6343fbf8daff3daa0ecbfa9121e3118898baa0601200",
         "dex": "uniswap",
-        "liquidityUsd": 80616.45,
+        "liquidityUsd": 84229.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +153,7 @@
       {
         "pair": "0x00278697f1264852eF465b6CAC9183639db22AA7",
         "dex": "uniswap",
-        "liquidityUsd": 63402.36,
+        "liquidityUsd": 63191.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +162,7 @@
       {
         "pair": "0x824eD9D2f9ca65636ebA5A89D3BC3c9FE7cc3F9a",
         "dex": "uniswap",
-        "liquidityUsd": 19736.2,
+        "liquidityUsd": 23218.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +171,7 @@
       {
         "pair": "0x39458e556e52168e77845a0df004ef890b3da17fd79e9a083418635d0675067e",
         "dex": "uniswap",
-        "liquidityUsd": 294.73,
+        "liquidityUsd": 305.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +180,7 @@
       {
         "pair": "0xD09240fC346E454E61a833b66de10f88937A0171",
         "dex": "hydrex",
-        "liquidityUsd": 113.83,
+        "liquidityUsd": 122.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,23 +189,23 @@
       {
         "pair": "0xa8873aaf8225481e8fe3eef00e7f6b8920da3a021e6313b50d8d0f77ebd7ea27",
         "dex": "uniswap",
-        "liquidityUsd": 13.5,
+        "liquidityUsd": 18.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xf57bc182bfab0dd238a42028219406a0bd8b8f5ba6ec9b5d813522ae3afe269c",
+        "pair": "0xba54758a8943b7d16f5ea1ce6246abc61f5e8f8c72d41d4a2403b555f0e096a7",
         "dex": "uniswap",
-        "liquidityUsd": 0.44,
+        "liquidityUsd": 0.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 5.71,
     "projectLinks": {
       "websites": [
         "https://www.coinbase.com/campaigns/wrapped-assets"

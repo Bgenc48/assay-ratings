@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "TSLA",
   "name": "Tesla - Tokenized on Base",
-  "scanned_at": "2026-09-16T10:07:10.782Z",
+  "scanned_at": "2026-09-17T10:08:58.591Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,10 +66,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x979fdfe54c384fb16fbdc61e30d6369f91c5ee10f337ef5390ea5c293ef597b2"
+          }
         }
       ]
     },
@@ -110,7 +113,17 @@
     "verifiedSource": null,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [],
+    "pools": [
+      {
+        "pair": "0x979fdfe54c384fb16fbdc61e30d6369f91c5ee10f337ef5390ea5c293ef597b2",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": null,
     "projectLinks": null
   },

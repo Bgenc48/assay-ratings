@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "VIRTUAL",
   "name": "Virtual Protocol",
-  "scanned_at": "2026-09-16T10:01:58.035Z",
+  "scanned_at": "2026-09-17T10:04:48.020Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 49.1,
+    "overall": 44.7,
     "provisional": false,
     "badge": "Discretionary",
     "coverage": "full"
@@ -57,16 +57,20 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x21594b992F68495dD28d605834b58889d0a727c7"
+            "pair": "0xE31c372a7Af875b3B5E0F3713B17ef51556da667",
+            "lpDominantHolder": {
+              "address": "0xf1c429b0ce94ef9893ef110d2cc100201dce71c8",
+              "sharePct": 94.9
+            }
           }
         }
       ]
@@ -113,13 +117,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 916,
-    "liquidityUsd": 7317389.52,
+    "ageDays": 917,
+    "liquidityUsd": 3756410.2400000007,
     "pools": [
       {
         "pair": "0x3f0296BF652e19bca772EC3dF08b32732F93014A",
         "dex": "aerodrome",
-        "liquidityUsd": 328966.74,
+        "liquidityUsd": 336993.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +132,7 @@
       {
         "pair": "0x9c087Eb773291e50CF6c6a90ef0F4500e349B903",
         "dex": "uniswap",
-        "liquidityUsd": 447601,
+        "liquidityUsd": 439400,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +141,7 @@
       {
         "pair": "0x7CB770D0513c30e0CB45E4899e4a2CbEEd6F9830",
         "dex": "pancakeswap",
-        "liquidityUsd": 212964.44,
+        "liquidityUsd": 218368.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +150,25 @@
       {
         "pair": "0x9520E1a3BFd86DA6c1E9e5Ee4B9c2F11c413358F",
         "dex": "aerodrome",
-        "liquidityUsd": 174997.39,
+        "liquidityUsd": 168799.48,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xC200F21EfE67c7F41B81A854c26F9cdA80593065",
+        "dex": "aerodrome",
+        "liquidityUsd": 414933.39,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x529d2863a1521d0b57db028168fdE2E97120017C",
+        "dex": "uniswap",
+        "liquidityUsd": 809587.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +177,7 @@
       {
         "pair": "0xE31c372a7Af875b3B5E0F3713B17ef51556da667",
         "dex": "uniswap",
-        "liquidityUsd": 1216593.6,
+        "liquidityUsd": 1244027.91,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -166,34 +188,16 @@
         }
       },
       {
-        "pair": "0xC200F21EfE67c7F41B81A854c26F9cdA80593065",
+        "pair": "0xDb79CecFd1897D2F60B0Ea7Af072CA9A9e71047c",
         "dex": "aerodrome",
-        "liquidityUsd": 389932.31,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x529d2863a1521d0b57db028168fdE2E97120017C",
-        "dex": "uniswap",
-        "liquidityUsd": 784902.39,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x21594b992F68495dD28d605834b58889d0a727c7",
-        "dex": "aerodrome",
-        "liquidityUsd": 3761431.65,
+        "liquidityUsd": 124299.64,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 34.67,
+    "top10Pct": 34.6,
     "projectLinks": {
       "websites": [
         "http://virtuals.io/",

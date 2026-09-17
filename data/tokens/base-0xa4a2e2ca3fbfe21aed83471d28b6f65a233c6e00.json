@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "TIBBIR",
   "name": "Ribbita by Virtuals",
-  "scanned_at": "2026-09-16T10:06:36.313Z",
+  "scanned_at": "2026-09-17T10:08:36.492Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 57.3,
+    "overall": 56.1,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -19,12 +19,6 @@
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -94,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -116,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 3372001.0900000003,
+    "liquidityUsd": 3349371.04,
     "pools": [
       {
         "pair": "0x0c3b466104545efa096b8f944c1e524E1d0D4888",
         "dex": "uniswap",
-        "liquidityUsd": 2817719.4,
+        "liquidityUsd": 2812799.06,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -132,7 +121,7 @@
       {
         "pair": "0x0f664afFB82f074937D5cFCD61b97F3F32d5dC50",
         "dex": "aerodrome",
-        "liquidityUsd": 128336.79,
+        "liquidityUsd": 126426.95,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -141,7 +130,7 @@
       {
         "pair": "0x0E4409F7a8ebA3213F336daf608985302e79328c",
         "dex": "aerodrome",
-        "liquidityUsd": 356016.32,
+        "liquidityUsd": 339179.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,7 +139,7 @@
       {
         "pair": "0x9f38d45cd16394b5c7e3603631711817f75cac80bd4700d0170cd684801e10e5",
         "dex": "uniswap",
-        "liquidityUsd": 34879.91,
+        "liquidityUsd": 36569.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -159,7 +148,7 @@
       {
         "pair": "0xB3f0828eB3375B609b49E9Fb959472a29cD6E49a",
         "dex": "hydrex",
-        "liquidityUsd": 22292.35,
+        "liquidityUsd": 21888.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -168,7 +157,7 @@
       {
         "pair": "0x38981c23364dB3a50a6b2dD0196a22842788527C",
         "dex": "uniswap",
-        "liquidityUsd": 8321.87,
+        "liquidityUsd": 8262.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -177,7 +166,7 @@
       {
         "pair": "0xb08a32FB67F910fCFE5Dc9561a6EA4A159BD9908",
         "dex": "uniswap",
-        "liquidityUsd": 3547.72,
+        "liquidityUsd": 3376.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -186,14 +175,14 @@
       {
         "pair": "0x4Ae0272A740950d3D9B12a6eE9d5CA6B6aaF0efD",
         "dex": "aerodrome",
-        "liquidityUsd": 886.73,
+        "liquidityUsd": 869.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 16.83,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://ribbitcap.com/"

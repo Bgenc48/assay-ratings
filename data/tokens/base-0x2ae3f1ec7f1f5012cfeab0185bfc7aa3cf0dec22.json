@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "cbETH",
   "name": "Coinbase Wrapped Staked ETH",
-  "scanned_at": "2026-09-16T10:01:40.233Z",
+  "scanned_at": "2026-09-17T10:04:21.723Z",
   "methodology_version": "0.2.1",
   "profile": "custodial-wrapped",
   "grade": {
-    "letter": "UR",
-    "overall": 53.2,
-    "provisional": true,
+    "letter": "C",
+    "overall": 63.6,
+    "provisional": false,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -70,7 +70,7 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
@@ -104,7 +104,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "77638057285190793890346",
+    "totalSupply": "77646840823402173390026",
     "decimals": 18,
     "owner": null,
     "controlType": "safe",
@@ -116,22 +116,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": null,
-    "liquidityUsd": 2444888.5500000003,
+    "ageDays": 1153,
+    "liquidityUsd": 2240705.59,
     "pools": [
       {
-        "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97",
-        "dex": "hydrex",
-        "liquidityUsd": 1270996.05,
+        "pair": "0x8356320a0db330746136ba9e748a5d07c0f97eab2e50b4ded222569ff3da3b8e",
+        "dex": "uniswap",
+        "liquidityUsd": 351105.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8356320a0db330746136ba9e748a5d07c0f97eab2e50b4ded222569ff3da3b8e",
-        "dex": "uniswap",
-        "liquidityUsd": 347285.93,
+        "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97",
+        "dex": "hydrex",
+        "liquidityUsd": 1073689.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +140,7 @@
       {
         "pair": "0xc715096EeCC3f4A0FDBfF055a3db2926adC83244",
         "dex": "alien-base",
-        "liquidityUsd": 120277.27,
+        "liquidityUsd": 122077.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +149,7 @@
       {
         "pair": "0x74A4bF2cad1b172cDc82a5Da7130C7A59EB5460b",
         "dex": "quickswap",
-        "liquidityUsd": 134926.16,
+        "liquidityUsd": 116368.08,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,7 +158,7 @@
       {
         "pair": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
         "dex": "alien-base",
-        "liquidityUsd": 263577.17,
+        "liquidityUsd": 267660.61,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -167,7 +167,7 @@
       {
         "pair": "0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91",
         "dex": "aerodrome",
-        "liquidityUsd": 147131.41,
+        "liquidityUsd": 148273.68,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -176,7 +176,7 @@
       {
         "pair": "0x0e7C44658FB8dcf8f9cbCE5DCee9fCe924D3D8a3",
         "dex": "quickswap",
-        "liquidityUsd": 81657.75,
+        "liquidityUsd": 82512.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -185,7 +185,7 @@
       {
         "pair": "0x257FCbAE4Ac6B26A02E4FC5e1a11e4174B5ce395",
         "dex": "pancakeswap",
-        "liquidityUsd": 79036.81,
+        "liquidityUsd": 79017.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -196,9 +196,5 @@
     "projectLinks": null
   },
   "notes": "Custodial liquid-staking wrapper (Coinbase). Scored under the methodology v0.2 custodial-wrapped profile — same semantics as cbBTC. Until an approved issuer-disclosure claim verifies, the profile caps at C (insufficient data).",
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

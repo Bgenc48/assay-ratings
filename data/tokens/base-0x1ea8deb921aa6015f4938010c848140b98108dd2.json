@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "vAPI",
   "name": "vAPI Network",
-  "scanned_at": "2026-09-16T10:08:22.669Z",
+  "scanned_at": "2026-09-17T10:09:54.859Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -109,12 +109,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 498915.16,
+    "liquidityUsd": 503322.13999999996,
     "pools": [
       {
         "pair": "0x05da2eb0bd58cb74ce0a0c4c93200a2e96778075fbe611b46967a334986c5671",
         "dex": "uniswap",
-        "liquidityUsd": 498915.16,
+        "liquidityUsd": 503321.41,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd3e8f13bdbcba6a21d6e8bebd9dfa5b84d236d9d00b98d8288376da7a3cdec95",
+        "dex": "uniswap",
+        "liquidityUsd": 0.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

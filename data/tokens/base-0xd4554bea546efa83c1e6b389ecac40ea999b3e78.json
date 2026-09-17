@@ -4,12 +4,12 @@
   "status": "ok",
   "symbol": "SQD",
   "name": "Subsquid",
-  "scanned_at": "2026-09-16T10:06:33.638Z",
+  "scanned_at": "2026-09-17T10:08:34.818Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "F",
-    "overall": 35.7,
+    "letter": "D",
+    "overall": 41.8,
     "provisional": true,
     "badge": "Discretionary",
     "coverage": "partial"
@@ -57,20 +57,16 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 0,
+      "score": 25,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.rug-ready",
-          "severity": "crit",
-          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
+          "id": "liq.unlocked",
+          "severity": "warn",
+          "text": "The dominant pool's LP is mostly unlocked.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E",
-            "lpDominantHolder": {
-              "address": "0xe73018acd78b88519c1ed78c4f7171082d05a6a7",
-              "sharePct": 123.58
-            }
+            "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E"
           }
         }
       ]
@@ -81,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 45.5%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -103,11 +92,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.rug-ready",
-      "letter": "D",
-      "reason": "Externally-owned accounts can withdraw 99% of tracked liquidity — a majority. The largest such pool is 0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E (LP holder 0xe73018acd78b88519c1ed78c4f7171082d05a6a7, 123.58% of that pool)."
     },
     {
       "id": "cap.claim-light",
@@ -128,36 +112,23 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 234549.37,
+    "liquidityUsd": 234673.72,
     "pools": [
       {
         "pair": "0xa6C7Fbd1b4c71673DFDaDfaa9D17F14833D3245E",
         "dex": "aerodrome",
-        "liquidityUsd": 227556.69,
+        "liquidityUsd": 227622.58,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0xe73018acd78b88519c1ed78c4f7171082d05a6a7",
-          "sharePct": 123.58
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xCe62141227cfd3Fe8d715F403B99F0377C0C16C6",
         "dex": "aerodrome",
-        "liquidityUsd": 3085.52,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x6ceeb36efc09489f5abe6cc98ee0fdc3c47768c110622ce51dfda2eeaf6e29fa",
-        "dex": "uniswap",
-        "liquidityUsd": 2.59,
+        "liquidityUsd": 3096.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,18 +137,14 @@
       {
         "pair": "0x7f1d9e5a75FB96033152f9E519C838149916b793",
         "dex": "aerodrome",
-        "liquidityUsd": 3904.57,
+        "liquidityUsd": 3954.82,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x9d0d34871984522b163e53d6eb6162338b5baca7",
-          "sharePct": 124.59
-        }
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 45.53,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://sqdgn.ai/"

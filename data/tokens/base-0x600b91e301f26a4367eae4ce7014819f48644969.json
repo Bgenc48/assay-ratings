@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "BLAPE",
   "name": "Blind Ape",
-  "scanned_at": "2026-09-16T10:08:48.698Z",
+  "scanned_at": "2026-09-17T10:10:32.475Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -74,9 +80,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 11 days old; trust needs time (Provisional).",
+          "evidence": "0x0af527981c16de6812627b75e324ed55d9d4b3f3cab9b1ab7953be219d1ab876"
+        }
+      ]
     },
     "holderConcentration": {
       "score": null,
@@ -90,6 +103,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -107,8 +130,8 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
+    "verifiedSource": false,
+    "ageDays": 11,
     "liquidityUsd": null,
     "pools": [],
     "top10Pct": null,

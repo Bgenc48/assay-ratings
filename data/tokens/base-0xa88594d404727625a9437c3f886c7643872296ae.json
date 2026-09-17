@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "WELL",
   "name": "WELL",
-  "scanned_at": "2026-09-16T10:08:34.936Z",
+  "scanned_at": "2026-09-17T10:10:09.978Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 41.8,
-    "provisional": true,
+    "overall": 44.7,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -57,27 +57,31 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657"
+            "pair": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657",
+            "lpDominantHolder": {
+              "address": "0xb5235bb9ec03353da455d742dd09cbc3817fe3fa",
+              "sharePct": 77.72
+            }
           }
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -94,6 +98,11 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "Externally-owned accounts can withdraw 98% of tracked liquidity — a majority. The largest such pool is 0x89D0F320ac73dd7d9513FFC5bc58D1161452a657 (LP holder 0xb5235bb9ec03353da455d742dd09cbc3817fe3fa, 77.72% of that pool)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +110,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4534688294926371045754049996",
+    "totalSupply": "4534953644168147136003847136",
     "decimals": 18,
     "owner": "0x8b621804a7637b781e2bbd58e256a591f2df7d51",
     "controlType": "unknown",
@@ -114,23 +123,27 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 1159614.8399999999,
+    "verifiedSource": true,
+    "ageDays": 982,
+    "liquidityUsd": 1163715.48,
     "pools": [
       {
         "pair": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657",
         "dex": "aerodrome",
-        "liquidityUsd": 1139700.27,
+        "liquidityUsd": 1143026.15,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xb5235bb9ec03353da455d742dd09cbc3817fe3fa",
+          "sharePct": 77.72
+        }
       },
       {
         "pair": "0xCd401DE1cBAa0d770eE5FB70ff622c752C92B8c5",
         "dex": "aerodrome",
-        "liquidityUsd": 6310.29,
+        "liquidityUsd": 6517.05,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -139,7 +152,7 @@
       {
         "pair": "0x3Ba9ce0f19cF3CcB631b973c83712C7E6E9585ae",
         "dex": "aerodrome",
-        "liquidityUsd": 6493.76,
+        "liquidityUsd": 6831.36,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +161,7 @@
       {
         "pair": "0x722BcF6c16dAdcC29914E4E64290C46aa1406DE8",
         "dex": "uniswap",
-        "liquidityUsd": 5770.48,
+        "liquidityUsd": 5970.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,25 +170,33 @@
       {
         "pair": "0x293dAb9854AC5a7dB180DA988eB393df491352F0",
         "dex": "uniswap",
-        "liquidityUsd": 509.4,
+        "liquidityUsd": 518.96,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x74f3be2367374206f514100c0c8933dd5d363ccc",
+          "sharePct": 99.99
+        }
       },
       {
         "pair": "0x6DB04732CC8FF547fC9f51a083038E58eD84e65f",
         "dex": "0xba34aA640b8Be02A439221BCbea1f48c1035EEF9",
-        "liquidityUsd": 743.47,
+        "liquidityUsd": 763.46,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x72ac0dac4784d1b0f6f15ceb4ee918c40aada55b",
+          "sharePct": 99.99
+        }
       },
       {
         "pair": "0x0be9c587De554c60422c972AFb7a02700ac3C56a",
         "dex": "pancakeswap",
-        "liquidityUsd": 66.49,
+        "liquidityUsd": 66.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -184,14 +205,14 @@
       {
         "pair": "0x81A8c12738F7346094526ECC2487a63f45dD1935",
         "dex": "aerodrome",
-        "liquidityUsd": 20.68,
+        "liquidityUsd": 21,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 22.73,
     "projectLinks": {
       "websites": [
         "https://moonwell.fi",

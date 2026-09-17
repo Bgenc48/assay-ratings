@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LAPTOP",
   "name": "LAPTOP",
-  "scanned_at": "2026-09-16T10:09:17.764Z",
+  "scanned_at": "2026-09-17T10:11:18.546Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70,
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -107,21 +114,57 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 5.26,
+    "liquidityUsd": 12.88,
     "pools": [
+      {
+        "pair": "0x282f5633b56240b2fe29adc0d0bc23e328558c6f88f950c033f29ddffb5b174f",
+        "dex": "uniswap",
+        "liquidityUsd": 1.55,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x0ca58efda4eb54e66a8b1da741111b12fa9ae8a1a6c4f98cacc4bdf36ebd18cb",
         "dex": "uniswap",
-        "liquidityUsd": 5.26,
+        "liquidityUsd": 4.46,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8b864777098fa841c1419fe4c08e63481d16767d4cf4346dfcd08c601dbbc9e8",
+        "dex": "uniswap",
+        "liquidityUsd": 3.79,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc5e5382d1c692c5c83ca909be3dbf1f67ac15f2316d45100c0221655fc801fbb",
+        "dex": "uniswap",
+        "liquidityUsd": 2.18,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcc98abab00f374f8720e5059936b2f23b8744b08f5973196603651abba18fa1e",
+        "dex": "uniswap",
+        "liquidityUsd": 0.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,

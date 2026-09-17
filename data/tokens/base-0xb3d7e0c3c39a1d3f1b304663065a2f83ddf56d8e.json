@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "AUTONO",
   "name": "AUTONOMOPOLY",
-  "scanned_at": "2026-09-16T10:08:21.162Z",
+  "scanned_at": "2026-09-17T10:09:53.564Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -109,12 +109,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 281779.37999999995,
+    "liquidityUsd": 314915.57999999996,
     "pools": [
       {
         "pair": "0x84771828f44fcfbaae08e271ff74e272cc2934a3348ec724a475941185ce4eb9",
         "dex": "uniswap",
-        "liquidityUsd": 281738.85,
+        "liquidityUsd": 312610.92,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0d7cc7048b2f7a1391ca16db899c99102dd91f8855d55ff071c2e90f74bfdcfc",
+        "dex": "uniswap",
+        "liquidityUsd": 2270.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -123,34 +132,25 @@
       {
         "pair": "0xcF022eE161463AE16D590ED48549F6dA3818743c",
         "dex": "uniswap",
-        "liquidityUsd": 6.38,
+        "liquidityUsd": 6.41,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x03099829cda4e3c60b44d05b4720b1ce11d30814aaadb53c4f387948d0c592b6",
-        "dex": "uniswap",
-        "liquidityUsd": 25.41,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0xcdf2ffa9fe742807bb200056927d9ea63508c068875b78d3c17f839311c5deea",
         "dex": "uniswap",
-        "liquidityUsd": 4.47,
+        "liquidityUsd": 4.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8d1c60b53eed0a89d9f9b760b9fbc3e5c216814c01338d28e9475ab767e3901d",
+        "pair": "0x9c8872da4fac61a7f7291c52e2801d58daf284fddfbf879bd499eeca3a5e0313",
         "dex": "uniswap",
-        "liquidityUsd": 4.27,
+        "liquidityUsd": 23.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

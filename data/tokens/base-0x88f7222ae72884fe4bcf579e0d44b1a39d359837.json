@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "PRIVVVATE",
   "name": "PRIVVVATE",
-  "scanned_at": "2026-09-16T10:09:03.758Z",
+  "scanned_at": "2026-09-17T10:10:59.374Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 85,
+    "overall": 84.4,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,19 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 9 days old; trust needs time (Provisional).",
+          "evidence": "0x7f83189069d998e364ae71327093024f1b3d0f6f13c2a05a7166051dc99fad43"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -93,6 +100,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +122,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 26343.91,
+    "verifiedSource": true,
+    "ageDays": 9,
+    "liquidityUsd": 32748.15,
     "pools": [
       {
         "pair": "0x4eF0F94370C6b65d385BCd91F05d7C67e7d3fd04",
         "dex": "uniswap",
-        "liquidityUsd": 26109.47,
+        "liquidityUsd": 32494.39,
         "lpBurnedPct": 100,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -126,16 +138,7 @@
       {
         "pair": "0xf3d4ddac64a138288dcd8e25405b8a7058eaf1d50f5faca2b49292bce0541cce",
         "dex": "uniswap",
-        "liquidityUsd": 219.59,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xca199b024b21ebd87a15611d5a6a6ddb72be265c5e6127cbd69ecba76461efcf",
-        "dex": "uniswap",
-        "liquidityUsd": 13.44,
+        "liquidityUsd": 240.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,14 +147,23 @@
       {
         "pair": "0xd53df5ebc0cae79bd3a990a87d6e726ba1bd4f288e4e0bc8803a89558e609cb2",
         "dex": "uniswap",
-        "liquidityUsd": 1.41,
+        "liquidityUsd": 1.36,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xca199b024b21ebd87a15611d5a6a6ddb72be265c5e6127cbd69ecba76461efcf",
+        "dex": "uniswap",
+        "liquidityUsd": 12.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 18.71,
     "projectLinks": {
       "websites": [
         "https://privvvlion.xyz/"

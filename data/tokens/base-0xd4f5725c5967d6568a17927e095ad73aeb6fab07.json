@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LONG",
   "name": "LONG",
-  "scanned_at": "2026-09-16T10:09:27.478Z",
+  "scanned_at": "2026-09-17T10:11:34.639Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70,
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -107,32 +114,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 241.10999999999999,
+    "liquidityUsd": 92.88000000000001,
     "pools": [
-      {
-        "pair": "0x2c5704ed6795d4bff18fa59320834e1c4f2fe47fbb8946d40148d51059a73fe3",
-        "dex": "uniswap",
-        "liquidityUsd": null,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0xd13469e664f60781ef13713ecfebf2ab9b738e2bcd04e6c2c9e2251514f7dbf8",
         "dex": "uniswap",
-        "liquidityUsd": 195.12,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x47783990ad4416d5ac173dc541cc2eb1c4ad3d2d582e99389a491a4529bf79fd",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
+        "liquidityUsd": 63.5,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -141,50 +130,23 @@
       {
         "pair": "0x9c6c77078d5dcc96906b02a28269003265efdddae03b66416eae754c43174e65",
         "dex": "uniswap",
-        "liquidityUsd": 40.2,
+        "liquidityUsd": 29.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xeeb17cf07d9f53127f38a4c961ff6868a991ba33400545ffea29068287402b16",
+        "pair": "0x47783990ad4416d5ac173dc541cc2eb1c4ad3d2d582e99389a491a4529bf79fd",
         "dex": "uniswap",
-        "liquidityUsd": 0.17,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x502afcbb3e92a6ed1d2ee8816ebb1bdb261fd62f7263b4fd3c36ba3b7c98d432",
-        "dex": "uniswap",
-        "liquidityUsd": 0.24,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc53ef9242f3f95383ea481fd5c298461e1ec39420ed599db64ae3d59526d9d3c",
-        "dex": "uniswap",
-        "liquidityUsd": 0.81,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf2b747cd069fd50abbe26d2869c6908467ec3bf5209ccaa26d59d45a0e078775",
-        "dex": "uniswap",
-        "liquidityUsd": 4.57,
+        "liquidityUsd": 0.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 0,
     "projectLinks": null
   },
   "notes": null,

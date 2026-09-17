@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BLUAI",
   "name": "Bluwhale AI",
-  "scanned_at": "2026-09-16T10:06:21.404Z",
+  "scanned_at": "2026-09-17T10:08:28.720Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "F",
-    "overall": 29.3,
+    "overall": 28.2,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,32 +61,22 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x45D1b4905251e5954a44F7c51e17855d306421b7"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 143.3% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -99,16 +89,6 @@
       "id": "cap.eoa-mint",
       "letter": "F",
       "reason": "Mint or issuance is controlled by an externally-owned account."
-    },
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -130,34 +110,11 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 328,
-    "liquidityUsd": 100.09,
-    "pools": [
-      {
-        "pair": "0x45D1b4905251e5954a44F7c51e17855d306421b7",
-        "dex": "aerodrome",
-        "liquidityUsd": 53.76,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5Fb5a087a92bB8Fdb7Aa9ad456c76ac3c2a759bB",
-        "dex": "aerodrome",
-        "liquidityUsd": 46.33,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x0a02944700fe01c4374617004681b9f1615ebf6d",
-          "sharePct": 423990.99
-        }
-      }
-    ],
-    "top10Pct": 143.25,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,
