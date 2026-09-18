@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "TSLAc",
   "name": "Tesla Inc.",
-  "scanned_at": "2026-09-17T10:10:24.978Z",
+  "scanned_at": "2026-09-18T09:57:07.145Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -88,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.9%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -107,11 +94,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -119,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "290812970340",
+    "totalSupply": "314761125799",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -128,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 845811.33,
+    "liquidityUsd": 857580.32,
     "pools": [
       {
-        "pair": "0x469337fDcc5E8f38e2E4B670B04F57865D13a7BB",
-        "dex": "aerodrome",
-        "liquidityUsd": 815212.83,
+        "pair": "0x8106bc6c2219b2035488e59726da92bcb68e6a16acfcfca5d3bd7a7a3b860acd",
+        "dex": "uniswap",
+        "liquidityUsd": 3475.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,74 +126,69 @@
       {
         "pair": "0xde9ac3fc95c869fea714cc9ae18f241d9cc1ea3567bcd2afa13aff243e031cca",
         "dex": "uniswap",
-        "liquidityUsd": 573.94,
+        "liquidityUsd": 589.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0x184932c3ac837fd453584f765f61e405a132d7da85184e750f306d25ce28fc8e",
+        "dex": "uniswap",
+        "liquidityUsd": 99.99,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x469337fDcc5E8f38e2E4B670B04F57865D13a7BB",
+        "dex": "aerodrome",
+        "liquidityUsd": 822720.91,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x519974ceBa3437aB1cEd0B77570CA65A25A9AB78",
+        "dex": "equalizer",
+        "liquidityUsd": 20.22,
+        "lpBurnedPct": 0.01,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0xfF85eDcD1794d814ABD87489EEA6f641048e7ba7",
         "dex": "aerodrome",
-        "liquidityUsd": 17.46,
+        "liquidityUsd": 18.73,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x98252f4f9af10c43f8426475952842a23a8ead458aa333698e624da455c35797",
+        "pair": "0xd27a2628f677e3cf630960b1f5f1fce2a7279ad1736ca392788d3685d4f83dbd",
         "dex": "uniswap",
-        "liquidityUsd": 6477.36,
+        "liquidityUsd": 20533.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xfef59908e654b1104455835f03327bb951fd10597c9106cf6624d17a2ad39f5b",
+        "pair": "0x13d2454cf7686bd2257a748f24a4fef97e16c97e0b7f9d401348dfe7566b5ebb",
         "dex": "uniswap",
-        "liquidityUsd": 5477.79,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x80b3ac3eec4333f947782e229e08240a01236d2a73579dc8920b05014fbd4ec9",
-        "dex": "uniswap",
-        "liquidityUsd": 6981.41,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x32677e0e1d19069b2b46a5c5ab4b1d9f3ee641f0643e92657d204edd9a925ad2",
-        "dex": "uniswap",
-        "liquidityUsd": 5885.54,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcc810e9a3ea08b7316cc8adf71f6ced5b29f7dd70075b4e1f2abb40241867885",
-        "dex": "uniswap",
-        "liquidityUsd": 5185,
+        "liquidityUsd": 10122.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 7.91,
-    "projectLinks": {
-      "websites": [],
-      "socials": [
-        "https://x.com/cobie/status/1282699342768373762"
-      ]
-    }
+    "top10Pct": null,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

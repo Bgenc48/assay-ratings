@@ -1,0 +1,184 @@
+{
+  "address": "0x4da9a0f397db1397902070f93a4d6ddbc0e0e6e8",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "LCAP",
+  "name": "CF Large Cap Index",
+  "scanned_at": "2026-09-18T09:57:51.020Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "C",
+    "overall": 55.5,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 60,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.latent-mint",
+          "severity": "warn",
+          "text": "The contract is upgradeable: even without a mint function today, an upgrade could add one (latent mint).",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x3a88eF38879EFb900c2D7b6199d21C139cEf5Fa7"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "721127546190743294798356",
+    "decimals": 18,
+    "owner": null,
+    "controlType": "unknown",
+    "proxy": "eip1967",
+    "proxyImplementation": "0x6368e66a38bab5a03c4f1be64b9d890305959a10",
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 1240737.6800000002,
+    "pools": [
+      {
+        "pair": "0x3a88eF38879EFb900c2D7b6199d21C139cEf5Fa7",
+        "dex": "aerodrome",
+        "liquidityUsd": 547687.71,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xC8C15670050541255f9b797C008047682524861F",
+        "dex": "aerodrome",
+        "liquidityUsd": 169266.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe39E901F5C53fDA90eF90FeEF3ed1F0126b557a7",
+        "dex": "aerodrome",
+        "liquidityUsd": 159702.95,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x48D1036b0308884c163cde60AD5fBf87112Ac52f",
+        "dex": "aerodrome",
+        "liquidityUsd": 193702.55,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb8B1a52b1893F3369eDb63aeE516F2e8B7D45A53",
+        "dex": "aerodrome",
+        "liquidityUsd": 164981.27,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd52C89A57ACC47E300aC1468441b3495676280Ad",
+        "dex": "aerodrome",
+        "liquidityUsd": 5396.34,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8660ab73D35e595DAe0F1b89831bb7f3c819d491",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [],
+      "socials": []
+    }
+  },
+  "notes": null,
+  "coi": false
+}

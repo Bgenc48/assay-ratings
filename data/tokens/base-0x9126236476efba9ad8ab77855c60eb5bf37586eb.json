@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "CHECK",
   "name": "Checkmate",
-  "scanned_at": "2026-09-17T10:06:06.977Z",
+  "scanned_at": "2026-09-18T09:52:33.305Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 63.2,
+    "overall": 64.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -88,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 324,
-    "liquidityUsd": 649507.85,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 646555.06,
     "pools": [
       {
         "pair": "0x3c4384F3664B37A3Cb5A5cB3452B4B4A3Aa1256f",
         "dex": "aerodrome",
-        "liquidityUsd": 621395.36,
+        "liquidityUsd": 627048.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,34 +121,16 @@
       {
         "pair": "0x5a7B4970B2610aEe4776A6944d9F2171EE6060B0",
         "dex": "aerodrome",
-        "liquidityUsd": 19119.97,
+        "liquidityUsd": 19305.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xAc2733cbbA38DFf6fd94c7a751f3C26A3F10B1BC",
+        "pair": "0x5c694b487be67ad53be51fcb3be4b05ea4311f462aed8c176c5b3b5007214ceb",
         "dex": "uniswap",
-        "liquidityUsd": 8906.67,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x6b69b8b13bf1ae43edb39a780f698e3f9a433af171ee109e347b8a8e27cdd774",
-        "dex": "uniswap",
-        "liquidityUsd": 53.49,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x34f592ed2cb49cdb22e8f01d73b8706a4f6d8364961b6ea9918d9b7ec6c3e525",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 143.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +139,7 @@
       {
         "pair": "0x0E7D30b7532A48D66b49eE193feb0c8128608fDa",
         "dex": "aerodrome",
-        "liquidityUsd": 22.48,
+        "liquidityUsd": 23.96,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -171,7 +148,16 @@
       {
         "pair": "0x45eef8deb7d55aa4f6d78164efe15d25823d857705d4035633cedb65d6d5018a",
         "dex": "uniswap",
-        "liquidityUsd": 7.03,
+        "liquidityUsd": 7.41,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x23292518b1091761db293aef1da1e05185220eab120b7e8682b3a2fd9599269f",
+        "dex": "uniswap",
+        "liquidityUsd": 6.36,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,14 +166,23 @@
       {
         "pair": "0x9173f02f8ad4defc70b2a4a243c100dcf19dd825906496e211d8d55a5cfeeec1",
         "dex": "uniswap",
-        "liquidityUsd": 2.85,
+        "liquidityUsd": 2.89,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xbb05e2855e95bfd28fb4dfe33449f4f03809293658e65781c692d93962c9a882",
+        "dex": "uniswap",
+        "liquidityUsd": 16.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 11.2,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://anichess.com/",

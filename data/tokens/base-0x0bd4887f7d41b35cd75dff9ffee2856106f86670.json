@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "FRIEND",
   "name": "FRIEND",
-  "scanned_at": "2026-09-17T10:09:30.368Z",
+  "scanned_at": "2026-09-18T09:56:12.920Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 41.8,
-    "provisional": true,
+    "overall": 43.2,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -57,29 +57,40 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": 0,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
-          "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
+          "id": "liq.rug-ready",
+          "severity": "crit",
+          "text": "The dominant liquidity position is withdrawable by a single externally-owned account.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x7CfC830448484CDF830625373820241E61ef4acf"
+            "pair": "0x7CfC830448484CDF830625373820241E61ef4acf",
+            "lpDominantHolder": {
+              "address": "0xdfda65a464aa14f4cebcf166c064668cf55ac1a1",
+              "sharePct": 170.05
+            }
           }
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.heavy",
+          "severity": "warn",
+          "text": "Top-10 unlabeled holders control 36.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -92,6 +103,11 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.rug-ready",
+      "letter": "D",
+      "reason": "Externally-owned accounts can withdraw 90% of tracked liquidity — a majority. The largest such pool is 0x7CfC830448484CDF830625373820241E61ef4acf (LP holder 0xdfda65a464aa14f4cebcf166c064668cf55ac1a1, 170.05% of that pool)."
     },
     {
       "id": "cap.claim-light",
@@ -112,50 +128,27 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 117874.33999999998,
+    "verifiedSource": true,
+    "ageDays": 869,
+    "liquidityUsd": 123913.75,
     "pools": [
       {
         "pair": "0x7CfC830448484CDF830625373820241E61ef4acf",
         "dex": "unknown",
-        "liquidityUsd": 110987.88,
+        "liquidityUsd": 111879.45,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xacc6f897734bcf4e01fd48124ce0a6a9dfc8191edf0289ddeb1bd728b981b35a",
-        "dex": "uniswap",
-        "liquidityUsd": 1369.92,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc4553db32917bac5463bb7ba06e205040b86e567d6ab5522f01a5844a25f6ac8",
-        "dex": "uniswap",
-        "liquidityUsd": 1851.61,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd40263188f20e3bc449c6f74083295481267376bf06cbd2c5af37426fc41212f",
-        "dex": "uniswap",
-        "liquidityUsd": 1681.43,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0xdfda65a464aa14f4cebcf166c064668cf55ac1a1",
+          "sharePct": 170.05
+        }
       },
       {
         "pair": "0x4d8fa2ac2cff03a867546c9866d19eacd66f3e9316c40295ffc21aa099407f7e",
         "dex": "uniswap",
-        "liquidityUsd": 1906.54,
+        "liquidityUsd": 11977.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,32 +157,23 @@
       {
         "pair": "0x59e43ce26f2a9827b5975497859fd971354d780821df14fac138adcb463c70d5",
         "dex": "uniswap",
-        "liquidityUsd": 55.23,
+        "liquidityUsd": 56.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x806a42174ac9e559293f77ba4228435c3cf123d34073e661ffd7556f99f61428",
+        "pair": "0x15299be93c8218b6b98095643a5ab45e2d96b2e554badb37241e3de74d14711d",
         "dex": "uniswap",
-        "liquidityUsd": 15.8,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x0d0354373e518354f6a63d918c62e923ec31e4604e19b4942715459562637c14",
-        "dex": "uniswap",
-        "liquidityUsd": 5.93,
+        "liquidityUsd": 0.08,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 36.02,
     "projectLinks": {
       "websites": [
         "https://www.friend.tech"

@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "MSTRc",
   "name": "Strategy Inc.",
-  "scanned_at": "2026-09-17T10:11:09.343Z",
+  "scanned_at": "2026-09-18T09:57:28.915Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -88,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 9.1%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -107,11 +94,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -119,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "1057642561031",
+    "totalSupply": "916442561031",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -128,14 +110,23 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 937682.3800000001,
+    "liquidityUsd": 932809.1599999999,
     "pools": [
+      {
+        "pair": "0x798456cba65f62301f9809248699cd7d39f7754e9eeaaff9117df805e3931cce",
+        "dex": "uniswap",
+        "liquidityUsd": 11862.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x17ecfe141bada18d94b2c41a2bbaffde8726309a6b4340e1ad7a6910bc7cdf8d",
         "dex": "uniswap",
-        "liquidityUsd": 2775,
+        "liquidityUsd": 2852.04,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,16 +135,7 @@
       {
         "pair": "0xdaf20e256ba987b6d3d91e356eacdb9b156b66ec559a715351c996db54ddab8a",
         "dex": "uniswap",
-        "liquidityUsd": 949,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x798456cba65f62301f9809248699cd7d39f7754e9eeaaff9117df805e3931cce",
-        "dex": "uniswap",
-        "liquidityUsd": 687.6,
+        "liquidityUsd": 986.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +144,7 @@
       {
         "pair": "0x9b36959CaE9943cc4859d34Ec5d918d195A73267",
         "dex": "aerodrome",
-        "liquidityUsd": 195.51,
+        "liquidityUsd": 216.46,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -171,7 +153,7 @@
       {
         "pair": "0x04c04118994eb18991e32bb2d5e1f796def898a0625972174a4687bb607ce635",
         "dex": "uniswap",
-        "liquidityUsd": 99.07,
+        "liquidityUsd": 99.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,7 +162,7 @@
       {
         "pair": "0x8b27f626ab668197000BC722A1012022CAeD10E2",
         "dex": "aerodrome",
-        "liquidityUsd": 931883.1,
+        "liquidityUsd": 915654.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -189,7 +171,7 @@
       {
         "pair": "0xC88c048261b739E1484E3295415Ee11C64545a4F",
         "dex": "aerodrome",
-        "liquidityUsd": 1074.43,
+        "liquidityUsd": 1118.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -198,14 +180,14 @@
       {
         "pair": "0xCC2cb77d25EFAF5f4516eb1cfC01d876bef27Ca2",
         "dex": "equalizer",
-        "liquidityUsd": 18.67,
+        "liquidityUsd": 19.32,
         "lpBurnedPct": 0.01,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 9.14,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

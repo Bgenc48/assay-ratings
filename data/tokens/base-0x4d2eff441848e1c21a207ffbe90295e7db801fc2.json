@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BOX",
   "name": "An Amazon Box",
-  "scanned_at": "2026-09-17T10:10:34.208Z",
+  "scanned_at": "2026-09-18T09:57:12.178Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -82,16 +82,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 5.4%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -117,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 25954.11,
+    "liquidityUsd": 34504.42,
     "pools": [
       {
         "pair": "0x795cd8715CC2C939b1A921327F43bEFA5F7FC2c4",
         "dex": "uniswap",
-        "liquidityUsd": 25940.48,
+        "liquidityUsd": 34487.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,14 +126,14 @@
       {
         "pair": "0x48c0aeeb2d36605c7965bc49fa3b499629ca0954bd2503e28ffdf1667e062fa0",
         "dex": "uniswap",
-        "liquidityUsd": 13.63,
+        "liquidityUsd": 16.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 5.38,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.boxamzn.tech/"

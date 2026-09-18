@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "STONKFLY",
   "name": "STONKFLY",
-  "scanned_at": "2026-09-17T10:11:16.248Z",
+  "scanned_at": "2026-09-18T09:57:32.858Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 8.7%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -123,23 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 38396.55,
+    "liquidityUsd": 39205.35,
     "pools": [
       {
         "pair": "0x44acda02fdfc8ecaace6fefd1c77b1c0b981ab92f10c00619b0ec5fdb74ccd3b",
         "dex": "uniswap",
-        "liquidityUsd": 38297.39,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x2f039df07154050918f9ee8719272c10ed07930624228044694c8a196b520fe4",
-        "dex": "uniswap",
-        "liquidityUsd": 57.82,
+        "liquidityUsd": 39194.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,32 +121,14 @@
       {
         "pair": "0xc1eed73a007b26241cf53d95a2d45f775f5854cde7c5686e975d20aec376101f",
         "dex": "uniswap",
-        "liquidityUsd": 11.29,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcf6db3685661585793cc8812f99e1b546a01a653e849aaf2870006aa5e6c5364",
-        "dex": "uniswap",
-        "liquidityUsd": 28.79,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf23f918a15c0046cc001299f4808f03aac025758c698350f9567f717cfd9d118",
-        "dex": "uniswap",
-        "liquidityUsd": 1.26,
+        "liquidityUsd": 11.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 8.74,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://stonkfly-three.vercel.app/"

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BALD",
   "name": "BALD",
-  "scanned_at": "2026-09-17T10:09:15.163Z",
+  "scanned_at": "2026-09-18T09:55:44.225Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 85,
+    "overall": 82.9,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,14 +77,28 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 26 days old; trust needs time (Provisional).",
+          "evidence": "0xe8521c076b4e25880dced4983e296679e734feeace189afd9d3aa44327f97691"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 9.8%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -93,6 +107,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +129,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 37596.53999999999,
+    "verifiedSource": true,
+    "ageDays": 26,
+    "liquidityUsd": 39890.92,
     "pools": [
       {
         "pair": "0x3bf7c28ed75855d4384796cb13e869e2309b27c15f06afe28cac8264db4f8286",
         "dex": "uniswap",
-        "liquidityUsd": 36672.27,
+        "liquidityUsd": 37750.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +145,7 @@
       {
         "pair": "0x36d78a7fc4327fd7e2c9d89e42128aba3c22d90c502d173ef5fce4f1096f6608",
         "dex": "uniswap",
-        "liquidityUsd": 643.06,
+        "liquidityUsd": 1804.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +154,7 @@
       {
         "pair": "0x3b2ad17e9db5a9338c039b5a06fe2a3718cc20e287467ccead3900428d9853b6",
         "dex": "uniswap",
-        "liquidityUsd": 239.82,
+        "liquidityUsd": 288.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,16 +163,16 @@
       {
         "pair": "0xe048c275eb12b065d58583d7a2200d213e713305728fa5ab2813304f595173ba",
         "dex": "uniswap",
-        "liquidityUsd": 39.93,
+        "liquidityUsd": 45.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xf2f435aebb709243503ae2117a2da5626d16f17eee37e9b1c8dab998b9972dba",
+        "pair": "0x71bf8af8b70d8972b512dff9e18f4a6cfd2fb5e0c4c5d7f2e9d3748433147782",
         "dex": "uniswap",
-        "liquidityUsd": 1.46,
+        "liquidityUsd": 2.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +188,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 9.77,
     "projectLinks": {
       "websites": [
         "https://x.com/i/communities/1966514182272000184"

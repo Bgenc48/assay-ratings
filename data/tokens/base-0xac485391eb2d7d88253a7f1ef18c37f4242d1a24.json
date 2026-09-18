@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LSK",
   "name": "Lisk",
-  "scanned_at": "2026-09-17T10:11:25.523Z",
+  "scanned_at": "2026-09-18T09:57:37.712Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 43.6,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 51.5% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,16 +94,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -118,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "251355608204063563580509",
+    "totalSupply": "251351053705313062795831",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -129,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 363,
-    "liquidityUsd": 89691.08,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 93272.15000000001,
     "pools": [
       {
         "pair": "0x275BE3a43B66516e532BcaA36eE453EDd47614ea",
         "dex": "aerodrome",
-        "liquidityUsd": 89662.08,
+        "liquidityUsd": 93244.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,14 +128,14 @@
       {
         "pair": "0x9394daf4833fb2cf188b5781bf74f04d59678c9b2129a37437666489791ca7d4",
         "dex": "uniswap",
-        "liquidityUsd": 29,
+        "liquidityUsd": 27.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 51.52,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

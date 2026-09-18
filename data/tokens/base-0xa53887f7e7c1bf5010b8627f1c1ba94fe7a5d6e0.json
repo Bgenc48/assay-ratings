@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "RNBW",
   "name": "Rainbow",
-  "scanned_at": "2026-09-17T10:10:43.133Z",
+  "scanned_at": "2026-09-18T09:57:15.507Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 50.7,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 6.4%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -99,11 +92,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -124,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 233,
-    "liquidityUsd": 147578.13,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 150309.48000000004,
     "pools": [
       {
         "pair": "0xb8e3840b850cd5e2d8229e54a04c3a10b653d072870bbfb26847d237fc655a37",
         "dex": "uniswap",
-        "liquidityUsd": 140693.24,
+        "liquidityUsd": 142857.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,7 +128,7 @@
       {
         "pair": "0x4bf85cA48a620BAf9DDE3b6A7A6d88b219827caA",
         "dex": "aerodrome",
-        "liquidityUsd": 4773.81,
+        "liquidityUsd": 4917.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +137,7 @@
       {
         "pair": "0x390e1ebcdb50943217ceeb7c1c6283aec4588dae6c30f4b30d4570edab34fe47",
         "dex": "uniswap",
-        "liquidityUsd": 1330.85,
+        "liquidityUsd": 1571.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,7 +146,7 @@
       {
         "pair": "0x8408c2A9F28B9A9471DC423f3cd4868629b555c8",
         "dex": "uniswap",
-        "liquidityUsd": 544.58,
+        "liquidityUsd": 557.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -167,7 +155,16 @@
       {
         "pair": "0xd15707ac964a1b8757edabe5816a55f1e1d83071f3f31749c406c9d678708c02",
         "dex": "uniswap",
-        "liquidityUsd": 117.79,
+        "liquidityUsd": 120.32,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8b2b1cc824eae6ca55af931e8d0c90c86ad7455edd643bbd424c266a91c94360",
+        "dex": "uniswap",
+        "liquidityUsd": 174.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -176,16 +173,7 @@
       {
         "pair": "0x12a2a9df0849bab87a0411ee26dade2473dfdde460eeb4d40ed80809d8b73194",
         "dex": "uniswap",
-        "liquidityUsd": 66.13,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x22Fe16f4cbcdb971037E08d064C88E75a60C551b",
-        "dex": "uniswap",
-        "liquidityUsd": 10.09,
+        "liquidityUsd": 67.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -194,14 +182,14 @@
       {
         "pair": "0x6c741dfbacf8331e8b6cb87b960c38ad8adab454d2238557d2de3f590aaa106b",
         "dex": "uniswap",
-        "liquidityUsd": 41.64,
+        "liquidityUsd": 42.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 6.37,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://rainbow.me"

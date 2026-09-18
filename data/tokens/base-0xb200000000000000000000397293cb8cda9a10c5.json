@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "SNDKc",
   "name": "Sandisk Corporation",
-  "scanned_at": "2026-09-17T10:10:57.220Z",
+  "scanned_at": "2026-09-18T09:57:22.344Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -88,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -100,11 +94,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -112,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "86716648508",
+    "totalSupply": "68716648508",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -121,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 961217.3900000001,
+    "liquidityUsd": 863935.9199999999,
     "pools": [
       {
         "pair": "0x5A8236f575471e7BfCA2C8462a200c28f737246E",
         "dex": "aerodrome",
-        "liquidityUsd": 911392.14,
+        "liquidityUsd": 834076.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,10 +126,37 @@
       {
         "pair": "0x695c4a3600d015fe3e74c26d81e8c05ad7c9e99dc8ef5bf5607cd59cc2370f19",
         "dex": "uniswap",
-        "liquidityUsd": 585.05,
+        "liquidityUsd": 606.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x84ad31e01bd8276ec68c1d564f7769e0c6ae505e7e40d4baad5b474f41c35435",
+        "dex": "uniswap",
+        "liquidityUsd": 1037.83,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8d2d9803d08b61ae2930e71ffa68d4d6649e3575325fa0adbaabe5b2610611ca",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x507b27040e73D67B72Bb6620A4feD123CD866c8a",
+        "dex": "equalizer",
+        "liquidityUsd": 18.92,
+        "lpBurnedPct": 0.04,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
@@ -153,53 +169,35 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0a7b96f2005dae9c94c1e091c8bb03965149311f1bc7d73a23a3b6b14692cac9",
-        "dex": "uniswap",
-        "liquidityUsd": 11184.4,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x23332ac24957aadee97f1ac08b30f45e4398408416993392cce596ee42117b83",
-        "dex": "uniswap",
-        "liquidityUsd": 4456.79,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4e99F2f698d4377B43EdE0884DC743C0625C49C1",
-        "dex": "uniswap",
-        "liquidityUsd": 4062.13,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x38fc557f195e7ffb0dbda685dba1f9f4ee96915f15ff170e8552786c5fc3b94a",
-        "dex": "uniswap",
-        "liquidityUsd": 821.21,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x74c9ccbe6be8df9b82fcc75a5e7d4eb1e6c427e6f9b734ebccfcbcdb624d587d",
         "dex": "uniswap",
-        "liquidityUsd": 28715.67,
+        "liquidityUsd": 28113.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1C859d98bE6EFC0a1CeBE7E771DB908e52543C48",
+        "dex": "uniswap",
+        "liquidityUsd": 82.48,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 26.92,
-    "projectLinks": null
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://uranus28.win/",
+        "https://zibars-organization.gitbook.io/the-moons-of-uranus"
+      ],
+      "socials": [
+        "https://x.com/Moon8onBASE",
+        "https://t.me/ExploreUranus"
+      ]
+    }
   },
   "notes": null,
   "coi": false

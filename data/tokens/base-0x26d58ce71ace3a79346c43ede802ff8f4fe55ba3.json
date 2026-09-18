@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "Suwappu",
   "name": "Suwappubot",
-  "scanned_at": "2026-09-17T10:09:40.943Z",
+  "scanned_at": "2026-09-18T09:56:34.598Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
+    "letter": "C",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -77,9 +83,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 6.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -88,6 +101,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,30 +123,48 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 29392.699999999997,
+    "liquidityUsd": 29900.41,
     "pools": [
       {
         "pair": "0x787fe87a27824d11d743cd6007614d3f5776d1b42cce79358e390498bb436159",
         "dex": "uniswap",
-        "liquidityUsd": 29320.44,
+        "liquidityUsd": 29877.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x590e639677d8a24f64c3a0fae72c970841fc2cd14cc9b9919ecd97de83513355",
+        "pair": "0x9002ec55e591d1ad9f2104fbc124acbfd2a5851f461cebe0b1a032c021ee37ec",
         "dex": "uniswap",
-        "liquidityUsd": 72.26,
+        "liquidityUsd": 16.7,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf6fe922f74be69f37b4417edf5c657b7f7f0e0575790672ce8dbdd6c469cbd53",
+        "dex": "uniswap",
+        "liquidityUsd": 2.59,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x86975212059b53c5973eaa9e1e0ed3c978d787da356ca38d86809124f3a51e03",
+        "dex": "uniswap",
+        "liquidityUsd": 3.66,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 6.05,
     "projectLinks": {
       "websites": [
         "https://suwappu.bot"

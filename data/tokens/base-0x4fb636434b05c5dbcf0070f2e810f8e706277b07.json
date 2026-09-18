@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LAPTOP",
   "name": "Laptop",
-  "scanned_at": "2026-09-17T10:10:48.002Z",
+  "scanned_at": "2026-09-18T09:57:17.849Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 64.2,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,13 +61,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x8b81f233089a621be9b5184a82b18a5e9adcb66acb86bfc0dfd11da115410317"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -77,16 +74,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 96.3% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,11 +85,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -119,48 +104,11 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 4.0200000000000005,
-    "pools": [
-      {
-        "pair": "0x8b81f233089a621be9b5184a82b18a5e9adcb66acb86bfc0dfd11da115410317",
-        "dex": "uniswap",
-        "liquidityUsd": 3.81,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe34443831f0cab8036085a03054b7de6a205657366cc179574418d1da281af62",
-        "dex": "uniswap",
-        "liquidityUsd": 0.21,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd4089b22ea52cd2f74cb03affb57715230127f4488e2f47e0868abec7b95e5eb",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x5b853242bb7497138660f643d3f7a880d4013c839736b8a11593a2430a437fe1",
-        "dex": "uniswap",
-        "liquidityUsd": 0,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": 96.33,
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

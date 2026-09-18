@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "RAVE",
   "name": "RaveDAO",
-  "scanned_at": "2026-09-17T10:06:28.269Z",
+  "scanned_at": "2026-09-18T09:52:44.788Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 66.4,
+    "letter": "B",
+    "overall": 75.5,
     "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 52.1% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -96,16 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -113,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "31274051186590000000000000",
+    "totalSupply": "31288624012956000000000000",
     "decimals": 18,
     "owner": "0x9831156f1a6e506fca41503590b42f07c2e80f54",
     "controlType": "safe",
@@ -122,50 +105,41 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 336,
-    "liquidityUsd": 140457.71,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 135408.75,
     "pools": [
-      {
-        "pair": "0x71295e7bf447697c73d4b13c565d8795b8491049605d3eca0c39afed352304b3",
-        "dex": "uniswap",
-        "liquidityUsd": 170.59,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xf91d945757c7038feeb6ee5c236062a226c6a0a0fcd4bfc0663bc32a861d90bb",
-        "dex": "uniswap",
-        "liquidityUsd": 166.84,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x199c61b8ab692707704fffd948bb1800b889d49e7653c6eb69aa7f1637a9146c",
-        "dex": "uniswap",
-        "liquidityUsd": 142.51,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x51663B8A28E7Ea197c5CcF983AfC084Da0a8023D",
         "dex": "aerodrome",
-        "liquidityUsd": 139968.14,
+        "liquidityUsd": 135402.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x781Cc496494Ae9A79DdB443F8DF825d22f7F0456",
+        "pair": "0x5f18278b373222d21bD076Cd72A7DA4CB8DFE151",
+        "dex": "uniswap",
+        "liquidityUsd": 0.09,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1d3a89d06b3b673ce35059867e3749fc82ca38b9089889eba9da2f058c695da4",
+        "dex": "uniswap",
+        "liquidityUsd": 5.6,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xB359b1F51A9a3aa7E5439815820132D63ffF680d",
         "dex": "aerodrome",
-        "liquidityUsd": 0.33,
+        "liquidityUsd": 0.44,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -181,26 +155,38 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x309336ce8cacc3ee798f8a86bf88c14e893b93532d032fea57ce14c9f57f364e",
-        "dex": "uniswap",
-        "liquidityUsd": 3.64,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "pair": "0x781Cc496494Ae9A79DdB443F8DF825d22f7F0456",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.37,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x1d3a89d06b3b673ce35059867e3749fc82ca38b9089889eba9da2f058c695da4",
-        "dex": "uniswap",
-        "liquidityUsd": 5.61,
+        "pair": "0x1322ca426d47f22577bd509012a877D83f473E0a",
+        "dex": "aerodrome",
+        "liquidityUsd": 0,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x58029B8e73Bc1eD9D0A794487dbEB72FAeC3DB56",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 52.14,
-    "projectLinks": null
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [],
+      "socials": []
+    }
   },
   "notes": null,
   "coi": false

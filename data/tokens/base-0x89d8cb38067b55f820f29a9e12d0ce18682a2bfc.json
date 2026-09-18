@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "STONX",
   "name": "Stonx",
-  "scanned_at": "2026-09-17T10:11:36.381Z",
+  "scanned_at": "2026-09-18T09:57:42.745Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 8.8%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -102,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -114,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "980044568825812256172856097",
+    "totalSupply": "976961794503320620675690692",
     "decimals": 18,
     "owner": "0x660eaaedebc968f8f3694354fa8ec0b4c5ba8d12",
     "controlType": "unknown",
@@ -123,14 +105,32 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 785874.75,
+    "liquidityUsd": 813286.8599999999,
     "pools": [
+      {
+        "pair": "0xc2dd131e210679afff1749c7f5d219bf87e9dd436b0bdd48a6bd27075b205ac3",
+        "dex": "uniswap",
+        "liquidityUsd": 791574.75,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x9cd6944d88fdafde3f3d40ebf08df62a4728e54d9a8a59102c69b4bf724db662",
         "dex": "uniswap",
-        "liquidityUsd": 24881.78,
+        "liquidityUsd": 16393.82,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcf0b2dc7bb4c0fbe3e4f42bcefcb0d3a2ffc3dc0911d72a09b4f4b3a2c6de742",
+        "dex": "uniswap",
+        "liquidityUsd": 4455.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,41 +139,14 @@
       {
         "pair": "0x858147b232f2e769a6ef83b602f3e202971f2f121d6d4f2c2f31ed5185dacf28",
         "dex": "uniswap",
-        "liquidityUsd": 2116.73,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xfcc2becba4aa911027f7892c11730bfff70eb68c234245ce58ac8a1237294e06",
-        "dex": "uniswap",
-        "liquidityUsd": 0.94,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8109099a3dc3bcb4d1ca26327fcda266e591e17d5678f01d75e5365f48489384",
-        "dex": "uniswap",
-        "liquidityUsd": 0.7,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc2dd131e210679afff1749c7f5d219bf87e9dd436b0bdd48a6bd27075b205ac3",
-        "dex": "uniswap",
-        "liquidityUsd": 758874.6,
+        "liquidityUsd": 863.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 8.78,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://stonx.ai/"
