@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BV7X",
   "name": "BitVault Signal",
-  "scanned_at": "2026-09-18T09:56:50.241Z",
+  "scanned_at": "2026-09-19T09:41:22.610Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 67.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +88,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -107,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 39676.27,
+    "verifiedSource": true,
+    "ageDays": 230,
+    "liquidityUsd": 41947.18,
     "pools": [
       {
         "pair": "0x8de32c3e440d497cd3b607555be1f6115717965fff56247c02976814edcf384f",
         "dex": "uniswap",
-        "liquidityUsd": 39554.24,
+        "liquidityUsd": 41817.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -123,14 +128,14 @@
       {
         "pair": "0xB0669F896D3Edd9835fAD05c3e90458bFDBB3870",
         "dex": "uniswap",
-        "liquidityUsd": 122.03,
+        "liquidityUsd": 129.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 11.87,
     "projectLinks": {
       "websites": [
         "https://www.bv7x.ai/",

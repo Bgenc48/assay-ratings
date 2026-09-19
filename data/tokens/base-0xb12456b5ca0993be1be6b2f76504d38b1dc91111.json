@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "TREX",
   "name": "Google T-REX",
-  "scanned_at": "2026-09-18T09:54:57.537Z",
+  "scanned_at": "2026-09-19T09:39:39.573Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,10 +66,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x8cc35e05d1052c87f364e5680e1413511c195ecf385812935b18376ecf5ec834"
+          }
         }
       ]
     },
@@ -109,10 +112,27 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 18.12,
+    "pools": [
+      {
+        "pair": "0x8cc35e05d1052c87f364e5680e1413511c195ecf385812935b18376ecf5ec834",
+        "dex": "uniswap",
+        "liquidityUsd": 18.12,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": null,
-    "projectLinks": null
+    "projectLinks": {
+      "websites": [
+        "https://unilaunch.fun/token/base/0xB12456b5cA0993Be1bE6B2F76504d38B1dC91111"
+      ],
+      "socials": [
+        "https://x.com/GOOGLcTREX"
+      ]
+    }
   },
   "notes": null,
   "coi": false

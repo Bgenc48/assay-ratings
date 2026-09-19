@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "cbXRP",
   "name": "Coinbase Wrapped XRP",
-  "scanned_at": "2026-09-18T09:53:36.894Z",
+  "scanned_at": "2026-09-19T09:38:24.768Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "F",
+    "letter": "UR",
     "overall": 28.2,
     "provisional": true,
     "badge": "Discretionary",
@@ -122,12 +122,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 994811.62,
+    "liquidityUsd": 1048431.0399999999,
     "pools": [
       {
         "pair": "0xB90fe999Be6869AF0aFC557DCCfBE169EA3403D6",
         "dex": "aerodrome",
-        "liquidityUsd": 495476.71,
+        "liquidityUsd": 664121.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,16 +136,7 @@
       {
         "pair": "0x62916B911F2B64d0e3A3b72472D6f8C08c75DcAA",
         "dex": "aerodrome",
-        "liquidityUsd": 176999.29,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xA6da283cf7D06b2279626E787c329d6aCF7e2994",
-        "dex": "aerodrome",
-        "liquidityUsd": 135963.32,
+        "liquidityUsd": 125423.46,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -154,7 +145,7 @@
       {
         "pair": "0x170b6bFc071426aaB7C81AE12383219facBb6B6A",
         "dex": "pancakeswap",
-        "liquidityUsd": 51178.26,
+        "liquidityUsd": 54259.33,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -163,7 +154,16 @@
       {
         "pair": "0xEE58348059c9AD6aC345be79C399da0c200627eD",
         "dex": "hydrex",
-        "liquidityUsd": 53905.46,
+        "liquidityUsd": 56860.76,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xA6da283cf7D06b2279626E787c329d6aCF7e2994",
+        "dex": "aerodrome",
+        "liquidityUsd": 60325.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -172,7 +172,7 @@
       {
         "pair": "0x3733cbB1402C788900A0A152e61c9aA31888FB95",
         "dex": "uniswap",
-        "liquidityUsd": 47135.99,
+        "liquidityUsd": 47969.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -181,16 +181,16 @@
       {
         "pair": "0x6ceFe2a691b1734042c10958B8E0EC19D81b2850",
         "dex": "uniswap",
-        "liquidityUsd": 16000.36,
+        "liquidityUsd": 16907.17,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb8fa9b30d8bc4cfa94d0228a7b57d613b53048838ce4e2d44033dae8cf1e03e2",
+        "pair": "0xC1C11814797f724BB03Ae58c2FBC22a5b2Ca2Fcb",
         "dex": "uniswap",
-        "liquidityUsd": 18152.23,
+        "liquidityUsd": 22563.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -204,5 +204,9 @@
     }
   },
   "notes": null,
-  "coi": false
+  "coi": false,
+  "pendingReview": {
+    "computed": "F"
+  },
+  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
 }

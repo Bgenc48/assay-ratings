@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "CP",
   "name": "Cluster Protocol",
-  "scanned_at": "2026-09-18T09:56:56.165Z",
+  "scanned_at": "2026-09-19T09:41:33.751Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 46.4,
+    "overall": 45.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,19 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 117 days old; trust needs time (Provisional).",
+          "evidence": "0x0bb8c6eb67def067e8ce9d39b92d8f89079ef943d75fb90ac5c3a3db6319e744"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -92,6 +99,11 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -113,23 +125,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 618392.72,
+    "verifiedSource": true,
+    "ageDays": 117,
+    "liquidityUsd": 517164.1600000001,
     "pools": [
-      {
-        "pair": "0x78fa9fB7a76C8ea204754a8D4FF301aa29935e8e",
-        "dex": "aerodrome",
-        "liquidityUsd": 595415.51,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x5cac81ba42524212dadc929b8fe8180fefe4f064bb340dbf75d3a9f0b273386c",
         "dex": "uniswap",
-        "liquidityUsd": 9985.11,
+        "liquidityUsd": 8922.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,59 +141,68 @@
       {
         "pair": "0xce45343a934ea70f2aca51bf442a5d5a4fedf9db2c39a1f8a756fd8bce04fa21",
         "dex": "uniswap",
-        "liquidityUsd": 1323.25,
+        "liquidityUsd": 1300.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x5c1e799d5d0be910f2a36707f2f2bf0c5093a52766d0b9dedea79eb0047dc5e7",
-        "dex": "uniswap",
-        "liquidityUsd": 58.81,
+        "pair": "0x78fa9fB7a76C8ea204754a8D4FF301aa29935e8e",
+        "dex": "aerodrome",
+        "liquidityUsd": 506864.19,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xfac2f608d0502723cd224f0d5f5e8e7d93cf801256952a93b3fc4f56133c3220",
+        "pair": "0x0F21FABA966ADf80Aa152a69E55968BD88f4D759",
         "dex": "uniswap",
-        "liquidityUsd": 2541.54,
+        "liquidityUsd": 12.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4526b4573653c4aa202ece91c1974d8704e8779ef5a53b91f2df7c976cdc54d0",
+        "pair": "0x79552843f41B9d91880d2808D22Cb0da2d340086",
         "dex": "uniswap",
-        "liquidityUsd": 3736.44,
+        "liquidityUsd": 5.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x88bad4fa51dc02ad9bfb3ffa782524368ef5b503007080797cfcee1a35735e06",
+        "pair": "0x47ec68b9e53bade500a05c334c57237ba76859c49256ae3fde33edc3cddc38a9",
         "dex": "uniswap",
-        "liquidityUsd": 4999.49,
+        "liquidityUsd": 41.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xf6707bdd1055f4cd9402fe1fd958cc2d0521272652e7598dac84fbf6a62bd676",
+        "pair": "0xa640d08e6ff4c556b52936d88316255ab8f4378e70b203da244cd6bcd3d0d78f",
         "dex": "uniswap",
-        "liquidityUsd": 332.57,
+        "liquidityUsd": 5.21,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe34fad6abeac4849e0272cc667a02fc1e8ed5786c8aa909f4792ec3f95cfab8b",
+        "dex": "uniswap",
+        "liquidityUsd": 11.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 18.09,
     "projectLinks": null
   },
   "notes": null,

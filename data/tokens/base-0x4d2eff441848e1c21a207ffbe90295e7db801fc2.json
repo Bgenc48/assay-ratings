@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "BOX",
   "name": "An Amazon Box",
-  "scanned_at": "2026-09-18T09:57:12.178Z",
+  "scanned_at": "2026-09-19T09:41:50.168Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -112,12 +112,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 34504.42,
+    "liquidityUsd": 28076.7,
     "pools": [
       {
         "pair": "0x795cd8715CC2C939b1A921327F43bEFA5F7FC2c4",
         "dex": "uniswap",
-        "liquidityUsd": 34487.45,
+        "liquidityUsd": 28061.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xa825343d08c1e2c84b06d01a986fdcc74b6292f0f47a60f880ead375da187e55",
+        "dex": "uniswap",
+        "liquidityUsd": 0.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +135,7 @@
       {
         "pair": "0x48c0aeeb2d36605c7965bc49fa3b499629ca0954bd2503e28ffdf1667e062fa0",
         "dex": "uniswap",
-        "liquidityUsd": 16.97,
+        "liquidityUsd": 14.72,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

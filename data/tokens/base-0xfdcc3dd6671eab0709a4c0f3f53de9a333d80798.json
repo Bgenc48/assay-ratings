@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-09-18T09:54:15.396Z",
+  "scanned_at": "2026-09-19T09:39:00.397Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F"
+            "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c"
           }
         }
       ]
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "685604001277210509933128",
+    "totalSupply": "675784241277210509933128",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -117,8 +117,17 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 97246.89,
+    "liquidityUsd": 199315.36,
     "pools": [
+      {
+        "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c",
+        "dex": "uniswap",
+        "liquidityUsd": 102064.54,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F",
         "dex": "aerodrome",
@@ -131,10 +140,19 @@
       {
         "pair": "0xada452F1340FAF2faA5CD6Cf5380f9585A624b8c",
         "dex": "uniswap",
-        "liquidityUsd": 155.72,
+        "liquidityUsd": 159.65,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3e576D9559A5B2Da5733420C9bD946b0FB615995",
+        "dex": "aerodrome",
+        "liquidityUsd": null,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],

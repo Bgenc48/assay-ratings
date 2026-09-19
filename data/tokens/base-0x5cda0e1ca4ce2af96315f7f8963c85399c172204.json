@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "wtCOIN",
   "name": "Wrapped Coinbase Global Inc ST0x",
-  "scanned_at": "2026-09-18T09:57:54.782Z",
+  "scanned_at": "2026-09-19T09:42:29.442Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x4618dFcbC52d9fbCd45Ec4A65fc61B5DA57Ad205"
+            "pair": "0x29aab777bAF3d40edd6F72fd24d4426Dc83Dd8b3"
           }
         }
       ]
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "1526070052051336845407",
+    "totalSupply": "1298872055707503030779",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -107,12 +107,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 260461.87000000002,
+    "liquidityUsd": 82062.09,
     "pools": [
       {
         "pair": "0x29aab777bAF3d40edd6F72fd24d4426Dc83Dd8b3",
         "dex": "uniswap",
-        "liquidityUsd": 27573.29,
+        "liquidityUsd": 23458.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +121,7 @@
       {
         "pair": "0x152a47222c4be783b1eaca2105fad5924b914e5c5846ffa814d4a4050af546e5",
         "dex": "uniswap",
-        "liquidityUsd": 21252.75,
+        "liquidityUsd": 21507.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +130,7 @@
       {
         "pair": "0xab5d32fF95b58bD5e77De08738a391973eE88C81",
         "dex": "hydrex",
-        "liquidityUsd": 14650.83,
+        "liquidityUsd": 15293.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +139,16 @@
       {
         "pair": "0x8495444b5f3699D223baa01E67Bf534475620aff",
         "dex": "uniswap",
-        "liquidityUsd": 11328.57,
+        "liquidityUsd": 12297.44,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5949dabd4323605231ffa112ec51fe4cb06f64fb6b781cb8edb6559ee384f966",
+        "dex": "uniswap",
+        "liquidityUsd": 8202.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,34 +157,25 @@
       {
         "pair": "0x434c1924f8419b08f3d61e2627312b6760a3dbc2a824fd11e273520ebe9780fc",
         "dex": "uniswap",
-        "liquidityUsd": 391.99,
+        "liquidityUsd": 403.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4618dFcbC52d9fbCd45Ec4A65fc61B5DA57Ad205",
-        "dex": "aerodrome",
-        "liquidityUsd": 139720.9,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4843ba5c9b5d11d30a1e09c0370dca92b37cdd4997edcc2e31499f9b2689236f",
+        "pair": "0xc2d01d8af98f4cc485660e2eb9ed2eae6e6b42ac698269ba41f7ead5bd658bdf",
         "dex": "uniswap",
-        "liquidityUsd": 30390.87,
+        "liquidityUsd": 396.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x03b759c1a3891a188af20021b8af1134b00a186387db6c36ad0fd1a5f80c6923",
+        "pair": "0x8c48d89dacac24a81a72f81c6dc06a60ff2544d332b3633a72a2e57eb4c30a2f",
         "dex": "uniswap",
-        "liquidityUsd": 15152.67,
+        "liquidityUsd": 503.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

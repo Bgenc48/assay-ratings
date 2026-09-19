@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ROLL",
   "name": "Roll",
-  "scanned_at": "2026-09-18T09:53:34.241Z",
+  "scanned_at": "2026-09-19T09:38:22.199Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -112,12 +112,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1219575.5,
+    "liquidityUsd": 1263543.67,
     "pools": [
       {
         "pair": "0x0a04e1c94584a6f91228da6c0dba6bf0fbe5c9fa20ec6df57490494994489333",
         "dex": "uniswap",
-        "liquidityUsd": 1206175.36,
+        "liquidityUsd": 1249692.68,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +126,7 @@
       {
         "pair": "0xE47F7dbA68a00dc1A6f11458BcDFcA810E1CFEbF",
         "dex": "uniswap",
-        "liquidityUsd": 11882.24,
+        "liquidityUsd": 12287.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +135,7 @@
       {
         "pair": "0x595beA2246d5D296E0FEF76DfE3df2B07EC70E5f",
         "dex": "pancakeswap",
-        "liquidityUsd": 1478.43,
+        "liquidityUsd": 1511.05,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,10 +144,19 @@
       {
         "pair": "0x1BE555BE063913443F8b4Fa48B7d1AeA0a7B13B7",
         "dex": "uniswap",
-        "liquidityUsd": 0.05,
+        "liquidityUsd": 0.04,
         "lpBurnedPct": 100,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb345f418f4238b68ec46d8f056389e959226e79fa2dbeda194577b4695a754ff",
+        "dex": "uniswap",
+        "liquidityUsd": 0.72,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
@@ -160,12 +169,21 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb345f418f4238b68ec46d8f056389e959226e79fa2dbeda194577b4695a754ff",
+        "pair": "0xac2dc91974b4ee2365753aee902e69e4b8660a1a700e5481b1c81704d06d8fb3",
         "dex": "uniswap",
-        "liquidityUsd": 0.73,
+        "liquidityUsd": 12.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xE69D66b0343ce6F0e6c2A0a6A352C536E3d88562",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.07,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],

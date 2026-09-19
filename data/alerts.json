@@ -1,6 +1,556 @@
 {
-  "generated_at": "2026-09-18T09:57:55.869Z",
+  "generated_at": "2026-09-19T09:42:34.026Z",
   "alerts": [
+    {
+      "at": "2026-09-19T09:38:22.707Z",
+      "chain": "base",
+      "address": "0xab6363da0c80cef3ae105bd6241e30872355d021",
+      "symbol": "ROLL",
+      "severity": "CRITICAL",
+      "kind": "liquidity-security-drop",
+      "text": "Burned/locked share of the dominant pool fell 100% → 0%.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:38:25.330Z",
+      "chain": "base",
+      "address": "0xcb585250f852c6c6bf90434ab21a00f02833a4af",
+      "symbol": "cbXRP",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state F → UR.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:43.244Z",
+      "chain": "base",
+      "address": "0x96594709ee85e343ad0be181b0f1a68a9b4ebb07",
+      "symbol": "牛来",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:43.244Z",
+      "chain": "base",
+      "address": "0x96594709ee85e343ad0be181b0f1a68a9b4ebb07",
+      "symbol": "牛来",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:44.667Z",
+      "chain": "base",
+      "address": "0xc0634090f2fe6c6d75e61be2b949464abb498973",
+      "symbol": "KTA",
+      "severity": "WARN",
+      "kind": "grade-state",
+      "text": "Grade state UR → B.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:44.667Z",
+      "chain": "base",
+      "address": "0xc0634090f2fe6c6d75e61be2b949464abb498973",
+      "symbol": "KTA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Externally-owned accounts can withdraw 96% of tracked liquidity — a majority. The largest such pool is 0xd9eDC75a3a797Ec92Ca370F19051BAbebfb2edEe (LP holder 0xd38ab996aab7b7955bdf0d91f5742c3856589fe6, 99.2% of that pool).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:44.667Z",
+      "chain": "base",
+      "address": "0xc0634090f2fe6c6d75e61be2b949464abb498973",
+      "symbol": "KTA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:45.685Z",
+      "chain": "base",
+      "address": "0x4409d3392019bae6b914a5d92fbff46fa2aca368",
+      "symbol": "TSLA",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:46.757Z",
+      "chain": "base",
+      "address": "0xb20000000000000000000078ee7ce2fe4908108c",
+      "symbol": "NVDAc",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:46.757Z",
+      "chain": "base",
+      "address": "0xb20000000000000000000078ee7ce2fe4908108c",
+      "symbol": "NVDAc",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:47.830Z",
+      "chain": "base",
+      "address": "0x6e963857ad4e6cc5bc6866a8b8cce4e238314b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:47.830Z",
+      "chain": "base",
+      "address": "0x6e963857ad4e6cc5bc6866a8b8cce4e238314b07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:49.308Z",
+      "chain": "base",
+      "address": "0x00f3c42833c3170159af4e92dbb451fb3f708917",
+      "symbol": "ICP",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:50.359Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000008bc8786b856e61707c",
+      "symbol": "METAc",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:50.359Z",
+      "chain": "base",
+      "address": "0xb2000000000000000000008bc8786b856e61707c",
+      "symbol": "METAc",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:52.483Z",
+      "chain": "base",
+      "address": "0x78e8cf657742e10eac8f64007615aa741fc76414",
+      "symbol": "USDL",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 12 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:53.830Z",
+      "chain": "base",
+      "address": "0x3ec2156d4c0a9cbdab4a016633b7bcf6a8d68ea2",
+      "symbol": "DRB",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:53.830Z",
+      "chain": "base",
+      "address": "0x3ec2156d4c0a9cbdab4a016633b7bcf6a8d68ea2",
+      "symbol": "DRB",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:54.865Z",
+      "chain": "base",
+      "address": "0xb20000000000000000000029440a9564b59129b1",
+      "symbol": "plumber",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:54.865Z",
+      "chain": "base",
+      "address": "0xb20000000000000000000029440a9564b59129b1",
+      "symbol": "plumber",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:55.926Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000cfbdf64a8706a94a01",
+      "symbol": "BLUECHIP",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B+.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:55.926Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000cfbdf64a8706a94a01",
+      "symbol": "BLUECHIP",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Source code is not verified on a public explorer.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:56.964Z",
+      "chain": "base",
+      "address": "0xc87e0c87aff07aa4fffeaa603a856c4f9726db07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:56.964Z",
+      "chain": "base",
+      "address": "0xc87e0c87aff07aa4fffeaa603a856c4f9726db07",
+      "symbol": "OpenAI",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:58.818Z",
+      "chain": "base",
+      "address": "0x315b8c9a1123c10228d469551033440441b41f0b",
+      "symbol": "BEATS",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: A+ requires 24 clean months of operating history.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:59.997Z",
+      "chain": "base",
+      "address": "0xf1e9baa65d418a9025e1851dd2d37f1ad208bba3",
+      "symbol": "Ratspeak",
+      "severity": "INFO",
+      "kind": "upgrade",
+      "text": "Grade C → B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:39:59.997Z",
+      "chain": "base",
+      "address": "0xf1e9baa65d418a9025e1851dd2d37f1ad208bba3",
+      "symbol": "Ratspeak",
+      "severity": "INFO",
+      "kind": "cap-cleared",
+      "text": "Hard cap cleared: Token is younger than 6 months (Provisional).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:40:58.636Z",
+      "chain": "base",
+      "address": "0x94d075c0925af89cd4aefba9b80d5c546c85bba3",
+      "symbol": "BasedBBIAGBInu",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:40:58.636Z",
+      "chain": "base",
+      "address": "0x94d075c0925af89cd4aefba9b80d5c546c85bba3",
+      "symbol": "BasedBBIAGBInu",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:00.897Z",
+      "chain": "base",
+      "address": "0x5577a294ae5a21446a11b0e4100ca83803995720",
+      "symbol": "ba3PUMP",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:02.551Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000821a8eee69c4201601",
+      "symbol": "HOUSE",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B+ → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:02.551Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000821a8eee69c4201601",
+      "symbol": "HOUSE",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:04.868Z",
+      "chain": "base",
+      "address": "0x30c7235866872213f68cb1f08c37cb9eccb93452",
+      "symbol": "PROMPT",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:04.868Z",
+      "chain": "base",
+      "address": "0x30c7235866872213f68cb1f08c37cb9eccb93452",
+      "symbol": "PROMPT",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:04.868Z",
+      "chain": "base",
+      "address": "0x30c7235866872213f68cb1f08c37cb9eccb93452",
+      "symbol": "PROMPT",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: A+ requires 24 clean months of operating history. (≤ A).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:09.911Z",
+      "chain": "base",
+      "address": "0x37fefbf59743ff88f6c042ceafcb617c072f49aa",
+      "symbol": "CAUSEWAY",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B+ → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:09.911Z",
+      "chain": "base",
+      "address": "0x37fefbf59743ff88f6c042ceafcb617c072f49aa",
+      "symbol": "CAUSEWAY",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:09.911Z",
+      "chain": "base",
+      "address": "0x37fefbf59743ff88f6c042ceafcb617c072f49aa",
+      "symbol": "CAUSEWAY",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:11.813Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000025add1ce1f65415ea",
+      "symbol": "COPPERCOBIE",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B+ → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:11.813Z",
+      "chain": "base",
+      "address": "0xb200000000000000000000025add1ce1f65415ea",
+      "symbol": "COPPERCOBIE",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:14.058Z",
+      "chain": "base",
+      "address": "0xad46308a6f6999bacc099f3029b77c352e772ba3",
+      "symbol": "defi-native",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:14.058Z",
+      "chain": "base",
+      "address": "0xad46308a6f6999bacc099f3029b77c352e772ba3",
+      "symbol": "defi-native",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:16.788Z",
+      "chain": "base",
+      "address": "0xb3d7e0c3c39a1d3f1b304663065a2f83ddf56d8e",
+      "symbol": "AUTONO",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:16.788Z",
+      "chain": "base",
+      "address": "0xb3d7e0c3c39a1d3f1b304663065a2f83ddf56d8e",
+      "symbol": "AUTONO",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:21.860Z",
+      "chain": "base",
+      "address": "0x1ea8deb921aa6015f4938010c848140b98108dd2",
+      "symbol": "vAPI",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:21.860Z",
+      "chain": "base",
+      "address": "0x1ea8deb921aa6015f4938010c848140b98108dd2",
+      "symbol": "vAPI",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:24.475Z",
+      "chain": "base",
+      "address": "0xd88fd4a11255e51f64f78b4a7d74456325c2d8dc",
+      "symbol": "BV7X",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:24.475Z",
+      "chain": "base",
+      "address": "0xd88fd4a11255e51f64f78b4a7d74456325c2d8dc",
+      "symbol": "BV7X",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 12 months (Provisional). (≤ A-).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:29.893Z",
+      "chain": "base",
+      "address": "0xfb31f85a8367210b2e4ed2360d2da9dc2d2ccc95",
+      "symbol": "EDEL",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 12 months (Provisional). (≤ A-).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:32.049Z",
+      "chain": "base",
+      "address": "0x020eaeee24bcad37cb9a01aa1f8c591c47341ba3",
+      "symbol": "SETZ",
+      "severity": "WARN",
+      "kind": "downgrade",
+      "text": "Grade B- → C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:32.049Z",
+      "chain": "base",
+      "address": "0x020eaeee24bcad37cb9a01aa1f8c591c47341ba3",
+      "symbol": "SETZ",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:41:35.741Z",
+      "chain": "base",
+      "address": "0x001aad84c21a5cd4d696c56d44866e9703c43f77",
+      "symbol": "CP",
+      "severity": "WARN",
+      "kind": "cap-triggered",
+      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:42:30.858Z",
+      "chain": "base",
+      "address": "0x08c5dd8b64ec620aa31914bba13984b57e40c30b",
+      "symbol": "XAUG",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "XAUG is now rated: C.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:42:31.936Z",
+      "chain": "base",
+      "address": "0x3725265a77d314b53c877607b76d7c12e6e21b07",
+      "symbol": "牛马",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "牛马 is now rated: B-.",
+      "evidence": null
+    },
+    {
+      "at": "2026-09-19T09:42:33.274Z",
+      "chain": "base",
+      "address": "0xfdcc845c048ad96b5c80b6a55d65c20a98d37777",
+      "symbol": "VCAT",
+      "severity": "INFO",
+      "kind": "listed",
+      "text": "VCAT is now rated: B+.",
+      "evidence": null
+    },
     {
       "at": "2026-09-18T09:52:34.089Z",
       "chain": "base",
@@ -2451,556 +3001,6 @@
       "severity": "WARN",
       "kind": "downgrade",
       "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:01.595Z",
-      "chain": "base",
-      "address": "0x020eaeee24bcad37cb9a01aa1f8c591c47341ba3",
-      "symbol": "SETZ",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:05.089Z",
-      "chain": "base",
-      "address": "0x001aad84c21a5cd4d696c56d44866e9703c43f77",
-      "symbol": "CP",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:13.723Z",
-      "chain": "base",
-      "address": "0xa88594d404727625a9437c3f886c7643872296ae",
-      "symbol": "WELL",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Externally-owned accounts can withdraw 98% of tracked liquidity — a majority. The largest such pool is 0x89D0F320ac73dd7d9513FFC5bc58D1161452a657 (LP holder 0xb5235bb9ec03353da455d742dd09cbc3817fe3fa, 77.72% of that pool). (≤ D).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:16.135Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000008501b13360000cb2ec",
-      "symbol": "cbZEC",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:16.135Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000008501b13360000cb2ec",
-      "symbol": "cbZEC",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:18.651Z",
-      "chain": "base",
-      "address": "0xb200000000000000000000d9192b6b456483c2e8",
-      "symbol": "AMZNc",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:18.651Z",
-      "chain": "base",
-      "address": "0xb200000000000000000000d9192b6b456483c2e8",
-      "symbol": "AMZNc",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:21.036Z",
-      "chain": "base",
-      "address": "0xb200000000000000000000f065aacb72155cc001",
-      "symbol": "MOONBASE",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:21.036Z",
-      "chain": "base",
-      "address": "0xb200000000000000000000f065aacb72155cc001",
-      "symbol": "MOONBASE",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:24.227Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000007b9fcbd005511acbd5",
-      "symbol": "SPCXc",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:24.227Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000007b9fcbd005511acbd5",
-      "symbol": "SPCXc",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:26.727Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000001e800a7f5189430cd0",
-      "symbol": "TSLAc",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:26.727Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000001e800a7f5189430cd0",
-      "symbol": "TSLAc",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:31.724Z",
-      "chain": "base",
-      "address": "0x0f61edbfe6cd86024c0f210c0695b08df55fdfc9",
-      "symbol": "BSTONK",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:33.457Z",
-      "chain": "base",
-      "address": "0x600b91e301f26a4367eae4ce7014819f48644969",
-      "symbol": "BLAPE",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:33.457Z",
-      "chain": "base",
-      "address": "0x600b91e301f26a4367eae4ce7014819f48644969",
-      "symbol": "BLAPE",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:33.457Z",
-      "chain": "base",
-      "address": "0x600b91e301f26a4367eae4ce7014819f48644969",
-      "symbol": "BLAPE",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:37.258Z",
-      "chain": "base",
-      "address": "0xb200000000000000000000ab99cfa739e253872b",
-      "symbol": "MSFTc",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:37.258Z",
-      "chain": "base",
-      "address": "0xb200000000000000000000ab99cfa739e253872b",
-      "symbol": "MSFTc",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:42.380Z",
-      "chain": "base",
-      "address": "0x3867b7f827f6b6aaf6397b4aee8480b0af37a4a3",
-      "symbol": "CHUS",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:42.380Z",
-      "chain": "base",
-      "address": "0x3867b7f827f6b6aaf6397b4aee8480b0af37a4a3",
-      "symbol": "CHUS",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:42.380Z",
-      "chain": "base",
-      "address": "0x3867b7f827f6b6aaf6397b4aee8480b0af37a4a3",
-      "symbol": "CHUS",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:42.380Z",
-      "chain": "base",
-      "address": "0x3867b7f827f6b6aaf6397b4aee8480b0af37a4a3",
-      "symbol": "CHUS",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:44.676Z",
-      "chain": "base",
-      "address": "0xa53887f7e7c1bf5010b8627f1c1ba94fe7a5d6e0",
-      "symbol": "RNBW",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 12 months (Provisional). (≤ A-).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:49.939Z",
-      "chain": "base",
-      "address": "0x4fb636434b05c5dbcf0070f2e810f8e706277b07",
-      "symbol": "LAPTOP",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:49.939Z",
-      "chain": "base",
-      "address": "0x4fb636434b05c5dbcf0070f2e810f8e706277b07",
-      "symbol": "LAPTOP",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:52.417Z",
-      "chain": "base",
-      "address": "0x37b5dd11451e312bc526739e17ed7de8e9228b07",
-      "symbol": "TRUMP",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:52.417Z",
-      "chain": "base",
-      "address": "0x37b5dd11451e312bc526739e17ed7de8e9228b07",
-      "symbol": "TRUMP",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:52.417Z",
-      "chain": "base",
-      "address": "0x37b5dd11451e312bc526739e17ed7de8e9228b07",
-      "symbol": "TRUMP",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:54.476Z",
-      "chain": "base",
-      "address": "0xa002e475acb822cfa4fb029fc475badd3811ab07",
-      "symbol": "LAPTOP",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:54.476Z",
-      "chain": "base",
-      "address": "0xa002e475acb822cfa4fb029fc475badd3811ab07",
-      "symbol": "LAPTOP",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:56.470Z",
-      "chain": "base",
-      "address": "0xe8cffaca7fbbbc78bcd4abb0a8151707af290b07",
-      "symbol": "LAPTOP",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:56.470Z",
-      "chain": "base",
-      "address": "0xe8cffaca7fbbbc78bcd4abb0a8151707af290b07",
-      "symbol": "LAPTOP",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:58.625Z",
-      "chain": "base",
-      "address": "0xb200000000000000000000397293cb8cda9a10c5",
-      "symbol": "SNDKc",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:10:58.625Z",
-      "chain": "base",
-      "address": "0xb200000000000000000000397293cb8cda9a10c5",
-      "symbol": "SNDKc",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:01.250Z",
-      "chain": "base",
-      "address": "0x88f7222ae72884fe4bcf579e0d44b1a39d359837",
-      "symbol": "PRIVVVATE",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:03.728Z",
-      "chain": "base",
-      "address": "0x75af968d2e58749fda1b42c58186b76f5e511ba3",
-      "symbol": "CHIP",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:03.728Z",
-      "chain": "base",
-      "address": "0x75af968d2e58749fda1b42c58186b76f5e511ba3",
-      "symbol": "CHIP",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:08.592Z",
-      "chain": "base",
-      "address": "0xb095274743941e953c746f9c228da9c18bb6ec29",
-      "symbol": "LAPTOP",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B → B-.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:08.592Z",
-      "chain": "base",
-      "address": "0xb095274743941e953c746f9c228da9c18bb6ec29",
-      "symbol": "LAPTOP",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:10.912Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000004884b426556b92883d",
-      "symbol": "MSTRc",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:10.912Z",
-      "chain": "base",
-      "address": "0xb2000000000000000000004884b426556b92883d",
-      "symbol": "MSTRc",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:13.259Z",
-      "chain": "base",
-      "address": "0x7f045e6276b2cc30047666a271b11ae6ef30b8da",
-      "symbol": "Grok",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B+ → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:13.259Z",
-      "chain": "base",
-      "address": "0x7f045e6276b2cc30047666a271b11ae6ef30b8da",
-      "symbol": "Grok",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:13.259Z",
-      "chain": "base",
-      "address": "0x7f045e6276b2cc30047666a271b11ae6ef30b8da",
-      "symbol": "Grok",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:15.497Z",
-      "chain": "base",
-      "address": "0xf3081494b87e8d5fb7960f066e931d1d0e6e3d67",
-      "symbol": "TAO",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 6 months (Provisional). (≤ B+).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:17.795Z",
-      "chain": "base",
-      "address": "0x9b83c2f3c1975bf4b6cc04f8d3f6bc1e98e38ba3",
-      "symbol": "STONKFLY",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:17.795Z",
-      "chain": "base",
-      "address": "0x9b83c2f3c1975bf4b6cc04f8d3f6bc1e98e38ba3",
-      "symbol": "STONKFLY",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:22.541Z",
-      "chain": "base",
-      "address": "0xa3d353743164972b37c8e5358fb1e76f0be8aba3",
-      "symbol": "ELON",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:22.541Z",
-      "chain": "base",
-      "address": "0xa3d353743164972b37c8e5358fb1e76f0be8aba3",
-      "symbol": "ELON",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:24.772Z",
-      "chain": "base",
-      "address": "0x908b1d6b6c12bfdfcaaeb658b365ce39c21e679c",
-      "symbol": "LOTTO",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B- → C.",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:24.772Z",
-      "chain": "base",
-      "address": "0x908b1d6b6c12bfdfcaaeb658b365ce39c21e679c",
-      "symbol": "LOTTO",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Source code is not verified on a public explorer. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:27.404Z",
-      "chain": "base",
-      "address": "0xac485391eb2d7d88253a7f1ef18c37f4242d1a24",
-      "symbol": "LSK",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Top-10 unlabeled holders exceed 50%. (≤ C).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:27.404Z",
-      "chain": "base",
-      "address": "0xac485391eb2d7d88253a7f1ef18c37f4242d1a24",
-      "symbol": "LSK",
-      "severity": "WARN",
-      "kind": "cap-triggered",
-      "text": "New hard cap: Token is younger than 12 months (Provisional). (≤ A-).",
-      "evidence": null
-    },
-    {
-      "at": "2026-09-17T10:11:31.273Z",
-      "chain": "base",
-      "address": "0x2b11834ed1feaed4b4b3a86a6f571315e25a884d",
-      "symbol": "MOCA",
-      "severity": "WARN",
-      "kind": "downgrade",
-      "text": "Grade B → C.",
       "evidence": null
     }
   ]
