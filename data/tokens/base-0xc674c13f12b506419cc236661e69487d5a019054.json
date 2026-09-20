@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Robinhood",
   "name": "Robinhood",
-  "scanned_at": "2026-09-19T09:38:33.425Z",
+  "scanned_at": "2026-09-20T09:54:30.600Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xfe12bc7ce8e8d7bb0e72ca87f9c0214fa6984ff779d79d872978acb348846173"
+          }
         }
       ]
     },
@@ -106,8 +109,27 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
+    "liquidityUsd": 10.79,
+    "pools": [
+      {
+        "pair": "0xc8352bda4f38b30dae3bfd6ccece84237cf3b7073aab93dcd5942beef78037b7",
+        "dex": "uniswap",
+        "liquidityUsd": 0.03,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xfe12bc7ce8e8d7bb0e72ca87f9c0214fa6984ff779d79d872978acb348846173",
+        "dex": "uniswap",
+        "liquidityUsd": 10.76,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": null,
     "projectLinks": null
   },

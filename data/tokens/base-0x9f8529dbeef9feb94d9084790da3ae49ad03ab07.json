@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BASED10",
   "name": "Base10 Index",
-  "scanned_at": "2026-09-19T09:40:37.692Z",
+  "scanned_at": "2026-09-20T09:57:18.434Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.5,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 0.9%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -114,21 +107,21 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 26852.5,
+    "liquidityUsd": 27139.77,
     "pools": [
       {
         "pair": "0x1d2d46ef574876dd93112b4e6290ec933af2b04bfe263c68c700c90973b9bd1a",
         "dex": "uniswap",
-        "liquidityUsd": 26852.5,
+        "liquidityUsd": 27139.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 0.86,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

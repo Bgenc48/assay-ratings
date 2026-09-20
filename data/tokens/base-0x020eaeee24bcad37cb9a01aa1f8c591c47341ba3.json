@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "SETZ",
   "name": "SETZ",
-  "scanned_at": "2026-09-19T09:41:30.644Z",
+  "scanned_at": "2026-09-20T09:57:43.478Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -94,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -116,21 +105,66 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 120757.28,
+    "liquidityUsd": 117350.03000000001,
     "pools": [
       {
         "pair": "0x2d6474a460ac27ffc6cb262243173ac25036c44e3c81113ed786cec7a970814c",
         "dex": "uniswap",
-        "liquidityUsd": 120757.28,
+        "liquidityUsd": 117280.32,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9844bb1b333aaffbc17aa5a6b9da77e7049ae922f8f79a243a8dd9f6115f8247",
+        "dex": "uniswap",
+        "liquidityUsd": 53.3,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x880c486d0752b9e16272c02a7d6e36a1cecd3c9d15dee6d15b7a31ad533087eb",
+        "dex": "uniswap",
+        "liquidityUsd": 13.59,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd0eaa16518796b70a5676f8c759f7c3040da987bd4a18c8b0b644fe482198df3",
+        "dex": "uniswap",
+        "liquidityUsd": 2,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x60afba40f06a80640cbff12b85a44fb83c2ac35ef43cca1a02856d6ffc46cc70",
+        "dex": "uniswap",
+        "liquidityUsd": 0.82,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x36ea35dbbdb65c22eebe598b965f1bcf1108c888b0239623b29880ce66fc0189",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 11.37,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://setz.one"

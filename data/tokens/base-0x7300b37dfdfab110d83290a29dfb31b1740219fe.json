@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MAMO",
   "name": "Mamo",
-  "scanned_at": "2026-09-19T09:40:27.999Z",
+  "scanned_at": "2026-09-20T09:57:14.751Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 71.1,
-    "provisional": false,
+    "overall": 70,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -88,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -112,23 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 487,
-    "liquidityUsd": 978526.8700000001,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 884999.25,
     "pools": [
       {
         "pair": "0xE2B3aA806e56603a244bFc111c9474F7DeDD03db",
         "dex": "aerodrome",
-        "liquidityUsd": 386099.81,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x678F431DA2aBb9B5726bbf5CCDbaEEBB60dA9813",
-        "dex": "aerodrome",
-        "liquidityUsd": 95799.04,
+        "liquidityUsd": 364944.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +123,16 @@
       {
         "pair": "0x4A021bA3ab1F0121e7DF76f345C547db86Cb3468",
         "dex": "aerodrome",
-        "liquidityUsd": 410982.52,
+        "liquidityUsd": 384760.98,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x678F431DA2aBb9B5726bbf5CCDbaEEBB60dA9813",
+        "dex": "aerodrome",
+        "liquidityUsd": 95884.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +141,7 @@
       {
         "pair": "0xAa067F08FeF60420d050A92E7800E588748B7d67",
         "dex": "aerodrome",
-        "liquidityUsd": 39931.55,
+        "liquidityUsd": 37342.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +150,16 @@
       {
         "pair": "0xe8d68174F4aCDAf874F2e6b46B0725e9aB4D3C4F",
         "dex": "uniswap",
-        "liquidityUsd": 2201.06,
+        "liquidityUsd": 2053.24,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb53214c0c4509656bbdbedfbf26a4a2b5873fbb7b9168ec2881f4098c65c3aa9",
+        "dex": "uniswap",
+        "liquidityUsd": 2.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +168,7 @@
       {
         "pair": "0x6fe0e76921cddc3f1b8ef08ec1499dc2f872469716774d9c72da93a8dae1ea8a",
         "dex": "uniswap",
-        "liquidityUsd": 11.48,
+        "liquidityUsd": 11.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,18 +182,9 @@
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xa27823Ab949fD142d3631fA46B54ba4bD8E9591C",
-        "dex": "aerodrome",
-        "liquidityUsd": 43501.41,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 13.45,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://mamo.bot/"

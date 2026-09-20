@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "VVVeity",
   "name": "Venice Deity",
-  "scanned_at": "2026-09-19T09:39:35.982Z",
+  "scanned_at": "2026-09-20T09:56:10.989Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 63.9,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,19 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 111 days old; trust needs time (Provisional).",
+          "evidence": "0x6afb49ab592996a177b512dae9432f80d0bd53f11fe3ce0eebcb339192703a7a"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +95,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,14 +117,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 85715.97,
+    "verifiedSource": true,
+    "ageDays": 111,
+    "liquidityUsd": 77651.63,
     "pools": [
       {
         "pair": "0x123e50d024df1e6fe41347850a5695918242927b4e2623d2b97625248ccd2c20",
         "dex": "uniswap",
-        "liquidityUsd": 85712.8,
+        "liquidityUsd": 77650,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,23 +133,14 @@
       {
         "pair": "0xb5cb3780769f1af57ab361ffda0882b7787ea3e5cf566d8dcf03de228ad7e585",
         "dex": "uniswap",
-        "liquidityUsd": 1.79,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x41aed8183af4d1104e47ae64ae9b3c9dbba04c7b715da84f831117f73ed21f19",
-        "dex": "uniswap",
-        "liquidityUsd": 1.38,
+        "liquidityUsd": 1.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 13.51,
     "projectLinks": {
       "websites": [
         "https://www.vvveity.com/",

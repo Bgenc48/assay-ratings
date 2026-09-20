@@ -4,11 +4,11 @@
   "status": "ok",
   "symbol": "cbXRP",
   "name": "Coinbase Wrapped XRP",
-  "scanned_at": "2026-09-19T09:38:24.768Z",
+  "scanned_at": "2026-09-20T09:54:21.259Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "UR",
+    "letter": "F",
     "overall": 28.2,
     "provisional": true,
     "badge": "Discretionary",
@@ -122,12 +122,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1048431.0399999999,
+    "liquidityUsd": 894505.26,
     "pools": [
       {
         "pair": "0xB90fe999Be6869AF0aFC557DCCfBE169EA3403D6",
         "dex": "aerodrome",
-        "liquidityUsd": 664121.42,
+        "liquidityUsd": 516131.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,7 +136,7 @@
       {
         "pair": "0x62916B911F2B64d0e3A3b72472D6f8C08c75DcAA",
         "dex": "aerodrome",
-        "liquidityUsd": 125423.46,
+        "liquidityUsd": 124885.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,16 +145,7 @@
       {
         "pair": "0x170b6bFc071426aaB7C81AE12383219facBb6B6A",
         "dex": "pancakeswap",
-        "liquidityUsd": 54259.33,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xEE58348059c9AD6aC345be79C399da0c200627eD",
-        "dex": "hydrex",
-        "liquidityUsd": 56860.76,
+        "liquidityUsd": 54421.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -163,7 +154,16 @@
       {
         "pair": "0xA6da283cf7D06b2279626E787c329d6aCF7e2994",
         "dex": "aerodrome",
-        "liquidityUsd": 60325.71,
+        "liquidityUsd": 58829.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xEE58348059c9AD6aC345be79C399da0c200627eD",
+        "dex": "hydrex",
+        "liquidityUsd": 54050.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -172,7 +172,7 @@
       {
         "pair": "0x3733cbB1402C788900A0A152e61c9aA31888FB95",
         "dex": "uniswap",
-        "liquidityUsd": 47969.34,
+        "liquidityUsd": 47673.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -181,7 +181,7 @@
       {
         "pair": "0x6ceFe2a691b1734042c10958B8E0EC19D81b2850",
         "dex": "uniswap",
-        "liquidityUsd": 16907.17,
+        "liquidityUsd": 16486.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -190,7 +190,7 @@
       {
         "pair": "0xC1C11814797f724BB03Ae58c2FBC22a5b2Ca2Fcb",
         "dex": "uniswap",
-        "liquidityUsd": 22563.85,
+        "liquidityUsd": 22026.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -204,9 +204,5 @@
     }
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "F"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

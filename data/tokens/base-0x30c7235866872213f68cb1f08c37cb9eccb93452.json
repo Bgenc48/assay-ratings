@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "PROMPT",
   "name": "Prompt",
-  "scanned_at": "2026-09-19T09:41:03.303Z",
+  "scanned_at": "2026-09-20T09:57:32.334Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
-    "provisional": false,
+    "letter": "B",
+    "overall": 75.5,
+    "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 66.8% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,16 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -124,14 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 548,
-    "liquidityUsd": 83334.15000000001,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 81342.87,
     "pools": [
       {
         "pair": "0x953764548D1cA834E2b73FcD0D26A495336C99C8",
         "dex": "uniswap",
-        "liquidityUsd": 78694.16,
+        "liquidityUsd": 76856.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,14 +123,14 @@
       {
         "pair": "0x41D60eD9C8327EA0c6b16a44343c177E0402FeeA",
         "dex": "aerodrome",
-        "liquidityUsd": 4639.99,
+        "liquidityUsd": 4486.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 66.79,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

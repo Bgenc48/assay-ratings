@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "TIBBIR",
   "name": "Ribbita by Virtuals",
-  "scanned_at": "2026-09-19T09:39:24.613Z",
+  "scanned_at": "2026-09-20T09:55:45.173Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 56.1,
-    "provisional": true,
+    "overall": 59.4,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,12 +78,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +94,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,32 +121,32 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 3723776.9799999995,
+    "verifiedSource": false,
+    "ageDays": 616,
+    "liquidityUsd": 3498485.31,
     "pools": [
       {
         "pair": "0x0c3b466104545efa096b8f944c1e524E1d0D4888",
         "dex": "uniswap",
-        "liquidityUsd": 3099959.32,
+        "liquidityUsd": 2916406.34,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0E4409F7a8ebA3213F336daf608985302e79328c",
+        "pair": "0x0f664afFB82f074937D5cFCD61b97F3F32d5dC50",
         "dex": "aerodrome",
-        "liquidityUsd": 397667.6,
+        "liquidityUsd": 130032,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0f664afFB82f074937D5cFCD61b97F3F32d5dC50",
+        "pair": "0x0E4409F7a8ebA3213F336daf608985302e79328c",
         "dex": "aerodrome",
-        "liquidityUsd": 138105.96,
+        "liquidityUsd": 369438.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +155,7 @@
       {
         "pair": "0x9f38d45cd16394b5c7e3603631711817f75cac80bd4700d0170cd684801e10e5",
         "dex": "uniswap",
-        "liquidityUsd": 42223.65,
+        "liquidityUsd": 39142.27,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +164,7 @@
       {
         "pair": "0xB3f0828eB3375B609b49E9Fb959472a29cD6E49a",
         "dex": "hydrex",
-        "liquidityUsd": 22843.75,
+        "liquidityUsd": 21541.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +173,7 @@
       {
         "pair": "0xb08a32FB67F910fCFE5Dc9561a6EA4A159BD9908",
         "dex": "uniswap",
-        "liquidityUsd": 12976.63,
+        "liquidityUsd": 12412.11,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,7 +182,7 @@
       {
         "pair": "0x38981c23364dB3a50a6b2dD0196a22842788527C",
         "dex": "uniswap",
-        "liquidityUsd": 9080.32,
+        "liquidityUsd": 8635.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -175,14 +191,14 @@
       {
         "pair": "0x4Ae0272A740950d3D9B12a6eE9d5CA6B6aaF0efD",
         "dex": "aerodrome",
-        "liquidityUsd": 919.75,
+        "liquidityUsd": 876.97,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 16.68,
     "projectLinks": {
       "websites": [
         "https://ribbitcap.com/"

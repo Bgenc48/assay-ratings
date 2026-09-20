@@ -1,0 +1,197 @@
+{
+  "address": "0x5f980dcfc4c0fa3911554cf5ab288ed0eb13dba3",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "GITLAWB",
+  "name": "gitlawb",
+  "scanned_at": "2026-09-20T09:58:46.285Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B-",
+    "overall": 70,
+    "provisional": true,
+    "badge": "Discretionary",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 40,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.unknown-gate",
+          "severity": "warn",
+          "text": "Privileged capabilities exist; their controller could not be classified.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0xec33256bf1ded407a57fd3c1965e7556e42ac14db09bc4e6fef57d5e2eb0b0b9"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "100000000000000000000000000000",
+    "decimals": 18,
+    "owner": "0x660eaaedebc968f8f3694354fa8ec0b4c5ba8d12",
+    "controlType": "unknown",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 703828.6900000001,
+    "pools": [
+      {
+        "pair": "0xec33256bf1ded407a57fd3c1965e7556e42ac14db09bc4e6fef57d5e2eb0b0b9",
+        "dex": "uniswap",
+        "liquidityUsd": 636154.64,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x72C12F0CC0E0C6e97ff9869717a482AFF97e3B30",
+        "dex": "uniswap",
+        "liquidityUsd": 36909.78,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe8c9b0f57d7fc4846236495e132d34ef43c795e3f644314136a91b140c3c96bd",
+        "dex": "uniswap",
+        "liquidityUsd": 11890.92,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xB5E4b3e29a79FEb2aa96c68a4EA24FEdAa559aB2",
+        "dex": "aerodrome",
+        "liquidityUsd": 3693.36,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8355378e9666B4002227fAB20484b6Df5c04B510",
+        "dex": "aerodrome",
+        "liquidityUsd": 2427.18,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xC370B3EbBD0c11292A139a9682b80e52146206DB",
+        "dex": "aerodrome",
+        "liquidityUsd": 2368.08,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x0c4ef7be2601d6d69dc298b35ab28629823024018395d524ac69028821239099",
+        "dex": "uniswap",
+        "liquidityUsd": 8100.69,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x94da083f5E7e2A6f64a54640544641C8b20B422A",
+        "dex": "treble",
+        "liquidityUsd": 2284.04,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://gitlawb.com"
+      ],
+      "socials": [
+        "https://x.com/gitlawb"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

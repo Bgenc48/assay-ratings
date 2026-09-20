@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "CP",
   "name": "Cluster Protocol",
-  "scanned_at": "2026-09-19T09:41:33.751Z",
+  "scanned_at": "2026-09-20T09:57:45.632Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 45.4,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,19 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 117 days old; trust needs time (Provisional).",
-          "evidence": "0x0bb8c6eb67def067e8ce9d39b92d8f89079ef943d75fb90ac5c3a3db6319e744"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -99,11 +92,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -125,23 +113,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 117,
-    "liquidityUsd": 517164.1600000001,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 512513.16000000003,
     "pools": [
       {
         "pair": "0x5cac81ba42524212dadc929b8fe8180fefe4f064bb340dbf75d3a9f0b273386c",
         "dex": "uniswap",
-        "liquidityUsd": 8922.7,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xce45343a934ea70f2aca51bf442a5d5a4fedf9db2c39a1f8a756fd8bce04fa21",
-        "dex": "uniswap",
-        "liquidityUsd": 1300.93,
+        "liquidityUsd": 9296.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,25 +129,7 @@
       {
         "pair": "0x78fa9fB7a76C8ea204754a8D4FF301aa29935e8e",
         "dex": "aerodrome",
-        "liquidityUsd": 506864.19,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x0F21FABA966ADf80Aa152a69E55968BD88f4D759",
-        "dex": "uniswap",
-        "liquidityUsd": 12.21,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x79552843f41B9d91880d2808D22Cb0da2d340086",
-        "dex": "uniswap",
-        "liquidityUsd": 5.65,
+        "liquidityUsd": 502917.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -177,7 +138,7 @@
       {
         "pair": "0x47ec68b9e53bade500a05c334c57237ba76859c49256ae3fde33edc3cddc38a9",
         "dex": "uniswap",
-        "liquidityUsd": 41.7,
+        "liquidityUsd": 41.4,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -186,7 +147,16 @@
       {
         "pair": "0xa640d08e6ff4c556b52936d88316255ab8f4378e70b203da244cd6bcd3d0d78f",
         "dex": "uniswap",
-        "liquidityUsd": 5.21,
+        "liquidityUsd": 5.2,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x79552843f41B9d91880d2808D22Cb0da2d340086",
+        "dex": "uniswap",
+        "liquidityUsd": 5.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -195,15 +165,32 @@
       {
         "pair": "0xe34fad6abeac4849e0272cc667a02fc1e8ed5786c8aa909f4792ec3f95cfab8b",
         "dex": "uniswap",
-        "liquidityUsd": 11.57,
+        "liquidityUsd": 31.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8Ffe32C0c65dbb5997edA5a8dA5A294C5fF17f83",
+        "dex": "0x7456837fb64e6e3F6F51D5719CC8Be9aE3870534",
+        "liquidityUsd": 215.72,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 18.09,
-    "projectLinks": null
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://basegold.io",
+        "https://basegold.io/whitepaper.pdf"
+      ],
+      "socials": [
+        "https://twitter.com/BaseGold_BG"
+      ]
+    }
   },
   "notes": null,
   "coi": false

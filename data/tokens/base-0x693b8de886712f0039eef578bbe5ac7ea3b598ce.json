@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "doji",
   "name": "doji",
-  "scanned_at": "2026-09-19T09:38:04.502Z",
+  "scanned_at": "2026-09-20T09:54:01.158Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xb4ffacfa381b3ff342947067a5dc9ca72654cc9485f2d508befc8aeae65fb1b2"
+            "pair": "0x65Df01daC03A314771d7525E0E350B92D1659829"
           }
         }
       ]
@@ -109,12 +109,48 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 8.73,
+    "liquidityUsd": 21535.090000000004,
     "pools": [
       {
-        "pair": "0xb4ffacfa381b3ff342947067a5dc9ca72654cc9485f2d508befc8aeae65fb1b2",
+        "pair": "0x65Df01daC03A314771d7525E0E350B92D1659829",
         "dex": "uniswap",
-        "liquidityUsd": 8.73,
+        "liquidityUsd": 21211.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xe88d0ee821b21a71ff4db28c607585ecbd74730e553097aab2adfeaf75fe5a8c",
+        "dex": "uniswap",
+        "liquidityUsd": 235.61,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9d81bf35d3bac55981aa7d8142d95753b82b13de72600785503309056addabdb",
+        "dex": "uniswap",
+        "liquidityUsd": 57.49,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7b1908d98764c152a1d53f45cc121cf516f08044ab604ad260db6cf2450a80d8",
+        "dex": "uniswap",
+        "liquidityUsd": 29.36,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x63fed976ef00ffed56e8ef1acb257d3fe9eab4a461b0ad7af27b0e22d9e1d12c",
+        "dex": "uniswap",
+        "liquidityUsd": 0.83,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
