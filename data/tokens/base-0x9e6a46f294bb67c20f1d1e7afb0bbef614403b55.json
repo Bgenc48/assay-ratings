@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MAG7.ssi",
   "name": "MAG7.ssi",
-  "scanned_at": "2026-09-20T09:57:08.938Z",
+  "scanned_at": "2026-09-21T10:56:15.315Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 46.4,
-    "provisional": true,
+    "overall": 54.3,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,14 +72,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 3.9%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -92,6 +99,11 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
     },
     {
       "id": "cap.claim-light",
@@ -113,14 +125,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 2085178.0299999998,
+    "verifiedSource": true,
+    "ageDays": 642,
+    "liquidityUsd": 2082548.6099999999,
     "pools": [
       {
         "pair": "0xD364eb55E17700b54bd75fEB3F14582eD7A29444",
         "dex": "uniswap",
-        "liquidityUsd": 2028656.63,
+        "liquidityUsd": 2024736.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -129,23 +141,27 @@
       {
         "pair": "0x739c2431670A12E2cF8e11E3603eB96e6728a789",
         "dex": "uniswap",
-        "liquidityUsd": 56073.2,
+        "liquidityUsd": 57353.25,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x9c27cda5dc8f3b6938e85cb595dd8a511a8c243f",
+          "sharePct": 158.97
+        }
       },
       {
         "pair": "0x7bea64b15975f114a5ba5a056dfd4e38bc4c22d28bb84ea40cdd42b1dd1360c1",
         "dex": "uniswap",
-        "liquidityUsd": 448.2,
+        "liquidityUsd": 458.45,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 3.92,
     "projectLinks": null
   },
   "notes": null,

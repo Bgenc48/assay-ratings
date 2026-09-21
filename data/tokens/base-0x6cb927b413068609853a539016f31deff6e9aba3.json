@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "PrinterInkCoin",
   "name": "PrinterInkCoin",
-  "scanned_at": "2026-09-20T09:57:04.166Z",
+  "scanned_at": "2026-09-21T10:56:05.733Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 65.7,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -72,14 +78,28 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 27 days old; trust needs time (Provisional).",
+          "evidence": "0x3a27b7e31521c9620b105f917b7defddc016178bd29b76731dbfd896c9b8b7ae"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 9.8%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -88,6 +108,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,84 +135,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 55157.55000000001,
+    "verifiedSource": false,
+    "ageDays": 27,
+    "liquidityUsd": 54367.67,
     "pools": [
       {
         "pair": "0x58ac468ebebf53906ac4ee3fe9e5b988fc904813d9ee41fc4a9c86394b6b276e",
         "dex": "uniswap",
-        "liquidityUsd": 55126.08,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc0f92d090051f33b193100bc84396650841ced9d31f1e426f7a3ed01928bd351",
-        "dex": "uniswap",
-        "liquidityUsd": 25.87,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x059840de9fdaf3ea5cef3f175d136b756ffd5b9a662630b95091a59942190523",
-        "dex": "uniswap",
-        "liquidityUsd": 1.01,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xad82c6a2e9b772fa20d09a2661072b5ab9320e00801cf8120ff8b52f9a5a11f8",
-        "dex": "uniswap",
-        "liquidityUsd": 1.79,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4810d2a166df17af677eb98825e7489d568983ea586612fe687d11ad3f6dc335",
-        "dex": "uniswap",
-        "liquidityUsd": 0.14,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x97928373735bafd249cac12d0d5d4611c4ff4d20113d6ec450b689f7b94afc84",
-        "dex": "uniswap",
-        "liquidityUsd": 0.41,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3299136ed4353c51824a74b1eb9a4a902d5fa7a46ce15829cf82bb1059e61987",
-        "dex": "uniswap",
-        "liquidityUsd": 0.15,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9af5cfa5c6f267f3062f261885ca875b75fe838415b6724e7c663eb9d6b0eeaf",
-        "dex": "uniswap",
-        "liquidityUsd": 2.1,
+        "liquidityUsd": 54367.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 9.81,
     "projectLinks": {
       "websites": [
         "https://printerinkcoin.com/"

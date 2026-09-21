@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "1F916",
   "name": "A Society For AI Agents",
-  "scanned_at": "2026-09-20T09:55:19.304Z",
+  "scanned_at": "2026-09-21T10:54:18.192Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 63.9,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -78,19 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 45 days old; trust needs time (Provisional).",
-          "evidence": "0xd0c64f6cda6875947fefe6d79af92d718c82aa2ecb9bd904326bbe1ce68a58cd"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -101,16 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -128,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 45,
-    "liquidityUsd": 348531.03,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 436174.54000000004,
     "pools": [
       {
         "pair": "0x24ecedb296899f0110dce5cfdd9c9dd74b2b11a21dee752e085f93c700c7fccb",
         "dex": "uniswap",
-        "liquidityUsd": 348456.76,
+        "liquidityUsd": 436101.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +121,7 @@
       {
         "pair": "0xfc3ce85d2d7e0b05eccc0164811dc198fbd0f3063585e0a8691834f9dd02133f",
         "dex": "uniswap",
-        "liquidityUsd": 49.96,
+        "liquidityUsd": 55.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,25 +130,7 @@
       {
         "pair": "0xc63d4c67ab7b47fc2b327e91e864a7f4a4d2112ef7f6c92984496811d0d775f9",
         "dex": "uniswap",
-        "liquidityUsd": 10.25,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x76fba51bdf54459a34f6f3842caabb786889c964058a70a4cc019612055d42f5",
-        "dex": "uniswap",
-        "liquidityUsd": 1.74,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x053e3040fc6a83cb3619e7350d024eb136ec6ddc1df92b5087b8a9c03b24089c",
-        "dex": "uniswap",
-        "liquidityUsd": 9.22,
+        "liquidityUsd": 11.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,7 +139,16 @@
       {
         "pair": "0x20f1ab24b8c7abe1be287f93ed68092f625d473872855a9332f6af422f7f4d12",
         "dex": "uniswap",
-        "liquidityUsd": 2.15,
+        "liquidityUsd": 2.38,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x76fba51bdf54459a34f6f3842caabb786889c964058a70a4cc019612055d42f5",
+        "dex": "uniswap",
+        "liquidityUsd": 2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -189,14 +157,23 @@
       {
         "pair": "0xe3ea11929660bc7aa484bb2fa30dbf547e1d0f252f329ba094278c553f6b719d",
         "dex": "uniswap",
-        "liquidityUsd": 0.95,
+        "liquidityUsd": 1.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x416694a02dc3aa1020d60b5f2f879a5a554ae9a073280b398c967b7feb6ae8ce",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 15.21,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://1f916.ai/"

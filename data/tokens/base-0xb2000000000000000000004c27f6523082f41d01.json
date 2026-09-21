@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "Basecat",
   "name": "Basecat",
-  "scanned_at": "2026-09-20T09:56:09.353Z",
+  "scanned_at": "2026-09-21T10:54:51.502Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -88,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -99,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -121,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1286344.98,
+    "liquidityUsd": 1368826.0399999998,
     "pools": [
       {
         "pair": "0xf79478d5a6baE4546F7e489e80b2fC690B558944",
         "dex": "uniswap",
-        "liquidityUsd": 257131.38,
+        "liquidityUsd": 264986.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +126,7 @@
       {
         "pair": "0x215b2146c3164aba3f5b18e8619b737c7f7dd11e5ba693646dcd9a336c5a30ba",
         "dex": "uniswap",
-        "liquidityUsd": 630245.82,
+        "liquidityUsd": 669848.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -146,7 +135,7 @@
       {
         "pair": "0x22906596Bd81F53f01d700DdBdB3935baC2E1446",
         "dex": "uniswap",
-        "liquidityUsd": 135575.36,
+        "liquidityUsd": 144587.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +144,7 @@
       {
         "pair": "0x8930762cccc36040f25fc29db58a8ec22e872a347260d992f39666a3cdce7e5a",
         "dex": "uniswap",
-        "liquidityUsd": 167360.6,
+        "liquidityUsd": 176666.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +153,7 @@
       {
         "pair": "0xfbA22a6B7629a2FEC052CC2a6Eddd2C9D6Da5eA5",
         "dex": "aerodrome",
-        "liquidityUsd": 40547.99,
+        "liquidityUsd": 46670.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,7 +162,7 @@
       {
         "pair": "0x18816b0a9ffba7fae928ed0315c756ffe9fba1eb6eaf18236ce82c700ddd20d7",
         "dex": "uniswap",
-        "liquidityUsd": 37156.62,
+        "liquidityUsd": 43124.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -182,7 +171,7 @@
       {
         "pair": "0x0f68821cfd57d34cabb01355e52890a11d4313062cf2af3ebc70556b6a75d6ea",
         "dex": "uniswap",
-        "liquidityUsd": 11483.47,
+        "liquidityUsd": 12122.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -191,14 +180,14 @@
       {
         "pair": "0x5737ef55c29bdf8993e46c20e31e816dd33c1bee0d4a3c8384436289a87f1161",
         "dex": "uniswap",
-        "liquidityUsd": 6843.74,
+        "liquidityUsd": 10818.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 23.65,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://basecatonbase.com/",

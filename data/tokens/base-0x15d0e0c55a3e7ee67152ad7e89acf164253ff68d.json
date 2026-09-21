@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "HYPE",
   "name": "HYPE",
-  "scanned_at": "2026-09-20T09:53:25.130Z",
+  "scanned_at": "2026-09-21T10:51:48.936Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 46.4,
+    "overall": 47.1,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -94,6 +94,11 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +106,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "23475229560340000000000",
+    "totalSupply": "23815229560340000000000",
     "decimals": 18,
     "owner": "0x838a95b6a3e06b6f11c437e22f3c7561a6ec40f1",
     "controlType": "unknown",
@@ -113,14 +118,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 356636.86,
+    "verifiedSource": true,
+    "ageDays": 348,
+    "liquidityUsd": 404134,
     "pools": [
       {
         "pair": "0x5e2AFd6E24B9e3ae63531B06D3f4fa23eb04F741",
         "dex": "pancakeswap",
-        "liquidityUsd": 4359.18,
+        "liquidityUsd": 4561.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -129,7 +134,7 @@
       {
         "pair": "0xd908476009dD679a079A3302D92779b47E8AD514",
         "dex": "uniswap",
-        "liquidityUsd": 545.64,
+        "liquidityUsd": 573.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +143,7 @@
       {
         "pair": "0x9EeCe9Af59f90111C7bb84eB78b310704BcBC588",
         "dex": "aerodrome",
-        "liquidityUsd": 442.24,
+        "liquidityUsd": 467.78,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -147,7 +152,7 @@
       {
         "pair": "0x7E3C6288bE608795ac30Da107903deFD625c53cb",
         "dex": "aerodrome",
-        "liquidityUsd": 77.11,
+        "liquidityUsd": 82.73,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -156,16 +161,7 @@
       {
         "pair": "0x9E48d016eE76cf53e2De8dc8058c7549c8c202DF",
         "dex": "aerodrome",
-        "liquidityUsd": 351132.68,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xB4585f61FdbEb7182839Fd30DfF9eb0e36A649CF",
-        "dex": "pancakeswap",
-        "liquidityUsd": 38.39,
+        "liquidityUsd": 398406.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -174,23 +170,32 @@
       {
         "pair": "0xe850b24AdFA3b3036D7AFebCFB41dB15107f248a",
         "dex": "aerodrome",
-        "liquidityUsd": 41,
+        "liquidityUsd": 41.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x88614B0f08eeb450e4AACa9564548Eb35438bd27",
+        "pair": "0x25e39953Fb612A857ee7c06DB6d74108926388dd",
         "dex": "aerodrome",
-        "liquidityUsd": 0.62,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "liquidityUsd": null,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xdABf94060fd5b0AC9dD8557cc3e9A84BB8211937",
+        "dex": "aerodrome",
+        "liquidityUsd": null,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 23.38,
     "projectLinks": null
   },
   "notes": null,

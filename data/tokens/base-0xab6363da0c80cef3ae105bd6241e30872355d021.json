@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "ROLL",
   "name": "Roll",
-  "scanned_at": "2026-09-20T09:54:18.745Z",
+  "scanned_at": "2026-09-21T10:53:14.972Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -112,12 +112,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1215480.5999999999,
+    "liquidityUsd": 1184158.4900000002,
     "pools": [
       {
         "pair": "0x0a04e1c94584a6f91228da6c0dba6bf0fbe5c9fa20ec6df57490494994489333",
         "dex": "uniswap",
-        "liquidityUsd": 1202042.37,
+        "liquidityUsd": 1170802.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +126,7 @@
       {
         "pair": "0xE47F7dbA68a00dc1A6f11458BcDFcA810E1CFEbF",
         "dex": "uniswap",
-        "liquidityUsd": 11920.17,
+        "liquidityUsd": 11805.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +135,7 @@
       {
         "pair": "0x595beA2246d5D296E0FEF76DfE3df2B07EC70E5f",
         "dex": "pancakeswap",
-        "liquidityUsd": 1465.65,
+        "liquidityUsd": 1456.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,8 +144,17 @@
       {
         "pair": "0x1BE555BE063913443F8b4Fa48B7d1AeA0a7B13B7",
         "dex": "uniswap",
-        "liquidityUsd": 0.07,
+        "liquidityUsd": 0.09,
         "lpBurnedPct": 100,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xE69D66b0343ce6F0e6c2A0a6A352C536E3d88562",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.13,
+        "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
@@ -153,34 +162,25 @@
       {
         "pair": "0xac2dc91974b4ee2365753aee902e69e4b8660a1a700e5481b1c81704d06d8fb3",
         "dex": "uniswap",
-        "liquidityUsd": 12.9,
+        "liquidityUsd": 13.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xE69D66b0343ce6F0e6c2A0a6A352C536E3d88562",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.11,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
         "pair": "0x2c4225e480d937466433d4c950b7c0cd36d3ec1072b3f2a6a3fb0d9f65c59ddf",
         "dex": "uniswap",
-        "liquidityUsd": 38.64,
+        "liquidityUsd": 38.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb345f418f4238b68ec46d8f056389e959226e79fa2dbeda194577b4695a754ff",
+        "pair": "0xea0d2dfa6826ec5b3c558a9cfc768f439984c67d84bd717fb2f0a9da907d0af8",
         "dex": "uniswap",
-        "liquidityUsd": 0.69,
+        "liquidityUsd": 41.47,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

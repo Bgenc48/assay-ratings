@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "PLAY",
   "name": "Play",
-  "scanned_at": "2026-09-20T09:52:49.562Z",
+  "scanned_at": "2026-09-21T10:51:00.910Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -123,13 +123,22 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 479,
-    "liquidityUsd": 552668.76,
+    "ageDays": 480,
+    "liquidityUsd": 621562.28,
     "pools": [
       {
         "pair": "0xf1CaCd7E005B9337C58aAE77BC88d93C635CDF4D",
         "dex": "pancakeswap",
-        "liquidityUsd": 379380.84,
+        "liquidityUsd": 420010.83,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x077F7A989cD6865Aa4Eb7659d844bF4B47ECc5aa",
+        "dex": "pancakeswap",
+        "liquidityUsd": 33435.02,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,7 +147,7 @@
       {
         "pair": "0x42781EC558F9fb95f5E080572bCD0A37523B55e2",
         "dex": "aerodrome",
-        "liquidityUsd": 27478.65,
+        "liquidityUsd": 30391.34,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -149,9 +158,9 @@
         }
       },
       {
-        "pair": "0x077F7A989cD6865Aa4Eb7659d844bF4B47ECc5aa",
+        "pair": "0x9D6bb282FA21d23746C964C8a71ec0449e8d98f9",
         "dex": "pancakeswap",
-        "liquidityUsd": 27409.65,
+        "liquidityUsd": 7626.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +169,7 @@
       {
         "pair": "0xE6dcff8301A348eF4D25aD301DD08275e873c6ba",
         "dex": "uniswap",
-        "liquidityUsd": 3169.56,
+        "liquidityUsd": 3473.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,14 +178,32 @@
       {
         "pair": "0xF2c832B6999f0246eD504c69AC1bFB97de0B8d50",
         "dex": "aerodrome",
-        "liquidityUsd": 115230.06,
+        "liquidityUsd": 126616.14,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf9ce4ff9624f2fca7cc1a3a86a407b160a5c600adeabc4f091db9420e876f622",
+        "dex": "uniswap",
+        "liquidityUsd": 1.27,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x41ae8659e74dc4c2ac68bfa62d0562951857b32de964acad2c9fd8c303d22a5f",
+        "dex": "uniswap",
+        "liquidityUsd": 7.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 3.71,
+    "top10Pct": 3.7,
     "projectLinks": null
   },
   "notes": null,

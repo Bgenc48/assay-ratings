@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "Arc",
   "name": "Arc",
-  "scanned_at": "2026-09-20T09:58:26.752Z",
+  "scanned_at": "2026-09-21T10:58:21.100Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x8527e9fb9e7f13d5671ccd45b371f908928fa8b6c34690cf63e0b9cc042cc0f7"
+          }
         }
       ]
     },
@@ -107,7 +110,17 @@
     "verifiedSource": null,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [],
+    "pools": [
+      {
+        "pair": "0x8527e9fb9e7f13d5671ccd45b371f908928fa8b6c34690cf63e0b9cc042cc0f7",
+        "dex": "uniswap",
+        "liquidityUsd": 0,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": null,
     "projectLinks": null
   },

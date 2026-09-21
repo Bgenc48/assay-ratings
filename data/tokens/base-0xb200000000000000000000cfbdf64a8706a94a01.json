@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "BLUECHIP",
   "name": "BLUE CHIP",
-  "scanned_at": "2026-09-20T09:56:56.783Z",
+  "scanned_at": "2026-09-21T10:55:45.846Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,7 +88,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -93,6 +99,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +121,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 454074.0300000001,
+    "liquidityUsd": 458708.18,
     "pools": [
       {
         "pair": "0x4b095f294d8efca4b50b948865e68262025a68ba80e759b5b75cddb995c6b43f",
         "dex": "uniswap",
-        "liquidityUsd": 342984.21,
+        "liquidityUsd": 338477.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +137,7 @@
       {
         "pair": "0x3dfDeCc334A8f2618321C78A9dE0E9428438F871",
         "dex": "aerodrome",
-        "liquidityUsd": 82100.92,
+        "liquidityUsd": 90482.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +146,7 @@
       {
         "pair": "0x59edcf191f467cdb6ed76ca06e21c6e143336ec65a2e5260be00ff348bde98c2",
         "dex": "uniswap",
-        "liquidityUsd": 14371.62,
+        "liquidityUsd": 14891.73,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +155,7 @@
       {
         "pair": "0xd517f8e037bf3cea91de4a61b0d85a95b03b2ed8dc3b5ed0ba8d7d740219294a",
         "dex": "uniswap",
-        "liquidityUsd": 13439.08,
+        "liquidityUsd": 14152.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +164,7 @@
       {
         "pair": "0x2659b394EA5597E686D66e42e4708c96472b1302",
         "dex": "uniswap",
-        "liquidityUsd": 92.32,
+        "liquidityUsd": 93.94,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +173,7 @@
       {
         "pair": "0x586a025b72e77D95C0D83DCeEC0be3C825308158",
         "dex": "uniswap",
-        "liquidityUsd": 480.77,
+        "liquidityUsd": 493.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,23 +182,23 @@
       {
         "pair": "0x8ca1e98bf533962cd54e345bf6da38f98fe6afd857c4f516617f249cf56d0c50",
         "dex": "uniswap",
-        "liquidityUsd": 51.65,
+        "liquidityUsd": 51.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xaecc3925686724232a7b100ec1efb3a75f067933158b60f661ab748a41441075",
+        "pair": "0x56f929e0247e3f64381c9a2a1218a9c0c0ff3e1e8633d4a77b0d2ff54ee54533",
         "dex": "uniswap",
-        "liquidityUsd": 553.46,
+        "liquidityUsd": 65.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 10.09,
     "projectLinks": {
       "websites": [
         "https://basebluechip.com/"
