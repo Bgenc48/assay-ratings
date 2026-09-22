@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "DIEM",
   "name": "Diem",
-  "scanned_at": "2026-09-21T10:53:02.262Z",
+  "scanned_at": "2026-09-22T10:15:56.101Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 41.8,
-    "provisional": true,
+    "overall": 49.1,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,14 +72,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 6.6%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -94,6 +101,11 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "37375186682755891589065",
+    "totalSupply": "37115279860427733582874",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -112,14 +124,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 20138056.25,
+    "verifiedSource": true,
+    "ageDays": 401,
+    "liquidityUsd": 19052596.530000005,
     "pools": [
       {
         "pair": "0xBc3231036Ee1ECa03E5F67FEceDC640D21610823",
         "dex": "aerodrome",
-        "liquidityUsd": 615176.78,
+        "liquidityUsd": 337842.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +140,7 @@
       {
         "pair": "0x01271A205e3F37cbfC9B353170D726060E193C0D",
         "dex": "aerodrome",
-        "liquidityUsd": 7883676.39,
+        "liquidityUsd": 7552957.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,7 +149,7 @@
       {
         "pair": "0xbB345D35450BF9Ee76F3D2cE214E8e7AC5e1071d",
         "dex": "aerodrome",
-        "liquidityUsd": 11412280.83,
+        "liquidityUsd": 10930043.48,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -146,7 +158,7 @@
       {
         "pair": "0x80d995189ecc593672aD4703b250a5e82672EB1D",
         "dex": "uniswap",
-        "liquidityUsd": 142430.38,
+        "liquidityUsd": 141252.67,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +167,7 @@
       {
         "pair": "0x3b92f4962d799934d24d114f3d7569f836d5d9af01bd92ecee613d5ba89f17a2",
         "dex": "uniswap",
-        "liquidityUsd": 68630,
+        "liquidityUsd": 71797.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +176,7 @@
       {
         "pair": "0x51142b371789a787241c246b3a2655c0ca74a289146b63ae6ecbb3e6d7f15cb5",
         "dex": "uniswap",
-        "liquidityUsd": 9821.19,
+        "liquidityUsd": 9367.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,23 +185,23 @@
       {
         "pair": "0x782D7C494d5DDC20c246a82aC8fe277e2728d002",
         "dex": "aerodrome",
-        "liquidityUsd": 5208.27,
+        "liquidityUsd": 5002.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0ae0fe05e8f8e7065f7ee7a78fc881b58af3db01fd34f421c9bf0abc9ff6d287",
-        "dex": "uniswap",
-        "liquidityUsd": 832.41,
+        "pair": "0x148fe840de4aA27Fe2cad8d4EEF59a941AFE31cB",
+        "dex": "0x7Ca1dCCFB4f49564b8f13E18a67747fd428F1C40",
+        "liquidityUsd": 4332.41,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 6.59,
     "projectLinks": {
       "websites": [
         "https://venice.ai/blog/introducing-diem-as-tokenized-intelligence-the-next-evolution-of-vvv"

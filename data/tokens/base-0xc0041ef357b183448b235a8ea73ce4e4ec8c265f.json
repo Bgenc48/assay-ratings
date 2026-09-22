@@ -1,0 +1,212 @@
+{
+  "address": "0xc0041ef357b183448b235a8ea73ce4e4ec8c265f",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "COOKIE",
+  "name": "Cookie",
+  "scanned_at": "2026-09-22T10:21:20.635Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "C",
+    "overall": 70,
+    "provisional": false,
+    "badge": "Custodial",
+    "coverage": "partial"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 55,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.safe",
+          "severity": "warn",
+          "text": "Privileged capabilities gated by a 2-of-3 multisig with no timelock.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x17EA71d7E2dFb58F6b7e95C2ddDAD863E225091c"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": 0,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 55.1% of circulating supply.",
+          "evidence": null
+        }
+      ]
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "262898286899718000000000000",
+    "decimals": 18,
+    "owner": "0xe91cdccfbe021055ab90c90de67f9501be11bd0c",
+    "controlType": "safe",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": true,
+    "ageDays": 841,
+    "liquidityUsd": 251003.05000000002,
+    "pools": [
+      {
+        "pair": "0x17EA71d7E2dFb58F6b7e95C2ddDAD863E225091c",
+        "dex": "aerodrome",
+        "liquidityUsd": 141354.71,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xeD445A77E75F18B04818d940d0E490C15C6072B7",
+        "dex": "aerodrome",
+        "liquidityUsd": 87285.91,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xE8833415Bd6Aee9c0c7B6aaD7DC80421C3F28ca1",
+        "dex": "aerodrome",
+        "liquidityUsd": 13026.56,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x97F0470819080E85724D42ba4325c56698c3B387",
+        "dex": "uniswap",
+        "liquidityUsd": 6614.03,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x24fD1a1A604d6cfda234e5CB091c2C16501814D7",
+        "dex": "uniswap",
+        "liquidityUsd": 2715.5,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1b3a07515800E8b16a46f67A6bab3d4e74148dB0",
+        "dex": "pancakeswap",
+        "liquidityUsd": 1.01,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xF6F070459602217Ef8255b41fE023337F9c7bf3b",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.85,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x46207B945BD07109d8d5A9f74548Db0DDC11B147",
+        "dex": "sushiswap",
+        "liquidityUsd": 4.48,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 55.11,
+    "projectLinks": {
+      "websites": [
+        "https://www.cookie.fun/",
+        "https://docs.cookie.community/cookie-dao"
+      ],
+      "socials": [
+        "https://twitter.com/cookiedotfun",
+        "https://t.me/cookie_dao",
+        "https://discord.com/invite/XKhHrHtSHK"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "STONX",
   "name": "Stonx",
-  "scanned_at": "2026-09-21T10:58:23.764Z",
+  "scanned_at": "2026-09-22T10:20:42.476Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
+    "letter": "C",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -77,7 +83,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +94,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -105,23 +116,23 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 918262.55,
+    "liquidityUsd": 963532.0700000001,
     "pools": [
       {
-        "pair": "0x9cd6944d88fdafde3f3d40ebf08df62a4728e54d9a8a59102c69b4bf724db662",
+        "pair": "0xc2dd131e210679afff1749c7f5d219bf87e9dd436b0bdd48a6bd27075b205ac3",
         "dex": "uniswap",
-        "liquidityUsd": 27723.61,
+        "liquidityUsd": 918358.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x858147b232f2e769a6ef83b602f3e202971f2f121d6d4f2c2f31ed5185dacf28",
+        "pair": "0x9cd6944d88fdafde3f3d40ebf08df62a4728e54d9a8a59102c69b4bf724db662",
         "dex": "uniswap",
-        "liquidityUsd": 878.86,
+        "liquidityUsd": 32747.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,23 +141,41 @@
       {
         "pair": "0xcf0b2dc7bb4c0fbe3e4f42bcefcb0d3a2ffc3dc0911d72a09b4f4b3a2c6de742",
         "dex": "uniswap",
-        "liquidityUsd": 6055.57,
+        "liquidityUsd": 11671,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xc2dd131e210679afff1749c7f5d219bf87e9dd436b0bdd48a6bd27075b205ac3",
+        "pair": "0x858147b232f2e769a6ef83b602f3e202971f2f121d6d4f2c2f31ed5185dacf28",
         "dex": "uniswap",
-        "liquidityUsd": 883604.51,
+        "liquidityUsd": 720.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9C216e87dc3b680E5C301C4291F63dD523Fba1e9",
+        "dex": "uniswap",
+        "liquidityUsd": 1.9,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcfd614bf7559dd18a540c3a8bd9c42e02e9cc63a444da6ef9f67f8c49b44a8e4",
+        "dex": "uniswap",
+        "liquidityUsd": 31.98,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 10.81,
     "projectLinks": {
       "websites": [
         "https://stonx.ai/"

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "GHST",
   "name": "Aavegotchi GHST Token",
-  "scanned_at": "2026-09-21T10:57:00.137Z",
+  "scanned_at": "2026-09-22T10:19:20.082Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 56.1,
-    "provisional": false,
+    "letter": "D",
+    "overall": 46.4,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -112,30 +112,39 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 902,
-    "liquidityUsd": 925756.76,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 928057.09,
     "pools": [
+      {
+        "pair": "0x0DFb9Cb66A18468850d6216fCc691aa20ad1e091",
+        "dex": "aerodrome",
+        "liquidityUsd": 223999.34,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067",
         "dex": "aerodrome",
-        "liquidityUsd": 702376.64,
+        "liquidityUsd": 704044.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x0DFb9Cb66A18468850d6216fCc691aa20ad1e091",
-        "dex": "aerodrome",
-        "liquidityUsd": 223380.12,
+        "pair": "0x334B4a562CEe1752EA2109Fb41f84EEd967fFD6E",
+        "dex": "sushiswap",
+        "liquidityUsd": 13.5,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 10.72,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://ghsttoken.com",

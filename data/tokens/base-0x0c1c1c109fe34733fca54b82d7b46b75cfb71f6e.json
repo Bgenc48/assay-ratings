@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "CHIP",
   "name": "Chip",
-  "scanned_at": "2026-09-21T10:54:49.859Z",
+  "scanned_at": "2026-09-22T10:18:33.284Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,25 +101,36 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "90202653163268000000000000",
+    "totalSupply": "94533771858752000000000000",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
     "proxy": "eip1967",
-    "proxyImplementation": "0x6425131a034a41ffa49ce0bb8de4a5d0dbb2959d",
+    "proxyImplementation": "0x537d5599485e4f7cf21c069609bf40414bd2dce1",
     "privileged": [
-      "mint(address,uint256)"
+      "mint(address,uint256)",
+      "pause()",
+      "unpause()"
     ],
     "mintController": null,
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 422206.55,
+    "liquidityUsd": 430918.55,
     "pools": [
       {
         "pair": "0x592E01EDEb601016a20A3E6cD5bF533eBBadBC8b",
         "dex": "aerodrome",
-        "liquidityUsd": 422206.55,
+        "liquidityUsd": 430889.11,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xDBC00ac77AF0848377717967deD190468b7df7CA",
+        "dex": "pancakeswap",
+        "liquidityUsd": 29.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

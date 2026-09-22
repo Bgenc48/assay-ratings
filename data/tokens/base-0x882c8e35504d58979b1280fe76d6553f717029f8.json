@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "MUSEWORLD",
   "name": "MUSWORLD",
-  "scanned_at": "2026-09-21T10:58:48.174Z",
+  "scanned_at": "2026-09-22T10:21:17.057Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -82,9 +82,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 3.1%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -110,14 +117,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 273118.11000000004,
+    "liquidityUsd": 282538.28,
     "pools": [
       {
         "pair": "0x050e44afe314c0298d695f7e7b6bb4769475d7541a37da644950a59413460360",
         "dex": "uniswap",
-        "liquidityUsd": 266002.6,
+        "liquidityUsd": 278873.87,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,34 +133,7 @@
       {
         "pair": "0xFadEC700Cf2a7ef99d9e1d9B2825368D28457C6F",
         "dex": "uniswap",
-        "liquidityUsd": 2447.84,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe775045dfbffaa0d7a56e6216a90dc92eb13119d9894352e06b655587adb7f39",
-        "dex": "uniswap",
-        "liquidityUsd": 3369.2,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x60a6e501f6a1e642ba7c0a496c52af86a5bb21cda72899bf46791e3c9a824049",
-        "dex": "uniswap",
-        "liquidityUsd": 461.03,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x17f90fa97e686b605ec26167b586fb3a19d2648db785aa2b719e8fe412268e15",
-        "dex": "uniswap",
-        "liquidityUsd": 806.05,
+        "liquidityUsd": 452.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,32 +142,23 @@
       {
         "pair": "0xe84dec27185589974cb6d77d8c337ed88252a4ad4e473109dac9e842cdb86fb1",
         "dex": "uniswap",
-        "liquidityUsd": 2.53,
+        "liquidityUsd": 3172.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4566e712d333c6659df26ef68cb59d2773d8f31bb115aa58a84e2b6325de2f49",
+        "pair": "0x961d71de66df6e63bc9c50b710c6d38e22c020057ddda44e635ac680a52b3b09",
         "dex": "uniswap",
-        "liquidityUsd": 28.86,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc98fAa6C7A2c234E2060Ec2097E45b69DF854228",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 39.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 3.08,
     "projectLinks": {
       "websites": [
         "https://museworld.lol"

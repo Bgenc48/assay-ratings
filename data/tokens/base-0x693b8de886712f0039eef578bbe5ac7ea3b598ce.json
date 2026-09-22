@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "doji",
   "name": "doji",
-  "scanned_at": "2026-09-21T10:52:51.423Z",
+  "scanned_at": "2026-09-22T10:14:54.583Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 67.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,20 +61,23 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x9d81bf35d3bac55981aa7d8142d95753b82b13de72600785503309056addabdb"
+          }
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -85,6 +88,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-12mo",
+      "letter": "A-",
+      "reason": "Token is younger than 12 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -104,12 +112,29 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": null,
-    "pools": [],
-    "top10Pct": null,
-    "projectLinks": null
+    "verifiedSource": true,
+    "ageDays": 336,
+    "liquidityUsd": 59.34,
+    "pools": [
+      {
+        "pair": "0x9d81bf35d3bac55981aa7d8142d95753b82b13de72600785503309056addabdb",
+        "dex": "uniswap",
+        "liquidityUsd": 59.34,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 17.95,
+    "projectLinks": {
+      "websites": [
+        "https://www.doji.dog/"
+      ],
+      "socials": [
+        "https://x.com/DojiOnBase"
+      ]
+    }
   },
   "notes": null,
   "coi": false

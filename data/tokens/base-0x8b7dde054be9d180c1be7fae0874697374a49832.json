@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "PROS",
   "name": "Wrapped PROS",
-  "scanned_at": "2026-09-21T10:50:49.740Z",
+  "scanned_at": "2026-09-22T10:07:24.222Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 159 days old; trust needs time (Provisional).",
+          "text": "Token is 160 days old; trust needs time (Provisional).",
           "evidence": "0xe163c483d97097c44719ffede6c9af66f41539d872a02f6e10450acabea7b13a"
         }
       ]
@@ -113,7 +113,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4308599493160475377813573",
+    "totalSupply": "4283758660974697909834073",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -126,13 +126,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 159,
-    "liquidityUsd": 880286.6000000001,
+    "ageDays": 160,
+    "liquidityUsd": 885323.3300000001,
     "pools": [
       {
         "pair": "0x3f4E90Ff4125d9FCC4F4B7Ba5213f596e9A1115d",
         "dex": "uniswap",
-        "liquidityUsd": 7467.81,
+        "liquidityUsd": 7482.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -141,7 +141,7 @@
       {
         "pair": "0x8A8e4170C09074b109352190d47e54d7c1F61e4E",
         "dex": "aerodrome",
-        "liquidityUsd": 869566.57,
+        "liquidityUsd": 874428.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,7 +150,16 @@
       {
         "pair": "0x24BDDff0577D1Ee32f92A0b92296cA9702611c6A",
         "dex": "aerodrome",
-        "liquidityUsd": 2979.54,
+        "liquidityUsd": 3147.5,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x603c0faf0fdf64c98c3475994e2b8f2b7e1da573e594d8455a82b6e91232c785",
+        "dex": "uniswap",
+        "liquidityUsd": 0.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -159,23 +168,14 @@
       {
         "pair": "0xfbc8430728e4f114b4cD1B3A9FDd1382c133F63c",
         "dex": "aerodrome",
-        "liquidityUsd": 36.45,
+        "liquidityUsd": 37.52,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xA1DC70D55489784b68f8d2c045eaa51F59dd7ad5",
-        "dex": "pancakeswap",
-        "liquidityUsd": 2.84,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe89170c528acc5f03b1e9d13ade9423888b7b06e4dab11f780831d8200836778",
+        "pair": "0xee0d536a3636ca08e8646df476b4548afe5193ddda26b61cc73de0fd154be65b",
         "dex": "uniswap",
         "liquidityUsd": 0.3,
         "lpBurnedPct": null,
@@ -184,25 +184,25 @@
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xee0d536a3636ca08e8646df476b4548afe5193ddda26b61cc73de0fd154be65b",
-        "dex": "uniswap",
-        "liquidityUsd": 0.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
+        "pair": "0x06612D3a895576094a2490897dc65DDBC2f2C880",
+        "dex": "0x7456837fb64e6e3F6F51D5719CC8Be9aE3870534",
+        "liquidityUsd": 227.05,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x06612D3a895576094a2490897dc65DDBC2f2C880",
-        "dex": "0x7456837fb64e6e3F6F51D5719CC8Be9aE3870534",
-        "liquidityUsd": 232.81,
+        "pair": "0x2215d98Ba225535EBb3585e140C687f0B00424E0",
+        "dex": "pancakeswap",
+        "liquidityUsd": 0,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 28.79,
+    "top10Pct": 27.6,
     "projectLinks": {
       "websites": [
         "https://basegold.io",

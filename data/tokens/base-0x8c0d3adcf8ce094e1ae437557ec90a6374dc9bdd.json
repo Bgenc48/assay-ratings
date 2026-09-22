@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "OVPP",
   "name": "OpenVPP",
-  "scanned_at": "2026-09-21T10:51:07.384Z",
+  "scanned_at": "2026-09-22T10:08:13.193Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -12,7 +12,7 @@
     "overall": 74.1,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -82,7 +82,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -116,13 +116,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 264,
-    "liquidityUsd": 397220.99,
+    "ageDays": 265,
+    "liquidityUsd": 415933.4600000001,
     "pools": [
       {
         "pair": "0xe2444fAa67022125A059c19d5737D8e4Dad251fA",
         "dex": "aerodrome",
-        "liquidityUsd": 395052.99,
+        "liquidityUsd": 413572.64,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -131,7 +131,7 @@
       {
         "pair": "0x6b6ab80f88f1357ca41a092b4c39e08503b939433747ccafdfb9f1f049b8a0ba",
         "dex": "uniswap",
-        "liquidityUsd": 1790.34,
+        "liquidityUsd": 1948.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,14 +140,23 @@
       {
         "pair": "0x2c6c1492b36a7af21f3578ddb142253ac9d6e67c0d8442a11d5e039b31459c4c",
         "dex": "uniswap",
-        "liquidityUsd": 377.66,
+        "liquidityUsd": 412.27,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6a34c8d06ac43465651cef4d0aedb4204074e7102aa2cde25257fcea8789fa99",
+        "dex": "uniswap",
+        "liquidityUsd": 0.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 14.56,
     "projectLinks": {
       "websites": [
         "https://openvpp.energy/"
