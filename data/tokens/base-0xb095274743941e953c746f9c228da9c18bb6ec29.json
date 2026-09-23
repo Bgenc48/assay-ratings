@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LAPTOP",
   "name": "LAPTOP",
-  "scanned_at": "2026-09-22T10:20:04.925Z",
+  "scanned_at": "2026-09-23T10:13:12.370Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "B",
+    "overall": 75.5,
     "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 148 days old; trust needs time (Provisional).",
-          "evidence": "0x01a6d22ac0240f26aee18c4cde12b7c0a56048d5a3a2f4f67bda9f9e13f2d698"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 4.7%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -102,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -124,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 148,
-    "liquidityUsd": 1102658.1600000001,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 1205158.82,
     "pools": [
       {
         "pair": "0x99cf3E8bfB02c300312c53Aac5D0B082e3D5975C",
         "dex": "aerodrome",
-        "liquidityUsd": 1071714.33,
+        "liquidityUsd": 1167215.29,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,16 +121,7 @@
       {
         "pair": "0xCb4bC943314405c01907Ae910E57AFC2D0549706",
         "dex": "aerodrome",
-        "liquidityUsd": 13240.34,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xb0ccc1418279f6a766416740c87958b8b8ff426eaae71e6cab06c9f822d0aec7",
-        "dex": "uniswap",
-        "liquidityUsd": 3205.95,
+        "liquidityUsd": 21768.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,7 +130,16 @@
       {
         "pair": "0x7702411B3893ea4F6Ab96C50231cFEc65448AB9F",
         "dex": "uniswap",
-        "liquidityUsd": 8313.08,
+        "liquidityUsd": 7061.54,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb0ccc1418279f6a766416740c87958b8b8ff426eaae71e6cab06c9f822d0aec7",
+        "dex": "uniswap",
+        "liquidityUsd": 3080.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -167,7 +148,7 @@
       {
         "pair": "0x0F5A4039d809D93413fe9a67c465dd4336B9C63e",
         "dex": "aerodrome",
-        "liquidityUsd": 2082.41,
+        "liquidityUsd": 2000.91,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -176,7 +157,7 @@
       {
         "pair": "0x0bcfb8ddc2af0bc61d72be1daf470c8853f568c4b04f619b0a31f1ced1216c4d",
         "dex": "uniswap",
-        "liquidityUsd": 3196.26,
+        "liquidityUsd": 3086.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -185,23 +166,23 @@
       {
         "pair": "0xA321D950082166d11DB11cFBd6e32A91e6144Ff0",
         "dex": "uniswap",
-        "liquidityUsd": 815.53,
+        "liquidityUsd": 794.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x100c526e92b3ae86b430dc7f369ef9c0ba78c8e331606969a368f292eea823d3",
+        "pair": "0xe15e01d89899f2ce2b4352863705362e3c1a6aae94445fafd0d6e502daebc2f8",
         "dex": "uniswap",
-        "liquidityUsd": 90.26,
+        "liquidityUsd": 150.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 4.68,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.laptoptoken.com/"

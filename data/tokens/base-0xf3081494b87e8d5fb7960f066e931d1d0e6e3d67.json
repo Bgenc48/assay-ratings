@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TAO",
   "name": "Bittensor",
-  "scanned_at": "2026-09-22T10:20:14.818Z",
+  "scanned_at": "2026-09-23T10:13:17.808Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 47.1,
+    "overall": 46.4,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 45 days old; trust needs time (Provisional).",
-          "evidence": "0x14d94c9eb1ce660de3a82681f1d01f5c29745bd467b3c3fe979059b6cc8c423e"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 3.3%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -108,11 +94,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -120,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "3703142874540199671498",
+    "totalSupply": "4078020455780199671498",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -132,14 +113,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 45,
-    "liquidityUsd": 720615.09,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 638270.3600000001,
     "pools": [
       {
         "pair": "0x99f0364e162A36a77e5d77b5EeB56539563735a3",
         "dex": "aerodrome",
-        "liquidityUsd": 552129.22,
+        "liquidityUsd": 461902.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +129,7 @@
       {
         "pair": "0x82dD34C6631C286cDD1dB16f2c232f60E402Dd5A",
         "dex": "uniswap",
-        "liquidityUsd": 62415.08,
+        "liquidityUsd": 65833.57,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +138,7 @@
       {
         "pair": "0x8564E73b64eBA35B5dF705bE75682460EC576047",
         "dex": "uniswap",
-        "liquidityUsd": 239.88,
+        "liquidityUsd": 242.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -166,25 +147,7 @@
       {
         "pair": "0x34AE62E7793e97D91352522939a8A9136e087491",
         "dex": "uniswap",
-        "liquidityUsd": 225.37,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x0aC0119CCA3657773EeeB6c17216ADD73cba6901",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.01,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x96b756b37b4c93b3598c4f499e7ec455ca3a97834eb1eb2b87653e8d6ad9b564",
-        "dex": "uniswap",
-        "liquidityUsd": 1.22,
+        "liquidityUsd": 225.42,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -193,23 +156,41 @@
       {
         "pair": "0x2292233d308188fcB3775F63A20f31DFf6DB02d9",
         "dex": "aerodrome",
-        "liquidityUsd": 88599.55,
+        "liquidityUsd": 101242.14,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x5bebb7c8cdf8bfb9fee5cd08e59ac45c67151234d89090b5f6edbd44c3625a0d",
+        "pair": "0xcf8e9f91bd0ef59f1a0da27a0fc18691a5fc04f1fe20880084811d96988a982e",
         "dex": "uniswap",
-        "liquidityUsd": 17004.76,
+        "liquidityUsd": 8823.74,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xbf1ff0d672192381c5ec85ed9162909f09a2ca53bcf34906a007221f442bf562",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb461fe7f2d2858533f81434e07850e38550b72de1d69982b84fd480afb26bf14",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 3.34,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://forevermoney.ai/?type=swap&from=usdc&to=tao",

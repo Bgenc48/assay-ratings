@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MAG7.ssi",
   "name": "MAG7.ssi",
-  "scanned_at": "2026-09-22T10:19:03.511Z",
+  "scanned_at": "2026-09-23T10:11:21.986Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "UR",
-    "overall": 46.4,
-    "provisional": true,
+    "overall": 54.3,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,14 +72,21 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 3.9%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -92,6 +99,11 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
     },
     {
       "id": "cap.claim-light",
@@ -113,14 +125,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 2066780.4699999997,
+    "verifiedSource": true,
+    "ageDays": 644,
+    "liquidityUsd": 2068844.4100000001,
     "pools": [
       {
         "pair": "0xD364eb55E17700b54bd75fEB3F14582eD7A29444",
         "dex": "uniswap",
-        "liquidityUsd": 2008786.42,
+        "liquidityUsd": 2010552.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -129,16 +141,20 @@
       {
         "pair": "0x739c2431670A12E2cF8e11E3603eB96e6728a789",
         "dex": "uniswap",
-        "liquidityUsd": 57515.7,
+        "liquidityUsd": 57807.21,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x9c27cda5dc8f3b6938e85cb595dd8a511a8c243f",
+          "sharePct": 159.69
+        }
       },
       {
         "pair": "0x7bea64b15975f114a5ba5a056dfd4e38bc4c22d28bb84ea40cdd42b1dd1360c1",
         "dex": "uniswap",
-        "liquidityUsd": 461.42,
+        "liquidityUsd": 464.78,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -147,14 +163,23 @@
       {
         "pair": "0xc6eA7C1829fc944138C97bBb75cF5b2a870016A2",
         "dex": "pancakeswap",
-        "liquidityUsd": 16.93,
+        "liquidityUsd": 19.12,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x88eaaA53405a6Bf098bc38827F4642bcFD195256",
+        "dex": "hydrex",
+        "liquidityUsd": 1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 3.92,
     "projectLinks": null
   },
   "notes": null,

@@ -1,0 +1,194 @@
+{
+  "address": "0xff7f8f301f7a706e3cfd3d2275f5dc0b9ee8009b",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "FOLKS",
+  "name": "Folks Finance",
+  "scanned_at": "2026-09-23T10:14:06.562Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "D",
+    "overall": 51.8,
+    "provisional": true,
+    "badge": "Custodial",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 35,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.multisig-mint",
+          "severity": "warn",
+          "text": "A mint path exists, gated by a multisig without a timelock or attestation trail.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 55,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.safe",
+          "severity": "warn",
+          "text": "Privileged capabilities gated by a 4-of-6 multisig with no timelock.",
+          "evidence": null
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x94a734bf60cDe88ab10a9951b17278a3CE129860"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "179422364104",
+    "decimals": 6,
+    "owner": "0x84bcefd5306f1729aed590410df4f8e7ee0c6890",
+    "controlType": "safe",
+    "proxy": "eip1967",
+    "proxyImplementation": "0x82fd247d884e8b8195cacf329682b61639aa6a78",
+    "privileged": [
+      "mint(address,uint256)",
+      "burnFrom(address,uint256)"
+    ],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 334757.16000000003,
+    "pools": [
+      {
+        "pair": "0x94a734bf60cDe88ab10a9951b17278a3CE129860",
+        "dex": "aerodrome",
+        "liquidityUsd": 332673.95,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x2fb436171a36d002437c080e46a57f5d5d0b15ef8552e96d7abca02922c49cb7",
+        "dex": "uniswap",
+        "liquidityUsd": 1823.61,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7a15868e519d3d898c1c1fcece757848c0c2761ed64e903184b4239e48cf1544",
+        "dex": "uniswap",
+        "liquidityUsd": 103.89,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x29ad62c8d8ccf843ceb5e98715f749965e4a8503f16810d973a0a862455f82f0",
+        "dex": "uniswap",
+        "liquidityUsd": 139.96,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x45e4fd5836497f27b3c79fd605b75b4b24be08c331a1dd0ca51331594963d8d2",
+        "dex": "uniswap",
+        "liquidityUsd": 15.02,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x84BF1696F37e57e9e5e2C0E12F96C62a594592F3",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.73,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xcA12Aa2fc27Ddf1B9f8A631C71001384a0df5eCC",
+        "dex": "pancakeswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://folks.finance",
+        "https://docs.folks.finance"
+      ],
+      "socials": [
+        "https://x.com/FolksFinance",
+        "https://t.me/FolksfinanceOfficial",
+        "https://discord.com/invite/folksfinance"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

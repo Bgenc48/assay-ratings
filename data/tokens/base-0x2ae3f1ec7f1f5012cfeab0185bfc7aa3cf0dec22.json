@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "cbETH",
   "name": "Coinbase Wrapped Staked ETH",
-  "scanned_at": "2026-09-22T10:05:18.830Z",
+  "scanned_at": "2026-09-23T10:04:44.104Z",
   "methodology_version": "0.2.1",
   "profile": "custodial-wrapped",
   "grade": {
@@ -104,7 +104,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "76836590621565469410607",
+    "totalSupply": "76840978174537116494926",
     "decimals": 18,
     "owner": null,
     "controlType": "safe",
@@ -116,13 +116,31 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 1158,
-    "liquidityUsd": 2470930.3899999997,
+    "ageDays": 1159,
+    "liquidityUsd": 6543746.21,
     "pools": [
+      {
+        "pair": "0x47cA96Ea59C13F72745928887f84C9F52C3D7348",
+        "dex": "aerodrome",
+        "liquidityUsd": 2911861.33,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8BB9eAF3C5A906D20c4CC10eA2F73A3Ac2D5d41A",
+        "dex": "aerodrome",
+        "liquidityUsd": 1251454.14,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0xB1383DC47D9971Fc999C3A9088F79E744b376e97",
         "dex": "hydrex",
-        "liquidityUsd": 1353464.31,
+        "liquidityUsd": 1355816.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -131,25 +149,7 @@
       {
         "pair": "0x8356320a0db330746136ba9e748a5d07c0f97eab2e50b4ded222569ff3da3b8e",
         "dex": "uniswap",
-        "liquidityUsd": 194170.2,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc715096EeCC3f4A0FDBfF055a3db2926adC83244",
-        "dex": "alien-base",
-        "liquidityUsd": 137962.01,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x0e7C44658FB8dcf8f9cbCE5DCee9fCe924D3D8a3",
-        "dex": "quickswap",
-        "liquidityUsd": 93203.2,
+        "liquidityUsd": 298221.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,7 +158,16 @@
       {
         "pair": "0x74A4bF2cad1b172cDc82a5Da7130C7A59EB5460b",
         "dex": "quickswap",
-        "liquidityUsd": 127246.9,
+        "liquidityUsd": 129038,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xc715096EeCC3f4A0FDBfF055a3db2926adC83244",
+        "dex": "alien-base",
+        "liquidityUsd": 137431.16,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -167,7 +176,7 @@
       {
         "pair": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
         "dex": "alien-base",
-        "liquidityUsd": 302552.64,
+        "liquidityUsd": 291677.54,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -176,23 +185,14 @@
       {
         "pair": "0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91",
         "dex": "aerodrome",
-        "liquidityUsd": 168430.86,
+        "liquidityUsd": 168246.72,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x686A4Cdd3F9059e56603840E320e5945E2190216",
-        "dex": "alien-base",
-        "liquidityUsd": 93900.27,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 3.61,
     "projectLinks": null
   },
   "notes": "Custodial liquid-staking wrapper (Coinbase). Scored under the methodology v0.2 custodial-wrapped profile — same semantics as cbBTC. Until an approved issuer-disclosure claim verifies, the profile caps at C (insufficient data).",

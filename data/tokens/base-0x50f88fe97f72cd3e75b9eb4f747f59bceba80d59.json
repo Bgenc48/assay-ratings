@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "jesse",
   "name": "jesse",
-  "scanned_at": "2026-09-22T10:13:40.820Z",
+  "scanned_at": "2026-09-23T10:07:36.845Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B+",
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,21 +77,14 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 8.8%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -106,16 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -133,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 306,
-    "liquidityUsd": 518677.08,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 581677.88,
     "pools": [
       {
         "pair": "0xc39acb3ce11ebcd3e1c5d67cdfb8707ab12674449fdab859327a8aabee03cd10",
         "dex": "uniswap",
-        "liquidityUsd": 511191.99,
+        "liquidityUsd": 573459.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -149,7 +126,7 @@
       {
         "pair": "0x4e40ff3Be6bdA5b131c91520Fa73515076eEE098",
         "dex": "aerodrome",
-        "liquidityUsd": 5664.66,
+        "liquidityUsd": 6269.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -158,7 +135,7 @@
       {
         "pair": "0xE55BbED98db8f64d0d6813c819D6B037c2ee61bE",
         "dex": "uniswap",
-        "liquidityUsd": 769.03,
+        "liquidityUsd": 825.71,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -167,20 +144,16 @@
       {
         "pair": "0xbE6e0de8f96c8decb7Ab3734247E7774f6609F84",
         "dex": "leetswap",
-        "liquidityUsd": 320.03,
+        "liquidityUsd": 336.5,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x5a36b57e359f21171ad96c164a9ec3d52c183716",
-          "sharePct": 99.99
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x055b22c9c22c4aa2e09e83866e8956819415ab56f75303573ed2ce0cb3abbb2d",
         "dex": "uniswap",
-        "liquidityUsd": 300.15,
+        "liquidityUsd": 329.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -189,20 +162,16 @@
       {
         "pair": "0xbAd80210fa3119324243279CB0212b1CE3218569",
         "dex": "aerodrome",
-        "liquidityUsd": 368.62,
+        "liquidityUsd": 389.77,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x735133d04b6a685a47fddd9a64bd05e91be05c92",
-          "sharePct": 99.99
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x3cf9d0208e6cfc6dff697a8880e1d32a545797bd094243bf3575d46963eff9c7",
         "dex": "uniswap",
-        "liquidityUsd": 62.35,
+        "liquidityUsd": 67.21,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -211,14 +180,14 @@
       {
         "pair": "0xC7A2e3D213a197b0fDF684E7360A0d13DeA75fC9",
         "dex": "aerodrome",
-        "liquidityUsd": 0.25,
+        "liquidityUsd": 0.27,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 8.84,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://jesse.xyz/",

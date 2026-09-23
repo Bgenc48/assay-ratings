@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SHIT",
   "name": "SHIT",
-  "scanned_at": "2026-09-22T10:20:52.582Z",
+  "scanned_at": "2026-09-23T10:13:40.168Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.5,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 5.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -112,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 141026.56999999998,
+    "liquidityUsd": 113058.04999999999,
     "pools": [
       {
         "pair": "0x69a8440ea85bac37d8eceb41b599ff18f9243fd8446226770c91d6afeb31b946",
         "dex": "uniswap",
-        "liquidityUsd": 140977.16,
+        "liquidityUsd": 113015.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,7 +121,7 @@
       {
         "pair": "0xd0836aab7cef599d94bf2afbd7e8a09a1901377d07677f9e3eef245e9b8978b4",
         "dex": "uniswap",
-        "liquidityUsd": 27.8,
+        "liquidityUsd": 23.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,14 +130,14 @@
       {
         "pair": "0x53d29c4acaad95efdabc8f89b44932b10085a89aee0c9a4868564085ea72d9f3",
         "dex": "uniswap",
-        "liquidityUsd": 21.61,
+        "liquidityUsd": 18.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 5.01,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://shitonbase.com/"

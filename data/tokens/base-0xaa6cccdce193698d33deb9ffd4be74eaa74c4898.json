@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ElonRWA",
   "name": "ElonRWA",
-  "scanned_at": "2026-09-22T10:19:14.138Z",
+  "scanned_at": "2026-09-23T10:11:50.897Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
     "overall": 85,
-    "provisional": true,
+    "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -110,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 592889.19,
+    "verifiedSource": true,
+    "ageDays": 917,
+    "liquidityUsd": 586856.2200000001,
     "pools": [
       {
         "pair": "0xD56f086E7B796b313d49f2BC926fAc4BDd2a2B0B",
         "dex": "uniswap",
-        "liquidityUsd": 552484.86,
+        "liquidityUsd": 546420.88,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,14 +126,27 @@
       {
         "pair": "0xfd616e10311Ac827FA953cA04f62Fb2B054d8Da6",
         "dex": "aerodrome",
-        "liquidityUsd": 40404.33,
+        "liquidityUsd": 40433.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7b29f3DBEDFb94346756e5505285f637315Ce9D0",
+        "dex": "swapbased",
+        "liquidityUsd": 1.54,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": true,
+        "lpDominantHolder": {
+          "address": "0x202a69e31bda671be8661168c075a3c2ab145232",
+          "sharePct": 99.99
+        }
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 11.68,
     "projectLinks": {
       "websites": [
         "https://elonrwa.com/",

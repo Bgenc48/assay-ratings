@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TRUE",
   "name": "True",
-  "scanned_at": "2026-09-22T10:21:18.676Z",
+  "scanned_at": "2026-09-23T10:14:01.830Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.6,
-    "provisional": false,
+    "overall": 70.4,
+    "provisional": true,
     "badge": "Governance-Gated",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.3%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -119,50 +107,23 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 564,
-    "liquidityUsd": 920496.74,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 825986.5400000002,
     "pools": [
       {
         "pair": "0x1FAE246b1b2D0ce47126bBb109850Da355352D77",
         "dex": "uniswap",
-        "liquidityUsd": 698895.75,
+        "liquidityUsd": 763249.55,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xb3280c81957a3b2f1704cd83443b8cab3c0daba78966275d521f057015f23464",
-        "dex": "uniswap",
-        "liquidityUsd": 120084.84,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9ef40a352b1f87985bf4141ca985460c5fb119b7e0f884ed047f9dacaf260588",
-        "dex": "uniswap",
-        "liquidityUsd": 78302.58,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x61E715f97a76E3EbE2282A309A4FfEB61ea22971",
         "dex": "uniswap",
-        "liquidityUsd": 12246.59,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd5e554d84cec7ef2ef79f4e8e0c5395a7e6a6bdb8aec141666cc098bf434343e",
-        "dex": "uniswap",
-        "liquidityUsd": 9850.55,
+        "liquidityUsd": 61565.3,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,16 +132,7 @@
       {
         "pair": "0xb38e7e4642b5b22945ff9900a26701243a9981cce8d42251191efde1f9288263",
         "dex": "uniswap",
-        "liquidityUsd": 609.65,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x751f8da277ac766f05ea527371cc99e181b27135a490f42ddad2df301af711b9",
-        "dex": "uniswap",
-        "liquidityUsd": 376.39,
+        "liquidityUsd": 756.92,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -189,14 +141,50 @@
       {
         "pair": "0x062a21229bf254b3031a45d010b31e59d917eea93af32df5bbc8d07bd2feba34",
         "dex": "uniswap",
-        "liquidityUsd": 130.39,
+        "liquidityUsd": 125.55,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xffc29782cab164a7cd52ecc760d5a44ee347570ea0dbf893612d77a715645d48",
+        "dex": "uniswap",
+        "liquidityUsd": 260.59,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9ef40a352b1f87985bf4141ca985460c5fb119b7e0f884ed047f9dacaf260588",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x32f18787f4fb0c5280c3758c031336e7d33703ed5426eb7a48b96bed7d96b5db",
+        "dex": "uniswap",
+        "liquidityUsd": 28.63,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb3280c81957a3b2f1704cd83443b8cab3c0daba78966275d521f057015f23464",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 7.26,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://trueo.com/",

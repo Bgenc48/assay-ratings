@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LSK",
   "name": "Lisk",
-  "scanned_at": "2026-09-22T10:20:28.605Z",
+  "scanned_at": "2026-09-23T10:13:25.669Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 54.3,
-    "provisional": false,
+    "overall": 46.4,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 1.2%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +94,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -113,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "229439298255160066010875",
+    "totalSupply": "230145758627290188504970",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -124,14 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 368,
-    "liquidityUsd": 89914.52,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 83712.56,
     "pools": [
       {
         "pair": "0x275BE3a43B66516e532BcaA36eE453EDd47614ea",
         "dex": "aerodrome",
-        "liquidityUsd": 89889.88,
+        "liquidityUsd": 83688.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -140,14 +128,14 @@
       {
         "pair": "0x9394daf4833fb2cf188b5781bf74f04d59678c9b2129a37437666489791ca7d4",
         "dex": "uniswap",
-        "liquidityUsd": 24.64,
+        "liquidityUsd": 24.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 1.17,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

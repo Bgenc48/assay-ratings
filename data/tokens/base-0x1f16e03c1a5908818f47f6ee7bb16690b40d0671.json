@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "RECALL",
   "name": "Recall",
-  "scanned_at": "2026-09-22T10:15:37.702Z",
+  "scanned_at": "2026-09-23T10:07:57.255Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 50.7,
-    "provisional": false,
+    "overall": 46.4,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -92,11 +92,6 @@
       "id": "cap.unclassified-mint",
       "letter": "C",
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
-    },
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
     },
     {
       "id": "cap.claim-light",
@@ -120,14 +115,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 586,
-    "liquidityUsd": 512735.53,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 527792.3,
     "pools": [
       {
         "pair": "0x0abe41C8AAa9282429e06EBEd48bE36298981d94",
         "dex": "aerodrome",
-        "liquidityUsd": 511667.99,
+        "liquidityUsd": 526819.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -136,7 +131,7 @@
       {
         "pair": "0x5e3791F68EbCEAC82788f3becAb154C15141A2f4",
         "dex": "aerodrome",
-        "liquidityUsd": 884,
+        "liquidityUsd": 909.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -145,16 +140,7 @@
       {
         "pair": "0x3e8eff1bb290600c4308c975bd0cc6a8e80bb30ce474fee2b03f8fb35d877ee7",
         "dex": "uniswap",
-        "liquidityUsd": 55.13,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x305e9b85f2399fd3869855C976c44F4Ee02A3430",
-        "dex": "hydrex",
-        "liquidityUsd": 122.76,
+        "liquidityUsd": 56.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -163,14 +149,14 @@
       {
         "pair": "0xe8EB2f513ec5739397D420313c17F3986838A237",
         "dex": "aerodrome",
-        "liquidityUsd": 5.65,
+        "liquidityUsd": 5.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 28.59,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://recall.network/"

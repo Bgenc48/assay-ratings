@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "CX",
   "name": "Cortex",
-  "scanned_at": "2026-09-22T10:20:54.522Z",
+  "scanned_at": "2026-09-23T10:13:41.600Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 48.9,
-    "provisional": false,
+    "overall": 46.4,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 40.8%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +94,6 @@
       "reason": "A mint path exists whose controller could not be classified automatically (insufficient data)."
     },
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -113,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "15078024567237867353114225",
+    "totalSupply": "14728024567237867353114225",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -125,23 +113,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 647,
-    "liquidityUsd": 500746.4,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 451355.67999999993,
     "pools": [
       {
         "pair": "0x9249F441005947831eaAF9135B319AD97BCD6Bdf",
         "dex": "aerodrome",
-        "liquidityUsd": 498397.12,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x22303f5ea71f4c0b9eec685f2fb46a0d5d6180c00b8815609402fe2bb98e7a89",
-        "dex": "uniswap",
-        "liquidityUsd": 2110.52,
+        "liquidityUsd": 451136.22,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -150,27 +129,23 @@
       {
         "pair": "0x14eE8B85f8feb54E8d623425Bc365B5dde0800d2",
         "dex": "aerodrome",
-        "liquidityUsd": 216.32,
+        "liquidityUsd": 198.61,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0x532bfd20230e205cf283996ceef4e6bb19e65110",
-          "sharePct": 90.78
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0xc83418f1ACad06914455D931785aEDADb1617DEF",
         "dex": "hydrex",
-        "liquidityUsd": 22.44,
+        "liquidityUsd": 20.85,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 40.78,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://cortexprotocol.com/",

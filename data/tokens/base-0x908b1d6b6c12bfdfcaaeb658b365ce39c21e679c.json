@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "LOTTO",
   "name": "Lotto Coin",
-  "scanned_at": "2026-09-22T10:20:26.325Z",
+  "scanned_at": "2026-09-23T10:13:24.077Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 2.6%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -123,39 +105,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 262973.74000000005,
+    "liquidityUsd": 260332.1,
     "pools": [
       {
         "pair": "0xe36ad7fdd277c5bd37db459130f508d6e995cd07324b461989a1d6ce77405884",
         "dex": "uniswap",
-        "liquidityUsd": 262934.28,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xcb6cb5474754ca79b817aa25f117368b4fbc3644a718914c384ca294c69c9229",
-        "dex": "uniswap",
-        "liquidityUsd": 38.02,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xe9132a744d5c7d3e463daa4a6b1101e269d4d913bf7dfab1290295db76c5ba45",
-        "dex": "uniswap",
-        "liquidityUsd": 1.44,
+        "liquidityUsd": 260332.1,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 2.62,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.lottocoin.fun/"

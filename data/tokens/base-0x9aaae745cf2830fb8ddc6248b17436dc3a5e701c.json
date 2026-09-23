@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "GOCHU",
   "name": "Gochujangcoin",
-  "scanned_at": "2026-09-22T10:17:47.488Z",
+  "scanned_at": "2026-09-23T10:08:45.081Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 71.1,
-    "provisional": false,
+    "overall": 70,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.heavy",
-          "severity": "warn",
-          "text": "Top-10 unlabeled holders control 46.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -116,23 +109,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 841,
-    "liquidityUsd": 213.58000000000004,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 92.13000000000002,
     "pools": [
-      {
-        "pair": "0x452ed0ff0872fb0ebda34300308d4a5dadea80c132a18c33ab67757778c28fbc",
-        "dex": "uniswap",
-        "liquidityUsd": 64.54,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x943ce2bb7fbb0514e21feadf950b5991f5910c696167a16f0bef7c2fdd1c5ad1",
         "dex": "uniswap",
-        "liquidityUsd": 89.93,
+        "liquidityUsd": 56.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -141,23 +125,50 @@
       {
         "pair": "0xf2bfe1af2b521387931ba45a0c4ef6a37f761d40fc44e0b16402103d1612350c",
         "dex": "uniswap",
-        "liquidityUsd": 58.96,
+        "liquidityUsd": 34.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x7c8a63c9b6141149ca3b4777cd020e5ad2a6f33d9fd549153c873ddefe7e4e5b",
+        "pair": "0xfbc955dbcacc4d6e7e7849644c75f4f25d92c80f5d55e6415e4917e74b486669",
         "dex": "uniswap",
-        "liquidityUsd": 0.15,
+        "liquidityUsd": 0.23,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x99c819e81d394b14d8c19f25533ac2d84c256de5b1e7c8dfb8d956825ba8480d",
+        "dex": "uniswap",
+        "liquidityUsd": 0.65,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x452ed0ff0872fb0ebda34300308d4a5dadea80c132a18c33ab67757778c28fbc",
+        "dex": "uniswap",
+        "liquidityUsd": null,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf7c6f4798f902c697b7d7f4f7712682e5a403b4080be452ed7a220c4692f217b",
+        "dex": "uniswap",
+        "liquidityUsd": 0.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 46.04,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://gochu.org",
