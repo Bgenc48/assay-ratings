@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "SPX93K",
   "name": "SPX93K",
-  "scanned_at": "2026-09-23T10:14:10.159Z",
+  "scanned_at": "2026-09-24T10:16:01.360Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 44.6,
+    "overall": 45.6,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 60,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.latent-mint",
           "severity": "warn",
@@ -72,14 +78,28 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 2 days old; trust needs time (Provisional).",
+          "evidence": "0xc49539e6a3a3c98f41fba0e3b7fab23232bcb88b5cfae26e7150a2d71b37799f"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 1.0%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -89,9 +109,19 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.eoa-upgrade",
       "letter": "D",
       "reason": "Upgradeable with an EOA admin and no timelock."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
     },
     {
       "id": "cap.claim-light",
@@ -110,21 +140,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 117131.09,
+    "verifiedSource": false,
+    "ageDays": 2,
+    "liquidityUsd": 113280.83,
     "pools": [
       {
         "pair": "0x98B8D9345A9cdC53Acc2e7b4bBE6FF70c2E2fbe2",
         "dex": "uniswap",
-        "liquidityUsd": 117131.09,
+        "liquidityUsd": 113280.83,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 1.04,
     "projectLinks": null
   },
   "notes": null,

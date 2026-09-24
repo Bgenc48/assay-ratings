@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SAPIEN",
   "name": "Sapien",
-  "scanned_at": "2026-09-23T10:08:24.427Z",
+  "scanned_at": "2026-09-24T10:12:07.704Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -71,7 +71,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862"
+            "pair": "0x682A02D5a32DDb09D1cf4791fB4124E0d4E17b67"
           }
         }
       ]
@@ -112,12 +112,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 58229.75,
+    "liquidityUsd": 28458.139999999996,
     "pools": [
       {
         "pair": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862",
         "dex": "aerodrome",
-        "liquidityUsd": 42665.75,
+        "liquidityUsd": 13753.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +126,7 @@
       {
         "pair": "0x682A02D5a32DDb09D1cf4791fB4124E0d4E17b67",
         "dex": "uniswap",
-        "liquidityUsd": 15396.8,
+        "liquidityUsd": 14570.24,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,16 +135,16 @@
       {
         "pair": "0x9F12a2CB7ad24E7BeF73174677a171617C83D2EC",
         "dex": "aerodrome",
-        "liquidityUsd": 125.49,
+        "liquidityUsd": 117.89,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xfa4397a512f0621657234b1374c8d7b879472c500f6f60f015df2c6c7c3273fb",
+        "pair": "0x421b2C0894ed3D8D43DC143A79782aE120208c09",
         "dex": "uniswap",
-        "liquidityUsd": 29.71,
+        "liquidityUsd": 5.6,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +153,7 @@
       {
         "pair": "0x46eba17e5cf17a85a46959ec7766748ce0263d8991577ce4c8bf20e0e7d2dcb5",
         "dex": "uniswap",
-        "liquidityUsd": 10.25,
+        "liquidityUsd": 10.03,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,19 +162,10 @@
       {
         "pair": "0x225Ca8cF2CE1d643F65722a4C7c747A19442B8Ef",
         "dex": "pancakeswap",
-        "liquidityUsd": 0.55,
+        "liquidityUsd": 0.59,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xBf275e5034A396001a9FB26D04b415b8A03481b9",
-        "dex": "aerodrome",
-        "liquidityUsd": 1.2,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {

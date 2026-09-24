@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "SMOLTING",
   "name": "smolting",
-  "scanned_at": "2026-09-23T10:14:08.929Z",
+  "scanned_at": "2026-09-24T10:15:59.351Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,7 +88,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -93,6 +99,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,14 +121,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 51348.310000000005,
+    "liquidityUsd": 24582.16,
     "pools": [
       {
         "pair": "0xb491c006d05262d37fb766e9c1afa5a048aaa0e53c3d688d564c4cc65352e979",
         "dex": "uniswap",
-        "liquidityUsd": 51238.23,
+        "liquidityUsd": 24497.18,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +137,7 @@
       {
         "pair": "0xb272d7089c7480cc51ae1ca73a566fb918a31890971cf1cdc86081e72883238e",
         "dex": "uniswap",
-        "liquidityUsd": 77.08,
+        "liquidityUsd": 34.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,51 +146,39 @@
       {
         "pair": "0x2389c8dfb2d829dbc747f5b4e6db82903138a634cad7737ed645fdf34b18591f",
         "dex": "uniswap",
-        "liquidityUsd": 27.55,
+        "liquidityUsd": 14.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x6caf2bd50262f82a205a58fddf62fcb007e47c158e3520dc3d37c7950f5a7bc0",
+        "pair": "0xf6e72a28cdb1a308391af4dfe76a5a0e63ef04a73a43b33321e9f68589ad9945",
         "dex": "uniswap",
-        "liquidityUsd": 0.84,
+        "liquidityUsd": 7.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4516fd407cc99e6cd7c642b29fb54bb20549facd4129a058048f137966ad1af0",
+        "pair": "0x429e9b176be3ce649ee9cf54c0d1e8b615655089df854f226a23776ab5014c9a",
         "dex": "uniswap",
-        "liquidityUsd": 2.6,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x21c7b3669e2ec3af7840bd45e178af0bbeffeac9d808c653f2a4e6888686a28d",
-        "dex": "uniswap",
-        "liquidityUsd": 2.01,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x003a22a201f0a166d4452f70888acd346759eed73a5a94e287eb4ab086655b8d",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 28.12,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
-    "projectLinks": null
+    "top10Pct": 13.72,
+    "projectLinks": {
+      "websites": [],
+      "socials": [
+        "https://x.com/CoinbaseWallet/status/2102398779051958385",
+        "https://t.me/smoltingbase"
+      ]
+    }
   },
   "notes": null,
   "coi": false

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SHIT",
   "name": "SHIT",
-  "scanned_at": "2026-09-23T10:13:40.168Z",
+  "scanned_at": "2026-09-24T10:15:23.404Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70,
+    "overall": 72.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,9 +77,16 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 4.1%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -105,23 +112,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": true,
     "ageDays": null,
-    "liquidityUsd": 113058.04999999999,
+    "liquidityUsd": 60325.02,
     "pools": [
       {
         "pair": "0x69a8440ea85bac37d8eceb41b599ff18f9243fd8446226770c91d6afeb31b946",
         "dex": "uniswap",
-        "liquidityUsd": 113015.9,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xd0836aab7cef599d94bf2afbd7e8a09a1901377d07677f9e3eef245e9b8978b4",
-        "dex": "uniswap",
-        "liquidityUsd": 23.93,
+        "liquidityUsd": 60291.75,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,14 +128,41 @@
       {
         "pair": "0x53d29c4acaad95efdabc8f89b44932b10085a89aee0c9a4868564085ea72d9f3",
         "dex": "uniswap",
-        "liquidityUsd": 18.22,
+        "liquidityUsd": 12.85,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xedb640a0363955bcdee217c2d5ccc6d009f17a8b692fccac642aa4646ebabe0c",
+        "dex": "uniswap",
+        "liquidityUsd": 10.13,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xd0836aab7cef599d94bf2afbd7e8a09a1901377d07677f9e3eef245e9b8978b4",
+        "dex": "uniswap",
+        "liquidityUsd": 10.29,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xF1F8108fB0e804C0483cBa98E9928deC00148310",
+        "dex": "uniswap",
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 4.12,
     "projectLinks": {
       "websites": [
         "https://shitonbase.com/"

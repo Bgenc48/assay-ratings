@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "QUID",
   "name": "Squid",
-  "scanned_at": "2026-09-23T10:09:13.593Z",
+  "scanned_at": "2026-09-24T10:12:45.269Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -112,12 +112,12 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 891466.8099999999,
+    "liquidityUsd": 866791.05,
     "pools": [
       {
         "pair": "0x07C4bc0F5fb6Cb069124DF3e1aE0B8fD8148ccC4",
         "dex": "pancakeswap",
-        "liquidityUsd": 880947.62,
+        "liquidityUsd": 861297.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,10 +126,28 @@
       {
         "pair": "0x8b289ED9bb4fCf49e358a2EbC5bA2cC60A296c96",
         "dex": "aerodrome",
-        "liquidityUsd": 10519.19,
+        "liquidityUsd": 5492.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xdb0bffaf8a08ea50a10b2fcf558f941197752e2ebbff044b13fc19b2dd5d9d97",
+        "dex": "uniswap",
+        "liquidityUsd": 0.76,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9e60Ff3E30c7812941f0569b414e492d621f12DE",
+        "dex": "sushiswap",
+        "liquidityUsd": 0.49,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],

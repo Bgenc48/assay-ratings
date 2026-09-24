@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "PrinterInkCoin",
   "name": "PrinterInkCoin",
-  "scanned_at": "2026-09-23T10:11:11.981Z",
+  "scanned_at": "2026-09-24T10:13:40.657Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 65.7,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -78,28 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 29 days old; trust needs time (Provisional).",
-          "evidence": "0x3a27b7e31521c9620b105f917b7defddc016178bd29b76731dbfd896c9b8b7ae"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 9.8%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -108,16 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -135,21 +105,39 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 29,
-    "liquidityUsd": 54274.83,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 52612.72,
     "pools": [
       {
         "pair": "0x58ac468ebebf53906ac4ee3fe9e5b988fc904813d9ee41fc4a9c86394b6b276e",
         "dex": "uniswap",
-        "liquidityUsd": 54274.83,
+        "liquidityUsd": 52610.59,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3299136ed4353c51824a74b1eb9a4a902d5fa7a46ce15829cf82bb1059e61987",
+        "dex": "uniswap",
+        "liquidityUsd": 0.12,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x9af5cfa5c6f267f3062f261885ca875b75fe838415b6724e7c663eb9d6b0eeaf",
+        "dex": "uniswap",
+        "liquidityUsd": 2.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 9.81,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://printerinkcoin.com/"

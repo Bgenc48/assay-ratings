@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "GHST",
   "name": "Aavegotchi GHST Token",
-  "scanned_at": "2026-09-23T10:12:06.737Z",
+  "scanned_at": "2026-09-24T10:14:03.058Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 54.6,
-    "provisional": false,
+    "overall": 46.4,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,7 +72,7 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "21018904344678508284725965",
+    "totalSupply": "21019566190138726442121758",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -112,23 +112,41 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 904,
-    "liquidityUsd": 947192.84,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 964427.8199999998,
     "pools": [
+      {
+        "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067",
+        "dex": "aerodrome",
+        "liquidityUsd": 741517.06,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
       {
         "pair": "0x0DFb9Cb66A18468850d6216fCc691aa20ad1e091",
         "dex": "aerodrome",
-        "liquidityUsd": 220903.78,
+        "liquidityUsd": 222294.85,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x41D4934322f2bd6fE1dbe4124070FE61651A2067",
+        "pair": "0x56C11053159a24c0731b4b12356BC1f0578FB474",
         "dex": "aerodrome",
-        "liquidityUsd": 726286.07,
+        "liquidityUsd": 574.82,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x873D3c477BBaeD55859C46E43FDAC6e73120f80c",
+        "dex": "uniswap",
+        "liquidityUsd": 38.08,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,28 +155,37 @@
       {
         "pair": "0x59Da7538Bbea7facC9185b412e0D43da67A84Ab7",
         "dex": "aerodrome",
-        "liquidityUsd": 0.85,
+        "liquidityUsd": 0.82,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x81a53b8ad24Ded0B88f9c9EFE72885c488119037",
-        "dex": "sushiswap",
-        "liquidityUsd": 1.41,
+        "pair": "0x8263C80Ba82fFb3506Eb731DCa78546244Ce2fC6",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.71,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4FB60E5715A22Bdc29a1333d7894dA2AA735f5A9",
+        "dex": "aerodrome",
+        "liquidityUsd": 0.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x8263C80Ba82fFb3506Eb731DCa78546244Ce2fC6",
-        "dex": "aerodrome",
-        "liquidityUsd": 0.73,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
+        "pair": "0x81a53b8ad24Ded0B88f9c9EFE72885c488119037",
+        "dex": "sushiswap",
+        "liquidityUsd": 1.39,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],

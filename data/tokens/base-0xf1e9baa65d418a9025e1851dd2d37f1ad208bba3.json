@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "Ratspeak",
   "name": "Ratspeak",
-  "scanned_at": "2026-09-23T10:11:01.655Z",
+  "scanned_at": "2026-09-24T10:13:37.278Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 63.9,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,19 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 128 days old; trust needs time (Provisional).",
-          "evidence": "0xf0ca8666d3d373677686855b7b77e7cbca8cf0544e558ce06d2290c7abab68fc"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -117,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 128,
-    "liquidityUsd": 423896.41000000003,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 369574.05000000005,
     "pools": [
       {
         "pair": "0x5e9782079683037fc8bb57625683359d9efaef80f2b829c4bb5b1896c6bb40b6",
         "dex": "uniswap",
-        "liquidityUsd": 409901.68,
+        "liquidityUsd": 356884.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +121,7 @@
       {
         "pair": "0x112ba48cd70188a21aad6d33fc5eeba5a6eed12aef1816751c537d91bfb88e26",
         "dex": "uniswap",
-        "liquidityUsd": 10453.67,
+        "liquidityUsd": 8686.89,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,7 +130,7 @@
       {
         "pair": "0x6b879eb54beb54fe20b54f4b18124fcedb8b55e590d11d76817c38328c12da60",
         "dex": "uniswap",
-        "liquidityUsd": 1202.34,
+        "liquidityUsd": 1731.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -151,7 +139,7 @@
       {
         "pair": "0xb0a131b487af0d2f639446cee6e27b903c78ed2980b825224b7ae83c0696afc1",
         "dex": "uniswap",
-        "liquidityUsd": 2181.26,
+        "liquidityUsd": 2002.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +148,16 @@
       {
         "pair": "0x969535d510cec3f450e9785eFC6bAA1B3a131dFc",
         "dex": "uniswap",
-        "liquidityUsd": 127.25,
+        "liquidityUsd": 112.94,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x1f2ff60174857fbff81a98d212e5cc4ff29886481220db7eaaef03b068856527",
+        "dex": "uniswap",
+        "liquidityUsd": 133.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +166,7 @@
       {
         "pair": "0x7d59117BC682dC8ce22B20120E0F03ec7e879f59",
         "dex": "hydrex",
-        "liquidityUsd": 13.56,
+        "liquidityUsd": 12.31,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,23 +175,14 @@
       {
         "pair": "0xed9249912ec8a144178c184223b57212aac49dbd506a3f9d43faa09a1ad50019",
         "dex": "uniswap",
-        "liquidityUsd": 10.63,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x65e2a61f739a0ef1087dd2b24e5a0957014bb511c342527b344572a0489b7069",
-        "dex": "uniswap",
-        "liquidityUsd": 6.02,
+        "liquidityUsd": 9.76,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 14.72,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://ratspeak.org/",
