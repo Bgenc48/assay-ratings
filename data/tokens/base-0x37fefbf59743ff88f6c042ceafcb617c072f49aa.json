@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "CAUSEWAY",
   "name": "Causeway",
-  "scanned_at": "2026-09-24T10:14:10.532Z",
+  "scanned_at": "2026-09-25T10:21:15.073Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -74,9 +80,16 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 26 days old; trust needs time (Provisional).",
+          "evidence": "0xc5fdcc4228be792e919e357899181db733500b44af00cfa9e5df40f506d1572e"
+        }
+      ]
     },
     "holderConcentration": {
       "score": null,
@@ -90,6 +103,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -107,8 +130,8 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
+    "verifiedSource": false,
+    "ageDays": 26,
     "liquidityUsd": null,
     "pools": [],
     "top10Pct": null,

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "GITLAWB",
   "name": "gitlawb",
-  "scanned_at": "2026-09-24T10:15:46.901Z",
+  "scanned_at": "2026-09-25T10:22:23.975Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70.4,
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -105,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 858223.92,
+    "liquidityUsd": 921441.5099999998,
     "pools": [
       {
         "pair": "0xec33256bf1ded407a57fd3c1965e7556e42ac14db09bc4e6fef57d5e2eb0b0b9",
         "dex": "uniswap",
-        "liquidityUsd": 764234.64,
+        "liquidityUsd": 817296.32,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -121,7 +121,7 @@
       {
         "pair": "0x72C12F0CC0E0C6e97ff9869717a482AFF97e3B30",
         "dex": "uniswap",
-        "liquidityUsd": 50462.62,
+        "liquidityUsd": 52958.25,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -130,7 +130,7 @@
       {
         "pair": "0x0c4ef7be2601d6d69dc298b35ab28629823024018395d524ac69028821239099",
         "dex": "uniswap",
-        "liquidityUsd": 13303.52,
+        "liquidityUsd": 14711.23,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -139,7 +139,7 @@
       {
         "pair": "0xe8c9b0f57d7fc4846236495e132d34ef43c795e3f644314136a91b140c3c96bd",
         "dex": "uniswap",
-        "liquidityUsd": 15466.53,
+        "liquidityUsd": 17069.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +148,7 @@
       {
         "pair": "0xB5E4b3e29a79FEb2aa96c68a4EA24FEdAa559aB2",
         "dex": "aerodrome",
-        "liquidityUsd": 7199.48,
+        "liquidityUsd": 11287.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,20 +157,16 @@
       {
         "pair": "0x8355378e9666B4002227fAB20484b6Df5c04B510",
         "dex": "aerodrome",
-        "liquidityUsd": 2396.8,
+        "liquidityUsd": 2528.09,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
-        "singleEoaWithdrawable": true,
-        "lpDominantHolder": {
-          "address": "0xe4d5880e62db1ccbf40a5ccb48ef635edba17b1b",
-          "sharePct": 91.02
-        }
+        "singleEoaWithdrawable": false
       },
       {
         "pair": "0x94da083f5E7e2A6f64a54640544641C8b20B422A",
         "dex": "treble",
-        "liquidityUsd": 2716.61,
+        "liquidityUsd": 2899.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -179,14 +175,14 @@
       {
         "pair": "0x5648e39Edcb7eFeAfEB17aAD90Eb53e9eBbbE656",
         "dex": "pancakeswap",
-        "liquidityUsd": 2443.72,
+        "liquidityUsd": 2691.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 14.46,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://gitlawb.com"

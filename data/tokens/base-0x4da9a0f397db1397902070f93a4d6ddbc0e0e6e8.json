@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LCAP",
   "name": "CF Large Cap Index",
-  "scanned_at": "2026-09-24T10:15:28.225Z",
+  "scanned_at": "2026-09-25T10:22:16.517Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "UR",
-    "overall": 54.3,
-    "provisional": false,
+    "letter": "C",
+    "overall": 55.5,
+    "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 0,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.dominant",
-          "severity": "crit",
-          "text": "The top 10 unlabeled holders control 88.0% of circulating supply.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -96,16 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.concentration",
-      "letter": "C",
-      "reason": "Top-10 unlabeled holders exceed 50%."
-    },
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -113,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "715951373052169948966971",
+    "totalSupply": "715387876592328847645217",
     "decimals": 18,
     "owner": null,
     "controlType": "unknown",
@@ -122,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 422,
-    "liquidityUsd": 1313523.5999999999,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 1364368.7099999995,
     "pools": [
       {
         "pair": "0x3a88eF38879EFb900c2D7b6199d21C139cEf5Fa7",
         "dex": "aerodrome",
-        "liquidityUsd": 583855.05,
+        "liquidityUsd": 626738.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,16 +121,25 @@
       {
         "pair": "0xC8C15670050541255f9b797C008047682524861F",
         "dex": "aerodrome",
-        "liquidityUsd": 171572.68,
+        "liquidityUsd": 173519.43,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0xb8B1a52b1893F3369eDb63aeE516F2e8B7D45A53",
+        "dex": "aerodrome",
+        "liquidityUsd": 181018.08,
+        "lpBurnedPct": 0,
+        "lpLockedPct": 0,
+        "lockAnalyzed": true,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0x48D1036b0308884c163cde60AD5fBf87112Ac52f",
         "dex": "aerodrome",
-        "liquidityUsd": 200312.1,
+        "liquidityUsd": 202833.03,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -156,16 +148,7 @@
       {
         "pair": "0xe39E901F5C53fDA90eF90FeEF3ed1F0126b557a7",
         "dex": "aerodrome",
-        "liquidityUsd": 171796.54,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xb8B1a52b1893F3369eDb63aeE516F2e8B7D45A53",
-        "dex": "aerodrome",
-        "liquidityUsd": 179694.81,
+        "liquidityUsd": 173883.44,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -174,7 +157,7 @@
       {
         "pair": "0xd52C89A57ACC47E300aC1468441b3495676280Ad",
         "dex": "aerodrome",
-        "liquidityUsd": 6291.53,
+        "liquidityUsd": 6375.63,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -183,23 +166,19 @@
       {
         "pair": "0x8660ab73D35e595DAe0F1b89831bb7f3c819d491",
         "dex": "aerodrome",
-        "liquidityUsd": 0.89,
+        "liquidityUsd": 0.9,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 88.03,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [],
       "socials": []
     }
   },
   "notes": null,
-  "coi": false,
-  "pendingReview": {
-    "computed": "D"
-  },
-  "reviewNote": "Under Review — the methodology computed a low grade for this high-liquidity token. Per policy, D/F grades above $1M liquidity are human-verified before publication. The facts and findings below are published; the letter grade follows review."
+  "coi": false
 }

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "FOLKS",
   "name": "Folks Finance",
-  "scanned_at": "2026-09-24T10:15:56.850Z",
+  "scanned_at": "2026-09-25T10:22:28.504Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 58.6,
-    "provisional": false,
+    "letter": "D",
+    "overall": 51.8,
+    "provisional": true,
     "badge": "Custodial",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 5.7%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -96,11 +89,6 @@
   },
   "caps": [
     {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
-    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -108,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "179683444790",
+    "totalSupply": "180227211604",
     "decimals": 6,
     "owner": "0x84bcefd5306f1729aed590410df4f8e7ee0c6890",
     "controlType": "safe",
@@ -120,41 +108,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 381,
-    "liquidityUsd": 331458.93,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 328686.07,
     "pools": [
       {
         "pair": "0x94a734bf60cDe88ab10a9951b17278a3CE129860",
         "dex": "aerodrome",
-        "liquidityUsd": 331212.23,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7a15868e519d3d898c1c1fcece757848c0c2761ed64e903184b4239e48cf1544",
-        "dex": "uniswap",
-        "liquidityUsd": 98.12,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x29ad62c8d8ccf843ceb5e98715f749965e4a8503f16810d973a0a862455f82f0",
-        "dex": "uniswap",
-        "liquidityUsd": 133.59,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x45e4fd5836497f27b3c79fd605b75b4b24be08c331a1dd0ca51331594963d8d2",
-        "dex": "uniswap",
-        "liquidityUsd": 14.99,
+        "liquidityUsd": 328686.07,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -170,7 +131,7 @@
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 5.74,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://folks.finance",

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SBC",
   "name": "Stable Coin",
-  "scanned_at": "2026-09-24T10:12:38.443Z",
+  "scanned_at": "2026-09-25T10:19:12.111Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c"
+            "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F"
           }
         }
       ]
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "684205761277210509933128",
+    "totalSupply": "660045830441210509933128",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -117,17 +117,8 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 199317.06000000003,
+    "liquidityUsd": 97265.51000000001,
     "pools": [
-      {
-        "pair": "0xBe432703851c43df6056b47cB55312696cf8Cd6c",
-        "dex": "uniswap",
-        "liquidityUsd": 102064.58,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x7EF7Fa7eFcC08C8f493321f3712BA327dc5e1e8F",
         "dex": "aerodrome",
@@ -140,7 +131,7 @@
       {
         "pair": "0xada452F1340FAF2faA5CD6Cf5380f9585A624b8c",
         "dex": "uniswap",
-        "liquidityUsd": 160.66,
+        "liquidityUsd": 173.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

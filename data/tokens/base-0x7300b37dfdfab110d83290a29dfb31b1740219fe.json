@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "MAMO",
   "name": "Mamo",
-  "scanned_at": "2026-09-24T10:13:50.490Z",
+  "scanned_at": "2026-09-25T10:20:37.058Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 70,
-    "provisional": true,
+    "overall": 71.1,
+    "provisional": false,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -88,6 +88,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -107,23 +112,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 910477.6900000001,
+    "verifiedSource": true,
+    "ageDays": 493,
+    "liquidityUsd": 945499.4500000002,
     "pools": [
       {
         "pair": "0xE2B3aA806e56603a244bFc111c9474F7DeDD03db",
         "dex": "aerodrome",
-        "liquidityUsd": 369515.03,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x4A021bA3ab1F0121e7DF76f345C547db86Cb3468",
-        "dex": "aerodrome",
-        "liquidityUsd": 395493.2,
+        "liquidityUsd": 378186,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -132,7 +128,16 @@
       {
         "pair": "0x678F431DA2aBb9B5726bbf5CCDbaEEBB60dA9813",
         "dex": "aerodrome",
-        "liquidityUsd": 96665.36,
+        "liquidityUsd": 98471.52,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4A021bA3ab1F0121e7DF76f345C547db86Cb3468",
+        "dex": "aerodrome",
+        "liquidityUsd": 426989.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -141,25 +146,34 @@
       {
         "pair": "0xAa067F08FeF60420d050A92E7800E588748B7d67",
         "dex": "aerodrome",
-        "liquidityUsd": 38012.7,
+        "liquidityUsd": 39369.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x3dA7a82535f18772daD2f9e7D9C58e30E4241088",
+        "pair": "0xe8d68174F4aCDAf874F2e6b46B0725e9aB4D3C4F",
         "dex": "uniswap",
-        "liquidityUsd": 8655.8,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
+        "liquidityUsd": 2301,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xe8d68174F4aCDAf874F2e6b46B0725e9aB4D3C4F",
+        "pair": "0x51357bF59F0366923d1688293BaCC78B63F46F49",
+        "dex": "aerodrome",
+        "liquidityUsd": 180.18,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8def55bd2a25fd6d38e3757092c04e78bbc29e5296ff7236b5f6f1411a5820a2",
         "dex": "uniswap",
-        "liquidityUsd": 2133.68,
+        "liquidityUsd": 0.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -168,23 +182,14 @@
       {
         "pair": "0xb53214c0c4509656bbdbedfbf26a4a2b5873fbb7b9168ec2881f4098c65c3aa9",
         "dex": "uniswap",
-        "liquidityUsd": 1.92,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xbe30c4692f1f2cc9eda694ebddd4e7c21c1cd6314da4db13ad6f8a20e800b128",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 1.8,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 10.94,
     "projectLinks": {
       "websites": [
         "https://mamo.bot/"

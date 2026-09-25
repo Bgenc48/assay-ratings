@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "PEAK",
   "name": "PEAK",
-  "scanned_at": "2026-09-24T10:15:31.566Z",
+  "scanned_at": "2026-09-25T10:22:18.046Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 70,
+    "letter": "B",
+    "overall": 77.5,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,28 +77,14 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 11 days old; trust needs time (Provisional).",
-          "evidence": "0xf81fb30bdd6c3bc753d1a2e5e1ee942b1c57b0cea203150c1d0c23fca65bcf22"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 9.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -113,16 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -140,21 +110,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
-    "ageDays": 11,
-    "liquidityUsd": 110133.47,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 113571.53,
     "pools": [
       {
         "pair": "0x397fF853d3fc4d880FffF66FB8fA2323CF5daB98",
         "dex": "uniswap",
-        "liquidityUsd": 110133.47,
+        "liquidityUsd": 113571.53,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 8.97,
+    "top10Pct": null,
     "projectLinks": null
   },
   "notes": null,

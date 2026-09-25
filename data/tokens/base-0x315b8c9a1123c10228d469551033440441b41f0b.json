@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BEATS",
   "name": "BEATS on BASE",
-  "scanned_at": "2026-09-24T10:13:36.232Z",
+  "scanned_at": "2026-09-25T10:20:07.945Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 82.9,
-    "provisional": true,
+    "overall": 80,
+    "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "full"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 50,
       "notApplicable": false,
       "findings": []
     },
@@ -93,6 +93,11 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,21 +115,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 134710.41,
+    "verifiedSource": true,
+    "ageDays": 678,
+    "liquidityUsd": 139021.46,
     "pools": [
       {
         "pair": "0x870F9783501f79f66eecb19fa97F4BABf630b2A3",
         "dex": "uniswap",
-        "liquidityUsd": 134710.41,
+        "liquidityUsd": 139021.46,
         "lpBurnedPct": 0,
         "lpLockedPct": 99.99,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 20.69,
     "projectLinks": {
       "websites": [
         "https://beatsonbase.ai/",

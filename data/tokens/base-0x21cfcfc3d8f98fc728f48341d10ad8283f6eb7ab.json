@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "TRUE",
   "name": "True",
-  "scanned_at": "2026-09-24T10:15:51.777Z",
+  "scanned_at": "2026-09-25T10:22:26.111Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B-",
-    "overall": 72.6,
-    "provisional": false,
+    "overall": 70.4,
+    "provisional": true,
     "badge": "Governance-Gated",
-    "coverage": "full"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,21 +72,14 @@
       ]
     },
     "trackRecord": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.0%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -95,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-24mo",
-      "letter": "A",
-      "reason": "A+ requires 24 clean months of operating history."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -119,14 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 566,
-    "liquidityUsd": 711061.22,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 789381.7100000001,
     "pools": [
       {
         "pair": "0x1FAE246b1b2D0ce47126bBb109850Da355352D77",
         "dex": "uniswap",
-        "liquidityUsd": 576052.12,
+        "liquidityUsd": 702671.84,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -135,16 +123,7 @@
       {
         "pair": "0x61E715f97a76E3EbE2282A309A4FfEB61ea22971",
         "dex": "uniswap",
-        "liquidityUsd": 61939.69,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xb38e7e4642b5b22945ff9900a26701243a9981cce8d42251191efde1f9288263",
-        "dex": "uniswap",
-        "liquidityUsd": 66095.93,
+        "liquidityUsd": 77330.51,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -153,7 +132,16 @@
       {
         "pair": "0x764395039fb582e2d02a74169aa62173863300aa0e96dc58953cd54abead6f4f",
         "dex": "uniswap",
-        "liquidityUsd": 4744.85,
+        "liquidityUsd": 6396.79,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb38e7e4642b5b22945ff9900a26701243a9981cce8d42251191efde1f9288263",
+        "dex": "uniswap",
+        "liquidityUsd": 335.28,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,7 +150,7 @@
       {
         "pair": "0x062a21229bf254b3031a45d010b31e59d917eea93af32df5bbc8d07bd2feba34",
         "dex": "uniswap",
-        "liquidityUsd": 93.03,
+        "liquidityUsd": 109.52,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -171,14 +159,14 @@
       {
         "pair": "0x1431F2362772872d9fB54393bEC8eD2c50589510",
         "dex": "uniswap",
-        "liquidityUsd": 2135.6,
+        "liquidityUsd": 2537.77,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 6.98,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://trueo.com/",

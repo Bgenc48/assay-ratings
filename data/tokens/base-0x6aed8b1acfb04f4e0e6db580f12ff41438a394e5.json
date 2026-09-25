@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "wtFGI",
   "name": "Wrapped FGI Industries Ltd. ST0x",
-  "scanned_at": "2026-09-24T10:15:20.504Z",
+  "scanned_at": "2026-09-25T10:22:13.378Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "C",
-    "overall": 59.2,
+    "overall": 55.5,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,16 +77,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.5%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -103,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "35826867926631923836214",
+    "totalSupply": "36681468449178923836214",
     "decimals": 18,
     "owner": null,
     "controlType": "none",
@@ -112,14 +105,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 501504.51,
+    "liquidityUsd": 453228.79000000004,
     "pools": [
       {
         "pair": "0xcE4838e3287d66ce20Fa296704f2B77DE9D2a92d",
         "dex": "hydrex",
-        "liquidityUsd": 94957.29,
+        "liquidityUsd": 86438.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,34 +121,7 @@
       {
         "pair": "0x0Bb9dF0a03d133f60fb37feF90D83D28C8b566Bf",
         "dex": "aerodrome",
-        "liquidityUsd": 321402.25,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xbe5115d6a4799F5Fd1BbFbcc730a93b8dBd2d6c4",
-        "dex": "uniswap",
-        "liquidityUsd": 1.02,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8e1a7839b4716dca70206f705e7eebec8e0fe887ee32691ce7c25f0361934ea5",
-        "dex": "uniswap",
-        "liquidityUsd": 22.93,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xF1F8108fB0e804C0483cBa98E9928deC00148310",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 335168.44,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,32 +130,23 @@
       {
         "pair": "0x69a8440ea85bac37d8eceb41b599ff18f9243fd8446226770c91d6afeb31b946",
         "dex": "uniswap",
-        "liquidityUsd": 60291.75,
+        "liquidityUsd": 31622.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xa4a89fdbd7f4dbbef86fc33b093649baccc97fe08621e6e9ce18b817fd3151da",
+        "pair": "0xb9ee207ed70708fe8dbb30cbcc9a21f31e0a29684e97a65f052444c2fdc16298",
         "dex": "uniswap",
-        "liquidityUsd": 4419.4,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x7f6fc021e1ae9ee08d77806b3a177eb470fc591fd21686dfa1e30b54ed19f697",
-        "dex": "uniswap",
-        "liquidityUsd": 20409.87,
+        "liquidityUsd": null,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 7.46,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://shitonbase.com/"
