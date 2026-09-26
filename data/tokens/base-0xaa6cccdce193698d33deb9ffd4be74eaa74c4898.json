@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "ElonRWA",
   "name": "ElonRWA",
-  "scanned_at": "2026-09-25T10:20:49.330Z",
+  "scanned_at": "2026-09-26T10:01:46.812Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
     "overall": 85,
-    "provisional": false,
+    "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,12 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -110,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 919,
-    "liquidityUsd": 569972.02,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 560630.14,
     "pools": [
       {
         "pair": "0xD56f086E7B796b313d49f2BC926fAc4BDd2a2B0B",
         "dex": "uniswap",
-        "liquidityUsd": 530811.59,
+        "liquidityUsd": 521773.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,14 +126,14 @@
       {
         "pair": "0xfd616e10311Ac827FA953cA04f62Fb2B054d8Da6",
         "dex": "aerodrome",
-        "liquidityUsd": 39160.43,
+        "liquidityUsd": 38856.35,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 11.68,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://elonrwa.com/",

@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "PrinterInkCoin",
   "name": "PrinterInkCoin",
-  "scanned_at": "2026-09-25T10:20:18.403Z",
+  "scanned_at": "2026-09-26T10:01:26.035Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -67,13 +67,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x58ac468ebebf53906ac4ee3fe9e5b988fc904813d9ee41fc4a9c86394b6b276e"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -84,7 +81,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 31 days old; trust needs time (Provisional).",
+          "text": "Token is 32 days old; trust needs time (Provisional).",
           "evidence": "0x3a27b7e31521c9620b105f917b7defddc016178bd29b76731dbfd896c9b8b7ae"
         }
       ]
@@ -136,28 +133,11 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 31,
-    "liquidityUsd": 52032.99,
-    "pools": [
-      {
-        "pair": "0x58ac468ebebf53906ac4ee3fe9e5b988fc904813d9ee41fc4a9c86394b6b276e",
-        "dex": "uniswap",
-        "liquidityUsd": 52032.99,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "ageDays": 32,
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": 9.81,
-    "projectLinks": {
-      "websites": [
-        "https://printerinkcoin.com/"
-      ],
-      "socials": [
-        "https://x.com/PrinterInkCoin"
-      ]
-    }
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

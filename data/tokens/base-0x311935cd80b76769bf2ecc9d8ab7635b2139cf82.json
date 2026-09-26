@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SOL",
   "name": "Solana",
-  "scanned_at": "2026-09-25T10:16:41.082Z",
+  "scanned_at": "2026-09-26T09:57:15.604Z",
   "methodology_version": "0.2.1",
   "profile": "native-representation",
   "grade": {
@@ -72,7 +72,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x8Df6dd38D718bD726374521c2DcFE90Eb9CB7d43"
+            "pair": "0x1131DB5977242a03eBeaD1aCD18F80A9A29e5922"
           }
         }
       ]
@@ -112,7 +112,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "237386166250548",
+    "totalSupply": "240026413238095",
     "decimals": 9,
     "owner": null,
     "controlType": "none",
@@ -122,13 +122,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": false,
-    "ageDays": 303,
-    "liquidityUsd": 2440759.5900000003,
+    "ageDays": 304,
+    "liquidityUsd": 2087429.32,
     "pools": [
       {
         "pair": "0x1131DB5977242a03eBeaD1aCD18F80A9A29e5922",
         "dex": "aerodrome",
-        "liquidityUsd": 673819.87,
+        "liquidityUsd": 676257.38,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -137,16 +137,7 @@
       {
         "pair": "0xCcfA472815563ff9eB2de95C7b2bE1Ccf91f7F31",
         "dex": "aerodrome",
-        "liquidityUsd": 380728.03,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xab07dE353E15b80fa3B4224D5C8fDF3Ac9F50670",
-        "dex": "pancakeswap",
-        "liquidityUsd": 288294.72,
+        "liquidityUsd": 365350.64,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -155,7 +146,16 @@
       {
         "pair": "0x8Df6dd38D718bD726374521c2DcFE90Eb9CB7d43",
         "dex": "pancakeswap",
-        "liquidityUsd": 780926.17,
+        "liquidityUsd": 429594.45,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xab07dE353E15b80fa3B4224D5C8fDF3Ac9F50670",
+        "dex": "pancakeswap",
+        "liquidityUsd": 287962.34,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -164,7 +164,7 @@
       {
         "pair": "0x04d25d8f94A2018F8DdDe1E7941c625FA1a2c7cE",
         "dex": "pancakeswap",
-        "liquidityUsd": 89670.24,
+        "liquidityUsd": 90380.79,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -173,32 +173,32 @@
       {
         "pair": "0xB8fA852a85Af20284906a898595f59BdD8C66cbE",
         "dex": "aerodrome",
-        "liquidityUsd": 127574.66,
+        "liquidityUsd": 134514.15,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x1cCA8388E671e83010843a1A0535B04F2D7E946B",
-        "dex": "uniswap",
-        "liquidityUsd": 58234.69,
+        "pair": "0xFCCE67a155DF9a1a95BeCfe7D09E32DfbE6F9816",
+        "dex": "aerodrome",
+        "liquidityUsd": 45628.37,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xFCCE67a155DF9a1a95BeCfe7D09E32DfbE6F9816",
-        "dex": "aerodrome",
-        "liquidityUsd": 41511.21,
+        "pair": "0x1cCA8388E671e83010843a1A0535B04F2D7E946B",
+        "dex": "uniswap",
+        "liquidityUsd": 57741.2,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 16.74,
+    "top10Pct": 16.56,
     "projectLinks": {
       "websites": [
         "https://solana.com/"

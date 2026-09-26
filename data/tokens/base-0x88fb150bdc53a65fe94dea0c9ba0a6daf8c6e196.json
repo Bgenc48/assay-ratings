@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "LINK",
   "name": "ChainLink Token",
-  "scanned_at": "2026-09-25T10:19:40.594Z",
+  "scanned_at": "2026-09-26T10:00:12.523Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 64.5,
-    "provisional": true,
+    "letter": "B-",
+    "overall": 70.4,
+    "provisional": false,
     "badge": "Governance-Gated",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -66,18 +66,18 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x72bE417AFB0aBEa66913141C605D313BB389b59C"
+            "pair": "0x08C049F958E7d1f1b7ae44466b80d7773cA09c8e"
           }
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -96,7 +96,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "202382091647461384255888",
+    "totalSupply": "197424586528845685379778",
     "decimals": 18,
     "owner": "0x7b0328745a01634c32efaf041d91432a075b308d",
     "controlType": "governor-timelock",
@@ -108,23 +108,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 592856.6799999999,
+    "verifiedSource": true,
+    "ageDays": 1139,
+    "liquidityUsd": 156193.57,
     "pools": [
-      {
-        "pair": "0x72bE417AFB0aBEa66913141C605D313BB389b59C",
-        "dex": "aerodrome",
-        "liquidityUsd": 437028.77,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
       {
         "pair": "0x08C049F958E7d1f1b7ae44466b80d7773cA09c8e",
         "dex": "uniswap",
-        "liquidityUsd": 86123.51,
+        "liquidityUsd": 86719.7,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -133,7 +124,7 @@
       {
         "pair": "0x224a5D3f2155f2F85Af70B6D72AEa61a15273ff4",
         "dex": "uniswap",
-        "liquidityUsd": 32160.5,
+        "liquidityUsd": 31820.93,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -142,16 +133,7 @@
       {
         "pair": "0x603F3FD0247e5A444a561D7DA081c3b00fcF7De9",
         "dex": "quickswap",
-        "liquidityUsd": 26380.95,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x07b1Be2F179313C4F3C7124893d46990672c3F1a",
-        "dex": "aerodrome",
-        "liquidityUsd": 2197.2,
+        "liquidityUsd": 26272.58,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -160,7 +142,7 @@
       {
         "pair": "0x906d29b81df7369343f65e04b19de6ac9940020c66f1d8865c5a45fbed5b8a02",
         "dex": "uniswap",
-        "liquidityUsd": 5595.3,
+        "liquidityUsd": 5644.55,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -169,7 +151,7 @@
       {
         "pair": "0x6C79527D387Dd5C0579080374e65d3B4F711719b",
         "dex": "uniswap",
-        "liquidityUsd": 508.26,
+        "liquidityUsd": 797.49,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -178,14 +160,32 @@
       {
         "pair": "0x53d08ee485ae9ababa12ac9882f3ec793ddf5c7efffcc4f134c397a4d069f1a2",
         "dex": "uniswap",
-        "liquidityUsd": 2862.19,
+        "liquidityUsd": 2865.14,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x380CbdCaBc633A8D99eb02Aa31Fb15Cfa3e2cFC5",
+        "dex": "uniswap",
+        "liquidityUsd": 1551.18,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xb23aa0eb59A03404Adf88c48F1a4bA8b4bDA640E",
+        "dex": "0x829cE74128Ea95C72aA379168Df529FEaa464aEE",
+        "liquidityUsd": 522,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 17.24,
     "projectLinks": null
   },
   "notes": null,

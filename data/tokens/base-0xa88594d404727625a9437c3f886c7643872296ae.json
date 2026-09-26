@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "WELL",
   "name": "WELL",
-  "scanned_at": "2026-09-25T10:21:33.848Z",
+  "scanned_at": "2026-09-26T10:02:12.465Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "4535558103164922424672687510",
+    "totalSupply": "4535823090538774614413100723",
     "decimals": 18,
     "owner": "0x8b621804a7637b781e2bbd58e256a591f2df7d51",
     "controlType": "unknown",
@@ -116,21 +116,30 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1290406.7900000003,
+    "liquidityUsd": 1313066.9,
     "pools": [
       {
         "pair": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657",
         "dex": "aerodrome",
-        "liquidityUsd": 1269368.73,
+        "liquidityUsd": 1268766.87,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
+        "pair": "0xcf812d540af29542162d9ba06371fbb4508252c7948433c2d92afdb7d031c7b3",
+        "dex": "uniswap",
+        "liquidityUsd": 19995.91,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
         "pair": "0xCd401DE1cBAa0d770eE5FB70ff622c752C92B8c5",
         "dex": "aerodrome",
-        "liquidityUsd": 8032.83,
+        "liquidityUsd": 8751.2,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -139,7 +148,7 @@
       {
         "pair": "0x3Ba9ce0f19cF3CcB631b973c83712C7E6E9585ae",
         "dex": "aerodrome",
-        "liquidityUsd": 5981.09,
+        "liquidityUsd": 7509.53,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -148,7 +157,7 @@
       {
         "pair": "0x722BcF6c16dAdcC29914E4E64290C46aa1406DE8",
         "dex": "uniswap",
-        "liquidityUsd": 5562.46,
+        "liquidityUsd": 6606.84,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -157,7 +166,7 @@
       {
         "pair": "0x6DB04732CC8FF547fC9f51a083038E58eD84e65f",
         "dex": "0xba34aA640b8Be02A439221BCbea1f48c1035EEF9",
-        "liquidityUsd": 854.82,
+        "liquidityUsd": 851.39,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -166,7 +175,7 @@
       {
         "pair": "0x293dAb9854AC5a7dB180DA988eB393df491352F0",
         "dex": "uniswap",
-        "liquidityUsd": 580.02,
+        "liquidityUsd": 580.42,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -175,19 +184,10 @@
       {
         "pair": "0xc6eb1dd24a5f6d885ba677cbe0ad60e1573cc88976dd3b6880b86a28ce2ce762",
         "dex": "uniswap",
-        "liquidityUsd": 4.76,
+        "liquidityUsd": 4.74,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x81A8c12738F7346094526ECC2487a63f45dD1935",
-        "dex": "aerodrome",
-        "liquidityUsd": 22.08,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],

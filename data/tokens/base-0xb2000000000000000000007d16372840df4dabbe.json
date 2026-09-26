@@ -1,0 +1,202 @@
+{
+  "address": "0xb2000000000000000000007d16372840df4dabbe",
+  "chain": "base",
+  "status": "ok",
+  "symbol": "PLTRc",
+  "name": "Palantir Technologies Inc.",
+  "scanned_at": "2026-09-26T10:03:14.987Z",
+  "methodology_version": "0.2.1",
+  "profile": "standard",
+  "grade": {
+    "letter": "B+",
+    "overall": 85,
+    "provisional": true,
+    "badge": "Code-Enforced",
+    "coverage": "thin"
+  },
+  "dimensions": {
+    "supplyIntegrity": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "supply.fixed",
+          "severity": "info",
+          "text": "No mint path exists in the deployed bytecode; supply is fixed.",
+          "evidence": null
+        }
+      ]
+    },
+    "adminSurface": {
+      "score": 100,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "admin.none",
+          "severity": "info",
+          "text": "No owner, no privileged functions, not upgradeable. There is no admin key to phish, leak, or subpoena.",
+          "evidence": {
+            "type": "eth_call",
+            "to": "0xb2000000000000000000007d16372840df4dabbe",
+            "data": "0x8da5cb5b",
+            "result": null
+          }
+        }
+      ]
+    },
+    "disclosureIntegrity": {
+      "score": 70,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "disclosure.claim-light",
+          "severity": "info",
+          "text": "The project makes no machine-checkable claims. Silence is not lying, but it is not disclosure either (claim-light floor applies).",
+          "evidence": null
+        }
+      ]
+    },
+    "insiderFloat": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "liquidityPermanence": {
+      "score": null,
+      "notApplicable": false,
+      "findings": [
+        {
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x650cc267AA248191978013d5Ae421e5Dc2A6e242"
+          }
+        }
+      ]
+    },
+    "trackRecord": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "holderConcentration": {
+      "score": null,
+      "notApplicable": false,
+      "findings": []
+    },
+    "governanceReality": {
+      "score": null,
+      "notApplicable": true,
+      "findings": []
+    }
+  },
+  "caps": [
+    {
+      "id": "cap.claim-light",
+      "letter": "B+",
+      "reason": "No machine-checkable disclosures exist (claim-light profile)."
+    }
+  ],
+  "claims": [],
+  "facts": {
+    "totalSupply": "191182923000",
+    "decimals": 8,
+    "owner": null,
+    "controlType": "none",
+    "proxy": null,
+    "proxyImplementation": null,
+    "privileged": [],
+    "mintController": null,
+    "bridge": null,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 382910.81,
+    "pools": [
+      {
+        "pair": "0x650cc267AA248191978013d5Ae421e5Dc2A6e242",
+        "dex": "aerodrome",
+        "liquidityUsd": 209798.69,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x6ebe1eafd0fa02e90a463f512e9d3e841ec572702a0d4bfc938cdd3bccc88c8e",
+        "dex": "uniswap",
+        "liquidityUsd": 19502.95,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x4a79e225c86c791643b1a22db0f7f12607bcad18d4f95576a80558f47ef54e54",
+        "dex": "uniswap",
+        "liquidityUsd": 5208.29,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xf3a615862aca78d15cb3cb3597f61b53804cb22a2baca002ba70a2b80f15f2a6",
+        "dex": "uniswap",
+        "liquidityUsd": 527.65,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3c5ee578065f1c52c4544344de8556015c3c8df47b2cfd6ce4e2b6bb4408f777",
+        "dex": "uniswap",
+        "liquidityUsd": 327.86,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7a45AD56cf6fbd600C9C3a4A71765825B24Be492",
+        "dex": "aerodrome",
+        "liquidityUsd": 0,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x7a93B82b8E7Fc8f3c01D0E22821Ebe25e74b31a7",
+        "dex": "aerodrome",
+        "liquidityUsd": 25130.96,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x49571BC8055c32cd3cA1978E738B3a40637Bf886",
+        "dex": "aerodrome",
+        "liquidityUsd": 122414.41,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": null,
+    "projectLinks": {
+      "websites": [
+        "https://www.thestonks.exchange/token/0x4e571825e9aa4a542c78ae1c4b56c06245207321"
+      ],
+      "socials": [
+        "https://x.com/magikarpalantir"
+      ]
+    }
+  },
+  "notes": null,
+  "coi": false
+}

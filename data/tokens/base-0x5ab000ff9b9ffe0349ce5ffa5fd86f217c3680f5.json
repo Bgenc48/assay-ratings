@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "STONKEX",
   "name": "The Stonks Exchange",
-  "scanned_at": "2026-09-25T10:20:42.399Z",
+  "scanned_at": "2026-09-26T10:01:43.827Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "B+",
-    "overall": 81.1,
+    "overall": 85,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -77,19 +77,12 @@
       ]
     },
     "trackRecord": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "track.young",
-          "severity": "info",
-          "text": "Token is 32 days old; trust needs time (Provisional).",
-          "evidence": "0x03615f1a465b92bbbe75d369b1df35b12758a22af8a5ac5fecb254bb5b13feb6"
-        }
-      ]
+      "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -100,11 +93,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-6mo",
-      "letter": "B+",
-      "reason": "Token is younger than 6 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -122,14 +110,14 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 32,
-    "liquidityUsd": 815432.53,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 833740.5499999999,
     "pools": [
       {
         "pair": "0x7692AcC1CDd771D09EbCae3663e1843b2911BEC7",
         "dex": "uniswap",
-        "liquidityUsd": 486542.76,
+        "liquidityUsd": 475258.39,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -138,34 +126,25 @@
       {
         "pair": "0xBa72E99BC76De8D342DA78C0e4fC04D605936e71",
         "dex": "aerodrome",
-        "liquidityUsd": 277881.97,
+        "liquidityUsd": 280098.41,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x4372af79b5dc09a8b0807bfa97d36e764fcee4b0a6b59f8312fd9f6e775949e1",
-        "dex": "uniswap",
-        "liquidityUsd": 25892.4,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
         "pair": "0x381c95740e3e5a23d66b9757ade02d85e8810e3711f20aaa15c37e06963ab747",
         "dex": "uniswap",
-        "liquidityUsd": 17261.59,
+        "liquidityUsd": 48065.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x3D3B216A8B176F0CC6cC29F185F6E0708B7482b0",
+        "pair": "0x4372af79b5dc09a8b0807bfa97d36e764fcee4b0a6b59f8312fd9f6e775949e1",
         "dex": "uniswap",
-        "liquidityUsd": 3492.65,
+        "liquidityUsd": 24140.99,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -174,7 +153,25 @@
       {
         "pair": "0x2b6D89cBb697BC82a0ac961947C610FB1aA77782",
         "dex": "aerodrome",
-        "liquidityUsd": 240.46,
+        "liquidityUsd": 412.22,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x3D3B216A8B176F0CC6cC29F185F6E0708B7482b0",
+        "dex": "uniswap",
+        "liquidityUsd": 3431.98,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xD5CbC50636FcA3186859A1946D249f80d3a48CAA",
+        "dex": "hydrex",
+        "liquidityUsd": 105.61,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -183,23 +180,14 @@
       {
         "pair": "0x7cb4da2561fdc6ecde11e024de489b59b7fb98be487503b07216150917b92686",
         "dex": "uniswap",
-        "liquidityUsd": 2251.41,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3a123cb4ac8dc82c8c371d32d153f48dd59af07bf2cdb311c4301fbcb4baec79",
-        "dex": "uniswap",
-        "liquidityUsd": 1869.29,
+        "liquidityUsd": 2227.09,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 13,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.thestonks.exchange/"

@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "BV7X",
   "name": "BitVault Signal",
-  "scanned_at": "2026-09-25T10:21:25.079Z",
+  "scanned_at": "2026-09-26T10:02:04.546Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
-    "overall": 67.5,
+    "letter": "B-",
+    "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -72,12 +72,12 @@
       ]
     },
     "trackRecord": {
-      "score": 50,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -88,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.age-12mo",
-      "letter": "A-",
-      "reason": "Token is younger than 12 months (Provisional)."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -112,14 +107,14 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": true,
-    "ageDays": 236,
-    "liquidityUsd": 42370.48,
+    "verifiedSource": null,
+    "ageDays": null,
+    "liquidityUsd": 42346.280000000006,
     "pools": [
       {
         "pair": "0x8de32c3e440d497cd3b607555be1f6115717965fff56247c02976814edcf384f",
         "dex": "uniswap",
-        "liquidityUsd": 42240.58,
+        "liquidityUsd": 42214.66,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -128,23 +123,14 @@
       {
         "pair": "0xB0669F896D3Edd9835fAD05c3e90458bFDBB3870",
         "dex": "uniswap",
-        "liquidityUsd": 129.9,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x80281d48162c934e7f3f03d1b554e2a04bebbb4da587dc8cb9f672de3571d604",
-        "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 131.62,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 11.79,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://www.bv7x.ai/",

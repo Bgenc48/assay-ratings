@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "QSAVE",
   "name": "QSAVE Wealth Fund",
-  "scanned_at": "2026-09-25T10:19:38.683Z",
+  "scanned_at": "2026-09-26T10:00:07.244Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
-    "provisional": true,
+    "letter": "C",
+    "overall": 70,
+    "provisional": false,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -66,25 +72,29 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0xce16b3ee34d61171c51257cf467f60c8461c5314b7e671b5f0e4d5f2e7b1ac94"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 100,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.distributed",
+          "severity": "info",
+          "text": "Top-10 unlabeled holders control 0.3%.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -93,6 +103,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
+      "id": "cap.age-24mo",
+      "letter": "A",
+      "reason": "A+ requires 24 clean months of operating history."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -110,32 +130,12 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
-    "liquidityUsd": 839687.57,
-    "pools": [
-      {
-        "pair": "0xce16b3ee34d61171c51257cf467f60c8461c5314b7e671b5f0e4d5f2e7b1ac94",
-        "dex": "uniswap",
-        "liquidityUsd": 839687.57,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": null,
-    "projectLinks": {
-      "websites": [
-        "https://www.qsave.org/",
-        "https://youtu.be/WZJrN5RKhLE",
-        "https://www.linkedin.com/company/qsaveorg"
-      ],
-      "socials": [
-        "https://x.com/QSAVEORG",
-        "https://t.me/qsaveorg"
-      ]
-    }
+    "verifiedSource": false,
+    "ageDays": 382,
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": 0.26,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

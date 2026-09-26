@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "SPX93K",
   "name": "SPX93K",
-  "scanned_at": "2026-09-25T10:22:30.542Z",
+  "scanned_at": "2026-09-26T10:03:09.084Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
     "letter": "D",
-    "overall": 44.6,
+    "overall": 50,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -57,17 +57,14 @@
       "findings": []
     },
     "liquidityPermanence": {
-      "score": 25,
+      "score": null,
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unlocked",
+          "id": "liq.none",
           "severity": "warn",
-          "text": "The dominant pool's LP is mostly unlocked.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x98B8D9345A9cdC53Acc2e7b4bBE6FF70c2E2fbe2"
-          }
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -112,18 +109,8 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 115364.41,
-    "pools": [
-      {
-        "pair": "0x98B8D9345A9cdC53Acc2e7b4bBE6FF70c2E2fbe2",
-        "dex": "uniswap",
-        "liquidityUsd": 115364.41,
-        "lpBurnedPct": 0,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
-        "singleEoaWithdrawable": false
-      }
-    ],
+    "liquidityUsd": null,
+    "pools": [],
     "top10Pct": null,
     "projectLinks": null
   },

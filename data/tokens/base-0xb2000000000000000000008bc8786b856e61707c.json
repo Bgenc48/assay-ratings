@@ -4,21 +4,27 @@
   "status": "ok",
   "symbol": "METAc",
   "name": "Meta Platforms Inc.",
-  "scanned_at": "2026-09-25T10:19:56.073Z",
+  "scanned_at": "2026-09-26T10:01:01.941Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B+",
-    "overall": 85,
+    "letter": "C",
+    "overall": 70,
     "provisional": true,
     "badge": "Code-Enforced",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
+        {
+          "id": "supply.unverified",
+          "severity": "warn",
+          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
+          "evidence": null
+        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -82,7 +88,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": null,
+      "score": 75,
       "notApplicable": false,
       "findings": []
     },
@@ -94,6 +100,11 @@
   },
   "caps": [
     {
+      "id": "cap.unverified",
+      "letter": "C",
+      "reason": "Source code is not verified on a public explorer."
+    },
+    {
       "id": "cap.claim-light",
       "letter": "B+",
       "reason": "No machine-checkable disclosures exist (claim-light profile)."
@@ -101,7 +112,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "344387547836",
+    "totalSupply": "410633979920",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -110,14 +121,23 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
+    "verifiedSource": false,
     "ageDays": null,
-    "liquidityUsd": 1987242.68,
+    "liquidityUsd": 2106612.4,
     "pools": [
       {
         "pair": "0xEAF57753BC382E0324a1D43F72E7027705a2273E",
         "dex": "aerodrome",
-        "liquidityUsd": 1971596.12,
+        "liquidityUsd": 2094960.85,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x8239c61cae50206876456787cc4f656b030ec8fdda9e2d0fa3a8fd16657cddde",
+        "dex": "uniswap",
+        "liquidityUsd": 210.56,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +146,7 @@
       {
         "pair": "0x583919ec1975a1238C50e1940911894ee6912476",
         "dex": "uniswap",
-        "liquidityUsd": 8895.95,
+        "liquidityUsd": 1877.26,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +155,16 @@
       {
         "pair": "0x5a9f8b78252222a5812abe2522d90d99f9b61db4004d831e2daf927cd29f49aa",
         "dex": "uniswap",
-        "liquidityUsd": 3665.19,
+        "liquidityUsd": 3610.8,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0xbf42cda07f1d2758cc73036e33e2a7fba3b1c6baad37891458aa76fab0116501",
+        "dex": "uniswap",
+        "liquidityUsd": 1592.69,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,34 +173,16 @@
       {
         "pair": "0x871a120885a1bad056fd330fd791d75b24d4dd00778b169f95629ac9abc7221d",
         "dex": "uniswap",
-        "liquidityUsd": 1483.44,
+        "liquidityUsd": 1496.15,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0xEC2800d4A96B40D1A387a49aa9c9861d2cE3454F",
-        "dex": "hydrex",
-        "liquidityUsd": 165.08,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x8e550867852ae8d40b74a67018d4be592cdc5415c3917a2037d88dc2a6f57029",
+        "pair": "0xe33e87d1c59cf506a9d7b4e5a7a39b426cbfcf7425f9e72eed132aaa68ac6f3f",
         "dex": "uniswap",
-        "liquidityUsd": 843.76,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x9a72d721afb8a146ce216696df6fa1200b18d2c83c4ffa2b927f3941c804eb53",
-        "dex": "uniswap",
-        "liquidityUsd": 593.14,
+        "liquidityUsd": 1434.13,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -180,14 +191,14 @@
       {
         "pair": "0x536ff85b071646e34d128aa3de5e03c78bb58eb9161c136deeb43d04741e2414",
         "dex": "uniswap",
-        "liquidityUsd": null,
+        "liquidityUsd": 1429.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": null,
+    "top10Pct": 15.3,
     "projectLinks": {
       "websites": [
         "https://www.coinbase.com/tokenize"

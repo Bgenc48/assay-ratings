@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "defi-native",
   "name": "defi-native",
-  "scanned_at": "2026-09-25T10:21:18.298Z",
+  "scanned_at": "2026-09-26T10:02:01.444Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -83,7 +77,7 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 75,
+      "score": null,
       "notApplicable": false,
       "findings": []
     },
@@ -94,11 +88,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -116,66 +105,21 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 43616.420000000006,
+    "liquidityUsd": 43912.91,
     "pools": [
       {
         "pair": "0xb4a7c81b8a45d52872c86d3825ccbd4f4882773337ada59f85148a95e3ad37d8",
         "dex": "uniswap",
-        "liquidityUsd": 43575.72,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x76ea63a9d3c7e8febaf8ca24c9df9d55d7cb8d3ebabf9a17121b116ed0ca4278",
-        "dex": "uniswap",
-        "liquidityUsd": 25.03,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x3931a429a4eb67d09bcba52ca7a7470238775bb4e057700fb5dd88f07fe3ca25",
-        "dex": "uniswap",
-        "liquidityUsd": 12.97,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xec8d2b4958c2bf016573f36110cd4b0873359d7f264c456c4ae32638afc38e6a",
-        "dex": "uniswap",
-        "liquidityUsd": 0.16,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xc23e341a508c0a710f67a3c78f0eff9f8ca12d9cd42f1dbebfd1c3e105ce0d2a",
-        "dex": "uniswap",
-        "liquidityUsd": 0.35,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0x1c5efbf25e8bbd10ca19c7fcf0e414035afdd2f8cfe3f32d752113c5d0628b75",
-        "dex": "uniswap",
-        "liquidityUsd": 2.19,
+        "liquidityUsd": 43912.91,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       }
     ],
-    "top10Pct": 11.82,
+    "top10Pct": null,
     "projectLinks": {
       "websites": [
         "https://defi-native.ai",

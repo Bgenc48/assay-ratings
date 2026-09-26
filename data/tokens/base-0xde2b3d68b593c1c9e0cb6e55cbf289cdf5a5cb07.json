@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "PIPEDOG",
   "name": "pipedog",
-  "scanned_at": "2026-09-25T10:19:05.295Z",
+  "scanned_at": "2026-09-26T09:59:29.990Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -61,10 +61,13 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x6ad84b7d56c837d875e913c164ea0b684c4aaddd851c2f6cf5dec0a705a8bb2f"
+          }
         }
       ]
     },
@@ -107,7 +110,17 @@
     "verifiedSource": null,
     "ageDays": null,
     "liquidityUsd": null,
-    "pools": [],
+    "pools": [
+      {
+        "pair": "0x6ad84b7d56c837d875e913c164ea0b684c4aaddd851c2f6cf5dec0a705a8bb2f",
+        "dex": "uniswap",
+        "liquidityUsd": 0,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
     "top10Pct": null,
     "projectLinks": null
   },

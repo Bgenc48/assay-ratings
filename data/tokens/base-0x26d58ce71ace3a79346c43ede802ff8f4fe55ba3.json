@@ -4,27 +4,21 @@
   "status": "ok",
   "symbol": "Suwappu",
   "name": "Suwappubot",
-  "scanned_at": "2026-09-25T10:21:00.566Z",
+  "scanned_at": "2026-09-26T10:01:51.815Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "C",
+    "letter": "B-",
     "overall": 70,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "partial"
+    "coverage": "thin"
   },
   "dimensions": {
     "supplyIntegrity": {
       "score": 100,
       "notApplicable": false,
       "findings": [
-        {
-          "id": "supply.unverified",
-          "severity": "warn",
-          "text": "Source code is not verified on a public explorer; supply behavior cannot be fully audited.",
-          "evidence": null
-        },
         {
           "id": "supply.fixed",
           "severity": "info",
@@ -67,13 +61,10 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.unanalyzed",
-          "severity": "info",
-          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
-          "evidence": {
-            "source": "dexscreener+onchain",
-            "pair": "0x787fe87a27824d11d743cd6007614d3f5776d1b42cce79358e390498bb436159"
-          }
+          "id": "liq.none",
+          "severity": "warn",
+          "text": "No liquidity pools found for this token.",
+          "evidence": null
         }
       ]
     },
@@ -83,16 +74,9 @@
       "findings": []
     },
     "holderConcentration": {
-      "score": 100,
+      "score": null,
       "notApplicable": false,
-      "findings": [
-        {
-          "id": "holders.distributed",
-          "severity": "info",
-          "text": "Top-10 unlabeled holders control 7.1%.",
-          "evidence": null
-        }
-      ]
+      "findings": []
     },
     "governanceReality": {
       "score": null,
@@ -101,11 +85,6 @@
     }
   },
   "caps": [
-    {
-      "id": "cap.unverified",
-      "letter": "C",
-      "reason": "Source code is not verified on a public explorer."
-    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -123,30 +102,12 @@
     "privileged": [],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": false,
+    "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 30005.8,
-    "pools": [
-      {
-        "pair": "0x787fe87a27824d11d743cd6007614d3f5776d1b42cce79358e390498bb436159",
-        "dex": "uniswap",
-        "liquidityUsd": 30005.8,
-        "lpBurnedPct": null,
-        "lpLockedPct": null,
-        "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      }
-    ],
-    "top10Pct": 7.13,
-    "projectLinks": {
-      "websites": [
-        "https://suwappu.bot"
-      ],
-      "socials": [
-        "https://x.com/suwappubot",
-        "https://discord.com/invite/PdbpfXwjs"
-      ]
-    }
+    "liquidityUsd": null,
+    "pools": [],
+    "top10Pct": null,
+    "projectLinks": null
   },
   "notes": null,
   "coi": false

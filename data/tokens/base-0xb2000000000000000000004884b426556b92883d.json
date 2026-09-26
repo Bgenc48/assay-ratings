@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "MSTRc",
   "name": "Strategy Inc.",
-  "scanned_at": "2026-09-25T10:21:58.147Z",
+  "scanned_at": "2026-09-26T10:02:36.752Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -101,7 +101,7 @@
   ],
   "claims": [],
   "facts": {
-    "totalSupply": "898442561031",
+    "totalSupply": "863173964055",
     "decimals": 8,
     "owner": null,
     "controlType": "none",
@@ -112,12 +112,21 @@
     "bridge": null,
     "verifiedSource": null,
     "ageDays": null,
-    "liquidityUsd": 1167578.02,
+    "liquidityUsd": 1324043.4000000001,
     "pools": [
       {
         "pair": "0x8b27f626ab668197000BC722A1012022CAeD10E2",
         "dex": "aerodrome",
-        "liquidityUsd": 1162424.13,
+        "liquidityUsd": 1318036.91,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      },
+      {
+        "pair": "0x5df005b23302c1ac6529411ab1a77b808b7424a402a870fb3405d5038b0b17b1",
+        "dex": "uniswap",
+        "liquidityUsd": 1255.06,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -126,7 +135,7 @@
       {
         "pair": "0x17ecfe141bada18d94b2c41a2bbaffde8726309a6b4340e1ad7a6910bc7cdf8d",
         "dex": "uniswap",
-        "liquidityUsd": 3405.36,
+        "liquidityUsd": 3011.96,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -135,7 +144,7 @@
       {
         "pair": "0xC88c048261b739E1484E3295415Ee11C64545a4F",
         "dex": "aerodrome",
-        "liquidityUsd": 1242.55,
+        "liquidityUsd": 1240.82,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -144,7 +153,7 @@
       {
         "pair": "0x9b36959CaE9943cc4859d34Ec5d918d195A73267",
         "dex": "aerodrome",
-        "liquidityUsd": 262.68,
+        "liquidityUsd": 278.81,
         "lpBurnedPct": 0,
         "lpLockedPct": 0,
         "lockAnalyzed": true,
@@ -153,7 +162,7 @@
       {
         "pair": "0xfeec6a1558bbbcb29ad2cae1f5e2f6b53489a482ad18ff90d82458f7e4aae5ba",
         "dex": "uniswap",
-        "liquidityUsd": 99.99,
+        "liquidityUsd": 99.98,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
@@ -162,28 +171,19 @@
       {
         "pair": "0xdaf20e256ba987b6d3d91e356eacdb9b156b66ec559a715351c996db54ddab8a",
         "dex": "uniswap",
-        "liquidityUsd": 119.78,
+        "liquidityUsd": 119.86,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
         "singleEoaWithdrawable": false
       },
       {
-        "pair": "0x7b95ab32076368b302a020Ff3c962eCC030F3994",
-        "dex": "aerodrome",
-        "liquidityUsd": 2.05,
+        "pair": "0x5eE9A870c6c416AEad3C742D56FC31d7e51EAFe4",
+        "dex": "uniswap",
+        "liquidityUsd": 0,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,
-        "singleEoaWithdrawable": false
-      },
-      {
-        "pair": "0xCC2cb77d25EFAF5f4516eb1cfC01d876bef27Ca2",
-        "dex": "equalizer",
-        "liquidityUsd": 21.48,
-        "lpBurnedPct": 0.01,
-        "lpLockedPct": 0,
-        "lockAnalyzed": true,
         "singleEoaWithdrawable": false
       }
     ],

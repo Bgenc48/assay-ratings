@@ -4,7 +4,7 @@
   "status": "ok",
   "symbol": "SHIB",
   "name": "SHIBA INU",
-  "scanned_at": "2026-09-25T10:20:30.704Z",
+  "scanned_at": "2026-09-26T10:01:37.493Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
@@ -66,7 +66,7 @@
           "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
           "evidence": {
             "source": "dexscreener+onchain",
-            "pair": "0x248d1d35d12290b4dea67add52fa01de3558cabb6b96b20c57bb06264c019c72"
+            "pair": "0x643ae437aa55c8f7aba16c69002d727d2cf6660d5547b534826bd628cb315a8a"
           }
         }
       ]
@@ -78,7 +78,7 @@
         {
           "id": "track.young",
           "severity": "info",
-          "text": "Token is 32 days old; trust needs time (Provisional).",
+          "text": "Token is 33 days old; trust needs time (Provisional).",
           "evidence": "0x3836089a516ed96b3c75fb0d528bb7197912e5e4fa4bbd7f88ca5fd37f2447ec"
         }
       ]
@@ -132,13 +132,13 @@
     "mintController": null,
     "bridge": null,
     "verifiedSource": true,
-    "ageDays": 32,
-    "liquidityUsd": 0.04,
+    "ageDays": 33,
+    "liquidityUsd": 0.01,
     "pools": [
       {
-        "pair": "0x248d1d35d12290b4dea67add52fa01de3558cabb6b96b20c57bb06264c019c72",
+        "pair": "0x643ae437aa55c8f7aba16c69002d727d2cf6660d5547b534826bd628cb315a8a",
         "dex": "uniswap",
-        "liquidityUsd": 0.04,
+        "liquidityUsd": 0.01,
         "lpBurnedPct": null,
         "lpLockedPct": null,
         "lockAnalyzed": false,

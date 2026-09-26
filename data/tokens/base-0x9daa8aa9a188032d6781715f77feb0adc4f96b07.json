@@ -4,15 +4,15 @@
   "status": "ok",
   "symbol": "牛来",
   "name": "牛来",
-  "scanned_at": "2026-09-25T10:19:47.808Z",
+  "scanned_at": "2026-09-26T10:00:34.828Z",
   "methodology_version": "0.2.1",
   "profile": "standard",
   "grade": {
-    "letter": "B-",
-    "overall": 70,
+    "letter": "C",
+    "overall": 58.6,
     "provisional": true,
     "badge": "Discretionary",
-    "coverage": "thin"
+    "coverage": "partial"
   },
   "dimensions": {
     "supplyIntegrity": {
@@ -61,22 +61,39 @@
       "notApplicable": false,
       "findings": [
         {
-          "id": "liq.none",
-          "severity": "warn",
-          "text": "No liquidity pools found for this token.",
-          "evidence": null
+          "id": "liq.unanalyzed",
+          "severity": "info",
+          "text": "The dominant pool's LP lock status could not be analyzed automatically (no fungible LP token or unreadable distribution). Insufficient data — reflected in coverage, not in the score.",
+          "evidence": {
+            "source": "dexscreener+onchain",
+            "pair": "0x8358c23238e35bfd9eb84d1c54eb4fa5b3173b0cfbfa1da8bd9754e7f5085176"
+          }
         }
       ]
     },
     "trackRecord": {
-      "score": null,
+      "score": 25,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "track.young",
+          "severity": "info",
+          "text": "Token is 40 days old; trust needs time (Provisional).",
+          "evidence": "0xe9a4aa2f7184a143ec6b8837e29876c803c19ab332bd5fe71e47e5fb779c7dbf"
+        }
+      ]
     },
     "holderConcentration": {
-      "score": null,
+      "score": 0,
       "notApplicable": false,
-      "findings": []
+      "findings": [
+        {
+          "id": "holders.dominant",
+          "severity": "crit",
+          "text": "The top 10 unlabeled holders control 100.0% of circulating supply.",
+          "evidence": null
+        }
+      ]
     },
     "governanceReality": {
       "score": null,
@@ -85,6 +102,16 @@
     }
   },
   "caps": [
+    {
+      "id": "cap.concentration",
+      "letter": "C",
+      "reason": "Top-10 unlabeled holders exceed 50%."
+    },
+    {
+      "id": "cap.age-6mo",
+      "letter": "B+",
+      "reason": "Token is younger than 6 months (Provisional)."
+    },
     {
       "id": "cap.claim-light",
       "letter": "B+",
@@ -104,11 +131,21 @@
     ],
     "mintController": null,
     "bridge": null,
-    "verifiedSource": null,
-    "ageDays": null,
+    "verifiedSource": true,
+    "ageDays": 40,
     "liquidityUsd": null,
-    "pools": [],
-    "top10Pct": null,
+    "pools": [
+      {
+        "pair": "0x8358c23238e35bfd9eb84d1c54eb4fa5b3173b0cfbfa1da8bd9754e7f5085176",
+        "dex": "uniswap",
+        "liquidityUsd": 0,
+        "lpBurnedPct": null,
+        "lpLockedPct": null,
+        "lockAnalyzed": false,
+        "singleEoaWithdrawable": false
+      }
+    ],
+    "top10Pct": 99.99,
     "projectLinks": null
   },
   "notes": null,
